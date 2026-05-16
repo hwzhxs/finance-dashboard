@@ -1,0 +1,1449 @@
+{
+  "generatedAt": "2026-05-16T14:12:24.130080+00:00",
+  "generatedAtLocal": "2026-05-16 22:12:24 CST",
+  "sources": {
+    "notes": "Agent insights merged, SEC skipped for speed"
+  },
+  "items": {
+    "SPY": {
+      "symbol": "SPY",
+      "type": "ETF",
+      "companyName": "SPY",
+      "businessModel": "S&P 500 ETF，跟踪美国大盘 500 强，费率 0.0945%，流动性极强。",
+      "moatEvidence": "作为最老牌的 S&P 500 ETF，流动性和期权市场深度无人能比，但费率不如 VOO。",
+      "keyRisks": "费率比 VOO 高 3 倍（0.0945% vs 0.03%），大盘科技集中度风险，美股整体估值偏高。",
+      "aiAngle": "被动持有 AI 龙头（AAPL/MSFT/NVDA/GOOGL 等权重大），间接受益但不是 AI 主题工具。",
+      "growthCatalysts": "美股企业盈利增长、AI 资本开支周期、消费韧性。",
+      "growthSignals": "S&P 500 EPS 增速、PE 分位、资金流入、利率路径。",
+      "judgment": {
+        "positives": [
+          "最高流动性，适合战术配置和期权策略",
+          "被动获取美股整体回报"
+        ],
+        "concerns": [
+          "费率是 VOO 的 3 倍，长期复利差距不小",
+          "和 VOO 完全重叠，组合里只需要一个"
+        ],
+        "actionContext": "Continue observing",
+        "todayNote": null,
+        "etfQuestion": "VOO 费率更低、跟踪同一指数，除非需要 SPY 的期权流动性，否则 VOO 更优。"
+      },
+      "financials": {
+        "period": {
+          "basis": "价格与表现为最近交易数据；费率为配置文件记录",
+          "source": "行情 chart 数据 + 本地 ETF 配置"
+        },
+        "expenseRatioPct": 0.0945,
+        "return1mPct": null,
+        "return3mPct": null,
+        "return1yPct": null,
+        "volatilityPct": null,
+        "maxDrawdownPct": null
+      }
+    },
+    "QQQ": {
+      "symbol": "QQQ",
+      "type": "ETF",
+      "companyName": "QQQ",
+      "businessModel": "纳斯达克 100 ETF，科技/成长权重高，费率 0.20%。",
+      "moatEvidence": "纳斯达克 100 的标准 ETF，科技暴露最集中，适合对科技有信心的配置。",
+      "keyRisks": "科技集中度高（前 10 占比超 50%），费率偏高，利率敏感，回撤深度大于 VOO/VTI。",
+      "aiAngle": "AI 龙头（NVDA/MSFT/GOOGL/AMZN/META）权重大，是间接 AI 主题 ETF。",
+      "growthCatalysts": "AI 资本开支持续、科技盈利增长、Nasdaq 100 成分调整。",
+      "growthSignals": "Nasdaq 100 盈利增速、科技板块 PE、资金流向、利率预期。",
+      "judgment": {
+        "positives": [
+          "科技和 AI 暴露最集中的主流 ETF",
+          "历史长期回报优于 S&P 500"
+        ],
+        "concerns": [
+          "集中度风险：前 10 占比过高，不够分散",
+          "费率 0.20% 偏高，长期成本不可忽视"
+        ],
+        "actionContext": "Continue observing",
+        "todayNote": null,
+        "etfQuestion": "如果想要科技倾斜，QQQ 是选择；但如果是核心仓，VTI/VOO 的分散度更好。需要先想清楚组合角色。"
+      },
+      "financials": {
+        "period": {
+          "basis": "价格与表现为最近交易数据；费率为配置文件记录",
+          "source": "行情 chart 数据 + 本地 ETF 配置"
+        },
+        "expenseRatioPct": 0.2,
+        "return1mPct": null,
+        "return3mPct": null,
+        "return1yPct": null,
+        "volatilityPct": null,
+        "maxDrawdownPct": null
+      }
+    },
+    "VOO": {
+      "symbol": "VOO",
+      "type": "ETF",
+      "companyName": "VOO",
+      "businessModel": "Vanguard S&P 500 ETF，费率仅 0.03%，和 SPY 跟踪同一指数。",
+      "moatEvidence": "Vanguard 的成本优势和规模，费率是 S&P 500 ETF 中最低之一。",
+      "keyRisks": "大盘科技集中度风险（前 10 占 30%+），美股估值处于历史偏高水平。",
+      "aiAngle": "被动持有 AI 龙头，但不是 AI 主题投资。",
+      "growthCatalysts": "美股企业盈利增长、AI 资本开支周期、消费韧性。",
+      "growthSignals": "S&P 500 EPS 增速、PE 分位、资金流入。",
+      "judgment": {
+        "positives": [
+          "费率极低（0.03%），长期复利优势明显",
+          "Bogle 体系首选核心仓候选"
+        ],
+        "concerns": [
+          "科技集中度仍然偏高",
+          "当前 PE 处于历史 75 分位以上，建仓时机不是最理想"
+        ],
+        "actionContext": "Continue observing",
+        "todayNote": null,
+        "etfQuestion": "核心仓首选之一。和 VTI 的区别在于 VTI 覆盖更广（含中小盘），VOO 只有大盘。对初学者差别不大。"
+      },
+      "financials": {
+        "period": {
+          "basis": "价格与表现为最近交易数据；费率为配置文件记录",
+          "source": "行情 chart 数据 + 本地 ETF 配置"
+        },
+        "expenseRatioPct": 0.03,
+        "return1mPct": null,
+        "return3mPct": null,
+        "return1yPct": null,
+        "volatilityPct": null,
+        "maxDrawdownPct": null
+      }
+    },
+    "VTI": {
+      "symbol": "VTI",
+      "type": "ETF",
+      "companyName": "VTI",
+      "businessModel": "Vanguard 全美股票市场 ETF，覆盖大中小盘约 4000 只股票，费率 0.03%。",
+      "moatEvidence": "全市场覆盖 + 极低费率，是 Bogle 体系最纯粹的「买下整个美国」。",
+      "keyRisks": "美股整体估值偏高，小盘拖累在熊市可能更大，但长期分散优势明显。",
+      "aiAngle": "间接暴露，AI 龙头在 VTI 里权重也很大，但整体分散度更好。",
+      "growthCatalysts": "美国经济整体增长、中小盘盈利恢复、利率下行利好小盘股。",
+      "growthSignals": "全市场盈利增速、小盘股相对表现、资金流入。",
+      "judgment": {
+        "positives": [
+          "分散度最高（96/100）、费率最低（0.03%）、Bogle 评分最高",
+          "「一只 ETF 搞定美股」的终极选择"
+        ],
+        "concerns": [
+          "当前美股整体估值不便宜，建仓需要纪律（定投 > 一把梭）",
+          "短期可能跑不赢 QQQ 这种科技集中型"
+        ],
+        "actionContext": "Continue observing",
+        "todayNote": null,
+        "etfQuestion": "如果只能买一只 ETF，VTI 是最接近正确答案的。Bogle 会选它。"
+      },
+      "financials": {
+        "period": {
+          "basis": "价格与表现为最近交易数据；费率为配置文件记录",
+          "source": "行情 chart 数据 + 本地 ETF 配置"
+        },
+        "expenseRatioPct": 0.03,
+        "return1mPct": null,
+        "return3mPct": null,
+        "return1yPct": null,
+        "volatilityPct": null,
+        "maxDrawdownPct": null
+      }
+    },
+    "SGOV": {
+      "symbol": "SGOV",
+      "type": "ETF",
+      "companyName": "SGOV",
+      "businessModel": "iShares 0-3 个月美国国债 ETF，费率 0.09%，本质是美元现金管理工具。",
+      "moatEvidence": "短久期国债，几乎零波动，纯现金等价物。",
+      "keyRisks": "收益随 Fed 降息下降，不是长期复利工具，持有机会成本。",
+      "aiAngle": "和 AI 毫无关系，纯防御/现金管理角色。",
+      "growthCatalysts": "高利率环境下 yield 还不错，但 Fed 降息预期下 yield 会走低。",
+      "growthSignals": "Fed funds rate、降息节奏、短端利率。",
+      "judgment": {
+        "positives": [
+          "几乎零波动，Howard Marks 评分最高（89/100）",
+          "80% 现金闲置时，SGOV 比 broker 账户利息更高"
+        ],
+        "concerns": [
+          "不是长期投资，只是现金停车场",
+          "Fed 降息周期中 yield 会逐步下降"
+        ],
+        "actionContext": "Consider for idle cash",
+        "todayNote": null,
+        "etfQuestion": "不是 VTI/VOO 的替代品，是 cash 的替代品。80% 现金可以考虑部分放 SGOV 赚短期 yield。"
+      },
+      "financials": {
+        "period": {
+          "basis": "价格与表现为最近交易数据；费率为配置文件记录",
+          "source": "行情 chart 数据 + 本地 ETF 配置"
+        },
+        "expenseRatioPct": 0.09,
+        "return1mPct": null,
+        "return3mPct": null,
+        "return1yPct": null,
+        "volatilityPct": null,
+        "maxDrawdownPct": null
+      }
+    },
+    "PDD": {
+      "symbol": "PDD",
+      "type": "Stock",
+      "companyName": "PDD",
+      "businessModel": "中国折扣电商（拼多多）+ 全球跨境电商（Temu），靠极致性价比和流量效率赚钱。收入来自广告和交易佣金。",
+      "moatEvidence": "国内：极致性价比心智、商家网络、流量算法效率。Temu：供应链直连工厂的全托管模式。但 moat 不算宽——用户忠诚度低，竞争激烈。",
+      "keyRisks": "1) 中概 ADR 风险：VIE 结构、监管不确定性、退市风险始终存在；2) Temu 烧钱可持续性：海外获客成本上升、关税政策（de minimis 可能收紧）；3) 净利润下滑 9%、FCF 下滑 8%，增速在放缓。",
+      "aiAngle": "不是 AI 公司。AI 在推荐算法和供应链优化上有边际作用，但不是核心叙事。",
+      "growthCatalysts": "Temu 海外 GMV 扩张、国内消费回暖、「新拼木」供应链计划、transaction services 增长。",
+      "growthSignals": "Temu 亏损收窄速度、国内 GMV 增速、获客成本趋势、关税政策变化、Q1 财报（5/19-27 发布）。",
+      "judgment": {
+        "positives": [
+          "估值极便宜：4-5x forward EV/EBITDA，近半市值有 $60B 净现金托底",
+          "监管调查落地（罚 15 亿 RMB），利空出尽",
+          "Arete 升级至 Buy，目标价 $121；Benchmark 维持 $160"
+        ],
+        "concerns": [
+          "净利润和 FCF 都在同比下滑，增长质量在恶化",
+          "Temu 的 unit economics 仍不透明，管理层有意牺牲短期利润率换增长",
+          "中概股永恒的结构性风险：VIE、地缘、信息不对称"
+        ],
+        "actionContext": "Continue observing",
+        "todayNote": "Q1 财报即将在 5/19-27 发布。市场关注 Temu margin 趋势和 transaction services 增长。监管调查已结案（罚 15 亿 RMB）。",
+        "etfQuestion": "20% 仓位已是 soft limit。当前核心问题是 Temu 能否走出亏损，如果不能，长期回报不如 VTI。"
+      },
+      "financials": {
+        "revenue": 61753116000.0,
+        "revenueText": "61.8B",
+        "revenueGrowthPct": 14.452312435377102,
+        "netIncome": 13991297000.0,
+        "netIncomeText": "14.0B",
+        "netIncomeGrowthPct": -9.167853412712878,
+        "grossMarginPct": 23.265978999343126,
+        "operatingMarginPct": 21.559119381117544,
+        "freeCashFlow": 15285432000.0,
+        "freeCashFlowText": "15.3B",
+        "freeCashFlowGrowthPct": -8.45423423806344,
+        "debtToAssetsPct": 34.387924081009515,
+        "roePct": 23.668614559118353,
+        "priceToSales": null,
+        "fcfYieldPct": null,
+        "trailingPE": null,
+        "forwardPE": null,
+        "latest": {
+          "revenue": null,
+          "revenueText": "n/a",
+          "revenueGrowthPct": null,
+          "netIncome": null,
+          "netIncomeText": "n/a",
+          "netIncomeGrowthPct": null,
+          "grossMarginPct": null,
+          "operatingMarginPct": null,
+          "freeCashFlow": null,
+          "freeCashFlowText": "n/a",
+          "freeCashFlowGrowthPct": null,
+          "period": {
+            "basis": "最新财报季度",
+            "form": null,
+            "fiscalYear": null,
+            "period": null,
+            "start": null,
+            "end": null,
+            "filed": null,
+            "source": "SEC companyfacts"
+          }
+        },
+        "period": {
+          "basis": "最近完整财年",
+          "form": "20-F",
+          "fiscalYear": 2025,
+          "period": "FY",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "filed": "2026-04-29",
+          "source": "SEC companyfacts"
+        }
+      },
+      "sec": {
+        "available": true,
+        "cik": "0001737806",
+        "title": "PDD Holdings Inc.",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001737806.json"
+      }
+    },
+    "AAPL": {
+      "symbol": "AAPL",
+      "type": "Stock",
+      "companyName": "AAPL",
+      "businessModel": "高端消费电子（iPhone/Mac/iPad）+ 服务订阅（App Store/iCloud/Apple Music/AppleCare），硬件卖生态入口，服务赚高利润率复利。",
+      "moatEvidence": "品牌（全球最值钱之一）、20 亿+活跃设备装机量、生态转换成本极高、服务 attach rate 持续提升。Moat 很宽且在变宽——服务占比越来越大。",
+      "keyRisks": "1) 硬件增长见顶：iPhone 换机周期拉长；2) 中国市场竞争（华为回归）；3) Apple Intelligence 目前更多是叙事，变现证据不足；4) 内部人减持（Tim Cook 等 5 月在卖）。",
+      "aiAngle": "端侧 AI（Apple Intelligence）是长期生态粘性工具，不是直接变现手段。Wedbush 看好 AI 驱动 2027 年硬件大换机。WWDC 2026 会是关键催化。",
+      "growthCatalysts": "WWDC 2026 Apple Intelligence 更新、iPhone 换机周期改善、服务收入持续增长、$100B 回购计划。",
+      "growthSignals": "服务收入增速、iPhone ASP、活跃设备数、AI 功能采用率、中国市场恢复。",
+      "judgment": {
+        "positives": [
+          "Q2 FY26 超预期：收入 $111.2B（+17% YoY），EPS $2.01（+22%），iPhone 和 Services 双创新高",
+          "FCF 季度 $51.6B（+80% YoY），现金制造机器",
+          "新高 $300+，Wedbush 目标 $400，Tigress $375"
+        ],
+        "concerns": [
+          "估值不便宜（value 评分 45/100），需要等回调",
+          "Apple Intelligence 商业化路径不清晰，Siri 进展慢",
+          "Tim Cook 等管理层在减持，虽是计划性的但信号不算正面"
+        ],
+        "actionContext": "Continue observing",
+        "todayNote": "股价创新高 $300+。Q2 业绩强劲，$100B 回购 + 股息提升 4%。等 WWDC 看 AI 进展。",
+        "etfQuestion": "Moat 92/100 确实顶级，但 value 45/100。这个价格不如通过 VOO/QQQ 间接持有。"
+      },
+      "financials": {
+        "revenue": 416161000000.0,
+        "revenueText": "416.2B",
+        "revenueGrowthPct": 6.425511782832749,
+        "netIncome": 112010000000.0,
+        "netIncomeText": "112.0B",
+        "netIncomeGrowthPct": 19.49517794657336,
+        "grossMarginPct": 46.90516410716045,
+        "operatingMarginPct": 31.970799762591884,
+        "freeCashFlow": 98767000000.0,
+        "freeCashFlowText": "98.8B",
+        "freeCashFlowGrowthPct": -5.726656180763445,
+        "debtToAssetsPct": 79.47533828265705,
+        "roePct": 151.91298333175104,
+        "priceToSales": null,
+        "fcfYieldPct": null,
+        "trailingPE": null,
+        "forwardPE": null,
+        "latest": {
+          "revenue": 111184000000.0,
+          "revenueText": "111.2B",
+          "revenueGrowthPct": 16.59518241592299,
+          "netIncome": 29578000000.0,
+          "netIncomeText": "29.6B",
+          "netIncomeGrowthPct": 19.362389023405967,
+          "grossMarginPct": 49.27057850050367,
+          "operatingMarginPct": 32.275327385235286,
+          "freeCashFlow": 51552000000.0,
+          "freeCashFlowText": "51.6B",
+          "freeCashFlowGrowthPct": 80.14030399198262,
+          "period": {
+            "basis": "最新财报季度",
+            "form": "10-Q",
+            "fiscalYear": 2026,
+            "period": "Q2",
+            "start": "2025-12-28",
+            "end": "2026-03-28",
+            "filed": "2026-05-01",
+            "source": "SEC companyfacts"
+          }
+        },
+        "period": {
+          "basis": "最近完整财年",
+          "form": "10-K",
+          "fiscalYear": 2025,
+          "period": "FY",
+          "start": "2024-09-29",
+          "end": "2025-09-27",
+          "filed": "2025-10-31",
+          "source": "SEC companyfacts"
+        }
+      },
+      "sec": {
+        "available": true,
+        "cik": "0000320193",
+        "title": "Apple Inc.",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json"
+      }
+    },
+    "MSFT": {
+      "symbol": "MSFT",
+      "type": "Stock",
+      "companyName": "MSFT",
+      "businessModel": "企业软件（Office/Teams）、Azure 云、AI 平台（Copilot/OpenAI 合作）、安全、游戏。收入结构多元且 recurring。",
+      "moatEvidence": "企业转换成本极高（Office/Azure/AD 深度嵌入）、开发者生态、AI 分发渠道（Copilot 覆盖所有 M365 用户）。Moat 94/100，在大盘科技中最宽之一。",
+      "keyRisks": "1) 估值不便宜（value 45/100）；2) AI capex 强度大（2026 年 $190B），回报需要时间验证；3) 云竞争（AWS/GCP）。",
+      "aiAngle": "AI 基础设施（Azure）+ AI 应用（Copilot）双层覆盖。AI 年化收入 run rate $37B（+123% YoY），这是目前最清晰的 AI 变现证据之一。",
+      "growthCatalysts": "Azure AI 需求、Copilot 付费渗透、OpenAI 合作重新谈判（更有利条款）、安全产品。",
+      "growthSignals": "Azure 增速（最新 +40%）、AI 收入占比、Copilot 付费用户数、商业云毛利率。",
+      "judgment": {
+        "positives": [
+          "Q3 FY26 超预期：收入 $82.9B（+18.3%），EPS $4.27（beat $0.21），Azure +40%",
+          "AI 年化 $37B（+123%），最清晰的 AI 变现故事",
+          "OpenAI 新协议更有利：2030 前 $38B revenue sharing，今年预收 $6B"
+        ],
+        "concerns": [
+          "$190B 年度 capex 令人紧张，如果 AI 需求放缓 FCF 会受重压",
+          "估值 value 45/100，要等回调才有安全边际",
+          "Zero-day 漏洞（CVE-2026-42897）被活跃利用，安全问题持续存在"
+        ],
+        "actionContext": "Continue observing",
+        "todayNote": "Q3 业绩强劲。OpenAI 合作重新谈判条款更有利于 MSFT。计划收购 AI 公司 Inception（$1B+）。",
+        "etfQuestion": "Moat 和 quality 都是顶级，但 value 不够。如果跌到合理估值（forward PE < 28x），值得认真考虑。"
+      },
+      "financials": {
+        "revenue": 281724000000.0,
+        "revenueText": "281.7B",
+        "revenueGrowthPct": 14.932156232406712,
+        "netIncome": 101832000000.0,
+        "netIncomeText": "101.8B",
+        "netIncomeGrowthPct": 15.539620586366532,
+        "grossMarginPct": 68.8237423861652,
+        "operatingMarginPct": 45.62195624085985,
+        "freeCashFlow": 71611000000.0,
+        "freeCashFlowText": "71.6B",
+        "freeCashFlowGrowthPct": 14.85811654350979,
+        "debtToAssetsPct": 44.5109312878936,
+        "roePct": 29.647227341409522,
+        "priceToSales": null,
+        "fcfYieldPct": null,
+        "trailingPE": null,
+        "forwardPE": null,
+        "latest": {
+          "revenue": 82886000000.0,
+          "revenueText": "82.9B",
+          "revenueGrowthPct": 18.2970342248737,
+          "netIncome": 31778000000.0,
+          "netIncomeText": "31.8B",
+          "netIncomeGrowthPct": 23.056071871127635,
+          "grossMarginPct": 67.63265207634582,
+          "operatingMarginPct": 46.32627946818522,
+          "freeCashFlow": 15803000000.0,
+          "freeCashFlowText": "15.8B",
+          "freeCashFlowGrowthPct": 26.00961019328367,
+          "period": {
+            "basis": "最新财报季度",
+            "form": "10-Q",
+            "fiscalYear": 2026,
+            "period": "Q3",
+            "start": "2026-01-01",
+            "end": "2026-03-31",
+            "filed": "2026-04-29",
+            "source": "SEC companyfacts"
+          }
+        },
+        "period": {
+          "basis": "最近完整财年",
+          "form": "10-K",
+          "fiscalYear": 2025,
+          "period": "FY",
+          "start": "2024-07-01",
+          "end": "2025-06-30",
+          "filed": "2025-07-30",
+          "source": "SEC companyfacts"
+        }
+      },
+      "sec": {
+        "available": true,
+        "cik": "0000789019",
+        "title": "Microsoft Corp",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json"
+      }
+    },
+    "NVDA": {
+      "symbol": "NVDA",
+      "type": "Stock",
+      "companyName": "NVDA",
+      "businessModel": "GPU 加速器 + 网络 + 系统 + CUDA 软件生态。几乎所有 AI 训练和推理都跑在 NVIDIA 硬件上。",
+      "moatEvidence": "CUDA 生态锁定（开发者迁移成本极高）、性能代差领先、供应链规模。Moat 在 AI 时代变得更宽，但长期要看自研芯片竞争。",
+      "keyRisks": "1) 市场预期极高，任何 miss 都会暴跌；2) 自研芯片（Google TPU/Amazon Trainium/MSFT Maia）在蚕食份额；3) 出口限制；4) 半导体周期风险。",
+      "aiAngle": "最纯正的 AI 算力龙头。市值 $5.5T 成为历史第一家破此关的公司。问题不是 AI 有没有价值，而是当前价格是否已经反映了所有。",
+      "growthCatalysts": "5/20 Q1 FY27 财报、Vera Rubin 新平台（7 月出货）、Computex 新品、H200 对华出口许可。",
+      "growthSignals": "数据中心收入、毛利率、guidance、订单能见度、自研芯片竞争进展。",
+      "judgment": {
+        "positives": [
+          "FY26 全年收入 $215.9B（+65%），净利 $120B，FCF $102.6B，印钞机级别",
+          "Vera Rubin 7 月出货，产品迭代节奏极快",
+          "市值 $5.5T，市场信心极强"
+        ],
+        "concerns": [
+          "5/20 财报是下一个关键节点，预期 EPS $1.76-1.77，任何低于预期都会暴跌",
+          "H200 对华出口批准但中国尚未正式确认，不确定性犹存",
+          "Forward PE 偏高，安全边际不足"
+        ],
+        "actionContext": "Continue observing",
+        "todayNote": "5/20 发布 Q1 FY27 财报。Vera Rubin 6 月试产 7 月出货。H200 对华出口有进展但中方未确认。BofA 目标 $320。",
+        "etfQuestion": "AI 纯正度最高，但价格已经反映了极高预期。不如通过 QQQ 间接持有，除非有明确的买入信号。"
+      },
+      "financials": {
+        "revenue": 215938000000.0,
+        "revenueText": "215.9B",
+        "revenueGrowthPct": 65.47353579009479,
+        "netIncome": 120067000000.0,
+        "netIncomeText": "120.1B",
+        "netIncomeGrowthPct": 64.74615806805708,
+        "grossMarginPct": 71.06808435754708,
+        "operatingMarginPct": 60.38168363141272,
+        "freeCashFlow": 102579265000.0,
+        "freeCashFlowText": "102.6B",
+        "freeCashFlowGrowthPct": 60.27399397712556,
+        "debtToAssetsPct": 23.940658501085572,
+        "roePct": 76.33333969089534,
+        "priceToSales": null,
+        "fcfYieldPct": null,
+        "trailingPE": null,
+        "forwardPE": null,
+        "latest": {
+          "revenue": 57006000000.0,
+          "revenueText": "57.0B",
+          "revenueGrowthPct": 62.49358645459211,
+          "netIncome": 31910000000.0,
+          "netIncomeText": "31.9B",
+          "netIncomeGrowthPct": 65.25972344502564,
+          "grossMarginPct": 73.41157071185489,
+          "operatingMarginPct": 63.16878925025436,
+          "freeCashFlow": 27259000000.0,
+          "freeCashFlowText": "27.3B",
+          "freeCashFlowGrowthPct": 78.65102639296188,
+          "period": {
+            "basis": "最新财报季度",
+            "form": "10-Q",
+            "fiscalYear": 2026,
+            "period": "Q3",
+            "start": "2025-07-28",
+            "end": "2025-10-26",
+            "filed": "2025-11-19",
+            "source": "SEC companyfacts"
+          }
+        },
+        "period": {
+          "basis": "最近完整财年",
+          "form": "10-K",
+          "fiscalYear": 2026,
+          "period": "FY",
+          "start": "2025-01-27",
+          "end": "2026-01-25",
+          "filed": "2026-02-25",
+          "source": "SEC companyfacts"
+        }
+      },
+      "sec": {
+        "available": true,
+        "cik": "0001045810",
+        "title": "NVIDIA Corp",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json"
+      }
+    },
+    "TSLA": {
+      "symbol": "TSLA",
+      "type": "Stock",
+      "companyName": "TSLA",
+      "businessModel": "电动车制造 + 储能 + FSD 自动驾驶软件 + Robotaxi/Optimus 远期可选项。核心收入仍是卖车。",
+      "moatEvidence": "品牌、制造规模、充电网络、数据积累。但汽车 moat 不算宽：竞争激烈（中国 BYD/小米），利润率持续承压。",
+      "keyRisks": "1) PE 406x 疯狂估值，完全靠 Robotaxi/Optimus 叙事支撑；2) 2026 capex 三倍增至 $25B+，FCF 预计转负；3) FSD 监管障碍（NHTSA 调查 320 万辆车）；4) 中国 FSD 批准无进展。",
+      "aiAngle": "FSD/Robotaxi/Optimus 是 AI 叙事，但距离大规模变现还很远。付费 Robotaxi 里程 Q1 环比翻倍，但基数很低。",
+      "growthCatalysts": "Robotaxi 扩张、FSD 进展、储能增长、新低价车型、Optimus 商业化。",
+      "growthSignals": "汽车毛利率、交付量、FSD 采用率、储能收入、Robotaxi 里程、capex 回报。",
+      "judgment": {
+        "positives": [
+          "Q1 EPS $0.41 超预期，毛利率恢复到 21.1%",
+          "储能和 FSD 长期潜力大",
+          "Model Y 通过 NHTSA 新 ADAS 测试"
+        ],
+        "concerns": [
+          "PE 406x，这个估值需要 Robotaxi 完美执行才能支撑，芒格不会碰",
+          "交付 358K miss 预期，产大于销 5 万台，库存积压",
+          "中国 FSD 无进展、澳洲诉讼、NHTSA 调查，负面消息不断"
+        ],
+        "actionContext": "Not attractive",
+        "todayNote": "股价 5/15 跌 4%。FSD 中国审批无突破。NHTSA 加强调查 320 万辆 FSD 车辆。估值极高。",
+        "etfQuestion": "PE 406x 的股票，即使叙事再好，安全边际为零。通过 QQQ/VOO 间接持有就好。"
+      },
+      "financials": {
+        "revenue": 94827000000.0,
+        "revenueText": "94.8B",
+        "revenueGrowthPct": -2.930699150373628,
+        "netIncome": 3794000000.0,
+        "netIncomeText": "3.8B",
+        "netIncomeGrowthPct": -46.49555774925962,
+        "grossMarginPct": 18.026511436616154,
+        "operatingMarginPct": 4.592573845001951,
+        "freeCashFlow": 6220000000.0,
+        "freeCashFlowText": "6.2B",
+        "freeCashFlowGrowthPct": -1.1793875226160933,
+        "debtToAssetsPct": 39.86836567348301,
+        "roePct": 4.581738258842852,
+        "priceToSales": null,
+        "fcfYieldPct": null,
+        "trailingPE": null,
+        "forwardPE": null,
+        "latest": {
+          "revenue": 22387000000.0,
+          "revenueText": "22.4B",
+          "revenueGrowthPct": 15.784846133953966,
+          "netIncome": 477000000.0,
+          "netIncomeText": "477.0M",
+          "netIncomeGrowthPct": 16.625916870415658,
+          "grossMarginPct": 21.083664626792334,
+          "operatingMarginPct": 4.203332291061777,
+          "freeCashFlow": 1444000000.0,
+          "freeCashFlowText": "1.4B",
+          "freeCashFlowGrowthPct": 82.60667903525048,
+          "period": {
+            "basis": "最新财报季度",
+            "form": "10-Q",
+            "fiscalYear": 2026,
+            "period": "Q1",
+            "start": "2026-01-01",
+            "end": "2026-03-31",
+            "filed": "2026-04-23",
+            "source": "SEC companyfacts"
+          }
+        },
+        "period": {
+          "basis": "最近完整财年",
+          "form": "10-K",
+          "fiscalYear": 2025,
+          "period": "FY",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "filed": "2026-01-29",
+          "source": "SEC companyfacts"
+        }
+      },
+      "sec": {
+        "available": true,
+        "cik": "0001318605",
+        "title": "Tesla, Inc.",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001318605.json"
+      }
+    },
+    "GOOGL": {
+      "symbol": "GOOGL",
+      "type": "Stock",
+      "companyName": "GOOGL",
+      "businessModel": "搜索广告（核心现金牛）+ YouTube + Google Cloud + Android + AI 产品（Gemini）。广告占收入 ~80%。",
+      "moatEvidence": "搜索分发垄断、YouTube 网络效应、数据规模、AI 人才密度、云规模。Moat 88/100，在 AI 时代既是机会也有颠覆风险。",
+      "keyRisks": "1) AI 改变搜索行为（ChatGPT/Perplexity 等）；2) 反垄断诉讼持续；3) $180-190B AI capex 对 FCF 的压力。",
+      "aiAngle": "Gemini 全面嵌入搜索/云/设备。Google Cloud +63% 加速增长，backlog 翻倍至 $460B+。AI 既是护城河强化器也是潜在颠覆者。",
+      "growthCatalysts": "Google Cloud 加速、Gemini 生态、YouTube 变现、广告恢复、Googlebook 硬件。",
+      "growthSignals": "搜索份额、Cloud 增速和利润率、AI 产品采用、反垄断进展。",
+      "judgment": {
+        "positives": [
+          "Q1 超预期：收入 $109.9B（+22%），EPS $5.11（+82%），Cloud +63% 加速",
+          "第 17 次创年内新高，市场情绪极强",
+          "发行 ¥576.5B 日元债，融资能力和信用评级一流"
+        ],
+        "concerns": [
+          "$180-190B 年度 AI capex 太激进，如果需求放缓 FCF 会受重压",
+          "Ackman 减持转投 MSFT，虽说不是看空但也说明资金在选择",
+          "反垄断仍是长期悬顶风险"
+        ],
+        "actionContext": "Continue observing",
+        "todayNote": "Q1 业绩极强，Cloud 加速。Google I/O 即将展示更多 AI 创新。Ackman 减持转投 MSFT。",
+        "etfQuestion": "Quality 和 moat 都很高，Cloud 加速是亮点。但 capex 强度和反垄断风险让安全边际不足。"
+      },
+      "financials": {
+        "revenue": 402836000000.0,
+        "revenueText": "402.8B",
+        "revenueGrowthPct": 15.090081081544371,
+        "netIncome": 132170000000.0,
+        "netIncomeText": "132.2B",
+        "netIncomeGrowthPct": 32.01422321660441,
+        "grossMarginPct": null,
+        "operatingMarginPct": 32.032638592380025,
+        "freeCashFlow": 73266000000.0,
+        "freeCashFlowText": "73.3B",
+        "freeCashFlowGrowthPct": 31.45595735001876,
+        "debtToAssetsPct": 30.24050826416432,
+        "roePct": 31.82786895115167,
+        "priceToSales": null,
+        "fcfYieldPct": null,
+        "trailingPE": null,
+        "forwardPE": null,
+        "latest": {
+          "revenue": 109896000000.0,
+          "revenueText": "109.9B",
+          "revenueGrowthPct": null,
+          "netIncome": 62578000000.0,
+          "netIncomeText": "62.6B",
+          "netIncomeGrowthPct": 81.1754487550666,
+          "grossMarginPct": null,
+          "operatingMarginPct": 36.121423891679406,
+          "freeCashFlow": 10116000000.0,
+          "freeCashFlowText": "10.1B",
+          "freeCashFlowGrowthPct": 26.66666666666666,
+          "period": {
+            "basis": "最新财报季度",
+            "form": "10-Q",
+            "fiscalYear": 2026,
+            "period": "Q1",
+            "start": "2026-01-01",
+            "end": "2026-03-31",
+            "filed": "2026-04-30",
+            "source": "SEC companyfacts"
+          }
+        },
+        "period": {
+          "basis": "最近完整财年",
+          "form": "10-K",
+          "fiscalYear": 2025,
+          "period": "FY",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "filed": "2026-02-05",
+          "source": "SEC companyfacts"
+        }
+      },
+      "sec": {
+        "available": true,
+        "cik": "0001652044",
+        "title": "Alphabet Inc.",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json"
+      }
+    },
+    "AMD": {
+      "symbol": "AMD",
+      "type": "Stock",
+      "companyName": "AMD",
+      "businessModel": "CPU（x86 PC/服务器）+ GPU（AI 加速器 MI 系列）+ FPGA/嵌入式。数据中心是增长引擎。",
+      "moatEvidence": "x86 生态、与台积电供应链协同、数据中心客户关系。但 AI GPU 生态远不如 NVDA 的 CUDA。",
+      "keyRisks": "1) AI GPU 追赶者角色，CUDA 生态差距明显；2) 毛利率 49.5% vs NVDA 71%；3) 半导体周期。",
+      "aiAngle": "MI 系列是 NVDA 在 AI GPU 市场唯一有规模的竞争者，但软件生态是短板。",
+      "growthCatalysts": "MI 系列放量、数据中心 CPU 份额提升、Q1 收入 +38% YoY 势头强劲。",
+      "growthSignals": "AI GPU 收入、数据中心毛利率、客户采纳、ROCm 生态进展。",
+      "judgment": {
+        "positives": [
+          "Q1 收入 $10.3B（+38%），FCF $2.6B（+215%），增速在加速",
+          "毛利率提升至 52.8%，趋势向好",
+          "作为 NVDA 的替代选择，客户多元化需求在增长"
+        ],
+        "concerns": [
+          "CUDA 生态差距短期难弥合，这是最大的 moat 劣势",
+          "营业利润率 14.4% 远低于 NVDA 的 60%+，不在同一级别",
+          "半导体周期下行时抗压能力弱于 NVDA"
+        ],
+        "actionContext": "Continue observing",
+        "todayNote": "Q1 业绩强劲（+38%），毛利率扩张。关注 MI 系列 AI GPU 的客户采纳和收入占比。",
+        "etfQuestion": "增长快但 moat 不够宽。除非 AI GPU 份额显著扩大，否则不如 NVDA 或直接买 QQQ。"
+      },
+      "financials": {
+        "revenue": 34639000000.0,
+        "revenueText": "34.6B",
+        "revenueGrowthPct": 34.33779329067288,
+        "netIncome": 4335000000.0,
+        "netIncomeText": "4.3B",
+        "netIncomeGrowthPct": 164.16819012797075,
+        "grossMarginPct": 49.51644100580271,
+        "operatingMarginPct": 10.664280146655504,
+        "freeCashFlow": 6735000000.0,
+        "freeCashFlowText": "6.7B",
+        "freeCashFlowGrowthPct": 153.50213745478462,
+        "debtToAssetsPct": null,
+        "roePct": 6.881061604152447,
+        "priceToSales": null,
+        "fcfYieldPct": null,
+        "trailingPE": null,
+        "forwardPE": null,
+        "latest": {
+          "revenue": 10253000000.0,
+          "revenueText": "10.3B",
+          "revenueGrowthPct": 37.84619521376713,
+          "netIncome": 1383000000.0,
+          "netIncomeText": "1.4B",
+          "netIncomeGrowthPct": 95.06346967559945,
+          "grossMarginPct": 52.82356383497513,
+          "operatingMarginPct": 14.395786599044182,
+          "freeCashFlow": 2566000000.0,
+          "freeCashFlowText": "2.6B",
+          "freeCashFlowGrowthPct": 214.69648562300318,
+          "period": {
+            "basis": "最新财报季度",
+            "form": "10-Q",
+            "fiscalYear": 2026,
+            "period": "Q1",
+            "start": "2025-12-28",
+            "end": "2026-03-28",
+            "filed": "2026-05-06",
+            "source": "SEC companyfacts"
+          }
+        },
+        "period": {
+          "basis": "最近完整财年",
+          "form": "10-K",
+          "fiscalYear": 2025,
+          "period": "FY",
+          "start": "2024-12-29",
+          "end": "2025-12-27",
+          "filed": "2026-02-04",
+          "source": "SEC companyfacts"
+        }
+      },
+      "sec": {
+        "available": true,
+        "cik": "0000002488",
+        "title": "Advanced Micro Devices, Inc.",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000002488.json"
+      }
+    },
+    "AVGO": {
+      "symbol": "AVGO",
+      "type": "Stock",
+      "companyName": "AVGO",
+      "businessModel": "网络芯片（数据中心）+ 定制 ASIC（Google/Meta 等客户）+ 基础设施软件（VMware）。并购整合大师。",
+      "moatEvidence": "高端网络芯片客户关系深厚、定制 ASIC 切换成本高、VMware 软件现金流稳定。Moat 在 AI 时代变宽。",
+      "keyRisks": "1) 客户集中（大客户依赖）；2) VMware 整合执行风险；3) 估值预期高。",
+      "aiAngle": "AI 数据中心网络芯片 + 定制 ASIC 双受益。是 AI 基础设施「卖铲子」的另一个角度。",
+      "growthCatalysts": "AI 网络芯片需求、定制 ASIC 客户扩张、VMware 整合协同、软件利润率提升。",
+      "growthSignals": "AI 相关收入占比、定制芯片客户数、软件利润率、并购协同进展。",
+      "judgment": {
+        "positives": [
+          "Q1 收入 $19.3B（+29%），毛利率 68%，FCF $8B（+35%）",
+          "定制 ASIC 业务是独特的 AI 基础设施切入点",
+          "VMware 整合后软件现金流提供稳定基底"
+        ],
+        "concerns": [
+          "大客户集中度风险——如果 Google/Meta 减少定制芯片订单影响很大",
+          "估值不便宜，value 45/100",
+          "并购整合的文化冲突风险"
+        ],
+        "actionContext": "Continue observing",
+        "todayNote": null,
+        "etfQuestion": "AI 基础设施独特角度，但估值和客户集中度让我不急于行动。"
+      },
+      "financials": {
+        "revenue": 63887000000.0,
+        "revenueText": "63.9B",
+        "revenueGrowthPct": 23.874432853763516,
+        "netIncome": 23126000000.0,
+        "netIncomeText": "23.1B",
+        "netIncomeGrowthPct": 292.2985581000848,
+        "grossMarginPct": 67.76652527118193,
+        "operatingMarginPct": 39.889179332258514,
+        "freeCashFlow": 26914000000.0,
+        "freeCashFlowText": "26.9B",
+        "freeCashFlowGrowthPct": 37.94709948902914,
+        "debtToAssetsPct": 52.48638159586655,
+        "roePct": 28.44806377011268,
+        "priceToSales": null,
+        "fcfYieldPct": null,
+        "trailingPE": null,
+        "forwardPE": null,
+        "latest": {
+          "revenue": 19311000000.0,
+          "revenueText": "19.3B",
+          "revenueGrowthPct": 29.46500402252614,
+          "netIncome": 7349000000.0,
+          "netIncomeText": "7.3B",
+          "netIncomeGrowthPct": 33.54533890605125,
+          "grossMarginPct": 68.13215265910621,
+          "operatingMarginPct": 44.34260266169541,
+          "freeCashFlow": 8010000000.0,
+          "freeCashFlowText": "8.0B",
+          "freeCashFlowGrowthPct": 35.1218714215606,
+          "period": {
+            "basis": "最新财报季度",
+            "form": "10-Q",
+            "fiscalYear": 2026,
+            "period": "Q1",
+            "start": "2025-11-03",
+            "end": "2026-02-01",
+            "filed": "2026-03-11",
+            "source": "SEC companyfacts"
+          }
+        },
+        "period": {
+          "basis": "最近完整财年",
+          "form": "10-K",
+          "fiscalYear": 2025,
+          "period": "FY",
+          "start": "2024-11-04",
+          "end": "2025-11-02",
+          "filed": "2025-12-18",
+          "source": "SEC companyfacts"
+        }
+      },
+      "sec": {
+        "available": true,
+        "cik": "0001730168",
+        "title": "Broadcom Inc.",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001730168.json"
+      }
+    },
+    "TSM": {
+      "symbol": "TSM",
+      "type": "Stock",
+      "companyName": "TSM",
+      "businessModel": "全球最大晶圆代工厂，几乎所有 AI 芯片（NVDA/AMD/AAPL/AVGO）都由台积电制造。",
+      "moatEvidence": "先进制程技术垄断（3nm/2nm）、规模、资本壁垒、客户信任、良率优势。Moat 极宽。",
+      "keyRisks": "1) 台海地缘政治风险——这是最大的不确定性；2) 客户集中（AAPL/NVDA 两大客户）；3) 资本开支周期波动。",
+      "aiAngle": "AI 芯片供应链的绝对核心。没有台积电就没有 AI 硬件。但地缘风险是无法对冲的。",
+      "growthCatalysts": "AI/HPC 芯片订单持续增长、先进封装（CoWoS）产能扩张、美国/日本新厂。",
+      "growthSignals": "先进制程收入占比、月度营收（4 月 +17.5% YoY）、毛利率、capex 回报。",
+      "judgment": {
+        "positives": [
+          "AI 芯片制造的绝对垄断地位，无可替代",
+          "4 月营收 +17.5% YoY，需求强劲",
+          "先进封装产能是 AI 供应链瓶颈，定价权强"
+        ],
+        "concerns": [
+          "台海风险无法用财务分析化解，是真正的黑天鹅",
+          "SEC 财务数据不完整（20-F 报告节奏不同），分析受限",
+          "客户集中度高"
+        ],
+        "actionContext": "Continue observing",
+        "todayNote": "4 月营收 +17.5% YoY。NVDA Vera Rubin 6 月试产将带动台积电先进封装需求。",
+        "etfQuestion": "技术垄断毫无疑问，但台海风险是不可忽视的尾部风险。除非地缘溢价足够便宜，否则不急。"
+      },
+      "financials": {
+        "revenue": null,
+        "revenueText": "n/a",
+        "revenueGrowthPct": null,
+        "netIncome": null,
+        "netIncomeText": "n/a",
+        "netIncomeGrowthPct": null,
+        "grossMarginPct": null,
+        "operatingMarginPct": null,
+        "freeCashFlow": null,
+        "freeCashFlowText": "n/a",
+        "freeCashFlowGrowthPct": null,
+        "debtToAssetsPct": null,
+        "roePct": null,
+        "priceToSales": null,
+        "fcfYieldPct": null,
+        "trailingPE": null,
+        "forwardPE": null,
+        "latest": {
+          "revenue": null,
+          "revenueText": "n/a",
+          "revenueGrowthPct": null,
+          "netIncome": null,
+          "netIncomeText": "n/a",
+          "netIncomeGrowthPct": null,
+          "grossMarginPct": null,
+          "operatingMarginPct": null,
+          "freeCashFlow": null,
+          "freeCashFlowText": "n/a",
+          "freeCashFlowGrowthPct": null,
+          "period": {
+            "basis": "最新财报季度",
+            "form": null,
+            "fiscalYear": null,
+            "period": null,
+            "start": null,
+            "end": null,
+            "filed": null,
+            "source": "SEC companyfacts"
+          }
+        },
+        "period": {
+          "basis": "最近完整财年",
+          "form": null,
+          "fiscalYear": null,
+          "period": null,
+          "start": null,
+          "end": null,
+          "filed": null,
+          "source": "SEC companyfacts"
+        }
+      },
+      "sec": {
+        "available": true,
+        "cik": "0001046179",
+        "title": "Taiwan Semiconductor Manufacturing Co Ltd",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json"
+      }
+    },
+    "ASML": {
+      "symbol": "ASML",
+      "type": "Stock",
+      "companyName": "ASML",
+      "businessModel": "半导体光刻设备垄断供应商，EUV/High-NA 设备是先进芯片制造的必备工具。",
+      "moatEvidence": "技术垄断：全球唯一 EUV 设备供应商，竞争对手无法复制。客户必须买 ASML 的设备才能做先进制程。",
+      "keyRisks": "1) 出口限制（对华限制影响订单）；2) 半导体资本开支周期波动；3) 订单 backlog 波动大。",
+      "aiAngle": "AI 芯片制造的上游关键设备。没有 ASML 的 EUV 就没有先进 AI 芯片。",
+      "growthCatalysts": "High-NA EUV 量产、先进制程扩产、出口限制边际放松。",
+      "growthSignals": "新订单量、backlog、毛利率、出口政策变化。",
+      "judgment": {
+        "positives": [
+          "技术垄断是最硬的 moat，巴菲特会认可这种竞争壁垒",
+          "AI 推动先进制程需求长期向上"
+        ],
+        "concerns": [
+          "SEC 财务数据不完整，估值难以精确评估",
+          "出口限制是政策风险，不可控",
+          "半导体 capex 周期性强，订单波动大"
+        ],
+        "actionContext": "Continue observing",
+        "todayNote": null,
+        "etfQuestion": "垄断地位毫无疑问，但需要等订单周期确认和估值合理化。"
+      },
+      "financials": {
+        "revenue": null,
+        "revenueText": "n/a",
+        "revenueGrowthPct": null,
+        "netIncome": null,
+        "netIncomeText": "n/a",
+        "netIncomeGrowthPct": null,
+        "grossMarginPct": null,
+        "operatingMarginPct": null,
+        "freeCashFlow": null,
+        "freeCashFlowText": "n/a",
+        "freeCashFlowGrowthPct": null,
+        "debtToAssetsPct": null,
+        "roePct": null,
+        "priceToSales": null,
+        "fcfYieldPct": null,
+        "trailingPE": null,
+        "forwardPE": null,
+        "latest": {
+          "revenue": null,
+          "revenueText": "n/a",
+          "revenueGrowthPct": null,
+          "netIncome": null,
+          "netIncomeText": "n/a",
+          "netIncomeGrowthPct": null,
+          "grossMarginPct": null,
+          "operatingMarginPct": null,
+          "freeCashFlow": null,
+          "freeCashFlowText": "n/a",
+          "freeCashFlowGrowthPct": null,
+          "period": {
+            "basis": "最新财报季度",
+            "form": null,
+            "fiscalYear": null,
+            "period": null,
+            "start": null,
+            "end": null,
+            "filed": null,
+            "source": "SEC companyfacts"
+          }
+        },
+        "period": {
+          "basis": "最近完整财年",
+          "form": null,
+          "fiscalYear": null,
+          "period": null,
+          "start": null,
+          "end": null,
+          "filed": null,
+          "source": "SEC companyfacts"
+        }
+      },
+      "sec": {
+        "available": true,
+        "cik": "0000937966",
+        "title": "ASML Holding NV",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000937966.json"
+      }
+    },
+    "AMZN": {
+      "symbol": "AMZN",
+      "type": "Stock",
+      "companyName": "AMZN",
+      "businessModel": "电商（北美+国际）+ AWS 云 + 广告 + Prime 订阅 + 物流。AWS 是利润引擎，电商是规模引擎。",
+      "moatEvidence": "物流网络、AWS 客户黏性、Prime 生态、广告数据。规模 moat 极宽。",
+      "keyRisks": "1) 零售利润率薄如纸；2) 云竞争（Azure/GCP）；3) 资本开支巨大；4) 监管。",
+      "aiAngle": "AWS 是 AI 基础设施三巨头之一（与 Azure/GCP 并列）。Bedrock/Trainium 是差异化。",
+      "growthCatalysts": "AWS AI 需求、广告增长、零售利润率改善、物流效率。",
+      "growthSignals": "AWS 增速和利润率、广告收入、零售 margin、capex 回报。",
+      "judgment": {
+        "positives": [
+          "Q1 收入 $181.5B（+17%），净利 $30.3B（+77%），FCF $24.2B（+53%）",
+          "AWS 仍是云市场份额最大的玩家",
+          "广告业务快速增长，利润率极高"
+        ],
+        "concerns": [
+          "零售 gross margin 仅 0.7%，几乎不赚钱",
+          "资本开支强度大，与 MSFT/GOOGL 类似",
+          "估值 value 45/100"
+        ],
+        "actionContext": "Continue observing",
+        "todayNote": null,
+        "etfQuestion": "AWS + 广告是核心价值。但零售的资本密集度拖累整体 FCF yield。需要更好的价格。"
+      },
+      "financials": {
+        "revenue": 716924000000.0,
+        "revenueText": "716.9B",
+        "revenueGrowthPct": 12.377754683294695,
+        "netIncome": 77670000000.0,
+        "netIncomeText": "77.7B",
+        "netIncomeGrowthPct": 31.093032676208487,
+        "grossMarginPct": 0.7714904229737043,
+        "operatingMarginPct": 11.155296795755199,
+        "freeCashFlow": 132777000000.0,
+        "freeCashFlowText": "132.8B",
+        "freeCashFlowGrowthPct": 20.398353426478067,
+        "debtToAssetsPct": null,
+        "roePct": 18.89482198679041,
+        "priceToSales": null,
+        "fcfYieldPct": null,
+        "trailingPE": null,
+        "forwardPE": null,
+        "latest": {
+          "revenue": 181519000000.0,
+          "revenueText": "181.5B",
+          "revenueGrowthPct": 16.607244952366273,
+          "netIncome": 30255000000.0,
+          "netIncomeText": "30.3B",
+          "netIncomeGrowthPct": 76.65090208442808,
+          "grossMarginPct": 0.7013039957249654,
+          "operatingMarginPct": 13.140222235688825,
+          "freeCashFlow": 24171000000.0,
+          "freeCashFlowText": "24.2B",
+          "freeCashFlowGrowthPct": 52.99441669115485,
+          "period": {
+            "basis": "最新财报季度",
+            "form": "10-Q",
+            "fiscalYear": 2026,
+            "period": "Q1",
+            "start": "2026-01-01",
+            "end": "2026-03-31",
+            "filed": "2026-04-30",
+            "source": "SEC companyfacts"
+          }
+        },
+        "period": {
+          "basis": "最近完整财年",
+          "form": "10-K",
+          "fiscalYear": 2025,
+          "period": "FY",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "filed": "2026-02-06",
+          "source": "SEC companyfacts"
+        }
+      },
+      "sec": {
+        "available": true,
+        "cik": "0001018724",
+        "title": "Amazon.com, Inc.",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json"
+      }
+    },
+    "ORCL": {
+      "symbol": "ORCL",
+      "type": "Stock",
+      "companyName": "ORCL",
+      "businessModel": "数据库 + 企业软件 + 云基础设施（OCI）+ AI 云服务。从传统 on-prem 转型云。",
+      "moatEvidence": "企业数据库客户锁定极强（Oracle DB 替换成本极高），高转换成本。",
+      "keyRisks": "1) FCF 为负（-$394M FY / -$362M Q3），资本开支吃掉了所有利润；2) 云竞争；3) 负债高。",
+      "aiAngle": "OCI 作为 AI 云基础设施受益，但规模远不如 AWS/Azure/GCP。",
+      "growthCatalysts": "AI 云订单（RPO）、数据库上云、GPU 云资源。",
+      "growthSignals": "云收入增速（最新 +22%）、RPO、FCF 何时转正、负债变化。",
+      "judgment": {
+        "positives": [
+          "云收入 +22% 加速增长，RPO 强劲",
+          "数据库 moat 带来稳定的 maintenance 收入",
+          "营业利润率 31.8% 本身不差"
+        ],
+        "concerns": [
+          "FCF 持续为负，这在大型科技公司中很罕见，说明 capex 太激进",
+          "负债重、ROE 59% 看起来高但可能是杠杆效应",
+          "AI 云的竞争对手太强（AWS/Azure/GCP）"
+        ],
+        "actionContext": "Not attractive",
+        "todayNote": null,
+        "etfQuestion": "FCF 为负的公司不符合安全边际原则。等 FCF 转正再说。"
+      },
+      "financials": {
+        "revenue": 57399000000.0,
+        "revenueText": "57.4B",
+        "revenueGrowthPct": 8.379751137629587,
+        "netIncome": 12443000000.0,
+        "netIncomeText": "12.4B",
+        "netIncomeGrowthPct": 18.878379669437283,
+        "grossMarginPct": 42.3125838429241,
+        "operatingMarginPct": 30.798445965957594,
+        "freeCashFlow": -394000000.0,
+        "freeCashFlowText": "-394.0M",
+        "freeCashFlowGrowthPct": 11.5032399721523,
+        "debtToAssetsPct": null,
+        "roePct": 59.33997806285469,
+        "priceToSales": null,
+        "fcfYieldPct": null,
+        "trailingPE": null,
+        "forwardPE": null,
+        "latest": {
+          "revenue": 17190000000.0,
+          "revenueText": "17.2B",
+          "revenueGrowthPct": 21.65605095541401,
+          "netIncome": 3721000000.0,
+          "netIncomeText": "3.7B",
+          "netIncomeGrowthPct": 26.73705722070845,
+          "grossMarginPct": 31.751018033740547,
+          "operatingMarginPct": 31.785922047702154,
+          "freeCashFlow": -362000000.0,
+          "freeCashFlowText": "-362.0M",
+          "freeCashFlowGrowthPct": 9.600107715093586,
+          "period": {
+            "basis": "最新财报季度",
+            "form": "10-Q",
+            "fiscalYear": 2026,
+            "period": "Q3",
+            "start": "2025-12-01",
+            "end": "2026-02-28",
+            "filed": "2026-03-11",
+            "source": "SEC companyfacts"
+          }
+        },
+        "period": {
+          "basis": "最近完整财年",
+          "form": "10-K",
+          "fiscalYear": 2025,
+          "period": "FY",
+          "start": "2024-06-01",
+          "end": "2025-05-31",
+          "filed": "2025-06-18",
+          "source": "SEC companyfacts"
+        }
+      },
+      "sec": {
+        "available": true,
+        "cik": "0001341439",
+        "title": "Oracle Corp",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001341439.json"
+      }
+    },
+    "PLTR": {
+      "symbol": "PLTR",
+      "type": "Stock",
+      "companyName": "PLTR",
+      "businessModel": "政府和企业数据平台。Gotham（政府）+ Foundry（企业）+ AIP（AI 平台）。靠深度嵌入客户工作流赚钱。",
+      "moatEvidence": "高切换成本（深度定制化集成）、政府安全资质、数据管道复杂度。但 moat 宽度取决于客户扩张能力。",
+      "keyRisks": "1) 估值极高——收入仅 $4.5B 但市值巨大；2) 叙事 > 财务兑现；3) 客户集中度。",
+      "aiAngle": "AIP 是企业 AI 应用层的纯正玩家。Q1 收入 +85% 加速增长、净利 +307%。数字很亮但基数小。",
+      "growthCatalysts": "AIP 商业化加速、政府+企业客户扩张、利润率持续提升。",
+      "growthSignals": "商业客户数、RPO、收入增速能否持续 50%+、估值与增长匹配。",
+      "judgment": {
+        "positives": [
+          "Q1 收入 $1.6B（+85%），净利 $870M（+307%），FCF $892M（+190%）",
+          "毛利率 87%、营业利润率 46%，软件公司顶级水平",
+          "AI 应用层最纯正的标的之一"
+        ],
+        "concerns": [
+          "年化收入 ~$6.5B 的公司，市值可能在 $200B+，估值极度拉伸",
+          "增速能否持续 50%+ 是核心问题——目前是 AI hype 驱动",
+          "政府收入占比高，预算周期影响大"
+        ],
+        "actionContext": "Continue observing",
+        "todayNote": null,
+        "etfQuestion": "增长确实亮眼，但估值太高。芒格会说：好公司不等于好投资，价格决定回报。"
+      },
+      "financials": {
+        "revenue": 4475446000.0,
+        "revenueText": "4.5B",
+        "revenueGrowthPct": 56.183390932215495,
+        "netIncome": 1625033000.0,
+        "netIncomeText": "1.6B",
+        "netIncomeGrowthPct": 251.59414959215906,
+        "grossMarginPct": 82.36651721415028,
+        "operatingMarginPct": 31.59495165398041,
+        "freeCashFlow": 2100591000.0,
+        "freeCashFlowText": "2.1B",
+        "freeCashFlowGrowthPct": 84.98463858423646,
+        "debtToAssetsPct": 15.86875049997798,
+        "roePct": 21.997753431985952,
+        "priceToSales": null,
+        "fcfYieldPct": null,
+        "trailingPE": null,
+        "forwardPE": null,
+        "latest": {
+          "revenue": 1632583000.0,
+          "revenueText": "1.6B",
+          "revenueGrowthPct": 84.71163256416494,
+          "netIncome": 870527000.0,
+          "netIncomeText": "870.5M",
+          "netIncomeGrowthPct": 306.7293990122926,
+          "grossMarginPct": 86.78180527421883,
+          "operatingMarginPct": 46.184359386322164,
+          "freeCashFlow": 891764000.0,
+          "freeCashFlowText": "891.8M",
+          "freeCashFlowGrowthPct": 189.80735698423595,
+          "period": {
+            "basis": "最新财报季度",
+            "form": "10-Q",
+            "fiscalYear": 2026,
+            "period": "Q1",
+            "start": "2026-01-01",
+            "end": "2026-03-31",
+            "filed": "2026-05-05",
+            "source": "SEC companyfacts"
+          }
+        },
+        "period": {
+          "basis": "最近完整财年",
+          "form": "10-K",
+          "fiscalYear": 2025,
+          "period": "FY",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "filed": "2026-02-17",
+          "source": "SEC companyfacts"
+        }
+      },
+      "sec": {
+        "available": true,
+        "cik": "0001321655",
+        "title": "Palantir Technologies Inc.",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001321655.json"
+      }
+    },
+    "NOW": {
+      "symbol": "NOW",
+      "type": "Stock",
+      "companyName": "NOW",
+      "businessModel": "企业 IT 工作流平台（ITSM/ITOM/HR/CSM），SaaS 订阅模式，续约率极高。",
+      "moatEvidence": "企业流程深度嵌入、高续约率（~98%）、平台扩展能力强。客户一旦用了很难换。",
+      "keyRisks": "1) 估值高；2) 净利润增长几乎停滞（Q1 +2% YoY）；3) FCF 增长放缓。",
+      "aiAngle": "AI 嵌入工作流自动化，偏应用层效率提升。AI 是产品功能增强而非独立收入流。",
+      "growthCatalysts": "AI 工作流产品、企业续约扩张、平台模块渗透。",
+      "growthSignals": "订阅收入增长（+22%）、净留存率、RPO、经营利润率。",
+      "judgment": {
+        "positives": [
+          "收入 +22% 稳健增长，订阅模式有很高的可预测性",
+          "FCF $1.5B/季度，现金生成能力不错",
+          "企业工作流 moat 强"
+        ],
+        "concerns": [
+          "净利润 +2% 几乎不增长，说明费用在吃利润",
+          "FCF 增长也接近停滞（-0.4%），不是好信号",
+          "估值偏高，value 45/100"
+        ],
+        "actionContext": "Continue observing",
+        "todayNote": null,
+        "etfQuestion": "好公司但增长质量在下降。需要看到利润率改善才有说服力。"
+      },
+      "financials": {
+        "revenue": 13278000000.0,
+        "revenueText": "13.3B",
+        "revenueGrowthPct": 20.88492352512745,
+        "netIncome": 1748000000.0,
+        "netIncomeText": "1.7B",
+        "netIncomeGrowthPct": 22.666666666666657,
+        "grossMarginPct": 77.534267208917,
+        "operatingMarginPct": 13.737008585630367,
+        "freeCashFlow": 4576000000.0,
+        "freeCashFlowText": "4.6B",
+        "freeCashFlowGrowthPct": 27.58378251699085,
+        "debtToAssetsPct": 50.211229741147555,
+        "roePct": 13.483492749151496,
+        "priceToSales": null,
+        "fcfYieldPct": null,
+        "trailingPE": null,
+        "forwardPE": null,
+        "latest": {
+          "revenue": 3770000000.0,
+          "revenueText": "3.8B",
+          "revenueGrowthPct": 22.085492227979266,
+          "netIncome": 469000000.0,
+          "netIncomeText": "469.0M",
+          "netIncomeGrowthPct": 1.9565217391304346,
+          "grossMarginPct": 75.06631299734748,
+          "operatingMarginPct": 13.342175066312997,
+          "freeCashFlow": 1529000000.0,
+          "freeCashFlowText": "1.5B",
+          "freeCashFlowGrowthPct": -0.4174120453190211,
+          "period": {
+            "basis": "最新财报季度",
+            "form": "10-Q",
+            "fiscalYear": 2026,
+            "period": "Q1",
+            "start": "2026-01-01",
+            "end": "2026-03-31",
+            "filed": "2026-04-23",
+            "source": "SEC companyfacts"
+          }
+        },
+        "period": {
+          "basis": "最近完整财年",
+          "form": "10-K",
+          "fiscalYear": 2025,
+          "period": "FY",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "filed": "2026-01-29",
+          "source": "SEC companyfacts"
+        }
+      },
+      "sec": {
+        "available": true,
+        "cik": "0001373715",
+        "title": "ServiceNow, Inc.",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001373715.json"
+      }
+    },
+    "CRM": {
+      "symbol": "CRM",
+      "type": "Stock",
+      "companyName": "CRM",
+      "businessModel": "CRM 软件（Sales/Service/Marketing Cloud）+ 数据云 + AI（Einstein/Agentforce）。SaaS 订阅模式。",
+      "moatEvidence": "CRM 市场份额第一、客户数据资产、应用生态、高转换成本。",
+      "keyRisks": "1) 收入增长放缓至 ~9%；2) AI 变现证据不足；3) 竞争（HubSpot/MSFT Dynamics）。",
+      "aiAngle": "Agentforce/Einstein 是 AI CRM 方向，但市场还在等变现证据。",
+      "growthCatalysts": "AI CRM 采纳、数据云增长、利润率改善、回购。",
+      "growthSignals": "CRPO、订阅收入增速、数据云采用率、经营利润率。",
+      "judgment": {
+        "positives": [
+          "FCF $14.4B/年强劲，FCF margin 极高",
+          "营业利润率持续改善（20%+）",
+          "CRM 市场地位稳固"
+        ],
+        "concerns": [
+          "收入增速 ~9% 对于这个估值偏低",
+          "AI 产品（Agentforce）的客户采纳和变现还没看到数据",
+          "增长放缓的成熟 SaaS 公司，不是成长股了"
+        ],
+        "actionContext": "Continue observing",
+        "todayNote": null,
+        "etfQuestion": "稳健但不 exciting。收入增速 9% 的公司，需要更低的估值才有安全边际。"
+      },
+      "financials": {
+        "revenue": 41525000000.0,
+        "revenueText": "41.5B",
+        "revenueGrowthPct": 9.579100145137875,
+        "netIncome": 7457000000.0,
+        "netIncomeText": "7.5B",
+        "netIncomeGrowthPct": 20.33241891237696,
+        "grossMarginPct": 77.67609873570139,
+        "operatingMarginPct": 20.06261288380494,
+        "freeCashFlow": 14402000000.0,
+        "freeCashFlowText": "14.4B",
+        "freeCashFlowGrowthPct": 14.543232508402081,
+        "debtToAssetsPct": 47.33805262454922,
+        "roePct": 12.608636840147442,
+        "priceToSales": null,
+        "fcfYieldPct": null,
+        "trailingPE": null,
+        "forwardPE": null,
+        "latest": {
+          "revenue": 10259000000.0,
+          "revenueText": "10.3B",
+          "revenueGrowthPct": 8.629817873782297,
+          "netIncome": 2086000000.0,
+          "netIncomeText": "2.1B",
+          "netIncomeGrowthPct": 36.607727570399476,
+          "grossMarginPct": 78.01930012671801,
+          "operatingMarginPct": 21.32761477726874,
+          "freeCashFlow": 2177000000.0,
+          "freeCashFlowText": "2.2B",
+          "freeCashFlowGrowthPct": 16.7927382753404,
+          "period": {
+            "basis": "最新财报季度",
+            "form": "10-Q",
+            "fiscalYear": 2026,
+            "period": "Q3",
+            "start": "2025-08-01",
+            "end": "2025-10-31",
+            "filed": "2025-12-04",
+            "source": "SEC companyfacts"
+          }
+        },
+        "period": {
+          "basis": "最近完整财年",
+          "form": "10-K",
+          "fiscalYear": 2025,
+          "period": "FY",
+          "start": "2025-02-01",
+          "end": "2026-01-31",
+          "filed": "2026-03-02",
+          "source": "SEC companyfacts"
+        }
+      },
+      "sec": {
+        "available": true,
+        "cik": "0001108524",
+        "title": "Salesforce, Inc.",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json"
+      }
+    }
+  },
+  "agentInsightsDate": "2026-05-16T22:05:00+08:00"
+}

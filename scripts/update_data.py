@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import http.cookiejar
 import json
 import math
 import statistics
@@ -19,7 +20,9 @@ ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "config" / "watchlist.json"
 DATA_DIR = ROOT / "data"
 REPORTS_DIR = ROOT / "reports"
-USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X) FinanceLearningDashboard/0.1"
+USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+COOKIE_JAR: http.cookiejar.CookieJar | None = None
+CRUMB: str | None = None
 
 AI_EXPOSURE = {
     "NVDA": 98,
@@ -105,10 +108,53 @@ def clamp(value: float, low: float = 0, high: float = 100) -> float:
     return max(low, min(high, value))
 
 
-def http_json(url: str, timeout: int = 20) -> dict:
+def http_json(url: str, timeout: int = 20, use_auth: bool = False, retries: int = 2) -> dict:
+    global COOKIE_JAR
+    if use_auth and COOKIE_JAR is not None:
+        opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(COOKIE_JAR))
+    else:
+        opener = urllib.request.build_opener()
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(request, timeout=timeout) as response:
-        return json.loads(response.read().decode("utf-8"))
+    for attempt in range(retries + 1):
+        try:
+            with opener.open(request, timeout=timeout) as response:
+                return json.loads(response.read().decode("utf-8"))
+        except urllib.error.HTTPError as exc:
+            if exc.code == 429 and attempt < retries:
+                wait = 5 * (attempt + 1)
+                print(f"429 rate limit, waiting {wait}s (attempt {attempt+1}/{retries+1})", file=sys.stderr)
+                time.sleep(wait)
+                continue
+            raise
+
+
+def init_yahoo_auth() -> bool:
+    """Obtain Yahoo Finance cookie + crumb for authenticated endpoints."""
+    global COOKIE_JAR, CRUMB
+    import http.cookiejar
+    COOKIE_JAR = http.cookiejar.CookieJar()
+    opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(COOKIE_JAR))
+    req = urllib.request.Request("https://fc.yahoo.com", headers={"User-Agent": USER_AGENT})
+    try:
+        opener.open(req, timeout=10)
+    except urllib.error.HTTPError:
+        pass  # 404 is expected, we just need the cookies
+    except Exception as exc:
+        print(f"Yahoo auth cookie failed: {exc}", file=sys.stderr)
+        return False
+    req2 = urllib.request.Request("https://query2.finance.yahoo.com/v1/test/getcrumb", headers={"User-Agent": USER_AGENT})
+    try:
+        with opener.open(req2, timeout=10) as resp:
+            CRUMB = resp.read().decode("utf-8").strip()
+    except Exception as exc:
+        print(f"Yahoo crumb failed: {exc}", file=sys.stderr)
+        return False
+    if not CRUMB or "Unauthorized" in CRUMB:
+        print(f"Yahoo crumb invalid: {CRUMB}", file=sys.stderr)
+        CRUMB = None
+        return False
+    print(f"Yahoo auth OK (crumb={CRUMB[:8]}...)")
+    return True
 
 
 def load_config() -> dict:
@@ -122,10 +168,13 @@ def write_json(path: Path, data: object) -> None:
 def fetch_quotes(symbols: list[str]) -> dict[str, dict]:
     if not symbols:
         return {}
-    query = urllib.parse.urlencode({"symbols": ",".join(symbols)})
-    url = f"https://query1.finance.yahoo.com/v7/finance/quote?{query}"
+    if CRUMB is None:
+        print("No crumb; skipping quote endpoint", file=sys.stderr)
+        return {}
+    query = urllib.parse.urlencode({"symbols": ",".join(symbols), "crumb": CRUMB})
+    url = f"https://query2.finance.yahoo.com/v7/finance/quote?{query}"
     try:
-        data = http_json(url)
+        data = http_json(url, use_auth=True)
     except Exception as exc:
         print(f"quote endpoint unavailable; using chart fallback ({exc})", file=sys.stderr)
         return {}
@@ -135,11 +184,11 @@ def fetch_quotes(symbols: list[str]) -> dict[str, dict]:
 
 def fetch_chart(symbol: str) -> dict:
     url = (
-        "https://query1.finance.yahoo.com/v8/finance/chart/"
+        "https://query2.finance.yahoo.com/v8/finance/chart/"
         f"{urllib.parse.quote(symbol)}?range=1y&interval=1d&includePrePost=false"
     )
     try:
-        data = http_json(url)
+        data = http_json(url, use_auth=True, retries=3)
     except Exception as exc:
         print(f"chart fetch failed for {symbol}: {exc}", file=sys.stderr)
         return {"rows": [], "meta": {}}
@@ -470,6 +519,7 @@ def main() -> int:
         for item in config["tickers"]
     ]
     symbols = [item.symbol for item in ticker_configs]
+    init_yahoo_auth()
     quotes = fetch_quotes(symbols)
     latest = {
         "generatedAt": datetime.now(timezone.utc).isoformat(),
@@ -527,7 +577,7 @@ def main() -> int:
         item["scores"] = score_security(item, config_item, item["managerFootprints"])
         latest["securities"][symbol] = item
         scored[symbol] = item
-        time.sleep(0.1)
+        time.sleep(1.5)
 
     rankings = build_rankings(scored)
     scores = {

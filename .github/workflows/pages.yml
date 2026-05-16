@@ -24,15 +24,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: Generate public data snapshot
-        run: |
-          python scripts/update_data.py
-
       - name: Build static site
         run: |
           mkdir -p public
@@ -40,7 +31,8 @@ jobs:
           cp -R dashboard public/
           cp -R config public/
           cp -R data public/
-          find public/data -type f \( -name "*.log" -o -name "discord-channel.json" -o -name "scheduler-state.json" \) -delete
+          # Remove local-only files that shouldn't be in the public site
+          find public/data -type f \( -name "*.log" -o -name "discord-channel.json" -o -name "scheduler-state.json" \) -delete 2>/dev/null || true
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
