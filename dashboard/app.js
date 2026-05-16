@@ -179,91 +179,102 @@ function renderChart(item) {
   const rangeCount = { "1M": 22, "3M": 63, "6M": 126, "1Y": 252 }[activeRange] || 63;
   const rows = history.slice(-rangeCount);
   if (rows.length < 2) {
+    svg.setAttribute("viewBox", "0 0 720 360");
     svg.innerHTML = `<text x="20" y="40" fill="#65706b">暂无足够价格数据</text>`;
     return;
   }
   const width = 720;
-  const height = 220;
-  const pad = 20;
-  const closes = rows.map((row) => row.close);
+  const height = 360;
+  const padL = 12, padR = 12, padT = 60, padB = 30;
+  const chartW = width - padL - padR;
+  const chartH = height - padT - padB;
+  svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+
+  const closes = rows.map(r => r.close);
   const min = Math.min(...closes);
   const max = Math.max(...closes);
   const span = max - min || 1;
-  const points = rows.map((row, index) => {
-    const x = pad + (index / (rows.length - 1)) * (width - pad * 2);
-    const y = height - pad - ((row.close - min) / span) * (height - pad * 2);
+  const startPrice = closes[0];
+  const endPrice = closes[closes.length - 1];
+  const totalReturn = ((endPrice / startPrice - 1) * 100);
+  const isUp = totalReturn >= 0;
+  const lineColor = isUp ? "#34c759" : "#ff3b30";
+  const fillColor = isUp ? "rgba(52,199,89,0.08)" : "rgba(255,59,48,0.06)";
+
+  const points = rows.map((row, i) => {
+    const x = padL + (i / (rows.length - 1)) * chartW;
+    const y = padT + chartH - ((row.close - min) / span) * chartH;
     return [x, y];
   });
-  const path = points.map((point, index) => `${index === 0 ? "M" : "L"} ${point[0].toFixed(1)} ${point[1].toFixed(1)}`).join(" ");
-  const fill = `${path} L ${points[points.length - 1][0].toFixed(1)} ${height - pad} L ${points[0][0].toFixed(1)} ${height - pad} Z`;
-  svg.innerHTML = `
-    <line class="chart-axis" x1="${pad}" y1="${height - pad}" x2="${width - pad}" y2="${height - pad}"></line>
-    <line class="chart-axis" x1="${pad}" y1="${pad}" x2="${pad}" y2="${height - pad}"></line>
-    <path class="chart-fill" d="${fill}"></path>
-    <path class="chart-line" d="${path}"></path>
-    <text x="${pad}" y="18" fill="#65706b">${fmtPrice(max)}</text>
-    <text x="${pad}" y="${height - 4}" fill="#65706b">${fmtPrice(min)}</text>
-    <line class="chart-crosshair-v" x1="0" y1="${pad}" x2="0" y2="${height - pad}" stroke="#888" stroke-width="0.5" stroke-dasharray="3,3" opacity="0"></line>
-    <line class="chart-crosshair-h" x1="${pad}" y1="0" x2="${width - pad}" y2="0" stroke="#888" stroke-width="0.5" stroke-dasharray="3,3" opacity="0"></line>
-    <circle class="chart-dot" cx="0" cy="0" r="3.5" fill="var(--accent, #4f8cff)" opacity="0"></circle>
-    <rect class="chart-tooltip-bg" x="0" y="0" width="130" height="38" rx="6" fill="rgba(30,34,40,0.92)" opacity="0"></rect>
-    <text class="chart-tooltip-date" x="0" y="0" fill="#ccc" font-size="11"></text>
-    <text class="chart-tooltip-price" x="0" y="0" fill="#fff" font-size="13" font-weight="600"></text>
-    <rect class="chart-hover-area" x="${pad}" y="0" width="${width - pad * 2}" height="${height}" fill="transparent" style="pointer-events:all;cursor:crosshair"></rect>
-  `;
-  // Interactive tooltip
-  const hoverArea = svg.querySelector(".chart-hover-area");
-  const crossV = svg.querySelector(".chart-crosshair-v");
-  const crossH = svg.querySelector(".chart-crosshair-h");
-  const dot = svg.querySelector(".chart-dot");
-  const tooltipBg = svg.querySelector(".chart-tooltip-bg");
-  const tooltipDate = svg.querySelector(".chart-tooltip-date");
-  const tooltipPrice = svg.querySelector(".chart-tooltip-price");
 
-  function nearest(clientX) {
-    const rect = svg.getBoundingClientRect();
-    const scaleX = width / rect.width;
-    const mx = (clientX - rect.left) * scaleX;
-    let best = 0, bestDist = Infinity;
-    points.forEach(([px], i) => {
-      const d = Math.abs(px - mx);
-      if (d < bestDist) { bestDist = d; best = i; }
-    });
-    return best;
+  const path = points.map((p, i) => `${i === 0 ? "M" : "L"} ${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(" ");
+  const fillPath = `${path} L ${points[points.length-1][0].toFixed(1)} ${padT + chartH} L ${points[0][0].toFixed(1)} ${padT + chartH} Z`;
+
+  // Y-axis grid lines (5 levels)
+  let gridLines = "";
+  for (let i = 0; i <= 4; i++) {
+    const val = min + (span * i / 4);
+    const gy = padT + chartH - (i / 4) * chartH;
+    gridLines += `<line x1="${padL}" y1="${gy.toFixed(1)}" x2="${width - padR}" y2="${gy.toFixed(1)}" stroke="#e8ebe9" stroke-width="0.5"/>`;
+    gridLines += `<text x="${width - padR}" y="${gy.toFixed(1) - 4}" fill="#aaa" font-size="10" text-anchor="end">$${val.toFixed(val >= 100 ? 0 : 2)}</text>`;
   }
 
-  function showTooltip(idx) {
+  // Header: current price + change (will be updated on hover)
+  const pctSign = totalReturn >= 0 ? "+" : "";
+  svg.innerHTML = `
+    ${gridLines}
+    <path d="${fillPath}" fill="${fillColor}"/>
+    <path d="${path}" fill="none" stroke="${lineColor}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+    <line class="cv" x1="0" y1="${padT}" x2="0" y2="${padT + chartH}" stroke="${lineColor}" stroke-width="1" opacity="0"/>
+    <circle class="cd" cx="0" cy="0" r="5" fill="${lineColor}" stroke="#fff" stroke-width="2" opacity="0"/>
+    <text class="hd-price" x="${padL}" y="24" fill="var(--ink)" font-size="22" font-weight="700">$${endPrice.toFixed(2)}</text>
+    <text class="hd-change" x="${padL + 130}" y="24" fill="${lineColor}" font-size="16" font-weight="600">${pctSign}${totalReturn.toFixed(2)}%</text>
+    <text class="hd-date" x="${padL}" y="44" fill="#999" font-size="12">${rows[rows.length-1].date}</text>
+    <rect class="ha" x="${padL}" y="${padT}" width="${chartW}" height="${chartH}" fill="transparent" style="pointer-events:all;cursor:crosshair"/>
+  `;
+
+  const ha = svg.querySelector(".ha");
+  const cv = svg.querySelector(".cv");
+  const cd = svg.querySelector(".cd");
+  const hdPrice = svg.querySelector(".hd-price");
+  const hdChange = svg.querySelector(".hd-change");
+  const hdDate = svg.querySelector(".hd-date");
+
+  function idxFromClient(clientX) {
+    const rect = svg.getBoundingClientRect();
+    const ratio = width / rect.width;
+    const mx = (clientX - rect.left) * ratio;
+    const rel = (mx - padL) / chartW;
+    const idx = Math.round(rel * (rows.length - 1));
+    return Math.max(0, Math.min(rows.length - 1, idx));
+  }
+
+  function show(idx) {
     const [px, py] = points[idx];
     const row = rows[idx];
-    crossV.setAttribute("x1", px); crossV.setAttribute("x2", px); crossV.setAttribute("opacity", "1");
-    crossH.setAttribute("y1", py); crossH.setAttribute("y2", py); crossH.setAttribute("opacity", "1");
-    dot.setAttribute("cx", px); dot.setAttribute("cy", py); dot.setAttribute("opacity", "1");
-    const dateStr = row.date;
-    const priceStr = `$${row.close.toFixed(2)}`;
-    const pctFromStart = ((row.close / rows[0].close - 1) * 100).toFixed(1);
-    const pctSign = pctFromStart >= 0 ? "+" : "";
-    // Position tooltip
-    let tx = px + 10, ty = py - 24;
-    if (tx + 140 > width - pad) tx = px - 140;
-    if (ty < pad + 5) ty = py + 10;
-    tooltipBg.setAttribute("x", tx); tooltipBg.setAttribute("y", ty); tooltipBg.setAttribute("opacity", "1");
-    tooltipDate.setAttribute("x", tx + 8); tooltipDate.setAttribute("y", ty + 14); tooltipDate.textContent = dateStr;
-    tooltipPrice.setAttribute("x", tx + 8); tooltipPrice.setAttribute("y", ty + 30); tooltipPrice.textContent = `${priceStr}  ${pctSign}${pctFromStart}%`;
+    cv.setAttribute("x1", px); cv.setAttribute("x2", px); cv.setAttribute("opacity", "1");
+    cd.setAttribute("cx", px); cd.setAttribute("cy", py); cd.setAttribute("opacity", "1");
+    const chg = ((row.close / startPrice - 1) * 100);
+    const sign = chg >= 0 ? "+" : "";
+    hdPrice.textContent = `$${row.close.toFixed(2)}`;
+    hdChange.textContent = `${sign}${chg.toFixed(2)}%`;
+    hdChange.setAttribute("fill", chg >= 0 ? "#34c759" : "#ff3b30");
+    hdDate.textContent = row.date;
   }
 
-  function hideTooltip() {
-    crossV.setAttribute("opacity", "0");
-    crossH.setAttribute("opacity", "0");
-    dot.setAttribute("opacity", "0");
-    tooltipBg.setAttribute("opacity", "0");
-    tooltipDate.textContent = "";
-    tooltipPrice.textContent = "";
+  function hide() {
+    cv.setAttribute("opacity", "0");
+    cd.setAttribute("opacity", "0");
+    hdPrice.textContent = `$${endPrice.toFixed(2)}`;
+    hdChange.textContent = `${pctSign}${totalReturn.toFixed(2)}%`;
+    hdChange.setAttribute("fill", lineColor);
+    hdDate.textContent = rows[rows.length-1].date;
   }
 
-  hoverArea.addEventListener("mousemove", (e) => showTooltip(nearest(e.clientX)));
-  hoverArea.addEventListener("touchmove", (e) => { e.preventDefault(); showTooltip(nearest(e.touches[0].clientX)); }, { passive: false });
-  hoverArea.addEventListener("mouseleave", hideTooltip);
-  hoverArea.addEventListener("touchend", hideTooltip);
+  ha.addEventListener("mousemove", e => show(idxFromClient(e.clientX)));
+  ha.addEventListener("touchmove", e => { e.preventDefault(); show(idxFromClient(e.touches[0].clientX)); }, { passive: false });
+  ha.addEventListener("mouseleave", hide);
+  ha.addEventListener("touchend", hide);
 }
 
 function renderFundamentals(item, researchItem) {

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-16T14:45:33.730662+00:00",
-  "generatedAtLocal": "2026-05-16 22:45:33 CST",
+  "generatedAt": "2026-05-16T14:36:18.976368+00:00",
+  "generatedAtLocal": "2026-05-16 22:36:18 CST",
   "sources": {
     "secCompanyFacts": "https://www.sec.gov/edgar/sec-api-documentation",
     "notes": "Financials from SEC EDGAR. Qualitative analysis in agent-insights.json."
@@ -434,60 +434,13 @@
       "type": "Stock",
       "companyName": "NVDA",
       "sec": {
-        "available": true,
+        "available": false,
         "cik": "0001045810",
         "title": "NVIDIA Corp",
-        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json"
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json",
+        "note": "SEC 数据获取失败：The read operation timed out"
       },
-      "financials": {
-        "revenue": 60922000000,
-        "revenueText": "$60.9B",
-        "revenueGrowthPct": 125.85452658115224,
-        "netIncome": 29760000000,
-        "netIncomeText": "$29.8B",
-        "netIncomeGrowthPct": 581.3186813186813,
-        "grossMarginPct": 72.71757329043696,
-        "operatingMarginPct": 54.121663766783755,
-        "freeCashFlow": 28012399000,
-        "freeCashFlowText": "$28.0B",
-        "debtToAssetsPct": 28.919095707027715,
-        "roePct": 134.65454051852856,
-        "priceToSales": null,
-        "fcfYieldPct": null,
-        "trailingPE": null,
-        "forwardPE": null,
-        "latest": {
-          "revenue": 91166000000,
-          "revenueText": "$91.2B",
-          "revenueGrowthPct": 62.55259967192068,
-          "netIncome": 50789000000,
-          "netIncomeText": "$50.8B",
-          "grossMarginPct": 75.83419257179212,
-          "operatingMarginPct": 62.9829102955049,
-          "freeCashFlow": 47063000000,
-          "freeCashFlowText": "$47.1B",
-          "period": {
-            "basis": "最新财报季度",
-            "form": "10-Q",
-            "fiscalYear": 2026,
-            "period": "Q3",
-            "start": "2024-01-29",
-            "end": "2024-10-27",
-            "filed": "2025-11-19",
-            "source": "SEC companyfacts"
-          }
-        },
-        "period": {
-          "basis": "最近完整财年",
-          "form": "10-K",
-          "fiscalYear": 2026,
-          "period": "FY",
-          "start": "2023-01-30",
-          "end": "2024-01-28",
-          "filed": "2026-02-25",
-          "source": "SEC companyfacts"
-        }
-      },
+      "financials": {},
       "businessModel": "GPU 加速器 + 网络 + 系统 + CUDA 软件生态。几乎所有 AI 训练和推理都跑在 NVIDIA 硬件上。",
       "moatEvidence": "CUDA 生态锁定（开发者迁移成本极高）、性能代差领先、供应链规模。Moat 在 AI 时代变得更宽，但长期要看自研芯片竞争。",
       "keyRisks": "1) 市场预期极高，任何 miss 都会暴跌；2) 自研芯片（Google TPU/Amazon Trainium/MSFT Maia）在蚕食份额；3) 出口限制；4) 半导体周期风险。",

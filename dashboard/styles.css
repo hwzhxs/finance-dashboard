@@ -307,8 +307,9 @@ main {
 
 #priceChart {
   width: 100%;
-  height: 220px;
+  height: 360px;
   display: block;
+  touch-action: none;
 }
 
 .chart-axis {
@@ -319,7 +320,9 @@ main {
 .chart-line {
   fill: none;
   stroke: var(--primary);
-  stroke-width: 3;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
 }
 
 .chart-fill {
