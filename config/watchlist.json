@@ -1,0 +1,125 @@
+{
+  "baseCurrency": "USD",
+  "dashboardPort": 18888,
+  "discord": {
+    "channelName": "husstle"
+  },
+  "learningPool": {
+    "cashPct": 80,
+    "positions": {
+      "PDD": 20
+    },
+    "softLimits": {
+      "singleStockPct": 20,
+      "newStockInitialPctMin": 3,
+      "newStockInitialPctMax": 5
+    }
+  },
+  "tickers": [
+    { "symbol": "SPY", "type": "ETF", "theme": "US large-cap core", "expenseRatio": 0.0945 },
+    { "symbol": "QQQ", "type": "ETF", "theme": "Nasdaq growth and technology", "expenseRatio": 0.20 },
+    { "symbol": "VOO", "type": "ETF", "theme": "US large-cap core", "expenseRatio": 0.03 },
+    { "symbol": "VTI", "type": "ETF", "theme": "Total US market core", "expenseRatio": 0.03 },
+    { "symbol": "SGOV", "type": "ETF", "theme": "Treasury bill cash management", "expenseRatio": 0.09 },
+    { "symbol": "PDD", "type": "Stock", "theme": "E-commerce learning position" },
+    { "symbol": "AAPL", "type": "Stock", "theme": "Consumer technology and ecosystem" },
+    { "symbol": "MSFT", "type": "Stock", "theme": "Cloud, software, AI infrastructure" },
+    { "symbol": "NVDA", "type": "Stock", "theme": "AI accelerators and compute platform" },
+    { "symbol": "TSLA", "type": "Stock", "theme": "EV, autonomy, energy, high optionality" },
+    { "symbol": "GOOGL", "type": "Stock", "theme": "Search, ads, cloud, AI platform" },
+    { "symbol": "AMD", "type": "Stock", "theme": "AI accelerators and CPUs" },
+    { "symbol": "AVGO", "type": "Stock", "theme": "AI networking, custom silicon, infrastructure chips" },
+    { "symbol": "TSM", "type": "Stock", "theme": "Semiconductor foundry and AI supply chain" },
+    { "symbol": "ASML", "type": "Stock", "theme": "Semiconductor lithography equipment" },
+    { "symbol": "AMZN", "type": "Stock", "theme": "Cloud, e-commerce, AI infrastructure" },
+    { "symbol": "ORCL", "type": "Stock", "theme": "Cloud infrastructure and enterprise software" },
+    { "symbol": "PLTR", "type": "Stock", "theme": "AI software and data platforms" },
+    { "symbol": "NOW", "type": "Stock", "theme": "Enterprise workflow software with AI layer" },
+    { "symbol": "CRM", "type": "Stock", "theme": "Enterprise software and AI CRM" }
+  ],
+  "dynamicCandidates": [
+    "AMD",
+    "AVGO",
+    "TSM",
+    "ASML",
+    "AMZN",
+    "ORCL",
+    "PLTR",
+    "NOW",
+    "CRM",
+    "SNOW",
+    "DDOG",
+    "VRT",
+    "ETN",
+    "CEG",
+    "CRWD",
+    "PANW",
+    "SMH",
+    "XLK",
+    "IGV"
+  ],
+  "expertFootprints": [
+    {
+      "expert": "Berkshire Hathaway / Warren Buffett",
+      "style": "质量价值、长期持有、护城河、现金流、安全边际",
+      "lastUpdated": "季度 13F 披露，需校验最新文件",
+      "actions": [
+        { "symbol": "AAPL", "action": "长期重仓/近期曾有减仓", "relevance": "高", "note": "适合作为品牌、现金流和股东回报案例。13F 有延迟。" }
+      ]
+    },
+    {
+      "expert": "Bill Ackman / Pershing Square",
+      "style": "集中持仓、优质企业、可理解商业模式、催化剂",
+      "lastUpdated": "季度 13F 披露，需校验最新文件",
+      "actions": [
+        { "symbol": "GOOGL", "action": "曾作为大型科技质量股参考", "relevance": "中", "note": "适合观察广告/AI 转型和估值重估逻辑。" }
+      ]
+    },
+    {
+      "expert": "Stanley Druckenmiller",
+      "style": "宏观趋势、成长动量、风险控制、灵活调仓",
+      "lastUpdated": "季度 13F 披露，需校验最新文件",
+      "actions": [
+        { "symbol": "NVDA", "action": "AI 主题相关持仓曾受市场关注", "relevance": "中", "note": "适合看趋势交易和仓位变化，但不能盲抄。" }
+      ]
+    },
+    {
+      "expert": "ARK / Cathie Wood",
+      "style": "创新成长、高波动、长期技术叙事",
+      "lastUpdated": "公开持仓/基金披露，频率高于普通 13F",
+      "actions": [
+        { "symbol": "TSLA", "action": "长期高关注", "relevance": "中", "note": "适合作为高不确定性成长股案例。" },
+        { "symbol": "PLTR", "action": "AI 软件主题相关", "relevance": "中", "note": "适合观察叙事和收入兑现的差距。" }
+      ]
+    },
+    {
+      "expert": "Coatue / Tiger Global / Lone Pine",
+      "style": "科技成长、平台型公司、云与 AI 主题",
+      "lastUpdated": "季度 13F 披露，需校验最新文件",
+      "actions": [
+        { "symbol": "MSFT", "action": "质量成长参考", "relevance": "中", "note": "云和 AI 基础设施相关。" },
+        { "symbol": "AMZN", "action": "云和 AI 基础设施参考", "relevance": "中", "note": "AWS 和电商现金流需要分开看。" }
+      ]
+    }
+  ],
+  "managerFootprints": {
+    "AAPL": [
+      { "manager": "Berkshire Hathaway", "style": "Quality value", "signal": "Long-term reference", "note": "Historically a major holding; verify latest 13F before using as current signal." }
+    ],
+    "GOOGL": [
+      { "manager": "Multiple quality/growth managers", "style": "Quality growth", "signal": "Watch", "note": "Common large-cap quality candidate; current positions should be verified quarterly." }
+    ],
+    "MSFT": [
+      { "manager": "Quality growth managers", "style": "Quality growth", "signal": "Watch", "note": "Often screened for durable cash flow and enterprise moat." }
+    ],
+    "NVDA": [
+      { "manager": "Growth technology managers", "style": "Growth", "signal": "Cyclical/high expectation watch", "note": "High AI exposure; manager ownership can change quickly." }
+    ],
+    "TSLA": [
+      { "manager": "Growth/innovation managers", "style": "High optionality growth", "signal": "Controversial", "note": "High dispersion of views." }
+    ],
+    "PDD": [
+      { "manager": "Emerging market/growth managers", "style": "International growth", "signal": "Research", "note": "Requires China/platform/regulatory risk review." }
+    ]
+  }
+}
