@@ -173,108 +173,89 @@ function renderRangeTabs() {
   });
 }
 
+let tvChartInstance = null;
+let tvSeries = null;
+
 function renderChart(item) {
-  const svg = document.getElementById("priceChart");
+  const container = document.getElementById("tvChart");
   const history = item.metrics.history || [];
   const rangeCount = { "1M": 22, "3M": 63, "6M": 126, "1Y": 252 }[activeRange] || 63;
   const rows = history.slice(-rangeCount);
+
   if (rows.length < 2) {
-    svg.setAttribute("viewBox", "0 0 720 360");
-    svg.innerHTML = `<text x="20" y="40" fill="#65706b">暂无足够价格数据</text>`;
+    container.innerHTML = '<div style="padding:40px;color:#999">暂无足够价格数据</div>';
     return;
   }
-  const width = 720;
-  const height = 360;
-  const padL = 12, padR = 12, padT = 60, padB = 30;
-  const chartW = width - padL - padR;
-  const chartH = height - padT - padB;
-  svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
 
   const closes = rows.map(r => r.close);
-  const min = Math.min(...closes);
-  const max = Math.max(...closes);
-  const span = max - min || 1;
   const startPrice = closes[0];
   const endPrice = closes[closes.length - 1];
-  const totalReturn = ((endPrice / startPrice - 1) * 100);
-  const isUp = totalReturn >= 0;
+  const isUp = endPrice >= startPrice;
   const lineColor = isUp ? "#34c759" : "#ff3b30";
-  const fillColor = isUp ? "rgba(52,199,89,0.08)" : "rgba(255,59,48,0.06)";
+  const topColor = isUp ? "rgba(52,199,89,0.3)" : "rgba(255,59,48,0.2)";
+  const bottomColor = isUp ? "rgba(52,199,89,0.02)" : "rgba(255,59,48,0.02)";
 
-  const points = rows.map((row, i) => {
-    const x = padL + (i / (rows.length - 1)) * chartW;
-    const y = padT + chartH - ((row.close - min) / span) * chartH;
-    return [x, y];
+  if (tvChartInstance) {
+    tvChartInstance.remove();
+    tvChartInstance = null;
+    tvSeries = null;
+  }
+
+  tvChartInstance = LightweightCharts.createChart(container, {
+    width: container.clientWidth,
+    height: 400,
+    layout: {
+      background: { type: "solid", color: "#fbfcfb" },
+      textColor: "#65706b",
+      fontFamily: "Inter, system-ui, sans-serif",
+      fontSize: 12,
+    },
+    grid: {
+      vertLines: { color: "#f0f2f0" },
+      horzLines: { color: "#f0f2f0" },
+    },
+    crosshair: {
+      mode: LightweightCharts.CrosshairMode.Magnet,
+      vertLine: {
+        color: lineColor,
+        width: 1,
+        style: LightweightCharts.LineStyle.Dashed,
+        labelBackgroundColor: lineColor,
+      },
+      horzLine: {
+        color: "#999",
+        width: 1,
+        style: LightweightCharts.LineStyle.Dashed,
+        labelBackgroundColor: "#555",
+      },
+    },
+    rightPriceScale: { borderColor: "#e8ebe9" },
+    timeScale: { borderColor: "#e8ebe9", timeVisible: false },
+    handleScroll: true,
+    handleScale: true,
   });
 
-  const path = points.map((p, i) => `${i === 0 ? "M" : "L"} ${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(" ");
-  const fillPath = `${path} L ${points[points.length-1][0].toFixed(1)} ${padT + chartH} L ${points[0][0].toFixed(1)} ${padT + chartH} Z`;
+  tvSeries = tvChartInstance.addSeries(LightweightCharts.AreaSeries, {
+    lineColor: lineColor,
+    lineWidth: 2,
+    topColor: topColor,
+    bottomColor: bottomColor,
+    crosshairMarkerVisible: true,
+    crosshairMarkerRadius: 5,
+    crosshairMarkerBorderColor: "#fff",
+    crosshairMarkerBorderWidth: 2,
+    crosshairMarkerBackgroundColor: lineColor,
+    priceFormat: { type: "price", precision: 2, minMove: 0.01 },
+  });
 
-  // Y-axis grid lines (5 levels)
-  let gridLines = "";
-  for (let i = 0; i <= 4; i++) {
-    const val = min + (span * i / 4);
-    const gy = padT + chartH - (i / 4) * chartH;
-    gridLines += `<line x1="${padL}" y1="${gy.toFixed(1)}" x2="${width - padR}" y2="${gy.toFixed(1)}" stroke="#e8ebe9" stroke-width="0.5"/>`;
-    gridLines += `<text x="${width - padR}" y="${gy.toFixed(1) - 4}" fill="#aaa" font-size="10" text-anchor="end">$${val.toFixed(val >= 100 ? 0 : 2)}</text>`;
-  }
+  const data = rows.map(r => ({ time: r.date, value: r.close }));
+  tvSeries.setData(data);
+  tvChartInstance.timeScale().fitContent();
 
-  // Header: current price + change (will be updated on hover)
-  const pctSign = totalReturn >= 0 ? "+" : "";
-  svg.innerHTML = `
-    ${gridLines}
-    <path d="${fillPath}" fill="${fillColor}"/>
-    <path d="${path}" fill="none" stroke="${lineColor}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-    <line class="cv" x1="0" y1="${padT}" x2="0" y2="${padT + chartH}" stroke="${lineColor}" stroke-width="1" opacity="0"/>
-    <circle class="cd" cx="0" cy="0" r="5" fill="${lineColor}" stroke="#fff" stroke-width="2" opacity="0"/>
-    <text class="hd-price" x="${padL}" y="24" fill="var(--ink)" font-size="22" font-weight="700">$${endPrice.toFixed(2)}</text>
-    <text class="hd-change" x="${padL + 130}" y="24" fill="${lineColor}" font-size="16" font-weight="600">${pctSign}${totalReturn.toFixed(2)}%</text>
-    <text class="hd-date" x="${padL}" y="44" fill="#999" font-size="12">${rows[rows.length-1].date}</text>
-    <rect class="ha" x="${padL}" y="${padT}" width="${chartW}" height="${chartH}" fill="transparent" style="pointer-events:all;cursor:crosshair"/>
-  `;
-
-  const ha = svg.querySelector(".ha");
-  const cv = svg.querySelector(".cv");
-  const cd = svg.querySelector(".cd");
-  const hdPrice = svg.querySelector(".hd-price");
-  const hdChange = svg.querySelector(".hd-change");
-  const hdDate = svg.querySelector(".hd-date");
-
-  function idxFromClient(clientX) {
-    const rect = svg.getBoundingClientRect();
-    const ratio = width / rect.width;
-    const mx = (clientX - rect.left) * ratio;
-    const rel = (mx - padL) / chartW;
-    const idx = Math.round(rel * (rows.length - 1));
-    return Math.max(0, Math.min(rows.length - 1, idx));
-  }
-
-  function show(idx) {
-    const [px, py] = points[idx];
-    const row = rows[idx];
-    cv.setAttribute("x1", px); cv.setAttribute("x2", px); cv.setAttribute("opacity", "1");
-    cd.setAttribute("cx", px); cd.setAttribute("cy", py); cd.setAttribute("opacity", "1");
-    const chg = ((row.close / startPrice - 1) * 100);
-    const sign = chg >= 0 ? "+" : "";
-    hdPrice.textContent = `$${row.close.toFixed(2)}`;
-    hdChange.textContent = `${sign}${chg.toFixed(2)}%`;
-    hdChange.setAttribute("fill", chg >= 0 ? "#34c759" : "#ff3b30");
-    hdDate.textContent = row.date;
-  }
-
-  function hide() {
-    cv.setAttribute("opacity", "0");
-    cd.setAttribute("opacity", "0");
-    hdPrice.textContent = `$${endPrice.toFixed(2)}`;
-    hdChange.textContent = `${pctSign}${totalReturn.toFixed(2)}%`;
-    hdChange.setAttribute("fill", lineColor);
-    hdDate.textContent = rows[rows.length-1].date;
-  }
-
-  ha.addEventListener("mousemove", e => show(idxFromClient(e.clientX)));
-  ha.addEventListener("touchmove", e => { e.preventDefault(); show(idxFromClient(e.touches[0].clientX)); }, { passive: false });
-  ha.addEventListener("mouseleave", hide);
-  ha.addEventListener("touchend", hide);
+  const ro = new ResizeObserver(() => {
+    if (tvChartInstance) tvChartInstance.applyOptions({ width: container.clientWidth });
+  });
+  ro.observe(container);
 }
 
 function renderFundamentals(item, researchItem) {
