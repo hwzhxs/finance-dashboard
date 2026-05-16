@@ -12,6 +12,7 @@ git add -f \
   data/rankings.json \
   data/company_research.json \
   data/agent-insights.json \
+  data/expert-holdings.json \
   data/preopen-brief.md \
   data/postclose-brief.md \
   2>/dev/null || true

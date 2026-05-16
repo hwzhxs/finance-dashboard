@@ -1,0 +1,152 @@
+{
+  "generatedAt": "2026-05-16T23:37:00+08:00",
+  "dataSource": "Web search aggregation of 13F filings and public disclosures",
+  "experts": [
+    {
+      "name": "Berkshire Hathaway / Warren Buffett",
+      "style": "质量价值、长期持有、护城河、现金流、安全边际",
+      "quarter": "Q1 2025",
+      "filingDate": "2025-05-15",
+      "totalValue": "$259B",
+      "topHoldings": [
+        { "symbol": "AAPL", "name": "Apple Inc.", "pctOfPortfolio": 25.65, "change": "unchanged", "changeDetail": "持仓不变，仍为最大持仓" },
+        { "symbol": "AXP", "name": "American Express", "pctOfPortfolio": 15.70, "change": "unchanged", "changeDetail": "长期持仓，未变" },
+        { "symbol": "KO", "name": "Coca-Cola", "pctOfPortfolio": 11.03, "change": "unchanged", "changeDetail": "经典持仓" },
+        { "symbol": "BAC", "name": "Bank of America", "pctOfPortfolio": 10.14, "change": "reduced", "changeDetail": "继续减持 BAC" },
+        { "symbol": "CVX", "name": "Chevron", "pctOfPortfolio": 7.64, "change": "unchanged", "changeDetail": "能源配置不变" },
+        { "symbol": "OXY", "name": "Occidental Petroleum", "pctOfPortfolio": 4.5, "change": "increased", "changeDetail": "小幅加仓" },
+        { "symbol": "MCO", "name": "Moody's Corporation", "pctOfPortfolio": 3.8, "change": "unchanged", "changeDetail": "长期持仓" },
+        { "symbol": "KHC", "name": "Kraft Heinz", "pctOfPortfolio": 3.5, "change": "unchanged", "changeDetail": "长期持仓" },
+        { "symbol": "CB", "name": "Chubb Ltd.", "pctOfPortfolio": 3.2, "change": "unchanged", "changeDetail": "保险业配置" },
+        { "symbol": "DVA", "name": "DaVita Inc.", "pctOfPortfolio": 2.8, "change": "unchanged", "changeDetail": "医疗服务持仓" }
+      ],
+      "watchlistOverlap": ["AAPL"],
+      "keyInsight": "巴菲特本季度 AAPL 持仓未变，但继续减持银行股，退出 Citigroup 和 NU Holdings，整体是净卖出。现金仍在增长。"
+    },
+    {
+      "name": "Bill Ackman / Pershing Square",
+      "style": "集中持仓、优质企业、可理解商业模式、催化剂",
+      "quarter": "Q4 2025",
+      "filingDate": "2026-02-17",
+      "totalValue": "$15.5B",
+      "topHoldings": [
+        { "symbol": "BN", "name": "Brookfield Corporation", "pctOfPortfolio": 18.15, "change": "unchanged", "changeDetail": "最大持仓" },
+        { "symbol": "UBER", "name": "Uber Technologies", "pctOfPortfolio": 15.90, "change": "unchanged", "changeDetail": "第二大持仓" },
+        { "symbol": "AMZN", "name": "Amazon.com", "pctOfPortfolio": 14.28, "change": "unchanged", "changeDetail": "重要持仓" },
+        { "symbol": "META", "name": "Meta Platforms", "pctOfPortfolio": 11.37, "change": "new", "changeDetail": "Q4 2025 新建仓，直接进入前五" },
+        { "symbol": "QSR", "name": "Restaurant Brands International", "pctOfPortfolio": 10.0, "change": "unchanged", "changeDetail": "长期持仓" },
+        { "symbol": "HHH", "name": "Howard Hughes Holdings", "pctOfPortfolio": 8.0, "change": "unchanged", "changeDetail": "长期持仓" },
+        { "symbol": "UMG", "name": "Universal Music Group", "pctOfPortfolio": 7.0, "change": "reduced", "changeDetail": "有所减持" },
+        { "symbol": "CMG", "name": "Chipotle Mexican Grill", "pctOfPortfolio": 0, "change": "exited", "changeDetail": "Q4 全部清仓，估值过高" },
+        { "symbol": "HLT", "name": "Hilton Worldwide", "pctOfPortfolio": 0, "change": "exited", "changeDetail": "Q4 全部清仓" }
+      ],
+      "watchlistOverlap": ["AMZN"],
+      "keyInsight": "Ackman 大手笔新建 META 仓位（11.4%），同时清仓 CMG 和 HLT。组合越来越集中在科技平台。"
+    },
+    {
+      "name": "Stanley Druckenmiller / Duquesne",
+      "style": "宏观趋势、成长动量、风险控制、灵活调仓",
+      "quarter": "Q4 2025",
+      "filingDate": "2026-02-17",
+      "totalValue": "$4.5B",
+      "topHoldings": [
+        { "symbol": "NTRA", "name": "Natera Inc.", "pctOfPortfolio": 12.80, "change": "unchanged", "changeDetail": "最大持仓，基因检测" },
+        { "symbol": "XLF", "name": "Financial Select Sector SPDR", "pctOfPortfolio": 6.70, "change": "new", "changeDetail": "新建金融 ETF 仓位" },
+        { "symbol": "INSM", "name": "Insmed Inc.", "pctOfPortfolio": 5.74, "change": "unchanged", "changeDetail": "生物制药持仓" },
+        { "symbol": "RSP", "name": "Invesco S&P 500 Equal Weight ETF", "pctOfPortfolio": 5.00, "change": "new", "changeDetail": "新建等权 ETF 仓位" },
+        { "symbol": "TEVA", "name": "Teva Pharmaceutical", "pctOfPortfolio": 4.08, "change": "unchanged", "changeDetail": "制药持仓" },
+        { "symbol": "WWD", "name": "Woodward Inc.", "pctOfPortfolio": 3.97, "change": "unchanged", "changeDetail": "工业持仓" },
+        { "symbol": "AMZN", "name": "Amazon.com", "pctOfPortfolio": 3.79, "change": "unchanged", "changeDetail": "科技配置" },
+        { "symbol": "TSM", "name": "Taiwan Semiconductor", "pctOfPortfolio": 3.67, "change": "unchanged", "changeDetail": "半导体供应链" },
+        { "symbol": "CPNG", "name": "Coupang Inc.", "pctOfPortfolio": 3.55, "change": "unchanged", "changeDetail": "韩国电商" },
+        { "symbol": "EWZ", "name": "iShares MSCI Brazil ETF", "pctOfPortfolio": 2.99, "change": "new", "changeDetail": "新建巴西 ETF 仓位" }
+      ],
+      "watchlistOverlap": ["AMZN", "TSM"],
+      "keyInsight": "Druckenmiller 大幅调仓 — 27 个新仓位、16 个清仓。明显从科技转向金融、等权和巴西。宏观拐点信号强烈。"
+    },
+    {
+      "name": "ARK Invest / Cathie Wood",
+      "style": "创新成长、高波动、长期技术叙事、破坏性创新",
+      "quarter": "Q2 2026 (live)",
+      "filingDate": "持续更新",
+      "totalValue": "~$7B (ARKK)",
+      "topHoldings": [
+        { "symbol": "TSLA", "name": "Tesla Inc.", "pctOfPortfolio": 12.0, "change": "reduced", "changeDetail": "仍是最大持仓但持续小幅减持" },
+        { "symbol": "AMD", "name": "Advanced Micro Devices", "pctOfPortfolio": 7.5, "change": "increased", "changeDetail": "加仓 AI 芯片" },
+        { "symbol": "CRCL", "name": "Circle Internet Group", "pctOfPortfolio": 6.0, "change": "new", "changeDetail": "加密基建新仓" },
+        { "symbol": "CRSP", "name": "CRISPR Therapeutics", "pctOfPortfolio": 5.5, "change": "unchanged", "changeDetail": "基因编辑核心持仓" },
+        { "symbol": "TEM", "name": "Tempus AI", "pctOfPortfolio": 5.0, "change": "increased", "changeDetail": "AI 医疗数据加仓" },
+        { "symbol": "ROKU", "name": "Roku Inc.", "pctOfPortfolio": 4.8, "change": "unchanged", "changeDetail": "流媒体平台" },
+        { "symbol": "COIN", "name": "Coinbase", "pctOfPortfolio": 4.5, "change": "unchanged", "changeDetail": "加密交易所" },
+        { "symbol": "HOOD", "name": "Robinhood Markets", "pctOfPortfolio": 4.2, "change": "unchanged", "changeDetail": "2025 年涨 204%，金融科技" },
+        { "symbol": "SHOP", "name": "Shopify", "pctOfPortfolio": 4.0, "change": "unchanged", "changeDetail": "电商基建" },
+        { "symbol": "BEAM", "name": "Beam Therapeutics", "pctOfPortfolio": 3.5, "change": "unchanged", "changeDetail": "基因编辑" }
+      ],
+      "watchlistOverlap": ["TSLA", "AMD"],
+      "keyInsight": "ARK 继续 all-in 破坏性创新：TSLA 仍是最大但在减，AMD 加仓押注 AI 芯片。加密和基因编辑占比上升。"
+    },
+    {
+      "name": "Coatue Management / Philippe Laffont",
+      "style": "科技成长、平台型公司、云与 AI 主题",
+      "quarter": "Q4 2025",
+      "filingDate": "2026-02-17",
+      "totalValue": "$40B",
+      "topHoldings": [
+        { "symbol": "GOOGL", "name": "Alphabet Inc.", "pctOfPortfolio": 8.0, "change": "reduced", "changeDetail": "小幅减持但仍是最大持仓" },
+        { "symbol": "TSM", "name": "Taiwan Semiconductor", "pctOfPortfolio": 7.5, "change": "unchanged", "changeDetail": "半导体核心" },
+        { "symbol": "MSFT", "name": "Microsoft Corporation", "pctOfPortfolio": 7.0, "change": "unchanged", "changeDetail": "云和 AI 基础设施" },
+        { "symbol": "META", "name": "Meta Platforms", "pctOfPortfolio": 6.5, "change": "reduced", "changeDetail": "小幅减持" },
+        { "symbol": "AMZN", "name": "Amazon.com", "pctOfPortfolio": 5.5, "change": "unchanged", "changeDetail": "AWS 和电商" },
+        { "symbol": "NVDA", "name": "NVIDIA Corporation", "pctOfPortfolio": 5.0, "change": "reduced", "changeDetail": "小幅减持" },
+        { "symbol": "AMAT", "name": "Applied Materials", "pctOfPortfolio": 4.0, "change": "increased", "changeDetail": "大幅加仓半导体设备" },
+        { "symbol": "SPOT", "name": "Spotify", "pctOfPortfolio": 3.5, "change": "increased", "changeDetail": "加仓" },
+        { "symbol": "NFLX", "name": "Netflix", "pctOfPortfolio": 3.0, "change": "increased", "changeDetail": "加仓" },
+        { "symbol": "ORCL", "name": "Oracle Corporation", "pctOfPortfolio": 2.8, "change": "reduced", "changeDetail": "小幅减持" }
+      ],
+      "watchlistOverlap": ["GOOGL", "TSM", "MSFT", "AMZN", "NVDA", "ORCL"],
+      "keyInsight": "Coatue 科技重仓不变但在做 rotation — 减持 GOOGL/META/NVDA，加仓半导体设备 AMAT 和内容平台 SPOT/NFLX。"
+    },
+    {
+      "name": "Bridgewater Associates / Ray Dalio",
+      "style": "全天候策略、宏观对冲、分散配置、风险平衡",
+      "quarter": "Q4 2025",
+      "filingDate": "2026-02-17",
+      "totalValue": "$27.4B",
+      "topHoldings": [
+        { "symbol": "SPY", "name": "SPDR S&P 500 ETF Trust", "pctOfPortfolio": 10.0, "change": "increased", "changeDetail": "本季度 top buy，大幅加仓" },
+        { "symbol": "IVV", "name": "iShares Core S&P 500", "pctOfPortfolio": 8.0, "change": "unchanged", "changeDetail": "大盘 ETF" },
+        { "symbol": "NVDA", "name": "NVIDIA Corporation", "pctOfPortfolio": 5.5, "change": "increased", "changeDetail": "大幅加仓" },
+        { "symbol": "LRCX", "name": "Lam Research", "pctOfPortfolio": 4.5, "change": "reduced", "changeDetail": "减持半导体设备" },
+        { "symbol": "CRM", "name": "Salesforce Inc.", "pctOfPortfolio": 4.0, "change": "reduced", "changeDetail": "减持" },
+        { "symbol": "GOOGL", "name": "Alphabet Inc.", "pctOfPortfolio": 3.8, "change": "reduced", "changeDetail": "减持" },
+        { "symbol": "MSFT", "name": "Microsoft Corporation", "pctOfPortfolio": 3.5, "change": "reduced", "changeDetail": "减持" },
+        { "symbol": "AMZN", "name": "Amazon.com", "pctOfPortfolio": 3.2, "change": "increased", "changeDetail": "加仓" },
+        { "symbol": "AVGO", "name": "Broadcom Inc.", "pctOfPortfolio": 3.0, "change": "increased", "changeDetail": "加仓 AI 网络芯片" },
+        { "symbol": "ORCL", "name": "Oracle Corporation", "pctOfPortfolio": 2.8, "change": "increased", "changeDetail": "加仓" }
+      ],
+      "watchlistOverlap": ["SPY", "NVDA", "CRM", "GOOGL", "MSFT", "AMZN", "AVGO", "ORCL"],
+      "keyInsight": "Bridgewater 大幅加仓 SPY 和 NVDA，同时减持 CRM/GOOGL/MSFT。全天候策略开始向 AI 基础设施倾斜。"
+    },
+    {
+      "name": "Appaloosa Management / David Tepper",
+      "style": "逆向投资、宏观对冲、高集中度、困境反转",
+      "quarter": "Q4 2025",
+      "filingDate": "2026-02-17",
+      "totalValue": "$6.95B",
+      "topHoldings": [
+        { "symbol": "BABA", "name": "Alibaba Group", "pctOfPortfolio": 11.0, "change": "reduced", "changeDetail": "减持约 20%，但仍是最大持仓" },
+        { "symbol": "GOOGL", "name": "Alphabet Inc.", "pctOfPortfolio": 9.0, "change": "increased", "changeDetail": "加仓" },
+        { "symbol": "AMZN", "name": "Amazon.com", "pctOfPortfolio": 8.5, "change": "reduced", "changeDetail": "小幅减持" },
+        { "symbol": "MU", "name": "Micron Technology", "pctOfPortfolio": 7.0, "change": "increased", "changeDetail": "加仓存储芯片" },
+        { "symbol": "META", "name": "Meta Platforms", "pctOfPortfolio": 6.5, "change": "increased", "changeDetail": "加仓" },
+        { "symbol": "TSM", "name": "Taiwan Semiconductor", "pctOfPortfolio": 5.0, "change": "increased", "changeDetail": "加仓半导体" },
+        { "symbol": "NVDA", "name": "NVIDIA Corporation", "pctOfPortfolio": 4.5, "change": "reduced", "changeDetail": "减持" },
+        { "symbol": "AAL", "name": "American Airlines", "pctOfPortfolio": 3.5, "change": "increased", "changeDetail": "加仓航空" },
+        { "symbol": "EWY", "name": "iShares MSCI South Korea ETF", "pctOfPortfolio": 2.5, "change": "new", "changeDetail": "新建韩国 ETF" },
+        { "symbol": "BALL", "name": "Ball Corporation", "pctOfPortfolio": 2.0, "change": "new", "changeDetail": "新建仓" }
+      ],
+      "watchlistOverlap": ["GOOGL", "AMZN", "TSM", "NVDA"],
+      "keyInsight": "Tepper 减持中国科技（BABA -20%），加仓美国大科技 GOOGL/META 和半导体 TSM/MU。从中国到美国的 rotation 明显。"
+    }
+  ]
+}
