@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-16T23:37:00+08:00",
+  "generatedAt": "2026-05-17T07:45:00+08:00",
   "dataSource": "Web search aggregation of 13F filings and public disclosures",
   "experts": [
     {
@@ -735,6 +735,140 @@
         "NVDA"
       ],
       "keyInsight": "Tepper 减持中国科技（BABA -20%），加仓美国大科技 GOOGL/META 和半导体 TSM/MU。从中国到美国的 rotation 明显。"
+    },
+    {
+      "name": "BlackRock Inc.",
+      "style": "全球最大资管，被动+主动混合，AI基础设施、能源、分散配置",
+      "quarter": "Q1 2026",
+      "filingDate": "2026-05-15",
+      "totalValue": "$5.72T",
+      "portfolioStats": {
+        "totalPositions": 50651,
+        "top10Concentration": 27.73,
+        "newBuys": 327,
+        "increased": 2920,
+        "soldOut": 174,
+        "reduced": 1964
+      },
+      "topHoldings": [
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA Corp.",
+          "pctOfPortfolio": 5.87,
+          "change": "reduced",
+          "changeDetail": "权重从 6.13% 降至 5.87%，仍为第一大持仓"
+        },
+        {
+          "symbol": "AAPL",
+          "name": "Apple Inc.",
+          "change": "reduced",
+          "changeDetail": "减持约 997 万股"
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft Corp.",
+          "change": "reduced",
+          "changeDetail": "减持约 856 万股"
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon.com Inc.",
+          "change": "unchanged",
+          "changeDetail": "七巨头中未被减持"
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet Inc.",
+          "change": "unchanged",
+          "changeDetail": "七巨头中未被减持"
+        },
+        {
+          "symbol": "AVGO",
+          "name": "Broadcom Inc.",
+          "change": "held"
+        },
+        {
+          "symbol": "META",
+          "name": "Meta Platforms",
+          "change": "reduced",
+          "changeDetail": "减持"
+        },
+        {
+          "symbol": "TSLA",
+          "name": "Tesla Inc.",
+          "change": "reduced",
+          "changeDetail": "减持"
+        },
+        {
+          "symbol": "JPM",
+          "name": "JPMorgan Chase",
+          "change": "new_top10",
+          "changeDetail": "新进前十，替代 Eli Lilly"
+        }
+      ],
+      "keyMoves": {
+        "topAdds": [
+          {
+            "symbol": "XOM",
+            "name": "Exxon Mobil",
+            "change": "increased",
+            "changeDetail": "能源板块加仓第一"
+          },
+          {
+            "symbol": "JNJ",
+            "name": "Johnson & Johnson",
+            "change": "increased"
+          },
+          {
+            "symbol": "CVX",
+            "name": "Chevron Corp.",
+            "change": "increased"
+          },
+          {
+            "symbol": "AMAT",
+            "name": "Applied Materials",
+            "change": "increased",
+            "changeDetail": "芯片设备"
+          },
+          {
+            "symbol": "MU",
+            "name": "Micron Technology",
+            "change": "increased",
+            "changeDetail": "存储芯片"
+          }
+        ],
+        "cryptoMoves": [
+          {
+            "symbol": "MSTR",
+            "name": "MicroStrategy",
+            "change": "increased",
+            "changeDetail": "加仓约 314 万股，总持仓 1775 万股"
+          },
+          {
+            "symbol": "COIN",
+            "name": "Coinbase",
+            "change": "reduced",
+            "changeDetail": "减持约 330 万股，剩余 1674 万股"
+          }
+        ],
+        "otherNotable": [
+          {
+            "symbol": "LCID",
+            "name": "Lucid Motors",
+            "change": "increased",
+            "changeDetail": "连续第六个季度增持"
+          },
+          {
+            "symbol": "0763.HK",
+            "name": "中兴通讯 H股",
+            "change": "increased",
+            "changeDetail": "多头比例 6.38% → 7.24%"
+          }
+        ]
+      },
+      "investmentOutlook": "对风险资产持建设性态度，倾向 AI + 增长型 + 大盘股，价值股作为分散工具。固收偏好 MBS 多于公司债。",
+      "analystNote": "减持七巨头中五个但仍为核心持仓，同时加码能源+芯片（AI上游基础设施）。Crypto 做结构调整：减 COIN 加 MSTR。",
+      "dataReliability": "核心数据经交叉验证确认，个别精确股数来自搜索引擎聚合，建议以 SEC EDGAR 原始 13F 为准"
     }
   ]
 }
