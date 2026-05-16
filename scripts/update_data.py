@@ -233,7 +233,7 @@ def historical_metrics(rows: list[dict]) -> dict:
             "return1yPct": None,
             "volatilityPct": None,
             "maxDrawdownPct": None,
-            "history": rows[-90:],
+            "history": rows,
         }
     returns = [(closes[i] / closes[i - 1] - 1) for i in range(1, len(closes)) if closes[i - 1]]
     volatility = statistics.stdev(returns) * math.sqrt(252) * 100 if len(returns) > 2 else None
@@ -248,7 +248,7 @@ def historical_metrics(rows: list[dict]) -> dict:
         "return1yPct": pct_change(closes[-1], closes[0]),
         "volatilityPct": volatility,
         "maxDrawdownPct": max_dd,
-        "history": rows[-90:],
+        "history": rows,
     }
 
 

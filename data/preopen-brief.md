@@ -1,4 +1,4 @@
-# Pre-market brief - 2026-05-16 22:36 CST
+# Pre-market brief - 2026-05-16 22:45 CST
 
 Conclusion: observe first; act only if a trade checklist is triggered.
 
