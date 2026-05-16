@@ -377,6 +377,10 @@ function renderSymbolExpertFootprints(symbol) {
             <span class="stat change-date">${e.quarter} · ${e.filingDate}</span>
           </div>
           <p>${m.changeDetail}</p>
+          ${m.trendSignal ? `<p class="trend-signal-inline">${m.trendSignal}</p>` : ''}
+          ${m.quarterHistory ? `<div class="quarter-trend">${m.quarterHistory.map(q => 
+            `<span class="qt-item" title="${q.action}">${q.q}: ${(q.shares/1e6).toFixed(1)}M (${q.pct}%)</span>`
+          ).join(' → ')}</div>` : ''}
         </div>
       `;
     }).join('');
@@ -500,6 +504,11 @@ function renderExpertDetailV2(expert) {
       </thead>
       <tbody>${rows}</tbody>
     </table>
+    ${(expert.trendSummary && expert.trendSummary.length) ? `
+    <div class="trend-summary">
+      <h4>📈 趋势信号</h4>
+      ${expert.trendSummary.map(s => `<div class="trend-signal">${s}</div>`).join('')}
+    </div>` : ''}
     <div class="expert-action disclaimer">
       <strong>⚠️ 说明</strong>
       <p>13F 数据有 45 天延迟，不是抄作业信号。真实仓位、成本、对冲和卖出动作可能已变化。<span class="overlap-dot">●</span> = 你的 watchlist 重叠股。</p>
