@@ -154,7 +154,14 @@ main {
   top: 92px;
   max-height: calc(100vh - 116px);
   overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   padding: 16px;
+}
+
+.stock-list-panel::-webkit-scrollbar,
+.expert-list-panel::-webkit-scrollbar {
+  display: none;
 }
 
 .stock-detail-panel,
