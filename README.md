@@ -16,6 +16,15 @@ same data files that Admin reads.
 
 - Dashboard: http://127.0.0.1:18888
 
+## GitHub Pages
+
+This repo can be deployed as a public static dashboard with GitHub Pages.
+
+- The public site is static.
+- GitHub Actions regenerates a public data snapshot on deploy.
+- Local Discord delivery and local launch agents are not part of GitHub Pages.
+- Generated logs, Discord channel cache, and scheduler state are excluded from the public site.
+
 ## Files
 
 - `config/watchlist.json` controls tracked tickers and perspective settings.

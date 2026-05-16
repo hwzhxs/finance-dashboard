@@ -35,6 +35,8 @@ let activeSymbol = "VTI";
 let activeRange = "3M";
 let activeExpert = 0;
 
+const assetBase = location.pathname.includes("/dashboard/") ? "../" : "./";
+
 const translateAction = (value) => actionLabels[value] || value || "继续观察";
 const fmtNum = (value, digits = 1) => typeof value === "number" ? value.toFixed(digits) : "n/a";
 const fmtPrice = (value) => typeof value === "number" ? `$${value.toFixed(2)}` : "n/a";
@@ -43,11 +45,11 @@ const pctClass = (value) => typeof value === "number" && value > 0 ? "up" : type
 
 async function loadData() {
   const [latestRes, scoresRes, rankingsRes, researchRes, configRes] = await Promise.all([
-    fetch(`/data/latest.json?ts=${Date.now()}`),
-    fetch(`/data/scores.json?ts=${Date.now()}`),
-    fetch(`/data/rankings.json?ts=${Date.now()}`),
-    fetch(`/data/company_research.json?ts=${Date.now()}`),
-    fetch(`/config/watchlist.json?ts=${Date.now()}`)
+    fetch(`${assetBase}data/latest.json?ts=${Date.now()}`),
+    fetch(`${assetBase}data/scores.json?ts=${Date.now()}`),
+    fetch(`${assetBase}data/rankings.json?ts=${Date.now()}`),
+    fetch(`${assetBase}data/company_research.json?ts=${Date.now()}`),
+    fetch(`${assetBase}config/watchlist.json?ts=${Date.now()}`)
   ]);
   latest = await latestRes.json();
   scores = await scoresRes.json();

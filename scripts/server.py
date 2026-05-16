@@ -16,8 +16,11 @@ class FinanceHandler(http.server.SimpleHTTPRequestHandler):
 
     def do_GET(self):
         if self.path in {"/", ""}:
-            self.path = "/dashboard/index.html"
-        return super().do_GET()
+            self.send_response(302)
+            self.send_header("Location", "/dashboard/")
+            self.end_headers()
+            return
+        super().do_GET()
 
 
 def main() -> int:
