@@ -29,6 +29,7 @@ let scores = null;
 let rankings = null;
 let research = null;
 let config = null;
+let expertHoldings = null;
 let activeView = "stocks";
 let activePerspective = "composite";
 let activeSymbol = "VTI";
@@ -44,18 +45,20 @@ const fmtPctText = (value, digits = 1) => typeof value === "number" ? `${value >
 const pctClass = (value) => typeof value === "number" && value > 0 ? "up" : typeof value === "number" && value < 0 ? "down" : "neutral";
 
 async function loadData() {
-  const [latestRes, scoresRes, rankingsRes, researchRes, configRes] = await Promise.all([
+  const [latestRes, scoresRes, rankingsRes, researchRes, configRes, expertRes] = await Promise.all([
     fetch(`${assetBase}data/latest.json?ts=${Date.now()}`),
     fetch(`${assetBase}data/scores.json?ts=${Date.now()}`),
     fetch(`${assetBase}data/rankings.json?ts=${Date.now()}`),
     fetch(`${assetBase}data/company_research.json?ts=${Date.now()}`),
-    fetch(`${assetBase}config/watchlist.json?ts=${Date.now()}`)
+    fetch(`${assetBase}config/watchlist.json?ts=${Date.now()}`),
+    fetch(`${assetBase}data/expert-holdings.json?ts=${Date.now()}`).catch(() => null)
   ]);
   latest = await latestRes.json();
   scores = await scoresRes.json();
   rankings = await rankingsRes.json();
   research = await researchRes.json();
   config = await configRes.json();
+  if (expertRes && expertRes.ok) expertHoldings = await expertRes.json();
   if (!latest.securities[activeSymbol]) activeSymbol = Object.keys(latest.securities)[0];
   render();
 }
@@ -348,14 +351,43 @@ function expertFootprintsForSymbol(symbol) {
 
 function renderSymbolExpertFootprints(symbol) {
   const container = document.getElementById("symbolExpertFootprints");
+  // Try expert-holdings.json first for rich data
+  const experts = (expertHoldings && expertHoldings.experts) || [];
+  const richMatches = [];
+  experts.forEach(expert => {
+    (expert.topHoldings || []).forEach(h => {
+      if (h.symbol === symbol) {
+        richMatches.push({ expert: expert.name, quarter: expert.quarter, totalValue: expert.totalValue, ...h });
+      }
+    });
+  });
+  if (richMatches.length) {
+    container.innerHTML = richMatches.map(m => {
+      const color = changeColors[m.change] || '#8e8e93';
+      const label = changeLabels[m.change] || m.change;
+      return `
+        <div class="symbol-expert-card rich">
+          <div class="symbol-expert-header">
+            <strong>${m.expert}</strong>
+            <span class="expert-badge">${m.quarter}</span>
+          </div>
+          <div class="symbol-expert-stats">
+            <span class="stat">仓位 <strong>${m.pctOfPortfolio.toFixed(1)}%</strong></span>
+            <span class="stat">变化 <strong style="color:${color}">${label}</strong></span>
+          </div>
+          <p>${m.changeDetail}</p>
+        </div>
+      `;
+    }).join('');
+    return;
+  }
+  // Fallback to config expertFootprints
   const matches = expertFootprintsForSymbol(symbol);
   if (!matches.length) {
     container.innerHTML = `
       <div class="symbol-expert-card">
         <strong>暂无相关专家足迹</strong>
-        <span>参考价值：低</span>
-        <span>无动作</span>
-        <p>当前专家足迹库里还没有和 ${symbol} 直接相关的买入、卖出、加仓或减仓记录。后续接入自动 13F 后会补全。</p>
+        <p>当前专家足迹库里没有和 ${symbol} 直接相关的持仓记录。</p>
       </div>
     `;
     return;
@@ -370,23 +402,48 @@ function renderSymbolExpertFootprints(symbol) {
   `).join("");
 }
 
+const changeColors = { new: '#007aff', increased: '#34c759', reduced: '#ff3b30', exited: '#ff3b30', unchanged: '#8e8e93' };
+const changeLabels = { new: '新建', increased: '加仓', reduced: '减持', exited: '清仓', unchanged: '不变' };
+
+function getWatchlistTickers() {
+  return (config.tickers || []).map(t => t.symbol);
+}
+
 function renderExperts() {
-  const experts = config.expertFootprints || [];
+  const experts = (expertHoldings && expertHoldings.experts) || [];
+  const fallback = config.expertFootprints || [];
   const list = document.getElementById("expertList");
-  if (!experts.length) return;
-  list.innerHTML = experts.map((expert, index) => `
-    <button class="expert-row ${index === activeExpert ? "selected" : ""}" data-index="${index}" type="button">
-      <span class="ticker">${expert.expert}</span>
-      <span class="subline">${expert.style}</span>
-    </button>
-  `).join("");
+  const source = experts.length ? experts : fallback;
+  if (!source.length) return;
+  const wlTickers = getWatchlistTickers();
+  list.innerHTML = source.map((expert, index) => {
+    const name = expert.name || expert.expert;
+    const quarter = expert.quarter || '';
+    const totalValue = expert.totalValue || '';
+    const overlap = (expert.topHoldings || []).filter(h => wlTickers.includes(h.symbol)).length;
+    return `
+      <button class="expert-row ${index === activeExpert ? "selected" : ""}" data-index="${index}" type="button">
+        <span class="ticker">${name}</span>
+        <span class="subline">${expert.style}</span>
+        <span class="expert-meta">
+          ${quarter ? `<span class="expert-badge">${quarter}</span>` : ''}
+          ${totalValue ? `<span class="expert-badge">${totalValue}</span>` : ''}
+          ${overlap > 0 ? `<span class="expert-badge overlap">${overlap} 只重叠</span>` : ''}
+        </span>
+      </button>
+    `;
+  }).join("");
   list.querySelectorAll(".expert-row").forEach((row) => {
     row.addEventListener("click", () => {
       activeExpert = Number(row.dataset.index);
       renderExperts();
     });
   });
-  renderExpertDetail(experts[activeExpert]);
+  if (experts.length) {
+    renderExpertDetailV2(experts[activeExpert]);
+  } else {
+    renderExpertDetail(fallback[activeExpert]);
+  }
 }
 
 function renderExpertDetail(expert) {
@@ -407,6 +464,44 @@ function renderExpertDetail(expert) {
       <span>不是抄作业</span>
       <span>13F 延迟</span>
       <p>专家足迹只作为参考信号。真实仓位、成本、对冲和卖出动作可能已经变化。</p>
+    </div>
+  `;
+}
+
+function renderExpertDetailV2(expert) {
+  if (!expert) return;
+  const wlTickers = getWatchlistTickers();
+  document.getElementById("expertName").textContent = expert.name;
+  document.getElementById("expertStyle").textContent = `${expert.style} · ${expert.quarter} · Filed ${expert.filingDate} · AUM ${expert.totalValue}`;
+  const holdings = expert.topHoldings || [];
+  const rows = holdings.filter(h => h.pctOfPortfolio > 0).map((h, i) => {
+    const color = changeColors[h.change] || '#8e8e93';
+    const label = changeLabels[h.change] || h.change;
+    const isOverlap = wlTickers.includes(h.symbol);
+    return `
+      <tr class="${isOverlap ? 'overlap-row' : ''}">
+        <td>${i + 1}</td>
+        <td><strong>${h.symbol}</strong>${isOverlap ? ' <span class="overlap-dot">●</span>' : ''}</td>
+        <td>${h.name}</td>
+        <td>${h.pctOfPortfolio.toFixed(1)}%</td>
+        <td><span class="change-badge" style="color:${color}">${label}</span></td>
+        <td>${h.changeDetail}</td>
+      </tr>
+    `;
+  }).join('');
+  document.getElementById("expertActions").innerHTML = `
+    <div class="expert-insight">
+      <strong>💡 Insight:</strong> ${expert.keyInsight}
+    </div>
+    <table class="holdings-table">
+      <thead>
+        <tr><th>#</th><th>Ticker</th><th>公司</th><th>仓位</th><th>变化</th><th>详情</th></tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>
+    <div class="expert-action disclaimer">
+      <strong>⚠️ 说明</strong>
+      <p>13F 数据有 45 天延迟，不是抄作业信号。真实仓位、成本、对冲和卖出动作可能已变化。<span class="overlap-dot">●</span> = 你的 watchlist 重叠股。</p>
     </div>
   `;
 }

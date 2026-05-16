@@ -414,14 +414,38 @@ main {
 
 .symbol-expert-card {
   display: grid;
-  grid-template-columns: 1fr 140px 92px;
-  gap: 12px;
+  grid-template-columns: 1fr;
+  gap: 8px;
   align-items: start;
+}
+
+.symbol-expert-card.rich {
+  border-left: 3px solid var(--accent);
+}
+
+.symbol-expert-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.symbol-expert-stats {
+  display: flex;
+  gap: 16px;
+}
+
+.symbol-expert-stats .stat {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.symbol-expert-stats .stat strong {
+  margin-left: 4px;
 }
 
 .symbol-expert-card strong {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 .symbol-expert-card span {
@@ -430,10 +454,88 @@ main {
 }
 
 .symbol-expert-card p {
-  grid-column: 1 / -1;
   margin: 0;
   color: var(--muted);
   line-height: 1.5;
+  font-size: 13px;
+}
+
+.expert-meta {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.expert-badge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: var(--pill);
+  color: var(--muted);
+}
+
+.expert-badge.overlap {
+  background: rgba(52, 199, 89, 0.15);
+  color: var(--good);
+}
+
+.overlap-dot {
+  color: var(--good);
+  font-size: 10px;
+}
+
+.overlap-row {
+  background: rgba(52, 199, 89, 0.04);
+}
+
+.expert-insight {
+  padding: 12px 14px;
+  background: rgba(0, 122, 255, 0.06);
+  border-radius: var(--radius);
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.holdings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.holdings-table th {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 2px solid var(--line);
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.holdings-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.holdings-table tr:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.change-badge {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.expert-action.disclaimer {
+  background: #fffdf5;
+  border-color: #f0e6c0;
+  display: block;
+}
+
+.expert-action.disclaimer strong {
+  font-size: 14px;
 }
 
 .expert-action {
