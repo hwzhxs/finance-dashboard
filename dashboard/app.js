@@ -372,7 +372,7 @@ function renderSymbolExpertFootprints(symbol) {
             <span class="expert-badge">${m.quarter}</span>
           </div>
           <div class="symbol-expert-stats">
-            <span class="stat">仓位 <strong>${m.pctOfPortfolio.toFixed(1)}%</strong></span>
+            <span class="stat">仓位 <strong>${m.pctOfPortfolio ? m.pctOfPortfolio.toFixed(1) + '%' : '—'}</strong></span>
             <span class="stat">变化 <strong style="color:${color}">${label}</strong></span>
             <span class="stat change-date">${e.quarter} · ${e.filingDate}</span>
           </div>
@@ -407,8 +407,8 @@ function renderSymbolExpertFootprints(symbol) {
   `).join("");
 }
 
-const changeColors = { new: '#007aff', increased: '#34c759', reduced: '#ff3b30', exited: '#ff3b30', unchanged: '#8e8e93' };
-const changeLabels = { new: '新建', increased: '加仓', reduced: '减持', exited: '清仓', unchanged: '不变' };
+const changeColors = { new: '#007aff', increased: '#34c759', reduced: '#ff3b30', exited: '#ff3b30', unchanged: '#8e8e93', held: '#8e8e93', new_top10: '#007aff' };
+const changeLabels = { new: '新建', increased: '加仓', reduced: '减持', exited: '清仓', unchanged: '不变', held: '维持', new_top10: '新进前十' };
 
 function getWatchlistTickers() {
   return (config.tickers || []).map(t => t.symbol);
@@ -479,16 +479,17 @@ function renderExpertDetailV2(expert) {
   document.getElementById("expertName").textContent = expert.name;
   document.getElementById("expertStyle").textContent = `${expert.style} · ${expert.quarter} · Filed ${expert.filingDate} · AUM ${expert.totalValue}`;
   const holdings = expert.topHoldings || [];
-  const rows = holdings.filter(h => h.pctOfPortfolio > 0).map((h, i) => {
+  const rows = holdings.filter(h => h.pctOfPortfolio > 0 || h.change === 'increased' || h.change === 'reduced' || h.change === 'new' || h.change === 'new_top10').map((h, i) => {
     const color = changeColors[h.change] || '#8e8e93';
     const label = changeLabels[h.change] || h.change;
     const isOverlap = wlTickers.includes(h.symbol);
+    const pctDisplay = h.pctOfPortfolio ? h.pctOfPortfolio.toFixed(1) + '%' : '—';
     return `
       <tr class="${isOverlap ? 'overlap-row' : ''}">
         <td>${i + 1}</td>
         <td><strong>${h.symbol}</strong>${isOverlap ? ' <span class="overlap-dot">●</span>' : ''}</td>
         <td>${h.name}</td>
-        <td>${h.pctOfPortfolio.toFixed(1)}%</td>
+        <td>${pctDisplay}</td>
         <td><span class="change-badge" style="color:${color}">${label}</span></td>
         <td>${h.changeDetail} <span class="change-date">(${expert.quarter}, ${expert.filingDate})</span></td>
       </tr>
