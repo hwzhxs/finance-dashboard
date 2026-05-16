@@ -23,6 +23,8 @@ REPORTS_DIR = ROOT / "reports"
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
 COOKIE_JAR: http.cookiejar.CookieJar | None = None
 CRUMB: str | None = None
+CHART_HOST = "https://query1.finance.yahoo.com"  # query1 works better with curl
+QUOTE_HOST = "https://query2.finance.yahoo.com"  # quote needs cookies from query2
 
 AI_EXPOSURE = {
     "NVDA": 98,
@@ -109,50 +111,59 @@ def clamp(value: float, low: float = 0, high: float = 100) -> float:
 
 
 def http_json(url: str, timeout: int = 20, use_auth: bool = False, retries: int = 2) -> dict:
-    global COOKIE_JAR
-    if use_auth and COOKIE_JAR is not None:
-        opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(COOKIE_JAR))
-    else:
-        opener = urllib.request.build_opener()
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    """Fetch JSON via curl subprocess to avoid Python urllib TLS fingerprint detection."""
+    import subprocess as _sp
+    cookie_args = []
+    if use_auth and Path("/tmp/yf_cookies.txt").exists():
+        cookie_args = ["-b", "/tmp/yf_cookies.txt"]
+    ua = USER_AGENT if use_auth else "Mozilla/5.0"
     for attempt in range(retries + 1):
         try:
-            with opener.open(request, timeout=timeout) as response:
-                return json.loads(response.read().decode("utf-8"))
-        except urllib.error.HTTPError as exc:
-            if exc.code == 429 and attempt < retries:
-                wait = 5 * (attempt + 1)
-                print(f"429 rate limit, waiting {wait}s (attempt {attempt+1}/{retries+1})", file=sys.stderr)
-                time.sleep(wait)
+            result = _sp.run(
+                ["curl", "-s", "-m", str(timeout), "-H", f"User-Agent: {ua}"] + cookie_args + [url],
+                capture_output=True, timeout=timeout + 5,
+            )
+            if result.returncode != 0:
+                raise RuntimeError(f"curl exit {result.returncode}")
+            body = result.stdout.decode("utf-8", errors="replace").strip()
+            if not body:
+                raise RuntimeError("empty response")
+            data = json.loads(body)
+            if isinstance(data, dict) and data.get("chart", {}).get("error"):
+                err = data["chart"]["error"]
+                if "Too Many" in str(err) and attempt < retries:
+                    wait = 5 * (attempt + 1)
+                    print(f"429 rate limit, waiting {wait}s (attempt {attempt+1}/{retries+1})", file=sys.stderr)
+                    time.sleep(wait)
+                    continue
+            return data
+        except (json.JSONDecodeError, RuntimeError) as exc:
+            if attempt < retries:
+                time.sleep(3)
                 continue
             raise
 
 
 def init_yahoo_auth() -> bool:
-    """Obtain Yahoo Finance cookie + crumb for authenticated endpoints."""
-    global COOKIE_JAR, CRUMB
-    import http.cookiejar
-    COOKIE_JAR = http.cookiejar.CookieJar()
-    opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(COOKIE_JAR))
-    req = urllib.request.Request("https://fc.yahoo.com", headers={"User-Agent": USER_AGENT})
-    try:
-        opener.open(req, timeout=10)
-    except urllib.error.HTTPError:
-        pass  # 404 is expected, we just need the cookies
-    except Exception as exc:
-        print(f"Yahoo auth cookie failed: {exc}", file=sys.stderr)
-        return False
-    req2 = urllib.request.Request("https://query2.finance.yahoo.com/v1/test/getcrumb", headers={"User-Agent": USER_AGENT})
-    try:
-        with opener.open(req2, timeout=10) as resp:
-            CRUMB = resp.read().decode("utf-8").strip()
-    except Exception as exc:
-        print(f"Yahoo crumb failed: {exc}", file=sys.stderr)
-        return False
-    if not CRUMB or "Unauthorized" in CRUMB:
-        print(f"Yahoo crumb invalid: {CRUMB}", file=sys.stderr)
+    """Obtain Yahoo Finance cookie + crumb via curl."""
+    global CRUMB
+    import subprocess as _sp
+    cookie_file = "/tmp/yf_cookies.txt"
+    # Get cookies
+    _sp.run(["curl", "-s", "-c", cookie_file, "https://fc.yahoo.com",
+             "-H", f"User-Agent: {USER_AGENT}", "-o", "/dev/null", "-m", "10"],
+            capture_output=True, timeout=15)
+    # Get crumb
+    r = _sp.run(["curl", "-s", "-b", cookie_file,
+                 "https://query2.finance.yahoo.com/v1/test/getcrumb",
+                 "-H", f"User-Agent: {USER_AGENT}", "-m", "10"],
+               capture_output=True, timeout=15)
+    crumb = r.stdout.decode().strip()
+    if not crumb or "Unauthorized" in crumb or "Too Many" in crumb:
+        print(f"Yahoo crumb failed: {crumb[:50]}", file=sys.stderr)
         CRUMB = None
         return False
+    CRUMB = crumb
     print(f"Yahoo auth OK (crumb={CRUMB[:8]}...)")
     return True
 
@@ -184,11 +195,11 @@ def fetch_quotes(symbols: list[str]) -> dict[str, dict]:
 
 def fetch_chart(symbol: str) -> dict:
     url = (
-        "https://query2.finance.yahoo.com/v8/finance/chart/"
+        f"{CHART_HOST}/v8/finance/chart/"
         f"{urllib.parse.quote(symbol)}?range=1y&interval=1d&includePrePost=false"
     )
     try:
-        data = http_json(url, use_auth=True, retries=3)
+        data = http_json(url, retries=3)
     except Exception as exc:
         print(f"chart fetch failed for {symbol}: {exc}", file=sys.stderr)
         return {"rows": [], "meta": {}}

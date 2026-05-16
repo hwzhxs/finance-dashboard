@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-16T14:12:24.130080+00:00",
+  "generatedAt": "2026-05-16T14:38:43.260439+00:00",
   "generatedAtLocal": "2026-05-16 22:12:24 CST",
   "sources": {
     "notes": "Agent insights merged, SEC skipped for speed"
@@ -34,9 +34,9 @@
           "source": "行情 chart 数据 + 本地 ETF 配置"
         },
         "expenseRatioPct": 0.0945,
-        "return1mPct": null,
-        "return3mPct": null,
-        "return1yPct": null,
+        "return1mPct": 5.345895619144647,
+        "return3mPct": 8.247786386151933,
+        "return1yPct": 24.397503824455423,
         "volatilityPct": null,
         "maxDrawdownPct": null
       }
@@ -70,9 +70,9 @@
           "source": "行情 chart 数据 + 本地 ETF 配置"
         },
         "expenseRatioPct": 0.2,
-        "return1mPct": null,
-        "return3mPct": null,
-        "return1yPct": null,
+        "return1mPct": 10.689029166738129,
+        "return3mPct": 17.89955214831471,
+        "return1yPct": 35.93794546616389,
         "volatilityPct": null,
         "maxDrawdownPct": null
       }
@@ -106,9 +106,9 @@
           "source": "行情 chart 数据 + 本地 ETF 配置"
         },
         "expenseRatioPct": 0.03,
-        "return1mPct": null,
-        "return3mPct": null,
-        "return1yPct": null,
+        "return1mPct": 5.362407014755544,
+        "return3mPct": 8.192807689152716,
+        "return1yPct": 24.38032993352792,
         "volatilityPct": null,
         "maxDrawdownPct": null
       }
@@ -142,9 +142,9 @@
           "source": "行情 chart 数据 + 本地 ETF 配置"
         },
         "expenseRatioPct": 0.03,
-        "return1mPct": null,
-        "return3mPct": null,
-        "return1yPct": null,
+        "return1mPct": 4.8290586116887635,
+        "return3mPct": 7.615623565541685,
+        "return1yPct": 23.97976856998052,
         "volatilityPct": null,
         "maxDrawdownPct": null
       }
@@ -178,9 +178,9 @@
           "source": "行情 chart 数据 + 本地 ETF 配置"
         },
         "expenseRatioPct": 0.09,
-        "return1mPct": null,
-        "return3mPct": null,
-        "return1yPct": null,
+        "return1mPct": 0.019898809016050123,
+        "return3mPct": 0.02985118353908689,
+        "return1yPct": 0.0,
         "volatilityPct": null,
         "maxDrawdownPct": null
       }
