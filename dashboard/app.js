@@ -374,6 +374,7 @@ function renderSymbolExpertFootprints(symbol) {
           <div class="symbol-expert-stats">
             <span class="stat">仓位 <strong>${m.pctOfPortfolio.toFixed(1)}%</strong></span>
             <span class="stat">变化 <strong style="color:${color}">${label}</strong></span>
+            <span class="stat change-date">${e.quarter} · ${e.filingDate}</span>
           </div>
           <p>${m.changeDetail}</p>
         </div>
@@ -485,7 +486,7 @@ function renderExpertDetailV2(expert) {
         <td>${h.name}</td>
         <td>${h.pctOfPortfolio.toFixed(1)}%</td>
         <td><span class="change-badge" style="color:${color}">${label}</span></td>
-        <td>${h.changeDetail}</td>
+        <td>${h.changeDetail} <span class="change-date">(${expert.quarter}, ${expert.filingDate})</span></td>
       </tr>
     `;
   }).join('');
