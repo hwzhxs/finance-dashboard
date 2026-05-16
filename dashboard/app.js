@@ -209,7 +209,7 @@ function renderChart(item) {
     <rect class="chart-tooltip-bg" x="0" y="0" width="130" height="38" rx="6" fill="rgba(30,34,40,0.92)" opacity="0"></rect>
     <text class="chart-tooltip-date" x="0" y="0" fill="#ccc" font-size="11"></text>
     <text class="chart-tooltip-price" x="0" y="0" fill="#fff" font-size="13" font-weight="600"></text>
-    <rect class="chart-hover-area" x="${pad}" y="0" width="${width - pad * 2}" height="${height}" fill="transparent"></rect>
+    <rect class="chart-hover-area" x="${pad}" y="0" width="${width - pad * 2}" height="${height}" fill="transparent" style="pointer-events:all;cursor:crosshair"></rect>
   `;
   // Interactive tooltip
   const hoverArea = svg.querySelector(".chart-hover-area");
