@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-17T07:45:00+08:00",
+  "generatedAt": "2026-05-17T08:20:00+08:00",
   "dataSource": "Web search aggregation of 13F filings and public disclosures",
   "experts": [
     {
@@ -152,163 +152,163 @@
     },
     {
       "name": "Bill Ackman / Pershing Square",
-      "style": "集中持仓、优质企业、可理解商业模式、催化剂",
-      "quarter": "Q4 2025 (Q1 2026 待更新)",
-      "filingDate": "2026-02-17",
-      "totalValue": "$15.5B",
+      "style": "集中持仓、深度研究、长期价值、activist",
+      "quarter": "Q1 2026",
+      "filingDate": "2026-05-15",
+      "totalValue": "$13.71B",
       "topHoldings": [
         {
           "symbol": "BN",
-          "name": "Brookfield Corporation",
-          "pctOfPortfolio": 18.15,
+          "name": "Brookfield Corp",
+          "pctOfPortfolio": 17.62,
           "change": "unchanged",
-          "changeDetail": "最大持仓"
-        },
-        {
-          "symbol": "UBER",
-          "name": "Uber Technologies",
-          "pctOfPortfolio": 15.9,
-          "change": "unchanged",
-          "changeDetail": "第二大持仓"
+          "changeDetail": "持仓不变，继续作为第一大重仓股"
         },
         {
           "symbol": "AMZN",
-          "name": "Amazon.com",
-          "pctOfPortfolio": 14.28,
-          "change": "unchanged",
-          "changeDetail": "重要持仓"
+          "name": "Amazon.com Inc",
+          "pctOfPortfolio": 17.39,
+          "change": "increased",
+          "changeDetail": "从960万股增至1145万股，加仓约19%"
         },
         {
-          "symbol": "META",
-          "name": "Meta Platforms",
-          "pctOfPortfolio": 11.37,
+          "symbol": "UBER",
+          "name": "Uber Technologies Inc",
+          "pctOfPortfolio": 15.71,
+          "change": "unchanged",
+          "changeDetail": "持仓不变"
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft Corp",
+          "pctOfPortfolio": 15.26,
           "change": "new",
-          "changeDetail": "Q4 2025 新建仓，直接进入前五"
+          "changeDetail": "新建仓565万股，Ackman称估值极具吸引力，2月开始建仓"
         },
         {
           "symbol": "QSR",
           "name": "Restaurant Brands International",
-          "pctOfPortfolio": 10.0,
+          "pctOfPortfolio": 12.2,
           "change": "unchanged",
-          "changeDetail": "长期持仓"
+          "changeDetail": "持仓不变"
+        },
+        {
+          "symbol": "META",
+          "name": "Meta Platforms Inc",
+          "pctOfPortfolio": 11.1,
+          "change": "unchanged",
+          "changeDetail": "持仓不变"
         },
         {
           "symbol": "HHH",
-          "name": "Howard Hughes Holdings",
-          "pctOfPortfolio": 8.0,
+          "name": "Howard Hughes Holdings Inc",
+          "pctOfPortfolio": 8.7,
           "change": "unchanged",
-          "changeDetail": "长期持仓"
+          "changeDetail": "持仓不变"
         },
         {
-          "symbol": "UMG",
-          "name": "Universal Music Group",
-          "pctOfPortfolio": 7.0,
+          "symbol": "SEG",
+          "name": "Seaport Entertainment Group",
+          "pctOfPortfolio": 0.79,
+          "change": "unchanged",
+          "changeDetail": "持仓不变"
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet Inc",
+          "pctOfPortfolio": 0.72,
           "change": "reduced",
-          "changeDetail": "有所减持"
+          "changeDetail": "从684万股大幅减至34万股，减仓约95%"
         },
         {
-          "symbol": "CMG",
-          "name": "Chipotle Mexican Grill",
-          "pctOfPortfolio": 0,
-          "change": "exited",
-          "changeDetail": "Q4 全部清仓，估值过高"
-        },
-        {
-          "symbol": "HLT",
-          "name": "Hilton Worldwide",
-          "pctOfPortfolio": 0,
-          "change": "exited",
-          "changeDetail": "Q4 全部清仓"
+          "symbol": "HTZ",
+          "name": "Hertz Global Holdings",
+          "pctOfPortfolio": 0.51,
+          "change": "unchanged",
+          "changeDetail": "持仓不变"
         }
       ],
-      "watchlistOverlap": [
-        "AMZN"
-      ],
-      "keyInsight": "Ackman 大手笔新建 META 仓位（11.4%），同时清仓 CMG 和 HLT。组合越来越集中在科技平台。"
+      "keyInsight": "新建MSFT重仓+大幅清仓GOOGL，Ackman在科技股中做了明确取舍，押注微软估值回归"
     },
     {
       "name": "Stanley Druckenmiller / Duquesne",
-      "style": "宏观趋势、成长动量、风险控制、灵活调仓",
-      "quarter": "Q4 2025 (Q1 2026 待更新)",
-      "filingDate": "2026-02-17",
-      "totalValue": "$4.5B",
+      "style": "宏观对冲、高换手、趋势跟踪、全球配置",
+      "quarter": "Q1 2026",
+      "filingDate": "2026-05-15",
+      "totalValue": "$3.38B",
       "topHoldings": [
         {
           "symbol": "NTRA",
-          "name": "Natera Inc.",
-          "pctOfPortfolio": 12.8,
-          "change": "unchanged",
-          "changeDetail": "最大持仓，基因检测"
-        },
-        {
-          "symbol": "XLF",
-          "name": "Financial Select Sector SPDR",
-          "pctOfPortfolio": 6.7,
-          "change": "new",
-          "changeDetail": "新建金融 ETF 仓位"
-        },
-        {
-          "symbol": "INSM",
-          "name": "Insmed Inc.",
-          "pctOfPortfolio": 5.74,
-          "change": "unchanged",
-          "changeDetail": "生物制药持仓"
-        },
-        {
-          "symbol": "RSP",
-          "name": "Invesco S&P 500 Equal Weight ETF",
-          "pctOfPortfolio": 5.0,
-          "change": "new",
-          "changeDetail": "新建等权 ETF 仓位"
-        },
-        {
-          "symbol": "TEVA",
-          "name": "Teva Pharmaceutical",
-          "pctOfPortfolio": 4.08,
-          "change": "unchanged",
-          "changeDetail": "制药持仓"
-        },
-        {
-          "symbol": "WWD",
-          "name": "Woodward Inc.",
-          "pctOfPortfolio": 3.97,
-          "change": "unchanged",
-          "changeDetail": "工业持仓"
-        },
-        {
-          "symbol": "AMZN",
-          "name": "Amazon.com",
-          "pctOfPortfolio": 3.79,
-          "change": "unchanged",
-          "changeDetail": "科技配置"
-        },
-        {
-          "symbol": "TSM",
-          "name": "Taiwan Semiconductor",
-          "pctOfPortfolio": 3.67,
-          "change": "unchanged",
-          "changeDetail": "半导体供应链"
-        },
-        {
-          "symbol": "CPNG",
-          "name": "Coupang Inc.",
-          "pctOfPortfolio": 3.55,
-          "change": "unchanged",
-          "changeDetail": "韩国电商"
+          "name": "Natera Inc",
+          "pctOfPortfolio": 18.14,
+          "change": "increased",
+          "changeDetail": "从251万股增至306万股，继续加码基因检测龙头"
         },
         {
           "symbol": "EWZ",
           "name": "iShares MSCI Brazil ETF",
-          "pctOfPortfolio": 2.99,
+          "pctOfPortfolio": 8.71,
+          "change": "unchanged",
+          "changeDetail": "新兴市场ETF持仓基本不变"
+        },
+        {
+          "symbol": "INSM",
+          "name": "Insmed Inc",
+          "pctOfPortfolio": 5.59,
+          "change": "reduced",
+          "changeDetail": "从148万股减至115万股，减仓约22%"
+        },
+        {
+          "symbol": "TSM",
+          "name": "Taiwan Semiconductor",
+          "pctOfPortfolio": 4.96,
           "change": "new",
-          "changeDetail": "新建巴西 ETF 仓位"
+          "changeDetail": "新建仓49.5万股台积电"
+        },
+        {
+          "symbol": "RSP",
+          "name": "Invesco S&P 500 Equal Weight ETF",
+          "pctOfPortfolio": 4.67,
+          "change": "reduced",
+          "changeDetail": "看涨期权从117万份减至82万份"
+        },
+        {
+          "symbol": "YPF",
+          "name": "YPF Sociedad Anónima",
+          "pctOfPortfolio": 4.43,
+          "change": "increased",
+          "changeDetail": "从60万股暴增至323万股，大举加仓阿根廷能源股"
+        },
+        {
+          "symbol": "TBBB",
+          "name": "BBB Foods Inc",
+          "pctOfPortfolio": 3.26,
+          "change": "increased",
+          "changeDetail": "从267万股增至310万股"
+        },
+        {
+          "symbol": "AA",
+          "name": "Alcoa Corp",
+          "pctOfPortfolio": 2.93,
+          "change": "increased",
+          "changeDetail": "从137万股增至149万股"
+        },
+        {
+          "symbol": "NAMS",
+          "name": "NewAmsterdam Pharma",
+          "pctOfPortfolio": 2.91,
+          "change": "unchanged",
+          "changeDetail": "持仓不变"
+        },
+        {
+          "symbol": "SE",
+          "name": "Sea Ltd",
+          "pctOfPortfolio": 2.7,
+          "change": "increased",
+          "changeDetail": "从94万股增至109万股"
         }
       ],
-      "watchlistOverlap": [
-        "AMZN",
-        "TSM"
-      ],
-      "keyInsight": "Druckenmiller 大幅调仓 — 27 个新仓位、16 个清仓。明显从科技转向金融、等权和巴西。宏观拐点信号强烈。"
+      "keyInsight": "Druck大幅减仓AMZN近乎清仓、退出GOOGL，转而押注拉美（YPF/TBBB）和生物科技（NTRA），组合换手率58%"
     },
     {
       "name": "ARK Invest / Cathie Wood",
@@ -426,315 +426,243 @@
     },
     {
       "name": "Coatue Management / Philippe Laffont",
-      "style": "科技成长、平台型公司、云与 AI 主题",
-      "quarter": "Q4 2025 (Q1 2026 待更新)",
-      "filingDate": "2026-02-17",
-      "totalValue": "$40B",
+      "style": "科技成长、TMT深度研究、趋势投资",
+      "quarter": "Q1 2026",
+      "filingDate": "2026-05-15",
+      "totalValue": "$29.06B",
       "topHoldings": [
-        {
-          "symbol": "GOOGL",
-          "name": "Alphabet Inc.",
-          "pctOfPortfolio": 8.0,
-          "change": "reduced",
-          "changeDetail": "小幅减持但仍是最大持仓"
-        },
         {
           "symbol": "TSM",
           "name": "Taiwan Semiconductor",
-          "pctOfPortfolio": 7.5,
-          "change": "unchanged",
-          "changeDetail": "半导体核心"
+          "pctOfPortfolio": 10.8,
+          "change": "new",
+          "changeDetail": "新建超大仓位600万股，一跃成为第一大持仓"
         },
         {
-          "symbol": "MSFT",
-          "name": "Microsoft Corporation",
-          "pctOfPortfolio": 7.0,
-          "change": "unchanged",
-          "changeDetail": "云和 AI 基础设施"
-        },
-        {
-          "symbol": "META",
-          "name": "Meta Platforms",
-          "pctOfPortfolio": 6.5,
+          "symbol": "GEV",
+          "name": "GE Vernova Inc",
+          "pctOfPortfolio": 7.73,
           "change": "reduced",
-          "changeDetail": "小幅减持"
+          "changeDetail": "从337万股减至257万股，减仓约24%"
         },
         {
-          "symbol": "AMZN",
-          "name": "Amazon.com",
-          "pctOfPortfolio": 5.5,
+          "symbol": "LRCX",
+          "name": "Lam Research Corp",
+          "pctOfPortfolio": 7.39,
           "change": "unchanged",
-          "changeDetail": "AWS 和电商"
-        },
-        {
-          "symbol": "NVDA",
-          "name": "NVIDIA Corporation",
-          "pctOfPortfolio": 5.0,
-          "change": "reduced",
-          "changeDetail": "小幅减持",
-          "quarterHistory": [
-            {
-              "q": "Q2 2025",
-              "shares": 4500000,
-              "pct": 8.0,
-              "action": "加仓"
-            },
-            {
-              "q": "Q3 2025",
-              "shares": 5000000,
-              "pct": 9.2,
-              "action": "加仓"
-            },
-            {
-              "q": "Q4 2025",
-              "shares": 5200000,
-              "pct": 9.8,
-              "action": "小幅加仓"
-            }
-          ],
-          "trendSignal": "🟢 Coatue 连续 3 个季度加仓 NVDA，AI 算力信心坚定。"
+          "changeDetail": "持仓不变，半导体设备核心持仓"
         },
         {
           "symbol": "AMAT",
-          "name": "Applied Materials",
-          "pctOfPortfolio": 4.0,
-          "change": "increased",
-          "changeDetail": "大幅加仓半导体设备"
-        },
-        {
-          "symbol": "SPOT",
-          "name": "Spotify",
-          "pctOfPortfolio": 3.5,
-          "change": "increased",
-          "changeDetail": "加仓"
-        },
-        {
-          "symbol": "NFLX",
-          "name": "Netflix",
-          "pctOfPortfolio": 3.0,
-          "change": "increased",
-          "changeDetail": "加仓"
-        },
-        {
-          "symbol": "ORCL",
-          "name": "Oracle Corporation",
-          "pctOfPortfolio": 2.8,
+          "name": "Applied Materials Inc",
+          "pctOfPortfolio": 6.17,
           "change": "reduced",
-          "changeDetail": "小幅减持"
+          "changeDetail": "从598万股减至524万股"
+        },
+        {
+          "symbol": "AVGO",
+          "name": "Broadcom Inc",
+          "pctOfPortfolio": 5.86,
+          "change": "unchanged",
+          "changeDetail": "持仓不变"
+        },
+        {
+          "symbol": "ETN",
+          "name": "Eaton Corp",
+          "pctOfPortfolio": 5.85,
+          "change": "unchanged",
+          "changeDetail": "持仓不变"
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon.com Inc",
+          "pctOfPortfolio": 5.68,
+          "change": "reduced",
+          "changeDetail": "从993万股减至793万股，减仓约20%"
+        },
+        {
+          "symbol": "META",
+          "name": "Meta Platforms Inc",
+          "pctOfPortfolio": 5.54,
+          "change": "reduced",
+          "changeDetail": "从378万股减至281万股，减仓约26%"
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet Inc",
+          "pctOfPortfolio": 5.37,
+          "change": "reduced",
+          "changeDetail": "从884万股减至542万股，减仓约39%"
+        },
+        {
+          "symbol": "CEG",
+          "name": "Constellation Energy",
+          "pctOfPortfolio": 4.45,
+          "change": "reduced",
+          "changeDetail": "从590万股减至463万股"
         }
       ],
-      "watchlistOverlap": [
-        "GOOGL",
-        "TSM",
-        "MSFT",
-        "AMZN",
-        "NVDA",
-        "ORCL"
-      ],
-      "keyInsight": "Coatue 科技重仓不变但在做 rotation — 减持 GOOGL/META/NVDA，加仓半导体设备 AMAT 和内容平台 SPOT/NFLX。",
-      "trendSummary": [
-        "🟢 Coatue 连续 3 个季度加仓 NVDA，AI 算力信心坚定。"
-      ]
+      "keyInsight": "大举建仓TSM成为第一重仓，减持大量Mag7，退出ARM/NFLX/ORCL/AMD，重心从软件转向半导体硬件和能源基建"
     },
     {
       "name": "Bridgewater Associates / Ray Dalio",
-      "style": "全天候策略、宏观对冲、分散配置、风险平衡",
-      "quarter": "Q4 2025 (Q1 2026 待更新)",
-      "filingDate": "2026-02-17",
-      "totalValue": "$27.4B",
+      "style": "全天候策略、宏观对冲、风险平价、ETF配置",
+      "quarter": "Q1 2026",
+      "filingDate": "2026-05-15",
+      "totalValue": "$22.40B",
       "topHoldings": [
         {
           "symbol": "SPY",
           "name": "SPDR S&P 500 ETF Trust",
-          "pctOfPortfolio": 10.0,
-          "change": "increased",
-          "changeDetail": "本季度 top buy，大幅加仓"
+          "pctOfPortfolio": 12.67,
+          "change": "new",
+          "changeDetail": "新建超大仓位436万股"
         },
         {
           "symbol": "IVV",
-          "name": "iShares Core S&P 500",
-          "pctOfPortfolio": 8.0,
-          "change": "unchanged",
-          "changeDetail": "大盘 ETF"
+          "name": "iShares Core S&P 500 ETF",
+          "pctOfPortfolio": 8.89,
+          "change": "reduced",
+          "changeDetail": "从684万股减至506万股"
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon.com Inc",
+          "pctOfPortfolio": 4.08,
+          "change": "increased",
+          "changeDetail": "从194万股增至438万股，加仓超一倍"
         },
         {
           "symbol": "NVDA",
-          "name": "NVIDIA Corporation",
-          "pctOfPortfolio": 5.5,
+          "name": "Nvidia Corporation",
+          "pctOfPortfolio": 3.65,
           "change": "increased",
-          "changeDetail": "大幅加仓"
-        },
-        {
-          "symbol": "LRCX",
-          "name": "Lam Research",
-          "pctOfPortfolio": 4.5,
-          "change": "reduced",
-          "changeDetail": "减持半导体设备"
-        },
-        {
-          "symbol": "CRM",
-          "name": "Salesforce Inc.",
-          "pctOfPortfolio": 4.0,
-          "change": "reduced",
-          "changeDetail": "减持"
+          "changeDetail": "从386万股增至469万股"
         },
         {
           "symbol": "GOOGL",
-          "name": "Alphabet Inc.",
-          "pctOfPortfolio": 3.8,
-          "change": "reduced",
-          "changeDetail": "减持",
-          "quarterHistory": [
-            {
-              "q": "Q2 2025",
-              "shares": 5000000,
-              "pct": 3.0,
-              "action": "新建仓"
-            },
-            {
-              "q": "Q3 2025",
-              "shares": 5500000,
-              "pct": 3.5,
-              "action": "加仓"
-            },
-            {
-              "q": "Q4 2025",
-              "shares": 6000000,
-              "pct": 4.0,
-              "action": "加仓"
-            }
-          ],
-          "trendSignal": "🟢 Bridgewater 连续加仓 GOOGL，全天候策略中科技权重上升。"
-        },
-        {
-          "symbol": "MSFT",
-          "name": "Microsoft Corporation",
-          "pctOfPortfolio": 3.5,
-          "change": "reduced",
-          "changeDetail": "减持"
-        },
-        {
-          "symbol": "AMZN",
-          "name": "Amazon.com",
-          "pctOfPortfolio": 3.2,
+          "name": "Alphabet Inc",
+          "pctOfPortfolio": 3.06,
           "change": "increased",
-          "changeDetail": "加仓"
+          "changeDetail": "从159万股增至238万股，加仓50%"
         },
         {
           "symbol": "AVGO",
-          "name": "Broadcom Inc.",
-          "pctOfPortfolio": 3.0,
+          "name": "Broadcom Inc",
+          "pctOfPortfolio": 2.54,
           "change": "increased",
-          "changeDetail": "加仓 AI 网络芯片"
-        },
-        {
-          "symbol": "ORCL",
-          "name": "Oracle Corporation",
-          "pctOfPortfolio": 2.8,
-          "change": "increased",
-          "changeDetail": "加仓"
-        }
-      ],
-      "watchlistOverlap": [
-        "SPY",
-        "NVDA",
-        "CRM",
-        "GOOGL",
-        "MSFT",
-        "AMZN",
-        "AVGO",
-        "ORCL"
-      ],
-      "keyInsight": "Bridgewater 大幅加仓 SPY 和 NVDA，同时减持 CRM/GOOGL/MSFT。全天候策略开始向 AI 基础设施倾斜。",
-      "trendSummary": [
-        "🟢 Bridgewater 连续加仓 GOOGL，全天候策略中科技权重上升。"
-      ]
-    },
-    {
-      "name": "Appaloosa Management / David Tepper",
-      "style": "逆向投资、宏观对冲、高集中度、困境反转",
-      "quarter": "Q4 2025 (Q1 2026 待更新)",
-      "filingDate": "2026-02-17",
-      "totalValue": "$6.95B",
-      "topHoldings": [
-        {
-          "symbol": "BABA",
-          "name": "Alibaba Group",
-          "pctOfPortfolio": 11.0,
-          "change": "reduced",
-          "changeDetail": "减持约 20%，但仍是最大持仓"
-        },
-        {
-          "symbol": "GOOGL",
-          "name": "Alphabet Inc.",
-          "pctOfPortfolio": 9.0,
-          "change": "increased",
-          "changeDetail": "加仓"
-        },
-        {
-          "symbol": "AMZN",
-          "name": "Amazon.com",
-          "pctOfPortfolio": 8.5,
-          "change": "reduced",
-          "changeDetail": "小幅减持"
+          "changeDetail": "从116万股增至183万股，加仓58%"
         },
         {
           "symbol": "MU",
           "name": "Micron Technology",
-          "pctOfPortfolio": 7.0,
+          "pctOfPortfolio": 2.23,
           "change": "increased",
-          "changeDetail": "加仓存储芯片"
+          "changeDetail": "从88万股增至147万股，加仓66%"
         },
         {
-          "symbol": "META",
-          "name": "Meta Platforms",
-          "pctOfPortfolio": 6.5,
+          "symbol": "IEMG",
+          "name": "iShares Core MSCI EM ETF",
+          "pctOfPortfolio": 1.83,
           "change": "increased",
-          "changeDetail": "加仓"
+          "changeDetail": "从356万股增至437万股"
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft Corp",
+          "pctOfPortfolio": 1.79,
+          "change": "increased",
+          "changeDetail": "从98万股增至108万股"
+        },
+        {
+          "symbol": "GEV",
+          "name": "GE Vernova Inc",
+          "pctOfPortfolio": 1.69,
+          "change": "reduced",
+          "changeDetail": "从66万股减至43万股，减仓约35%"
+        }
+      ],
+      "keyInsight": "大幅加仓科技股（AMZN翻倍、AVGO/MU加仓60%+），新建SPY大仓位，整体从防御转向进攻，退出CRM/NOW/WDAY等SaaS"
+    },
+    {
+      "name": "Appaloosa Management / David Tepper",
+      "style": "困境投资、宏观对冲、逆向、高集中度",
+      "quarter": "Q1 2026",
+      "filingDate": "2026-05-15",
+      "totalValue": "$5.93B",
+      "topHoldings": [
+        {
+          "symbol": "AMZN",
+          "name": "Amazon.com Inc",
+          "pctOfPortfolio": 15.16,
+          "change": "increased",
+          "changeDetail": "从217万股增至432万股，加仓近一倍"
+        },
+        {
+          "symbol": "MU",
+          "name": "Micron Technology",
+          "pctOfPortfolio": 9.48,
+          "change": "unchanged",
+          "changeDetail": "持仓不变"
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet Inc",
+          "pctOfPortfolio": 8.38,
+          "change": "unchanged",
+          "changeDetail": "持仓不变"
+        },
+        {
+          "symbol": "UBER",
+          "name": "Uber Technologies Inc",
+          "pctOfPortfolio": 7.68,
+          "change": "increased",
+          "changeDetail": "从185万股暴增至633万股，加仓超过两倍"
         },
         {
           "symbol": "TSM",
           "name": "Taiwan Semiconductor",
-          "pctOfPortfolio": 5.0,
+          "pctOfPortfolio": 7.56,
+          "change": "new",
+          "changeDetail": "新建132万股大仓位"
+        },
+        {
+          "symbol": "BABA",
+          "name": "Alibaba Group",
+          "pctOfPortfolio": 7.33,
+          "change": "reduced",
+          "changeDetail": "从513万股减至346万股，减仓约33%"
+        },
+        {
+          "symbol": "VST",
+          "name": "Vistra Corp",
+          "pctOfPortfolio": 5.12,
           "change": "increased",
-          "changeDetail": "加仓半导体"
+          "changeDetail": "从94万股增至202万股，电力股翻倍加仓"
+        },
+        {
+          "symbol": "EEM",
+          "name": "iShares MSCI EM ETF",
+          "pctOfPortfolio": 4.98,
+          "change": "increased",
+          "changeDetail": "加仓新兴市场"
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft Corp",
+          "pctOfPortfolio": 4.11,
+          "change": "increased",
+          "changeDetail": "加仓微软"
         },
         {
           "symbol": "NVDA",
-          "name": "NVIDIA Corporation",
-          "pctOfPortfolio": 4.5,
-          "change": "reduced",
-          "changeDetail": "减持"
-        },
-        {
-          "symbol": "AAL",
-          "name": "American Airlines",
+          "name": "Nvidia Corporation",
           "pctOfPortfolio": 3.5,
-          "change": "increased",
-          "changeDetail": "加仓航空"
-        },
-        {
-          "symbol": "EWY",
-          "name": "iShares MSCI South Korea ETF",
-          "pctOfPortfolio": 2.5,
-          "change": "new",
-          "changeDetail": "新建韩国 ETF"
-        },
-        {
-          "symbol": "BALL",
-          "name": "Ball Corporation",
-          "pctOfPortfolio": 2.0,
-          "change": "new",
-          "changeDetail": "新建仓"
+          "change": "reduced",
+          "changeDetail": "小幅减持"
         }
       ],
-      "watchlistOverlap": [
-        "GOOGL",
-        "AMZN",
-        "TSM",
-        "NVDA"
-      ],
-      "keyInsight": "Tepper 减持中国科技（BABA -20%），加仓美国大科技 GOOGL/META 和半导体 TSM/MU。从中国到美国的 rotation 明显。"
+      "keyInsight": "AMZN翻倍加仓+UBER暴增两倍+新建TSM大仓位，减持BABA，Tepper从中概转向美股科技+半导体"
     },
     {
       "name": "BlackRock Inc.",
@@ -940,7 +868,8 @@
       },
       "investmentOutlook": "对风险资产持建设性态度，倾向 AI + 增长型 + 大盘股，价值股作为分散工具。固收偏好 MBS 多于公司债。",
       "analystNote": "前九大持仓权重为估算值（NVDA 5.87% 已确认），其余基于 BLK 被动持仓近似市值权重推算。加减仓方向已通过 13F 交叉验证。减持七巨头中五个但仍为核心持仓，同时加码能源+芯片（AI上游基础设施）。Crypto 做结构调整：减 COIN 加 MSTR。",
-      "dataReliability": "核心数据经交叉验证确认，个别精确股数来自搜索引擎聚合，建议以 SEC EDGAR 原始 13F 为准"
+      "dataReliability": "核心数据经交叉验证确认，个别精确股数来自搜索引擎聚合，建议以 SEC EDGAR 原始 13F 为准",
+      "keyInsight": "减持七巨头中五个但仍为核心持仓，加码能源+芯片（AI上游基础设施），Crypto结构调整：减COIN加MSTR"
     }
   ]
 }
