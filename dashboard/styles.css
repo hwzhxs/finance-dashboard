@@ -139,9 +139,9 @@ h3 {
 .status {
   display: flex;
   align-items: center;
-  gap: var(--sp-md);
+  gap: var(--sp-sm);
   color: var(--muted);
-  font-size: 14px;
+  font-size: 13px;
 }
 
 /* ===== Main Layout ===== */
@@ -223,21 +223,22 @@ main {
 }
 
 #refreshBtn {
-  padding: 14px 24px;
-  height: 48px;
-  border: 1px solid var(--ink);
-  border-radius: var(--r-sm);
+  padding: 6px 14px;
+  height: 32px;
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-full);
   background: #ffffff;
-  color: var(--ink);
-  font-size: 16px;
+  color: var(--muted);
+  font-size: 13px;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 #refreshBtn:hover {
-  background: var(--ink);
-  color: #ffffff;
+  border-color: var(--ink);
+  color: var(--ink);
+  background: #ffffff;
 }
 
 /* ===== Views ===== */
