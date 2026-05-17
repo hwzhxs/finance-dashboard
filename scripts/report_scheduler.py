@@ -38,6 +38,10 @@ def run_update() -> None:
     subprocess.run(["python3", str(ROOT / "scripts" / "update_research.py")], check=True)
 
 
+def run_earnings_calendar() -> None:
+    subprocess.run(["python3", str(ROOT / "scripts" / "earnings_calendar.py")], check=True)
+
+
 def main() -> int:
     while True:
         now = datetime.now(NY)
@@ -57,6 +61,16 @@ def main() -> int:
                         print(f"Data updated for {key}", flush=True)
                     except Exception as exc:
                         print(f"Data update failed for {key}: {exc}", flush=True)
+
+            # Earnings calendar: update once daily at 08:00 BJT
+            ecal_key = f"{date}:earnings-calendar"
+            if now.hour == 8 and now.minute < 5 and not already_done(ecal_key):
+                try:
+                    run_earnings_calendar()
+                    mark_done(ecal_key)
+                    print(f"Earnings calendar updated for {ecal_key}", flush=True)
+                except Exception as exc:
+                    print(f"Earnings calendar failed: {exc}", flush=True)
         time.sleep(30)
 
 
