@@ -1,19 +1,3 @@
-/* Theme switcher */
-(function() {
-  const saved = localStorage.getItem('dashboard-theme') || '';
-  if (saved) document.documentElement.dataset.theme = saved;
-  const sel = document.getElementById('themeSelect');
-  if (sel) {
-    sel.value = saved;
-    sel.addEventListener('change', function() {
-      const v = this.value;
-      if (v) { document.documentElement.dataset.theme = v; }
-      else { delete document.documentElement.dataset.theme; }
-      localStorage.setItem('dashboard-theme', v);
-    });
-  }
-})();
-
 const perspectiveLabels = {
   composite: "综合",
   buffett_munger: "巴菲特",
