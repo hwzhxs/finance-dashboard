@@ -478,8 +478,10 @@ function renderExpertDetailV2(expert) {
   const wlTickers = getWatchlistTickers();
   document.getElementById("expertName").textContent = expert.name;
   document.getElementById("expertStyle").textContent = `${expert.style} · ${expert.quarter} · Filed ${expert.filingDate} · AUM ${expert.totalValue}`;
-  const holdings = expert.topHoldings || [];
-  const rows = holdings.filter(h => h.pctOfPortfolio > 0 || h.change === 'increased' || h.change === 'reduced' || h.change === 'new' || h.change === 'new_top10').map((h, i) => {
+  const allHoldings = expert.topHoldings || [];
+  const coreHoldings = allHoldings.slice(0, 10);
+  const notableMoves = (expert.notableMoves || []).concat(allHoldings.slice(10));
+  const makeRow = (h, i) => {
     const color = changeColors[h.change] || '#8e8e93';
     const label = changeLabels[h.change] || h.change;
     const isOverlap = wlTickers.includes(h.symbol);
@@ -494,17 +496,30 @@ function renderExpertDetailV2(expert) {
         <td>${h.changeDetail} <span class="change-date">(${expert.quarter}, ${expert.filingDate})</span></td>
       </tr>
     `;
-  }).join('');
+  };
+  const coreRows = coreHoldings.map((h, i) => makeRow(h, i)).join('');
+  const activeNotable = notableMoves.filter(h => h.change && h.change !== 'unchanged' && h.change !== 'held');
+  const notableRows = activeNotable.map((h, i) => makeRow(h, i)).join('');
   document.getElementById("expertActions").innerHTML = `
     <div class="expert-insight">
-      <strong>💡 Insight:</strong> ${expert.keyInsight}
+      <strong>💡 Insight:</strong> ${expert.keyInsight || expert.analystNote || ''}
     </div>
     <table class="holdings-table">
       <thead>
         <tr><th>#</th><th>Ticker</th><th>公司</th><th>仓位</th><th>变化</th><th>详情</th></tr>
       </thead>
-      <tbody>${rows}</tbody>
+      <tbody>${coreRows}</tbody>
     </table>
+    ${activeNotable.length ? `
+    <div class="notable-moves">
+      <h4>📌 其他重要动向</h4>
+      <table class="holdings-table notable">
+        <thead>
+          <tr><th>#</th><th>Ticker</th><th>公司</th><th>仓位</th><th>变化</th><th>详情</th></tr>
+        </thead>
+        <tbody>${notableRows}</tbody>
+      </table>
+    </div>` : ''}
     ${(expert.trendSummary && expert.trendSummary.length) ? `
     <div class="trend-summary">
       <h4>📈 趋势信号</h4>

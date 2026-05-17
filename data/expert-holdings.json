@@ -741,69 +741,6 @@
           "pctOfPortfolio": 0.96,
           "change": "new_top10",
           "changeDetail": "新进前十，替代 Eli Lilly"
-        },
-        {
-          "symbol": "XOM",
-          "name": "Exxon Mobil",
-          "pctOfPortfolio": null,
-          "change": "increased",
-          "changeDetail": "能源板块加仓第一"
-        },
-        {
-          "symbol": "JNJ",
-          "name": "Johnson & Johnson",
-          "pctOfPortfolio": null,
-          "change": "increased",
-          "changeDetail": "加仓"
-        },
-        {
-          "symbol": "CVX",
-          "name": "Chevron Corp.",
-          "pctOfPortfolio": null,
-          "change": "increased",
-          "changeDetail": "能源板块加仓"
-        },
-        {
-          "symbol": "AMAT",
-          "name": "Applied Materials",
-          "pctOfPortfolio": null,
-          "change": "increased",
-          "changeDetail": "芯片设备，加仓"
-        },
-        {
-          "symbol": "MU",
-          "name": "Micron Technology",
-          "pctOfPortfolio": null,
-          "change": "increased",
-          "changeDetail": "存储芯片，加仓"
-        },
-        {
-          "symbol": "MSTR",
-          "name": "MicroStrategy",
-          "pctOfPortfolio": null,
-          "change": "increased",
-          "changeDetail": "加仓约 314 万股，总持仓 1775 万股，约 $22.16 亿"
-        },
-        {
-          "symbol": "COIN",
-          "name": "Coinbase",
-          "pctOfPortfolio": null,
-          "change": "reduced",
-          "changeDetail": "减持约 330 万股，剩余 1674 万股，约 $29.24 亿"
-        },
-        {
-          "symbol": "LCID",
-          "name": "Lucid Motors",
-          "pctOfPortfolio": null,
-          "change": "increased",
-          "changeDetail": "连续第六个季度增持"
-        },
-        {
-          "symbol": "0763.HK",
-          "name": "中兴通讯 H股",
-          "pctOfPortfolio": null,
-          "change": "increased",
-          "changeDetail": "多头比例 6.38% → 7.24%"
         }
       ],
       "keyMoves": {
@@ -869,7 +806,72 @@
       "investmentOutlook": "对风险资产持建设性态度，倾向 AI + 增长型 + 大盘股，价值股作为分散工具。固收偏好 MBS 多于公司债。",
       "analystNote": "前九大持仓权重为估算值（NVDA 5.87% 已确认），其余基于 BLK 被动持仓近似市值权重推算。加减仓方向已通过 13F 交叉验证。减持七巨头中五个但仍为核心持仓，同时加码能源+芯片（AI上游基础设施）。Crypto 做结构调整：减 COIN 加 MSTR。",
       "dataReliability": "核心数据经交叉验证确认，个别精确股数来自搜索引擎聚合，建议以 SEC EDGAR 原始 13F 为准",
-      "keyInsight": "减持七巨头中五个但仍为核心持仓，加码能源+芯片（AI上游基础设施），Crypto结构调整：减COIN加MSTR"
+      "keyInsight": "减持七巨头中五个但仍为核心持仓，加码能源+芯片（AI上游基础设施），Crypto结构调整：减COIN加MSTR",
+      "notableMoves": [
+        {
+          "symbol": "XOM",
+          "name": "Exxon Mobil",
+          "pctOfPortfolio": null,
+          "change": "increased",
+          "changeDetail": "能源板块加仓第一"
+        },
+        {
+          "symbol": "JNJ",
+          "name": "Johnson & Johnson",
+          "pctOfPortfolio": null,
+          "change": "increased",
+          "changeDetail": "加仓"
+        },
+        {
+          "symbol": "CVX",
+          "name": "Chevron Corp.",
+          "pctOfPortfolio": null,
+          "change": "increased",
+          "changeDetail": "能源板块加仓"
+        },
+        {
+          "symbol": "AMAT",
+          "name": "Applied Materials",
+          "pctOfPortfolio": null,
+          "change": "increased",
+          "changeDetail": "芯片设备，加仓"
+        },
+        {
+          "symbol": "MU",
+          "name": "Micron Technology",
+          "pctOfPortfolio": null,
+          "change": "increased",
+          "changeDetail": "存储芯片，加仓"
+        },
+        {
+          "symbol": "MSTR",
+          "name": "MicroStrategy",
+          "pctOfPortfolio": null,
+          "change": "increased",
+          "changeDetail": "加仓约 314 万股，总持仓 1775 万股，约 $22.16 亿"
+        },
+        {
+          "symbol": "COIN",
+          "name": "Coinbase",
+          "pctOfPortfolio": null,
+          "change": "reduced",
+          "changeDetail": "减持约 330 万股，剩余 1674 万股，约 $29.24 亿"
+        },
+        {
+          "symbol": "LCID",
+          "name": "Lucid Motors",
+          "pctOfPortfolio": null,
+          "change": "increased",
+          "changeDetail": "连续第六个季度增持"
+        },
+        {
+          "symbol": "0763.HK",
+          "name": "中兴通讯 H股",
+          "pctOfPortfolio": null,
+          "change": "increased",
+          "changeDetail": "多头比例 6.38% → 7.24%"
+        }
+      ]
     },
     {
       "name": "Seth Klarman / Baupost Group",
