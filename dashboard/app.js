@@ -32,6 +32,8 @@ let config = null;
 let expertHoldings = null;
 let valuationData = null;
 let thesisData = null;
+let earningsCalendar = null;
+let competitiveData = null;
 let activeView = "stocks";
 let activePerspective = "composite";
 let activeSymbol = "VTI";
@@ -47,7 +49,7 @@ const fmtPctText = (value, digits = 1) => typeof value === "number" ? `${value >
 const pctClass = (value) => typeof value === "number" && value > 0 ? "up" : typeof value === "number" && value < 0 ? "down" : "neutral";
 
 async function loadData() {
-  const [latestRes, scoresRes, rankingsRes, researchRes, configRes, expertRes, valuationRes, thesisRes] = await Promise.all([
+  const [latestRes, scoresRes, rankingsRes, researchRes, configRes, expertRes, valuationRes, thesisRes, earningsRes, competitiveRes] = await Promise.all([
     fetch(`${assetBase}data/latest.json?ts=${Date.now()}`),
     fetch(`${assetBase}data/scores.json?ts=${Date.now()}`),
     fetch(`${assetBase}data/rankings.json?ts=${Date.now()}`),
@@ -55,7 +57,9 @@ async function loadData() {
     fetch(`${assetBase}config/watchlist.json?ts=${Date.now()}`),
     fetch(`${assetBase}data/expert-holdings.json?ts=${Date.now()}`).catch(() => null),
     fetch(`${assetBase}data/valuation-comps.json?ts=${Date.now()}`).catch(() => null),
-    fetch(`${assetBase}data/thesis-tracker.json?ts=${Date.now()}`).catch(() => null)
+    fetch(`${assetBase}data/thesis-tracker.json?ts=${Date.now()}`).catch(() => null),
+    fetch(`${assetBase}data/earnings-calendar.json?ts=${Date.now()}`).catch(() => null),
+    fetch(`${assetBase}data/competitive-analysis.json?ts=${Date.now()}`).catch(() => null)
   ]);
   latest = await latestRes.json();
   scores = await scoresRes.json();
@@ -65,6 +69,8 @@ async function loadData() {
   if (expertRes && expertRes.ok) expertHoldings = await expertRes.json();
   if (valuationRes && valuationRes.ok) valuationData = await valuationRes.json();
   if (thesisRes && thesisRes.ok) thesisData = await thesisRes.json();
+  if (earningsRes && earningsRes.ok) earningsCalendar = await earningsRes.json();
+  if (competitiveRes && competitiveRes.ok) competitiveData = await competitiveRes.json();
   if (!latest.securities[activeSymbol]) activeSymbol = Object.keys(latest.securities)[0];
   render();
 }
@@ -170,6 +176,9 @@ function renderStockDetail(symbol) {
   renderJudgments(item, researchItem);
   renderPerspectiveDetail(item, researchItem);
   renderSymbolExpertFootprints(symbol);
+  renderStockEarnings(symbol);
+  renderStockCompetitive(symbol);
+  renderStockCrossAnalysis(symbol);
   renderRangeTabs();
 }
 
@@ -633,6 +642,129 @@ function renderValuation() {
 
 // ===== Thesis Tracker Tab =====
 const moatLabels = { brand: '品牌', network: '网络效应', switching: '转换成本', scale: '规模经济', cost: '成本优势', intangible: '无形资产' };
+
+// ===== Stock Detail: Earnings Countdown =====
+function renderStockEarnings(symbol) {
+  const el = document.getElementById('stockEarnings');
+  if (!el) return;
+  if (!earningsCalendar || !earningsCalendar.earnings) { el.innerHTML = '<p style="color:var(--muted)">暂无财报日历数据</p>'; return; }
+  const entry = earningsCalendar.earnings.find(e => e.symbol === symbol);
+  if (!entry || !entry.earningsDate) { el.innerHTML = '<p style="color:var(--muted)">暂无财报日期</p>'; return; }
+  const today = new Date();
+  const eDate = new Date(entry.earningsDate + 'T16:00:00');
+  const diffDays = Math.ceil((eDate - today) / (1000 * 60 * 60 * 24));
+  let status = '';
+  if (diffDays < 0) status = `<span style="color:var(--muted)">已发布 (${Math.abs(diffDays)} 天前)</span>`;
+  else if (diffDays === 0) status = '<span style="color:var(--bad);font-weight:800">🔴 今天!</span>';
+  else if (diffDays <= 7) status = `<span style="color:var(--bad);font-weight:800">⏰ ${diffDays} 天后</span>`;
+  else if (diffDays <= 30) status = `<span style="color:var(--accent);font-weight:600">${diffDays} 天后</span>`;
+  else status = `<span style="color:var(--muted)">${diffDays} 天后</span>`;
+  el.innerHTML = `
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0">
+      <div><strong>下次财报:</strong> ${entry.earningsDate} ${entry.confirmed ? '✅' : '❓'}</div>
+      <div>${status}</div>
+    </div>
+  `;
+}
+
+// ===== Stock Detail: Competitive Landscape =====
+function renderStockCompetitive(symbol) {
+  const el = document.getElementById('stockCompetitive');
+  if (!el) return;
+  if (!competitiveData || !competitiveData.companies) { el.innerHTML = '<p style="color:var(--muted)">暂无竞争分析数据</p>'; return; }
+  const comp = competitiveData.companies.find(c => c.symbol === symbol);
+  if (!comp) { el.innerHTML = '<p style="color:var(--muted)">暂无该股票竞争分析</p>'; return; }
+  const threatColors = { high: 'var(--bad)', medium: 'var(--accent)', low: 'var(--muted)' };
+  const threatLabels = { high: '高威胁', medium: '中威胁', low: '低威胁' };
+  el.innerHTML = `
+    <div style="margin-bottom:8px">
+      <strong>护城河:</strong> ${comp.moatType} (${comp.moatStrength}/5)
+      <br><strong>市场地位:</strong> ${comp.marketPosition}
+    </div>
+    <div style="font-size:13px">
+      ${(comp.competitors || []).map(c => `
+        <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px dashed var(--line)">
+          <span>${c.name}</span>
+          <span style="color:${threatColors[c.threat] || 'var(--muted)'}">${threatLabels[c.threat] || c.threat} · ${c.detail}</span>
+        </div>
+      `).join('')}
+    </div>
+    <div style="margin-top:8px;font-size:12px;color:var(--muted)">${comp.competitiveAdvantage}</div>
+  `;
+}
+
+// ===== Stock Detail: Cross Analysis (Expert × Valuation) =====
+function renderStockCrossAnalysis(symbol) {
+  const el = document.getElementById('stockCrossAnalysis');
+  if (!el) return;
+  const signals = [];
+
+  // Expert holdings signal
+  if (expertHoldings && expertHoldings.experts) {
+    const holders = [];
+    const movers = [];
+    expertHoldings.experts.forEach(expert => {
+      const allHoldings = [...(expert.topHoldings || []), ...(expert.notableMoves || [])];
+      const match = allHoldings.find(h => h.symbol === symbol);
+      if (match) {
+        if (match.change === 'increased' || match.change === 'new' || match.change === 'new_top10') {
+          movers.push({ name: expert.name.split('/')[0].trim(), action: '加仓', color: 'var(--good)', detail: match.changeDetail });
+        } else if (match.change === 'reduced' || match.change === 'exited') {
+          movers.push({ name: expert.name.split('/')[0].trim(), action: '减持', color: 'var(--bad)', detail: match.changeDetail });
+        } else {
+          holders.push(expert.name.split('/')[0].trim());
+        }
+      }
+    });
+    if (movers.length) {
+      signals.push(`<div class="cross-signal"><strong>🏛️ 专家动向:</strong> ` +
+        movers.map(m => `<span style="color:${m.color}">${m.name} ${m.action}</span>`).join(' · ') +
+        `</div>`);
+    }
+    if (holders.length) {
+      signals.push(`<div class="cross-signal" style="color:var(--muted)">持有: ${holders.join(', ')}</div>`);
+    }
+  }
+
+  // Valuation signal
+  if (valuationData && valuationData.stocks) {
+    const vs = valuationData.stocks.find(s => s.symbol === symbol);
+    if (vs) {
+      let pegSignal = '';
+      if (vs.peg != null) {
+        if (vs.peg < 1) pegSignal = `<span style="color:var(--good);font-weight:600">PEG ${vs.peg.toFixed(2)} — 增长未被充分定价</span>`;
+        else if (vs.peg > 2) pegSignal = `<span style="color:var(--bad);font-weight:600">PEG ${vs.peg.toFixed(2)} — 可能偏贵</span>`;
+        else pegSignal = `<span>PEG ${vs.peg.toFixed(2)} — 估值合理</span>`;
+      }
+      if (pegSignal) signals.push(`<div class="cross-signal"><strong>📊 估值:</strong> ${pegSignal} ${vs.signal ? '· ' + vs.signal : ''}</div>`);
+    }
+  }
+
+  // Thesis signal
+  if (thesisData && thesisData.theses) {
+    const th = thesisData.theses.find(t => t.symbol === symbol);
+    if (th) {
+      signals.push(`<div class="cross-signal"><strong>🎯 论点:</strong> 信心 ${'⭐'.repeat(th.conviction)} (${th.conviction}/5) — ${th.thesis || ''}</div>`);
+    }
+  }
+
+  // Earnings countdown signal
+  if (earningsCalendar && earningsCalendar.earnings) {
+    const ec = earningsCalendar.earnings.find(e => e.symbol === symbol);
+    if (ec && ec.earningsDate) {
+      const diffDays = Math.ceil((new Date(ec.earningsDate) - new Date()) / (1000 * 60 * 60 * 24));
+      if (diffDays >= 0 && diffDays <= 14) {
+        signals.push(`<div class="cross-signal" style="color:var(--bad)"><strong>⏰ 财报预警:</strong> ${diffDays} 天后 (${ec.earningsDate})</div>`);
+      }
+    }
+  }
+
+  if (signals.length) {
+    el.innerHTML = signals.join('');
+  } else {
+    el.innerHTML = '<p style="color:var(--muted)">暂无交叉分析信号</p>';
+  }
+}
 
 function renderThesis() {
   if (!thesisData || !thesisData.theses) return;

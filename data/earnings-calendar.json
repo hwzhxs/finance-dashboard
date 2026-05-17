@@ -1,0 +1,80 @@
+{
+  "generatedAt": "2026-05-17T09:41:20.138287+08:00",
+  "earnings": [
+    {
+      "symbol": "NVDA",
+      "earningsDate": "2026-05-21",
+      "confirmed": true
+    },
+    {
+      "symbol": "PDD",
+      "earningsDate": "2026-05-27",
+      "confirmed": true
+    },
+    {
+      "symbol": "CRM",
+      "earningsDate": "2026-05-28",
+      "confirmed": true
+    },
+    {
+      "symbol": "AVGO",
+      "earningsDate": "2026-06-04",
+      "confirmed": true
+    },
+    {
+      "symbol": "ORCL",
+      "earningsDate": "2026-06-11",
+      "confirmed": true
+    },
+    {
+      "symbol": "ASML",
+      "earningsDate": "2026-07-15",
+      "confirmed": true
+    },
+    {
+      "symbol": "TSM",
+      "earningsDate": "2026-07-16",
+      "confirmed": true
+    },
+    {
+      "symbol": "TSLA",
+      "earningsDate": "2026-07-23",
+      "confirmed": true
+    },
+    {
+      "symbol": "NOW",
+      "earningsDate": "2026-07-23",
+      "confirmed": true
+    },
+    {
+      "symbol": "GOOGL",
+      "earningsDate": "2026-07-24",
+      "confirmed": true
+    },
+    {
+      "symbol": "MSFT",
+      "earningsDate": "2026-07-30",
+      "confirmed": true
+    },
+    {
+      "symbol": "AAPL",
+      "earningsDate": "2026-07-31",
+      "confirmed": true
+    },
+    {
+      "symbol": "AMZN",
+      "earningsDate": "2026-07-31",
+      "confirmed": true
+    },
+    {
+      "symbol": "PLTR",
+      "earningsDate": "2026-08-04",
+      "confirmed": true
+    },
+    {
+      "symbol": "AMD",
+      "earningsDate": "2026-08-05",
+      "confirmed": true
+    }
+  ]
+}

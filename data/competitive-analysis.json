@@ -1,0 +1,251 @@
+{
+  "generatedAt": "2026-05-17T09:40:00+08:00",
+  "note": "基于公开市场数据和行业研报，搜索API配额耗尽，部分数据基于最近已知市场格局",
+  "companies": [
+    {
+      "symbol": "PDD",
+      "name": "PDD Holdings (拼多多/Temu)",
+      "moatType": "network+cost",
+      "moatStrength": 4,
+      "marketPosition": "中国电商第三极，GMV已超京东；Temu全球扩张迅猛，2024年营收超400亿美元",
+      "competitors": [
+        {"name": "阿里巴巴(淘宝/天猫)", "threat": "high", "detail": "中国电商龙头，用户基数最大，但下沉市场被拼多多蚕食严重"},
+        {"name": "京东", "threat": "medium", "detail": "自营物流优势，但价格竞争力弱于拼多多"},
+        {"name": "字节跳动(抖音电商)", "threat": "high", "detail": "直播电商快速增长，内容+电商模式分流用户"},
+        {"name": "SHEIN", "threat": "medium", "detail": "跨境快时尚直接竞争Temu海外市场"},
+        {"name": "Amazon", "threat": "medium", "detail": "Temu在北美与Amazon低价市场直接竞争"}
+      ],
+      "marketShare": "中国电商GMV约15-18%，Temu海外下载量全球第一",
+      "competitiveAdvantage": "极致低价供应链能力，C2M模式直连工厂，社交裂变获客成本低，Temu全托管模式快速复制",
+      "threatLevel": "medium"
+    },
+    {
+      "symbol": "AAPL",
+      "name": "Apple Inc",
+      "moatType": "intangible+switching+ecosystem",
+      "moatStrength": 5,
+      "marketPosition": "全球市值最大公司，iPhone全球智能手机收入份额约50%，生态系统锁定超20亿活跃设备",
+      "competitors": [
+        {"name": "Samsung", "threat": "medium", "detail": "安卓阵营出货量第一，但高端市场份额远不及苹果"},
+        {"name": "华为", "threat": "medium", "detail": "Mate/P系列回归，鸿蒙生态建设中，中国高端市场最大威胁"},
+        {"name": "Google Pixel", "threat": "low", "detail": "AI手机概念领先，但出货量极小"},
+        {"name": "小米/OPPO/vivo", "threat": "low", "detail": "主打中低端，对苹果高端定位威胁有限"}
+      ],
+      "marketShare": "全球智能手机出货量约20%，收入份额约50%，美国市场55%+",
+      "competitiveAdvantage": "硬件+软件+服务生态闭环，品牌忠诚度极高，服务业务(App Store/iCloud)高毛利增长，Apple Intelligence AI布局",
+      "threatLevel": "low"
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft Corp",
+      "moatType": "switching+network+intangible",
+      "moatStrength": 5,
+      "marketPosition": "企业软件+云计算双龙头，Azure全球云市场份额约25%，Office 365企业渗透率80%+",
+      "competitors": [
+        {"name": "Amazon AWS", "threat": "high", "detail": "云计算市场份额第一(约31%)，基础设施层优势明显"},
+        {"name": "Google Cloud", "threat": "medium", "detail": "AI/ML能力强，份额约12%，增速快"},
+        {"name": "Salesforce", "threat": "medium", "detail": "CRM领域龙头，与Dynamics 365直接竞争"},
+        {"name": "Google Workspace", "threat": "medium", "detail": "与Microsoft 365在协作办公领域竞争"}
+      ],
+      "marketShare": "云计算(IaaS+PaaS)约25%，桌面操作系统72%+，办公软件80%+",
+      "competitiveAdvantage": "OpenAI独家合作+Copilot AI全线整合，企业IT采购惯性极强，Azure+Office+GitHub+LinkedIn协同效应",
+      "threatLevel": "low"
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA Corp",
+      "moatType": "network+switching+intangible",
+      "moatStrength": 5,
+      "marketPosition": "AI GPU市场90%+份额，数据中心训练/推理芯片绝对霸主，2025财年数据中心收入超1150亿美元",
+      "competitors": [
+        {"name": "AMD MI系列", "threat": "medium", "detail": "MI300X/MI350追赶中，ROCm生态改善，但CUDA壁垒难突破"},
+        {"name": "Google TPU", "threat": "medium", "detail": "自研芯片性能优秀，但主要内部使用和GCP客户"},
+        {"name": "Intel Gaudi", "threat": "low", "detail": "Gaudi 3性价比有亮点，但市场份额极小"},
+        {"name": "自研芯片趋势", "threat": "high", "detail": "AMZN Trainium2、MSFT Maia、META MTIA、GOOGL Axion，大客户自研降低依赖"},
+        {"name": "华为昇腾", "threat": "low", "detail": "受制裁限制，仅中国市场，但国产替代需求给予空间"}
+      ],
+      "marketShare": "数据中心AI训练GPU 90%+，推理市场80%+",
+      "competitiveAdvantage": "CUDA生态系统锁定全球数百万开发者，算力需求指数增长，Blackwell/Rubin架构持续领先，全栈平台(芯片+网络+软件)",
+      "threatLevel": "medium"
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla Inc",
+      "moatType": "intangible+cost+scale",
+      "moatStrength": 3,
+      "marketPosition": "全球纯电动车销量第二(被BYD超越)，FSD自动驾驶技术领先，能源存储业务高增长",
+      "competitors": [
+        {"name": "BYD", "threat": "high", "detail": "全球新能源车销量第一，垂直整合+极致成本控制，海外扩张加速"},
+        {"name": "传统车企(大众/丰田/现代)", "threat": "high", "detail": "电动化转型加速，品牌+渠道+制造优势"},
+        {"name": "蔚来/小鹏/理想", "threat": "medium", "detail": "中国市场竞争激烈，智能化差异化"},
+        {"name": "Rivian/Lucid", "threat": "low", "detail": "产能有限，亏损严重"},
+        {"name": "Waymo", "threat": "medium", "detail": "L4自动驾驶已商业化运营，路径不同但终局竞争"}
+      ],
+      "marketShare": "全球纯电动车约15-17%，美国EV市场约45-50%",
+      "competitiveAdvantage": "超级充电网络+品牌认知+FSD数据飞轮+制造效率，Robotaxi/Optimus机器人远期故事",
+      "threatLevel": "high"
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc",
+      "moatType": "network+intangible+scale",
+      "moatStrength": 5,
+      "marketPosition": "全球搜索引擎市场90%+，YouTube全球第一视频平台，Google Cloud增速强劲",
+      "competitors": [
+        {"name": "微软Bing+Copilot", "threat": "medium", "detail": "AI搜索整合，但市场份额仍仅约4%"},
+        {"name": "OpenAI ChatGPT/SearchGPT", "threat": "high", "detail": "AI原生搜索颠覆传统搜索入口"},
+        {"name": "Perplexity AI", "threat": "medium", "detail": "AI搜索新星，增长迅猛但规模小"},
+        {"name": "Amazon广告", "threat": "medium", "detail": "电商搜索广告分流，增速快于Google"},
+        {"name": "TikTok", "threat": "medium", "detail": "年轻用户搜索行为转移，短视频分流注意力"}
+      ],
+      "marketShare": "搜索引擎90%+，在线广告约28%，云计算约12%",
+      "competitiveAdvantage": "搜索+广告双边网络效应极强，Gemini AI全线部署，YouTube内容护城河，Waymo自动驾驶领先",
+      "threatLevel": "medium"
+    },
+    {
+      "symbol": "AMD",
+      "name": "Advanced Micro Devices",
+      "moatType": "intangible+switching",
+      "moatStrength": 3,
+      "marketPosition": "CPU市场份额持续提升至约25%，数据中心GPU追赶NVIDIA，FPGA/嵌入式布局",
+      "competitors": [
+        {"name": "NVIDIA", "threat": "high", "detail": "GPU领域绝对霸主，CUDA生态壁垒极高"},
+        {"name": "Intel", "threat": "medium", "detail": "x86 CPU传统对手，但制程落后+市场份额流失"},
+        {"name": "ARM架构(高通/苹果/AWS Graviton)", "threat": "high", "detail": "PC和服务器ARM化趋势加速"},
+        {"name": "自研芯片(云厂商)", "threat": "medium", "detail": "AWS Graviton、Google Axion分流服务器CPU需求"}
+      ],
+      "marketShare": "x86服务器CPU约25-30%，数据中心GPU约5-8%，PC CPU约22%",
+      "competitiveAdvantage": "TSMC先进制程+chiplet架构领先，性价比优势，EPYC服务器CPU份额持续增长，ROCm生态逐步完善",
+      "threatLevel": "high"
+    },
+    {
+      "symbol": "AVGO",
+      "name": "Broadcom Inc",
+      "moatType": "switching+intangible+scale",
+      "moatStrength": 4,
+      "marketPosition": "全球半导体第三大(收入)，网络芯片+定制AI芯片(XPU)+VMware软件三大支柱",
+      "competitors": [
+        {"name": "NVIDIA网络(Mellanox)", "threat": "high", "detail": "InfiniBand和以太网交换芯片直接竞争"},
+        {"name": "Marvell", "threat": "medium", "detail": "定制AI芯片和网络芯片竞争者"},
+        {"name": "Intel网络", "threat": "low", "detail": "以太网控制器传统玩家，但竞争力下降"},
+        {"name": "Altera(Intel)", "threat": "low", "detail": "FPGA领域竞争"}
+      ],
+      "marketShare": "以太网交换芯片约65-70%，Wi-Fi芯片全球第一，企业软件(VMware)虚拟化80%+",
+      "competitiveAdvantage": "为Google/Meta等设计定制AI加速器(TPU/MTIA)，网络芯片垄断地位，VMware整合带来经常性收入，极高运营效率",
+      "threatLevel": "low"
+    },
+    {
+      "symbol": "TSM",
+      "name": "Taiwan Semiconductor (台积电)",
+      "moatType": "cost+intangible+scale",
+      "moatStrength": 5,
+      "marketPosition": "全球晶圆代工绝对龙头，先进制程(5nm以下)市场份额90%+",
+      "competitors": [
+        {"name": "Samsung Foundry", "threat": "medium", "detail": "3nm GAA工艺追赶，但良率和客户信任差距大"},
+        {"name": "Intel Foundry", "threat": "low", "detail": "18A工艺进展中，但代工业务仍在亏损"},
+        {"name": "中芯国际(SMIC)", "threat": "low", "detail": "受制裁限制在成熟制程，7nm以下无法量产先进设备"}
+      ],
+      "marketShare": "全球晶圆代工约62%，先进制程(7nm以下)约90%+",
+      "competitiveAdvantage": "先进制程技术领先1-2代，良率和产能管理能力无可匹敌，几乎所有AI/HPC芯片依赖台积电制造",
+      "threatLevel": "low"
+    },
+    {
+      "symbol": "ASML",
+      "name": "ASML Holding",
+      "moatType": "intangible+monopoly",
+      "moatStrength": 5,
+      "marketPosition": "全球唯一EUV光刻机供应商，半导体设备行业最核心环节，完全垄断",
+      "competitors": [
+        {"name": "Nikon", "threat": "low", "detail": "DUV光刻机第二，但EUV领域完全空白"},
+        {"name": "Canon", "threat": "low", "detail": "纳米压印光刻(NIL)技术路线不同，尚未规模化"},
+        {"name": "上海微电子(SMEE)", "threat": "low", "detail": "中国国产替代，目前仅达28nm级别DUV"}
+      ],
+      "marketShare": "EUV光刻机100%垄断，DUV高端约80%+",
+      "competitiveAdvantage": "EUV技术20年研发壁垒，High-NA EUV(下一代)继续领先，整个先进半导体产业链必经之路",
+      "threatLevel": "very-low"
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon.com Inc",
+      "moatType": "network+scale+switching",
+      "moatStrength": 5,
+      "marketPosition": "全球电商+云计算双龙头，AWS云市场份额约31%，美国电商约40%",
+      "competitors": [
+        {"name": "微软Azure", "threat": "high", "detail": "AI+企业市场增速快，OpenAI合作优势"},
+        {"name": "Google Cloud", "threat": "medium", "detail": "AI/数据分析强项，增速最快"},
+        {"name": "Shopify", "threat": "medium", "detail": "赋能独立商家，DTC模式分流"},
+        {"name": "Temu/SHEIN", "threat": "medium", "detail": "低价跨境电商侵蚀价格敏感用户"},
+        {"name": "沃尔玛电商", "threat": "medium", "detail": "全渠道+物流网络，美国电商第二"}
+      ],
+      "marketShare": "全球云计算(IaaS)约31%，美国电商约38-40%",
+      "competitiveAdvantage": "飞轮效应(电商+Prime+AWS+广告)，自研芯片Trainium/Graviton降本，物流网络+当日达覆盖，广告业务高利润增长",
+      "threatLevel": "medium"
+    },
+    {
+      "symbol": "ORCL",
+      "name": "Oracle Corp",
+      "moatType": "switching+intangible",
+      "moatStrength": 4,
+      "marketPosition": "企业数据库市场龙头，OCI云增速强劲，多云策略+AI基础设施合作",
+      "competitors": [
+        {"name": "AWS/Azure/GCP", "threat": "high", "detail": "三大云厂商均提供数据库服务，规模远超OCI"},
+        {"name": "Snowflake", "threat": "medium", "detail": "云数据仓库新贵，分流数据分析需求"},
+        {"name": "MongoDB/PostgreSQL", "threat": "medium", "detail": "开源数据库侵蚀传统关系型数据库市场"},
+        {"name": "SAP", "threat": "medium", "detail": "ERP领域直接竞争，HANA数据库"}
+      ],
+      "marketShare": "企业数据库约30-33%，云基础设施约2-3%但增速40%+",
+      "competitiveAdvantage": "企业关键系统迁移成本极高，多云数据库(Azure/AWS上的Oracle DB)策略独特，大规模AI基础设施合同(OpenAI/xAI等)",
+      "threatLevel": "medium"
+    },
+    {
+      "symbol": "PLTR",
+      "name": "Palantir Technologies",
+      "moatType": "switching+intangible",
+      "moatStrength": 3,
+      "marketPosition": "政府+企业大数据分析平台领导者，AIP(AI Platform)推动商业客户快速增长",
+      "competitors": [
+        {"name": "Snowflake", "threat": "medium", "detail": "数据平台竞争，但侧重不同(分析vs数据仓库)"},
+        {"name": "Databricks", "threat": "medium", "detail": "数据+AI平台，开源生态强大"},
+        {"name": "C3.ai", "threat": "low", "detail": "企业AI平台，但规模和产品成熟度远不及"},
+        {"name": "内部自建团队", "threat": "medium", "detail": "大企业自建数据团队替代外部平台"},
+        {"name": "Salesforce+Tableau", "threat": "medium", "detail": "CRM+BI分析，Agentforce AI布局"}
+      ],
+      "marketShare": "政府大数据分析约30-40%，企业AI平台快速增长但整体份额仍小",
+      "competitiveAdvantage": "政府安全资质+深度嵌入(DoD/CIA)，AIP让非技术用户直接用AI，本体论(Ontology)数据模型独特",
+      "threatLevel": "medium"
+    },
+    {
+      "symbol": "NOW",
+      "name": "ServiceNow Inc",
+      "moatType": "switching+network",
+      "moatStrength": 4,
+      "marketPosition": "企业工作流自动化平台龙头，ITSM市场份额约40%+，向全企业工作流扩展",
+      "competitors": [
+        {"name": "Atlassian(Jira)", "threat": "medium", "detail": "IT项目管理和开发工具，中小企业市场重叠"},
+        {"name": "BMC Software", "threat": "low", "detail": "传统ITSM对手，市场份额持续下降"},
+        {"name": "Salesforce", "threat": "medium", "detail": "客服工作流竞争，平台扩展重叠"},
+        {"name": "Microsoft Power Platform", "threat": "medium", "detail": "低代码自动化+Copilot AI，捆绑优势"}
+      ],
+      "marketShare": "ITSM约40-45%，企业工作流自动化领导者",
+      "competitiveAdvantage": "企业级工作流平台粘性极高(替换成本巨大)，Now Assist AI嵌入每个模块，客户NRR 125%+，从IT扩展到HR/财务/客服",
+      "threatLevel": "low"
+    },
+    {
+      "symbol": "CRM",
+      "name": "Salesforce Inc",
+      "moatType": "switching+network+ecosystem",
+      "moatStrength": 4,
+      "marketPosition": "全球CRM市场绝对龙头，市场份额约22-24%，Agentforce AI代理平台",
+      "competitors": [
+        {"name": "Microsoft Dynamics 365", "threat": "high", "detail": "捆绑Office/Teams/Azure，企业客户渗透加速"},
+        {"name": "HubSpot", "threat": "medium", "detail": "中小企业CRM增长快，产品易用性强"},
+        {"name": "SAP CX", "threat": "low", "detail": "ERP延伸CRM，但产品竞争力弱"},
+        {"name": "Oracle CX", "threat": "low", "detail": "市场份额持续下降"},
+        {"name": "ServiceNow", "threat": "medium", "detail": "客服和工作流领域重叠加剧"}
+      ],
+      "marketShare": "全球CRM约22-24%，远超第二名(微软约5-6%)",
+      "competitiveAdvantage": "CRM生态系统(AppExchange 7000+应用)，Agentforce AI代理布局，多云数据整合(Data Cloud)，高客户粘性",
+      "threatLevel": "medium"
+    }
+  ]
+}
