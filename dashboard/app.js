@@ -30,6 +30,8 @@ let rankings = null;
 let research = null;
 let config = null;
 let expertHoldings = null;
+let valuationData = null;
+let thesisData = null;
 let activeView = "stocks";
 let activePerspective = "composite";
 let activeSymbol = "VTI";
@@ -45,13 +47,15 @@ const fmtPctText = (value, digits = 1) => typeof value === "number" ? `${value >
 const pctClass = (value) => typeof value === "number" && value > 0 ? "up" : typeof value === "number" && value < 0 ? "down" : "neutral";
 
 async function loadData() {
-  const [latestRes, scoresRes, rankingsRes, researchRes, configRes, expertRes] = await Promise.all([
+  const [latestRes, scoresRes, rankingsRes, researchRes, configRes, expertRes, valuationRes, thesisRes] = await Promise.all([
     fetch(`${assetBase}data/latest.json?ts=${Date.now()}`),
     fetch(`${assetBase}data/scores.json?ts=${Date.now()}`),
     fetch(`${assetBase}data/rankings.json?ts=${Date.now()}`),
     fetch(`${assetBase}data/company_research.json?ts=${Date.now()}`),
     fetch(`${assetBase}config/watchlist.json?ts=${Date.now()}`),
-    fetch(`${assetBase}data/expert-holdings.json?ts=${Date.now()}`).catch(() => null)
+    fetch(`${assetBase}data/expert-holdings.json?ts=${Date.now()}`).catch(() => null),
+    fetch(`${assetBase}data/valuation-comps.json?ts=${Date.now()}`).catch(() => null),
+    fetch(`${assetBase}data/thesis-tracker.json?ts=${Date.now()}`).catch(() => null)
   ]);
   latest = await latestRes.json();
   scores = await scoresRes.json();
@@ -59,6 +63,8 @@ async function loadData() {
   research = await researchRes.json();
   config = await configRes.json();
   if (expertRes && expertRes.ok) expertHoldings = await expertRes.json();
+  if (valuationRes && valuationRes.ok) valuationData = await valuationRes.json();
+  if (thesisRes && thesisRes.ok) thesisData = await thesisRes.json();
   if (!latest.securities[activeSymbol]) activeSymbol = Object.keys(latest.securities)[0];
   render();
 }
@@ -70,6 +76,8 @@ function render() {
   renderStockList();
   renderStockDetail(activeSymbol);
   renderExperts();
+  renderValuation();
+  renderThesis();
 }
 
 function renderPrimaryTabs() {
@@ -533,6 +541,140 @@ function renderExpertDetailV2(expert) {
 }
 
 document.getElementById("refreshBtn").addEventListener("click", loadData);
+
+// ===== Valuation Tab =====
+let activeSector = 'all';
+
+function renderValuation() {
+  if (!valuationData || !valuationData.stocks) return;
+  const stocks = valuationData.stocks;
+  const sectors = ['all', ...new Set(stocks.map(s => s.sector))];
+  const sectorLabels = { all: '全部' };
+
+  // Sector tabs
+  const tabsEl = document.getElementById('sectorTabs');
+  if (tabsEl) {
+    tabsEl.innerHTML = sectors.map(s => 
+      `<button class="sector-tab ${s === activeSector ? 'active' : ''}" data-sector="${s}" type="button">${sectorLabels[s] || s}</button>`
+    ).join('');
+    tabsEl.querySelectorAll('.sector-tab').forEach(btn => {
+      btn.onclick = () => { activeSector = btn.dataset.sector; renderValuation(); };
+    });
+  }
+
+  const filtered = activeSector === 'all' ? stocks : stocks.filter(s => s.sector === activeSector);
+  const sorted = [...filtered].sort((a, b) => (a.peg || 999) - (b.peg || 999));
+
+  // Calculate sector medians
+  const medians = {};
+  sectors.filter(s => s !== 'all').forEach(sector => {
+    const group = stocks.filter(s => s.sector === sector);
+    const vals = (key) => group.map(s => s[key]).filter(v => v != null).sort((a,b) => a-b);
+    const median = (arr) => arr.length ? arr[Math.floor(arr.length/2)] : null;
+    medians[sector] = { evRevenue: median(vals('evRevenue')), evEbitda: median(vals('evEbitda')), pe: median(vals('pe')), peg: median(vals('peg')) };
+  });
+
+  const valClass = (val, med) => {
+    if (val == null || med == null) return 'val-fair';
+    const ratio = val / med;
+    if (ratio < 0.85) return 'val-cheap';
+    if (ratio > 1.15) return 'val-expensive';
+    return 'val-fair';
+  };
+
+  const tableEl = document.getElementById('valuationTable');
+  if (tableEl) {
+    tableEl.innerHTML = `
+      <table>
+        <thead>
+          <tr>
+            <th>#</th><th>Ticker</th><th>公司</th><th>板块</th>
+            <th>营收增速</th><th>毛利率</th><th>EBITDA%</th>
+            <th>EV/Rev</th><th>EV/EBITDA</th><th>P/E</th><th>PEG</th>
+            <th>Signal</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${sorted.map((s, i) => {
+            const med = medians[s.sector] || {};
+            return `<tr>
+              <td>${i+1}</td>
+              <td><strong>${s.symbol}</strong></td>
+              <td>${s.name}</td>
+              <td><span class="moat-tag">${s.sector}</span></td>
+              <td class="${s.revenueGrowth > 30 ? 'val-cheap' : s.revenueGrowth < 10 ? 'val-expensive' : ''}">${s.revenueGrowth != null ? s.revenueGrowth.toFixed(1)+'%' : '—'}</td>
+              <td>${s.grossMargin != null ? s.grossMargin.toFixed(1)+'%' : '—'}</td>
+              <td>${s.ebitdaMargin != null ? s.ebitdaMargin.toFixed(1)+'%' : '—'}</td>
+              <td class="${valClass(s.evRevenue, med.evRevenue)}">${s.evRevenue != null ? s.evRevenue.toFixed(1)+'x' : '—'}</td>
+              <td class="${valClass(s.evEbitda, med.evEbitda)}">${s.evEbitda != null ? s.evEbitda.toFixed(1)+'x' : '—'}</td>
+              <td class="${valClass(s.pe, med.pe)}">${s.pe != null ? s.pe.toFixed(1)+'x' : '—'}</td>
+              <td class="${valClass(s.peg, med.peg)}"><strong>${s.peg != null ? s.peg.toFixed(2) : '—'}</strong></td>
+              <td>${s.signal || ''}</td>
+            </tr>`;
+          }).join('')}
+        </tbody>
+      </table>
+    `;
+  }
+
+  // Insight section
+  const insightEl = document.getElementById('valuationInsight');
+  if (insightEl && sorted.length) {
+    const cheapest = sorted[0];
+    const priciest = sorted[sorted.length - 1];
+    insightEl.innerHTML = `
+      <strong>💡 估值快照</strong><br>
+      PEG 最低（最便宜）：<strong>${cheapest.symbol}</strong> (${cheapest.peg != null ? cheapest.peg.toFixed(2) : 'N/A'})
+       |  PEG 最高：<strong>${priciest.symbol}</strong> (${priciest.peg != null ? priciest.peg.toFixed(2) : 'N/A'})<br>
+      <em>→ PEG < 1 表示增长未被充分定价，> 2 表示可能过贵。绿色=低估，红色=高估（vs 同板块中位数）</em>
+    `;
+  }
+}
+
+// ===== Thesis Tracker Tab =====
+const moatLabels = { brand: '品牌', network: '网络效应', switching: '转换成本', scale: '规模经济', cost: '成本优势', intangible: '无形资产' };
+
+function renderThesis() {
+  if (!thesisData || !thesisData.theses) return;
+  const container = document.getElementById('thesisCards');
+  if (!container) return;
+
+  const sorted = [...thesisData.theses].sort((a, b) => (b.conviction || 0) - (a.conviction || 0));
+
+  container.innerHTML = sorted.map(t => `
+    <div class="thesis-card">
+      <div class="thesis-header">
+        <h3>${t.symbol} — ${t.name}</h3>
+        <span class="conviction conviction-${t.conviction}">⭐ ${t.conviction}/5</span>
+      </div>
+      <div class="thesis-summary">${t.thesis || ''}</div>
+      <div class="thesis-moat">
+        ${(t.moatType || []).map(m => `<span class="moat-tag">${moatLabels[m] || m}</span>`).join('')}
+      </div>
+      <div class="thesis-section">
+        <h4>🚀 Bull Case</h4>
+        <ul>${(t.bullCase || []).map(b => `<li>${b}</li>`).join('')}</ul>
+      </div>
+      <div class="thesis-section">
+        <h4>⚠️ Bear Case</h4>
+        <ul>${(t.bearCase || []).map(b => `<li>${b}</li>`).join('')}</ul>
+      </div>
+      ${(t.catalysts && t.catalysts.length) ? `
+      <div class="thesis-section">
+        <h4>🎯 催化剂</h4>
+        <div class="thesis-catalysts">
+          ${t.catalysts.map(c => `
+            <div class="catalyst-item">
+              <span>${c.event}</span>
+              <span class="catalyst-impact-${c.impact}">${c.date || ''} · ${c.impact === 'high' ? '高影响' : c.impact === 'medium' ? '中影响' : '低影响'}</span>
+            </div>
+          `).join('')}
+        </div>
+      </div>` : ''}
+      <div style="font-size:11px;color:var(--muted);margin-top:8px;">Updated: ${t.lastUpdated || 'N/A'}</div>
+    </div>
+  `).join('');
+}
 loadData().catch((error) => {
   document.body.innerHTML = `<main><h1>Dashboard failed to load</h1><p>${error.message}</p></main>`;
 });

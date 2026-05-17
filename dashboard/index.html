@@ -22,6 +22,8 @@
     <main>
       <nav class="primary-tabs" aria-label="Main views">
         <button class="primary-tab active" data-view="stocks" type="button">股票对比</button>
+        <button class="primary-tab" data-view="valuation" type="button">估值对比</button>
+        <button class="primary-tab" data-view="thesis" type="button">投资论点</button>
         <button class="primary-tab" data-view="experts" type="button">专家足迹</button>
       </nav>
 
@@ -87,6 +89,30 @@
               </section>
             </div>
           </section>
+        </div>
+      </section>
+
+      <section id="valuationView" class="view">
+        <div class="valuation-workbench">
+          <div class="section-head compact">
+            <p class="eyebrow">Valuation Comps</p>
+            <h2>估值对比</h2>
+            <p class="sub">Watchlist 个股 vs 同业中位数，按 PEG 排序</p>
+          </div>
+          <div class="sector-tabs" id="sectorTabs"></div>
+          <div id="valuationTable" class="valuation-content"></div>
+          <div id="valuationInsight" class="valuation-insight"></div>
+        </div>
+      </section>
+
+      <section id="thesisView" class="view">
+        <div class="thesis-workbench">
+          <div class="section-head compact">
+            <p class="eyebrow">Thesis Tracker</p>
+            <h2>投资论点</h2>
+            <p class="sub">每只股票的核心逻辑、催化剂、风险与信心评分</p>
+          </div>
+          <div id="thesisCards" class="thesis-cards"></div>
         </div>
       </section>
 
