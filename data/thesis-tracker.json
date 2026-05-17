@@ -1,0 +1,350 @@
+{
+  "generatedAt": "2026-05-17T09:35:00+08:00",
+  "theses": [
+    {
+      "symbol": "PDD",
+      "name": "PDD Holdings (拼多多)",
+      "conviction": 3,
+      "moatType": ["network", "cost"],
+      "bullCase": [
+        "Temu全球化扩张势头强劲，用户增长和GMV持续超预期",
+        "拼多多主站在下沉市场护城河深厚，货币化率仍有提升空间",
+        "现金储备充裕，估值相对便宜（低PE）"
+      ],
+      "bearCase": [
+        "Temu烧钱换增长模式可持续性存疑，多国监管压力加大",
+        "中美关系紧张+关税政策对跨境电商冲击大",
+        "VIE结构风险，中概股整体信任折价"
+      ],
+      "catalysts": [
+        {"event": "Q1 2026财报", "date": "2026-05", "impact": "high"},
+        {"event": "美国对华关税政策调整", "date": "2026-H2", "impact": "high"},
+        {"event": "Temu欧洲/日本市场扩张进展", "date": "2026-H2", "impact": "medium"}
+      ],
+      "thesis": "低估值+高增长的跨境电商龙头，但地缘政治和监管风险是最大不确定性",
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "symbol": "AAPL",
+      "name": "Apple Inc",
+      "conviction": 4,
+      "moatType": ["brand", "switching", "network"],
+      "bullCase": [
+        "iOS生态系统粘性极强，20亿+活跃设备基数带来持续服务收入",
+        "Apple Intelligence/AI功能驱动iPhone换机超级周期",
+        "服务业务高毛利持续增长，已成第二大收入来源"
+      ],
+      "bearCase": [
+        "iPhone硬件增长放缓，中国市场竞争激烈（华为回归）",
+        "AI功能落后于竞对，Siri智能化进展缓慢",
+        "欧盟DMA监管可能削弱App Store护城河"
+      ],
+      "catalysts": [
+        {"event": "Q3 FY2026财报", "date": "2026-07", "impact": "high"},
+        {"event": "WWDC 2026", "date": "2026-06", "impact": "high"},
+        {"event": "iPhone 18发布", "date": "2026-09", "impact": "high"}
+      ],
+      "thesis": "全球最强消费科技品牌，服务收入是长期增长引擎，但硬件创新周期需关注",
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft Corp",
+      "conviction": 5,
+      "moatType": ["switching", "network", "scale"],
+      "bullCase": [
+        "Azure云+Copilot AI双引擎驱动，企业AI变现最领先",
+        "Office 365/Teams生态粘性极高，企业IT预算中的'刚需'",
+        "资本配置优秀：持续回购+分红+战略投资（OpenAI）"
+      ],
+      "bearCase": [
+        "Azure增速放缓趋势，AWS和GCP竞争加剧",
+        "Copilot付费转化率和ROI仍需验证",
+        "反垄断审查风险（Activision整合、OpenAI投资）"
+      ],
+      "catalysts": [
+        {"event": "Q4 FY2026财报", "date": "2026-07", "impact": "high"},
+        {"event": "Copilot企业渗透率数据", "date": "2026-H2", "impact": "medium"},
+        {"event": "Build 2026开发者大会", "date": "2026-05", "impact": "medium"}
+      ],
+      "thesis": "企业软件+云+AI三位一体的终极平台公司，确定性最高的大型科技股",
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA Corp",
+      "conviction": 4,
+      "moatType": ["network", "switching", "intangible"],
+      "bullCase": [
+        "AI训练/推理GPU垄断地位，CUDA生态护城河极深",
+        "数据中心营收持续爆发，Blackwell架构供不应求",
+        "软件生态（CUDA/TensorRT/Omniverse）构建长期锁定效应"
+      ],
+      "bearCase": [
+        "AI capex周期性风险，大客户集中度高（微软/Meta/Google）",
+        "AMD MI系列+Google TPU+自研芯片竞争加剧",
+        "中国出口管制持续影响，地缘政治不确定性"
+      ],
+      "catalysts": [
+        {"event": "Q2 FY2027财报", "date": "2026-08", "impact": "high"},
+        {"event": "Blackwell Ultra/Rubin架构发布", "date": "2026-H2", "impact": "high"},
+        {"event": "GTC 2026", "date": "2026-03", "impact": "medium"}
+      ],
+      "thesis": "AI基础设施的'铲子股'，短期增长确定性最高，但需关注周期性风险和估值",
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla Inc",
+      "conviction": 2,
+      "moatType": ["brand", "scale", "intangible"],
+      "bullCase": [
+        "FSD自动驾驶商业化潜力巨大，Robotaxi如落地将重塑估值",
+        "能源存储业务（Megapack）高速增长，成为第二增长曲线",
+        "制造成本持续优化，规模效应显现"
+      ],
+      "bearCase": [
+        "Elon分心（政治/xAI/SpaceX），品牌形象受损严重",
+        "全球EV竞争白热化，中国市场份额被比亚迪蚕食",
+        "估值极高（>100x PE），增长预期已充分定价甚至过度定价"
+      ],
+      "catalysts": [
+        {"event": "Q2 2026财报+交付数据", "date": "2026-07", "impact": "high"},
+        {"event": "Robotaxi商业化进展", "date": "2026-H2", "impact": "high"},
+        {"event": "新平价车型发布", "date": "2026-H2", "impact": "high"}
+      ],
+      "thesis": "叙事驱动型股票，FSD/Robotaxi是巨大期权价值，但当前估值risk/reward不佳",
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc",
+      "conviction": 4,
+      "moatType": ["network", "scale", "intangible"],
+      "bullCase": [
+        "搜索广告护城河依然稳固，AI Overviews提升用户体验和变现",
+        "Google Cloud增速强劲，AI工作负载驱动增长",
+        "Waymo自动驾驶商业化领先，DeepMind研究实力顶尖"
+      ],
+      "bearCase": [
+        "反垄断判决可能要求拆分或改变商业模式",
+        "AI搜索可能蚕食传统搜索广告收入（自我颠覆风险）",
+        "YouTube增长放缓，TikTok竞争"
+      ],
+      "catalysts": [
+        {"event": "Q2 2026财报", "date": "2026-07", "impact": "high"},
+        {"event": "反垄断案判决/救济方案", "date": "2026-H2", "impact": "high"},
+        {"event": "Google I/O 2026", "date": "2026-05", "impact": "medium"}
+      ],
+      "thesis": "AI时代的搜索+云+自动驾驶全能选手，反垄断是最大风险但也可能创造价值",
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "symbol": "AMD",
+      "name": "Advanced Micro Devices",
+      "conviction": 3,
+      "moatType": ["intangible", "switching"],
+      "bullCase": [
+        "MI300/MI400系列AI GPU逐步打入大客户，份额提升趋势明确",
+        "CPU市场份额持续从Intel手中夺取（EPYC服务器芯片）",
+        "性价比优势明显，软件生态（ROCm）逐步完善"
+      ],
+      "bearCase": [
+        "CUDA生态壁垒难以短期突破，AI GPU市场仍是NVDA主导",
+        "客户端PC/游戏业务周期性波动大",
+        "利润率相比NVDA差距明显"
+      ],
+      "catalysts": [
+        {"event": "Q2 2026财报", "date": "2026-07", "impact": "high"},
+        {"event": "MI400系列发布", "date": "2026-H2", "impact": "high"},
+        {"event": "数据中心GPU市场份额数据", "date": "2026-H2", "impact": "medium"}
+      ],
+      "thesis": "AI GPU市场的挑战者，份额提升故事有吸引力但执行风险不小",
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "symbol": "AVGO",
+      "name": "Broadcom Inc",
+      "conviction": 4,
+      "moatType": ["switching", "scale", "intangible"],
+      "bullCase": [
+        "定制AI芯片（XPU）业务爆发，Google/Meta等大客户深度绑定",
+        "VMware整合顺利，软件业务利润率持续提升",
+        "网络芯片（Memory/交换机）受益于AI数据中心建设"
+      ],
+      "bearCase": [
+        "定制芯片业务客户集中度极高，大客户议价能力强",
+        "VMware整合后客户流失风险",
+        "估值已不便宜，增长预期较高"
+      ],
+      "catalysts": [
+        {"event": "Q3 FY2026财报", "date": "2026-06", "impact": "high"},
+        {"event": "下一代XPU芯片进展", "date": "2026-H2", "impact": "high"},
+        {"event": "VMware订阅转化进度", "date": "2026-H2", "impact": "medium"}
+      ],
+      "thesis": "AI定制芯片+企业软件双轮驱动，Hock Tan的资本配置能力一流",
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "symbol": "TSM",
+      "name": "Taiwan Semiconductor (台积电)",
+      "conviction": 5,
+      "moatType": ["scale", "switching", "intangible"],
+      "bullCase": [
+        "先进制程（3nm/2nm）全球唯一量产供应商，技术领先2年+",
+        "AI芯片需求爆发直接受益，NVDA/AMD/Apple全是客户",
+        "资本开支持续加大壁垒，竞争对手（Samsung/Intel）差距拉大"
+      ],
+      "bearCase": [
+        "台海地缘政治风险是最大尾部风险",
+        "美国/日本建厂成本高，海外产能利润率较低",
+        "半导体周期性——AI之外的传统业务可能疲软"
+      ],
+      "catalysts": [
+        {"event": "Q2 2026财报+月度营收", "date": "2026-07", "impact": "high"},
+        {"event": "2nm量产进度", "date": "2026-H2", "impact": "high"},
+        {"event": "亚利桑那工厂进展", "date": "2026-H2", "impact": "medium"}
+      ],
+      "thesis": "半导体行业的'水电煤'，确定性极高，唯一大风险是地缘政治",
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "symbol": "ASML",
+      "name": "ASML Holding NV",
+      "conviction": 4,
+      "moatType": ["intangible", "switching", "scale"],
+      "bullCase": [
+        "EUV光刻机全球独家垄断，High-NA EUV进一步巩固技术领先",
+        "AI驱动的先进制程需求=更多EUV设备需求",
+        "订单积压（backlog）提供多年收入可见性"
+      ],
+      "bearCase": [
+        "中国出口限制减少潜在客户群",
+        "半导体资本支出周期性——客户可能延迟订单",
+        "High-NA EUV良率爬坡和客户采纳速度不确定"
+      ],
+      "catalysts": [
+        {"event": "Q2 2026财报+订单数据", "date": "2026-07", "impact": "high"},
+        {"event": "High-NA EUV出货进展", "date": "2026-H2", "impact": "high"},
+        {"event": "2nm/GAA节点客户扩产计划", "date": "2026-H2", "impact": "medium"}
+      ],
+      "thesis": "半导体设备的终极垄断者，长期确定性极高，短期受周期影响",
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon.com Inc",
+      "conviction": 4,
+      "moatType": ["network", "scale", "cost"],
+      "bullCase": [
+        "AWS云计算市场份额第一，AI工作负载带来新增长动力",
+        "电商物流网络规模效应无人能及，同日/次日达覆盖率持续提升",
+        "广告业务高速增长，利润率远高于电商"
+      ],
+      "bearCase": [
+        "电商零售利润率薄，与Temu/Shein低价竞争加剧",
+        "AWS增速面临Azure和GCP追赶压力",
+        "AI资本开支巨大，ROI验证需要时间"
+      ],
+      "catalysts": [
+        {"event": "Q2 2026财报", "date": "2026-07", "impact": "high"},
+        {"event": "AWS re:Invent 2026", "date": "2026-11", "impact": "medium"},
+        {"event": "自研AI芯片Trainium进展", "date": "2026-H2", "impact": "medium"}
+      ],
+      "thesis": "电商+云+广告三飞轮，AI时代基础设施供应商，长期复利机器",
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "symbol": "ORCL",
+      "name": "Oracle Corp",
+      "conviction": 3,
+      "moatType": ["switching", "scale"],
+      "bullCase": [
+        "OCI云基础设施增速行业最快，多云战略+AI训练需求驱动",
+        "数据库业务护城河深，企业迁移成本极高",
+        "与NVDA/MSFT/Google合作加深，多云互联策略成功"
+      ],
+      "bearCase": [
+        "OCI规模仍远小于AWS/Azure，长期竞争格局不确定",
+        "传统license业务缓慢下滑",
+        "Larry Ellison年龄和接班人计划"
+      ],
+      "catalysts": [
+        {"event": "Q4 FY2026财报", "date": "2026-06", "impact": "high"},
+        {"event": "OCI AI基础设施扩张进展", "date": "2026-H2", "impact": "high"},
+        {"event": "大型企业云迁移合同公告", "date": "2026-H2", "impact": "medium"}
+      ],
+      "thesis": "云转型加速的传统软件巨头，OCI是增长引擎但需证明可持续性",
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "symbol": "PLTR",
+      "name": "Palantir Technologies",
+      "conviction": 2,
+      "moatType": ["switching", "intangible"],
+      "bullCase": [
+        "AIP平台在企业AI应用层面领先，客户粘性极强",
+        "政府+商业双轮驱动，美国国防AI预算持续增加",
+        "数据整合能力独一无二，竞争对手难以复制"
+      ],
+      "bearCase": [
+        "估值极度昂贵（>100x PE），已充分定价多年增长",
+        "收入规模仍较小，大客户依赖度高",
+        "股权稀释严重（SBC占比高），实际盈利质量存疑"
+      ],
+      "catalysts": [
+        {"event": "Q2 2026财报", "date": "2026-08", "impact": "high"},
+        {"event": "AIP商业客户扩张数据", "date": "2026-H2", "impact": "high"},
+        {"event": "新政府合同公告", "date": "2026-H2", "impact": "medium"}
+      ],
+      "thesis": "AI应用层的独特玩家，产品力强但估值让risk/reward非常不利",
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "symbol": "NOW",
+      "name": "ServiceNow Inc",
+      "conviction": 4,
+      "moatType": ["switching", "network"],
+      "bullCase": [
+        "企业工作流自动化平台粘性极强，续约率>98%",
+        "AI Agent功能嵌入现有工作流，变现路径清晰",
+        "TAM持续扩大（HR/财务/安全/客服），跨模块upsell强劲"
+      ],
+      "bearCase": [
+        "估值不便宜（>50x PE），需要持续高增长维持",
+        "大型企业IT支出放缓可能影响新签合同",
+        "Microsoft/Salesforce在工作流领域竞争加剧"
+      ],
+      "catalysts": [
+        {"event": "Q2 2026财报", "date": "2026-07", "impact": "high"},
+        {"event": "Knowledge 2026大会", "date": "2026-05", "impact": "medium"},
+        {"event": "AI Agent产品线扩展", "date": "2026-H2", "impact": "medium"}
+      ],
+      "thesis": "企业SaaS中最优质的复利机器之一，AI是加速器而非颠覆者",
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "symbol": "CRM",
+      "name": "Salesforce Inc",
+      "conviction": 3,
+      "moatType": ["switching", "network", "scale"],
+      "bullCase": [
+        "CRM市场绝对龙头，客户数据和关系管理生态完整",
+        "Agentforce AI Agent平台潜力大，按使用量计费模式有想象空间",
+        "利润率持续改善，激进派投资者推动效率提升"
+      ],
+      "bearCase": [
+        "核心CRM增速放缓至个位数，有机增长乏力",
+        "AI变现尚未规模化，Agentforce需证明PMF",
+        "并购整合风险（Slack仍未充分发挥协同）"
+      ],
+      "catalysts": [
+        {"event": "Q2 FY2027财报", "date": "2026-08", "impact": "high"},
+        {"event": "Dreamforce 2026", "date": "2026-09", "impact": "medium"},
+        {"event": "Agentforce客户采纳数据", "date": "2026-H2", "impact": "high"}
+      ],
+      "thesis": "成熟SaaS龙头转型AI平台，利润率改善是确定性，收入加速是期权",
+      "lastUpdated": "2026-05-17"
+    }
+  ]
+}
