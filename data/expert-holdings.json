@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-17T08:30:00+08:00",
+  "generatedAt": "2026-05-17T10:40:00+08:00",
   "dataSource": "Web search aggregation of 13F filings and public disclosures",
   "experts": [
     {
@@ -148,7 +148,17 @@
       "trendSummary": [
         "⚠️ Buffett 过去 2 年持续减持 AAPL，从 4 亿股降至 2.28 亿股 (-43%)。仍是最大持仓但信心明显下降。",
         "BAC 持仓稳定，长期核心银行仓位。"
-      ]
+      ],
+      "notableMoves": [],
+      "analystNote": "AAPL 仍是最大持仓(22%)但持续减持至 2.28 亿股。29 只持仓，前 5 名占 68%。集中度依然极高。。重要动作：AAPL 继续减持，从约 3 亿股降至 2.28 亿股；BAC 继续减持 BAC；OXY 小幅加仓",
+      "portfolioStats": {
+        "totalPositions": null,
+        "increased": 1,
+        "reduced": 2,
+        "unchanged": 7
+      },
+      "investmentOutlook": null,
+      "dataReliability": "数据来源：SEC 13F filing + 搜索引擎聚合，个别精确数字建议以原始 filing 为准"
     },
     {
       "name": "Bill Ackman / Pershing Square",
@@ -228,7 +238,17 @@
           "changeDetail": "持仓不变"
         }
       ],
-      "keyInsight": "新建MSFT重仓+大幅清仓GOOGL，Ackman在科技股中做了明确取舍，押注微软估值回归"
+      "keyInsight": "新建MSFT重仓+大幅清仓GOOGL，Ackman在科技股中做了明确取舍，押注微软估值回归",
+      "notableMoves": [],
+      "analystNote": "新建MSFT重仓+大幅清仓GOOGL，Ackman在科技股中做了明确取舍，押注微软估值回归。重要动作：AMZN 从960万股增至1145万股，加仓约19%；MSFT 新建仓565万股，Ackman称估值极具吸引力，2月开始建仓；GOOGL 从684万股大幅减至34万股，减仓约95%",
+      "portfolioStats": {
+        "totalPositions": null,
+        "increased": 2,
+        "reduced": 1,
+        "unchanged": 7
+      },
+      "investmentOutlook": null,
+      "dataReliability": "数据来源：SEC 13F filing + 搜索引擎聚合，个别精确数字建议以原始 filing 为准"
     },
     {
       "name": "Stanley Druckenmiller / Duquesne",
@@ -308,7 +328,17 @@
           "changeDetail": "从94万股增至109万股"
         }
       ],
-      "keyInsight": "Druck大幅减仓AMZN近乎清仓、退出GOOGL，转而押注拉美（YPF/TBBB）和生物科技（NTRA），组合换手率58%"
+      "keyInsight": "Druck大幅减仓AMZN近乎清仓、退出GOOGL，转而押注拉美（YPF/TBBB）和生物科技（NTRA），组合换手率58%",
+      "notableMoves": [],
+      "analystNote": "Druck大幅减仓AMZN近乎清仓、退出GOOGL，转而押注拉美（YPF/TBBB）和生物科技（NTRA），组合换手率58%。重要动作：NTRA 从251万股增至306万股，继续加码基因检测龙头；INSM 从148万股减至115万股，减仓约22%；TSM 新建仓49.5万股台积电",
+      "portfolioStats": {
+        "totalPositions": null,
+        "increased": 6,
+        "reduced": 2,
+        "unchanged": 2
+      },
+      "investmentOutlook": null,
+      "dataReliability": "数据来源：SEC 13F filing + 搜索引擎聚合，个别精确数字建议以原始 filing 为准"
     },
     {
       "name": "ARK Invest / Cathie Wood",
@@ -422,7 +452,17 @@
       "keyInsight": "ARK 继续 all-in 破坏性创新：TSLA 仍是最大但在减，AMD 加仓押注 AI 芯片。加密和基因编辑占比上升。",
       "trendSummary": [
         "ARK 持续减持 TSLA，但仍是最大持仓。Cathie 在高位逐步获利了结。"
-      ]
+      ],
+      "notableMoves": [],
+      "analystNote": "ARK 继续 all-in 破坏性创新：TSLA 仍是最大但在减，AMD 加仓押注 AI 芯片。加密和基因编辑占比上升。。重要动作：TSLA 仍是最大持仓但持续小幅减持；AMD 加仓 AI 芯片；CRCL 加密基建新仓",
+      "portfolioStats": {
+        "totalPositions": null,
+        "increased": 3,
+        "reduced": 1,
+        "unchanged": 6
+      },
+      "investmentOutlook": null,
+      "dataReliability": "数据来源：SEC 13F filing + 搜索引擎聚合，个别精确数字建议以原始 filing 为准"
     },
     {
       "name": "Coatue Management / Philippe Laffont",
@@ -502,7 +542,17 @@
           "changeDetail": "从590万股减至463万股"
         }
       ],
-      "keyInsight": "大举建仓TSM成为第一重仓，减持大量Mag7，退出ARM/NFLX/ORCL/AMD，重心从软件转向半导体硬件和能源基建"
+      "keyInsight": "大举建仓TSM成为第一重仓，减持大量Mag7，退出ARM/NFLX/ORCL/AMD，重心从软件转向半导体硬件和能源基建",
+      "notableMoves": [],
+      "analystNote": "大举建仓TSM成为第一重仓，减持大量Mag7，退出ARM/NFLX/ORCL/AMD，重心从软件转向半导体硬件和能源基建。重要动作：TSM 新建超大仓位600万股，一跃成为第一大持仓；GEV 从337万股减至257万股，减仓约24%；AMAT 从598万股减至524万股",
+      "portfolioStats": {
+        "totalPositions": null,
+        "increased": 1,
+        "reduced": 6,
+        "unchanged": 3
+      },
+      "investmentOutlook": null,
+      "dataReliability": "数据来源：SEC 13F filing + 搜索引擎聚合，个别精确数字建议以原始 filing 为准"
     },
     {
       "name": "Bridgewater Associates / Ray Dalio",
@@ -582,7 +632,17 @@
           "changeDetail": "从66万股减至43万股，减仓约35%"
         }
       ],
-      "keyInsight": "大幅加仓科技股（AMZN翻倍、AVGO/MU加仓60%+），新建SPY大仓位，整体从防御转向进攻，退出CRM/NOW/WDAY等SaaS"
+      "keyInsight": "大幅加仓科技股（AMZN翻倍、AVGO/MU加仓60%+），新建SPY大仓位，整体从防御转向进攻，退出CRM/NOW/WDAY等SaaS",
+      "notableMoves": [],
+      "analystNote": "大幅加仓科技股（AMZN翻倍、AVGO/MU加仓60%+），新建SPY大仓位，整体从防御转向进攻，退出CRM/NOW/WDAY等SaaS。重要动作：SPY 新建超大仓位436万股；IVV 从684万股减至506万股；AMZN 从194万股增至438万股，加仓超一倍",
+      "portfolioStats": {
+        "totalPositions": null,
+        "increased": 8,
+        "reduced": 2,
+        "unchanged": 0
+      },
+      "investmentOutlook": null,
+      "dataReliability": "数据来源：SEC 13F filing + 搜索引擎聚合，个别精确数字建议以原始 filing 为准"
     },
     {
       "name": "Appaloosa Management / David Tepper",
@@ -662,7 +722,17 @@
           "changeDetail": "小幅减持"
         }
       ],
-      "keyInsight": "AMZN翻倍加仓+UBER暴增两倍+新建TSM大仓位，减持BABA，Tepper从中概转向美股科技+半导体"
+      "keyInsight": "AMZN翻倍加仓+UBER暴增两倍+新建TSM大仓位，减持BABA，Tepper从中概转向美股科技+半导体",
+      "notableMoves": [],
+      "analystNote": "AMZN翻倍加仓+UBER暴增两倍+新建TSM大仓位，减持BABA，Tepper从中概转向美股科技+半导体。重要动作：AMZN 从217万股增至432万股，加仓近一倍；UBER 从185万股暴增至633万股，加仓超过两倍；TSM 新建132万股大仓位",
+      "portfolioStats": {
+        "totalPositions": null,
+        "increased": 6,
+        "reduced": 2,
+        "unchanged": 2
+      },
+      "investmentOutlook": null,
+      "dataReliability": "数据来源：SEC 13F filing + 搜索引擎聚合，个别精确数字建议以原始 filing 为准"
     },
     {
       "name": "BlackRock Inc.",
@@ -951,7 +1021,17 @@
           "changeDetail": "新建仓位，看好支付赛道"
         }
       ],
-      "keyInsight": "大幅加仓AMZN(+47%)和FERG(+27%)，新建AON和Visa，大砍WTW(-34%)，从保险经纪换仓到支付和科技"
+      "keyInsight": "大幅加仓AMZN(+47%)和FERG(+27%)，新建AON和Visa，大砍WTW(-34%)，从保险经纪换仓到支付和科技",
+      "notableMoves": [],
+      "analystNote": "大幅加仓AMZN(+47%)和FERG(+27%)，新建AON和Visa，大砍WTW(-34%)，从保险经纪换仓到支付和科技。重要动作：AMZN 加仓47.01%，大幅增持亚马逊；WCC 小幅加仓1.27%；UNP 减仓5.30%，小幅减持铁路股",
+      "portfolioStats": {
+        "totalPositions": null,
+        "increased": 7,
+        "reduced": 2,
+        "unchanged": 1
+      },
+      "investmentOutlook": null,
+      "dataReliability": "数据来源：SEC 13F filing + 搜索引擎聚合，个别精确数字建议以原始 filing 为准"
     },
     {
       "name": "Citadel Advisors / Ken Griffin",
@@ -1031,7 +1111,17 @@
           "changeDetail": "净市值$22.2亿，全面增持"
         }
       ],
-      "keyInsight": "科技Mag7为核心，Q1显著增持GLD(黄金避险)和PLTR(AI)，AMZN股票大幅加仓，双线布局AI+消费"
+      "keyInsight": "科技Mag7为核心，Q1显著增持GLD(黄金避险)和PLTR(AI)，AMZN股票大幅加仓，双线布局AI+消费",
+      "notableMoves": [],
+      "analystNote": "科技Mag7为核心，Q1显著增持GLD(黄金避险)和PLTR(AI)，AMZN股票大幅加仓，双线布局AI+消费。重要动作：NVDA 净多头$82.9亿，股票增持1174万股；TSLA 净市值$56.1亿，Call期权增加700万股；META 净市值$50.9亿，股票减持116万股",
+      "portfolioStats": {
+        "totalPositions": null,
+        "increased": 8,
+        "reduced": 2,
+        "unchanged": 0
+      },
+      "investmentOutlook": null,
+      "dataReliability": "数据来源：SEC 13F filing + 搜索引擎聚合，个别精确数字建议以原始 filing 为准"
     },
     {
       "name": "Howard Marks / Oaktree Capital Management",
@@ -1111,7 +1201,17 @@
           "changeDetail": "减仓11.77%，黄金矿业"
         }
       ],
-      "keyInsight": "典型困境/深度价值：重仓油轮(TRMD)+天然气(EXE)，新建巴西石油(PBR)，加仓比特币挖矿(CORZ)，大砍VNOM(-40%)"
+      "keyInsight": "典型困境/深度价值：重仓油轮(TRMD)+天然气(EXE)，新建巴西石油(PBR)，加仓比特币挖矿(CORZ)，大砍VNOM(-40%)",
+      "notableMoves": [],
+      "analystNote": "典型困境/深度价值：重仓油轮(TRMD)+天然气(EXE)，新建巴西石油(PBR)，加仓比特币挖矿(CORZ)，大砍VNOM(-40%)。重要动作：TRMD 减仓9.78%，油轮运输，仍为最大持仓；EXE 加仓3.46%，天然气能源；AU 减仓16.24%，黄金矿业",
+      "portfolioStats": {
+        "totalPositions": null,
+        "increased": 4,
+        "reduced": 5,
+        "unchanged": 1
+      },
+      "investmentOutlook": null,
+      "dataReliability": "数据来源：SEC 13F filing + 搜索引擎聚合，个别精确数字建议以原始 filing 为准"
     },
     {
       "name": "Li Lu / Himalaya Capital Management",
@@ -1191,7 +1291,17 @@
           "changeDetail": "新建仓位，报税服务"
         }
       ],
-      "keyInsight": "极度集中：Alphabet两类股合计占45%+PDD+BRK占组合90%+。大砍BAC(-71%)，新建TME和HRB，加仓CROX(+41%)"
+      "keyInsight": "极度集中：Alphabet两类股合计占45%+PDD+BRK占组合90%+。大砍BAC(-71%)，新建TME和HRB，加仓CROX(+41%)",
+      "notableMoves": [],
+      "analystNote": "极度集中：Alphabet两类股合计占45%+PDD+BRK占组合90%+。大砍BAC(-71%)，新建TME和HRB，加仓CROX(+41%)。重要动作：BAC 大幅减仓71.26%！；CROX 加仓41.22%；TME 新建仓位，中概",
+      "portfolioStats": {
+        "totalPositions": null,
+        "increased": 3,
+        "reduced": 1,
+        "unchanged": 6
+      },
+      "investmentOutlook": null,
+      "dataReliability": "数据来源：SEC 13F filing + 搜索引擎聚合，个别精确数字建议以原始 filing 为准"
     },
     {
       "name": "State Street Global Advisors",
@@ -1271,7 +1381,17 @@
           "changeDetail": "减持约9%"
         }
       ],
-      "keyInsight": "全线减持大型科技股，MSFT减持幅度最大达23%，可能反映Q1市场回调期间的指数再平衡和资金流出"
+      "keyInsight": "全线减持大型科技股，MSFT减持幅度最大达23%，可能反映Q1市场回调期间的指数再平衡和资金流出",
+      "notableMoves": [],
+      "analystNote": "全线减持大型科技股，MSFT减持幅度最大达23%，可能反映Q1市场回调期间的指数再平衡和资金流出。重要动作：NVDA 减持约6%，跟随指数再平衡；AAPL 减持约7%；MSFT 减持约23%，显著缩减",
+      "portfolioStats": {
+        "totalPositions": null,
+        "increased": 0,
+        "reduced": 10,
+        "unchanged": 0
+      },
+      "investmentOutlook": null,
+      "dataReliability": "数据来源：SEC 13F filing + 搜索引擎聚合，个别精确数字建议以原始 filing 为准"
     },
     {
       "name": "FMR LLC (Fidelity)",
@@ -1351,7 +1471,17 @@
           "changeDetail": "逆势大幅增持约51%，加仓能源"
         }
       ],
-      "keyInsight": "MSFT大幅减持28%是最大信号，同时逆势增持XOM 51%，Fidelity在Q1从科技股向能源板块轮动"
+      "keyInsight": "MSFT大幅减持28%是最大信号，同时逆势增持XOM 51%，Fidelity在Q1从科技股向能源板块轮动",
+      "notableMoves": [],
+      "analystNote": "MSFT大幅减持28%是最大信号，同时逆势增持XOM 51%，Fidelity在Q1从科技股向能源板块轮动。重要动作：NVDA 小幅减持约4%；AAPL 减持约7%；AMZN 微幅减持约2%",
+      "portfolioStats": {
+        "totalPositions": null,
+        "increased": 1,
+        "reduced": 9,
+        "unchanged": 0
+      },
+      "investmentOutlook": null,
+      "dataReliability": "数据来源：SEC 13F filing + 搜索引擎聚合，个别精确数字建议以原始 filing 为准"
     },
     {
       "name": "Millennium Management / Izzy Englander",
@@ -1431,7 +1561,17 @@
           "changeDetail": "大幅增持约40%"
         }
       ],
-      "keyInsight": "TSLA大幅增持40%，增持IWM(小盘)、减持QQQ(科技)，Q1转向价值/小盘风格"
+      "keyInsight": "TSLA大幅增持40%，增持IWM(小盘)、减持QQQ(科技)，Q1转向价值/小盘风格",
+      "notableMoves": [],
+      "analystNote": "TSLA大幅增持40%，增持IWM(小盘)、减持QQQ(科技)，Q1转向价值/小盘风格。重要动作：IWM 增持约13%，加码小盘股敞口；IVV 减持约15%；NVDA 减持约14%",
+      "portfolioStats": {
+        "totalPositions": null,
+        "increased": 4,
+        "reduced": 5,
+        "unchanged": 1
+      },
+      "investmentOutlook": null,
+      "dataReliability": "数据来源：SEC 13F filing + 搜索引擎聚合，个别精确数字建议以原始 filing 为准"
     },
     {
       "name": "D.E. Shaw & Co",
@@ -1511,7 +1651,17 @@
           "changeDetail": "减持约20%"
         }
       ],
-      "keyInsight": "大幅减持NVDA(-32%)和MSFT(-24%)，重仓加入AVGO(+69%)和GOOGL(+121%)，AI投资从NVDA向AVGO/GOOGL轮动"
+      "keyInsight": "大幅减持NVDA(-32%)和MSFT(-24%)，重仓加入AVGO(+69%)和GOOGL(+121%)，AI投资从NVDA向AVGO/GOOGL轮动",
+      "notableMoves": [],
+      "analystNote": "大幅减持NVDA(-32%)和MSFT(-24%)，重仓加入AVGO(+69%)和GOOGL(+121%)，AI投资从NVDA向AVGO/GOOGL轮动。重要动作：NVDA 大幅减持约32%；MSFT 减持约24%；TSLA 小幅增持约4%",
+      "portfolioStats": {
+        "totalPositions": null,
+        "increased": 7,
+        "reduced": 3,
+        "unchanged": 0
+      },
+      "investmentOutlook": null,
+      "dataReliability": "数据来源：SEC 13F filing + 搜索引擎聚合，个别精确数字建议以原始 filing 为准"
     },
     {
       "name": "Tiger Global Management / Chase Coleman",
@@ -1591,7 +1741,17 @@
           "changeDetail": "增持约15%"
         }
       ],
-      "keyInsight": "TSM大幅加仓66%+MSFT砍仓65%，Tiger Global从软件转向半导体硬件，GOOGL仍为第一大重仓"
+      "keyInsight": "TSM大幅加仓66%+MSFT砍仓65%，Tiger Global从软件转向半导体硬件，GOOGL仍为第一大重仓",
+      "notableMoves": [],
+      "analystNote": "TSM大幅加仓66%+MSFT砍仓65%，Tiger Global从软件转向半导体硬件，GOOGL仍为第一大重仓。重要动作：GOOGL 减持约8%；AMZN 减持约10%；TSM 大幅增持约66%，重注台积电",
+      "portfolioStats": {
+        "totalPositions": null,
+        "increased": 4,
+        "reduced": 5,
+        "unchanged": 1
+      },
+      "investmentOutlook": null,
+      "dataReliability": "数据来源：SEC 13F filing + 搜索引擎聚合，个别精确数字建议以原始 filing 为准"
     },
     {
       "name": "Third Point LLC / Dan Loeb",
@@ -1671,7 +1831,17 @@
           "changeDetail": "加仓约18%"
         }
       ],
-      "keyInsight": "新建PDD(中概)+TSM+CRH三大仓位，MSFT砍仓30%，Loeb在Q1大胆押注中概和半导体"
+      "keyInsight": "新建PDD(中概)+TSM+CRH三大仓位，MSFT砍仓30%，Loeb在Q1大胆押注中概和半导体",
+      "notableMoves": [],
+      "analystNote": "新建PDD(中概)+TSM+CRH三大仓位，MSFT砍仓30%，Loeb在Q1大胆押注中概和半导体。重要动作：PDD 新建仓位，押注中概反弹；AMZN 加仓约25%；GOOGL 加仓约15%",
+      "portfolioStats": {
+        "totalPositions": null,
+        "increased": 7,
+        "reduced": 1,
+        "unchanged": 2
+      },
+      "investmentOutlook": null,
+      "dataReliability": "数据来源：SEC 13F filing + 搜索引擎聚合，个别精确数字建议以原始 filing 为准"
     },
     {
       "name": "Renaissance Technologies",
@@ -1751,7 +1921,17 @@
           "changeDetail": "新建仓位"
         }
       ],
-      "keyInsight": "TSLA增持45%+META增持22%，减持NVDA和MSFT，量化信号显示市场风格从AI纯题材向消费科技轮动"
+      "keyInsight": "TSLA增持45%+META增持22%，减持NVDA和MSFT，量化信号显示市场风格从AI纯题材向消费科技轮动",
+      "notableMoves": [],
+      "analystNote": "TSLA增持45%+META增持22%，减持NVDA和MSFT，量化信号显示市场风格从AI纯题材向消费科技轮动。重要动作：NVDA 减持约18%；META 增持约22%；AAPL 增持约15%",
+      "portfolioStats": {
+        "totalPositions": null,
+        "increased": 8,
+        "reduced": 2,
+        "unchanged": 0
+      },
+      "investmentOutlook": null,
+      "dataReliability": "数据来源：SEC 13F filing + 搜索引擎聚合，个别精确数字建议以原始 filing 为准"
     }
   ]
 }
