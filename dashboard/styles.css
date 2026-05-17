@@ -874,3 +874,10 @@ main {
     grid-template-columns: 1fr;
   }
 }
+
+.expert-sort-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}

@@ -431,6 +431,35 @@ function getWatchlistTickers() {
   return (config.tickers || []).map(t => t.symbol);
 }
 
+let activeExpertSort = 'default';
+
+const expertSortOptions = {
+  default: { label: '默认', fn: null },
+  aum_desc: { label: 'AUM ↓', fn: (a, b) => parseAUM(b.totalValue) - parseAUM(a.totalValue) },
+  aum_asc: { label: 'AUM ↑', fn: (a, b) => parseAUM(a.totalValue) - parseAUM(b.totalValue) },
+  overlap: { label: '重叠多', fn: (a, b, wl) => countOverlap(b, wl) - countOverlap(a, wl) },
+  activity: { label: '动作多', fn: (a, b) => countActivity(b) - countActivity(a) },
+  name: { label: '名称 A-Z', fn: (a, b) => (a.name || '').localeCompare(b.name || '') }
+};
+
+function parseAUM(val) {
+  if (!val) return 0;
+  const s = val.replace(/[^0-9.TBM+$]/g, '');
+  let num = parseFloat(s) || 0;
+  if (val.includes('T')) num *= 1000;
+  if (val.includes('M')) num /= 1000;
+  return num;
+}
+
+function countOverlap(expert, wl) {
+  return (expert.topHoldings || []).filter(h => wl.includes(h.symbol)).length;
+}
+
+function countActivity(expert) {
+  const all = [...(expert.topHoldings || []), ...(expert.notableMoves || [])];
+  return all.filter(h => h.change && h.change !== 'unchanged' && h.change !== 'held').length;
+}
+
 function renderExperts() {
   const experts = (expertHoldings && expertHoldings.experts) || [];
   const fallback = config.expertFootprints || [];
@@ -438,19 +467,38 @@ function renderExperts() {
   const source = experts.length ? experts : fallback;
   if (!source.length) return;
   const wlTickers = getWatchlistTickers();
-  list.innerHTML = source.map((expert, index) => {
+
+  // Render sort tabs
+  const sortTabsEl = document.getElementById('expertSortTabs');
+  if (sortTabsEl) {
+    sortTabsEl.innerHTML = Object.entries(expertSortOptions).map(([key, opt]) =>
+      `<button class="sector-tab ${key === activeExpertSort ? 'active' : ''}" data-sort="${key}" type="button">${opt.label}</button>`
+    ).join('');
+    sortTabsEl.querySelectorAll('.sector-tab').forEach(btn => {
+      btn.onclick = () => { activeExpertSort = btn.dataset.sort; activeExpert = 0; renderExperts(); };
+    });
+  }
+
+  // Sort
+  const indexed = source.map((e, i) => ({ ...e, _origIndex: i }));
+  const sortOpt = expertSortOptions[activeExpertSort];
+  const sorted = sortOpt && sortOpt.fn ? [...indexed].sort((a, b) => sortOpt.fn(a, b, wlTickers)) : indexed;
+
+  list.innerHTML = sorted.map((expert, index) => {
     const name = expert.name || expert.expert;
     const quarter = expert.quarter || '';
     const totalValue = expert.totalValue || '';
     const overlap = (expert.topHoldings || []).filter(h => wlTickers.includes(h.symbol)).length;
+    const activity = countActivity(expert);
     return `
-      <button class="expert-row ${index === activeExpert ? "selected" : ""}" data-index="${index}" type="button">
+      <button class="expert-row ${index === activeExpert ? "selected" : ""}" data-index="${index}" data-orig="${expert._origIndex}" type="button">
         <span class="ticker">${name}</span>
         <span class="subline">${expert.style}</span>
         <span class="expert-meta">
           ${quarter ? `<span class="expert-badge">${quarter}</span>` : ''}
           ${totalValue ? `<span class="expert-badge">${totalValue}</span>` : ''}
           ${overlap > 0 ? `<span class="expert-badge overlap">${overlap} 只重叠</span>` : ''}
+          ${activity > 0 ? `<span class="expert-badge">${activity} 个动作</span>` : ''}
         </span>
       </button>
     `;
@@ -461,8 +509,8 @@ function renderExperts() {
       renderExperts();
     });
   });
-  if (experts.length) {
-    renderExpertDetailV2(experts[activeExpert]);
+  if (sorted.length) {
+    renderExpertDetailV2(sorted[activeExpert]);
   } else {
     renderExpertDetail(fallback[activeExpert]);
   }
