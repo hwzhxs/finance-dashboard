@@ -444,11 +444,13 @@ const expertSortOptions = {
 
 function parseAUM(val) {
   if (!val) return 0;
-  const s = val.replace(/[^0-9.TBM+$]/g, '');
-  let num = parseFloat(s) || 0;
-  if (val.includes('T')) num *= 1000;
-  if (val.includes('M')) num /= 1000;
-  return num;
+  const match = val.match(/([\d.]+)\s*([TBM])/i);
+  if (!match) return 0;
+  let num = parseFloat(match[1]) || 0;
+  const unit = match[2].toUpperCase();
+  if (unit === 'T') num *= 1000;
+  if (unit === 'M') num /= 1000;
+  return num; // returns in billions
 }
 
 function countOverlap(expert, wl) {
