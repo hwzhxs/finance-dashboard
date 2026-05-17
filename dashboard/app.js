@@ -211,9 +211,9 @@ function renderChart(item) {
   const startPrice = closes[0];
   const endPrice = closes[closes.length - 1];
   const isUp = endPrice >= startPrice;
-  const lineColor = isUp ? "#34c759" : "#ff3b30";
-  const topColor = isUp ? "rgba(52,199,89,0.3)" : "rgba(255,59,48,0.2)";
-  const bottomColor = isUp ? "rgba(52,199,89,0.02)" : "rgba(255,59,48,0.02)";
+  const lineColor = isUp ? "#008a05" : "#222222";
+  const topColor = isUp ? "rgba(0,138,5,0.15)" : "rgba(34,34,34,0.1)";
+  const bottomColor = isUp ? "rgba(0,138,5,0.02)" : "rgba(34,34,34,0.02)";
 
   if (tvChartInstance) {
     tvChartInstance.remove();
@@ -424,7 +424,7 @@ function renderSymbolExpertFootprints(symbol) {
   `).join("");
 }
 
-const changeColors = { new: '#007aff', increased: '#34c759', reduced: '#ff3b30', exited: '#ff3b30', unchanged: '#8e8e93', held: '#8e8e93', new_top10: '#007aff' };
+const changeColors = { new: '#222222', increased: '#008a05', reduced: '#c13515', exited: '#c13515', unchanged: '#929292', held: '#929292', new_top10: '#222222' };
 const changeLabels = { new: '新建', increased: '加仓', reduced: '减持', exited: '清仓', unchanged: '不变', held: '维持', new_top10: '新进前十' };
 
 function getWatchlistTickers() {
