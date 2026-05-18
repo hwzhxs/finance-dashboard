@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-16T14:44:37.897009+00:00",
+  "generatedAt": "2026-05-18T12:15:14.851114+00:00",
   "perspectives": {
     "composite": "Balanced score for Xiaosong's learning pool",
     "buffett_munger": "Moat, quality, cash generation, long-term certainty, margin of safety",
@@ -20,10 +20,10 @@
         "diversification": 90,
         "expense": 88,
         "personalFit": 90,
-        "managerReference": 50
+        "managerReference": 58
       },
       "perspectives": {
-        "composite": 72.0,
+        "composite": 72.7,
         "buffett_munger": 79.6,
         "bogle": 87.9,
         "peter_lynch": 70.3,
@@ -238,10 +238,10 @@
         "diversification": 15,
         "expense": 0,
         "personalFit": 64,
-        "managerReference": 58
+        "managerReference": 66
       },
       "perspectives": {
-        "composite": 65.7,
+        "composite": 66.3,
         "buffett_munger": 75.6,
         "bogle": 37.2,
         "peter_lynch": 68.4,
@@ -270,10 +270,10 @@
         "diversification": 15,
         "expense": 0,
         "personalFit": 64,
-        "managerReference": 58
+        "managerReference": 74
       },
       "perspectives": {
-        "composite": 70.3,
+        "composite": 71.6,
         "buffett_munger": 69.5,
         "bogle": 36.3,
         "peter_lynch": 77.8,
@@ -333,10 +333,10 @@
         "diversification": 15,
         "expense": 0,
         "personalFit": 64,
-        "managerReference": 58
+        "managerReference": 74
       },
       "perspectives": {
-        "composite": 69.9,
+        "composite": 71.2,
         "buffett_munger": 72.5,
         "bogle": 37.8,
         "peter_lynch": 75.4,
@@ -365,10 +365,10 @@
         "diversification": 15,
         "expense": 0,
         "personalFit": 52,
-        "managerReference": 50
+        "managerReference": 58
       },
       "perspectives": {
-        "composite": 56.4,
+        "composite": 57.0,
         "buffett_munger": 49.7,
         "bogle": 23.1,
         "peter_lynch": 69.4,
@@ -397,10 +397,10 @@
         "diversification": 15,
         "expense": 0,
         "personalFit": 52,
-        "managerReference": 50
+        "managerReference": 58
       },
       "perspectives": {
-        "composite": 60.0,
+        "composite": 60.6,
         "buffett_munger": 53.2,
         "bogle": 29.7,
         "peter_lynch": 68.8,
@@ -429,10 +429,10 @@
         "diversification": 15,
         "expense": 0,
         "personalFit": 64,
-        "managerReference": 50
+        "managerReference": 74
       },
       "perspectives": {
-        "composite": 64.0,
+        "composite": 65.9,
         "buffett_munger": 56.5,
         "bogle": 36.1,
         "peter_lynch": 70.7,
@@ -493,10 +493,10 @@
         "diversification": 15,
         "expense": 0,
         "personalFit": 56,
-        "managerReference": 50
+        "managerReference": 74
       },
       "perspectives": {
-        "composite": 60.9,
+        "composite": 62.8,
         "buffett_munger": 56.4,
         "bogle": 35.8,
         "peter_lynch": 64.8,
@@ -504,9 +504,9 @@
         "tech_growth_risk": 66.8
       },
       "action": {
-        "label": "Not attractive for now",
-        "stance": "Avoid impulsive buying",
-        "positionNote": "Wait for better price or clearer evidence."
+        "label": "Continue observing",
+        "stance": "Watch",
+        "positionNote": "Not enough edge to act without a specific thesis."
       },
       "explanation": [
         "Stock lens: moat 58/100, quality 62/100, value 45/100.",
@@ -525,10 +525,10 @@
         "diversification": 15,
         "expense": 0,
         "personalFit": 44,
-        "managerReference": 50
+        "managerReference": 66
       },
       "perspectives": {
-        "composite": 47.4,
+        "composite": 48.7,
         "buffett_munger": 46.5,
         "bogle": 17.0,
         "peter_lynch": 59.5,
@@ -556,10 +556,10 @@
         "diversification": 15,
         "expense": 0,
         "personalFit": 52,
-        "managerReference": 50
+        "managerReference": 58
       },
       "perspectives": {
-        "composite": 50.5,
+        "composite": 51.1,
         "buffett_munger": 51.1,
         "bogle": 25.7,
         "peter_lynch": 57.0,
@@ -619,10 +619,10 @@
         "diversification": 15,
         "expense": 0,
         "personalFit": 44,
-        "managerReference": 50
+        "managerReference": 58
       },
       "perspectives": {
-        "composite": 46.7,
+        "composite": 47.4,
         "buffett_munger": 52.4,
         "bogle": 28.0,
         "peter_lynch": 47.3,

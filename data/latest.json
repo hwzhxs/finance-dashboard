@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-16T14:44:37.897009+00:00",
+  "generatedAt": "2026-05-18T12:15:14.851114+00:00",
   "source": {
     "prices": "Yahoo Finance unofficial public endpoints",
     "managerFootprints": "Curated reference notes; verify 13F before treating as current holdings"
@@ -1049,7 +1049,14 @@
         ]
       },
       "expenseRatio": 0.0945,
-      "managerFootprints": [],
+      "managerFootprints": [
+        {
+          "manager": "Bridgewater",
+          "style": "All-weather",
+          "signal": "Top buy",
+          "note": "Q4 2025: 本季 top buy，大幅加仓，占 10%。"
+        }
+      ],
       "scores": {
         "components": {
           "value": 70,
@@ -1061,10 +1068,10 @@
           "diversification": 90,
           "expense": 88,
           "personalFit": 90,
-          "managerReference": 50
+          "managerReference": 58
         },
         "perspectives": {
-          "composite": 72.0,
+          "composite": 72.7,
           "buffett_munger": 79.6,
           "bogle": 87.9,
           "peter_lynch": 70.3,
@@ -6381,10 +6388,10 @@
       "expenseRatio": null,
       "managerFootprints": [
         {
-          "manager": "Emerging market/growth managers",
-          "style": "International growth",
-          "signal": "Research",
-          "note": "Requires China/platform/regulatory risk review."
+          "manager": "无主要专家持仓",
+          "style": "N/A",
+          "signal": "No signal",
+          "note": "当前专家足迹库中无直接持仓记录。"
         }
       ],
       "scores": {
@@ -7457,8 +7464,8 @@
         {
           "manager": "Berkshire Hathaway",
           "style": "Quality value",
-          "signal": "Long-term reference",
-          "note": "Historically a major holding; verify latest 13F before using as current signal."
+          "signal": "Core holding",
+          "note": "Q1 2025: 持仓不变，占仓 25.65%，$259B 组合的最大持仓。"
         }
       ],
       "scores": {
@@ -8528,10 +8535,16 @@
       "expenseRatio": null,
       "managerFootprints": [
         {
-          "manager": "Quality growth managers",
-          "style": "Quality growth",
-          "signal": "Watch",
-          "note": "Often screened for durable cash flow and enterprise moat."
+          "manager": "Coatue Management",
+          "style": "Tech growth",
+          "signal": "Core holding",
+          "note": "Q4 2025: 占 7%，云和 AI 基础设施。"
+        },
+        {
+          "manager": "Bridgewater",
+          "style": "All-weather",
+          "signal": "Reducing",
+          "note": "Q4 2025: 减持，占 3.5%。"
         }
       ],
       "scores": {
@@ -8545,10 +8558,10 @@
           "diversification": 15,
           "expense": 0,
           "personalFit": 64,
-          "managerReference": 58
+          "managerReference": 66
         },
         "perspectives": {
-          "composite": 65.7,
+          "composite": 66.3,
           "buffett_munger": 75.6,
           "bogle": 37.2,
           "peter_lynch": 68.4,
@@ -9602,10 +9615,22 @@
       "expenseRatio": null,
       "managerFootprints": [
         {
-          "manager": "Growth technology managers",
-          "style": "Growth",
-          "signal": "Cyclical/high expectation watch",
-          "note": "High AI exposure; manager ownership can change quickly."
+          "manager": "Bridgewater",
+          "style": "All-weather",
+          "signal": "Increasing",
+          "note": "Q4 2025: 大幅加仓，占 5.5%。"
+        },
+        {
+          "manager": "Coatue Management",
+          "style": "Tech growth",
+          "signal": "Reducing",
+          "note": "Q4 2025: 小幅减持，占 5%。"
+        },
+        {
+          "manager": "Appaloosa / Tepper",
+          "style": "Contrarian",
+          "signal": "Reducing",
+          "note": "Q4 2025: 减持，占 4.5%。"
         }
       ],
       "scores": {
@@ -9619,10 +9644,10 @@
           "diversification": 15,
           "expense": 0,
           "personalFit": 64,
-          "managerReference": 58
+          "managerReference": 74
         },
         "perspectives": {
-          "composite": 70.3,
+          "composite": 71.6,
           "buffett_munger": 69.5,
           "bogle": 36.3,
           "peter_lynch": 77.8,
@@ -10676,10 +10701,10 @@
       "expenseRatio": null,
       "managerFootprints": [
         {
-          "manager": "Growth/innovation managers",
-          "style": "High optionality growth",
-          "signal": "Controversial",
-          "note": "High dispersion of views."
+          "manager": "ARK Invest",
+          "style": "Disruptive innovation",
+          "signal": "Top holding",
+          "note": "ARKK 最大持仓占 12%，但持续小幅减持。"
         }
       ],
       "scores": {
@@ -11749,10 +11774,22 @@
       "expenseRatio": null,
       "managerFootprints": [
         {
-          "manager": "Multiple quality/growth managers",
-          "style": "Quality growth",
-          "signal": "Watch",
-          "note": "Common large-cap quality candidate; current positions should be verified quarterly."
+          "manager": "Coatue Management",
+          "style": "Tech growth",
+          "signal": "Top holding",
+          "note": "Q4 2025: 最大持仓占 8%，小幅减持。"
+        },
+        {
+          "manager": "Appaloosa / Tepper",
+          "style": "Contrarian",
+          "signal": "Increasing",
+          "note": "Q4 2025: 加仓，占 9%。"
+        },
+        {
+          "manager": "Bridgewater",
+          "style": "All-weather",
+          "signal": "Reducing",
+          "note": "Q4 2025: 减持，占 3.8%。"
         }
       ],
       "scores": {
@@ -11766,10 +11803,10 @@
           "diversification": 15,
           "expense": 0,
           "personalFit": 64,
-          "managerReference": 58
+          "managerReference": 74
         },
         "perspectives": {
-          "composite": 69.9,
+          "composite": 71.2,
           "buffett_munger": 72.5,
           "bogle": 37.8,
           "peter_lynch": 75.4,
@@ -12821,7 +12858,14 @@
         ]
       },
       "expenseRatio": null,
-      "managerFootprints": [],
+      "managerFootprints": [
+        {
+          "manager": "ARK Invest",
+          "style": "Disruptive innovation",
+          "signal": "Increasing",
+          "note": "ARKK 加仓 AI 芯片，占 7.5%。"
+        }
+      ],
       "scores": {
         "components": {
           "value": 45,
@@ -12833,10 +12877,10 @@
           "diversification": 15,
           "expense": 0,
           "personalFit": 52,
-          "managerReference": 50
+          "managerReference": 58
         },
         "perspectives": {
-          "composite": 56.4,
+          "composite": 57.0,
           "buffett_munger": 49.7,
           "bogle": 23.1,
           "peter_lynch": 69.4,
@@ -13888,7 +13932,14 @@
         ]
       },
       "expenseRatio": null,
-      "managerFootprints": [],
+      "managerFootprints": [
+        {
+          "manager": "Bridgewater",
+          "style": "All-weather",
+          "signal": "Increasing",
+          "note": "Q4 2025: 加仓 AI 网络芯片，占 3%。"
+        }
+      ],
       "scores": {
         "components": {
           "value": 45,
@@ -13900,10 +13951,10 @@
           "diversification": 15,
           "expense": 0,
           "personalFit": 52,
-          "managerReference": 50
+          "managerReference": 58
         },
         "perspectives": {
-          "composite": 60.0,
+          "composite": 60.6,
           "buffett_munger": 53.2,
           "bogle": 29.7,
           "peter_lynch": 68.8,
@@ -14955,7 +15006,26 @@
         ]
       },
       "expenseRatio": null,
-      "managerFootprints": [],
+      "managerFootprints": [
+        {
+          "manager": "Coatue Management",
+          "style": "Tech growth",
+          "signal": "Core holding",
+          "note": "Q4 2025: 第二大持仓，占 7.5%。"
+        },
+        {
+          "manager": "Druckenmiller / Duquesne",
+          "style": "Macro",
+          "signal": "Holding",
+          "note": "Q4 2025: 占 3.67%。"
+        },
+        {
+          "manager": "Appaloosa / Tepper",
+          "style": "Contrarian",
+          "signal": "Increasing",
+          "note": "Q4 2025: 加仓，占 5%。"
+        }
+      ],
       "scores": {
         "components": {
           "value": 45,
@@ -14967,10 +15037,10 @@
           "diversification": 15,
           "expense": 0,
           "personalFit": 64,
-          "managerReference": 50
+          "managerReference": 74
         },
         "perspectives": {
-          "composite": 64.0,
+          "composite": 65.9,
           "buffett_munger": 56.5,
           "bogle": 36.1,
           "peter_lynch": 70.7,
@@ -17089,7 +17159,38 @@
         ]
       },
       "expenseRatio": null,
-      "managerFootprints": [],
+      "managerFootprints": [
+        {
+          "manager": "Pershing Square / Ackman",
+          "style": "Concentrated quality",
+          "signal": "Core holding",
+          "note": "Q4 2025: 占 14.28%，第三大持仓。"
+        },
+        {
+          "manager": "Coatue Management",
+          "style": "Tech growth",
+          "signal": "Core holding",
+          "note": "Q4 2025: 占 5.5%。"
+        },
+        {
+          "manager": "Druckenmiller / Duquesne",
+          "style": "Macro",
+          "signal": "Holding",
+          "note": "Q4 2025: 占 3.79%。"
+        },
+        {
+          "manager": "Appaloosa / Tepper",
+          "style": "Contrarian",
+          "signal": "Reducing",
+          "note": "Q4 2025: 小幅减持，占 8.5%。"
+        },
+        {
+          "manager": "Bridgewater",
+          "style": "All-weather",
+          "signal": "Increasing",
+          "note": "Q4 2025: 加仓，占 3.2%。"
+        }
+      ],
       "scores": {
         "components": {
           "value": 45,
@@ -17101,10 +17202,10 @@
           "diversification": 15,
           "expense": 0,
           "personalFit": 56,
-          "managerReference": 50
+          "managerReference": 74
         },
         "perspectives": {
-          "composite": 60.9,
+          "composite": 62.8,
           "buffett_munger": 56.4,
           "bogle": 35.8,
           "peter_lynch": 64.8,
@@ -17112,9 +17213,9 @@
           "tech_growth_risk": 66.8
         },
         "action": {
-          "label": "Not attractive for now",
-          "stance": "Avoid impulsive buying",
-          "positionNote": "Wait for better price or clearer evidence."
+          "label": "Continue observing",
+          "stance": "Watch",
+          "positionNote": "Not enough edge to act without a specific thesis."
         },
         "explanation": [
           "Stock lens: moat 58/100, quality 62/100, value 45/100.",
@@ -18156,7 +18257,20 @@
         ]
       },
       "expenseRatio": null,
-      "managerFootprints": [],
+      "managerFootprints": [
+        {
+          "manager": "Coatue Management",
+          "style": "Tech growth",
+          "signal": "Reducing",
+          "note": "Q4 2025: 小幅减持，占 2.8%。"
+        },
+        {
+          "manager": "Bridgewater",
+          "style": "All-weather",
+          "signal": "Increasing",
+          "note": "Q4 2025: 加仓，占 2.8%。"
+        }
+      ],
       "scores": {
         "components": {
           "value": 45,
@@ -18168,10 +18282,10 @@
           "diversification": 15,
           "expense": 0,
           "personalFit": 44,
-          "managerReference": 50
+          "managerReference": 66
         },
         "perspectives": {
-          "composite": 47.4,
+          "composite": 48.7,
           "buffett_munger": 46.5,
           "bogle": 17.0,
           "peter_lynch": 59.5,
@@ -19222,7 +19336,14 @@
         ]
       },
       "expenseRatio": null,
-      "managerFootprints": [],
+      "managerFootprints": [
+        {
+          "manager": "ARK Invest",
+          "style": "Disruptive innovation",
+          "signal": "Reducing",
+          "note": "2025 年涨 135% 后获利了结，占约 3%。"
+        }
+      ],
       "scores": {
         "components": {
           "value": 45,
@@ -19234,10 +19355,10 @@
           "diversification": 15,
           "expense": 0,
           "personalFit": 52,
-          "managerReference": 50
+          "managerReference": 58
         },
         "perspectives": {
-          "composite": 50.5,
+          "composite": 51.1,
           "buffett_munger": 51.1,
           "bogle": 25.7,
           "peter_lynch": 57.0,
@@ -21355,7 +21476,14 @@
         ]
       },
       "expenseRatio": null,
-      "managerFootprints": [],
+      "managerFootprints": [
+        {
+          "manager": "Bridgewater",
+          "style": "All-weather",
+          "signal": "Reducing",
+          "note": "Q4 2025: 减持，占 4%。"
+        }
+      ],
       "scores": {
         "components": {
           "value": 45,
@@ -21367,10 +21495,10 @@
           "diversification": 15,
           "expense": 0,
           "personalFit": 44,
-          "managerReference": 50
+          "managerReference": 58
         },
         "perspectives": {
-          "composite": 46.7,
+          "composite": 47.4,
           "buffett_munger": 52.4,
           "bogle": 28.0,
           "peter_lynch": 47.3,
