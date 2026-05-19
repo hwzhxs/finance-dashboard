@@ -36,6 +36,7 @@ def mark_done(key: str) -> None:
 def run_update() -> None:
     subprocess.run(["python3", str(ROOT / "scripts" / "update_data.py")], check=True)
     subprocess.run(["python3", str(ROOT / "scripts" / "update_research.py")], check=True)
+    subprocess.run(["python3", str(ROOT / "scripts" / "update_sec_filings.py")], check=True)
 
 
 def run_earnings_calendar() -> None:
