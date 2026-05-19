@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Finance Dashboard</title>
     <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
-    <link rel="stylesheet" href="styles.css?v=20260517-2">
+    <link rel="stylesheet" href="styles.css?v=20260519-1">
   </head>
   <body>
     <header class="topbar">
@@ -132,28 +132,56 @@
       </section>
 
       <section id="expertsView" class="view">
-        <div class="expert-workbench">
-          <aside class="expert-list-panel">
-            <div class="section-head compact">
-              <p class="eyebrow">Expert Footprints</p>
-              <h2>专家列表</h2>
-            </div>
-            <div class="expert-sort-tabs" id="expertSortTabs"></div>
-            <div id="expertList" class="expert-list"></div>
-          </aside>
+        <nav class="expert-sub-tabs" id="expertSubTabs">
+          <button class="expert-sub-tab active" data-subview="list" type="button">专家列表</button>
+          <button class="expert-sub-tab" data-subview="commonality" type="button">🔥 共性分析</button>
+        </nav>
 
-          <section class="expert-detail-panel">
-            <div class="section-head">
-              <p class="eyebrow">Selected Expert</p>
-              <h2 id="expertName">选择专家</h2>
-              <p id="expertStyle">查看这个专家/机构的投资风格和相关动作。</p>
+        <!-- 专家列表 sub-view (existing) -->
+        <div id="expertListView" class="expert-subview active">
+          <div class="expert-workbench">
+            <aside class="expert-list-panel">
+              <div class="section-head compact">
+                <p class="eyebrow">Expert Footprints</p>
+                <h2>专家列表</h2>
+              </div>
+              <div class="expert-sort-tabs" id="expertSortTabs"></div>
+              <div id="expertList" class="expert-list"></div>
+            </aside>
+
+            <section class="expert-detail-panel">
+              <div class="section-head">
+                <p class="eyebrow">Selected Expert</p>
+                <h2 id="expertName">选择专家</h2>
+                <p id="expertStyle">查看这个专家/机构的投资风格和相关动作。</p>
+              </div>
+              <div id="expertActions" class="expert-actions"></div>
+            </section>
+          </div>
+        </div>
+
+        <!-- 共性分析 sub-view (new) -->
+        <div id="expertCommonalityView" class="expert-subview">
+          <div class="commonality-workbench">
+            <div class="commonality-header">
+              <div class="section-head">
+                <p class="eyebrow">Consensus Analysis</p>
+                <h2>共性分析</h2>
+                <p>多位投资大师共同持有的标的 — 叠加实时行情与 SEC 异动信号</p>
+              </div>
+              <div class="commonality-controls">
+                <button id="commonalityRefresh" class="refresh-btn" type="button">🔄 刷新行情</button>
+                <span id="commonalityUpdatedAt" class="commonality-ts"></span>
+              </div>
             </div>
-            <div id="expertActions" class="expert-actions"></div>
-          </section>
+            <div id="consensusHeatmap" class="consensus-heatmap"></div>
+            <div id="consensusTable" class="consensus-table-wrap"></div>
+            <div id="secFilings" class="sec-filings-section"></div>
+          </div>
         </div>
       </section>
     </main>
 
-    <script src="app.js?v=20260517-2"></script>
+    <script src="app.js?v=20260519-1"></script>
   </body>
 </html>

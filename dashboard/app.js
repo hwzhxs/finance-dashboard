@@ -34,6 +34,7 @@ let valuationData = null;
 let thesisData = null;
 let earningsCalendar = null;
 let competitiveData = null;
+let secFilingsJSON = null;
 let activeView = "stocks";
 let activePerspective = "composite";
 let activeSymbol = "VTI";
@@ -49,7 +50,7 @@ const fmtPctText = (value, digits = 1) => typeof value === "number" ? `${value >
 const pctClass = (value) => typeof value === "number" && value > 0 ? "up" : typeof value === "number" && value < 0 ? "down" : "neutral";
 
 async function loadData() {
-  const [latestRes, scoresRes, rankingsRes, researchRes, configRes, expertRes, valuationRes, thesisRes, earningsRes, competitiveRes] = await Promise.all([
+  const [latestRes, scoresRes, rankingsRes, researchRes, configRes, expertRes, valuationRes, thesisRes, earningsRes, competitiveRes, secFilingsRes] = await Promise.all([
     fetch(`${assetBase}data/latest.json?ts=${Date.now()}`),
     fetch(`${assetBase}data/scores.json?ts=${Date.now()}`),
     fetch(`${assetBase}data/rankings.json?ts=${Date.now()}`),
@@ -59,7 +60,8 @@ async function loadData() {
     fetch(`${assetBase}data/valuation-comps.json?ts=${Date.now()}`).catch(() => null),
     fetch(`${assetBase}data/thesis-tracker.json?ts=${Date.now()}`).catch(() => null),
     fetch(`${assetBase}data/earnings-calendar.json?ts=${Date.now()}`).catch(() => null),
-    fetch(`${assetBase}data/competitive-analysis.json?ts=${Date.now()}`).catch(() => null)
+    fetch(`${assetBase}data/competitive-analysis.json?ts=${Date.now()}`).catch(() => null),
+    fetch(`${assetBase}data/sec-filings.json?ts=${Date.now()}`).catch(() => null)
   ]);
   latest = await latestRes.json();
   scores = await scoresRes.json();
@@ -71,6 +73,7 @@ async function loadData() {
   if (thesisRes && thesisRes.ok) thesisData = await thesisRes.json();
   if (earningsRes && earningsRes.ok) earningsCalendar = await earningsRes.json();
   if (competitiveRes && competitiveRes.ok) competitiveData = await competitiveRes.json();
+  if (secFilingsRes && secFilingsRes.ok) secFilingsJSON = await secFilingsRes.json();
   if (!latest.securities[activeSymbol]) activeSymbol = Object.keys(latest.securities)[0];
   render();
 }
@@ -857,6 +860,305 @@ function renderThesis() {
     </div>
   `).join('');
 }
+// ===== Expert Sub-Tab Navigation =====
+document.querySelectorAll('.expert-sub-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.expert-sub-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.expert-subview').forEach(v => v.classList.remove('active'));
+    tab.classList.add('active');
+    const view = tab.dataset.subview;
+    if (view === 'list') document.getElementById('expertListView').classList.add('active');
+    else if (view === 'commonality') {
+      document.getElementById('expertCommonalityView').classList.add('active');
+      renderCommonality();
+    }
+  });
+});
+
+// ===== Commonality Analysis =====
+let commonalityPrices = {};
+let secFilingsData = [];
+
+function buildConsensusData() {
+  const experts = (expertHoldings && expertHoldings.experts) || [];
+  if (!experts.length) return [];
+  const tickerMap = {}; // symbol -> { name, experts: [{name, pct, change}], count }
+  experts.forEach(expert => {
+    const allH = [...(expert.topHoldings || []), ...(expert.notableMoves || [])];
+    allH.forEach(h => {
+      if (!h.symbol) return;
+      if (!tickerMap[h.symbol]) tickerMap[h.symbol] = { name: h.name || h.symbol, experts: [], count: 0, changes: {} };
+      tickerMap[h.symbol].experts.push({
+        name: (expert.name || '').split('/')[0].trim(),
+        pct: h.pctOfPortfolio || 0,
+        change: h.change || 'unchanged'
+      });
+      tickerMap[h.symbol].count++;
+      const c = h.change || 'unchanged';
+      tickerMap[h.symbol].changes[c] = (tickerMap[h.symbol].changes[c] || 0) + 1;
+    });
+  });
+  // Convert to array, filter multi-holder, sort by count desc
+  return Object.entries(tickerMap)
+    .filter(([, v]) => v.count >= 2)
+    .map(([symbol, v]) => ({
+      symbol,
+      name: v.name,
+      count: v.count,
+      pctTotal: v.experts.length,
+      avgWeight: v.experts.reduce((s, e) => s + e.pct, 0) / v.experts.length,
+      maxWeight: Math.max(...v.experts.map(e => e.pct)),
+      experts: v.experts,
+      changes: v.changes,
+      newBuys: (v.changes['new'] || 0) + (v.changes['new_top10'] || 0),
+      increased: v.changes['increased'] || 0,
+      reduced: v.changes['reduced'] || 0,
+      exited: v.changes['exited'] || 0
+    }))
+    .sort((a, b) => b.count - a.count || b.avgWeight - a.avgWeight);
+}
+
+async function fetchConsensusPrices(symbols) {
+  // Use Yahoo Finance v8 quote endpoint
+  const symbolStr = symbols.join(',');
+  try {
+    const res = await fetch(`https://query1.finance.yahoo.com/v8/finance/chart/${symbols[0]}?interval=1d&range=1d`);
+    // Batch approach: fetch each individually (Yahoo v8 doesn't support batch well)
+    const prices = {};
+    await Promise.all(symbols.slice(0, 20).map(async sym => {
+      try {
+        const r = await fetch(`https://query1.finance.yahoo.com/v8/finance/chart/${sym}?interval=1d&range=1d`);
+        if (!r.ok) return;
+        const d = await r.json();
+        const meta = d.chart?.result?.[0]?.meta;
+        if (meta) {
+          prices[sym] = {
+            price: meta.regularMarketPrice,
+            prevClose: meta.previousClose || meta.chartPreviousClose,
+            change: meta.regularMarketPrice - (meta.previousClose || meta.chartPreviousClose),
+            changePct: ((meta.regularMarketPrice - (meta.previousClose || meta.chartPreviousClose)) / (meta.previousClose || meta.chartPreviousClose) * 100)
+          };
+        }
+      } catch(e) { /* skip */ }
+    }));
+    return prices;
+  } catch(e) {
+    console.warn('Price fetch failed:', e);
+    return {};
+  }
+}
+
+async function fetchSECFilings() {
+  // Fetch recent Form 4 and 13D/G filings from SEC EDGAR full-text search
+  const experts = (expertHoldings && expertHoldings.experts) || [];
+  const expertNames = experts.map(e => (e.name || '').split('/').pop().trim()).filter(Boolean);
+  try {
+    // Use SEC EDGAR EFTS (full-text search) for recent Form 4 filings
+    const res = await fetch('https://efts.sec.gov/LATEST/search-index?q=%22form+4%22&dateRange=custom&startdt=' + getDateDaysAgo(7) + '&enddt=' + getToday() + '&forms=4,SC+13D,SC+13G&from=0&size=20', {
+      headers: { 'User-Agent': 'Finance Dashboard research@example.com' }
+    });
+    if (!res.ok) return [];
+    return await res.json();
+  } catch(e) {
+    console.warn('SEC filing fetch failed:', e);
+    return [];
+  }
+}
+
+function getToday() { return new Date().toISOString().slice(0, 10); }
+function getDateDaysAgo(n) { const d = new Date(); d.setDate(d.getDate() - n); return d.toISOString().slice(0, 10); }
+
+async function renderCommonality() {
+  const consensus = buildConsensusData();
+  if (!consensus.length) {
+    document.getElementById('consensusHeatmap').innerHTML = '<p style="color:var(--muted)">暂无足够专家数据进行共性分析</p>';
+    return;
+  }
+
+  const totalExperts = (expertHoldings && expertHoldings.experts || []).length;
+  const wlTickers = getWatchlistTickers();
+
+  // Render heatmap
+  const maxCount = consensus[0].count;
+  document.getElementById('consensusHeatmap').innerHTML = `
+    <div class="heatmap-title">
+      <h3>🔥 共识热力图</h3>
+      <span class="heatmap-subtitle">气泡越大 = 持有专家越多 · 颜色越深 = 平均仓位越重</span>
+    </div>
+    <div class="heatmap-grid">
+      ${consensus.slice(0, 30).map(c => {
+        const size = Math.max(48, Math.min(120, 48 + (c.count / maxCount) * 72));
+        const intensity = Math.min(1, c.avgWeight / 15);
+        const isWl = wlTickers.includes(c.symbol);
+        const priceInfo = commonalityPrices[c.symbol];
+        const priceHtml = priceInfo ? `<span class="hm-price ${priceInfo.changePct >= 0 ? 'up' : 'down'}">${priceInfo.changePct >= 0 ? '+' : ''}${priceInfo.changePct.toFixed(1)}%</span>` : '';
+        return `
+          <div class="hm-bubble ${isWl ? 'wl' : ''}" style="width:${size}px;height:${size}px;background:rgba(59,130,246,${0.15 + intensity * 0.6})" title="${c.name}\n${c.count}/${totalExperts} 位专家持有\n平均仓位 ${c.avgWeight.toFixed(1)}%">
+            <span class="hm-symbol">${c.symbol}</span>
+            <span class="hm-count">${c.count}</span>
+            ${priceHtml}
+          </div>
+        `;
+      }).join('')}
+    </div>
+  `;
+
+  // Render consensus table
+  document.getElementById('consensusTable').innerHTML = `
+    <h3>📊 共识排名</h3>
+    <table class="holdings-table consensus">
+      <thead>
+        <tr>
+          <th>#</th><th>Ticker</th><th>公司</th><th>持有人数</th><th>平均仓位</th>
+          <th>最重仓位</th><th>加仓</th><th>新买</th><th>减持</th><th>实时价格</th><th>涨跌</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${consensus.map((c, i) => {
+          const isWl = wlTickers.includes(c.symbol);
+          const p = commonalityPrices[c.symbol];
+          return `
+            <tr class="${isWl ? 'overlap-row' : ''}">
+              <td>${i + 1}</td>
+              <td><strong>${c.symbol}</strong>${isWl ? ' <span class="overlap-dot">●</span>' : ''}</td>
+              <td>${c.name}</td>
+              <td><strong>${c.count}</strong> / ${totalExperts}</td>
+              <td>${c.avgWeight.toFixed(1)}%</td>
+              <td>${c.maxWeight.toFixed(1)}%</td>
+              <td>${c.increased ? `<span style="color:var(--good)">+${c.increased}</span>` : '—'}</td>
+              <td>${c.newBuys ? `<span style="color:var(--good);font-weight:700">🆕 ${c.newBuys}</span>` : '—'}</td>
+              <td>${c.reduced ? `<span style="color:var(--bad)">-${c.reduced}</span>` : '—'}${c.exited ? ` <span style="color:var(--bad)">🚪${c.exited}</span>` : ''}</td>
+              <td>${p ? `$${p.price.toFixed(2)}` : '—'}</td>
+              <td class="${p ? (p.changePct >= 0 ? 'val-cheap' : 'val-expensive') : ''}">${p ? `${p.changePct >= 0 ? '+' : ''}${p.changePct.toFixed(2)}%` : '—'}</td>
+            </tr>
+          `;
+        }).join('')}
+      </tbody>
+    </table>
+    <div class="consensus-insights">
+      <div class="expert-action disclaimer">
+        <strong>💡 解读</strong>
+        <p>共识度高不等于该买。多位大师持有说明标的经过了多重筛选，但 13F 有 45 天延迟。结合实时价格和 SEC 异动信号综合判断。<span class="overlap-dot">●</span> = 你的 watchlist 重叠股。</p>
+      </div>
+    </div>
+  `;
+
+  // Render SEC filings placeholder
+  document.getElementById('secFilings').innerHTML = `
+    <h3>📡 SEC 近期异动 (Form 4 / 13D/G)</h3>
+    <div id="secFilingsContent" class="sec-filings-list">
+      <p style="color:var(--muted)">加载中...</p>
+    </div>
+  `;
+
+  // Fetch real-time prices
+  const symbols = consensus.slice(0, 20).map(c => c.symbol);
+  commonalityPrices = await fetchConsensusPrices(symbols);
+  document.getElementById('commonalityUpdatedAt').textContent = `行情更新: ${new Date().toLocaleTimeString('zh-CN')}`;
+  // Re-render with prices
+  renderCommonality_pricesOnly(consensus, totalExperts, wlTickers);
+
+  // Fetch SEC filings
+  await renderSECFilings(consensus);
+}
+
+function renderCommonality_pricesOnly(consensus, totalExperts, wlTickers) {
+  // Update just the price columns and heatmap price badges
+  const maxCount = consensus[0].count;
+  document.getElementById('consensusHeatmap').innerHTML = `
+    <div class="heatmap-title">
+      <h3>🔥 共识热力图</h3>
+      <span class="heatmap-subtitle">气泡越大 = 持有专家越多 · 颜色越深 = 平均仓位越重 · 实时涨跌</span>
+    </div>
+    <div class="heatmap-grid">
+      ${consensus.slice(0, 30).map(c => {
+        const size = Math.max(48, Math.min(120, 48 + (c.count / maxCount) * 72));
+        const intensity = Math.min(1, c.avgWeight / 15);
+        const isWl = wlTickers.includes(c.symbol);
+        const priceInfo = commonalityPrices[c.symbol];
+        const priceHtml = priceInfo ? `<span class="hm-price ${priceInfo.changePct >= 0 ? 'up' : 'down'}">${priceInfo.changePct >= 0 ? '+' : ''}${priceInfo.changePct.toFixed(1)}%</span>` : '';
+        return `
+          <div class="hm-bubble ${isWl ? 'wl' : ''}" style="width:${size}px;height:${size}px;background:rgba(59,130,246,${0.15 + intensity * 0.6})" title="${c.name}\n${c.count}/${totalExperts} 位专家持有\n平均仓位 ${c.avgWeight.toFixed(1)}%">
+            <span class="hm-symbol">${c.symbol}</span>
+            <span class="hm-count">${c.count}</span>
+            ${priceHtml}
+          </div>
+        `;
+      }).join('')}
+    </div>
+  `;
+
+  // Update table prices
+  const tbody = document.querySelector('.holdings-table.consensus tbody');
+  if (tbody) {
+    const rows = tbody.querySelectorAll('tr');
+    consensus.forEach((c, i) => {
+      if (!rows[i]) return;
+      const cells = rows[i].querySelectorAll('td');
+      const p = commonalityPrices[c.symbol];
+      if (cells.length >= 11 && p) {
+        cells[9].textContent = `$${p.price.toFixed(2)}`;
+        cells[10].className = p.changePct >= 0 ? 'val-cheap' : 'val-expensive';
+        cells[10].textContent = `${p.changePct >= 0 ? '+' : ''}${p.changePct.toFixed(2)}%`;
+      }
+    });
+  }
+}
+
+async function renderSECFilings(consensus) {
+  const el = document.getElementById('secFilingsContent');
+  if (!el) return;
+  const consensusSymbols = consensus.map(c => c.symbol);
+  
+  // Use pre-fetched sec-filings.json data
+  if (secFilingsJSON && secFilingsJSON.symbolFilings) {
+    const entries = [];
+    consensusSymbols.forEach(sym => {
+      const filings = secFilingsJSON.symbolFilings[sym];
+      if (filings && filings.length) {
+        filings.forEach(f => entries.push({ ...f, relatedSymbol: sym }));
+      }
+    });
+    (secFilingsJSON.recentFilings || []).forEach(f => entries.push(f));
+    
+    if (!entries.length) {
+      el.innerHTML = '<p style="color:var(--muted)">近 14 天无相关 SEC 异动记录</p>';
+      return;
+    }
+    
+    const seen = new Set();
+    const unique = entries.filter(e => {
+      const key = `${e.filer}-${e.date}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    }).slice(0, 25);
+    
+    el.innerHTML = unique.map(h => `
+      <div class="sec-filing-row">
+        <span class="sec-form">${h.form || 'Form 4'}</span>
+        <span class="sec-filer">${h.filer || ''}${h.relatedSymbol ? ' <span class="overlap-dot" title="共识股">(${h.relatedSymbol})</span>' : ''}</span>
+        <span class="sec-date">${h.date || ''}</span>
+        ${h.url ? `<a href="${h.url}" target="_blank" rel="noopener">→</a>` : ''}
+      </div>
+    `).join('');
+    
+    if (secFilingsJSON.generatedAt) {
+      const age = Math.round((Date.now() - new Date(secFilingsJSON.generatedAt).getTime()) / 3600000);
+      el.innerHTML += `<p style="font-size:11px;color:var(--muted);margin-top:8px">数据更新: ${new Date(secFilingsJSON.generatedAt).toLocaleString('zh-CN')} (${age}h ago)</p>`;
+    }
+    return;
+  }
+  
+  el.innerHTML = '<p style="color:var(--muted)">暂无 SEC 数据。运行 update_sec_filings.py 获取最新数据。</p>';
+}
+
+// Refresh button for commonality
+document.getElementById('commonalityRefresh')?.addEventListener('click', () => {
+  commonalityPrices = {};
+  renderCommonality();
+});
+
 loadData().catch((error) => {
   document.body.innerHTML = `<main><h1>Dashboard failed to load</h1><p>${error.message}</p></main>`;
 });
