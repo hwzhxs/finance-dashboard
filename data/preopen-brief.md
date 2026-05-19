@@ -1,17 +1,17 @@
-# Pre-market brief - 2026-05-18 20:16 CST
+# Pre-market brief - 2026-05-19 20:15 CST
 
 Conclusion: observe first; act only if a trade checklist is triggered.
 
 ## Top candidates
-- QQQ: Continue observing | score 73.2 | $708.93, today -1.51%, 3m +17.9%
-- SPY: Continue observing | score 72.7 | $739.17, today -1.20%, 3m +8.2%
-- VOO: Continue observing | score 72.4 | $679.44, today -1.21%, 3m +8.2%
-- VTI: Continue observing | score 72.2 | $362.74, today -1.27%, 3m +7.6%
+- QQQ: Continue observing | score 72.8 | $705.88, today -0.43%, 3m +16.5%
+- SPY: Continue observing | score 72.4 | $738.65, today -0.07%, 3m +7.6%
+- VOO: Continue observing | score 72.1 | $678.91, today -0.08%, 3m +7.6%
+- VTI: Continue observing | score 71.9 | $362.36, today -0.10%, 3m +6.9%
 
 ## Risk notes
 - PDD is the existing learning position at the soft single-stock limit; avoid adding by default.
-- PDD: Howard Marks risk lens is cautious (54.9/100).
-- ASML: Howard Marks risk lens is cautious (54.4/100).
+- PDD: Howard Marks risk lens is cautious (54.8/100).
 - CRM: Howard Marks risk lens is cautious (51.2/100).
+- TSLA: Howard Marks risk lens is cautious (49.2/100).
 
 Dashboard: http://127.0.0.1:18888

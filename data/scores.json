@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-18T12:15:14.851114+00:00",
+  "generatedAt": "2026-05-19T12:15:03.310065+00:00",
   "perspectives": {
     "composite": "Balanced score for Xiaosong's learning pool",
     "buffett_munger": "Moat, quality, cash generation, long-term certainty, margin of safety",
@@ -15,7 +15,7 @@
         "quality": 78,
         "moat": 82,
         "risk": 82.2,
-        "momentum": 68.3,
+        "momentum": 66.2,
         "aiExposure": 45,
         "diversification": 90,
         "expense": 88,
@@ -23,12 +23,12 @@
         "managerReference": 58
       },
       "perspectives": {
-        "composite": 72.7,
+        "composite": 72.4,
         "buffett_munger": 79.6,
         "bogle": 87.9,
-        "peter_lynch": 70.3,
+        "peter_lynch": 69.8,
         "howard_marks": 83.5,
-        "tech_growth_risk": 67.2
+        "tech_growth_risk": 66.9
       },
       "action": {
         "label": "Continue observing",
@@ -46,7 +46,7 @@
         "quality": 74,
         "moat": 72,
         "risk": 76.4,
-        "momentum": 84.3,
+        "momentum": 80.9,
         "aiExposure": 72,
         "diversification": 64,
         "expense": 74,
@@ -54,12 +54,12 @@
         "managerReference": 50
       },
       "perspectives": {
-        "composite": 73.2,
+        "composite": 72.8,
         "buffett_munger": 73.3,
         "bogle": 70.5,
-        "peter_lynch": 75.3,
-        "howard_marks": 76.3,
-        "tech_growth_risk": 75.2
+        "peter_lynch": 74.6,
+        "howard_marks": 76.8,
+        "tech_growth_risk": 74.7
       },
       "action": {
         "label": "Continue observing",
@@ -77,7 +77,7 @@
         "quality": 80,
         "moat": 84,
         "risk": 82.2,
-        "momentum": 68.3,
+        "momentum": 66.1,
         "aiExposure": 45,
         "diversification": 90,
         "expense": 96,
@@ -85,12 +85,12 @@
         "managerReference": 50
       },
       "perspectives": {
-        "composite": 72.4,
+        "composite": 72.1,
         "buffett_munger": 80.7,
         "bogle": 90.1,
-        "peter_lynch": 70.7,
+        "peter_lynch": 70.2,
         "howard_marks": 83.5,
-        "tech_growth_risk": 67.6
+        "tech_growth_risk": 67.3
       },
       "action": {
         "label": "Continue observing",
@@ -108,7 +108,7 @@
         "quality": 82,
         "moat": 88,
         "risk": 81.8,
-        "momentum": 67.1,
+        "momentum": 64.8,
         "aiExposure": 42,
         "diversification": 96,
         "expense": 96,
@@ -116,12 +116,12 @@
         "managerReference": 50
       },
       "perspectives": {
-        "composite": 72.2,
+        "composite": 71.9,
         "buffett_munger": 82.3,
         "bogle": 92.6,
-        "peter_lynch": 70.2,
+        "peter_lynch": 69.8,
         "howard_marks": 83.4,
-        "tech_growth_risk": 66.9
+        "tech_growth_risk": 66.5
       },
       "action": {
         "label": "Continue observing",
@@ -169,8 +169,8 @@
         "value": 45,
         "quality": 62,
         "moat": 55,
-        "risk": 48.0,
-        "momentum": 32.1,
+        "risk": 47.7,
+        "momentum": 28.4,
         "aiExposure": 20,
         "diversification": 15,
         "expense": 0,
@@ -178,12 +178,12 @@
         "managerReference": 58
       },
       "perspectives": {
-        "composite": 44.9,
+        "composite": 44.4,
         "buffett_munger": 52.9,
-        "bogle": 30.7,
-        "peter_lynch": 40.6,
-        "howard_marks": 54.9,
-        "tech_growth_risk": 39.3
+        "bogle": 30.6,
+        "peter_lynch": 39.9,
+        "howard_marks": 54.8,
+        "tech_growth_risk": 38.7
       },
       "action": {
         "label": "Continue observing",
@@ -192,7 +192,7 @@
       },
       "explanation": [
         "Stock lens: moat 55/100, quality 62/100, value 45/100.",
-        "Risk score is 48.0/100 based on recent volatility and drawdown.",
+        "Risk score is 47.7/100 based on recent volatility and drawdown.",
         "Existing learning position; new capital should usually compare against core ETFs first."
       ]
     },
@@ -202,7 +202,7 @@
         "quality": 90,
         "moat": 92,
         "risk": 68.7,
-        "momentum": 87.0,
+        "momentum": 81.8,
         "aiExposure": 55,
         "diversification": 15,
         "expense": 0,
@@ -210,12 +210,12 @@
         "managerReference": 58
       },
       "perspectives": {
-        "composite": 66.4,
+        "composite": 65.8,
         "buffett_munger": 75.7,
         "bogle": 39.3,
-        "peter_lynch": 66.6,
-        "howard_marks": 63.0,
-        "tech_growth_risk": 68.6
+        "peter_lynch": 65.6,
+        "howard_marks": 63.9,
+        "tech_growth_risk": 67.8
       },
       "action": {
         "label": "Continue observing",
@@ -233,7 +233,7 @@
         "quality": 92,
         "moat": 94,
         "risk": 56.2,
-        "momentum": 53.1,
+        "momentum": 52.5,
         "aiExposure": 88,
         "diversification": 15,
         "expense": 0,
@@ -244,9 +244,9 @@
         "composite": 66.3,
         "buffett_munger": 75.6,
         "bogle": 37.2,
-        "peter_lynch": 68.4,
+        "peter_lynch": 68.3,
         "howard_marks": 61.9,
-        "tech_growth_risk": 71.8
+        "tech_growth_risk": 71.7
       },
       "action": {
         "label": "Continue observing",
@@ -265,7 +265,7 @@
         "quality": 84,
         "moat": 82,
         "risk": 53.3,
-        "momentum": 98.2,
+        "momentum": 91.1,
         "aiExposure": 98,
         "diversification": 15,
         "expense": 0,
@@ -273,12 +273,12 @@
         "managerReference": 74
       },
       "perspectives": {
-        "composite": 71.6,
+        "composite": 70.8,
         "buffett_munger": 69.5,
         "bogle": 36.3,
-        "peter_lynch": 77.8,
-        "howard_marks": 56.2,
-        "tech_growth_risk": 79.8
+        "peter_lynch": 76.4,
+        "howard_marks": 57.3,
+        "tech_growth_risk": 78.7
       },
       "action": {
         "label": "Continue observing",
@@ -297,7 +297,7 @@
         "quality": 60,
         "moat": 58,
         "risk": 34.4,
-        "momentum": 67.4,
+        "momentum": 57.5,
         "aiExposure": 65,
         "diversification": 15,
         "expense": 0,
@@ -305,12 +305,12 @@
         "managerReference": 58
       },
       "perspectives": {
-        "composite": 51.8,
+        "composite": 50.6,
         "buffett_munger": 51.0,
         "bogle": 26.6,
-        "peter_lynch": 56.3,
+        "peter_lynch": 54.3,
         "howard_marks": 49.2,
-        "tech_growth_risk": 55.6
+        "tech_growth_risk": 54.0
       },
       "action": {
         "label": "Not attractive for now",
@@ -359,7 +359,7 @@
         "value": 45,
         "quality": 62,
         "moat": 58,
-        "risk": 17.3,
+        "risk": 17.4,
         "momentum": 100,
         "aiExposure": 88,
         "diversification": 15,
@@ -372,7 +372,7 @@
         "buffett_munger": 49.7,
         "bogle": 23.1,
         "peter_lynch": 69.4,
-        "howard_marks": 38.6,
+        "howard_marks": 38.7,
         "tech_growth_risk": 65.5
       },
       "action": {
@@ -382,7 +382,7 @@
       },
       "explanation": [
         "Stock lens: moat 58/100, quality 62/100, value 45/100.",
-        "Risk score is 17.3/100 based on recent volatility and drawdown.",
+        "Risk score is 17.4/100 based on recent volatility and drawdown.",
         "High AI/technology exposure; useful for learning but valuation discipline matters."
       ]
     },
@@ -392,7 +392,7 @@
         "quality": 62,
         "moat": 58,
         "risk": 39.3,
-        "momentum": 99.0,
+        "momentum": 93.1,
         "aiExposure": 86,
         "diversification": 15,
         "expense": 0,
@@ -400,12 +400,12 @@
         "managerReference": 58
       },
       "perspectives": {
-        "composite": 60.6,
+        "composite": 59.9,
         "buffett_munger": 53.2,
         "bogle": 29.7,
-        "peter_lynch": 68.8,
-        "howard_marks": 48.0,
-        "tech_growth_risk": 68.7
+        "peter_lynch": 67.6,
+        "howard_marks": 49.0,
+        "tech_growth_risk": 67.8
       },
       "action": {
         "label": "Not attractive for now",
@@ -423,8 +423,8 @@
         "value": 45,
         "quality": 62,
         "moat": 58,
-        "risk": 52.7,
-        "momentum": 98.3,
+        "risk": 52.6,
+        "momentum": 90.9,
         "aiExposure": 84,
         "diversification": 15,
         "expense": 0,
@@ -432,12 +432,12 @@
         "managerReference": 74
       },
       "perspectives": {
-        "composite": 65.9,
+        "composite": 65.0,
         "buffett_munger": 56.5,
         "bogle": 36.1,
-        "peter_lynch": 70.7,
-        "howard_marks": 55.9,
-        "tech_growth_risk": 71.2
+        "peter_lynch": 69.2,
+        "howard_marks": 57.1,
+        "tech_growth_risk": 70.0
       },
       "action": {
         "label": "Continue observing",
@@ -446,7 +446,7 @@
       },
       "explanation": [
         "Stock lens: moat 58/100, quality 62/100, value 45/100.",
-        "Risk score is 52.7/100 based on recent volatility and drawdown.",
+        "Risk score is 52.6/100 based on recent volatility and drawdown.",
         "High AI/technology exposure; useful for learning but valuation discipline matters."
       ]
     },
@@ -456,7 +456,7 @@
         "quality": 62,
         "moat": 58,
         "risk": 48.1,
-        "momentum": 87.0,
+        "momentum": 75.3,
         "aiExposure": 78,
         "diversification": 15,
         "expense": 0,
@@ -464,12 +464,12 @@
         "managerReference": 50
       },
       "perspectives": {
-        "composite": 59.8,
+        "composite": 58.4,
         "buffett_munger": 55.0,
         "bogle": 33.1,
-        "peter_lynch": 65.6,
-        "howard_marks": 54.4,
-        "tech_growth_risk": 66.2
+        "peter_lynch": 63.3,
+        "howard_marks": 56.2,
+        "tech_growth_risk": 64.4
       },
       "action": {
         "label": "Not attractive for now",
@@ -488,7 +488,7 @@
         "quality": 62,
         "moat": 58,
         "risk": 57.0,
-        "momentum": 86.0,
+        "momentum": 84.5,
         "aiExposure": 75,
         "diversification": 15,
         "expense": 0,
@@ -496,12 +496,12 @@
         "managerReference": 74
       },
       "perspectives": {
-        "composite": 62.8,
+        "composite": 62.6,
         "buffett_munger": 56.4,
         "bogle": 35.8,
-        "peter_lynch": 64.8,
-        "howard_marks": 58.2,
-        "tech_growth_risk": 66.8
+        "peter_lynch": 64.5,
+        "howard_marks": 58.5,
+        "tech_growth_risk": 66.5
       },
       "action": {
         "label": "Continue observing",
@@ -519,8 +519,8 @@
         "value": 45,
         "quality": 62,
         "moat": 58,
-        "risk": 2.4,
-        "momentum": 82.6,
+        "risk": 2.3,
+        "momentum": 75.8,
         "aiExposure": 64,
         "diversification": 15,
         "expense": 0,
@@ -528,12 +528,12 @@
         "managerReference": 66
       },
       "perspectives": {
-        "composite": 48.7,
+        "composite": 47.9,
         "buffett_munger": 46.5,
         "bogle": 17.0,
-        "peter_lynch": 59.5,
-        "howard_marks": 33.7,
-        "tech_growth_risk": 52.4
+        "peter_lynch": 58.2,
+        "howard_marks": 34.8,
+        "tech_growth_risk": 51.3
       },
       "action": {
         "label": "Not attractive for now",
@@ -542,7 +542,7 @@
       },
       "explanation": [
         "Stock lens: moat 58/100, quality 62/100, value 45/100.",
-        "Risk score is 2.4/100 based on recent volatility and drawdown."
+        "Risk score is 2.3/100 based on recent volatility and drawdown."
       ]
     },
     "PLTR": {
@@ -550,8 +550,8 @@
         "value": 45,
         "quality": 62,
         "moat": 58,
-        "risk": 26.1,
-        "momentum": 44.0,
+        "risk": 26.2,
+        "momentum": 42.4,
         "aiExposure": 82,
         "diversification": 15,
         "expense": 0,
@@ -559,12 +559,12 @@
         "managerReference": 58
       },
       "perspectives": {
-        "composite": 51.1,
+        "composite": 51.0,
         "buffett_munger": 51.1,
         "bogle": 25.7,
-        "peter_lynch": 57.0,
+        "peter_lynch": 56.7,
         "howard_marks": 47.1,
-        "tech_growth_risk": 56.4
+        "tech_growth_risk": 56.1
       },
       "action": {
         "label": "Not attractive for now",
@@ -573,7 +573,7 @@
       },
       "explanation": [
         "Stock lens: moat 58/100, quality 62/100, value 45/100.",
-        "Risk score is 26.1/100 based on recent volatility and drawdown.",
+        "Risk score is 26.2/100 based on recent volatility and drawdown.",
         "High AI/technology exposure; useful for learning but valuation discipline matters."
       ]
     },
@@ -582,8 +582,8 @@
         "value": 45,
         "quality": 62,
         "moat": 58,
-        "risk": 21.0,
-        "momentum": 27.6,
+        "risk": 20.0,
+        "momentum": 43.1,
         "aiExposure": 62,
         "diversification": 15,
         "expense": 0,
@@ -591,12 +591,12 @@
         "managerReference": 50
       },
       "perspectives": {
-        "composite": 43.9,
-        "buffett_munger": 49.5,
-        "bogle": 22.6,
-        "peter_lynch": 48.1,
-        "howard_marks": 43.5,
-        "tech_growth_risk": 46.3
+        "composite": 45.6,
+        "buffett_munger": 49.3,
+        "bogle": 22.3,
+        "peter_lynch": 51.2,
+        "howard_marks": 43.1,
+        "tech_growth_risk": 48.6
       },
       "action": {
         "label": "Not attractive for now",
@@ -605,7 +605,7 @@
       },
       "explanation": [
         "Stock lens: moat 58/100, quality 62/100, value 45/100.",
-        "Risk score is 21.0/100 based on recent volatility and drawdown."
+        "Risk score is 20.0/100 based on recent volatility and drawdown."
       ]
     },
     "CRM": {
@@ -613,8 +613,8 @@
         "value": 45,
         "quality": 62,
         "moat": 58,
-        "risk": 39.1,
-        "momentum": 30.7,
+        "risk": 39.3,
+        "momentum": 35.7,
         "aiExposure": 55,
         "diversification": 15,
         "expense": 0,
@@ -622,12 +622,12 @@
         "managerReference": 58
       },
       "perspectives": {
-        "composite": 47.4,
+        "composite": 48.0,
         "buffett_munger": 52.4,
-        "bogle": 28.0,
-        "peter_lynch": 47.3,
+        "bogle": 28.1,
+        "peter_lynch": 48.3,
         "howard_marks": 51.2,
-        "tech_growth_risk": 48.0
+        "tech_growth_risk": 48.8
       },
       "action": {
         "label": "Not attractive for now",
@@ -636,7 +636,7 @@
       },
       "explanation": [
         "Stock lens: moat 58/100, quality 62/100, value 45/100.",
-        "Risk score is 39.1/100 based on recent volatility and drawdown."
+        "Risk score is 39.3/100 based on recent volatility and drawdown."
       ]
     }
   }
