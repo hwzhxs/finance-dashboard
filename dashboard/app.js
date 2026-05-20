@@ -980,28 +980,7 @@ async function renderCommonality() {
 
   // Render heatmap
   const maxCount = consensus[0].count;
-  document.getElementById('consensusHeatmap').innerHTML = `
-    <div class="heatmap-title">
-      <h3>🔥 共识热力图</h3>
-      <span class="heatmap-subtitle">气泡越大 = 持有专家越多 · 颜色越深 = 平均仓位越重</span>
-    </div>
-    <div class="heatmap-grid">
-      ${consensus.slice(0, 30).map(c => {
-        const size = Math.max(48, Math.min(120, 48 + (c.count / maxCount) * 72));
-        const intensity = Math.min(1, c.avgWeight / 15);
-        const isWl = wlTickers.includes(c.symbol);
-        const priceInfo = commonalityPrices[c.symbol];
-        const priceHtml = priceInfo ? `<span class="hm-price ${priceInfo.changePct >= 0 ? 'up' : 'down'}">${priceInfo.changePct >= 0 ? '+' : ''}${priceInfo.changePct.toFixed(1)}%</span>` : '';
-        return `
-          <div class="hm-bubble ${isWl ? 'wl' : ''}" style="width:${size}px;height:${size}px;background:rgba(59,130,246,${0.15 + intensity * 0.6})" title="${c.name}\n${c.count}/${totalExperts} 位专家持有\n平均仓位 ${c.avgWeight.toFixed(1)}%">
-            <span class="hm-symbol">${c.symbol}</span>
-            <span class="hm-count">${c.count}</span>
-            ${priceHtml}
-          </div>
-        `;
-      }).join('')}
-    </div>
-  `;
+  document.getElementById('consensusHeatmap').innerHTML = renderHeatmapHTML(consensus, maxCount, totalExperts, wlTickers);
 
   // Render consensus table
   document.getElementById('consensusTable').innerHTML = `
@@ -1062,31 +1041,62 @@ async function renderCommonality() {
   await renderSECFilings(consensus);
 }
 
-function renderCommonality_pricesOnly(consensus, totalExperts, wlTickers) {
-  // Update just the price columns and heatmap price badges
-  const maxCount = consensus[0].count;
-  document.getElementById('consensusHeatmap').innerHTML = `
+function heatmapColor(ratio) {
+  // ratio 0→1: green → yellow → orange → red
+  const stops = [
+    [0, 34, 197, 94],    // green
+    [0.33, 234, 179, 8], // yellow
+    [0.66, 249, 115, 22],// orange
+    [1, 239, 68, 68]     // red
+  ];
+  let lo = stops[0], hi = stops[stops.length - 1];
+  for (let i = 0; i < stops.length - 1; i++) {
+    if (ratio >= stops[i][0] && ratio <= stops[i + 1][0]) { lo = stops[i]; hi = stops[i + 1]; break; }
+  }
+  const t = (ratio - lo[0]) / (hi[0] - lo[0] || 1);
+  const r = Math.round(lo[1] + t * (hi[1] - lo[1]));
+  const g = Math.round(lo[2] + t * (hi[2] - lo[2]));
+  const b = Math.round(lo[3] + t * (hi[3] - lo[3]));
+  return `${r},${g},${b}`;
+}
+
+function renderHeatmapHTML(consensus, maxCount, totalExperts, wlTickers) {
+  return `
     <div class="heatmap-title">
       <h3>🔥 共识热力图</h3>
-      <span class="heatmap-subtitle">气泡越大 = 持有专家越多 · 颜色越深 = 平均仓位越重 · 实时涨跌</span>
+      <span class="heatmap-subtitle">颜色 = 共识强度（持有人数 × 仓位）· 实时涨跌</span>
+    </div>
+    <div class="heatmap-legend">
+      <span>低共识</span>
+      <div class="heatmap-legend-bar"></div>
+      <span>高共识</span>
     </div>
     <div class="heatmap-grid">
       ${consensus.slice(0, 30).map(c => {
-        const size = Math.max(48, Math.min(120, 48 + (c.count / maxCount) * 72));
-        const intensity = Math.min(1, c.avgWeight / 15);
+        const countRatio = c.count / maxCount;
+        const weightRatio = Math.min(1, c.avgWeight / 15);
+        const heat = countRatio * 0.6 + weightRatio * 0.4;
+        const rgb = heatmapColor(heat);
         const isWl = wlTickers.includes(c.symbol);
         const priceInfo = commonalityPrices[c.symbol];
         const priceHtml = priceInfo ? `<span class="hm-price ${priceInfo.changePct >= 0 ? 'up' : 'down'}">${priceInfo.changePct >= 0 ? '+' : ''}${priceInfo.changePct.toFixed(1)}%</span>` : '';
         return `
-          <div class="hm-bubble ${isWl ? 'wl' : ''}" style="width:${size}px;height:${size}px;background:rgba(59,130,246,${0.15 + intensity * 0.6})" title="${c.name}\n${c.count}/${totalExperts} 位专家持有\n平均仓位 ${c.avgWeight.toFixed(1)}%">
+          <div class="hm-cell ${isWl ? 'wl' : ''}" style="background:rgba(${rgb},${0.2 + heat * 0.55})" title="${c.name}\n${c.count}/${totalExperts} 位专家持有\n平均仓位 ${c.avgWeight.toFixed(1)}%">
             <span class="hm-symbol">${c.symbol}</span>
-            <span class="hm-count">${c.count}</span>
+            <span class="hm-count">${c.count}/${totalExperts}</span>
+            <div class="hm-count-bar"><div class="hm-count-fill" style="width:${countRatio * 100}%"></div></div>
             ${priceHtml}
           </div>
         `;
       }).join('')}
     </div>
   `;
+}
+
+function renderCommonality_pricesOnly(consensus, totalExperts, wlTickers) {
+  // Update heatmap with prices
+  const maxCount = consensus[0].count;
+  document.getElementById('consensusHeatmap').innerHTML = renderHeatmapHTML(consensus, maxCount, totalExperts, wlTickers);
 
   // Update table prices
   const tbody = document.querySelector('.holdings-table.consensus tbody');
