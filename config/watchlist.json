@@ -16,47 +16,147 @@
     }
   },
   "tickers": [
-    { "symbol": "SPY", "type": "ETF", "theme": "US large-cap core", "expenseRatio": 0.0945 },
-    { "symbol": "QQQ", "type": "ETF", "theme": "Nasdaq growth and technology", "expenseRatio": 0.20 },
-    { "symbol": "VOO", "type": "ETF", "theme": "US large-cap core", "expenseRatio": 0.03 },
-    { "symbol": "VTI", "type": "ETF", "theme": "Total US market core", "expenseRatio": 0.03 },
-    { "symbol": "SGOV", "type": "ETF", "theme": "Treasury bill cash management", "expenseRatio": 0.09 },
-    { "symbol": "PDD", "type": "Stock", "theme": "E-commerce learning position" },
-    { "symbol": "AAPL", "type": "Stock", "theme": "Consumer technology and ecosystem" },
-    { "symbol": "MSFT", "type": "Stock", "theme": "Cloud, software, AI infrastructure" },
-    { "symbol": "NVDA", "type": "Stock", "theme": "AI accelerators and compute platform" },
-    { "symbol": "TSLA", "type": "Stock", "theme": "EV, autonomy, energy, high optionality" },
-    { "symbol": "GOOGL", "type": "Stock", "theme": "Search, ads, cloud, AI platform" },
-    { "symbol": "AMD", "type": "Stock", "theme": "AI accelerators and CPUs" },
-    { "symbol": "AVGO", "type": "Stock", "theme": "AI networking, custom silicon, infrastructure chips" },
-    { "symbol": "TSM", "type": "Stock", "theme": "Semiconductor foundry and AI supply chain" },
-    { "symbol": "ASML", "type": "Stock", "theme": "Semiconductor lithography equipment" },
-    { "symbol": "AMZN", "type": "Stock", "theme": "Cloud, e-commerce, AI infrastructure" },
-    { "symbol": "ORCL", "type": "Stock", "theme": "Cloud infrastructure and enterprise software" },
-    { "symbol": "PLTR", "type": "Stock", "theme": "AI software and data platforms" },
-    { "symbol": "NOW", "type": "Stock", "theme": "Enterprise workflow software with AI layer" },
-    { "symbol": "CRM", "type": "Stock", "theme": "Enterprise software and AI CRM" }
+    {
+      "symbol": "SPY",
+      "type": "ETF",
+      "theme": "US large-cap core",
+      "expenseRatio": 0.0945
+    },
+    {
+      "symbol": "QQQ",
+      "type": "ETF",
+      "theme": "Nasdaq growth and technology",
+      "expenseRatio": 0.2
+    },
+    {
+      "symbol": "VOO",
+      "type": "ETF",
+      "theme": "US large-cap core",
+      "expenseRatio": 0.03
+    },
+    {
+      "symbol": "VTI",
+      "type": "ETF",
+      "theme": "Total US market core",
+      "expenseRatio": 0.03
+    },
+    {
+      "symbol": "SGOV",
+      "type": "ETF",
+      "theme": "Treasury bill cash management",
+      "expenseRatio": 0.09
+    },
+    {
+      "symbol": "PDD",
+      "type": "Stock",
+      "theme": "E-commerce learning position"
+    },
+    {
+      "symbol": "AAPL",
+      "type": "Stock",
+      "theme": "Consumer technology and ecosystem"
+    },
+    {
+      "symbol": "MSFT",
+      "type": "Stock",
+      "theme": "Cloud, software, AI infrastructure"
+    },
+    {
+      "symbol": "NVDA",
+      "type": "Stock",
+      "theme": "AI accelerators and compute platform"
+    },
+    {
+      "symbol": "TSLA",
+      "type": "Stock",
+      "theme": "EV, autonomy, energy, high optionality"
+    },
+    {
+      "symbol": "GOOGL",
+      "type": "Stock",
+      "theme": "Search, ads, cloud, AI platform"
+    },
+    {
+      "symbol": "AMD",
+      "type": "Stock",
+      "theme": "AI accelerators and CPUs"
+    },
+    {
+      "symbol": "AVGO",
+      "type": "Stock",
+      "theme": "AI networking, custom silicon, infrastructure chips"
+    },
+    {
+      "symbol": "TSM",
+      "type": "Stock",
+      "theme": "Semiconductor foundry and AI supply chain"
+    },
+    {
+      "symbol": "ASML",
+      "type": "Stock",
+      "theme": "Semiconductor lithography equipment"
+    },
+    {
+      "symbol": "AMZN",
+      "type": "Stock",
+      "theme": "Cloud, e-commerce, AI infrastructure"
+    },
+    {
+      "symbol": "ORCL",
+      "type": "Stock",
+      "theme": "Cloud infrastructure and enterprise software"
+    },
+    {
+      "symbol": "PLTR",
+      "type": "Stock",
+      "theme": "AI software and data platforms"
+    },
+    {
+      "symbol": "NOW",
+      "type": "Stock",
+      "theme": "Enterprise workflow software with AI layer"
+    },
+    {
+      "symbol": "CRM",
+      "type": "Stock",
+      "theme": "Enterprise software and AI CRM"
+    }
   ],
   "dynamicCandidates": [
     "AMD",
-    "AVGO",
-    "TSM",
-    "ASML",
     "AMZN",
-    "ORCL",
-    "PLTR",
-    "NOW",
-    "CRM",
-    "SNOW",
-    "DDOG",
-    "VRT",
-    "ETN",
+    "ASML",
+    "AVGO",
+    "AXP",
+    "BAC",
+    "BN",
+    "BRK.B",
     "CEG",
+    "CRM",
     "CRWD",
+    "DDOG",
+    "ETN",
+    "EXE",
+    "GEV",
+    "GOOG",
+    "IGV",
+    "JPM",
+    "KO",
+    "META",
+    "MU",
+    "NOW",
+    "NTRA",
+    "ORCL",
     "PANW",
+    "PLTR",
+    "QSR",
     "SMH",
-    "XLK",
-    "IGV"
+    "SNOW",
+    "TRMD",
+    "TSM",
+    "UBER",
+    "VRT",
+    "XLK"
   ],
   "expertFootprints": [
     {
@@ -67,7 +167,15 @@
       "totalValue": "$259B",
       "lastUpdated": "2025-05-15 13F",
       "actions": [
-        { "symbol": "AAPL", "action": "持仓不变", "pctOfPortfolio": 25.65, "change": "unchanged", "changeDetail": "仍为最大持仓，占比 25.65%", "relevance": "高", "note": "AAPL 连续多季未动，巴菲特对苹果的信心未变。" }
+        {
+          "symbol": "AAPL",
+          "action": "持仓不变",
+          "pctOfPortfolio": 25.65,
+          "change": "unchanged",
+          "changeDetail": "仍为最大持仓，占比 25.65%",
+          "relevance": "高",
+          "note": "AAPL 连续多季未动，巴菲特对苹果的信心未变。"
+        }
       ],
       "keyInsight": "巴菲特本季度 AAPL 持仓未变，但继续减持银行股，退出 Citigroup 和 NU Holdings，整体是净卖出。"
     },
@@ -79,7 +187,15 @@
       "totalValue": "$15.5B",
       "lastUpdated": "2026-02-17 13F",
       "actions": [
-        { "symbol": "AMZN", "action": "重仓持有", "pctOfPortfolio": 14.28, "change": "unchanged", "changeDetail": "占仓位 14.28%，第三大持仓", "relevance": "高", "note": "Ackman 的 AMZN 是核心持仓，看好云和电商双引擎。" }
+        {
+          "symbol": "AMZN",
+          "action": "重仓持有",
+          "pctOfPortfolio": 14.28,
+          "change": "unchanged",
+          "changeDetail": "占仓位 14.28%，第三大持仓",
+          "relevance": "高",
+          "note": "Ackman 的 AMZN 是核心持仓，看好云和电商双引擎。"
+        }
       ],
       "keyInsight": "Ackman 大手笔新建 META 仓位（11.4%），同时清仓 CMG 和 HLT。组合越来越集中在科技平台。"
     },
@@ -91,8 +207,24 @@
       "totalValue": "$4.5B",
       "lastUpdated": "2026-02-17 13F",
       "actions": [
-        { "symbol": "AMZN", "action": "持有", "pctOfPortfolio": 3.79, "change": "unchanged", "changeDetail": "占仓位 3.79%", "relevance": "中", "note": "科技配置的一部分，但非核心。" },
-        { "symbol": "TSM", "action": "持有", "pctOfPortfolio": 3.67, "change": "unchanged", "changeDetail": "占仓位 3.67%", "relevance": "中", "note": "半导体供应链配置。" }
+        {
+          "symbol": "AMZN",
+          "action": "持有",
+          "pctOfPortfolio": 3.79,
+          "change": "unchanged",
+          "changeDetail": "占仓位 3.79%",
+          "relevance": "中",
+          "note": "科技配置的一部分，但非核心。"
+        },
+        {
+          "symbol": "TSM",
+          "action": "持有",
+          "pctOfPortfolio": 3.67,
+          "change": "unchanged",
+          "changeDetail": "占仓位 3.67%",
+          "relevance": "中",
+          "note": "半导体供应链配置。"
+        }
       ],
       "keyInsight": "Druckenmiller 大幅调仓 — 27 个新仓位、16 个清仓。明显从科技转向金融、等权和巴西。宏观拐点信号强烈。"
     },
@@ -104,9 +236,33 @@
       "totalValue": "~$7B (ARKK)",
       "lastUpdated": "2026-05 持续披露",
       "actions": [
-        { "symbol": "TSLA", "action": "最大持仓但持续减持", "pctOfPortfolio": 12.0, "change": "reduced", "changeDetail": "仍是 ARKK 最大持仓，占 12%，但在小幅减持", "relevance": "高", "note": "Wood 对 TSLA 长期叙事不变，但仓位管理在做。" },
-        { "symbol": "AMD", "action": "加仓", "pctOfPortfolio": 7.5, "change": "increased", "changeDetail": "加仓 AI 芯片，占 7.5%", "relevance": "高", "note": "ARK 对 AMD 的 AI 芯片前景看好，持续加仓。" },
-        { "symbol": "PLTR", "action": "持有/曾重仓", "pctOfPortfolio": 3.0, "change": "reduced", "changeDetail": "2025 年涨 135% 后有获利了结", "relevance": "中", "note": "AI 软件平台，ARK 2025 年的大赢家之一。" }
+        {
+          "symbol": "TSLA",
+          "action": "最大持仓但持续减持",
+          "pctOfPortfolio": 12.0,
+          "change": "reduced",
+          "changeDetail": "仍是 ARKK 最大持仓，占 12%，但在小幅减持",
+          "relevance": "高",
+          "note": "Wood 对 TSLA 长期叙事不变，但仓位管理在做。"
+        },
+        {
+          "symbol": "AMD",
+          "action": "加仓",
+          "pctOfPortfolio": 7.5,
+          "change": "increased",
+          "changeDetail": "加仓 AI 芯片，占 7.5%",
+          "relevance": "高",
+          "note": "ARK 对 AMD 的 AI 芯片前景看好，持续加仓。"
+        },
+        {
+          "symbol": "PLTR",
+          "action": "持有/曾重仓",
+          "pctOfPortfolio": 3.0,
+          "change": "reduced",
+          "changeDetail": "2025 年涨 135% 后有获利了结",
+          "relevance": "中",
+          "note": "AI 软件平台，ARK 2025 年的大赢家之一。"
+        }
       ],
       "keyInsight": "ARK 继续 all-in 破坏性创新：TSLA 仍是最大但在减，AMD 加仓押注 AI 芯片。加密和基因编辑占比上升。"
     },
@@ -118,12 +274,60 @@
       "totalValue": "$40B",
       "lastUpdated": "2026-02-17 13F",
       "actions": [
-        { "symbol": "GOOGL", "action": "最大持仓/小幅减持", "pctOfPortfolio": 8.0, "change": "reduced", "changeDetail": "小幅减持但仍是最大持仓，占 8%", "relevance": "高", "note": "Coatue 对 GOOGL 信心仍在但开始获利。" },
-        { "symbol": "TSM", "action": "重仓持有", "pctOfPortfolio": 7.5, "change": "unchanged", "changeDetail": "第二大持仓，占 7.5%", "relevance": "高", "note": "半导体核心配置。" },
-        { "symbol": "MSFT", "action": "重仓持有", "pctOfPortfolio": 7.0, "change": "unchanged", "changeDetail": "占 7%，云和 AI 基础设施", "relevance": "高", "note": "Azure + AI 双引擎。" },
-        { "symbol": "AMZN", "action": "持有", "pctOfPortfolio": 5.5, "change": "unchanged", "changeDetail": "占 5.5%", "relevance": "高", "note": "AWS 持续增长。" },
-        { "symbol": "NVDA", "action": "小幅减持", "pctOfPortfolio": 5.0, "change": "reduced", "changeDetail": "减持但仍持有 5%", "relevance": "高", "note": "AI 芯片获利了结但不离场。" },
-        { "symbol": "ORCL", "action": "小幅减持", "pctOfPortfolio": 2.8, "change": "reduced", "changeDetail": "占 2.8%", "relevance": "中", "note": "云基础设施持仓。" }
+        {
+          "symbol": "GOOGL",
+          "action": "最大持仓/小幅减持",
+          "pctOfPortfolio": 8.0,
+          "change": "reduced",
+          "changeDetail": "小幅减持但仍是最大持仓，占 8%",
+          "relevance": "高",
+          "note": "Coatue 对 GOOGL 信心仍在但开始获利。"
+        },
+        {
+          "symbol": "TSM",
+          "action": "重仓持有",
+          "pctOfPortfolio": 7.5,
+          "change": "unchanged",
+          "changeDetail": "第二大持仓，占 7.5%",
+          "relevance": "高",
+          "note": "半导体核心配置。"
+        },
+        {
+          "symbol": "MSFT",
+          "action": "重仓持有",
+          "pctOfPortfolio": 7.0,
+          "change": "unchanged",
+          "changeDetail": "占 7%，云和 AI 基础设施",
+          "relevance": "高",
+          "note": "Azure + AI 双引擎。"
+        },
+        {
+          "symbol": "AMZN",
+          "action": "持有",
+          "pctOfPortfolio": 5.5,
+          "change": "unchanged",
+          "changeDetail": "占 5.5%",
+          "relevance": "高",
+          "note": "AWS 持续增长。"
+        },
+        {
+          "symbol": "NVDA",
+          "action": "小幅减持",
+          "pctOfPortfolio": 5.0,
+          "change": "reduced",
+          "changeDetail": "减持但仍持有 5%",
+          "relevance": "高",
+          "note": "AI 芯片获利了结但不离场。"
+        },
+        {
+          "symbol": "ORCL",
+          "action": "小幅减持",
+          "pctOfPortfolio": 2.8,
+          "change": "reduced",
+          "changeDetail": "占 2.8%",
+          "relevance": "中",
+          "note": "云基础设施持仓。"
+        }
       ],
       "keyInsight": "Coatue 科技重仓不变但在做 rotation — 减持 GOOGL/META/NVDA，加仓半导体设备 AMAT 和内容平台 SPOT/NFLX。"
     },
@@ -135,14 +339,78 @@
       "totalValue": "$27.4B",
       "lastUpdated": "2026-02-17 13F",
       "actions": [
-        { "symbol": "SPY", "action": "大幅加仓", "pctOfPortfolio": 10.0, "change": "increased", "changeDetail": "本季度 top buy，占 10%", "relevance": "高", "note": "全天候策略的核心大盘配置。" },
-        { "symbol": "NVDA", "action": "大幅加仓", "pctOfPortfolio": 5.5, "change": "increased", "changeDetail": "加仓 NVDA，占 5.5%", "relevance": "高", "note": "Bridgewater 开始押注 AI 基础设施。" },
-        { "symbol": "CRM", "action": "减持", "pctOfPortfolio": 4.0, "change": "reduced", "changeDetail": "减持，占 4%", "relevance": "中", "note": "企业软件持仓下调。" },
-        { "symbol": "GOOGL", "action": "减持", "pctOfPortfolio": 3.8, "change": "reduced", "changeDetail": "减持，占 3.8%", "relevance": "中", "note": "获利了结。" },
-        { "symbol": "MSFT", "action": "减持", "pctOfPortfolio": 3.5, "change": "reduced", "changeDetail": "减持，占 3.5%", "relevance": "中", "note": "调整配置比例。" },
-        { "symbol": "AMZN", "action": "加仓", "pctOfPortfolio": 3.2, "change": "increased", "changeDetail": "加仓，占 3.2%", "relevance": "中", "note": "AWS 增长预期。" },
-        { "symbol": "AVGO", "action": "加仓", "pctOfPortfolio": 3.0, "change": "increased", "changeDetail": "加仓 AI 网络芯片，占 3%", "relevance": "中", "note": "AI 基础设施配置。" },
-        { "symbol": "ORCL", "action": "加仓", "pctOfPortfolio": 2.8, "change": "increased", "changeDetail": "加仓，占 2.8%", "relevance": "中", "note": "云基础设施。" }
+        {
+          "symbol": "SPY",
+          "action": "大幅加仓",
+          "pctOfPortfolio": 10.0,
+          "change": "increased",
+          "changeDetail": "本季度 top buy，占 10%",
+          "relevance": "高",
+          "note": "全天候策略的核心大盘配置。"
+        },
+        {
+          "symbol": "NVDA",
+          "action": "大幅加仓",
+          "pctOfPortfolio": 5.5,
+          "change": "increased",
+          "changeDetail": "加仓 NVDA，占 5.5%",
+          "relevance": "高",
+          "note": "Bridgewater 开始押注 AI 基础设施。"
+        },
+        {
+          "symbol": "CRM",
+          "action": "减持",
+          "pctOfPortfolio": 4.0,
+          "change": "reduced",
+          "changeDetail": "减持，占 4%",
+          "relevance": "中",
+          "note": "企业软件持仓下调。"
+        },
+        {
+          "symbol": "GOOGL",
+          "action": "减持",
+          "pctOfPortfolio": 3.8,
+          "change": "reduced",
+          "changeDetail": "减持，占 3.8%",
+          "relevance": "中",
+          "note": "获利了结。"
+        },
+        {
+          "symbol": "MSFT",
+          "action": "减持",
+          "pctOfPortfolio": 3.5,
+          "change": "reduced",
+          "changeDetail": "减持，占 3.5%",
+          "relevance": "中",
+          "note": "调整配置比例。"
+        },
+        {
+          "symbol": "AMZN",
+          "action": "加仓",
+          "pctOfPortfolio": 3.2,
+          "change": "increased",
+          "changeDetail": "加仓，占 3.2%",
+          "relevance": "中",
+          "note": "AWS 增长预期。"
+        },
+        {
+          "symbol": "AVGO",
+          "action": "加仓",
+          "pctOfPortfolio": 3.0,
+          "change": "increased",
+          "changeDetail": "加仓 AI 网络芯片，占 3%",
+          "relevance": "中",
+          "note": "AI 基础设施配置。"
+        },
+        {
+          "symbol": "ORCL",
+          "action": "加仓",
+          "pctOfPortfolio": 2.8,
+          "change": "increased",
+          "changeDetail": "加仓，占 2.8%",
+          "relevance": "中",
+          "note": "云基础设施。"
+        }
       ],
       "keyInsight": "Bridgewater 大幅加仓 SPY 和 NVDA，同时减持 CRM/GOOGL/MSFT。全天候策略开始向 AI 基础设施倾斜。"
     },
@@ -154,68 +422,230 @@
       "totalValue": "$6.95B",
       "lastUpdated": "2026-02-17 13F",
       "actions": [
-        { "symbol": "GOOGL", "action": "加仓", "pctOfPortfolio": 9.0, "change": "increased", "changeDetail": "加仓，占 9%", "relevance": "高", "note": "Tepper 看好 GOOGL 估值。" },
-        { "symbol": "AMZN", "action": "小幅减持", "pctOfPortfolio": 8.5, "change": "reduced", "changeDetail": "小幅减持，占 8.5%", "relevance": "高", "note": "仍是核心持仓。" },
-        { "symbol": "TSM", "action": "加仓", "pctOfPortfolio": 5.0, "change": "increased", "changeDetail": "加仓半导体，占 5%", "relevance": "高", "note": "押注半导体周期。" },
-        { "symbol": "NVDA", "action": "减持", "pctOfPortfolio": 4.5, "change": "reduced", "changeDetail": "减持，占 4.5%", "relevance": "中", "note": "获利了结但未清仓。" }
+        {
+          "symbol": "GOOGL",
+          "action": "加仓",
+          "pctOfPortfolio": 9.0,
+          "change": "increased",
+          "changeDetail": "加仓，占 9%",
+          "relevance": "高",
+          "note": "Tepper 看好 GOOGL 估值。"
+        },
+        {
+          "symbol": "AMZN",
+          "action": "小幅减持",
+          "pctOfPortfolio": 8.5,
+          "change": "reduced",
+          "changeDetail": "小幅减持，占 8.5%",
+          "relevance": "高",
+          "note": "仍是核心持仓。"
+        },
+        {
+          "symbol": "TSM",
+          "action": "加仓",
+          "pctOfPortfolio": 5.0,
+          "change": "increased",
+          "changeDetail": "加仓半导体，占 5%",
+          "relevance": "高",
+          "note": "押注半导体周期。"
+        },
+        {
+          "symbol": "NVDA",
+          "action": "减持",
+          "pctOfPortfolio": 4.5,
+          "change": "reduced",
+          "changeDetail": "减持，占 4.5%",
+          "relevance": "中",
+          "note": "获利了结但未清仓。"
+        }
       ],
       "keyInsight": "Tepper 减持中国科技（BABA -20%），加仓美国大科技 GOOGL/META 和半导体 TSM/MU。从中国到美国的 rotation 明显。"
     }
   ],
   "managerFootprints": {
     "AAPL": [
-      { "manager": "Berkshire Hathaway", "style": "Quality value", "signal": "Core holding", "note": "Q1 2025: 持仓不变，占仓 25.65%，$259B 组合的最大持仓。" }
+      {
+        "manager": "Berkshire Hathaway",
+        "style": "Quality value",
+        "signal": "Core holding",
+        "note": "Q1 2025: 持仓不变，占仓 25.65%，$259B 组合的最大持仓。"
+      }
     ],
     "GOOGL": [
-      { "manager": "Coatue Management", "style": "Tech growth", "signal": "Top holding", "note": "Q4 2025: 最大持仓占 8%，小幅减持。" },
-      { "manager": "Appaloosa / Tepper", "style": "Contrarian", "signal": "Increasing", "note": "Q4 2025: 加仓，占 9%。" },
-      { "manager": "Bridgewater", "style": "All-weather", "signal": "Reducing", "note": "Q4 2025: 减持，占 3.8%。" }
+      {
+        "manager": "Coatue Management",
+        "style": "Tech growth",
+        "signal": "Top holding",
+        "note": "Q4 2025: 最大持仓占 8%，小幅减持。"
+      },
+      {
+        "manager": "Appaloosa / Tepper",
+        "style": "Contrarian",
+        "signal": "Increasing",
+        "note": "Q4 2025: 加仓，占 9%。"
+      },
+      {
+        "manager": "Bridgewater",
+        "style": "All-weather",
+        "signal": "Reducing",
+        "note": "Q4 2025: 减持，占 3.8%。"
+      }
     ],
     "MSFT": [
-      { "manager": "Coatue Management", "style": "Tech growth", "signal": "Core holding", "note": "Q4 2025: 占 7%，云和 AI 基础设施。" },
-      { "manager": "Bridgewater", "style": "All-weather", "signal": "Reducing", "note": "Q4 2025: 减持，占 3.5%。" }
+      {
+        "manager": "Coatue Management",
+        "style": "Tech growth",
+        "signal": "Core holding",
+        "note": "Q4 2025: 占 7%，云和 AI 基础设施。"
+      },
+      {
+        "manager": "Bridgewater",
+        "style": "All-weather",
+        "signal": "Reducing",
+        "note": "Q4 2025: 减持，占 3.5%。"
+      }
     ],
     "NVDA": [
-      { "manager": "Bridgewater", "style": "All-weather", "signal": "Increasing", "note": "Q4 2025: 大幅加仓，占 5.5%。" },
-      { "manager": "Coatue Management", "style": "Tech growth", "signal": "Reducing", "note": "Q4 2025: 小幅减持，占 5%。" },
-      { "manager": "Appaloosa / Tepper", "style": "Contrarian", "signal": "Reducing", "note": "Q4 2025: 减持，占 4.5%。" }
+      {
+        "manager": "Bridgewater",
+        "style": "All-weather",
+        "signal": "Increasing",
+        "note": "Q4 2025: 大幅加仓，占 5.5%。"
+      },
+      {
+        "manager": "Coatue Management",
+        "style": "Tech growth",
+        "signal": "Reducing",
+        "note": "Q4 2025: 小幅减持，占 5%。"
+      },
+      {
+        "manager": "Appaloosa / Tepper",
+        "style": "Contrarian",
+        "signal": "Reducing",
+        "note": "Q4 2025: 减持，占 4.5%。"
+      }
     ],
     "TSLA": [
-      { "manager": "ARK Invest", "style": "Disruptive innovation", "signal": "Top holding", "note": "ARKK 最大持仓占 12%，但持续小幅减持。" }
+      {
+        "manager": "ARK Invest",
+        "style": "Disruptive innovation",
+        "signal": "Top holding",
+        "note": "ARKK 最大持仓占 12%，但持续小幅减持。"
+      }
     ],
     "AMD": [
-      { "manager": "ARK Invest", "style": "Disruptive innovation", "signal": "Increasing", "note": "ARKK 加仓 AI 芯片，占 7.5%。" }
+      {
+        "manager": "ARK Invest",
+        "style": "Disruptive innovation",
+        "signal": "Increasing",
+        "note": "ARKK 加仓 AI 芯片，占 7.5%。"
+      }
     ],
     "AMZN": [
-      { "manager": "Pershing Square / Ackman", "style": "Concentrated quality", "signal": "Core holding", "note": "Q4 2025: 占 14.28%，第三大持仓。" },
-      { "manager": "Coatue Management", "style": "Tech growth", "signal": "Core holding", "note": "Q4 2025: 占 5.5%。" },
-      { "manager": "Druckenmiller / Duquesne", "style": "Macro", "signal": "Holding", "note": "Q4 2025: 占 3.79%。" },
-      { "manager": "Appaloosa / Tepper", "style": "Contrarian", "signal": "Reducing", "note": "Q4 2025: 小幅减持，占 8.5%。" },
-      { "manager": "Bridgewater", "style": "All-weather", "signal": "Increasing", "note": "Q4 2025: 加仓，占 3.2%。" }
+      {
+        "manager": "Pershing Square / Ackman",
+        "style": "Concentrated quality",
+        "signal": "Core holding",
+        "note": "Q4 2025: 占 14.28%，第三大持仓。"
+      },
+      {
+        "manager": "Coatue Management",
+        "style": "Tech growth",
+        "signal": "Core holding",
+        "note": "Q4 2025: 占 5.5%。"
+      },
+      {
+        "manager": "Druckenmiller / Duquesne",
+        "style": "Macro",
+        "signal": "Holding",
+        "note": "Q4 2025: 占 3.79%。"
+      },
+      {
+        "manager": "Appaloosa / Tepper",
+        "style": "Contrarian",
+        "signal": "Reducing",
+        "note": "Q4 2025: 小幅减持，占 8.5%。"
+      },
+      {
+        "manager": "Bridgewater",
+        "style": "All-weather",
+        "signal": "Increasing",
+        "note": "Q4 2025: 加仓，占 3.2%。"
+      }
     ],
     "TSM": [
-      { "manager": "Coatue Management", "style": "Tech growth", "signal": "Core holding", "note": "Q4 2025: 第二大持仓，占 7.5%。" },
-      { "manager": "Druckenmiller / Duquesne", "style": "Macro", "signal": "Holding", "note": "Q4 2025: 占 3.67%。" },
-      { "manager": "Appaloosa / Tepper", "style": "Contrarian", "signal": "Increasing", "note": "Q4 2025: 加仓，占 5%。" }
+      {
+        "manager": "Coatue Management",
+        "style": "Tech growth",
+        "signal": "Core holding",
+        "note": "Q4 2025: 第二大持仓，占 7.5%。"
+      },
+      {
+        "manager": "Druckenmiller / Duquesne",
+        "style": "Macro",
+        "signal": "Holding",
+        "note": "Q4 2025: 占 3.67%。"
+      },
+      {
+        "manager": "Appaloosa / Tepper",
+        "style": "Contrarian",
+        "signal": "Increasing",
+        "note": "Q4 2025: 加仓，占 5%。"
+      }
     ],
     "AVGO": [
-      { "manager": "Bridgewater", "style": "All-weather", "signal": "Increasing", "note": "Q4 2025: 加仓 AI 网络芯片，占 3%。" }
+      {
+        "manager": "Bridgewater",
+        "style": "All-weather",
+        "signal": "Increasing",
+        "note": "Q4 2025: 加仓 AI 网络芯片，占 3%。"
+      }
     ],
     "ORCL": [
-      { "manager": "Coatue Management", "style": "Tech growth", "signal": "Reducing", "note": "Q4 2025: 小幅减持，占 2.8%。" },
-      { "manager": "Bridgewater", "style": "All-weather", "signal": "Increasing", "note": "Q4 2025: 加仓，占 2.8%。" }
+      {
+        "manager": "Coatue Management",
+        "style": "Tech growth",
+        "signal": "Reducing",
+        "note": "Q4 2025: 小幅减持，占 2.8%。"
+      },
+      {
+        "manager": "Bridgewater",
+        "style": "All-weather",
+        "signal": "Increasing",
+        "note": "Q4 2025: 加仓，占 2.8%。"
+      }
     ],
     "CRM": [
-      { "manager": "Bridgewater", "style": "All-weather", "signal": "Reducing", "note": "Q4 2025: 减持，占 4%。" }
+      {
+        "manager": "Bridgewater",
+        "style": "All-weather",
+        "signal": "Reducing",
+        "note": "Q4 2025: 减持，占 4%。"
+      }
     ],
     "PLTR": [
-      { "manager": "ARK Invest", "style": "Disruptive innovation", "signal": "Reducing", "note": "2025 年涨 135% 后获利了结，占约 3%。" }
+      {
+        "manager": "ARK Invest",
+        "style": "Disruptive innovation",
+        "signal": "Reducing",
+        "note": "2025 年涨 135% 后获利了结，占约 3%。"
+      }
     ],
     "SPY": [
-      { "manager": "Bridgewater", "style": "All-weather", "signal": "Top buy", "note": "Q4 2025: 本季 top buy，大幅加仓，占 10%。" }
+      {
+        "manager": "Bridgewater",
+        "style": "All-weather",
+        "signal": "Top buy",
+        "note": "Q4 2025: 本季 top buy，大幅加仓，占 10%。"
+      }
     ],
     "PDD": [
-      { "manager": "无主要专家持仓", "style": "N/A", "signal": "No signal", "note": "当前专家足迹库中无直接持仓记录。" }
+      {
+        "manager": "无主要专家持仓",
+        "style": "N/A",
+        "signal": "No signal",
+        "note": "当前专家足迹库中无直接持仓记录。"
+      }
     ]
   }
 }
