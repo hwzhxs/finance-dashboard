@@ -2405,6 +2405,91 @@
       },
       "investmentOutlook": null,
       "dataReliability": "数据来源：SEC 13F filing + 搜索引擎聚合，个别精确数字建议以原始 filing 为准"
+    },
+    {
+      "name": "H&H International Investment / 段永平",
+      "style": "极度集中、买懂的公司长期持有、价值投资、中国投资界 OG",
+      "quarter": "Q4 2025",
+      "filingDate": "2026-02-14",
+      "totalValue": "$17.49B",
+      "topHoldings": [
+        {
+          "symbol": "AAPL",
+          "name": "Apple Inc.",
+          "pctOfPortfolio": 50.3,
+          "change": "reduced",
+          "changeDetail": "减持但仍是第一大重仓"
+        },
+        {
+          "symbol": "BRK.B",
+          "name": "Berkshire Hathaway B",
+          "pctOfPortfolio": 20.63,
+          "change": "increased",
+          "changeDetail": "增持"
+        },
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA Corp.",
+          "pctOfPortfolio": 7.72,
+          "change": "increased",
+          "changeDetail": "大幅增持 +1110%（663.93万股），AI 重仓信号"
+        },
+        {
+          "symbol": "PDD",
+          "name": "PDD Holdings",
+          "pctOfPortfolio": 5.5,
+          "change": "increased",
+          "changeDetail": "增持"
+        },
+        {
+          "symbol": "GOOG",
+          "name": "Alphabet Inc.",
+          "pctOfPortfolio": 5.3,
+          "change": "unchanged",
+          "changeDetail": "维持"
+        },
+        {
+          "symbol": "TSM",
+          "name": "Taiwan Semiconductor",
+          "pctOfPortfolio": 2.5,
+          "change": "increased",
+          "changeDetail": "增持"
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft Corp.",
+          "pctOfPortfolio": 2.0,
+          "change": "increased",
+          "changeDetail": "增持"
+        },
+        {
+          "symbol": "CRWV",
+          "name": "CrowdStrike (via CoreWeave)",
+          "pctOfPortfolio": 1.5,
+          "change": "new",
+          "changeDetail": "新建仓"
+        },
+        {
+          "symbol": "CRDO",
+          "name": "Credo Technology",
+          "pctOfPortfolio": 1.0,
+          "change": "new",
+          "changeDetail": "新建仓"
+        },
+        {
+          "symbol": "TEM",
+          "name": "Tempus AI",
+          "pctOfPortfolio": 0.8,
+          "change": "new",
+          "changeDetail": "新建仓"
+        }
+      ],
+      "keyMoves": [
+        "NVDA +1110% — 'AI 这个东西我觉得至少掺和一下，不要错过了'",
+        "新建仓 CRWV/CRDO/TEM — AI 基础设施布局",
+        "减持 AAPL/ASML/BABA/OXY/DIS"
+      ],
+      "commentary": "极度集中持仓（14 只股票），Top 5 占 89.5%。从试探 AI 到重仓，认知快速进化。待跟踪 Q1 2026 13F。"
     }
   ]
 }
