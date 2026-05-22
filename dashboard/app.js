@@ -135,9 +135,11 @@ function sortedSecurities() {
   }).slice(0, 20);
 }
 
+const dynamicStocks = {}; // symbol -> { symbol, name, price, change, type }
+
 function renderStockList() {
   const container = document.getElementById("stockList");
-  container.innerHTML = sortedSecurities().map((item, index) => {
+  const watchlistHtml = sortedSecurities().map((item, index) => {
     const score = item.scores.perspectives[activePerspective];
     const day = item.quote.regularMarketChangePercent;
     return `
@@ -152,14 +154,95 @@ function renderStockList() {
       </button>
     `;
   }).join("");
+
+  const dynamicHtml = Object.values(dynamicStocks).map(ds => {
+    return `
+      <button class="stock-row ${ds.symbol === activeSymbol ? "selected" : ""}" data-symbol="${ds.symbol}" type="button">
+        <span class="rank">+</span>
+        <span>
+          <span class="ticker">${ds.symbol}</span>
+          <span class="subline">${ds.type || "股票"} · ${fmtPrice(ds.price)} · <span class="${pctClass(ds.change)}">${fmtPctText(ds.change, 2)}</span></span>
+          <span class="subline">${ds.name || ''}</span>
+        </span>
+        <span class="remove-dynamic" data-remove="${ds.symbol}" title="移除">✕</span>
+      </button>
+    `;
+  }).join("");
+
+  container.innerHTML = watchlistHtml + dynamicHtml;
   container.querySelectorAll(".stock-row").forEach((row) => {
-    row.addEventListener("click", () => {
+    row.addEventListener("click", (e) => {
+      if (e.target.closest('.remove-dynamic')) return;
       activeSymbol = row.dataset.symbol;
       renderStockList();
       renderStockDetail(activeSymbol);
     });
   });
+  container.querySelectorAll(".remove-dynamic").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const sym = btn.dataset.remove;
+      delete dynamicStocks[sym];
+      delete latest.securities[sym];
+      if (activeSymbol === sym) activeSymbol = Object.keys(latest.securities)[0];
+      renderStockList();
+      renderStockDetail(activeSymbol);
+    });
+  });
 }
+
+async function addDynamicStock(symbol) {
+  symbol = symbol.toUpperCase().trim();
+  if (!symbol || latest.securities[symbol] || dynamicStocks[symbol]) return;
+  const btn = document.getElementById('addStockBtn');
+  const input = document.getElementById('addStockInput');
+  btn.disabled = true;
+  btn.textContent = '...';
+  try {
+    const res = await fetch(`https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?interval=1d&range=5d`);
+    if (!res.ok) throw new Error('not found');
+    const data = await res.json();
+    const meta = data.chart.result[0].meta;
+    const price = meta.regularMarketPrice;
+    const prevClose = meta.chartPreviousClose || meta.previousClose;
+    const changePct = prevClose ? ((price - prevClose) / prevClose) * 100 : 0;
+    const isETF = (meta.instrumentType === 'ETF' || meta.quoteType === 'ETF');
+    dynamicStocks[symbol] = { symbol, name: meta.shortName || meta.longName || symbol, price, change: changePct, type: isETF ? 'ETF' : '股票' };
+    // Also inject into latest.securities so detail panel can show something
+    latest.securities[symbol] = {
+      symbol,
+      type: isETF ? 'ETF' : 'Stock',
+      theme: dynamicStocks[symbol].name,
+      quote: {
+        regularMarketPrice: price,
+        regularMarketChangePercent: changePct,
+        longName: meta.longName || '',
+        shortName: meta.shortName || '',
+      },
+      scores: { perspectives: {}, action: { label: '动态添加' } },
+      _dynamic: true
+    };
+    activeSymbol = symbol;
+    renderStockList();
+    renderStockDetail(symbol);
+    input.value = '';
+  } catch (err) {
+    alert(`找不到 ${symbol}，请检查代码是否正确`);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '+';
+  }
+}
+
+// Wire up add stock UI
+document.addEventListener('DOMContentLoaded', () => {
+  const input = document.getElementById('addStockInput');
+  const btn = document.getElementById('addStockBtn');
+  if (input && btn) {
+    btn.addEventListener('click', () => addDynamicStock(input.value));
+    input.addEventListener('keydown', (e) => { if (e.key === 'Enter') addDynamicStock(input.value); });
+  }
+});
 
 function renderStockDetail(symbol) {
   const item = latest.securities[symbol];
