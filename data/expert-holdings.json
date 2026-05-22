@@ -2408,7 +2408,7 @@
     },
     {
       "name": "H&H International Investment / 段永平",
-      "style": "极度集中、买懂的公司长期持有、价值投资、中国投资界 OG",
+      "style": "极度集中、买懂的公司长期持有、价值投资、能力圈内下重注",
       "quarter": "Q4 2025",
       "filingDate": "2026-02-14",
       "totalValue": "$17.49B",
@@ -2418,78 +2418,127 @@
           "name": "Apple Inc.",
           "pctOfPortfolio": 50.3,
           "change": "reduced",
-          "changeDetail": "减持但仍是第一大重仓"
+          "changeDetail": "减持但仍是绝对第一大重仓，占半壁江山"
         },
         {
           "symbol": "BRK.B",
           "name": "Berkshire Hathaway B",
           "pctOfPortfolio": 20.63,
           "change": "increased",
-          "changeDetail": "增持"
+          "changeDetail": "增持伯克希尔，师承巴菲特"
         },
         {
           "symbol": "NVDA",
           "name": "NVIDIA Corp.",
           "pctOfPortfolio": 7.72,
           "change": "increased",
-          "changeDetail": "大幅增持 +1110%（663.93万股），AI 重仓信号"
+          "changeDetail": "从约54万股暴增至663.93万股，+1110%，AI 重仓信号"
         },
         {
           "symbol": "PDD",
           "name": "PDD Holdings",
           "pctOfPortfolio": 5.5,
           "change": "increased",
-          "changeDetail": "增持"
+          "changeDetail": "增持拼多多，长期看好"
         },
         {
           "symbol": "GOOG",
           "name": "Alphabet Inc.",
           "pctOfPortfolio": 5.3,
           "change": "unchanged",
-          "changeDetail": "维持"
+          "changeDetail": "维持不变"
         },
         {
           "symbol": "TSM",
           "name": "Taiwan Semiconductor",
           "pctOfPortfolio": 2.5,
           "change": "increased",
-          "changeDetail": "增持"
+          "changeDetail": "增持台积电"
         },
         {
           "symbol": "MSFT",
           "name": "Microsoft Corp.",
           "pctOfPortfolio": 2.0,
           "change": "increased",
-          "changeDetail": "增持"
+          "changeDetail": "增持微软"
+        },
+        {
+          "symbol": "ASML",
+          "name": "ASML Holding",
+          "pctOfPortfolio": 1.5,
+          "change": "reduced",
+          "changeDetail": "减持ASML"
+        },
+        {
+          "symbol": "BABA",
+          "name": "Alibaba Group",
+          "pctOfPortfolio": 1.0,
+          "change": "reduced",
+          "changeDetail": "减持阿里"
         },
         {
           "symbol": "CRWV",
-          "name": "CrowdStrike (via CoreWeave)",
-          "pctOfPortfolio": 1.5,
+          "name": "CoreWeave",
+          "pctOfPortfolio": 0.8,
           "change": "new",
-          "changeDetail": "新建仓"
+          "changeDetail": "新建仓，AI基础设施"
+        }
+      ],
+      "keyInsight": "14只股票、Top 5占89.5%，极度集中。NVDA +1110%是本季最大动作，从试探AI到重仓，认知快速进化。",
+      "notableMoves": [
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA",
+          "change": "increased",
+          "changeDetail": "+1110%，从约54万股增至663.93万股，'AI这个东西我觉得至少掺和一下，不要错过了'"
+        },
+        {
+          "symbol": "CRWV",
+          "name": "CoreWeave",
+          "change": "new",
+          "changeDetail": "新建仓，AI算力基础设施"
         },
         {
           "symbol": "CRDO",
           "name": "Credo Technology",
-          "pctOfPortfolio": 1.0,
           "change": "new",
-          "changeDetail": "新建仓"
+          "changeDetail": "新建仓，AI连接芯片"
         },
         {
           "symbol": "TEM",
           "name": "Tempus AI",
-          "pctOfPortfolio": 0.8,
           "change": "new",
-          "changeDetail": "新建仓"
+          "changeDetail": "新建仓，AI医疗"
+        },
+        {
+          "symbol": "AAPL",
+          "name": "Apple",
+          "change": "reduced",
+          "changeDetail": "减持但仍占50%"
+        },
+        {
+          "symbol": "OXY",
+          "name": "Occidental Petroleum",
+          "change": "reduced",
+          "changeDetail": "减持"
+        },
+        {
+          "symbol": "DIS",
+          "name": "Walt Disney",
+          "change": "reduced",
+          "changeDetail": "减持"
         }
       ],
-      "keyMoves": [
-        "NVDA +1110% — 'AI 这个东西我觉得至少掺和一下，不要错过了'",
-        "新建仓 CRWV/CRDO/TEM — AI 基础设施布局",
-        "减持 AAPL/ASML/BABA/OXY/DIS"
-      ],
-      "commentary": "极度集中持仓（14 只股票），Top 5 占 89.5%。从试探 AI 到重仓，认知快速进化。待跟踪 Q1 2026 13F。"
+      "analystNote": "段永平是中国投资界OG，步步高/OPPO/vivo创始人。投资风格极度集中，只买看得懂的公司。本季NVDA +1110%是最大信号——从'至少掺和一下'到重仓，AI认知快速进化。新建仓CRWV/CRDO/TEM进一步确认AI布局意图。",
+      "portfolioStats": {
+        "totalPositions": 14,
+        "increased": 5,
+        "reduced": 5,
+        "unchanged": 1,
+        "new": 3
+      },
+      "investmentOutlook": "待跟踪 Q1 2026 13F（2026年5月中截止）",
+      "dataReliability": "数据来源：SEC 13F filing (Q4 2025)，个别百分比为估算"
     }
   ]
 }
