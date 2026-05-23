@@ -37,6 +37,8 @@ def run_update() -> None:
     subprocess.run(["python3", str(ROOT / "scripts" / "update_data.py")], check=True)
     subprocess.run(["python3", str(ROOT / "scripts" / "update_research.py")], check=True)
     subprocess.run(["python3", str(ROOT / "scripts" / "update_sec_filings.py")], check=True)
+    # Validate + auto-repair after each update
+    subprocess.run(["python3", str(ROOT / "scripts" / "validate_data.py"), "--repair"], check=False)
 
 
 def run_earnings_calendar() -> None:
