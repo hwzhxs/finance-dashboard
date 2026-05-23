@@ -570,14 +570,62 @@ function renderPriceReasonableness(item, researchItem) {
 }
 
 
+const perspectiveFocus = {
+  composite: {
+    label: '综合视角',
+    desc: '平衡考量估值、质量、风险、动量、AI 暴露和个人适配度。',
+    keys: ['value', 'quality', 'risk', 'momentum', 'aiExposure', 'personalFit'],
+    keyLabels: { value: '估值', quality: '质量', risk: '风险', momentum: '动量', aiExposure: 'AI暴露', personalFit: '个人适配' },
+  },
+  buffett_munger: {
+    label: '巴菲特/芒格',
+    desc: '重视看得懂的生意、护城河、现金流质量、长期确定性和安全边际。不碰看不懂的。',
+    keys: ['moat', 'quality', 'value', 'risk'],
+    keyLabels: { moat: '护城河', quality: '质量', value: '估值/安全边际', risk: '风险' },
+  },
+  bogle: {
+    label: '博格',
+    desc: '低成本、宽基分散、少决策、少交易。偏好 ETF，怀疑个股选择能力。',
+    keys: ['expense', 'diversification', 'cost'],
+    keyLabels: { expense: '费率', diversification: '分散度', cost: '成本' },
+  },
+  peter_lynch: {
+    label: '彼得·林奇',
+    desc: '看得懂的成长故事、真实业务变化、增长与估值是否匹配（PEG）。',
+    keys: ['quality', 'value', 'momentum', 'personalFit'],
+    keyLabels: { quality: '业务质量', value: 'PEG/估值', momentum: '增长势头', personalFit: '理解度' },
+  },
+  howard_marks: {
+    label: '霍华德·马克斯',
+    desc: '重视周期位置、下行风险控制、市场情绪，避免乐观预期过度透支。',
+    keys: ['risk', 'value', 'momentum'],
+    keyLabels: { risk: '下行风险', value: '估值纪律', momentum: '市场情绪' },
+  },
+  tech_growth_risk: {
+    label: '科技成长',
+    desc: '关注 AI/云/芯片/软件平台机会，同时用估值和风险约束仓位。',
+    keys: ['aiExposure', 'quality', 'value', 'risk', 'momentum'],
+    keyLabels: { aiExposure: 'AI/科技暴露', quality: '平台质量', value: '估值', risk: '风险', momentum: '动量' },
+  },
+};
+
 function renderPerspectiveDetail(item, researchItem) {
-  const components = item.scores.components;
+  const components = item.scores.components || {};
   const notes = item.scores.explanation || [];
   const positives = researchItem.judgment?.positives || [];
   const concerns = researchItem.judgment?.concerns || [];
+  const pf = perspectiveFocus[activePerspective] || perspectiveFocus.composite;
+  const score = item.scores.perspectives[activePerspective];
+
+  const keyScores = pf.keys
+    .filter(k => components[k] != null)
+    .map(k => `${pf.keyLabels[k] || k} ${fmtNum(components[k])}`)
+    .join('，');
+
   document.getElementById("perspectiveDetail").innerHTML = `
-    <p><strong>${perspectiveLabels[activePerspective]}</strong> 当前评分：${fmtNum(item.scores.perspectives[activePerspective], 1)}。</p>
-    <p>关键分项：估值 ${fmtNum(components.value)}，质量 ${fmtNum(components.quality)}，风险 ${fmtNum(components.risk)}，AI 暴露 ${fmtNum(components.aiExposure)}，个人适配 ${fmtNum(components.personalFit)}。</p>
+    <p><strong>${pf.label}</strong> 当前评分：${fmtNum(score, 1)}。</p>
+    <p style="color:var(--muted);font-size:13px;margin:-4px 0 8px">${pf.desc}</p>
+    <p>关键分项：${keyScores || '暂无数据'}</p>
     <p>支持理由：${[...positives, ...notes].slice(0, 3).join(" ") || "暂无明确支持理由。"}</p>
     <p>主要反方：${concerns.slice(0, 3).join(" ") || researchItem.keyRisks || "暂无明确反方。"}</p>
   `;
