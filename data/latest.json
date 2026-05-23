@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-22T20:30:13.104905+00:00",
+  "generatedAt": "2026-05-23T15:29:45.549023+00:00",
   "source": {
     "prices": "Yahoo Finance unofficial public endpoints",
     "managerFootprints": "Curated reference notes; verify 13F before treating as current holdings"
@@ -21,8 +21,8 @@
       "type": "ETF",
       "theme": "US large-cap core",
       "quote": {
-        "shortName": "SPY",
-        "longName": null,
+        "shortName": "State Street SPDR S&P 500 ETF T",
+        "longName": "State Street SPDR S&P 500 ETF Trust",
         "regularMarketPrice": 745.64,
         "regularMarketChange": 2.9200439453125,
         "regularMarketChangePercent": 0.393155436839554,
@@ -31,9 +31,13 @@
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
-        "fiftyTwoWeekHigh": null,
-        "fiftyTwoWeekLow": null,
-        "regularMarketVolume": null
+        "fiftyTwoWeekHigh": 749.53,
+        "fiftyTwoWeekLow": 578.43,
+        "regularMarketVolume": 35855528,
+        "priceToBook": null,
+        "returnOnEquity": null,
+        "dividendYield": null,
+        "trailingAnnualDividendYield": null
       },
       "metrics": {
         "return1mPct": 5.249488573731331,
@@ -1094,8 +1098,8 @@
       "type": "ETF",
       "theme": "Nasdaq growth and technology",
       "quote": {
-        "shortName": "QQQ",
-        "longName": null,
+        "shortName": "Invesco QQQ Trust, Series 1",
+        "longName": "Invesco QQQ Trust",
         "regularMarketPrice": 717.54,
         "regularMarketChange": 3.02996826171875,
         "regularMarketChangePercent": 0.4240623952507905,
@@ -1104,9 +1108,13 @@
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
-        "fiftyTwoWeekHigh": null,
-        "fiftyTwoWeekLow": null,
-        "regularMarketVolume": null
+        "fiftyTwoWeekHigh": 722.12,
+        "fiftyTwoWeekLow": 511.93,
+        "regularMarketVolume": 30599640,
+        "priceToBook": null,
+        "returnOnEquity": null,
+        "dividendYield": null,
+        "trailingAnnualDividendYield": null
       },
       "metrics": {
         "return1mPct": 10.150133071110702,
@@ -2160,8 +2168,8 @@
       "type": "ETF",
       "theme": "US large-cap core",
       "quote": {
-        "shortName": "VOO",
-        "longName": null,
+        "shortName": "Vanguard S&P 500 ETF",
+        "longName": "Vanguard S&P 500 ETF",
         "regularMarketPrice": 685.55,
         "regularMarketChange": 2.7099609375,
         "regularMarketChangePercent": 0.3968661517953942,
@@ -2170,9 +2178,13 @@
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
-        "fiftyTwoWeekHigh": null,
-        "fiftyTwoWeekLow": null,
-        "regularMarketVolume": null
+        "fiftyTwoWeekHigh": 689.1,
+        "fiftyTwoWeekLow": 536.16,
+        "regularMarketVolume": 4292442,
+        "priceToBook": null,
+        "returnOnEquity": null,
+        "dividendYield": null,
+        "trailingAnnualDividendYield": null
       },
       "metrics": {
         "return1mPct": 5.265174816995755,
@@ -3226,8 +3238,8 @@
       "type": "ETF",
       "theme": "Total US market core",
       "quote": {
-        "shortName": "VTI",
-        "longName": null,
+        "shortName": "Vanguard Total Stock Market ETF",
+        "longName": "Vanguard Total Stock Market Index Fund ETF Shares",
         "regularMarketPrice": 366.79,
         "regularMarketChange": 1.70001220703125,
         "regularMarketChangePercent": 0.46564195789629004,
@@ -3236,9 +3248,13 @@
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
-        "fiftyTwoWeekHigh": null,
-        "fiftyTwoWeekLow": null,
-        "regularMarketVolume": null
+        "fiftyTwoWeekHigh": 368.3,
+        "fiftyTwoWeekLow": 286.86,
+        "regularMarketVolume": 2639972,
+        "priceToBook": null,
+        "returnOnEquity": null,
+        "dividendYield": null,
+        "trailingAnnualDividendYield": null
       },
       "metrics": {
         "return1mPct": 4.857067279833283,
@@ -4292,8 +4308,8 @@
       "type": "ETF",
       "theme": "Treasury bill cash management",
       "quote": {
-        "shortName": "SGOV",
-        "longName": null,
+        "shortName": "iShares 0-3 Month Treasury Bond",
+        "longName": "iShares 0-3 Month Treasury Bond ETF",
         "regularMarketPrice": 100.63,
         "regularMarketChange": 0.04999542236328125,
         "regularMarketChangePercent": 0.049707120156217144,
@@ -4302,9 +4318,13 @@
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
-        "fiftyTwoWeekHigh": null,
-        "fiftyTwoWeekLow": null,
-        "regularMarketVolume": null
+        "fiftyTwoWeekHigh": 100.74,
+        "fiftyTwoWeekLow": 100.27,
+        "regularMarketVolume": 17495291,
+        "priceToBook": null,
+        "returnOnEquity": null,
+        "dividendYield": null,
+        "trailingAnnualDividendYield": null
       },
       "metrics": {
         "return1mPct": 0.01987540298686863,
@@ -5358,8 +5378,8 @@
       "type": "Stock",
       "theme": "E-commerce learning position",
       "quote": {
-        "shortName": "PDD",
-        "longName": null,
+        "shortName": "PDD Holdings Inc.",
+        "longName": "PDD Holdings Inc.",
         "regularMarketPrice": 94.52,
         "regularMarketChange": -3.2700042724609375,
         "regularMarketChangePercent": -3.3439045320038607,
@@ -5368,9 +5388,13 @@
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
-        "fiftyTwoWeekHigh": null,
-        "fiftyTwoWeekLow": null,
-        "regularMarketVolume": null
+        "fiftyTwoWeekHigh": 139.41,
+        "fiftyTwoWeekLow": 92.57,
+        "regularMarketVolume": 12436508,
+        "priceToBook": null,
+        "returnOnEquity": null,
+        "dividendYield": null,
+        "trailingAnnualDividendYield": null
       },
       "metrics": {
         "return1mPct": -3.324128169774754,
@@ -6432,8 +6456,8 @@
       "type": "Stock",
       "theme": "Consumer technology and ecosystem",
       "quote": {
-        "shortName": "AAPL",
-        "longName": null,
+        "shortName": "Apple Inc.",
+        "longName": "Apple Inc.",
         "regularMarketPrice": 308.82,
         "regularMarketChange": 3.83001708984375,
         "regularMarketChangePercent": 1.2557845216167651,
@@ -6442,9 +6466,13 @@
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
-        "fiftyTwoWeekHigh": null,
-        "fiftyTwoWeekLow": null,
-        "regularMarketVolume": null
+        "fiftyTwoWeekHigh": 311.4,
+        "fiftyTwoWeekLow": 195.07,
+        "regularMarketVolume": 43605063,
+        "priceToBook": null,
+        "returnOnEquity": null,
+        "dividendYield": null,
+        "trailingAnnualDividendYield": null
       },
       "metrics": {
         "return1mPct": 12.942989282964689,
@@ -7505,8 +7533,8 @@
       "type": "Stock",
       "theme": "Cloud, software, AI infrastructure",
       "quote": {
-        "shortName": "MSFT",
-        "longName": null,
+        "shortName": "Microsoft Corporation",
+        "longName": "Microsoft Corporation",
         "regularMarketPrice": 418.57,
         "regularMarketChange": -0.519989013671875,
         "regularMarketChangePercent": -0.1240757398686787,
@@ -7515,9 +7543,13 @@
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
-        "fiftyTwoWeekHigh": null,
-        "fiftyTwoWeekLow": null,
-        "regularMarketVolume": null
+        "fiftyTwoWeekHigh": 555.45,
+        "fiftyTwoWeekLow": 356.28,
+        "regularMarketVolume": 21911688,
+        "priceToBook": null,
+        "returnOnEquity": null,
+        "dividendYield": null,
+        "trailingAnnualDividendYield": null
       },
       "metrics": {
         "return1mPct": 0.6782940046226704,
@@ -8585,8 +8617,8 @@
       "type": "Stock",
       "theme": "AI accelerators and compute platform",
       "quote": {
-        "shortName": "NVDA",
-        "longName": null,
+        "shortName": "NVIDIA Corporation",
+        "longName": "NVIDIA Corporation",
         "regularMarketPrice": 215.33,
         "regularMarketChange": -4.17999267578125,
         "regularMarketChangePercent": -1.904237975665879,
@@ -8595,9 +8627,13 @@
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
-        "fiftyTwoWeekHigh": null,
-        "fiftyTwoWeekLow": null,
-        "regularMarketVolume": null
+        "fiftyTwoWeekHigh": 236.54,
+        "fiftyTwoWeekLow": 132.92,
+        "regularMarketVolume": 166941160,
+        "priceToBook": null,
+        "returnOnEquity": null,
+        "dividendYield": null,
+        "trailingAnnualDividendYield": null
       },
       "metrics": {
         "return1mPct": 7.85914771056635,
@@ -9671,8 +9707,8 @@
       "type": "Stock",
       "theme": "EV, autonomy, energy, high optionality",
       "quote": {
-        "shortName": "TSLA",
-        "longName": null,
+        "shortName": "Tesla, Inc.",
+        "longName": "Tesla, Inc.",
         "regularMarketPrice": 426.01,
         "regularMarketChange": 8.160003662109375,
         "regularMarketChangePercent": 1.9528547428303344,
@@ -9681,9 +9717,13 @@
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
-        "fiftyTwoWeekHigh": null,
-        "fiftyTwoWeekLow": null,
-        "regularMarketVolume": null
+        "fiftyTwoWeekHigh": 498.83,
+        "fiftyTwoWeekLow": 273.21,
+        "regularMarketVolume": 45068466,
+        "priceToBook": null,
+        "returnOnEquity": null,
+        "dividendYield": null,
+        "trailingAnnualDividendYield": null
       },
       "metrics": {
         "return1mPct": 13.991760776550354,
@@ -10744,8 +10784,8 @@
       "type": "Stock",
       "theme": "Search, ads, cloud, AI platform",
       "quote": {
-        "shortName": "GOOGL",
-        "longName": null,
+        "shortName": "Alphabet Inc.",
+        "longName": "Alphabet Inc.",
         "regularMarketPrice": 382.97,
         "regularMarketChange": -4.69000244140625,
         "regularMarketChangePercent": -1.2098236591603917,
@@ -10754,9 +10794,13 @@
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
-        "fiftyTwoWeekHigh": null,
-        "fiftyTwoWeekLow": null,
-        "regularMarketVolume": null
+        "fiftyTwoWeekHigh": 408.61,
+        "fiftyTwoWeekLow": 162.0,
+        "regularMarketVolume": 19134802,
+        "priceToBook": null,
+        "returnOnEquity": null,
+        "dividendYield": null,
+        "trailingAnnualDividendYield": null
       },
       "metrics": {
         "return1mPct": 13.007165943792698,
@@ -11830,8 +11874,8 @@
       "type": "Stock",
       "theme": "AI accelerators and CPUs",
       "quote": {
-        "shortName": "AMD",
-        "longName": null,
+        "shortName": "Advanced Micro Devices, Inc.",
+        "longName": "Advanced Micro Devices, Inc.",
         "regularMarketPrice": 467.51,
         "regularMarketChange": 17.920013427734375,
         "regularMarketChangePercent": 3.9858567970152414,
@@ -11840,9 +11884,13 @@
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
-        "fiftyTwoWeekHigh": null,
-        "fiftyTwoWeekLow": null,
-        "regularMarketVolume": null
+        "fiftyTwoWeekHigh": 481.41,
+        "fiftyTwoWeekLow": 108.62,
+        "regularMarketVolume": 34611133,
+        "priceToBook": null,
+        "returnOnEquity": null,
+        "dividendYield": null,
+        "trailingAnnualDividendYield": null
       },
       "metrics": {
         "return1mPct": 53.11631032839106,
@@ -12904,8 +12952,8 @@
       "type": "Stock",
       "theme": "AI networking, custom silicon, infrastructure chips",
       "quote": {
-        "shortName": "AVGO",
-        "longName": null,
+        "shortName": "Broadcom Inc.",
+        "longName": "Broadcom Inc.",
         "regularMarketPrice": 414.14,
         "regularMarketChange": -0.42999267578125,
         "regularMarketChangePercent": -0.10372016021047425,
@@ -12914,9 +12962,13 @@
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
-        "fiftyTwoWeekHigh": null,
-        "fiftyTwoWeekLow": null,
-        "regularMarketVolume": null
+        "fiftyTwoWeekHigh": 442.36,
+        "fiftyTwoWeekLow": 231.13,
+        "regularMarketVolume": 14017536,
+        "priceToBook": null,
+        "returnOnEquity": null,
+        "dividendYield": null,
+        "trailingAnnualDividendYield": null
       },
       "metrics": {
         "return1mPct": -1.3811467731698168,
@@ -13978,8 +14030,8 @@
       "type": "Stock",
       "theme": "Semiconductor foundry and AI supply chain",
       "quote": {
-        "shortName": "TSM",
-        "longName": null,
+        "shortName": "Taiwan Semiconductor Manufactur",
+        "longName": "Taiwan Semiconductor Manufacturing Company Limited",
         "regularMarketPrice": 404.52,
         "regularMarketChange": -2.6300048828125,
         "regularMarketChangePercent": -0.6459547887114003,
@@ -13988,9 +14040,13 @@
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
-        "fiftyTwoWeekHigh": null,
-        "fiftyTwoWeekLow": null,
-        "regularMarketVolume": null
+        "fiftyTwoWeekHigh": 421.97,
+        "fiftyTwoWeekLow": 190.56,
+        "regularMarketVolume": 7085377,
+        "priceToBook": null,
+        "returnOnEquity": null,
+        "dividendYield": null,
+        "trailingAnnualDividendYield": null
       },
       "metrics": {
         "return1mPct": 5.712639194679192,
@@ -15064,8 +15120,8 @@
       "type": "Stock",
       "theme": "Semiconductor lithography equipment",
       "quote": {
-        "shortName": "ASML",
-        "longName": null,
+        "shortName": "ASML Holding N.V. - New York Re",
+        "longName": "ASML Holding N.V.",
         "regularMarketPrice": 1632.9,
         "regularMarketChange": 40.9000244140625,
         "regularMarketChangePercent": 2.5690970109335742,
@@ -15074,9 +15130,13 @@
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
-        "fiftyTwoWeekHigh": null,
-        "fiftyTwoWeekLow": null,
-        "regularMarketVolume": null
+        "fiftyTwoWeekHigh": 1653.53,
+        "fiftyTwoWeekLow": 683.48,
+        "regularMarketVolume": 1645390,
+        "priceToBook": null,
+        "returnOnEquity": null,
+        "dividendYield": null,
+        "trailingAnnualDividendYield": null
       },
       "metrics": {
         "return1mPct": 15.171390053465373,
@@ -16131,8 +16191,8 @@
       "type": "Stock",
       "theme": "Cloud, e-commerce, AI infrastructure",
       "quote": {
-        "shortName": "AMZN",
-        "longName": null,
+        "shortName": "Amazon.com, Inc.",
+        "longName": "Amazon.com, Inc.",
         "regularMarketPrice": 266.32,
         "regularMarketChange": -2.139984130859375,
         "regularMarketChangePercent": -0.7971333528174807,
@@ -16141,9 +16201,13 @@
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
-        "fiftyTwoWeekHigh": null,
-        "fiftyTwoWeekLow": null,
-        "regularMarketVolume": null
+        "fiftyTwoWeekHigh": 278.56,
+        "fiftyTwoWeekLow": 196.0,
+        "regularMarketVolume": 26386815,
+        "priceToBook": null,
+        "returnOnEquity": null,
+        "dividendYield": null,
+        "trailingAnnualDividendYield": null
       },
       "metrics": {
         "return1mPct": 4.406462840081282,
@@ -17229,8 +17293,8 @@
       "type": "Stock",
       "theme": "Cloud infrastructure and enterprise software",
       "quote": {
-        "shortName": "ORCL",
-        "longName": null,
+        "shortName": "Oracle Corporation",
+        "longName": "Oracle Corporation",
         "regularMarketPrice": 192.08,
         "regularMarketChange": 2.30999755859375,
         "regularMarketChangePercent": 1.2172616886687582,
@@ -17239,9 +17303,13 @@
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
-        "fiftyTwoWeekHigh": null,
-        "fiftyTwoWeekLow": null,
-        "regularMarketVolume": null
+        "fiftyTwoWeekHigh": 345.72,
+        "fiftyTwoWeekLow": 134.57,
+        "regularMarketVolume": 9467888,
+        "priceToBook": null,
+        "returnOnEquity": null,
+        "dividendYield": null,
+        "trailingAnnualDividendYield": null
       },
       "metrics": {
         "return1mPct": 8.963015181058331,
@@ -18308,8 +18376,8 @@
       "type": "Stock",
       "theme": "AI software and data platforms",
       "quote": {
-        "shortName": "PLTR",
-        "longName": null,
+        "shortName": "Palantir Technologies Inc.",
+        "longName": "Palantir Technologies Inc.",
         "regularMarketPrice": 136.88,
         "regularMarketChange": -0.5349884033203125,
         "regularMarketChangePercent": -0.3893231666549868,
@@ -18318,9 +18386,13 @@
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
-        "fiftyTwoWeekHigh": null,
-        "fiftyTwoWeekLow": null,
-        "regularMarketVolume": null
+        "fiftyTwoWeekHigh": 207.52,
+        "fiftyTwoWeekLow": 118.93,
+        "regularMarketVolume": 27261935,
+        "priceToBook": null,
+        "returnOnEquity": null,
+        "dividendYield": null,
+        "trailingAnnualDividendYield": null
       },
       "metrics": {
         "return1mPct": -3.312850320524008,
@@ -19382,8 +19454,8 @@
       "type": "Stock",
       "theme": "Enterprise workflow software with AI layer",
       "quote": {
-        "shortName": "NOW",
-        "longName": null,
+        "shortName": "ServiceNow, Inc.",
+        "longName": "ServiceNow, Inc.",
         "regularMarketPrice": 102.13,
         "regularMarketChange": 2.4399948120117188,
         "regularMarketChangePercent": 2.4475822572537886,
@@ -19392,9 +19464,13 @@
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
-        "fiftyTwoWeekHigh": null,
-        "fiftyTwoWeekLow": null,
-        "regularMarketVolume": null
+        "fiftyTwoWeekHigh": 211.478,
+        "fiftyTwoWeekLow": 81.24,
+        "regularMarketVolume": 21832090,
+        "priceToBook": null,
+        "returnOnEquity": null,
+        "dividendYield": null,
+        "trailingAnnualDividendYield": null
       },
       "metrics": {
         "return1mPct": 20.464730743022773,
@@ -20448,8 +20524,8 @@
       "type": "Stock",
       "theme": "Enterprise software and AI CRM",
       "quote": {
-        "shortName": "CRM",
-        "longName": null,
+        "shortName": "Salesforce, Inc.",
+        "longName": "Salesforce, Inc.",
         "regularMarketPrice": 180.07,
         "regularMarketChange": 3.760009765625,
         "regularMarketChangePercent": 2.1326129077708256,
@@ -20458,9 +20534,13 @@
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
-        "fiftyTwoWeekHigh": null,
-        "fiftyTwoWeekLow": null,
-        "regularMarketVolume": null
+        "fiftyTwoWeekHigh": 278.81,
+        "fiftyTwoWeekLow": 163.52,
+        "regularMarketVolume": 9981179,
+        "priceToBook": null,
+        "returnOnEquity": null,
+        "dividendYield": null,
+        "trailingAnnualDividendYield": null
       },
       "metrics": {
         "return1mPct": 3.9065228812714015,

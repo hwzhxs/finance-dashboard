@@ -549,15 +549,20 @@ def main() -> int:
         metrics = historical_metrics(chart["rows"])
         quote = quotes.get(symbol, {})
         if not quote:
+            meta = chart["meta"]
             last_close = (chart["rows"][-1]["close"] if chart["rows"] else None)
-            prev_close = (chart["rows"][-2]["close"] if len(chart["rows"]) > 1 else chart["meta"].get("chartPreviousClose"))
+            prev_close = (chart["rows"][-2]["close"] if len(chart["rows"]) > 1 else meta.get("chartPreviousClose"))
             day_change_pct = pct_change(last_close, prev_close)
             quote = {
-                "shortName": symbol,
-                "regularMarketPrice": chart["meta"].get("regularMarketPrice") or last_close,
+                "shortName": meta.get("shortName") or symbol,
+                "longName": meta.get("longName"),
+                "regularMarketPrice": meta.get("regularMarketPrice") or last_close,
                 "regularMarketChange": (last_close - prev_close) if last_close is not None and prev_close else None,
                 "regularMarketChangePercent": day_change_pct,
                 "regularMarketPreviousClose": prev_close,
+                "fiftyTwoWeekHigh": meta.get("fiftyTwoWeekHigh"),
+                "fiftyTwoWeekLow": meta.get("fiftyTwoWeekLow"),
+                "regularMarketVolume": meta.get("regularMarketVolume"),
             }
         item = {
             "symbol": symbol,

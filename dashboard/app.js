@@ -473,7 +473,7 @@ function renderDurability(item, researchItem) {
     <div class="dur-metrics">
       ${metrics.map(([label, value, grade, hint]) => `
         <div class="dur-item">
-          <div class="dur-label">${label} <span class="dur-hint" title="${hint}">ⓘ</span></div>
+          <div class="dur-label">${label} <span class="dur-hint" data-tip="${hint}">ⓘ</span></div>
           <div class="dur-value">${value}</div>
           <div class="dur-grade ${gradeClass(grade)}">${grade[0]}</div>
         </div>
@@ -491,9 +491,9 @@ function renderPriceReasonableness(item, researchItem) {
   const q = item.quote || {};
   const vs = (valuationData && valuationData.stocks || []).find(s => s.symbol === item.symbol);
 
-  const pe = f.trailingPE || q.trailingPE;
+  const pe = f.trailingPE || q.trailingPE || (vs && vs.pe);
   const fpe = f.forwardPE || q.forwardPE || (vs && vs.forwardPE);
-  const peg = vs && vs.peg;
+  const peg = (vs && vs.peg) || f.pegRatio;
 
   // Earnings yield = 1/PE
   const earningsYield = pe ? (100 / pe) : null;
@@ -527,8 +527,8 @@ function renderPriceReasonableness(item, researchItem) {
     vsMedianNote = parts.join(' · ') || '—';
   }
 
-  // FCF yield
-  const fcfY = f.fcfYieldPct;
+  // FCF yield - try research data, then compute from comps
+  const fcfY = f.fcfYieldPct || (vs && vs.fcfMargin && vs.evRevenue ? (vs.fcfMargin / vs.evRevenue) * 100 : null);
   const fcfYGrade = fcfY == null ? ['—','neutral'] : fcfY >= 5 ? ['很有吸引力','good'] : fcfY >= 3 ? ['合理','ok'] : fcfY >= 1 ? ['偏低','warn'] : ['几乎没有','bad'];
 
   const gradeClass = (g) => `dur-${g[1]}`;
@@ -559,7 +559,7 @@ function renderPriceReasonableness(item, researchItem) {
     <div class="dur-metrics">
       ${metrics.map(([label, value, grade, hint]) => `
         <div class="dur-item">
-          <div class="dur-label">${label} <span class="dur-hint" title="${hint}">ⓘ</span></div>
+          <div class="dur-label">${label} <span class="dur-hint" data-tip="${hint}">ⓘ</span></div>
           <div class="dur-value">${value}</div>
           <div class="dur-grade ${gradeClass(grade)}">${grade[0]}</div>
         </div>

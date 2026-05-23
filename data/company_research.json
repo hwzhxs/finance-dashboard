@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-22T20:31:07.395137+00:00",
-  "generatedAtLocal": "2026-05-23 04:31:07 CST",
+  "generatedAt": "2026-05-23T15:30:40.704025+00:00",
+  "generatedAtLocal": "2026-05-23 23:30:40 CST",
   "sources": {
     "secCompanyFacts": "https://www.sec.gov/edgar/sec-api-documentation",
     "notes": "Financials from SEC EDGAR. Qualitative analysis in agent-insights.json."
@@ -189,7 +189,7 @@
     "PDD": {
       "symbol": "PDD",
       "type": "Stock",
-      "companyName": "PDD",
+      "companyName": "PDD Holdings Inc.",
       "sec": {
         "available": true,
         "cik": "0001737806",
@@ -270,7 +270,7 @@
     "AAPL": {
       "symbol": "AAPL",
       "type": "Stock",
-      "companyName": "AAPL",
+      "companyName": "Apple Inc.",
       "sec": {
         "available": true,
         "cik": "0000320193",
@@ -351,7 +351,7 @@
     "MSFT": {
       "symbol": "MSFT",
       "type": "Stock",
-      "companyName": "MSFT",
+      "companyName": "Microsoft Corporation",
       "sec": {
         "available": true,
         "cik": "0000789019",
@@ -432,7 +432,7 @@
     "NVDA": {
       "symbol": "NVDA",
       "type": "Stock",
-      "companyName": "NVDA",
+      "companyName": "NVIDIA Corporation",
       "sec": {
         "available": true,
         "cik": "0001045810",
@@ -513,7 +513,7 @@
     "TSLA": {
       "symbol": "TSLA",
       "type": "Stock",
-      "companyName": "TSLA",
+      "companyName": "Tesla, Inc.",
       "sec": {
         "available": true,
         "cik": "0001318605",
@@ -594,7 +594,7 @@
     "GOOGL": {
       "symbol": "GOOGL",
       "type": "Stock",
-      "companyName": "GOOGL",
+      "companyName": "Alphabet Inc.",
       "sec": {
         "available": true,
         "cik": "0001652044",
@@ -675,7 +675,7 @@
     "AMD": {
       "symbol": "AMD",
       "type": "Stock",
-      "companyName": "AMD",
+      "companyName": "Advanced Micro Devices, Inc.",
       "sec": {
         "available": true,
         "cik": "0000002488",
@@ -756,7 +756,7 @@
     "AVGO": {
       "symbol": "AVGO",
       "type": "Stock",
-      "companyName": "AVGO",
+      "companyName": "Broadcom Inc.",
       "sec": {
         "available": true,
         "cik": "0001730168",
@@ -837,7 +837,7 @@
     "TSM": {
       "symbol": "TSM",
       "type": "Stock",
-      "companyName": "TSM",
+      "companyName": "Taiwan Semiconductor Manufacturing Company Limited",
       "sec": {
         "available": true,
         "cik": "0001046179",
@@ -918,7 +918,7 @@
     "ASML": {
       "symbol": "ASML",
       "type": "Stock",
-      "companyName": "ASML",
+      "companyName": "ASML Holding N.V.",
       "sec": {
         "available": true,
         "cik": "0000937966",
@@ -999,7 +999,7 @@
     "AMZN": {
       "symbol": "AMZN",
       "type": "Stock",
-      "companyName": "AMZN",
+      "companyName": "Amazon.com, Inc.",
       "sec": {
         "available": true,
         "cik": "0001018724",
@@ -1080,7 +1080,7 @@
     "ORCL": {
       "symbol": "ORCL",
       "type": "Stock",
-      "companyName": "ORCL",
+      "companyName": "Oracle Corporation",
       "sec": {
         "available": true,
         "cik": "0001341439",
@@ -1161,7 +1161,7 @@
     "PLTR": {
       "symbol": "PLTR",
       "type": "Stock",
-      "companyName": "PLTR",
+      "companyName": "Palantir Technologies Inc.",
       "sec": {
         "available": true,
         "cik": "0001321655",
@@ -1242,7 +1242,7 @@
     "NOW": {
       "symbol": "NOW",
       "type": "Stock",
-      "companyName": "NOW",
+      "companyName": "ServiceNow, Inc.",
       "sec": {
         "available": true,
         "cik": "0001373715",
@@ -1323,7 +1323,7 @@
     "CRM": {
       "symbol": "CRM",
       "type": "Stock",
-      "companyName": "CRM",
+      "companyName": "Salesforce, Inc.",
       "sec": {
         "available": true,
         "cik": "0001108524",
