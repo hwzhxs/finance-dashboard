@@ -579,6 +579,10 @@ def main() -> int:
                     "fiftyTwoWeekHigh",
                     "fiftyTwoWeekLow",
                     "regularMarketVolume",
+                    "priceToBook",
+                    "returnOnEquity",
+                    "dividendYield",
+                    "trailingAnnualDividendYield",
                 ]
             },
             "metrics": metrics,

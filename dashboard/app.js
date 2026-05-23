@@ -260,6 +260,8 @@ function renderStockDetail(symbol) {
   renderChart(item);
   renderFundamentals(item, researchItem);
   renderJudgments(item, researchItem);
+  renderDurability(item, researchItem);
+  renderPriceReasonableness(item, researchItem);
   renderPerspectiveDetail(item, researchItem);
   renderSymbolExpertFootprints(symbol);
   renderStockEarnings(symbol);
@@ -420,6 +422,153 @@ function renderJudgments(item, researchItem) {
     <div class="judgment-card"><span>${label}</span><strong>${value}</strong></div>
   `).join("");
 }
+
+function renderDurability(item, researchItem) {
+  const el = document.getElementById('durabilityAnalysis');
+  if (!el) return;
+  if (item.type === 'ETF') { el.innerHTML = '<p style="color:var(--muted)">ETF 不适用此分析</p>'; return; }
+  const f = (researchItem.financials || {});
+  const comp = item.scores.components || {};
+  const vs = (valuationData && valuationData.stocks || []).find(s => s.symbol === item.symbol);
+
+  const roe = f.roePct;
+  const roeGrade = roe == null ? ['—','neutral'] : roe >= 20 ? ['优秀','good'] : roe >= 15 ? ['良好','ok'] : roe >= 10 ? ['一般','warn'] : ['偏低','bad'];
+  const gm = f.grossMarginPct || (vs && vs.grossMargin);
+  const gmGrade = gm == null ? ['—','neutral'] : gm >= 60 ? ['强定价权','good'] : gm >= 40 ? ['较好','ok'] : gm >= 20 ? ['一般','warn'] : ['弱','bad'];
+  const om = f.operatingMarginPct || (vs && vs.ebitdaMargin);
+  const omGrade = om == null ? ['—','neutral'] : om >= 30 ? ['优秀','good'] : om >= 15 ? ['健康','ok'] : om >= 5 ? ['偏薄','warn'] : ['亏损','bad'];
+  const fcf = f.freeCashFlow;
+  const fcfGrade = fcf == null ? ['—','neutral'] : fcf > 0 ? ['正现金流 ✓','good'] : ['负现金流 ✗','bad'];
+  const debt = f.debtToAssetsPct;
+  const debtGrade = debt == null ? ['—','neutral'] : debt <= 20 ? ['很低','good'] : debt <= 40 ? ['合理','ok'] : debt <= 60 ? ['偏高','warn'] : ['危险','bad'];
+  const moat = comp.moat;
+  const moatGrade = moat == null ? ['—','neutral'] : moat >= 70 ? ['宽护城河','good'] : moat >= 50 ? ['中等','ok'] : moat >= 30 ? ['窄','warn'] : ['几乎无','bad'];
+  const revG = f.revenueGrowthPct;
+  const revGrade = revG == null ? ['—','neutral'] : revG >= 20 ? ['高增长','good'] : revG >= 10 ? ['稳健','ok'] : revG >= 0 ? ['缓慢','warn'] : ['萎缩','bad'];
+
+  const gradeClass = (g) => `dur-${g[1]}`;
+  const metrics = [
+    ['ROE', roe != null ? roe.toFixed(1) + '%' : '—', roeGrade, '巴菲特看 15%+，不靠杠杆'],
+    ['毛利率', gm != null ? gm.toFixed(1) + '%' : '—', gmGrade, '越高说明定价权越强'],
+    ['经营利润率', om != null ? om.toFixed(1) + '%' : '—', omGrade, '持续赚钱的核心指标'],
+    ['自由现金流', f.freeCashFlowText || '—', fcfGrade, '真金白银 vs 纸面利润'],
+    ['负债/资产', debt != null ? debt.toFixed(1) + '%' : '—', debtGrade, '不靠借钱续命'],
+    ['护城河评分', moat != null ? moat.toFixed(0) + '/100' : '—', moatGrade, '品牌/网络效应/转换成本/规模'],
+    ['营收增长', revG != null ? revG.toFixed(1) + '%' : '—', revGrade, '持续增长能力'],
+  ];
+
+  const grades = [roeGrade, gmGrade, omGrade, fcfGrade, debtGrade, moatGrade, revGrade];
+  const scoreMap = { good: 3, ok: 2, warn: 1, bad: 0, neutral: null };
+  const validScores = grades.map(g => scoreMap[g[1]]).filter(v => v != null);
+  const avgScore = validScores.length ? validScores.reduce((a,b) => a+b, 0) / validScores.length : null;
+  let verdict = '数据不足', verdictClass = 'neutral';
+  if (avgScore != null) {
+    if (avgScore >= 2.3) { verdict = '✅ 大概率能持续赚钱'; verdictClass = 'good'; }
+    else if (avgScore >= 1.5) { verdict = '⚠️ 有一定不确定性'; verdictClass = 'warn'; }
+    else { verdict = '❌ 持续性存疑'; verdictClass = 'bad'; }
+  }
+
+  el.innerHTML = `
+    <div class="dur-verdict dur-${verdictClass}"><strong>${verdict}</strong></div>
+    <div class="dur-metrics">
+      ${metrics.map(([label, value, grade, hint]) => `
+        <div class="dur-item">
+          <div class="dur-label">${label} <span class="dur-hint" title="${hint}">ⓘ</span></div>
+          <div class="dur-value">${value}</div>
+          <div class="dur-grade ${gradeClass(grade)}">${grade[0]}</div>
+        </div>
+      `).join('')}
+    </div>
+    <div class="dur-note">巴菲特：如果十年后它还在赚钱，而且你看得懂它怎么赚的——那就是好生意。</div>
+  `;
+}
+
+function renderPriceReasonableness(item, researchItem) {
+  const el = document.getElementById('priceReasonableness');
+  if (!el) return;
+  if (item.type === 'ETF') { el.innerHTML = '<p style="color:var(--muted)">ETF 不适用此分析</p>'; return; }
+  const f = (researchItem.financials || {});
+  const q = item.quote || {};
+  const vs = (valuationData && valuationData.stocks || []).find(s => s.symbol === item.symbol);
+
+  const pe = f.trailingPE || q.trailingPE;
+  const fpe = f.forwardPE || q.forwardPE || (vs && vs.forwardPE);
+  const peg = vs && vs.peg;
+
+  // Earnings yield = 1/PE
+  const earningsYield = pe ? (100 / pe) : null;
+  const riskFreeRate = 4.3; // approximate 10Y treasury
+  const eyGrade = earningsYield == null ? ['—','neutral'] : earningsYield >= riskFreeRate * 1.5 ? ['有吸引力','good'] : earningsYield >= riskFreeRate ? ['尚可','ok'] : ['不如买国债','bad'];
+
+  // PE assessment
+  const peGrade = pe == null ? ['—','neutral'] : pe <= 15 ? ['便宜','good'] : pe <= 25 ? ['合理','ok'] : pe <= 40 ? ['偏贵','warn'] : ['很贵','bad'];
+
+  // Forward PE
+  const fpeGrade = fpe == null ? ['—','neutral'] : fpe <= 15 ? ['便宜','good'] : fpe <= 22 ? ['合理','ok'] : fpe <= 35 ? ['偏贵','warn'] : ['很贵','bad'];
+
+  // PEG
+  const pegGrade = peg == null ? ['—','neutral'] : peg < 1 ? ['增长未被定价','good'] : peg <= 1.5 ? ['合理','ok'] : peg <= 2 ? ['偏贵','warn'] : ['过贵','bad'];
+
+  // 52-week range position
+  const hi = q.fiftyTwoWeekHigh, lo = q.fiftyTwoWeekLow, price = q.regularMarketPrice;
+  let rangePos = null, rangePosGrade = ['—','neutral'];
+  if (hi && lo && price && hi !== lo) {
+    rangePos = ((price - lo) / (hi - lo) * 100);
+    rangePosGrade = rangePos <= 25 ? ['接近底部','good'] : rangePos <= 50 ? ['中下区间','ok'] : rangePos <= 75 ? ['中上区间','warn'] : ['接近顶部','bad'];
+  }
+
+  // Sector median comparison
+  let vsMedianNote = '—';
+  if (vs && vs.vsMedian) {
+    const parts = [];
+    if (vs.vsMedian.pe) parts.push(`PE ${vs.vsMedian.pe} vs 同业`);
+    if (vs.vsMedian.peg) parts.push(`PEG ${vs.vsMedian.peg}`);
+    if (vs.vsMedian.evRevenue) parts.push(`EV/Rev ${vs.vsMedian.evRevenue}`);
+    vsMedianNote = parts.join(' · ') || '—';
+  }
+
+  // FCF yield
+  const fcfY = f.fcfYieldPct;
+  const fcfYGrade = fcfY == null ? ['—','neutral'] : fcfY >= 5 ? ['很有吸引力','good'] : fcfY >= 3 ? ['合理','ok'] : fcfY >= 1 ? ['偏低','warn'] : ['几乎没有','bad'];
+
+  const gradeClass = (g) => `dur-${g[1]}`;
+  const metrics = [
+    ['PE（市盈率）', pe != null ? pe.toFixed(1) + 'x' : '—', peGrade, '花多少年赚回本'],
+    ['Forward PE', fpe != null ? fpe.toFixed(1) + 'x' : '—', fpeGrade, '预期盈利看估值'],
+    ['PEG', peg != null ? peg.toFixed(2) : '—', pegGrade, '<1 增长未被定价，>2 偏贵'],
+    ['盈利收益率', earningsYield != null ? earningsYield.toFixed(1) + '%' : '—', eyGrade, `vs 无风险利率 ~${riskFreeRate}%`],
+    ['FCF 收益率', fcfY != null ? fcfY.toFixed(1) + '%' : '—', fcfYGrade, '真实现金回报率'],
+    ['52周位置', rangePos != null ? rangePos.toFixed(0) + '%' : '—', rangePosGrade, `${lo ? '$'+lo.toFixed(0) : '?'} — ${hi ? '$'+hi.toFixed(0) : '?'}`],
+    ['vs 同业中位数', vsMedianNote, ['参考','neutral'], '和同板块公司比'],
+  ];
+
+  // Overall
+  const allGrades = [peGrade, fpeGrade, pegGrade, eyGrade, fcfYGrade, rangePosGrade];
+  const scoreMap = { good: 3, ok: 2, warn: 1, bad: 0, neutral: null };
+  const valid = allGrades.map(g => scoreMap[g[1]]).filter(v => v != null);
+  const avg = valid.length ? valid.reduce((a,b) => a+b, 0) / valid.length : null;
+  let verdict = '数据不足', verdictClass = 'neutral';
+  if (avg != null) {
+    if (avg >= 2.3) { verdict = '✅ 价格有吸引力'; verdictClass = 'good'; }
+    else if (avg >= 1.5) { verdict = '😐 价格合理，没有明显折扣'; verdictClass = 'warn'; }
+    else { verdict = '🔴 偏贵，安全边际不足'; verdictClass = 'bad'; }
+  }
+
+  el.innerHTML = `
+    <div class="dur-verdict dur-${verdictClass}"><strong>${verdict}</strong></div>
+    <div class="dur-metrics">
+      ${metrics.map(([label, value, grade, hint]) => `
+        <div class="dur-item">
+          <div class="dur-label">${label} <span class="dur-hint" title="${hint}">ⓘ</span></div>
+          <div class="dur-value">${value}</div>
+          <div class="dur-grade ${gradeClass(grade)}">${grade[0]}</div>
+        </div>
+      `).join('')}
+    </div>
+    <div class="dur-note">巴菲特：如果需要计算器才觉得便宜，那就不够便宜。好机会是一眼看过去就知道的。</div>
+  `;
+}
+
 
 function renderPerspectiveDetail(item, researchItem) {
   const components = item.scores.components;
