@@ -1,4 +1,4 @@
-# Post-close brief - 2026-05-25 20:16 CST
+# Post-close brief - 2026-05-26 20:15 CST
 
 Conclusion: observe first; act only if a trade checklist is triggered.
 
