@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-05-29T12:30:00.000Z",
+  "generatedAt": "2026-06-01T12:30:00.000Z",
   "items": {
     "SPY": {
       "businessModel": "S&P 500 ETF，跟踪美国最大 500 家公司，费率 0.0945%，全球流动性最佳的 ETF。",
       "moatEvidence": "期权和衍生品流动性无可替代，但费率是 VOO 的 3 倍。作为投资工具的 moat 在于生态而非成本。",
-      "keyRisks": "费率 0.0945% vs VOO 0.03%，30 年复利差距约 2%；大盘前 10 集中度超 30%；SPY $754.6 创 52 周新高，PE 处于历史 75 分位以上。",
+      "keyRisks": "费率 0.0945% vs VOO 0.03%，30 年复利差距约 2%；大盘前 10 集中度超 30%；SPY $756.5 再创 52 周新高。",
       "aiAngle": "被动持有 NVDA/MSFT/GOOGL/AAPL 等 AI 龙头，间接受益但不是 AI 主题工具。",
-      "growthCatalysts": "SPY $754.6 再创 52 周新高（+0.55%）。美股企业盈利整体增长，AI capex 周期拉动。Bridgewater Q4 2025 大幅加仓至 10% 仓位。",
+      "growthCatalysts": "SPY $756.5 继续创 52 周新高。1 年回报 +28.3%。Bridgewater Q4 2025 大幅加仓至 10% 仓位。",
       "growthSignals": "S&P 500 EPS 增速、PE 分位数、资金净流入、Fed 利率路径。",
       "judgment": {
         "positives": [
@@ -18,37 +18,37 @@
           "和 VOO 完全重叠，除非需要 SPY 的期权流动性否则 VOO 更优"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "SPY $754.6 再创 52 周新高。S&P 500 和 Nasdaq 双创 ATH。VOO 仍是更优载体——费率低 3 倍。",
+        "todayNote": "SPY $756.5 继续新高。VOO 仍是更优载体——费率低 3 倍。",
         "etfQuestion": "VOO 费率更低跟踪同一指数。SPY 的优势仅在期权流动性，对我们不适用。"
       }
     },
     "QQQ": {
       "businessModel": "纳斯达克 100 ETF，科技/成长权重高，前 10 占比超 50%，费率 0.20%。",
-      "moatEvidence": "科技暴露最集中的主流 ETF，1 年回报 +41.5%，momentum 极强。但集中度本身也是风险。",
+      "moatEvidence": "科技暴露最集中的主流 ETF，1 年回报 +42.2%，momentum 极强。但集中度本身也是风险。",
       "keyRisks": "前 10 权重超 50%（AAPL/MSFT/NVDA/GOOGL/AMZN/META），分散度不够；费率 0.20% 偏高；max drawdown -12.2%。",
       "aiAngle": "AI 龙头权重最大——NVDA ~9%、MSFT ~8%、GOOGL ~5%。AI capex 加速直接推动 QQQ。",
-      "growthCatalysts": "QQQ $735.6 创 52 周新高（+0.84%）。科技板块整体 momentum 极强，NVDA/AMD/GOOGL 齐飞。",
+      "growthCatalysts": "QQQ $738.3 继续逼近 52 周新高 $741.6。1 年回报 +42.2%。MSFT Build + AAPL WWDC 双催化。",
       "growthSignals": "Nasdaq 100 EPS 增速、科技板块 PE、NVDA/MSFT/GOOGL 财报执行、资金流向。",
       "judgment": {
         "positives": [
-          "科技和 AI 暴露最集中，1 年回报 +41.5%",
-          "$735.6 创 52 周新高——momentum 极强"
+          "科技和 AI 暴露最集中，1 年回报 +42.2%",
+          "接近 ATH——momentum 极强"
         ],
         "concerns": [
           "集中度风险：前 10 占比过高",
           "费率 0.20% 是 VTI/VOO 的 6-7 倍"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "QQQ $735.6 创 52 周新高。科技 tilt 用 QQQ，但核心仓还是 VTI/VOO 更稳。",
+        "todayNote": "QQQ $738.3 逼近 ATH。MSFT Build 6/2-3 + AAPL WWDC 6/8 双催化剂本周密集。科技 tilt 用 QQQ，核心仓还是 VTI/VOO。",
         "etfQuestion": "科技倾斜用 QQQ，但核心仓 VTI/VOO 的分散度和费率更优。"
       }
     },
     "VOO": {
       "businessModel": "Vanguard S&P 500 ETF，费率仅 0.03%，和 SPY 跟踪同一指数但成本低 3 倍。",
       "moatEvidence": "Vanguard 成本优势 + 规模效应。Bogle 体系首选 S&P 500 载体。费率全市场最低之一。",
-      "keyRisks": "大盘前 10 集中度超 30%；PE 处于历史偏高水平；VOO $693.9 创 52 周新高。",
+      "keyRisks": "大盘前 10 集中度超 30%；PE 处于历史偏高水平；VOO $695.5 接近 52 周新高 $697。",
       "aiAngle": "被动持有 AI 龙头，但不是主题投资。通过 VOO 间接持有比直接买个股风险更低。",
-      "growthCatalysts": "VOO $693.9 创 52 周新高。Bogle 评分 90.2/100。美股整体盈利增长 + AI capex。",
+      "growthCatalysts": "VOO $695.5 创 52 周新高。Bogle 评分 90.2/100。1 年回报 +28.4%。",
       "growthSignals": "S&P 500 EPS 增速、PE 分位数、资金净流入。",
       "judgment": {
         "positives": [
@@ -67,9 +67,9 @@
     "VTI": {
       "businessModel": "Vanguard 全美股票市场 ETF，覆盖大中小盘约 4000 只股票，费率 0.03%。一只 ETF 买下整个美国。",
       "moatEvidence": "全市场覆盖 + 极低费率 = Bogle 体系最纯粹的产品。分散度 96/100，Bogle 评分 92.6/100——所有 ticker 里最高。",
-      "keyRisks": "美股整体估值偏高；VTI $371.7 创 52 周新高；但长期分散优势弥补短期估值压力。",
+      "keyRisks": "美股整体估值偏高；VTI $372.5 创 52 周新高 $373.1 近在咫尺。",
       "aiAngle": "间接暴露 AI 龙头，但整体分散度最好。不是 AI 主题工具。",
-      "growthCatalysts": "VTI $371.7 创 52 周新高（+0.62%）。美国经济整体增长、中小盘盈利恢复。",
+      "growthCatalysts": "VTI $372.5 创 52 周新高。1 年回报 +28.5%。美国经济整体增长。",
       "growthSignals": "全市场盈利增速、小盘股相对表现、资金流入趋势。",
       "judgment": {
         "positives": [
@@ -81,7 +81,7 @@
           "当前美股估值不便宜，需要定投纪律"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "VTI $371.7 创 52 周新高。Bogle 会选它，巴菲特也推荐给普通人。但 ATH 不是一把梭——定投。",
+        "todayNote": "VTI $372.5 创 ATH。Bogle 会选它，巴菲特也推荐给普通人。ATH 不是一把梭——坚持定投。",
         "etfQuestion": "终极一只 ETF 解决方案。Bogle 会选它，巴菲特也推荐给普通人。"
       }
     },
@@ -102,99 +102,100 @@
           "Fed 降息周期中 yield 会逐步下降"
         ],
         "actionContext": "Consider for idle cash",
-        "todayNote": "80% 现金闲置的组合应该认真考虑 SGOV。市场 ATH 时多留现金本身就是一种纪律。",
+        "todayNote": "80% 现金闲置的组合应该认真考虑 SGOV。大盘 ATH 时多留现金本身就是一种纪律。",
         "etfQuestion": "不是 VTI/VOO 的替代品，是 cash 的替代品。闲钱放 SGOV > 放 broker。"
       }
     },
     "PDD": {
       "businessModel": "中国折扣电商（拼多多）+ 全球跨境电商（Temu）。收入来自广告和交易佣金，靠极致性价比和流量算法效率变现。",
       "moatEvidence": "国内：极致性价比心智、商家网络效应、流量算法。Temu：供应链直连工厂的全托管模式。但 moat 不算宽——用户忠诚度低，SHEIN/TikTok Shop 竞争激烈。",
-      "keyRisks": "1) Q1 收入 miss 共识（$15.4B vs $15.94B），连续两季 miss，信任严重受损；2) 净利润 -15% YoY，增收不增利趋势恶化；3) 管理层宣布进入新投资周期（供应链+品牌），Q2-H2 利润将继续承压；4) 5/27 暴跌 10.7%，5/28 继续 -4.1%，从 $139 高点已回撤 -40%；5) Morgan Stanley 砍 PT 至 $129，多家大行降级。",
+      "keyRisks": "1) Q1 2026 收入 $15.4B miss 共识 $15.94B，连续两季 miss，市场信任崩塌；2) 净利润 -15% YoY，Non-GAAP EPS $2.53 大幅 miss 共识；3) 管理层宣布 RMB 1000 亿三年投资周期（自有品牌+供应链），利润拐点遥遥无期；4) Macquarie 降级至 Neutral PT $87，Barclays 降级至 Equalweight PT $89；5) 从 $139 高点已暴跌 ~40%，momentum 14.6/100 全场垫底。",
       "aiAngle": "不是 AI 公司。AI 在推荐算法和供应链优化有边际作用，但不是核心叙事。",
-      "growthCatalysts": "交易服务收入 +20% 仍可观；估值仍偏低（4-5x forward EV/EBITDA）；$63.2B 净现金是安全垫。",
-      "growthSignals": "Temu 亏损收窄速度、国内 GMV 增速、各国监管进展、Q2 margin 趋势、管理层投资周期何时结束。",
+      "growthCatalysts": "交易服务收入 +20% 仍可观；估值偏低（4-5x forward EV/EBITDA）；$63.2B 净现金是安全垫；共识 12 个月目标 $145.65（43 位分析师，44% Strong Buy）。",
+      "growthSignals": "Temu 亏损收窄速度、国内 GMV 增速、各国监管进展、Q2 margin 趋势、RMB 1000 亿投资周期何时见效。Q2 财报预计 8/31。",
       "judgment": {
         "positives": [
           "估值便宜：4-5x forward EV/EBITDA，~$63B 净现金",
-          "交易服务收入 +20%——Temu 变现在改善"
+          "交易服务收入 +20%——Temu 变现在改善",
+          "共识 PT $145.65 暗示 ~75% upside"
         ],
         "concerns": [
-          "⚠️ 连续两季收入 miss + 净利 -15%，从 $139 暴跌至 $83（-40%），市场信任崩塌",
-          "管理层主动进入投资周期——利润拐点遥遥无期，说白了就是撒钱不知何时回本",
-          "composite 评分 40.2/100 全场垫底，momentum 14.6/100——跌势未止"
+          "⚠️ 连续两季收入 miss + 净利 -15%，两大行降级（Macquarie/Barclays），从 $139 暴跌至 ~$83（-40%）",
+          "管理层主动选择 RMB 1000 亿投资周期——利润拐点遥遥无期，说白了就是撒钱不知何时回本",
+          "composite 评分 40.6/100 全场垫底，momentum 18.1/100——跌势未止，多头陷阱风险大"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "⚠️ PDD $83 继续下跌（-4.1%），两日累计跌幅 -14.4%。从 $139 高点回撤 -40%。20% 仓位已达 soft limit，绝不应加仓。核心问题：管理层主动选择牺牲利润搞扩张，连续两季 miss 后信任归零。composite 40.2 全场最差。巴菲特说管理层大撒钱时要警惕——这正是 PDD 现在做的事。短期不会好转，需要认真考虑止损纪律。",
-        "etfQuestion": "连续两季 miss + 利润下滑 + momentum 垫底。20% 仓位已是上限——必须认真评估是否减仓。"
+        "todayNote": "⚠️ PDD 持仓 20% 已达 soft limit。Q1 大幅 miss 后 Macquarie/Barclays 双降级。管理层公开说要花 RMB 1000 亿搞自有品牌——这不是短期阵痛，是长期利润压制。巴菲特说：管理层大撒钱时要警惕。共识 PT $145 暗示 upside 但需要利润拐点验证。核心矛盾：便宜但可能更便宜。不加仓，等 Q2 8/31 看投资周期是否有回报迹象。",
+        "etfQuestion": "连续两季 miss + 利润下滑 + momentum 垫底。20% 仓位已是上限——必须认真评估减仓纪律。"
       }
     },
     "AAPL": {
       "businessModel": "高端消费电子（iPhone/Mac/iPad）+ 服务订阅（App Store/iCloud/Music/AppleCare）。硬件卖生态入口，服务赚高利润率复利。",
       "moatEvidence": "品牌（全球最值钱之一）、20 亿+活跃设备装机量、生态转换成本极高、服务 attach rate 持续提升。Moat 92/100，watchlist 最宽。",
-      "keyRisks": "1) GF Value $263 vs 股价 $312.5 = 19% 高估；2) RSI 超买区域；3) trailing PE 37.7x 远超 5 年中值；4) 内部人持续减持。",
-      "aiAngle": "WWDC 6/8 倒计时 10 天。Siri 大改版确认：Gemini/Claude/ChatGPT 第三方 AI 可选、独立 Siri App、Extensions 框架。BofA 预计 AI 可带来 $15-30B 增量收入到 FY2030。Apple Intelligence 已开始驱动企业采购。",
-      "growthCatalysts": "WWDC 6/8 Siri AI 大改版、$100B 回购 + 股息、Q2 FY26 收入 $111.18B（+17%）beat、iPhone 17 强劲需求、Services $31B 创纪录。BofA PT $380。",
-      "growthSignals": "服务收入增速、iPhone 18 需求、AI 功能采用率、中国市场表现、Siri 改版后用户反馈。",
+      "keyRisks": "1) GF Value $263 vs 股价 ~$312 = 19% 高估；2) trailing PE 37.7x 远超 5 年中值；3) Siri 2.0 靠 Google Gemini 驱动 = 承认自研 AI 不够硬。",
+      "aiAngle": "WWDC 6/8 倒计时 7 天！Siri 2.0 大改版确认：独立 App + chatbot 界面、Gemini 驱动、ChatGPT/Claude 第三方集成、Visual Intelligence + Camera 整合、自然语言 Shortcuts。新框架 Core AI 替代 Core ML。iOS 27 将随 iPhone 18 发布。这是 Apple Intelligence 的真正起点。",
+      "growthCatalysts": "WWDC 6/8 Siri 2.0 + iOS 27 + Core AI 框架、$100B 回购 + 股息、Q2 FY26 收入 $111.18B（+17%）beat、Services $31B 创纪录、BofA PT $380。",
+      "growthSignals": "WWDC 6/8 市场反应、Siri 2.0 用户采纳率、iPhone 18 预购数据、Services 收入增速、中国市场表现。",
       "judgment": {
         "positives": [
           "Q2 FY26 超预期：收入 $111.18B（+17%），Services $31B 创纪录",
-          "WWDC Siri 大改版 + Apple Intelligence 驱动企业采购",
-          "$312.5 ATH——momentum 极强，BofA PT $380"
+          "WWDC 6/8 Siri 2.0 = 15 年来最大升级，独立 App + 第三方 AI 集成 + Visual Intelligence",
+          "Moat 92/100 + 20 亿设备装机量 + BofA PT $380"
         ],
         "concerns": [
-          "GF Value $263 vs $312.5 = 19% 高估——安全边际为零",
-          "trailing PE 37.7x——追高风险大",
-          "Siri 靠 Gemini 补强 = 承认自研 AI 不够硬"
+          "GF Value $263 vs $312 = 19% 高估——安全边际为零",
+          "Siri 2.0 核心靠 Google Gemini——承认自研 AI 不如人，长期依赖 Google 是风险",
+          "trailing PE 37.7x + momentum 95/100——追高风险极大"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "AAPL $312.5 ATH。WWDC 6/8 倒计时 10 天。Apple Intelligence 驱动企业采购是新信号。但 19% 高估 + PE 37.7x = 好公司不是好价格。巴菲特不卖但也没加。",
+        "todayNote": "WWDC 6/8 倒计时 7 天。Siri 2.0 细节已泄露：Gemini 驱动 + 独立 App + 第三方 AI 集成。这是真正的 Apple Intelligence 起点。但 19% 高估 + PE 37.7x = 好公司不是好价格。巴菲特不卖但也没加——我们也不应追高。等 WWDC 后市场消化。",
         "etfQuestion": "Moat 92/100 顶级，但 19% 高估。通过 VOO/QQQ 间接持有更安全。"
       }
     },
     "MSFT": {
       "businessModel": "企业软件（Office 365/Teams）+ Azure 云 + AI 平台（Copilot/OpenAI 合作）+ 安全 + 游戏。收入结构多元，recurring 占比极高。",
       "moatEvidence": "企业转换成本极高（Office/Azure/AD 深度嵌入几乎所有企业）、AI 分发渠道（Copilot 覆盖 2000 万+ M365 付费用户）、开发者生态。Moat 94/100——大盘科技最宽。",
-      "keyRisks": "1) FY26 capex ~$120B，投入回报需时间证明；2) 英国 CMA 反垄断调查；3) Build 6/2-3 即将到来，市场预期高。",
-      "aiAngle": "AI 年化 $37B（+123%）。Azure +40%。Q3 FY26 收入 $82.9B（+18%），EPS $4.27（+23%）。M365 Copilot 2000 万+付费用户（+250% YoY）。Build 6/2-3 将发布自研 AI 模型（coding 方向）。$1B EY 合作加速企业 AI 部署。OpenAI deal 重构：IP 权利锁定至 2032。Morningstar 给 $600 fair value。",
-      "growthCatalysts": "Build 6/2-3 发布自研 AI 模型、M365 7 月涨价 10-33%、Morningstar $600 fair value vs $427 = 40% upside。Pentagon 五年 MSFT 软件合同。Forward PE 25x 远低于 5 年中值 34x。",
-      "growthSignals": "Azure 增速（最新 +40%）、AI 收入年化（$37B）、Copilot 付费用户数（2000 万+）、M365 涨价后留存率、Build 6/2 新模型市场反应。",
+      "keyRisks": "1) FY26 capex ~$120B，投入回报需时间证明；2) 英国 CMA 反垄断调查；3) Build 6/2-3 明天开幕，预期极高——fail to impress 风险。",
+      "aiAngle": "🔥 Build 6/2-3 明天开幕！重磅预告：自研 coding AI 模型、Windows + NVIDIA N1X/RTX Spark SoC PC（Dell/HP/ASUS/Lenovo/Surface 秋季上市）、GitHub Copilot fleet mode + autopilot、Copilot 更 agentic 化、Azure AI infrastructure 强化。AI 年化 $37B（+123%）。M365 Copilot 2000 万+付费用户。5 月涨 10.4% 创年度最佳月。",
+      "growthCatalysts": "⚡ Build 6/2-3 明天！自研 AI 模型 + NVIDIA PC SoC 合作 + M365 7 月涨价 10-33%。Morningstar $600 fair value vs ~$427 = ~40% upside。Pentagon $9.7B 五年合同。Forward PE 25x 远低于 5 年中值 34x。",
+      "growthSignals": "Build 6/2 市场反应、Azure 增速（最新 +40%）、AI 收入年化（$37B）、Copilot 付费用户数、NVIDIA SoC PC 秋季销售。",
       "judgment": {
         "positives": [
-          "Morningstar $600 fair value vs $427 = ~40% discount——Mag7 里最有安全边际",
+          "Morningstar $600 fair value vs ~$427 = ~40% discount——Mag7 里最有安全边际",
           "AI 年化 $37B（+123%）+ Copilot 2000 万用户——全球最清晰的 AI 变现证据",
-          "Forward PE 25x 远低于 5 年中值 34x + Pentagon 五年合同"
+          "⚡ Build 6/2 明天：自研 AI 模型 + NVIDIA PC SoC——双重催化剂"
         ],
         "concerns": [
           "$120B FY26 capex——这是赌注不是确定性",
           "英国 CMA 反垄断调查——监管压力上升",
-          "Build 6/2 预期高——fail to impress 的风险"
+          "Build 预期已高——5 月涨 10.4%，部分 price in"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "MSFT $427（+3.5%）强势反弹。Pentagon 合同 + Build 6/2 自研 AI 模型双催化。Morningstar $600 vs $427 = 40% discount——Mag7 里最被低估的。Forward PE 25x。芒格说：好公司打折卖的时候最难买入。如果跌到 $400 以下非常值得认真考虑 3-5% 仓位。Build 6/2-3 是短期催化剂。",
+        "todayNote": "🔥 MSFT Build 明天 6/2 开幕！自研 coding AI + NVIDIA PC SoC + Copilot agentic 化。5 月涨 10.4% 但 Morningstar 仍说低估 40%。Forward PE 25x 是 Mag7 里最便宜的。芒格说好公司打折卖的时候最难买入。如果 Build 后回调到 $400 以下，非常值得认真考虑 3-5% 仓位。当前 watchlist 里最值得关注的个股。",
         "etfQuestion": "Moat 94/100 + AI 变现最清晰 + 估值最合理。Mag7 里当前最有安全边际的。"
       }
     },
     "NVDA": {
       "businessModel": "GPU 加速器 + 网络 + 系统 + CUDA 软件生态。几乎所有 AI 训练和推理都跑在 NVIDIA 硬件上。全球 AI 基础设施的收费站。",
-      "moatEvidence": "CUDA 生态锁定（开发者迁移成本极高）、性能代差领先、供应链规模。Q1 FY27 收入 $82B——AI 时代最强财报。",
-      "keyRisks": "1) 每次 beat 后预期不断抬高——$91B guide 已变成 floor；2) 出口限制导致中国收入损失；3) Zacks 降级至 Hold。",
-      "aiAngle": "Q1 FY27：收入 $82B（+85% YoY），数据中心 $75.2B（+92%），EPS $1.87（+131%）。Q2 guide $91B（±2%）。$80B 回购 + 股息 +2400%。Vera Rubin 早期需求强于 Blackwell。Jensen 预计 2026-27 芯片销售达 $1T。",
-      "growthCatalysts": "Q2 guide $91B、$80B 回购、Vera Rubin 7 月出货、毛利率 guide 75%。Tigress PT $425。",
-      "growthSignals": "数据中心收入增速、Q2 $91B 能否执行、毛利率（75% guide）、Vera Rubin 量产进展、中国出口限制演变。",
+      "moatEvidence": "CUDA 生态锁定（开发者迁移成本极高）、性能代差领先、供应链规模。Q1 FY27 收入 $81.6B——AI 时代最强财报。",
+      "keyRisks": "1) 每次 beat 后预期不断抬高——$91B guide 已变成 floor；2) 出口限制导致中国收入损失；3) GF Value $335 vs ~$211 说低估 37%，但分析师预期分歧大。",
+      "aiAngle": "🔥 Computex 2026 刚结束！重磅：N1X/RTX Spark PC 处理器（与 MSFT 合作进军 PC 市场）、Vera Rubin AI 芯片进入全面量产（首批客户 OpenAI/Anthropic/SpaceX）。Q1 FY27 数据中心 $75.2B（+92%）。Q2 guide $91B。$80B 回购 + 股息 +2400%。BofA PT 上调至 $320。",
+      "growthCatalysts": "Vera Rubin 全面量产 + N1X PC 处理器进军 PC 市场 + BofA PT $320 + AI TAM 上调至 $1.7T by 2030。Q2 guide $91B。6/4 BofA 科技大会 + 6/24 年度股东大会。",
+      "growthSignals": "Q2 $91B 能否执行、Vera Rubin 量产进展、N1X PC 秋季出货、数据中心增速、毛利率（75% guide）。",
       "judgment": {
         "positives": [
-          "Q1 收入 $82B（+85%）beat 3%——全球最强印钞机",
-          "Q2 guide $91B + $80B 回购——基本面无可挑剑",
-          "Vera Rubin 需求强于 Blackwell——下一代产品周期就绪"
+          "Computex 2026：Vera Rubin 全面量产 + 进军 PC 市场——从数据中心到端的全面扩张",
+          "GF Value $335 vs $211 = 37% 低估——如果相信 AI capex 持续",
+          "BofA PT 上调至 $320 + AI TAM $1.7T——分析师信心不减"
         ],
         "concerns": [
-          "每次 beat 后预期抬高，$91B 已变成 floor，市场要 $95B+",
-          "Zacks 降级至 Hold——部分分析师认为估值充分",
-          "出口限制 + 财报后 sell the news 盘整"
+          "$91B guide 已成 floor，市场要 $95B+——期望管理难度在加大",
+          "进军 PC 市场是新领域，执行风险未知",
+          "出口限制 + 地缘政治——政策风险不可控"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "NVDA 盘整中，财报 beat 但市场已 price in。$82B + $91B guide + $80B 回购基本面无瑕，但没惊喜。等回调到 $200 以下可认真考虑。分析师分歧大（$255-$425）。",
-        "etfQuestion": "AI 纯正度无可争议。分析师分歧大。等更明确的回调机会。"
+        "todayNote": "NVDA $211 附近。Computex 2026 Vera Rubin 量产 + PC 芯片是大新闻。GF 说低估 37%，BofA 上调 PT 至 $320。但基本面虽无瑕，估值分歧大。等 6/4 BofA 科技大会更多信息。AI 纯正度无人能及。",
+        "etfQuestion": "AI 纯正度无可争议。GF 说低估 37%。等回调到更有安全边际的价格。"
       }
     },
     "TSLA": {
@@ -216,39 +217,39 @@
           "PE 400x+ 定价了 Robotaxi 成功但数据说还很远"
         ],
         "actionContext": "Not attractive",
-        "todayNote": "Robotaxi 核心假设被动摇：车队缩减、碰撞率上升、HW3 不够用。PE 400x+ 不在我们的能力圈。芒格和巴菲特会说：远离。",
+        "todayNote": "Robotaxi 核心假设被动摇：车队缩减、碰撞率上升、HW3 不够用。PE 400x+ 不在我们的能力圈。芒格和巴菲特会说：远离。Risk 评分 34.9/100——波动极端。",
         "etfQuestion": "PE 400x + Robotaxi 缩减 + 碰撞率 4x 人类 = 不在我们的能力圈。"
       }
     },
     "GOOGL": {
       "businessModel": "搜索广告（核心现金牛 ~80%）+ YouTube + Google Cloud + Android + AI 产品（Gemini/Waymo）。",
       "moatEvidence": "搜索分发垄断、YouTube 网络效应、数据规模、AI 人才密度全球顶级、Cloud +63% 增速最快。Moat 88/100。",
-      "keyRisks": "1) Capex 翻倍至 Q1 $35.7B，全年 $180-190B guidance——FCF 下降 46.6% YoY；2) 反垄断审判悬而未决；3) ATH $402.6 后回调中。",
-      "aiAngle": "Google I/O 2026 发布 Gemini 3.5 Flash 为默认模型、Search 大改版、Universal Cart。Gemini 驱动新版 Apple Siri——进入 20 亿+ Apple 设备。Cloud +63% 首破 $20B/季，backlog $462B（翻倍）。Capex 全年 $180-190B + 2027 更高——all-in AI 基础设施。",
-      "growthCatalysts": "Gemini 驱动 Siri = 超级分发渠道、Cloud +63% 持续加速、backlog $462B、Google I/O Search 改版。分析师中值 $422.5。",
+      "keyRisks": "1) Capex 翻倍至 Q1 $35.7B，全年 $180-190B——FCF 下降 46.6% YoY；2) 反垄断审判悬而未决；3) Momentum 100/100 意味着部分已 price in。",
+      "aiAngle": "Gemini 驱动 Apple Siri 2.0——进入 20 亿+ Apple 设备。WWDC 6/8 确认 Siri 核心用 Gemini。Cloud +63% 首破 $20B/季，backlog $462B。Google I/O 发布 Gemini 3.5 Flash。Capex 全年 $180-190B all-in AI。",
+      "growthCatalysts": "🔥 Gemini 驱动 Siri 2.0 = 史上最大分发渠道（20 亿 Apple 设备）、Cloud +63% 持续加速、backlog $462B、分析师中值 $422.5。",
       "growthSignals": "搜索份额和收入增速、Cloud 增速和利润率、Gemini-Siri 整合后 API 调用量、AI capex ROI。",
       "judgment": {
         "positives": [
-          "Q1 收入 $109.9B（+22%），EPS $5.11 近翻倍——执行力强",
-          "Cloud +63% backlog $462B——企业 AI 需求爆发",
-          "Gemini 驱动 Siri 进入 20 亿 Apple 设备——超级分发"
+          "Gemini 驱动 Siri 2.0 进入 20 亿 Apple 设备——前所未有的分发渠道",
+          "Q1 收入 $109.9B（+22%），Cloud +63% backlog $462B",
+          "Momentum 100/100——市场在投票"
         ],
         "concerns": [
-          "Capex $35.7B 翻倍，FCF -46.6%——投入产出比待验证",
+          "Capex $35.7B 翻倍，FCF -46.6%——巴菲特会皱眉",
           "反垄断审判悬而未决——结构性不确定性",
-          "ATH $402.6 后回调，股东大会 6/5 前可能有波动"
+          "Momentum 100 = 已被大幅追捧，回调风险高"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "GOOGL 从 ATH $402.6 回调中。Google I/O 展示 Gemini 3.5 Flash + Search 改版——AI 产品力在提升。但 capex $180-190B + FCF -46.6% 是巴菲特红线。Gemini-Siri 是长期催化剂。等回调更深再考虑。",
+        "todayNote": "GOOGL 的 Gemini-Siri 故事越来越清晰——WWDC 6/8 将正式确认。这可能是 GOOGL 历史上最重要的分发 deal。但 capex $180-190B + FCF -46.6% 是巴菲特红线。等回调再考虑。",
         "etfQuestion": "Cloud +63% + Gemini-Siri 是催化剂。但 capex 太重 + 反垄断 = 等回调。"
       }
     },
     "AMD": {
       "businessModel": "CPU（x86 PC/服务器）+ GPU（AI 加速器 MI 系列）+ FPGA/嵌入式。数据中心是增长引擎，AI GPU 是叙事核心。",
       "moatEvidence": "x86 生态、台积电供应链深度协同、MI 系列是 NVDA 唯一有规模的 AI GPU 竞争者。但 CUDA 生态差距是结构性劣势。",
-      "keyRisks": "1) NVDA $75.2B 数据中心 vs AMD $5.8B——差距 13 倍；2) CUDA 生态锁定短期无解；3) GF Value $228 vs 股价严重高估。",
+      "keyRisks": "1) NVDA $75.2B 数据中心 vs AMD $5.8B——差距 13 倍；2) CUDA 生态锁定短期无解；3) Risk 评分 16.5/100——波动极端。",
       "aiAngle": "MI450 用台积电 2nm 加速量产。Data Center +57% YoY，server CPU 市占 46.2% 创纪录。ARK 持续加仓至 7.5%。",
-      "growthCatalysts": "AMD 创 52 周新高（+3.2%）。Goldman Buy + MI450 TSMC 2nm + server CPU 市占 46.2%。",
+      "growthCatalysts": "Momentum 100/100 创 52 周新高。Goldman Buy + MI450 TSMC 2nm + server CPU 市占 46.2%。",
       "growthSignals": "数据中心 GPU 收入增速、MI 系列客户数量、server CPU 市占趋势。",
       "judgment": {
         "positives": [
@@ -259,56 +260,56 @@
         "concerns": [
           "NVDA $75.2B vs AMD $5.8B 数据中心——差距 13 倍且在扩大",
           "CUDA 生态差距是结构性劣势",
-          "GF Value 严重高估——追高风险大"
+          "Risk 16.5/100——极端波动，回调可能猛烈"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "AMD 创 52 周新高（+3.2%），server CPU 46.2% 市占创纪录。增长不错但被 NVDA 完全遮盖。GF Value 说严重高估——追高不明智。",
+        "todayNote": "AMD 创 52 周新高，server CPU 46.2% 市占创纪录。增长不错但被 NVDA 完全遮盖。Risk 16.5 = 波动极端，追高不明智。",
         "etfQuestion": "增长快但 moat 不够宽。CUDA 生态差距不会因制程进步解决。"
       }
     },
     "AVGO": {
       "businessModel": "网络芯片（数据中心交换/路由）+ 定制 ASIC（Google TPU/Meta MTAI/OpenAI）+ 基础设施软件（VMware）。并购整合大师。",
-      "moatEvidence": "高端网络芯片客户关系深厚、定制 ASIC 切换成本高（~70% 市场份额）、VMware 软件现金流稳定。新增 OpenAI/Meta 多年定制芯片合作。",
-      "keyRisks": "1) PE ~80x + GF 43.9% 高估；2) 大客户集中（Google/Meta/OpenAI）；3) ⚡ 6/3 财报前估值已拉伸。",
-      "aiAngle": "AI 半导体收入 Q1 翻倍 YoY。CEO 重申 2027 AI 销售超 $1000 亿。Citi 2026 top semiconductor pick。$125M UCLA AI 芯片研究实验室。",
-      "growthCatalysts": "⚡ 6/3 Q2 财报！共识 EPS $2.40/$22.04B 收入。Citi top pick。OpenAI/Meta 多年合作。期权定价 ±7.5%。",
-      "growthSignals": "AI 半导体收入增速、定制芯片客户数、VMware 利润率。",
+      "moatEvidence": "高端网络芯片客户关系深厚、定制 ASIC 切换成本高（~70% 市场份额）、VMware 软件现金流稳定。新增 OpenAI/Meta/Apple 多年定制芯片合作。",
+      "keyRisks": "1) PE ~80x + GF 43.9% 高估；2) 大客户集中（Google/Meta/OpenAI/Apple）；3) ⚡ 6/3 后天财报——二元事件。",
+      "aiAngle": "⚡ Q2 FY26 财报 6/3 后天发布！共识 EPS $2.40/$22.11B 收入。AI 收入预计 $10.7B（+140% YoY）。Q1 AI 收入 $8.4B（+106%）。管理层 guide Q2 +47% YoY 至 $22B。客户包括 Google/Meta/Apple——hyperscaler 定制芯片需求爆发。",
+      "growthCatalysts": "⚡ 6/3 Q2 财报！共识 $2.40/$22.11B。AI 收入 $10.7B（+140%）预期。OpenAI/Meta/Apple 多年合作。",
+      "growthSignals": "6/3 财报 AI 收入增速、定制芯片客户数和 ASP、VMware 利润率、管理层 Q3 guidance。",
       "judgment": {
         "positives": [
-          "~70% 定制 AI 加速器市场份额",
-          "Citi 2026 top semiconductor pick + OpenAI/Meta 多年合作",
-          "Q1 AI 半导体翻倍——增速惊人"
+          "~70% 定制 AI 加速器市场份额——护城河极深",
+          "AI 收入预计 +140% YoY 至 $10.7B——增速惊人",
+          "客户包括 Google/Meta/Apple/OpenAI——最核心的 hyperscaler"
         ],
         "concerns": [
-          "43.9% GF 高估、PE ~80x——估值已反映乐观预期",
-          "大客户集中风险不可忽视",
-          "6/3 财报前估值拉伸，期权定价 ±7.5%——二元事件"
+          "43.9% GF 高估、PE ~80x——估值已反映最乐观预期",
+          "6/3 财报是二元事件——beat 不够大可能 sell the news",
+          "大客户集中风险不可忽视"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "⚡ 6/3 财报倒计时 5 天。等财报后再评估。43.9% GF 高估 + PE 80x = 安全边际不足。Citi top pick 但 GF 说高估——分歧巨大。",
-        "etfQuestion": "AI 基础设施独特角度。估值太贵需要等回调或财报催化后再定夺。"
+        "todayNote": "⚡ AVGO 6/3 后天财报！这是本周除 Build/WWDC 外最大催化剂。AI 收入 +140% 预期极高。43.9% GF 高估但如果 AI 加速超预期估值可以重估。等财报后再定夺——不在事件前博弈。",
+        "etfQuestion": "AI 基础设施独特角度。估值太贵需要等财报后再评估。"
       }
     },
     "TSM": {
       "businessModel": "全球最大晶圆代工厂。几乎所有 AI 芯片都由台积电制造。半导体供应链的绝对核心。",
       "moatEvidence": "先进制程技术垄断（3nm/2nm 量产领先）、资本壁垒（$52-56B capex）、规模效应。",
       "keyRisks": "1) GF 43.1% 高估；2) 台海地缘政治——唯一完全无法量化的风险；3) Arizona fab 可能稀释毛利率。",
-      "aiAngle": "AI 芯片供应链绝对核心。NVDA Q2 $91B + AMD MI450 2nm = 更多先进制程需求。",
-      "growthCatalysts": "NVDA Q2 guide $91B 直接利好、AMD 2nm 加速量产、2026 增长 >30% guidance。",
+      "aiAngle": "AI 芯片供应链绝对核心。NVDA Vera Rubin 全面量产 + AMD MI450 2nm = 更多先进制程需求。",
+      "growthCatalysts": "NVDA Q2 guide $91B 直接利好、AMD 2nm 加速量产、2026 增长 >30% guidance。Momentum 96/100。",
       "growthSignals": "月度营收趋势、先进制程收入占比、毛利率（Q1 66.2% 创纪录）、2nm 量产进展。",
       "judgment": {
         "positives": [
           "没有 TSM 就没有 AI 芯片——需求验证最直接",
           "Q1 收入 $30.65B（+35%），毛利率 66.2% 创纪录",
-          "2030 半导体市场上调至 $1.5T+"
+          "Momentum 96/100——强势趋势"
         ],
         "concerns": [
-          "43.1% 高估，PE 34.8x 远超 5 年中值 22.78x",
+          "43.1% 高估，PE 远超 5 年中值",
           "台海地缘风险——唯一完全无法量化的风险",
           "Arizona fab ramp-up 可能稀释毛利率"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "技术垄断毫无争议。但 43% 高估 + 台海风险 = 安全边际不足。等更好价格。",
+        "todayNote": "技术垄断毫无争议。NVDA Vera Rubin 量产确认直接利好。但 43% 高估 + 台海风险 = 安全边际不足。等更好价格。",
         "etfQuestion": "Fundamentals 无敌但 43% 高估 + 台海风险让安全边际不足。"
       }
     },
@@ -316,14 +317,14 @@
       "businessModel": "半导体光刻设备垄断供应商。EUV/High-NA 设备是先进芯片制造的必备工具。全球唯一供应商。",
       "moatEvidence": "技术垄断：全球 90% 光刻系统市场份额，EUV 100% 垄断。没有 ASML 就没有先进芯片。",
       "keyRisks": "1) GF 40.5% 高估；2) High-NA 采纳速度不确定；3) 出口限制影响中国订单。",
-      "aiAngle": "AI 芯片制造上游关键设备。NVDA $91B → TSM/Intel 扩产 → ASML 设备需求。2026 展望上调至 €36-40B。",
-      "growthCatalysts": "UBS €1900 目标（+50%）、2026 展望上调至 €36-40B、Goldman €1600。",
+      "aiAngle": "AI 芯片制造上游关键设备。NVDA Vera Rubin 量产 → TSM/Intel 扩产 → ASML 设备需求。2026 展望上调至 €36-40B。",
+      "growthCatalysts": "UBS €1900 目标（+50%）、2026 展望上调至 €36-40B、Goldman €1600。Momentum 100/100。",
       "growthSignals": "新订单量和 backlog、毛利率、出口政策变化、High-NA 采纳进展。",
       "judgment": {
         "positives": [
           "UBS €1900 目标（+50%），欧洲半导体首选",
           "2026 收入展望上调至 €36-40B",
-          "NVDA 财报确认 AI capex 加速 → 需求链条清晰"
+          "NVDA Vera Rubin 量产确认 AI capex 加速 → 需求链条清晰"
         ],
         "concerns": [
           "40.5% 高估——垄断溢价已经很高",
@@ -331,7 +332,7 @@
           "出口限制不可控"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "垄断地位无可争议但 40.5% 高估。等半导体周期回调。",
+        "todayNote": "垄断地位无可争议但 40.5% 高估。Momentum 100 但追高风险大。等半导体周期回调。",
         "etfQuestion": "垄断中的垄断，但 40.5% 高估。安全边际不足。"
       }
     },
@@ -340,18 +341,18 @@
       "moatEvidence": "物流网络（全球最大）、AWS 客户黏性、Prime 2 亿+会员、广告数据资产。规模 moat 极宽。",
       "keyRisks": "1) 2026 capex $200B + Q1 负 FCF；2) 关税退款集体诉讼；3) Google Cloud +63% vs AWS +28%——竞争压力加大。",
       "aiAngle": "AWS +28% 最快 15 季增速。自研 Trainium + 100 万 NVIDIA GPU。AWS backlog $364B + Anthropic $100B deal。",
-      "growthCatalysts": "AWS $364B backlog、广告 TTM $70B、Q2 guide $194-199B（+16-19%）。DCF intrinsic $398 vs $266 = 33% 低估。",
+      "growthCatalysts": "AWS $364B backlog、广告 TTM $70B、Q2 guide $194-199B（+16-19%）。DCF intrinsic $398 vs ~$266 = 33% 低估。",
       "growthSignals": "AWS 增速和利润率、广告收入增速、FCF 趋势、capex 回报。",
       "judgment": {
         "positives": [
           "Q1 收入 $181.5B（+17%），AWS $37.6B（+28% 最快 15 季）",
-          "DCF intrinsic $398 vs $266 = 33% 低估",
+          "DCF intrinsic $398 vs ~$266 = 33% 低估",
           "广告 TTM $70B——高利润率新引擎"
         ],
         "concerns": [
           "$200B capex + Q1 负 FCF——巴菲特会皱眉",
           "Google Cloud +63% vs AWS +28%——竞争在加速",
-          "税务争议——政治风险"
+          "Momentum 82.4/100 不是最强"
         ],
         "actionContext": "Continue observing",
         "todayNote": "AWS + 广告双引擎强劲。DCF 说低估 33%。但 $200B capex + 负 FCF 是核心矛盾。观察 Q2 FCF 能否转正。",
@@ -361,9 +362,9 @@
     "ORCL": {
       "businessModel": "数据库（Oracle DB）+ 企业软件 + 云基础设施（OCI）+ AI 云服务。OpenAI $300B 基础设施合作伙伴。",
       "moatEvidence": "Oracle DB 替换成本极高——企业核心系统级别的锁定。OCI +44%。backlog $553B。",
-      "keyRisks": "1) FCF 历史上为负——巴菲特的红线；2) 云三巨头竞争太强；3) Risk 评分仅 1.9/100——volatility 极端。",
+      "keyRisks": "1) FCF 历史上为负——巴菲特的红线；2) 云三巨头竞争太强；3) Risk 评分仅 1.0/100——volatility 极端，全场最差。",
       "aiAngle": "OCI 云增速 +44%，AI backlog $553B。$300B OpenAI 合作是叙事改变者。FY2027 $90B guidance。",
-      "growthCatalysts": "OpenAI $300B 合作、backlog $553B、Wedbush $275、NetSuite AI。",
+      "growthCatalysts": "OpenAI $300B 合作、backlog $553B、Wedbush $275、NetSuite AI。Momentum 100/100。",
       "growthSignals": "OCI 增速、RPO/backlog 转化率、FCF 何时转正。",
       "judgment": {
         "positives": [
@@ -373,19 +374,19 @@
         ],
         "concerns": [
           "FCF 为负——巴菲特的红线",
-          "Risk 评分 1.9/100——极端波动",
-          "Cloud 三巨头竞争太强"
+          "Risk 评分 1.0/100——全场最差，极端波动",
+          "Cloud 三巨头竞争太强，backlog 转化率存疑"
         ],
         "actionContext": "Not attractive",
-        "todayNote": "backlog $553B 给了长期可见度。但 FCF 为负 + risk 评分 1.9 = 风险回报不对称。等 FCF 转正证据。",
+        "todayNote": "backlog $553B 给了长期可见度。但 FCF 为负 + risk 1.0/100 全场最差 = 风险回报不对称。不在我们的舒适区。",
         "etfQuestion": "OpenAI 合作改变叙事，但 FCF 为负 + 极端波动让它不在我们的舒适区。"
       }
     },
     "PLTR": {
       "businessModel": "政府和企业数据平台。Gotham（政府 intel）+ Foundry（企业）+ AIP（AI 平台）。深度嵌入客户数据工作流。",
       "moatEvidence": "高切换成本、政府安全资质壁垒、AIP 企业 AI 采纳加速。Maven AI 获 Pentagon 'program of record'。",
-      "keyRisks": "1) 从峰值 $206 跌 34% 至 $136——市场开始定价风险；2) Forward PE 92x、P/S 100x+——极端估值；3) CEO + 高管密集减持 + SBC 上升。",
-      "aiAngle": "Q1 收入 $1.63B（+85%）beat。EPS $0.33（+154%）beat。全年 guidance $7.65B vs 共识 $7.27B。Maven 成 Pentagon 正式项目。CEO 称 7 个销售做 7000 人的活。",
+      "keyRisks": "1) 从峰值 $206 跌 34% 至 ~$136——市场在重新定价；2) Forward PE 92x、P/S 100x+——极端估值；3) CEO + 高管密集减持 + SBC 上升。",
+      "aiAngle": "Q1 收入 $1.63B（+85%）beat。EPS $0.33（+154%）beat。全年 guidance $7.65B vs 共识 $7.27B。Maven 成 Pentagon 正式项目。",
       "growthCatalysts": "全年 guidance $7.65B 上调、Maven 成 program of record、DHS/USDA 新合同。",
       "growthSignals": "商业客户数增速、deal value、US commercial 增速、政府合同续约率。",
       "judgment": {
@@ -395,7 +396,7 @@
           "全年 guidance $7.65B 远超共识"
         ],
         "concerns": [
-          "从 $206 跌至 $136（-34%）——市场在重新定价",
+          "从 $206 跌至 ~$136（-34%）——市场在重新定价",
           "Forward PE 92x、P/S 100x+——芒格说的好公司买太贵",
           "CEO + 高管密集减持——最大红旗"
         ],
@@ -407,9 +408,9 @@
     "NOW": {
       "businessModel": "企业 IT 工作流平台（ITSM/ITOM/HR/CSM），SaaS 订阅模式，续约率 ~97-98%。Now Assist AI 是增长加速器。",
       "moatEvidence": "企业流程深度嵌入、平台扩展能力强、高续约率。GF Score 78/100，Growth Rank 10/10。",
-      "keyRisks": "1) PE 54.3x 高估；2) 内部人持续减持；3) 部分分析师下调 PT。",
+      "keyRisks": "1) PE 54.3x 高估；2) 内部人持续减持；3) Risk 评分 16.8/100——波动偏大。",
       "aiAngle": "Now Assist AI ACV 目标 $1.5B（从 $750M 翻倍）。AI Control Tower 是企业 AI 编排独特定位。",
-      "growthCatalysts": "Now Assist ACV $750M → $1.5B 翻倍目标、Q1 EPS $0.97 on $3.77B（+22%）。",
+      "growthCatalysts": "Now Assist ACV $750M → $1.5B 翻倍目标、Q1 EPS $0.97 on $3.77B（+22%）。Momentum 97.8/100。",
       "growthSignals": "订阅收入增速（+22%）、Now Assist ACV 翻倍进展、经营利润率改善。",
       "judgment": {
         "positives": [
@@ -419,37 +420,37 @@
         ],
         "concerns": [
           "PE 54.3x + 内部人持续减持——估值和信号不匹配",
-          "增收不增利——需要利润率拐点证据",
-          "Risk 评分 19.2/100——波动偏大"
+          "Risk 16.8/100——波动偏大",
+          "增收不增利——需要利润率拐点证据"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "好公司但增长质量存疑。PE 54x + 内部人卖出让人犹豫。需要利润率拐点。",
+        "todayNote": "好公司但 PE 54x + 内部人卖出让人犹豫。Momentum 97.8 极强但追高不明智。需要利润率拐点。",
         "etfQuestion": "好公司但增长质量存疑。需要利润率拐点才能说它比 QQQ 好。"
       }
     },
     "CRM": {
       "businessModel": "CRM 软件市场份额第一（Sales/Service/Marketing Cloud）+ 数据云 + AI（Agentforce/Einstein）。SaaS 订阅模式。",
       "moatEvidence": "CRM 市场份额第一、客户数据资产、AppExchange 生态、高转换成本。Agentforce 渗透率加速。",
-      "keyRisks": "1) Informatica 并购整合风险；2) 收入增速仍只有 13%（含 Informatica $444M）；3) YTD 曾跌 -32%。",
-      "aiAngle": "⚡ Q1 FY27 5/27 盘后大超预期！Non-GAAP EPS $3.88（+50%，beat $3.13 by $0.75）。收入 $11.13B（+13.3%，beat $11.05B）。Agentforce ARR $1.2B（+205%）。AI+Data ARR $3.4B（+200%）。3.8B Agentic Work Units delivered。$25B ASR（史上最大回购）。FY27 guidance 上调至 $45.9-46.2B。GAAP EPS $2.42（+52%）。FCF $6.6B 强劲。BTIG Buy $255。GF Value $308.86 vs $177.51。收购 Momentum（AI 销售教练）。5/28 宣布分季度股息 $0.04。",
-      "growthCatalysts": "Agentforce ARR $1.2B（+205%）——从概念到 $1.2B 速度惊人。$25B ASR + FCF $6.6B。FY27 guidance 上调。GF Value $308.86 暗示 74% upside。",
+      "keyRisks": "1) Informatica 并购整合风险；2) 收入增速仍只有 13%（含 Informatica $444M）；3) Momentum 48.9/100 偏弱。",
+      "aiAngle": "⚡ Q1 FY27 5/27 盘后大超预期！Non-GAAP EPS $3.88（+50%，beat 共识 $0.75）。收入 $11.13B（+13.3%，beat $11.05B）。Agentforce ARR $1.2B（+205%）。AI+Data ARR $3.4B（+200%）。3.8B Agentic Work Units delivered。$25B ASR（史上最大回购）。FCF $6.6B。",
+      "growthCatalysts": "Agentforce ARR $1.2B（+205%）、$25B ASR + FCF $6.6B、FY27 guidance 上调至 $45.9-46.2B、GF Value $308.86 暗示 74% upside。",
       "growthSignals": "Agentforce ARR 增速和渗透率、cRPO 增速、经营利润率趋势、Informatica 整合进展、收入增速能否从 13% 加速。",
       "judgment": {
         "positives": [
           "⚡ Q1 大超预期：EPS $3.88（+50%），beat 共识 $0.75——执行力证明",
           "Agentforce ARR $1.2B（+205%）——AI 变现从概念到规模的速度惊人",
-          "GF Value $308.86 vs ~$177 = 74% upside + $25B ASR + FCF $6.6B 强劲"
+          "GF Value $308.86 vs ~$177 = 74% upside + $25B ASR + FCF $6.6B"
         ],
         "concerns": [
           "收入 +13% 增速偏低——Informatica 贡献 $444M 拉高了基数",
-          "YTD 曾跌 -32%，市场对 CRM 的耐心不多",
-          "Agentforce $1.2B ARR vs $11B 季度收入——占比仍小"
+          "Momentum 48.9/100 偏弱——市场对 CRM 的耐心不多",
+          "Agentforce $1.2B ARR vs $11B 季度收入——占比仍小，需要验证持续性"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "⚡ CRM Q1 5/27 盘后大超预期！EPS beat $0.75，Agentforce ARR $1.2B（+205%），$25B ASR 史上最大回购，FCF $6.6B。GF 说低估 74%——这次财报给了实证。YTD -32% 后的强力反击。今天的开盘反应是关键——如果市场认可，跌幅开始回补。巴菲特会注意到 FCF $6.6B + $25B 回购。最大问号：收入增速 13% 能否加速？如果 Agentforce 继续 3 位数增长，答案是 yes。",
+        "todayNote": "CRM Q1 大超预期后市场反应是关键。Agentforce $1.2B ARR（+205%）证明 AI agent 叙事有实质。GF 说低估 74%。但收入增速 13% 是隐忧。如果 Agentforce 持续 3 位数增长 + 收入增速加速，可能是被低估的 AI 标的。观察盘后走势和 Agentforce 下季趋势。",
         "etfQuestion": "Agentforce $1.2B ARR + FCF $6.6B 证明 value disconnect。最大问号是收入增速能否从 13% 加速。"
       }
     }
   },
-  "agentInsightsDate": "2026-05-29T12:30:00.000Z"
+  "agentInsightsDate": "2026-06-01T12:30:00.000Z"
 }
