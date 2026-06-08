@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-05T12:37:50.327500+00:00",
-  "generatedAtLocal": "2026-06-05 20:37:50 CST",
+  "generatedAt": "2026-06-08T12:17:23.870915+00:00",
+  "generatedAtLocal": "2026-06-08 20:17:23 CST",
   "sources": {
     "secCompanyFacts": "https://www.sec.gov/edgar/sec-api-documentation",
     "notes": "Financials from SEC EDGAR. Qualitative analysis in agent-insights.json."
@@ -16,10 +16,10 @@
           "source": "行情 chart 数据 + 本地配置"
         },
         "expenseRatioPct": 0.0945,
-        "return1mPct": 4.603673325098279,
-        "return3mPct": 12.598533769221799,
-        "return1yPct": 27.66040678509645,
-        "volatilityPct": 11.88219409199939,
+        "return1mPct": 0.5069253936868634,
+        "return3mPct": 8.739877416767872,
+        "return1yPct": 23.101440357934912,
+        "volatilityPct": 12.146694294284854,
         "maxDrawdownPct": -9.133132097249053
       },
       "businessModel": "S&P 500 ETF，跟踪美国最大 500 家公司，费率 0.0945%，全球流动性最佳的 ETF。",
@@ -52,10 +52,10 @@
           "source": "行情 chart 数据 + 本地配置"
         },
         "expenseRatioPct": 0.2,
-        "return1mPct": 8.655976477452686,
-        "return3mPct": 23.486450246196334,
-        "return1yPct": 41.125024554675015,
-        "volatilityPct": 15.961411237839354,
+        "return1mPct": 1.3352081530622062,
+        "return3mPct": 16.009606790432173,
+        "return1yPct": 33.05027556927045,
+        "volatilityPct": 16.692942949309153,
         "maxDrawdownPct": -12.1883680975564
       },
       "businessModel": "纳斯达克 100 ETF，科技/成长权重高，前 10 占比超 50%，费率 0.20%。",
@@ -88,10 +88,10 @@
           "source": "行情 chart 数据 + 本地配置"
         },
         "expenseRatioPct": 0.03,
-        "return1mPct": 4.623479682852039,
-        "return3mPct": 12.552755494106659,
-        "return1yPct": 27.69633698382723,
-        "volatilityPct": 11.863816841275801,
+        "return1mPct": 0.49506818077573733,
+        "return3mPct": 8.688684396867853,
+        "return1yPct": 23.124983304723678,
+        "volatilityPct": 12.1321934095706,
         "maxDrawdownPct": -9.187121839889823
       },
       "businessModel": "Vanguard S&P 500 ETF，费率仅 0.03%，和 SPY 跟踪同一指数但成本低 3 倍。",
@@ -124,10 +124,10 @@
           "source": "行情 chart 数据 + 本地配置"
         },
         "expenseRatioPct": 0.03,
-        "return1mPct": 4.591169247540239,
-        "return3mPct": 12.66407192206962,
-        "return1yPct": 27.992596777870183,
-        "volatilityPct": 12.22849483040011,
+        "return1mPct": 0.42005736825894147,
+        "return3mPct": 8.705278870940901,
+        "return1yPct": 23.12957810212759,
+        "volatilityPct": 12.496092457431487,
         "maxDrawdownPct": -9.20266768110406
       },
       "businessModel": "Vanguard 全美股票市场 ETF，覆盖大中小盘约 4000 只股票，费率 0.03%。一只 ETF 买下整个美国。",
@@ -160,10 +160,10 @@
           "source": "行情 chart 数据 + 本地配置"
         },
         "expenseRatioPct": 0.09,
-        "return1mPct": -0.009952705654425742,
-        "return3mPct": 0.0,
-        "return1yPct": 0.0,
-        "volatilityPct": 1.0825467734473335,
+        "return1mPct": 0.00995072340999048,
+        "return3mPct": -0.00995633717063571,
+        "return1yPct": 0.00995072340999048,
+        "volatilityPct": 1.0804167182288524,
         "maxDrawdownPct": -0.4566201054468033
       },
       "businessModel": "iShares 0-3 个月美国国债 ETF，费率 0.09%。本质是美元现金停车场，波动接近于零。",
