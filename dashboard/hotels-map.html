@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>年度精品民宿地图</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #fff; }
+  #map { width: 100vw; height: 100vh; }
+
+  .info-panel {
+    position: fixed; top: 16px; left: 16px;
+    background: rgba(10,10,10,0.92); backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.1); border-radius: 16px;
+    padding: 20px; z-index: 1000; max-width: 300px;
+  }
+  .info-panel h1 {
+    font-size: 18px; font-weight: 700; margin-bottom: 4px;
+    background: linear-gradient(135deg, #f0c27f, #fc5c7d);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .info-panel .subtitle { font-size: 12px; color: rgba(255,255,255,0.5); margin-bottom: 12px; }
+  .info-panel .stats { display: flex; gap: 16px; }
+  .stat-item { text-align: center; }
+  .stat-num { font-size: 24px; font-weight: 700; color: #fc5c7d; }
+  .stat-label { font-size: 11px; color: rgba(255,255,255,0.4); }
+
+  .legend {
+    position: fixed; bottom: 16px; left: 16px;
+    background: rgba(10,10,10,0.92); backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.1); border-radius: 12px;
+    padding: 12px 16px; z-index: 1000;
+    display: flex; flex-wrap: wrap; gap: 6px; max-width: 90vw;
+  }
+  .legend-item {
+    display: flex; align-items: center; gap: 4px;
+    font-size: 11px; color: rgba(255,255,255,0.7);
+    cursor: pointer; padding: 2px 8px; border-radius: 20px; transition: all 0.2s;
+  }
+  .legend-item:hover { background: rgba(255,255,255,0.1); }
+  .legend-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+  .leaflet-popup-content-wrapper {
+    background: rgba(15,15,15,0.95) !important;
+    border: 1px solid rgba(255,255,255,0.15) !important;
+    border-radius: 12px !important; box-shadow: 0 8px 32px rgba(0,0,0,0.5) !important;
+  }
+  .leaflet-popup-tip { background: rgba(15,15,15,0.95) !important; }
+  .leaflet-popup-content { margin: 12px 16px !important; }
+  .hotel-name { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 4px; }
+  .hotel-region { font-size: 12px; color: rgba(255,255,255,0.5); margin-bottom: 8px; }
+  .hotel-link {
+    display: inline-block; font-size: 12px; color: #fc5c7d; text-decoration: none;
+    padding: 4px 12px; border: 1px solid rgba(252,92,125,0.3); border-radius: 20px; transition: all 0.2s;
+  }
+  .hotel-link:hover { background: rgba(252,92,125,0.15); }
+  .no-link { font-size: 11px; color: rgba(255,255,255,0.3); }
+</style>
+</head>
+<body>
+<div id="map"></div>
+
+<div class="info-panel">
+  <h1>🏡 年度精品民宿榜</h1>
+  <div class="subtitle">旷行天地 · 2026</div>
+  <div class="stats">
+    <div class="stat-item"><div class="stat-num" id="total-count">0</div><div class="stat-label">民宿总数</div></div>
+    <div class="stat-item"><div class="stat-num" id="region-count">0</div><div class="stat-label">覆盖地区</div></div>
+  </div>
+</div>
+
+<div class="legend" id="legend"></div>
+
+<script>
+const regionColors = {
+  '四川/阿坝/稻城':'#FF6B6B','云南·大理':'#4ECDC4','云南·西双版纳':'#45B7D1',
+  '云南·泸沽湖':'#96CEB4','云南·梅里':'#88D8B0','云南·其他':'#2ECC71',
+  '广西':'#E74C3C','浙江·仙居':'#9B59B6','浙江·莫干山':'#8E44AD',
+  '浙江·松阳':'#A569BD','浙江·宁波':'#BB8FCE','浙江·遂昌':'#7D3C98',
+  '浙江·其他':'#6C3483','贵州':'#F39C12','安徽/黄山':'#E67E22',
+  '海南':'#1ABC9C','新疆':'#3498DB','重庆':'#E74C3C','金华':'#D35400',
+  '甘肃/敦煌':'#F1C40F','福建':'#16A085','江西':'#27AE60','苏州':'#2980B9',
+  '山东':'#8E44AD','广东':'#C0392B','西藏':'#2C3E50','吉林/长白山':'#5DADE2',
+  '杭州':'#AF7AC5','临海':'#85C1E9','草原':'#52BE80','沙漠':'#F5B041',
+  '江南':'#48C9B0','汉江':'#5499C7',
+};
+
+const hotels = [
+  {name:'AZARA游牧·阿坝达仓',region:'四川/阿坝/稻城',lat:32.90,lng:101.70,link:'https://hotels.ctrip.com/hotel/132018155.html'},
+  {name:'UHAKO·入火星露营·日松贡布露营地',region:'四川/阿坝/稻城',lat:29.03,lng:100.30},
+  {name:'千寻星野民宿露营地·稻城',region:'四川/阿坝/稻城',lat:29.05,lng:100.35},
+  {name:'大理叁9958海景酒店',region:'云南·大理',lat:25.60,lng:100.16},
+  {name:'大理ANIOY安伫海景酒店',region:'云南·大理',lat:25.62,lng:100.18},
+  {name:'大理隐遇苍洱海景酒店',region:'云南·大理',lat:25.58,lng:100.14},
+  {name:'浦见民宿·大理古城',region:'云南·大理',lat:25.69,lng:100.16},
+  {name:'一茗民宿·大理古城店',region:'云南·大理',lat:25.70,lng:100.17},
+  {name:'MELIE橘（西双版纳店）',region:'云南·西双版纳',lat:22.00,lng:100.80,link:'https://hotels.ctrip.com/hotel/23054609.html'},
+  {name:'西双版纳星源·雨林下Villa',region:'云南·西双版纳',lat:21.98,lng:100.78},
+  {name:'曼听余居',region:'云南·西双版纳',lat:21.99,lng:100.79},
+  {name:'沪沽湖玉兰·磨房度假酒店',region:'云南·泸沽湖',lat:27.71,lng:100.78},
+  {name:'请来·梅里',region:'云南·梅里',lat:28.44,lng:98.76},
+  {name:'墨轩·冰晶顶人文度假酒店',region:'云南·其他',lat:25.05,lng:102.68},
+  {name:'MELIE橘（广西百色店）',region:'广西',lat:23.90,lng:106.62,link:'https://hotels.ctrip.com/hotel/31853231.html'},
+  {name:'大地之野Valley Villa Retreat·仙居',region:'浙江·仙居',lat:28.85,lng:120.73},
+  {name:'莫干山·言几何民宿',region:'浙江·莫干山',lat:30.63,lng:119.87},
+  {name:'莫干山鹿田生态度假酒店',region:'浙江·莫干山',lat:30.64,lng:119.88},
+  {name:'大乐之野（松坊店）',region:'浙江·松阳',lat:28.45,lng:119.48},
+  {name:'宁安光旅城缦尚风来酒店',region:'浙江·宁波',lat:29.87,lng:121.55},
+  {name:'遂昌岛鲁赛全海景度假酒店',region:'浙江·遂昌',lat:28.59,lng:119.28},
+  {name:'三山来近·下浪溪谷民宿',region:'浙江·其他',lat:29.30,lng:120.05},
+  {name:'溯竹隐·千年古村',region:'浙江·其他',lat:29.10,lng:119.65},
+  {name:'得闲久之森林私汤民宿',region:'浙江·其他',lat:30.25,lng:119.95},
+  {name:'PLAN B·安顺度疗仓民宿',region:'贵州',lat:26.25,lng:105.95,link:'https://hotels.ctrip.com/hotel/131305359.html'},
+  {name:'从江云幻秘境民居',region:'贵州',lat:25.75,lng:108.90},
+  {name:'云舍小筑',region:'贵州',lat:27.72,lng:108.72,link:'https://hotels.ctrip.com/hotel/128939427.html'},
+  {name:'黄山伯心云舍·曼舍堂',region:'安徽/黄山',lat:30.13,lng:118.16},
+  {name:'黄山伯心云舍·盏堂',region:'安徽/黄山',lat:30.14,lng:118.17},
+  {name:'黄山腾冲温泉度假民宿',region:'安徽/黄山',lat:30.12,lng:118.15},
+  {name:'不如方（海南万宁店）',region:'海南',lat:18.80,lng:110.39},
+  {name:'海边的Seaside',region:'海南',lat:18.25,lng:109.50,link:'https://hotels.ctrip.com/hotel/110034011.html'},
+  {name:'白哈巴野在自在民宿',region:'新疆',lat:48.83,lng:86.85},
+  {name:'重庆·雾都山行',region:'重庆',lat:29.56,lng:106.55},
+  {name:'达摩也·金华冰壶岛',region:'金华',lat:29.08,lng:119.65},
+  {name:'敦煌西城度假民宿',region:'甘肃/敦煌',lat:40.14,lng:94.66},
+  {name:'福州三坊七巷三宝苑都',region:'福建',lat:26.08,lng:119.30},
+  {name:'景德镇养原居人文民宿',region:'江西',lat:29.27,lng:117.18},
+  {name:'庐山·倚窗·山又仙法式庄园',region:'江西',lat:29.56,lng:115.97},
+  {name:'南昌ONLYONE遇心公民宿',region:'江西',lat:28.68,lng:115.86},
+  {name:'松之吟3·平江路',region:'苏州',lat:31.32,lng:120.63},
+  {name:'松之吟·梓有集',region:'苏州',lat:31.31,lng:120.64},
+  {name:'松之吟·锦瑟',region:'苏州',lat:31.30,lng:120.62},
+  {name:'蜻蜒观山·山东五莲县',region:'山东',lat:35.75,lng:119.21},
+  {name:'青春归山·广东罗浮山',region:'广东',lat:23.28,lng:114.07},
+  {name:'汕头鹿屿酒店',region:'广东',lat:23.35,lng:116.68},
+  {name:'平措康桑热麻文化遗产民宿',region:'西藏',lat:29.65,lng:91.13},
+  {name:'长白山兰营设计酒店',region:'吉林/长白山',lat:42.05,lng:128.07,link:'https://hotels.ctrip.com/hotel/427100.html'},
+  {name:'国语·杭义别林精品度假民宿',region:'杭州',lat:30.25,lng:120.15},
+  {name:'临海市豹山茶民宿',region:'临海',lat:28.86,lng:121.14},
+  {name:'红草原国际游牧野奢营地',region:'草原',lat:33.57,lng:102.96},
+  {name:'莲宝叶则草原星空度假民宿',region:'草原',lat:33.20,lng:101.30},
+  {name:'沙漠村边·绿VILLA田园度假民宿',region:'沙漠',lat:40.50,lng:109.99},
+  {name:'十一间沙漠',region:'沙漠',lat:37.73,lng:105.00},
+  {name:'江南·半舍轻奢民宿',region:'江南',lat:30.75,lng:120.75},
+  {name:'江南·卵山云庐',region:'江南',lat:30.55,lng:119.45},
+  {name:'汉江信居·山之茶民宿',region:'汉江',lat:32.68,lng:107.03,link:'https://hotels.ctrip.com/hotel/126909271.html'},
+  {name:'Yakamoz Villa Retreat',region:'云南·其他',lat:24.98,lng:102.70,link:'https://hotels.ctrip.com/hotel/104559368.html'},
+  {name:'安之若宿·梓有集',region:'浙江·其他',lat:30.50,lng:120.30,link:'https://hotels.ctrip.com/hotel/132319926.html'},
+  {name:'长时星宿',region:'浙江·其他',lat:28.80,lng:121.50,link:'https://hotels.ctrip.com/hotel/123496181.html'},
+  {name:'坐看民宿',region:'浙江·其他',lat:29.90,lng:121.60,link:'https://hotels.ctrip.com/hotel/109981425.html'},
+];
+
+const map = L.map('map', {
+  center: [32, 104],
+  zoom: 5,
+  zoomControl: false,
+});
+
+L.control.zoom({ position: 'topright' }).addTo(map);
+
+// Dark tile layer (no API key needed)
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
+  subdomains: 'abcd',
+  maxZoom: 19
+}).addTo(map);
+
+// Stats
+const regions = [...new Set(hotels.map(h => h.region))];
+document.getElementById('total-count').textContent = hotels.length;
+document.getElementById('region-count').textContent = regions.length;
+
+// Legend
+const legendEl = document.getElementById('legend');
+regions.forEach(region => {
+  const color = regionColors[region] || '#999';
+  const item = document.createElement('div');
+  item.className = 'legend-item';
+  item.innerHTML = `<span class="legend-dot" style="background:${color}"></span>${region}`;
+  item.onclick = () => {
+    const h = hotels.find(h => h.region === region);
+    if (h) map.setView([h.lat, h.lng], 8);
+  };
+  legendEl.appendChild(item);
+});
+
+// Markers
+hotels.forEach(hotel => {
+  const color = regionColors[hotel.region] || '#999';
+  
+  const icon = L.divIcon({
+    className: '',
+    html: `<div style="
+      width:14px;height:14px;border-radius:50%;
+      background:${color};border:2px solid rgba(255,255,255,0.8);
+      box-shadow:0 0 10px ${color}80, 0 2px 8px rgba(0,0,0,0.3);
+      transition:transform 0.2s;
+    "></div>`,
+    iconSize: [14, 14],
+    iconAnchor: [7, 7],
+    popupAnchor: [0, -10],
+  });
+
+  const linkHtml = hotel.link
+    ? `<a href="${hotel.link}" target="_blank" class="hotel-link">携程查看 →</a>`
+    : `<span class="no-link">暂无携程链接</span>`;
+
+  const marker = L.marker([hotel.lat, hotel.lng], { icon })
+    .bindPopup(`
+      <div class="hotel-name">${hotel.name}</div>
+      <div class="hotel-region">📍 ${hotel.region}</div>
+      ${linkHtml}
+    `, { maxWidth: 280 })
+    .addTo(map);
+});
+</script>
+</body>
+</html>
