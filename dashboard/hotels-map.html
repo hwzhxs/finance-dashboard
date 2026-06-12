@@ -86,6 +86,9 @@ const regionColors = {
   '山东':'#8E44AD','广东':'#C0392B','西藏':'#2C3E50','吉林/长白山':'#5DADE2',
   '杭州':'#AF7AC5','临海':'#85C1E9','草原':'#52BE80','沙漠':'#F5B041',
   '江南':'#48C9B0','汉江':'#5499C7',
+  '莫干山·著名':'#FF69B4','安吉':'#00CED1','杭州·著名':'#FFD700',
+  '宁波·著名':'#FF8C00','仙居·著名':'#DA70D6','天目湖':'#20B2AA',
+  '苏州·著名':'#4169E1','上海·著名':'#FF6347','南京':'#32CD32',
 };
 
 const hotels = [
@@ -150,6 +153,65 @@ const hotels = [
   {name:'安之若宿·梓有集',region:'浙江·其他',lat:30.50,lng:120.30,link:'https://hotels.ctrip.com/hotel/132319926.html'},
   {name:'长时星宿',region:'浙江·其他',lat:28.80,lng:121.50,link:'https://hotels.ctrip.com/hotel/123496181.html'},
   {name:'坐看民宿',region:'浙江·其他',lat:29.90,lng:121.60,link:'https://hotels.ctrip.com/hotel/109981425.html'},
+
+  // ===== 新增：江浙沪著名酒店 & 民宿 =====
+  // 莫干山·著名
+  {name:'裸心谷 Naked Stables',region:'莫干山·著名',lat:30.62,lng:119.85,tag:'顶级'},
+  {name:'裸心堡 Naked Castle',region:'莫干山·著名',lat:30.61,lng:119.86,tag:'顶级'},
+  {name:'郡安里度假酒店',region:'莫干山·著名',lat:30.65,lng:119.89,tag:'亲子'},
+  {name:'ANADU 安纳迪',region:'莫干山·著名',lat:30.66,lng:119.84,tag:'高端'},
+  {name:'花木深民宿',region:'莫干山·著名',lat:30.60,lng:119.87,tag:'网红'},
+  {name:'莫干山隐西39',region:'莫干山·著名',lat:30.63,lng:119.83,tag:'温泉'},
+  {name:'莫干山莫村旅馆',region:'莫干山·著名',lat:30.59,lng:119.88,tag:'文艺'},
+  {name:'缦田生态度假酒店',region:'莫干山·著名',lat:30.67,lng:119.90,tag:'亲子'},
+
+  // 安吉
+  {name:'安吉小森林 Little Forest',region:'安吉',lat:30.63,lng:119.68,tag:'度假'},
+  {name:'听涧·安吉山川设计民宿',region:'安吉',lat:30.60,lng:119.65,tag:'设计'},
+  {name:'安吉等风来精品客栈',region:'安吉',lat:30.58,lng:119.70,tag:'竹海'},
+  {name:'安吉帐篷客溪龙茶谷度假酒店',region:'安吉',lat:30.55,lng:119.72,tag:'野奢'},
+
+  // 杭州·著名
+  {name:'法云安缦 Amanfayun',region:'杭州·著名',lat:30.24,lng:120.10,tag:'顶级'},
+  {name:'西子湖四季酒店',region:'杭州·著名',lat:30.25,lng:120.13,tag:'顶级'},
+  {name:'杭州悦榕庄',region:'杭州·著名',lat:30.22,lng:120.08,tag:'度假'},
+  {name:'杭州英迪格酒店',region:'杭州·著名',lat:30.27,lng:120.17,tag:'设计'},
+  {name:'良渚洲际酒店',region:'杭州·著名',lat:30.40,lng:120.00,tag:'文化'},
+  {name:'杭州木守西溪酒店',region:'杭州·著名',lat:30.28,lng:120.05,tag:'湿地'},
+
+  // 宁波·著名
+  {name:'宁波柏悦 Park Hyatt',region:'宁波·著名',lat:29.85,lng:121.53,tag:'顶级'},
+  {name:'东钱湖华茂希尔顿度假酒店',region:'宁波·著名',lat:29.79,lng:121.60,tag:'度假'},
+  {name:'宁波十七房开元观堂',region:'宁波·著名',lat:30.35,lng:121.25,tag:'古建'},
+
+  // 仙居·著名
+  {name:'仙居淡烟流水民宿',region:'仙居·著名',lat:28.84,lng:120.72,tag:'新中式'},
+  {name:'仙居神仙居民宿集群',region:'仙居·著名',lat:28.86,lng:120.75,tag:'集群'},
+
+  // 天目湖
+  {name:'涵田度假村·半岛酒店',region:'天目湖',lat:31.25,lng:119.45,tag:'顶级'},
+  {name:'涵田·养心谷',region:'天目湖',lat:31.24,lng:119.44,tag:'高端'},
+  {name:'涵田·松果酒店',region:'天目湖',lat:31.26,lng:119.46,tag:'亲子'},
+  {name:'天目湖御水温泉度假酒店',region:'天目湖',lat:31.23,lng:119.43,tag:'温泉'},
+
+  // 苏州·著名
+  {name:'苏州花间堂·探花府',region:'苏州·著名',lat:31.31,lng:120.61,tag:'园林'},
+  {name:'苏州花间堂·山塘人家',region:'苏州·著名',lat:31.32,lng:120.59,tag:'水乡'},
+  {name:'苏州涵碧楼',region:'苏州·著名',lat:31.28,lng:120.57,tag:'顶级'},
+  {name:'苏州柏悦酒店',region:'苏州·著名',lat:31.30,lng:120.71,tag:'顶级'},
+
+  // 上海·著名
+  {name:'上海扬子精品酒店',region:'上海·著名',lat:31.23,lng:121.47,tag:'Art Deco'},
+  {name:'上海外滩华尔道夫',region:'上海·著名',lat:31.24,lng:121.49,tag:'顶级'},
+  {name:'上海宝格丽酒店',region:'上海·著名',lat:31.22,lng:121.50,tag:'顶级'},
+  {name:'上海养云安缦',region:'上海·著名',lat:31.10,lng:121.55,tag:'顶级'},
+  {name:'上海建业里嘉佩乐',region:'上海·著名',lat:31.21,lng:121.45,tag:'石库门'},
+  {name:'Hills Boutique 老洋房',region:'上海·著名',lat:31.23,lng:121.44,tag:'老洋房'},
+
+  // 南京
+  {name:'南京涵碧楼',region:'南京',lat:32.06,lng:118.80,tag:'顶级'},
+  {name:'南京颐和芥子园酒店',region:'南京',lat:32.04,lng:118.78,tag:'文化'},
+  {name:'南京凯宾斯基',region:'南京',lat:32.05,lng:118.79,tag:'欧式'},
 ];
 
 const map = L.map('map', {
@@ -203,15 +265,16 @@ hotels.forEach(hotel => {
     popupAnchor: [0, -10],
   });
 
+  const tagHtml = hotel.tag ? `<span style="display:inline-block;font-size:10px;color:${color};border:1px solid ${color}40;border-radius:10px;padding:1px 8px;margin-bottom:6px">${hotel.tag}</span> ` : '';
   const linkHtml = hotel.link
     ? `<a href="${hotel.link}" target="_blank" class="hotel-link">携程查看 →</a>`
-    : `<span class="no-link">暂无携程链接</span>`;
+    : `<span class="no-link"></span>`;
 
   const marker = L.marker([hotel.lat, hotel.lng], { icon })
     .bindPopup(`
       <div class="hotel-name">${hotel.name}</div>
       <div class="hotel-region">📍 ${hotel.region}</div>
-      ${linkHtml}
+      ${tagHtml}${linkHtml}
     `, { maxWidth: 280 })
     .addTo(map);
 });
