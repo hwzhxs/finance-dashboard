@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T20:30:54+08:00",
+  "generatedAt": "2026-06-23T20:30:00+08:00",
   "items": {
     "SPY": {
       "businessModel": "追踪 S&P 500 的 ETF，持有美国最大 500 家公司，核心作用是给组合提供美国大盘 beta。",
@@ -112,7 +112,7 @@
           "长期跑不赢风险资产。"
         ],
         "actionContext": "Consider for idle cash",
-        "todayNote": "对 80% cash 的学习池来说，SGOV 继续是最合适的停泊工具之一。",
+        "todayNote": null,
         "etfQuestion": "不是拿来搏收益的，是拿来管理现金的。"
       }
     },
@@ -135,7 +135,7 @@
           "监管和关税不是噪音，是直接影响利润模型的结构性压力。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "Q1 earnings miss is still the headline: revenue grew but EPS missed hard, so利润修复比收入修复更慢。Temu 本地化和合规投入继续压 margin，短期不是 re-rating 的好故事。",
+        "todayNote": "Q1 2026 EPS/revenue miss confirmed the profit reset story: revenue grew 11% YoY to $15.41B but EPS missed hard at $1.38; analysts still largely Buy, yet lawsuits/compliance chatter keeps the moat narrative under pressure.",
         "etfQuestion": "它不是比 VTI/VOO 更好的选择；如果重新来，不会给 20%。"
       }
     },
@@ -158,7 +158,7 @@
           "估值不便宜，买点不算舒服。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "意大利 DMA 调查继续说明监管压力没退；AI 叙事更完整，但短期仍是 story 多于 cash proof。",
+        "todayNote": null,
         "etfQuestion": "Apple 品质很高，但 VTI/VOO 已经给了间接暴露；单买要等更好的 price。"
       }
     },
@@ -181,7 +181,7 @@
           "诉讼和 Xbox 调整会压住短期情绪，不是纯粹的 quality rerating。"
         ],
         "actionContext": "Consider small position",
-        "todayNote": "Q3 beat confirms Azure/AI cash engine still intact, but CapEx 和 usage-based Copilot pricing 说明 AI 变现进入更严格的 proof phase。",
+        "todayNote": "Q3 beat again with Cloud >$50B run-rate and AI strength still intact; the new Chevron long-term power deal is a tell that AI CapEx/power access is now a strategic moat issue, not just a growth line item.",
         "etfQuestion": "MSFT 是优质核心资产，VTI 里有暴露，但如果要单买，必须接受不便宜的估值。"
       }
     },
@@ -204,7 +204,7 @@
           "拥挤交易太明显，价格越来越像持有者市场。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "Blackwell / networking / partnerships continue widening the moat, but expectations are already so high that any guidance softness will be punished. ",
+        "todayNote": "Q1 beat, Blackwell/Rubin momentum and more supercomputers in Europe broaden the moat, but B200 lease-price softness is a reminder that the market is watching supply/demand signs closely.",
         "etfQuestion": "单买当然强，但当前更像持有者市场，不是舒服的追价市场。"
       }
     },
@@ -250,7 +250,7 @@
           "监管压力在欧美都在累积，估值不会只看增长。"
         ],
         "actionContext": "Consider small position",
-        "todayNote": "Cloud/AI 合同继续证明 enterprise demand 没虚，but Waymo recall reminds us autonomous execution still has potholes; Search moat is real but not immune to AI rewiring. ",
+        "todayNote": "Stock fell >5% after AI talent departures (Jumper/Shazeer) overshadowed an otherwise very strong Q1 beat; Search stayed healthy, Cloud grew fast, but the market is now pricing in capex + talent retention risk more aggressively.",
         "etfQuestion": "如果单买大科技，GOOGL 现在是最像『价格还算说得过去』的候选之一。"
       }
     },
@@ -365,7 +365,7 @@
           "监管和平台行为问题还在，尤其广告和 marketplace 相关。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "Q1 remains strong; AWS and Prime Day are near-term catalysts, yet the $200B+ capex overhang means FCF scrutiny stays elevated. ",
+        "todayNote": "Q1 beat, Prime Day/AI/robotics are the near-term tape, while the reported FTC ad complaint and very heavy AI capex keep the margin debate alive.",
         "etfQuestion": "AWS + 广告的长期价值很强，但当前更像等数据验证的好公司。"
       }
     },
@@ -388,7 +388,7 @@
           "RPO 里的一部分是还没真正兑现的未来合同。"
         ],
         "actionContext": "Not attractive for now",
-        "todayNote": null,
+        "todayNote": "Q4/FY26 beat + FY27 guidance raise + RPO surge to $638B are the headline; the flip side is financing needs and heavy leverage to keep building AI infrastructure.",
         "etfQuestion": "看得懂它的 AI infra 价值，但现在不是舒服的时点。"
       }
     },
@@ -461,6 +461,5 @@
         "etfQuestion": "有价值，但要确认 AI 竞争格局后再说。"
       }
     }
-  },
-  "agentInsightsDate": "2026-06-22T20:30:54+08:00"
+  }
 }
