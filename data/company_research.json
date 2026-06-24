@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-23T12:31:22.886175+00:00",
-  "generatedAtLocal": "2026-06-23 20:31:22 CST",
+  "generatedAt": "2026-06-24T12:18:40.558079+00:00",
+  "generatedAtLocal": "2026-06-24 20:18:40 CST",
   "sources": {
     "secCompanyFacts": "https://www.sec.gov/edgar/sec-api-documentation",
     "notes": "Financials from SEC EDGAR. Qualitative analysis in agent-insights.json."
@@ -16,10 +16,10 @@
           "source": "行情 chart 数据 + 本地配置"
         },
         "expenseRatioPct": 0.0945,
-        "return1mPct": 0.4236107451517812,
-        "return3mPct": 13.581435060952263,
-        "return1yPct": 24.03398889722601,
-        "volatilityPct": 12.42219761204234,
+        "return1mPct": -1.2306056082790562,
+        "return3mPct": 12.309015174316684,
+        "return1yPct": 20.89719200875846,
+        "volatilityPct": 12.475799024602072,
         "maxDrawdownPct": -9.133132097249053
       },
       "businessModel": "追踪 S&P 500 的 ETF，持有美国最大 500 家公司，核心作用是给组合提供美国大盘 beta。",
@@ -54,10 +54,10 @@
           "source": "行情 chart 数据 + 本地配置"
         },
         "expenseRatioPct": 0.2,
-        "return1mPct": 3.477527440785666,
-        "return3mPct": 25.50170275629784,
-        "return1yPct": 38.803720176696,
-        "volatilityPct": 17.670391234558913,
+        "return1mPct": -0.12036015448468884,
+        "return3mPct": 22.204535820085614,
+        "return1yPct": 32.21126860578243,
+        "volatilityPct": 17.947064259432757,
         "maxDrawdownPct": -12.1883680975564
       },
       "businessModel": "追踪 Nasdaq-100，给组合提供高成长、高科技、高波动的集中暴露。",
@@ -92,10 +92,10 @@
           "source": "行情 chart 数据 + 本地配置"
         },
         "expenseRatioPct": 0.03,
-        "return1mPct": 0.6646372658771993,
-        "return3mPct": 13.511901113412206,
-        "return1yPct": 23.98799944850407,
-        "volatilityPct": 12.41669367332974,
+        "return1mPct": -0.9519067049910679,
+        "return3mPct": 12.277967623949348,
+        "return1yPct": 20.89590016872385,
+        "volatilityPct": 12.467132245284322,
         "maxDrawdownPct": -9.187121839889823
       },
       "businessModel": "Vanguard 的 S&P 500 ETF，费率极低，是最经典的核心宽基仓之一。",
@@ -130,10 +130,10 @@
           "source": "行情 chart 数据 + 本地配置"
         },
         "expenseRatioPct": 0.03,
-        "return1mPct": 1.2685672550637461,
-        "return3mPct": 13.763532120412037,
-        "return1yPct": 24.492826180116033,
-        "volatilityPct": 12.790935990090901,
+        "return1mPct": -0.3807236968423888,
+        "return3mPct": 12.537910900907857,
+        "return1yPct": 21.350646483717316,
+        "volatilityPct": 12.830191953875914,
         "maxDrawdownPct": -9.20266768110406
       },
       "businessModel": "追踪美国全市场，覆盖大中小盘，费率极低，是最广义的美股底仓。",
@@ -168,10 +168,10 @@
           "source": "行情 chart 数据 + 本地配置"
         },
         "expenseRatioPct": 0.09,
-        "return1mPct": 0.019881330982673973,
-        "return3mPct": 0.019881330982673973,
-        "return1yPct": -0.0198810096550317,
-        "volatilityPct": 1.0796282031058215,
+        "return1mPct": 0.02982578917354317,
+        "return3mPct": 0.0,
+        "return1yPct": -0.019871453455422294,
+        "volatilityPct": 1.079628292660233,
         "maxDrawdownPct": -0.4566201054468033
       },
       "businessModel": "超短久期美债 ETF，核心作用是现金管理，不是长期增值。",

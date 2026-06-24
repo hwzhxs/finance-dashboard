@@ -1,119 +1,119 @@
 {
-  "generatedAt": "2026-06-23T20:30:00+08:00",
+  "generatedAt": "2026-06-24T12:31:13.145358+00:00",
   "items": {
     "SPY": {
-      "businessModel": "追踪 S&P 500 的 ETF，持有美国最大 500 家公司，核心作用是给组合提供美国大盘 beta。",
-      "moatEvidence": "ETF 本身没有经营 moat，优势在于流动性、指数化和低摩擦；但和 VOO 比，SPY 的费率不占优，长期护城河不如 Vanguard 体系硬。",
-      "keyRisks": "1) 费率长期侵蚀复利；2) 现在大盘里 Mag 7 权重高，分散效果被高估；3) 指数接近高位，margin of safety 不强。",
-      "aiAngle": "AI 暴露是间接的，主要通过 Mag 7 传导；AI 上行会受益，但 AI 去泡沫时也会同步承压。",
-      "growthCatalysts": "美国企业盈利继续扩张、AI CapEx 推高大盘 EPS、经济韧性维持。",
-      "growthSignals": "S&P 500 EPS 增速、PMI、GDP、企业 CapEx 趋势。",
+      "businessModel": "SPY 是 US large-cap core 的 ETF，核心职责是提供组合级 beta 和低摩擦配置。",
+      "moatEvidence": "ETF 自身没有企业 moat，优势来自指数化、流动性和低费率。",
+      "keyRisks": "费率侵蚀复利；指数集中度上升；买点不佳时容易买在高位。",
+      "aiAngle": "AI 主要通过成分股间接受益，集中在大科技权重上。",
+      "growthCatalysts": "美国盈利扩张、AI CapEx、经济韧性。",
+      "growthSignals": "成分股 EPS 增速、宏观数据、利率路径。",
       "judgment": {
         "positives": [
-          "大盘 beta 清晰，适合作为市场基准仓。",
-          "流动性极好，做核心配置没有操作摩擦。",
-          "学习池不需要对单一公司承担额外研究风险。"
+          "费用低、结构简单。",
+          "适合作为核心仓位或市场基准。",
+          "不需要个股研究。"
         ],
         "concerns": [
-          "同样跟踪 S&P 500，VOO 费率更低，长期没有理由优先选 SPY。",
-          "科技权重偏高，AI 回撤时会跟着挨打。",
-          "当前价格不便宜，没给出舒服的 entry。"
+          "当前估值并不便宜。",
+          "科技权重仍偏高。",
+          "没有特别明确的 edge。"
         ],
         "actionContext": "Continue observing",
         "todayNote": null,
-        "etfQuestion": "不如 VOO — 同样的核心暴露，VOO 费率更低。"
+        "etfQuestion": "相对其他 core ETF，SPY 的优势是否真的更大？"
       }
     },
     "QQQ": {
-      "businessModel": "追踪 Nasdaq-100，给组合提供高成长、高科技、高波动的集中暴露。",
-      "moatEvidence": "不是单一公司的 moat，而是高科技组合篮子的结构性优势；牛市放大收益，熊市放大波动。",
-      "keyRisks": "1) 波动率明显高于 SPY/VOO；2) 费率更高；3) 对 AI 和大科技回撤极敏感。",
-      "aiAngle": "几乎是 AI 主题打包器，NVDA/MSFT/GOOGL/AMZN 都在里面；AI 上行放大收益，下行放大波动。",
-      "growthCatalysts": "AI 基建继续扩张、云收入增长、Mag 7 持续 beat。",
-      "growthSignals": "Nasdaq-100 EPS 增速、云收入增速、AI CapEx 趋势。",
+      "businessModel": "QQQ 是 Nasdaq growth and technology 的 ETF，核心职责是提供组合级 beta 和低摩擦配置。",
+      "moatEvidence": "ETF 自身没有企业 moat，优势来自指数化、流动性和低费率。",
+      "keyRisks": "费率侵蚀复利；指数集中度上升；买点不佳时容易买在高位。",
+      "aiAngle": "AI 主要通过成分股间接受益，集中在大科技权重上。",
+      "growthCatalysts": "美国盈利扩张、AI CapEx、经济韧性。",
+      "growthSignals": "成分股 EPS 增速、宏观数据、利率路径。",
       "judgment": {
         "positives": [
-          "动量强，是最直接的科技 beta 工具之一。",
-          "如果想要 AI 暴露，它的传导路径很直接。",
-          "持仓里很多都是学习池已经关注的名字。"
+          "费用低、结构简单。",
+          "适合作为核心仓位或市场基准。",
+          "不需要个股研究。"
         ],
         "concerns": [
-          "学习池本身已经重科技，QQQ 会进一步加重 concentration。",
-          "回撤会比宽基更狠，不适合无脑追。",
-          "费用不低，长期靠择时很难跑赢。"
+          "当前估值并不便宜。",
+          "科技权重仍偏高。",
+          "没有特别明确的 edge。"
         ],
         "actionContext": "Continue observing",
         "todayNote": null,
-        "etfQuestion": "比 VTI 更集中、更贵、更波动；当前组合不需要额外加码。"
+        "etfQuestion": "相对其他 core ETF，QQQ 的优势是否真的更大？"
       }
     },
     "VOO": {
-      "businessModel": "Vanguard 的 S&P 500 ETF，费率极低，是最经典的核心宽基仓之一。",
-      "moatEvidence": "Vanguard 的低费率结构本身就是护城河，长期复利优势非常明确。",
-      "keyRisks": "1) 和 SPY 一样有 Mag 7 集中度；2) 当前价格离高点不远；3) 被动指数无法规避泡沫。",
-      "aiAngle": "间接暴露 AI，MSFT/AAPL/NVDA/GOOGL/AMZN 权重都不低。",
-      "growthCatalysts": "美国经济持续扩张、企业盈利增长、全球资金继续流入美股。",
-      "growthSignals": "S&P 500 earnings growth、美元走势、Fed 利率路径。",
+      "businessModel": "VOO 是 US large-cap core 的 ETF，核心职责是提供组合级 beta 和低摩擦配置。",
+      "moatEvidence": "ETF 自身没有企业 moat，优势来自指数化、流动性和低费率。",
+      "keyRisks": "费率侵蚀复利；指数集中度上升；买点不佳时容易买在高位。",
+      "aiAngle": "AI 主要通过成分股间接受益，集中在大科技权重上。",
+      "growthCatalysts": "美国盈利扩张、AI CapEx、经济韧性。",
+      "growthSignals": "成分股 EPS 增速、宏观数据、利率路径。",
       "judgment": {
         "positives": [
-          "Bogle 视角非常强，是标准 core holding。",
-          "费率极低，长期复利优势很明确。",
-          "组合需要的是纪律，不是猜测。"
+          "费用低、结构简单。",
+          "适合作为核心仓位或市场基准。",
+          "不需要个股研究。"
         ],
         "concerns": [
-          "当前不是很好的建仓点，离高点太近。",
-          "大盘里科技权重依旧偏高。",
-          "如果想等更好的 entry，耐心是必须的。"
+          "当前估值并不便宜。",
+          "科技权重仍偏高。",
+          "没有特别明确的 edge。"
         ],
         "actionContext": "Continue observing",
         "todayNote": null,
-        "etfQuestion": "S&P 500 ETF 的最优解之一，VOO > SPY 没悬念。"
+        "etfQuestion": "相对其他 core ETF，VOO 的优势是否真的更大？"
       }
     },
     "VTI": {
-      "businessModel": "追踪美国全市场，覆盖大中小盘，费率极低，是最广义的美股底仓。",
-      "moatEvidence": "Vanguard 共有制 + 极低费率 + 全市场覆盖，本身就是非常强的组合型护城河。",
-      "keyRisks": "1) 当前价格离高点不远；2) 小盘加入后波动略高于 VOO；3) 科技集中度虽然被稀释但仍然存在。",
-      "aiAngle": "AI 暴露比 VOO 略低，但更全面覆盖美国经济和小盘复苏的可能性。",
-      "growthCatalysts": "小盘股复苏、美国整体经济增长、利率下行。",
-      "growthSignals": "Russell 2000 表现、小盘 PE、Fed 路径。",
+      "businessModel": "VTI 是 Total US market core 的 ETF，核心职责是提供组合级 beta 和低摩擦配置。",
+      "moatEvidence": "ETF 自身没有企业 moat，优势来自指数化、流动性和低费率。",
+      "keyRisks": "费率侵蚀复利；指数集中度上升；买点不佳时容易买在高位。",
+      "aiAngle": "AI 主要通过成分股间接受益，集中在大科技权重上。",
+      "growthCatalysts": "美国盈利扩张、AI CapEx、经济韧性。",
+      "growthSignals": "成分股 EPS 增速、宏观数据、利率路径。",
       "judgment": {
         "positives": [
-          "分散度和费率都很顶，最符合 Boglehead。",
-          "是长期不想折腾时的标准答案。",
-          "不需要对单一公司做太多判断。"
+          "费用低、结构简单。",
+          "适合作为核心仓位或市场基准。",
+          "不需要个股研究。"
         ],
         "concerns": [
-          "和 VOO 的差别其实没那么大。",
-          "当前估值不便宜，entry 不够舒服。",
-          "如果已经重仓科技个股，VTI 只是更均衡，不会神奇地便宜。"
+          "当前估值并不便宜。",
+          "科技权重仍偏高。",
+          "没有特别明确的 edge。"
         ],
         "actionContext": "Continue observing",
         "todayNote": null,
-        "etfQuestion": "VTI vs VOO 都行，关键是价格和纪律。"
+        "etfQuestion": "相对其他 core ETF，VTI 的优势是否真的更大？"
       }
     },
     "SGOV": {
-      "businessModel": "超短久期美债 ETF，核心作用是现金管理，不是长期增值。",
-      "moatEvidence": "没有传统 moat，价值在于把现金停放在接近无风险的收益工具里。",
-      "keyRisks": "1) Fed 降息会压低收益；2) 通胀会侵蚀真实购买力；3) 没有资本增值空间。",
-      "aiAngle": "与 AI 无关，纯防御性资产。",
-      "growthCatalysts": "无增长催化剂，收益率主要由短端利率决定。",
-      "growthSignals": "Fed 利率、SOFR / T-bill yield、通胀数据。",
+      "businessModel": "SGOV 是 Treasury bill cash management 的 ETF，核心职责是提供组合级 beta 和低摩擦配置。",
+      "moatEvidence": "没有经营 moat，优势在于超短久期美债和现金管理效率；更像工具，不是复利引擎。",
+      "keyRisks": "Fed 降息会压低收益；通胀侵蚀真实购买力；长期没有资本增值弹性。",
+      "aiAngle": "与 AI 无关，纯防御性现金停放工具。",
+      "growthCatalysts": "无成长催化剂，收益主要由短端利率决定。",
+      "growthSignals": "Fed 路径、T-bill yield、SOFR、通胀。",
       "judgment": {
         "positives": [
-          "现金管理非常合适，波动几乎为零。",
-          "在高估值市场里，保留 dry powder 很有用。",
-          "比躺在银行活期里更有效率。"
+          "现金管理效率高，波动接近零。",
+          "保留 dry powder 很实用。",
+          "比银行活期更有效率。"
         ],
         "concerns": [
-          "不是投资，是停现金。",
-          "降息周期收益会下降。",
+          "不是增长资产。",
+          "降息周期收益会下滑。",
           "长期跑不赢风险资产。"
         ],
         "actionContext": "Consider for idle cash",
         "todayNote": null,
-        "etfQuestion": "不是拿来搏收益的，是拿来管理现金的。"
+        "etfQuestion": "不是拿来搏收益的，是拿来管现金的。"
       }
     },
     "PDD": {
@@ -121,8 +121,8 @@
       "moatEvidence": "国内有 network effect，但 moat 不深；Temu 靠补贴和低价扩张，不是高质量护城河。",
       "keyRisks": "1) 利润端继续承压；2) 中美欧监管和诉讼压力同时存在；3) moat 不深，竞争者很多，政策风险无法对冲。",
       "aiAngle": "AI 不是核心叙事，只能用于推荐和供应链优化，不能改变商业本质。",
-      "growthCatalysts": "Temu 本地化仓储、供应链效率提升、transaction services 继续增长。",
-      "growthSignals": "Temu MAU、GMV、take rate、non-GAAP margin、欧盟合规进展。",
+      "growthCatalysts": "Temu 本地化、供应链效率、海外合规推进。",
+      "growthSignals": "Temu MAU、GMV、take rate、margin、欧盟/美国合规进展。",
       "judgment": {
         "positives": [
           "Revenue 仍在增长，核心电商和海外扩张没有失速。",
@@ -135,7 +135,7 @@
           "监管和关税不是噪音，是直接影响利润模型的结构性压力。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "Q1 2026 EPS/revenue miss confirmed the profit reset story: revenue grew 11% YoY to $15.41B but EPS missed hard at $1.38; analysts still largely Buy, yet lawsuits/compliance chatter keeps the moat narrative under pressure.",
+        "todayNote": null,
         "etfQuestion": "它不是比 VTI/VOO 更好的选择；如果重新来，不会给 20%。"
       }
     },
@@ -181,7 +181,7 @@
           "诉讼和 Xbox 调整会压住短期情绪，不是纯粹的 quality rerating。"
         ],
         "actionContext": "Consider small position",
-        "todayNote": "Q3 beat again with Cloud >$50B run-rate and AI strength still intact; the new Chevron long-term power deal is a tell that AI CapEx/power access is now a strategic moat issue, not just a growth line item.",
+        "todayNote": null,
         "etfQuestion": "MSFT 是优质核心资产，VTI 里有暴露，但如果要单买，必须接受不便宜的估值。"
       }
     },
@@ -204,7 +204,7 @@
           "拥挤交易太明显，价格越来越像持有者市场。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "Q1 beat, Blackwell/Rubin momentum and more supercomputers in Europe broaden the moat, but B200 lease-price softness is a reminder that the market is watching supply/demand signs closely.",
+        "todayNote": null,
         "etfQuestion": "单买当然强，但当前更像持有者市场，不是舒服的追价市场。"
       }
     },
@@ -250,7 +250,7 @@
           "监管压力在欧美都在累积，估值不会只看增长。"
         ],
         "actionContext": "Consider small position",
-        "todayNote": "Stock fell >5% after AI talent departures (Jumper/Shazeer) overshadowed an otherwise very strong Q1 beat; Search stayed healthy, Cloud grew fast, but the market is now pricing in capex + talent retention risk more aggressively.",
+        "todayNote": null,
         "etfQuestion": "如果单买大科技，GOOGL 现在是最像『价格还算说得过去』的候选之一。"
       }
     },
@@ -295,7 +295,7 @@
           "客户集中度让单一事件风险很大。",
           "板块一旦降温，回撤会很难看。"
         ],
-        "actionContext": "Continue observing",
+        "actionContext": "Not attractive for now",
         "todayNote": null,
         "etfQuestion": "定制芯片很强，但不便宜，不是当前最优入场位。"
       }
@@ -364,8 +364,8 @@
           "零售端利润率薄，扩张一旦放缓就容易拖累估值。",
           "监管和平台行为问题还在，尤其广告和 marketplace 相关。"
         ],
-        "actionContext": "Continue observing",
-        "todayNote": "Q1 beat, Prime Day/AI/robotics are the near-term tape, while the reported FTC ad complaint and very heavy AI capex keep the margin debate alive.",
+        "actionContext": "Not attractive for now",
+        "todayNote": null,
         "etfQuestion": "AWS + 广告的长期价值很强，但当前更像等数据验证的好公司。"
       }
     },
@@ -388,7 +388,7 @@
           "RPO 里的一部分是还没真正兑现的未来合同。"
         ],
         "actionContext": "Not attractive for now",
-        "todayNote": "Q4/FY26 beat + FY27 guidance raise + RPO surge to $638B are the headline; the flip side is financing needs and heavy leverage to keep building AI infrastructure.",
+        "todayNote": null,
         "etfQuestion": "看得懂它的 AI infra 价值，但现在不是舒服的时点。"
       }
     },
@@ -433,7 +433,7 @@
           "高估值 SaaS 受利率影响很大。",
           "波动和回撤都不适合无脑加。"
         ],
-        "actionContext": "Continue observing",
+        "actionContext": "Not attractive for now",
         "todayNote": null,
         "etfQuestion": "优质 SaaS，但当前还需要更多验证。"
       }
@@ -456,7 +456,7 @@
           "增长速度没有市场想象的那么猛。",
           "市场对它的耐心在下降。"
         ],
-        "actionContext": "Continue observing",
+        "actionContext": "Not attractive for now",
         "todayNote": null,
         "etfQuestion": "有价值，但要确认 AI 竞争格局后再说。"
       }
