@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T12:31:13.145358+00:00",
+  "generatedAt": "2026-06-30T20:26:55+08:00",
   "items": {
     "SPY": {
       "businessModel": "SPY 是 US large-cap core 的 ETF，核心职责是提供组合级 beta 和低摩擦配置。",
@@ -135,7 +135,7 @@
           "监管和关税不是噪音，是直接影响利润模型的结构性压力。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": null,
+        "todayNote": "Q1 2026 revenue +11% YoY, but EPS/revenue missed consensus; management is explicitly choosing growth over near-term profit. June securities-fraud investigation keeps regulatory overhang alive, so this is still a margin compression story, not a clean re-rating.",
         "etfQuestion": "它不是比 VTI/VOO 更好的选择；如果重新来，不会给 20%。"
       }
     },
@@ -158,7 +158,7 @@
           "估值不便宜，买点不算舒服。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": null,
+        "todayNote": "June 30 security-patch shift shows Apple is reacting faster to AI-era attack surfaces, but it also announced global price hikes on Mac/iPad/HomePod to offset memory/storage inflation. Stock fell sharply on the pricing news, while an EU DMA investigation in Italy adds another regulatory layer.",
         "etfQuestion": "Apple 品质很高，但 VTI/VOO 已经给了间接暴露；单买要等更好的 price。"
       }
     },
@@ -181,7 +181,7 @@
           "诉讼和 Xbox 调整会压住短期情绪，不是纯粹的 quality rerating。"
         ],
         "actionContext": "Consider small position",
-        "todayNote": null,
+        "todayNote": "Q3 FY2026 beat on EPS and revenue, but the market is now questioning Copilot conversion, heavier capex, and Azure gatekeeper scrutiny under the EU DMA. Xbox price increases are a small but visible sign that AI and memory costs are leaking into consumer pricing.",
         "etfQuestion": "MSFT 是优质核心资产，VTI 里有暴露，但如果要单买，必须接受不便宜的估值。"
       }
     },
@@ -204,7 +204,7 @@
           "拥挤交易太明显，价格越来越像持有者市场。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": null,
+        "todayNote": "Q1 FY2027 was another monster beat: revenue $81.6B, Data Center $75.2B (+92% YoY), plus an extra $80B buyback authorization. Demand for Blackwell Ultra remains intense, but the setup is still crowded and the real debate is how long the growth runway stays this strong.",
         "etfQuestion": "单买当然强，但当前更像持有者市场，不是舒服的追价市场。"
       }
     },
@@ -250,7 +250,7 @@
           "监管压力在欧美都在累积，估值不会只看增长。"
         ],
         "actionContext": "Consider small position",
-        "todayNote": null,
+        "todayNote": "Joined the Dow on June 29, but the stock sold off in June on AI capex anxiety. Q1 showed Cloud +63% revenue and margin expansion, yet management lifted full-year capex guidance to $180B-$190B and skipped buybacks in Q1, so the market is testing how much AI investment is too much.",
         "etfQuestion": "如果单买大科技，GOOGL 现在是最像『价格还算说得过去』的候选之一。"
       }
     },
