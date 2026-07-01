@@ -1,31 +1,6 @@
 {
-  "generatedAt": "2026-05-17T09:41:20.138287+08:00",
+  "generatedAt": "2026-07-01T08:00:39.218275+08:00",
   "earnings": [
-    {
-      "symbol": "NVDA",
-      "earningsDate": "2026-05-21",
-      "confirmed": true
-    },
-    {
-      "symbol": "PDD",
-      "earningsDate": "2026-05-27",
-      "confirmed": true
-    },
-    {
-      "symbol": "CRM",
-      "earningsDate": "2026-05-28",
-      "confirmed": true
-    },
-    {
-      "symbol": "AVGO",
-      "earningsDate": "2026-06-04",
-      "confirmed": true
-    },
-    {
-      "symbol": "ORCL",
-      "earningsDate": "2026-06-11",
-      "confirmed": true
-    },
     {
       "symbol": "ASML",
       "earningsDate": "2026-07-15",
@@ -74,6 +49,31 @@
     {
       "symbol": "AMD",
       "earningsDate": "2026-08-05",
+      "confirmed": true
+    },
+    {
+      "symbol": "PDD",
+      "earningsDate": "2026-08-25",
+      "confirmed": true
+    },
+    {
+      "symbol": "NVDA",
+      "earningsDate": "2026-08-27",
+      "confirmed": true
+    },
+    {
+      "symbol": "CRM",
+      "earningsDate": "2026-09-03",
+      "confirmed": true
+    },
+    {
+      "symbol": "AVGO",
+      "earningsDate": "2026-09-04",
+      "confirmed": true
+    },
+    {
+      "symbol": "ORCL",
+      "earningsDate": "2026-09-10",
       "confirmed": true
     }
   ]
