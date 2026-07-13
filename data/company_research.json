@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-13T12:37:46.193368+00:00",
-  "generatedAtLocal": "2026-07-13 20:37:46 CST",
+  "generatedAt": "2026-07-13T12:41:28.673056+00:00",
+  "generatedAtLocal": "2026-07-13 20:41:28 CST",
   "sources": {
     "secCompanyFacts": "https://www.sec.gov/edgar/sec-api-documentation",
     "notes": "Financials from SEC EDGAR. Qualitative analysis in agent-insights.json."
@@ -1412,5 +1412,5 @@
       }
     }
   },
-  "agentInsightsDate": "2026-07-13T20:40:00+08:00"
+  "agentInsightsDate": "2026-07-13T20:55:00+08:00"
 }
