@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T08:00:22.490625+08:00",
+  "generatedAt": "2026-07-23T08:00:11.435403+08:00",
   "earnings": [
     {
       "symbol": "TSLA",
@@ -42,6 +42,11 @@
       "confirmed": true
     },
     {
+      "symbol": "PDD",
+      "earningsDate": "2026-08-25",
+      "confirmed": true
+    },
+    {
       "symbol": "NVDA",
       "earningsDate": "2026-08-27",
       "confirmed": true
@@ -70,12 +75,6 @@
       "symbol": "TSM",
       "earningsDate": "2026-10-15",
       "confirmed": true
-    },
-    {
-      "symbol": "PDD",
-      "earningsDate": null,
-      "confirmed": false,
-      "error": "Failed to perform, curl: (35) TLS connect error: error:00000000:invalid library (0):OPENSSL_internal:invalid library (0). See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
     }
   ]
 }
