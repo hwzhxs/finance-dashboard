@@ -1,11 +1,6 @@
 {
-  "generatedAt": "2026-07-23T08:00:11.435403+08:00",
+  "generatedAt": "2026-07-24T08:00:06.813203+08:00",
   "earnings": [
-    {
-      "symbol": "TSLA",
-      "earningsDate": "2026-07-23",
-      "confirmed": true
-    },
     {
       "symbol": "GOOGL",
       "earningsDate": "2026-07-23",
@@ -74,6 +69,11 @@
     {
       "symbol": "TSM",
       "earningsDate": "2026-10-15",
+      "confirmed": true
+    },
+    {
+      "symbol": "TSLA",
+      "earningsDate": "2026-10-22",
       "confirmed": true
     }
   ]
