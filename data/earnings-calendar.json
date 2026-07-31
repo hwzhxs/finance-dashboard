@@ -1,11 +1,6 @@
 {
-  "generatedAt": "2026-07-30T08:00:16.101404+08:00",
+  "generatedAt": "2026-07-31T08:00:35.840104+08:00",
   "earnings": [
-    {
-      "symbol": "MSFT",
-      "earningsDate": "2026-07-30",
-      "confirmed": true
-    },
     {
       "symbol": "AAPL",
       "earningsDate": "2026-07-31",
@@ -64,6 +59,11 @@
     {
       "symbol": "TSLA",
       "earningsDate": "2026-10-22",
+      "confirmed": true
+    },
+    {
+      "symbol": "MSFT",
+      "earningsDate": "2026-10-29",
       "confirmed": true
     },
     {
