@@ -1,16 +1,6 @@
 {
-  "generatedAt": "2026-07-31T08:00:35.840104+08:00",
+  "generatedAt": "2026-08-03T08:00:30.499032+08:00",
   "earnings": [
-    {
-      "symbol": "AAPL",
-      "earningsDate": "2026-07-31",
-      "confirmed": true
-    },
-    {
-      "symbol": "AMZN",
-      "earningsDate": "2026-07-31",
-      "confirmed": true
-    },
     {
       "symbol": "PLTR",
       "earningsDate": "2026-08-04",
@@ -74,6 +64,16 @@
     {
       "symbol": "NOW",
       "earningsDate": "2026-10-29",
+      "confirmed": true
+    },
+    {
+      "symbol": "AAPL",
+      "earningsDate": "2026-10-30",
+      "confirmed": true
+    },
+    {
+      "symbol": "AMZN",
+      "earningsDate": "2026-10-30",
       "confirmed": true
     }
   ]
