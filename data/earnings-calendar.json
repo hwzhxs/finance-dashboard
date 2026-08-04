@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T08:00:30.499032+08:00",
+  "generatedAt": "2026-08-04T08:00:28.557029+08:00",
   "earnings": [
     {
       "symbol": "PLTR",
@@ -22,13 +22,13 @@
       "confirmed": true
     },
     {
-      "symbol": "CRM",
+      "symbol": "AVGO",
       "earningsDate": "2026-09-03",
       "confirmed": true
     },
     {
-      "symbol": "AVGO",
-      "earningsDate": "2026-09-04",
+      "symbol": "CRM",
+      "earningsDate": "2026-09-03",
       "confirmed": true
     },
     {
