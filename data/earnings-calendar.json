@@ -1,11 +1,6 @@
 {
-  "generatedAt": "2026-08-04T08:00:28.557029+08:00",
+  "generatedAt": "2026-08-05T08:00:21.679141+08:00",
   "earnings": [
-    {
-      "symbol": "PLTR",
-      "earningsDate": "2026-08-04",
-      "confirmed": true
-    },
     {
       "symbol": "AMD",
       "earningsDate": "2026-08-05",
@@ -74,6 +69,11 @@
     {
       "symbol": "AMZN",
       "earningsDate": "2026-10-30",
+      "confirmed": true
+    },
+    {
+      "symbol": "PLTR",
+      "earningsDate": "2026-11-03",
       "confirmed": true
     }
   ]
