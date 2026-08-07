@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-05T20:30:00+08:00",
+  "generatedAt": "2026-08-07T20:30:00+08:00",
   "items": {
     "SPY": {
       "businessModel": "SPY 是 US large-cap core 的 ETF，核心职责是提供组合级 beta 和低摩擦配置。",
       "moatEvidence": "ETF 自身没有企业 moat，优势来自指数化、流动性和低费率；但费率 0.0945% 是宽基里的短板（VOO 0.03% 完胜）。",
-      "keyRisks": "费率侵蚀复利；前十大科技权重高，AI-capex 叙事直接决定方向。宏观基调加息交易升级——9 月加息概率从 ~50/50 跳到 ~70%（新 Fed 主席 Warsh 偏鹰），7 月 CPI/PPI 下周预计再走高。经济数据/通胀强反而是 multiple 逆风，8/7 非农（6 月仅 +57k）。指数正处历史高（S&P 7,600.50、Dow ATH 53,178），估值/情绪偏满，对利率意外最敏感。",
+      "keyRisks": "费率侵蚀复利；前十大科技权重高，AI-capex 叙事直接决定方向。宏观基调加息交易升级——9 月加息概率约 54%（新 Fed 主席 Warsh 偏鹰），7 月 CPI/PPI 下周预计再走高。经济数据/通胀强反而是 multiple 逆风，8/7 非农（6 月仅 +57k）。指数正处历史高（S&P 7,600.50、Dow ATH 53,178），估值/情绪偏满，对利率意外最敏感。",
       "aiAngle": "AI 通过大科技权重间接受益；8/3 Nasdaq +2.1%、AMZN 破 $3T + PLTR blowout 让 AI 变现叙事进一步强化，前十大权重是这轮 risk-on 引擎。核心变量仍是『AI 变现能否持续兑现』——云三连（AWS/Azure/Google Cloud）+ PLTR 应用层证真在给需求真实性背书。",
-      "growthCatalysts": "美国盈利扩张（JPM 预计 S&P EPS 两年 +13-15%）、AI 变现持续兑现、经济韧性；但多头逻辑和加息逻辑在打架——数据/通胀强利好盈利却压 multiple，8/5 ISM 服务 + 8/7 非农 + 下周 CPI 是路标。",
-      "growthSignals": "成分股 EPS、8/5 ISM 服务（预期 54.5，6 月 54.0）、8/7 非农（6 月 +57k）、下周 7 月 CPI/PPI、9 月加息概率（现约 70%）、10Y/30Y 收益率、AMD 今晚财报后 AI 情绪。",
+      "growthCatalysts": "美国盈利扩张（JPM 预计 S&P EPS 两年 +13-15%）、AI 变现持续兑现、经济韧性；但多头逻辑和加息逻辑在打架——数据/通胀强利好盈利却压 multiple，8/7 非农 + 下周 CPI + 下周 CPI 是路标。",
+      "growthSignals": "成分股 EPS、8/7 非农实际值与前值修正、失业率/工资、下周 CPI/PPI、10Y/30Y 收益率、AI capex 转化为收入与 FCF 的速度。",
       "judgment": {
         "positives": [
           "指数创历史高印证美国盈利底盘扎实：JPM 预计 S&P EPS 两年 +13-15%，AI 变现连续证真（AWS/Azure/Google Cloud + PLTR），宽基定投吃的就是这份长期复利，不看单周宏观噪音。",
@@ -15,22 +15,22 @@
           "费用结构简单、流动性最好，做基准/期权底仓最省心；定投照常。"
         ],
         "concerns": [
-          "宏观加息交易升级：9 月加息概率跳到 ~70%（Warsh 偏鹰），经济/通胀强反而压高估值 multiple，指数处历史高时对利率意外最敏感——这是相对昨天最实质的负面变化。",
+          "宏观加息交易升级：9 月加息概率约 54%（Warsh 偏鹰），经济/通胀强反而压高估值 multiple，指数处历史高时对利率意外最敏感——这是相对昨天最实质的负面变化。",
           "前十大科技权重高 + capex 军备竞赛仍在深化（AMZN $220B、GOOGL $195-205B），一旦某家 ROI 讲不透权重会重新承压；下周 CPI 若热会再压 multiple。",
           "费率 0.0945% 比 VOO 高 3 倍，长期没理由优先它。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "8/4 晚：S&P 处 7,600.50 历史高，加息交易升级（9 月加息概率 ~70%，Warsh 偏鹰），对高位指数是 multiple 逆风；8/5 ISM Services、8/7 非农、下周 CPI 是近端路标。",
+        "todayNote": "8/7 非农在美股开盘前公布（共识约 +80-83k、失业率 4.2%）；指数接近高位，强数据会强化加息、弱数据会暴露增长担忧，今天不追。",
         "etfQuestion": "同样跟踪 S&P 500，VOO 费率 0.03% 完胜，SPY 只有流动性/期权优势，长期不该选它。"
       }
     },
     "QQQ": {
       "businessModel": "QQQ 是 Nasdaq 100 的 ETF，科技/成长倾斜，提供组合级 beta，本质是放大版科技仓。",
       "moatEvidence": "ETF 自身没有企业 moat，优势来自指数化、流动性；前十大几乎全是 AI 受益股——集中度在 AI 变现顺风里弹性最大、恐慌时回撤最深，是同一枚高 beta 硬币。8/3 Nasdaq +2.1% 至 25,913.90 就是这份高 beta 在 risk-on 里的正面兑现。",
-      "keyRisks": "科技集中度极高；AI 情绪反转时回撤最深；对利率 + AI 情绪双敏感。加息交易升级（9 月加息 ~70%）对高估值科技是明确逆风；AMD 今晚财报（隐含波动 ~8.5-12%）+ NVDA 8/26 是重权重名字的实测。高 beta 在利率意外时双刃最明显。",
-      "aiAngle": "AI 暴露最高的宽基（NVDA/MSFT/AVGO/AMD/GOOGL/AMZN），云三连 + PLTR 应用层坐实变现，8/3 大涨里 QQQ 弹性最大。但加息交易升级提醒：市场对估值最满的 AI 名字容忍度受利率约束更紧。AMD 今晚财报直接决定 QQQ 里一只高 beta 权重方向，NVDA 8/26 是更大波动源。",
-      "growthCatalysts": "大科技盈利 + AI 变现连续兑现、AMD 今晚若 Helios/MI450 ramp 指引强、NVDA 8/26 需求兑现；近端看这些能否顶住加息交易升级。",
-      "growthSignals": "成分股 EPS、AI 变现进度（AWS/Azure 运行率）、9 月加息概率（约 70%）+ 8/7 非农 + 下周 CPI、AMD 今晚 + NVDA 8/26 财报。",
+      "keyRisks": "科技集中度极高；AI 情绪反转时回撤最深；对利率 + AI 情绪双敏感。加息交易升级（9 月加息约 54%）对高估值科技是明确逆风；AMD Q2 财报（隐含波动 ~8.5-12%）+ NVDA 8/26 是重权重名字的实测。高 beta 在利率意外时双刃最明显。",
+      "aiAngle": "AI 暴露最高的宽基（NVDA/MSFT/AVGO/AMD/GOOGL/AMZN），云三连 + PLTR 应用层坐实变现，8/3 大涨里 QQQ 弹性最大。但加息交易升级提醒：市场对估值最满的 AI 名字容忍度受利率约束更紧。AMD Q2 财报直接决定 QQQ 里一只高 beta 权重方向，NVDA 8/26 是更大波动源。",
+      "growthCatalysts": "大科技盈利 + AI 变现连续兑现、AMD Q2若 Helios/MI450 ramp 指引强、NVDA 8/26 需求兑现；近端看这些能否顶住加息交易升级。",
+      "growthSignals": "AI 云收入与 backlog、8/7 非农/工资、下周 CPI、10Y real yield、NVDA 8/26 财报、AMD Q3 GM 与 Helios ramp。",
       "judgment": {
         "positives": [
           "AI beta 载体逻辑在 risk-on 里最强：8/3 Nasdaq +2.1% + AMZN 破 $3T + PLTR blowout，QQQ 重权重在变现证真的顺风里弹性最大。",
@@ -38,22 +38,22 @@
           "科技长期趋势不变，做卫星仓吃 AI beta 仍合理，回调分批比追高稳。"
         ],
         "concerns": [
-          "波动率 ~19% 明显高于 VOO ~12.8%，高 beta 是双刃——加息交易升级（9 月加息 ~70%）对估值最满的科技最不利，指数近高位放大回撤风险，这是相对昨天更重的逆风。",
-          "AMD 今晚财报（~8.5-12% 隐含波动）任何 ramp/毛利不及极高预期都会放大 QQQ 回撤；下周 CPI 是利率变量。",
+          "波动率 ~19% 明显高于 VOO ~12.8%，高 beta 是双刃——加息交易升级（9 月加息约 54%）对估值最满的科技最不利，指数近高位放大回撤风险，这是相对昨天更重的逆风。",
+          "AMD Q2 财报（~8.5-12% 隐含波动）任何 ramp/毛利不及极高预期都会放大 QQQ 回撤；下周 CPI 是利率变量。",
           "费率 0.2% 不便宜；capex 仍在上修（AMZN $220B、GOOGL $195-205B），情绪一旦再质疑 ROI，QQQ 首当其冲。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "8/4 晚：QQQ 受 risk-on 拉升，但加息交易升级对高 beta 科技是逆风；AMD 今晚财报是近端波动源，NVDA 8/26 更大。",
+        "todayNote": "8/7 非农是利率敏感型科技的当日路标；AMD Q2 数字很强但股价先 sell-the-news 后修复，说明市场只奖励超预期 execution，不奖励单纯 AI 故事。",
         "etfQuestion": "它比 VTI/VOO 更激进、更集中科技；高 beta 是双刃，适合做卫星仓加 AI beta，不适合当唯一核心，加息交易升级时更该控制它的仓位比例。"
       }
     },
     "VOO": {
       "businessModel": "VOO 是 Vanguard S&P 500 ETF，US large-cap core，提供组合级 beta 和极低摩擦配置。",
       "moatEvidence": "ETF 自身没有企业 moat，优势来自指数化和业内最低费率之一（0.03%）。",
-      "keyRisks": "指数集中度上升，AI 权重反向传导；估值不便宜且指数近历史高；宏观加息交易升级（9 月加息概率 ~70%、Warsh 偏鹰）是新的 multiple 逆风；8/5 ISM 服务 + 8/7 非农 + 下周 CPI 是变量。",
+      "keyRisks": "指数集中度上升，AI 权重反向传导；估值不便宜且指数近历史高；宏观加息交易升级（9 月加息概率约 54%、Warsh 偏鹰）是新的 multiple 逆风；8/7 非农 + 下周 CPI + 下周 CPI 是变量。",
       "aiAngle": "AI 通过成分股间接受益，集中在大科技权重；云三连 + PLTR 变现证真让 VOO 靠分散既吃到红利又不承担单股风险。8/3 大涨里靠 S&P 权重充分参与。",
       "growthCatalysts": "美国盈利扩张（JPM 预计 S&P EPS 两年 +13-15%）、经济韧性、AI 变现持续兑现；近端看 8/7 非农 + 加息路径。",
-      "growthSignals": "成分股 EPS、9 月加息概率（约 70%）+ 8/7 非农 + 下周 CPI、8/5 ISM 服务、AI 云变现节奏。",
+      "growthSignals": "成分股 EPS、8/7 非农与失业率/工资、下周 CPI、10Y 收益率、AI 云变现与 capex/FCF 平衡。",
       "judgment": {
         "positives": [
           "费率 0.03%，长期复利友好，core 仓首选之一；Bogle 视角 90/100，指数创历史高印证盈利底盘，定投逻辑不看单周情绪。",
@@ -61,22 +61,22 @@
           "盈利底盘扎实（JPM 两年 +13-15%）+ AI 变现被反复证真，对定投者宏观加息交易不改变每月买入的均价逻辑。"
         ],
         "concerns": [
-          "估值不便宜 + 指数历史高，前十大科技权重高，capex 仍在上修；加息交易升级（9 月加息 ~70%）是新的 multiple 逆风。",
+          "估值不便宜 + 指数历史高，前十大科技权重高，capex 仍在上修；加息交易升级（9 月加息约 54%）是新的 multiple 逆风。",
           "AAPL 弱指引提醒消费科技这条腿有裂缝，大盘并非全面无忧；8/9 月季节性偏弱。",
           "和 VTI 高度重叠，二选一即可。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "8/4 晚：VOO 继续靠 S&P 权重吃到 risk-on，但加息交易升级让历史高位更脆；核心仓用低费率长期定投。",
+        "todayNote": "8/7 非农前保持 core 定投框架，不因单次数据追涨；同类长期持有继续优先 VOO 而不是费率更高的 SPY。",
         "etfQuestion": "对比 SPY 完胜（费率），对比 VTI 只差全市场覆盖；要 S&P 500 就用它，要更全就用 VTI。"
       }
     },
     "VTI": {
       "businessModel": "VTI 是 Vanguard Total US Market ETF，覆盖全市场（大中小盘），是最干净的美股 core 工具。",
       "moatEvidence": "ETF 自身没有企业 moat，优势来自最广分散、低费率和极低跟踪误差。",
-      "keyRisks": "小盘对利率更敏感——加息交易升级（9 月加息概率 ~70%）对中小盘是明确且加重的逆风；追高买在指数历史高位；AI 情绪反转成系统性回撤时 VTI 也扛不住，只是回撤相对小。",
+      "keyRisks": "小盘对利率更敏感——加息交易升级（9 月加息概率约 54%）对中小盘是明确且加重的逆风；追高买在指数历史高位；AI 情绪反转成系统性回撤时 VTI 也扛不住，只是回撤相对小。",
       "aiAngle": "AI 通过大盘成分股间接受益；AI 变现证真（云三连 + PLTR）让科技权重从拖累变顺风，VTI 全市场覆盖让它既参与又比 QQQ 更抗单股冲击。",
       "growthCatalysts": "美国盈利扩张、经济韧性、大科技 AI 变现持续兑现；不用赌 AI 单一板块。小盘补涨需等 Fed 转鸽，当前是加息交易升级——对小盘反而是逆风。",
-      "growthSignals": "成分股 EPS、宏观数据（8/5 ISM 服务、8/7 非农、下周 CPI）、9 月加息概率（~70%）、小盘相对强弱、AI 变现节奏。",
+      "growthSignals": "全市场 EPS、8/7 非农与失业率/工资、下周 CPI、10Y 收益率、小盘相对强弱、AI capex 的 FCF 转化。",
       "judgment": {
         "positives": [
           "diversification 96/100，watchlist 里分散度最高——PLTR blowout / AAPL 弱指引 / AMD 财报波动，全市场覆盖天然稀释单股冲击，是最好的减震器。",
@@ -84,26 +84,26 @@
           "长期看，宽基 + 全市场是最不容易犯错的配置，宏观噪音不改变定投逻辑。"
         ],
         "concerns": [
-          "加息交易升级（9 月加息 ~70%）对 VTI 多出的中小盘敞口是明确加重的逆风——利率上行预期最先压小盘，这是它相对 VOO 当前更突出的短板。",
+          "加息交易升级（9 月加息约 54%）对 VTI 多出的中小盘敞口是明确加重的逆风——利率上行预期最先压小盘，这是它相对 VOO 当前更突出的短板。",
           "估值不便宜 + 指数历史高；和 VOO 相关性极高，单独叠加意义不大。",
           "若 AI 变现叙事再反转成系统性回撤，VTI 也扛不住，只是回撤相对小；8/9 月季节性偏弱。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "8/4 晚：VTI 仍是默认 core；但加息交易升级对中小盘敞口更不友好，短期不如纯大盘 VOO 稳。",
+        "todayNote": "8/7 非农前仍是默认 core；若数据偏强推升利率，中小盘敞口短期会比 VOO 更吃亏，但不改变长期分散价值。",
         "etfQuestion": "它是 watchlist 里最该当『默认 core』的那只——比 VOO 多了中小盘，比 QQQ 稳，比 SPY 便宜；但加息交易升级时中小盘敞口是更明显的短期逆风，纯要大盘 VOO 当前更稳。"
       }
     },
     "SGOV": {
       "businessModel": "SGOV 是超短端美债（T-bill）ETF，纯现金管理工具，停放 dry powder。",
       "moatEvidence": "没有经营 moat，优势在于超短久期美债和现金管理效率；更像工具，不是复利引擎。",
-      "keyRisks": "Fed 降息会压低收益——但宏观反向且强化：9 月加息概率从 ~50/50 跳到 ~70%（Warsh 偏鹰），短端 carry 不仅不会下行，上行尾部概率反而升高，防御 + carry 双属性更稳。通胀（关税/CPI 走高）侵蚀真实购买力；风险资产 risk-on 反弹时它的『无关性』变成机会成本（8/3 大涨就是踏空成本的一天）。",
-      "aiAngle": "与 AI 无关，纯防御性现金停放工具；本周风险资产在 AMD 今晚财报 + 8/7 非农前情绪偏强，它作为 dry powder 停放处的期权价值在等回调窗口。",
-      "growthCatalysts": "无成长催化剂，收益由短端利率决定；加息交易升级（9 月加息 ~70%）意味着短端息不会下行、carry 更稳甚至有上行尾部。",
-      "growthSignals": "Fed 路径（9 月加息概率现约 70% 是关键）、T-bill yield、SOFR、8/5 ISM 服务、8/7 非农、下周 CPI/PPI、关税对通胀影响。",
+      "keyRisks": "Fed 降息会压低收益——但宏观反向且强化：9 月加息概率约 54%（Warsh 偏鹰），短端 carry 不仅不会下行，上行尾部概率反而升高，防御 + carry 双属性更稳。通胀（关税/CPI 走高）侵蚀真实购买力；风险资产 risk-on 反弹时它的『无关性』变成机会成本（8/3 大涨就是踏空成本的一天）。",
+      "aiAngle": "与 AI 无关，纯防御性现金停放工具；本周风险资产在 AMD Q2 财报 + 8/7 非农前情绪偏强，它作为 dry powder 停放处的期权价值在等回调窗口。",
+      "growthCatalysts": "无成长催化剂，收益由短端利率决定；加息交易升级（9 月加息约 54%）意味着短端息不会下行、carry 更稳甚至有上行尾部。",
+      "growthSignals": "Fed 路径、T-bill yield、SOFR、8/7 非农实际值与修正、下周 CPI/PPI、关税对通胀影响。",
       "judgment": {
         "positives": [
-          "现金的期权价值：80% 现金停这里 = 满手 dry powder；加息交易升级 + 指数历史高，若 AMD 今晚财报或 8/7 非农制造回调/错杀，是 optionality 兑现窗口。",
-          "波动接近零、carry 更稳：加息概率升到 ~70% → 短端息下行进一步推后，防御 + carry 双属性比昨天更稳。",
+          "现金的期权价值：80% 现金停这里 = 满手 dry powder；加息交易升级 + 指数历史高，若 AMD Q2 财报或 8/7 非农制造回调/错杀，是 optionality 兑现窗口。",
+          "波动接近零、carry 稳定：9 月加息概率约 54%，Fed 路径仍偏鹰且摇摆，短端 carry 暂时没有快速下行压力。",
           "risk-on 情绪拉满 + 财报密集的环境里，满手现金能在情绪反转时从容出手。"
         ],
         "concerns": [
@@ -112,7 +112,7 @@
           "拿现金不出手就只是机会成本；真正的价值在『用它换回调后的风险资产』，别一直空着。"
         ],
         "actionContext": "Consider for idle cash",
-        "todayNote": "8/4 晚：9 月加息概率升到 ~70%，短端 carry 更稳，SGOV 继续是 dry powder 停车位。",
+        "todayNote": "8/7 非农前利率路径仍摇摆，SGOV 继续承担 80% 现金的 dry-powder 停车位；它的价值是等待有安全边际的权益价格，不是追求资本利得。",
         "etfQuestion": "不是拿来搏收益的，是拿来管现金的；加息交易升级让 carry 更稳，和 VTI/VOO 不是同类。"
       }
     },
@@ -121,21 +121,21 @@
       "moatEvidence": "国内有 network effect 和供应链成本优势，低价心智仍硬；Q1 2026 交易服务收入 +20% 至 RMB56.3B，首次超过在线营销服务；账上 >RMB420B（~$59.5B）现金+短投是『financial fortress』，能扛新市场亏损。但海外 moat 被政策连环削：EU 7/1 起取消 €150 免税 + €3/件 levy（≈10% 关税）、美国 de minimis 已取消、EU 5 月 DSA €200M 罚单（8/28 前须交整改方案）、8 月初 Temu 拒绝 EC 就 FSR 检查『阻碍调查』的初步结论（最高可罚全球营收 1%）、Iowa AG 数据诉讼——合规成本系统性上升。",
       "keyRisks": "1) 利润端持续承压，Q1 2026 净利 -15%、EPS $1.38（vs 预期 ~$2.40 大 miss）主因供应链/品牌投入 + 投资收入不利；2) 监管连环加码（EU €3/件 + 取消免税 + DSA €200M + FSR + 美国 de minimis + Iowa AG + 国内 SAMR 电商法修订 8/4 意见征集截止 + 1 月国内『虚假发货/税务』调查线索）；3) 中国经济疲软 + 电商内卷；4) RMB 100B 三年供应链投入压 margin；moat 不深、政策风险无法对冲。",
       "aiAngle": "AI 不是核心叙事，只能用于推荐和供应链优化；PDD 不在本周美股 AI 财报主线（PLTR/AMD）上，走中概独立行情，是另一种风格暴露（低估值中概）——本周美股 risk-on + 加息交易升级对它影响间接。",
-      "growthCatalysts": "自有品牌（Xinpinmu）+ 供应链本地化、雄安『工业互联网服务』扩张、RMB 100B 三年投资周期、Temu 欧洲往本地仓/semi-managed + Local Seller Program 转 + 加入 CBCommerce Europe；Q2 财报 ~8/24，共识营收 +18% YoY、EPS ~$2.73-2.85。",
-      "growthSignals": "Temu MAU、GMV、take rate、margin、EU 7/1 新规实际影响 + FSR 进展（Temu 已拒绝 EC 初步结论）+ DSA 8/28 整改方案、美国 de minimis 冲击、Iowa AG 诉讼、国内 SAMR 电商法修订走向、国内需求信号、Q2 财报（~8/24）。",
+      "growthCatalysts": "自有品牌（Xinpinmu）+ 供应链本地化、雄安『工业互联网服务』扩张、RMB 100B 三年投资周期、Temu 欧洲往本地仓/semi-managed + Local Seller Program 转 + 加入 CBCommerce Europe；Q2 财报 8/25；市场将验证国内交易服务增速、RMB100B 投入对 margin 的压力，以及 Temu 本地仓/semi-managed 能否缓冲 de minimis 与欧盟新规。",
+      "growthSignals": "Temu MAU、GMV、take rate、margin、EU 7/1 新规实际影响 + FSR 进展（Temu 已拒绝 EC 初步结论）+ DSA 8/28 整改方案、美国 de minimis 冲击、Iowa AG 诉讼、国内 SAMR 电商法修订走向、国内需求信号、Q2 财报（8/25）。",
       "judgment": {
         "positives": [
           "核心生意没崩：Q1 2026 营收 RMB106.2B（+11% YoY）、交易服务 +20% 首超在线营销、经营利润 +22%/经营利润率 18.4%；净利下滑主因供应链战略投入 + 投资收入不利，而非核心运营。RMB420B 现金堡垒给转型足够弹药。",
           "转型有实质抓手：Xinpinmu 自营品牌推 $20+ 单品、雄安『工业互联网服务』（5000+ 岗位）；Temu 用本地仓 + semi-managed + Local Seller Program + 8/4 加入 CBCommerce Europe 缓冲欧洲新规。",
-          "估值 + 独立行情：P/E ~9，走中概独立行情，不被本周 AI 财报（PLTR/AMD）+ 美股加息交易裹挟；过去一年内部人净买入。"
+          "估值确实便宜：股价约 $90.85、P/E 约 9.5、分析师均价目标约 $116；但便宜反映政策折价，不能把 target 当催化剂。"
         ],
         "concerns": [
           "监管实锤持续加码扩面：8 月初 Temu 拒绝 EC 就 FSR『阻碍调查』初步结论（最高罚全球营收 1%）+ DSA €200M（8/28 前交整改方案）+ Iowa AG 数据诉讼 + EU €3/件 + 美国 de minimis + 国内 SAMR 电商法修订（8/4 意见征集截止）+ 1 月国内『虚假发货/税务』调查线索——境内外合规 + 单件经济性被系统性打压，无法对冲。",
-          "券商情绪偏谨慎，连续 EPS miss（Q1 $1.38 vs ~$2.40）让盈利可见度打折；核心是『战略投入何时转化为利润』，Q2 财报 ~8/24 是关键验证。",
-          "20% 仓位已是软上限，若重来不会给 20%；期权市场已在为 8/24 财报定价大波动，PDD 财报后暴跌前科多。"
+          "Q1 EPS $1.38 vs 市场约 $2.40 的 miss 让利润可见度打折；8/25 Q2 必须回答 RMB100B 投入何时转化为收入、Temu 本地化后 unit economics 是否成立。",
+          "20% 仓位已是软上限，若重来不会给 20%；8/25 财报可能放大波动，PDD 历次财报后对利润指引高度敏感。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "8/4-8/5 新变量是 Temu 加入 CBCommerce Europe，但欧盟 FSR “阻碍调查”结论、DSA €200M 整改、国内 SAMR 电商法修订和 1 月虚假发货/税务线索让监管压制继续加码；Q2 财报 ~8/24。",
+        "todayNote": "8/7 未见改变 thesis 的新公司事件；Q2 财报日期更新为 8/25。股价约 $90.85、P/E 约 9.5、分析师均价目标约 $116，但 20% 持仓已达软上限，监管与利润兑现前不加仓。",
         "etfQuestion": "它不是比 VTI/VOO 更好的选择；当前 20% 仓位已是软上限，监管连环（FSR + DSA + Iowa AG + EU 新规 + 美国 de minimis + 国内 SAMR 电商法修订）+ 国内需求走弱，如果重新来不会给 20%。核心运营韧性 + 现金堡垒 + P/E ~9 + 内部人增持是长期正面，但不改变海外单件经济性被政策压 + 国内需求疲软的主线。"
       }
     },
@@ -158,7 +158,7 @@
           "叙事切换期它相对吃亏：8/3 risk-on 由 AI 变现名字（AMZN 破 $3T、PLTR）领涨，AAPL 作为『非 AI 纯玩』相对落后；估值近前高 + Ternus 接班过渡是额外不确定性。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "Q3 beat 但 Q4 指引 9-11% YoY < 12% 预期，GM 指引 47-48%，市场已经用 -7% 投票；Ternus 9/1 接班。",
+        "todayNote": "8/7 股价约 +0.45%；市场继续消化强 Q3 与弱 Q4 指引的背离。capital-light AI 是相对优势，但中国、供给和 GM 47-48% 指引未解决。",
         "etfQuestion": "Apple 品质很高，但已从避风港变成叙事切换里的相对落后项；VTI/VOO 已给了间接暴露，单买要等 Q4 弱指引消化、中国/内存/供给对毛利的影响落地、以及 Siri AI/接班过渡的确定性。"
       }
     },
@@ -173,25 +173,25 @@
         "positives": [
           "AI 云变现里逻辑最清晰：FQ4 Azure +43%、总营收 $90B（+18%）、EPS $4.81 全面 beat、FY26 Azure 破 $1000 亿——云三连 + PLTR 应用层证真反过来强化整个企业 AI 叙事。",
           "变现证真让 capex 质疑缓和：需求超产能到 CY2026 末，市场从『over $50B/季值不值』回摆到『变现在兑现』。",
-          "软件属性让它不在半导体逆风中心（AMD 今晚财报波动波及不到它），路由自研 MAI + 引入 AMD Helios 降本加固生态；Morningstar FV $600 给估值支撑。"
+          "软件属性让它不在半导体逆风中心（AMD Q2 财报波动波及不到它），路由自研 MAI + 引入 AMD Helios 降本加固生态；Morningstar FV $600 给估值支撑。"
         ],
         "concerns": [
-          "仍是 AI-capex 高投入名字：FQ1 FY27『over $50B』单季再创新高、CY2026 ~$175B，一旦某家 ROI 讲不透，MSFT 的 FCF 承压会被重新放大；加息交易升级（9 月加息 ~70%）压高估值。",
+          "仍是 AI-capex 高投入名字：FQ1 FY27『over $50B』单季再创新高、CY2026 ~$175B，一旦某家 ROI 讲不透，MSFT 的 FCF 承压会被重新放大；加息交易升级（9 月加息约 54%）压高估值。",
           "进行中的证券欺诈集体诉讼（8/11 lead plaintiff 截止）指控『夸大 Azure/Copilot 采用』，Copilot 真实付费口径仍是悬念。",
           "意大利反垄断 + 与 OpenAI 重谈分成 + 自研 MAI 替换是执行赌注；估值不便宜。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "Azure 年收入破 $100B、Q4 beat，但季度 capex >$50B 和 8/11 诉讼节点继续压估值。",
+        "todayNote": "8/7 约 +2.54%，1 个月约 +30%；Azure 变现获认可，但涨幅已把不少好消息计价，季度 capex >$50B 与 8/11 诉讼节点仍需验证。",
         "etfQuestion": "MSFT 是优质核心资产，VTI 里有暴露；逻辑最顺 + 变现最清晰；但 capex over $50B/季 + 诉讼未了 + 加息交易压估值是压制变量，要单买得等回调 + FCF 路径讲得更清。"
       }
     },
     "NVDA": {
       "businessModel": "AI 加速计算平台，数据中心 GPU 和整套 AI 软件生态是主要收入来源。",
       "moatEvidence": "CUDA 和开发者生态非常深，AI 加速器市占 H1'26 仍 ~87%；Blackwell 需求仍超供给、Rubin 管线可见；CUDA + NVLink 在训练/大规模集群上仍是别人追不上的壁垒。FQ1'27 Data Center +92% 至 $75.2B、GM 75%，全年 DC 销售预计破 $150B。",
-      "keyRisks": "1) 估值与拥挤度高，机构 de-grossing 曾主导股价，2026 YTD 仍跑输 S&P；2) 中国出口限制 + Huawei Ascend/CXMT 抢份额；3) custom silicon 竞争加速（Trainium/TPU/MI450/Jalapeño）——AMD 今晚财报若 MI450/Helios ramp 指引强是新竞争读数，且 GOOGL 计划 2028 部署 1200-1500 万颗 TPU v9（出货量或比肩 NVDA）是结构性新警号；4) 8/26 自身财报前缺硬催化；加息交易升级压高估值。",
-      "aiAngle": "AI 是绝对核心；Blackwell 供不应求、Vera Rubin H2 2026 量产；与 SK Hynix 签 >$500B 内存大单锁 HBM；GOOGL 也计划采用 Vera Rubin 系统。大科技 capex 全线上修（AMZN $220B、GOOGL $195-205B）+ 云三连变现证真既利好 NVDA 订单能见度，也提醒自研芯片在抢 inference——AMD 今晚财报是竞争侧最新读数（MI450 需求超 AMD 2027 内部预期，Helios Q3 末起出货）；GOOGL TPU v9 大规模部署计划是长期竞争新变量。需求真实 vs 竞争加剧的背离仍是核心矛盾。",
+      "keyRisks": "1) 估值与拥挤度高，机构 de-grossing 曾主导股价，2026 YTD 仍跑输 S&P；2) 中国出口限制 + Huawei Ascend/CXMT 抢份额；3) custom silicon 竞争加速（Trainium/TPU/MI450/Jalapeño）——AMD Q2 财报若 MI450/Helios ramp 指引强是新竞争读数，且 GOOGL 计划 2028 部署 1200-1500 万颗 TPU v9（出货量或比肩 NVDA）是结构性新警号；4) 8/26 自身财报前缺硬催化；加息交易升级压高估值。",
+      "aiAngle": "AI 是绝对核心；Blackwell 供不应求、Vera Rubin H2 2026 量产；与 SK Hynix 签 >$500B 内存大单锁 HBM；GOOGL 也计划采用 Vera Rubin 系统。大科技 capex 全线上修（AMZN $220B、GOOGL $195-205B）+ 云三连变现证真既利好 NVDA 订单能见度，也提醒自研芯片在抢 inference——AMD Q2 财报是竞争侧最新读数（MI450 需求超 AMD 2027 内部预期，Helios Q3 末起出货）；GOOGL TPU v9 大规模部署计划是长期竞争新变量。需求真实 vs 竞争加剧的背离仍是核心矛盾。",
       "growthCatalysts": "Blackwell 满产、Vera Rubin H2 2026 铺货（GOOGL 计划采用）、$1T 管线、$119B 供应承诺、$80B 回购、机器人/自动驾驶；自身财报 8/26 是需求兑现关键验证；大科技 capex 指引是需求侧实时读数。",
-      "growthSignals": "Data Center growth（FQ1'27 +92%）、Rubin 量产与 HBM4 供应、Blackwell backlog、custom silicon 竞品进度（AMD MI450 今晚财报 / AMZN Trainium / GOOGL TPU v9 2028 计划）、Huawei/CXMT 份额、中国收入口径；财报 8/26。",
+      "growthSignals": "Data Center growth（FQ1'27 +92%）、Rubin 量产与 HBM4 供应、Blackwell backlog、custom silicon 竞品进度（AMD MI450 Q2 财报 / AMZN Trainium / GOOGL TPU v9 2028 计划）、Huawei/CXMT 份额、中国收入口径；财报 8/26。",
       "judgment": {
         "positives": [
           "估值罕见便宜：fwd P/E ~21-22x（远低于 5 年均 72x），共识 Strong Buy、Citi 7/29 升 Buy、Bernstein 8/3 维持 Buy PT $315（隐含 ~53% 上行）；连涨三日至 $206.64（8/3）；大科技 capex 上修（AMZN $220B、GOOGL $195-205B）直接利好订单能见度。",
@@ -199,13 +199,13 @@
           "大科技 capex 全线上修是 NVDA 需求侧最直接读数——capex 越大、订单能见度越强。"
         ],
         "concerns": [
-          "inference 端『去 NVDA 化』在实锤加码：AMZN Trainium 破 $250 亿运行率 + AMD MI450 拿 Meta 6GW/OpenAI/Anthropic/Core Scientific（今晚财报是兑现读数）+ GOOGL 自研 TPU 撑 Cloud +82% 且计划 2028 部署 1200-1500 万颗 TPU v9（出货量或比肩 NVDA）+ 中国份额结构性下滑。",
-          "估值虽便宜但仍是拥挤交易，2026 YTD 仍跑输 S&P，加息交易升级（9 月加息 ~70%）+ 机构 de-grossing 一旦重来、或 8/26 财报前情绪反复，回撤仍深；$210 是近端技术阻力位。",
-          "8/26 财报前缺硬催化，AMD 今晚若 MI450 强势会被读成竞争加剧。"
+          "inference 端『去 NVDA 化』在实锤加码：AMZN Trainium 破 $250 亿运行率 + AMD MI450 拿 Meta 6GW/OpenAI/Anthropic/Core Scientific（Q2 财报是兑现读数）+ GOOGL 自研 TPU 撑 Cloud +82% 且计划 2028 部署 1200-1500 万颗 TPU v9（出货量或比肩 NVDA）+ 中国份额结构性下滑。",
+          "估值虽便宜但仍是拥挤交易，2026 YTD 仍跑输 S&P，加息交易升级（9 月加息约 54%）+ 机构 de-grossing 一旦重来、或 8/26 财报前情绪反复，回撤仍深；$210 是近端技术阻力位。",
+          "8/26 财报前缺硬催化，AMD Q2若 MI450 强势会被读成竞争加剧。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "财报前仍是 AI 核心，但 Blackwell 需求强与 custom silicon / TPU 竞争加速同时存在；8/26 财报才是硬验证。",
-        "etfQuestion": "单买当然强，fwd P/E ~21-22x 罕见便宜 + Citi/Bernstein 看多 + TSM/云三连印证需求；但正被 custom silicon 抢 inference（AMD MI450 今晚 / AMZN Trainium / GOOGL TPU v9 2028 大规模部署），想要 AI beta，QQQ 已重仓它、还帮你分散了单一名字风险。"
+        "todayNote": "8/7 约持平，过去 5 日约 +9%；8/26 财报前核心验证仍是 Blackwell/Rubin 出货与 inference 订单，AMD Q2 DC +107% 同时证明需求强、竞争也更真。",
+        "etfQuestion": "单买当然强，fwd P/E ~21-22x + TSM/云三连印证需求；但 inference 正受 AMD MI450、AMZN Trainium 与 GOOGL TPU 挤压，想要 AI beta，QQQ 已重仓它、还帮你分散单一名字风险。"
       }
     },
     "TSLA": {
@@ -227,14 +227,14 @@
           "8/3 市场奖励『AI 变现兑现』（AMZN 破 $3T、PLTR），TSLA 是 narrative 兑现最远的类型，恰恰不吃这轮红利；按 Buffett 标准这不是现在该碰的公司。"
         ],
         "actionContext": "Not attractive for now",
-        "todayNote": null,
+        "todayNote": "8/7 新增 Zacks Hold 讨论，但没有改变 thesis 的经营证据；股价当日约 -0.63%、1 个月约 -19%，robotaxi/FSD 仍未覆盖汽车 margin 与负 FCF 风险。",
         "etfQuestion": "如果按 Buffett 标准，它完全不是现在该碰的那种公司；Q2 盈利 miss + margin 压缩 + 负 FCF + 2026 >$25B capex 印证 narrative 股的脆弱，想要它的暴露，VTI/QQQ 已含权重、还帮你分散。"
       }
     },
     "GOOGL": {
       "businessModel": "搜索广告现金牛 + Cloud 增长引擎 + YouTube + AI / Waymo 选项；自研 TPU 对外直销 + 帮 Apple 跑隐私 AI 负载是新增变现线。",
       "moatEvidence": "搜索 moat 仍深，但 AI 正在重写入口；Cloud Q2 2026 营收 $24.8B、+82% YoY（远超共识）、需求超供给（compute-constrained）、backlog 升到 $514B；Gemini 成 Apple Siri 后端 + Apple PCC 上 Google Cloud，自研 TPU 让单位算力成本大降。Gemini 生态：app 650M MAU、Gemini Enterprise 覆盖 ~90% Fortune 100、AI Overviews 触达 20 亿、Enterprise 800 万付费席位。",
-      "keyRisks": "1) Q2 capex $44.9B、全年上修到 $195-205B、2027 再『显著增加』，上市来首次季度负 FCF（-$5.9B）、长期负债升到 $98.2B——加息交易升级（9 月加息 ~70%）重新给高估值 + 负 FCF 压力；2) 监管连环（EU €4.7B Android + 瑞典 + 尼日利亚 + UK cloud + 印度广告诉讼）；3) 中资新加坡关联方 AI 访问重燃出口管制风险。",
+      "keyRisks": "1) Q2 capex $44.9B、全年上修到 $195-205B、2027 再『显著增加』，上市来首次季度负 FCF（-$5.9B）、长期负债升到 $98.2B——加息交易升级（9 月加息约 54%）重新给高估值 + 负 FCF 压力；2) 监管连环（EU €4.7B Android + 瑞典 + 尼日利亚 + UK cloud + 印度广告诉讼）；3) 中资新加坡关联方 AI 访问重燃出口管制风险。",
       "aiAngle": "AI 既是顺风（Cloud +82% 大 beat、backlog $514B、Gemini 成 Apple Siri 后端、TPU 对外直销、计划采用 NVDA Vera Rubin）也是 Search 的潜在替代项；自研 TPU（Ironwood GA + 新品 TPU 8i/8t）是真优势，且计划 2028 部署 1200-1500 万颗 TPU v9（出货量或比肩 NVDA）——从『自用降本』升级到『可能改写 AI 加速器市场格局』。云三连变现证真后，GOOGL 的 Cloud +82% + backlog $514B 被重新认可——三巨头云变现里评分最硬的一个。",
       "growthCatalysts": "Cloud 高增（Q2 +82% blowout、backlog $514B）、Gemini 商业化（650M MAU、Enterprise 800 万付费席位 + 覆盖 ~90% Fortune 100、Apple Siri 后端）、TPU 对外销售 + 2028 大规模自研 TPU 部署、Nexus/Anthropic 得州园区、Waymo；财报已兑现，8/3 股价 $373.51、从财报后低点回升。",
       "growthSignals": "Cloud revenue growth（Q2 +82%）、backlog（$514B）、Search growth、Gemini 变现（MAU/付费席位/Fortune 100 渗透）、TPU 外销 + v9 部署进度 + Apple PCC、CapEx ROI（$195-205B/负 FCF 何时转正）、监管裁决执行。",
@@ -245,45 +245,45 @@
           "自研 TPU 是差异化真优势且在升级：Cloud +82% 背后靠自研硅降本，既撑毛利又新增对外变现线（TPU 外销 + Apple PCC），计划 2028 部署 1200-1500 万颗 TPU v9（出货量或比肩 NVDA）——评分最硬 + 变现最实 + 相对不贵，是 SGOV dry powder 若出手的首选观察对象。"
         ],
         "concerns": [
-          "capex 仍是靶心：Q2 $44.9B、全年上修到 $195-205B、2027 再『显著增加』、首次季度负 FCF（-$5.9B）、长期负债升到 $98.2B——AMZN 证真缓解了审视，但加息交易升级（9 月加息 ~70%）重新放大高估值 + 负 FCF 压力。",
+          "capex 仍是靶心：Q2 $44.9B、全年上修到 $195-205B、2027 再『显著增加』、首次季度负 FCF（-$5.9B）、长期负债升到 $98.2B——AMZN 证真缓解了审视，但加息交易升级（9 月加息约 54%）重新放大高估值 + 负 FCF 压力。",
           "监管硬成本且扩面：EU €4.7B Android 终审 + 瑞典 + 尼日利亚 + UK cloud + 印度广告诉讼；中资新加坡 AI 访问重燃出口管制风险。",
           "财报已过（7/22），8/3 情绪回暖后估值优势收窄，capex/FCF 仍是持续盯点。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "Q2 beat + Cloud +82% 继续强，但 AI capex 上修拖累股价；TPU v9 2028 部署计划强化自研芯片野心。",
+        "todayNote": "8/7 约 -1.29%；Cloud +82% 与 $514B backlog 仍是最硬正面，但 $195-205B capex、负 FCF 和监管让它只能等更舒服的价格。",
         "etfQuestion": "如果单买大科技，GOOGL 仍是最像『评分最硬 + 变现最实 + 相对不贵』的候选之一，P/E ~17.9（2019 来最低）+ Cloud +82% + backlog $514B 坐实需求 + TPU v9 2028 大规模部署是差异化升级 + Jefferies PT $445；但 capex 上修 $195-205B + 负 FCF + 长期负债 $98.2B + 多线监管 + 加息交易压估值都是要持续盯的变量。"
       }
     },
     "AMD": {
       "businessModel": "CPU + GPU + FPGA + 自适应 SoC，Data Center 是增长引擎。",
-      "moatEvidence": "CPU（EPYC）端持续夺份额，moat 在变实；AI GPU 仍落后 NVIDIA，但 Helios rack-scale 系统 MSFT/Meta/Oracle/Anthropic/OpenAI/Core Scientific 全部签约，MI455X 已 7/23 发布、MI450 系列 sampling（TSM 2nm、432GB HBM4/19.6 TB/s、Helios 72 卡 1.4 exaFLOPS FP8）、需求已超 2027 内部预期；Zen 6 EPYC『Venice』（TSM 2nm、256 核、比 Zen 5 +70%）让 server CPU 竞争力增强。AMD 把 AI server CPU TAM 从 5 月的 $120B 上修到 2030 年 $220B（AI agent 拉动 CPU）。",
-      "keyRisks": "1) 估值仍高——trailing P/E 曾 ~180x、DCF 内在值仅 ~$404（现价 ~$484）、高估值高 beta 双杀最狠；今晚盘后财报（5pm ET = 8/5 5am 北京）是硬关口（期权定价 ~8.5-12% 波动），市场重点看 Q3 Helios ramp 指引 + MI350 出货 > Q2 数字；2) MI450 毛利率预计低于均值（拖累 blended GM，Q2 指引 GM ~56%）；3) 下半年 PC 出货降、游戏收入预计 -20%+；加息交易升级压高估值。",
-      "aiAngle": "MI350/MI450/MI455 + Helios 拿到 OpenAI（6GW）/Meta（6GW 大单）/Oracle（50k MI450 supercluster）/Anthropic（2GW + $5B 投资）/Core Scientific（2.5GW）/Microsoft Azure 承诺，用 TSMC 2nm；MI450 需求已超 AMD 2027 内部预期，Helios 已进全量产、Q3 末起出货、Q4 爬坡。AI 是上行核心的同时它仍是 NVIDIA 的 beta 放大版——今晚财报市场重点看『Q3 Helios ramp 指引 + MI450 订单量 + MI350 出货 + 毛利』（利润贡献 Q4/2027 才显著），任何 MI450 ramp softening 的措辞会重创 thesis。这是 AMD 能否从『NVDA beta』变成独立 AI 芯片故事的关键实测。",
-      "growthCatalysts": "MI450/455 H2 2026 量产（TSM 2nm）、Helios Q3 末起出货 + Q4 爬坡、Meta 6GW、Anthropic 2GW（H1 2027 起）、Oracle 50k MI450 supercluster、Core Scientific 2.5GW、EPYC 继续夺 server CPU 份额（Q2 server CPU 收入预计 +70% YoY）、Q2 财报今晚盘后（指引营收 ~$11.2B±300M/+46%、共识 ~$11.28-11.34B/+47%、EPS 共识 ~$1.61-1.62、GM ~56%、DC ~$6.5B/+101% YoY）。",
-      "growthSignals": "Data Center revenue（Q2 预计 ~$6.5B：server CPU ~$4B / AI accel ~$2.5B）、MI450/455 出货与 HBM4 供应 + 毛利率、MI350 出货、server CPU share、ROCm 生态、hyperscaler 承诺兑现、Q3 Helios ramp 指引、Q2 财报今晚盘后。",
+      "moatEvidence": "EPYC 在 server CPU 持续夺份额，Q2 Data Center revenue $6.7B、+107% YoY；Instinct/Helios 客户覆盖 MSFT、Meta、Oracle、Anthropic、OpenAI 与 Core Scientific。moat 在 CPU 端变宽，AI GPU 的真正壁垒仍取决于 ROCm、rack-scale 交付与毛利，而不是订单 headline。",
+      "keyRisks": "1) 估值/拥挤度：股价约 $489，过去 1 年约 +184%，强 Q2 已被高度计价；2) Q2 GAAP GM 54%、non-GAAP 56%，MI450/Helios ramp 若低于公司平均 margin 会压利润；3) Gaming Q2 -31% YoY，业务并非全面强；4) CUDA 生态与 hyperscaler 自研 ASIC/TPU 同时夹击，AMD 需要证明 ROCm 与交付能力。",
+      "aiAngle": "Q2 把 AI thesis 从订单故事推进到数字：总营收 $11.5B（+50%）、Data Center $6.7B（+107%）、non-GAAP EPS $1.66。Helios 开始 ramp，说明 AMD 是 NVDA 最真实的第二来源；但当前价格已经要求 MI450/Helios 在 2027 年持续放量且不显著稀释 GM。",
+      "growthCatalysts": "Helios H2 2026 ramp、MI450/455 量产与 hyperscaler 大单兑现、EPYC server share 继续提升；下一关键验证是 Q3 revenue/GM、Instinct 出货与 Q4/2027 利润贡献。",
+      "growthSignals": "Data Center revenue（Q2 $6.7B/+107%）、Instinct revenue、MI450/455 出货与 HBM4 供应、Helios rack deployments、non-GAAP GM（Q2 56%）、ROCm adoption、EPYC share、Gaming/Client 是否拖累 mix。",
       "judgment": {
         "positives": [
-          "产品叙事仍真实：Helios rack-scale MSFT/Meta/Oracle/Anthropic/OpenAI/Core Scientific 全签约、MI450 需求已超 2027 内部预期（432GB HBM4、TSM 2nm、Meta 6GW），MI455X 7/23 已发布、Helios 已进全量产 Q3 末起出货，是打破 NVDA 垄断的最强实锤；Zen 6『Venice』让 EPYC 在 server CPU 端 moat 真实变宽（Q2 server CPU +70% YoY），且 AMD 把 AI server CPU TAM 上修到 2030 年 $220B。",
-          "基本面本身猛：Q1 营收 $10.25B（+38%）、Data Center +57% 至 $5.78B、GM 55%、Q2 指引 ~$11.2B/+46%（共识 ~$11.3B/+47%、DC ~$6.5B/+101% YoY）；分析师因 MI450 ramp 已上调目标；8/3-8/4 板块 risk-on 给财报前情绪垫子。",
-          "大科技 capex 全线上修（AMZN $220B、GOOGL $195-205B）理论上利好 AI 芯片整体需求；卖方多把 7 月回调归因情绪/estimate reset 而非基本面崩坏。"
+          "Q2 数字硬兑现：营收 $11.5B（+50% YoY）、Data Center $6.7B（+107%）、non-GAAP EPS $1.66；AI 与 EPYC 已不是纯 narrative。",
+          "Helios 开始 ramp，MSFT/Meta/Oracle/Anthropic/OpenAI/Core Scientific 的客户覆盖证明 AMD 已成为 hyperscaler 的真实第二供应源。",
+          "Data Center 超过一半收入，业务 mix 正向高价值计算迁移；若 ROCm 与 rack-scale delivery 成熟，moat 会继续变宽。"
         ],
         "concerns": [
-          "估值毫无安全边际：trailing P/E 曾 ~180x + DCF 内在值仅 ~$404（现价 ~$484）+ 过去 12 月已涨 174%，今晚财报数字 + Q3 指引必须硬兑现，期权定价 ~8.5-12% 波动，任何 Helios/MI450 ramp softening 或毛利不及预期回撤最深。",
-          "MI450 毛利率低于均值拖累 blended GM，且利润贡献要到 Q4/2027 才显著；custom silicon 竞争实打实（AMZN Trainium 破 $250 亿运行率 + GOOGL TPU 撑 Cloud +82% 且计划 2028 部署 1200-1500 万颗 TPU v9）。",
-          "下半年 PC 出货降、游戏收入预计 -20%+；它是 NVDA 的高 beta，不是更稳的核心仓，加息交易升级（9 月加息 ~70%）对高估值最不利，今晚财报才是数字验证。"
+          "价格把成功预支得太多：股价约 $489、1 年约 +184%；即使 Q2 record，市场仍出现 sell-the-news，说明 whisper bar 高于公开共识。",
+          "Q2 non-GAAP GM 56% 尚未证明 MI450/Helios 大规模 ramp 后的盈利质量；低于公司平均的 accelerator margin 可能让收入增长快于 FCF。",
+          "Gaming revenue Q2 -31%，且 CUDA、Trainium、TPU/custom ASIC 同时竞争；AMD 不是无风险的 NVDA 替代品。"
         ],
         "actionContext": "Not attractive for now",
-        "todayNote": "Q2 record revenue +50%、DC +107%，Q3 指引再上修，但财报后股价仍下跌，市场在押注 sell-the-news 与极高预期。",
-        "etfQuestion": "它是 NVDA 的 beta，不是更好的核心仓；Helios 拿下多家 hyperscaler + MI450 需求超 2027 内部预期是抢 inference 份额的实锤，但 P/E 曾 180x + 12 月涨 174% + 高 beta 就是代价，今晚财报是数字验证，想要 AI 弹性用 QQQ 更省心、还帮你分散。"
+        "todayNote": "Q2 已落地：营收 $11.5B（+50%）、Data Center $6.7B（+107%）、non-GAAP EPS $1.66、GM 56%；数字硬，但 1 年涨幅约 184%、股价约 $489，安全边际仍不足。",
+        "etfQuestion": "Q2 已证明 AMD 是最强 challenger，但 $489 附近和 1 年 +184% 的涨幅要求 Helios/MI450 连续超预期；QQQ 能给 AI upside，同时分散 ROCm、margin 与单一产品 ramp 风险。"
       }
     },
     "AVGO": {
       "businessModel": "半导体 + 基础设施软件双引擎，custom silicon（超大客户 ASIC）和 VMware 是两条主线。",
       "moatEvidence": "定制芯片设计能力很强，约占 custom AI ASIC 市场 ~70% 份额，为 Meta/Google/OpenAI 设计芯片；企业软件（VMware）有粘性，且与 Apple 供货协议延至 2031——但客户集中度是硬伤。",
       "keyRisks": "1) 客户集中度极高；2) 市场对指引苛刻；3) 高增长预期和估值都已很满（~62x P/E），加息交易升级 + 指数历史高下预期太满的名字更脆弱；FY28 FCF ~$115B 共识被质疑过高；财报 9/4。",
-      "aiAngle": "AI networking / custom silicon 是主叙事，Q3 AI 半导体收入指引 >200% YoY 至 $16.0B；与 OpenAI 联合发布 Jalapeño（10GW/~$200B 潜在机会、late 2026 部署），扩大与 Meta 合作（首款 2nm AI accelerator）。大科技 capex 上修（AMZN $220B、GOOGL $195-205B）+ AI 变现证真间接利好 ASIC 需求，但 hyperscaler 自研 ASIC 潮（AMZN Trainium 破 $250 亿、AMD MI450 今晚兑现读数、GOOGL TPU v9 2028 计划）既是 AVGO 机会也是竞争。",
+      "aiAngle": "AI networking / custom silicon 是主叙事，Q3 AI 半导体收入指引 >200% YoY 至 $16.0B；与 OpenAI 联合发布 Jalapeño（10GW/~$200B 潜在机会、late 2026 部署），扩大与 Meta 合作（首款 2nm AI accelerator）。大科技 capex 上修（AMZN $220B、GOOGL $195-205B）+ AI 变现证真间接利好 ASIC 需求，但 AMZN Trainium、AMD MI450 和 GOOGL TPU v9 同时说明自研/替代竞争正在加快。",
       "growthCatalysts": "AI 半导体收入爆发（Q3 指引 AI $16.0B/+200%）、Jalapeño 放量、Meta 2nm accelerator、VMware 协同、Apple 合作延至 2031、Q3 总营收指引 ~$29.4B、财报 9/4。",
-      "growthSignals": "AI semiconductor revenue、custom ASIC 客户数与项目、VMware synergy、CapEx ROI、竞争对手自研进展（AMD 今晚 / GOOGL TPU v9）；财报 9/4。",
+      "growthSignals": "AI semiconductor revenue、custom ASIC 客户数与项目、VMware synergy、CapEx ROI、竞争对手自研进展（AMD Q2 / GOOGL TPU v9）；财报 9/4。",
       "judgment": {
         "positives": [
           "AI 需求爆发：Q3 AI 半导体指引 >200% YoY 至 $16.0B、Q3 总营收 ~$29.4B；Q2 营收 +48% 至 $22.19B、AI 半导体 $10.8B（+143%）、EPS $2.44 超预期。",
@@ -291,12 +291,12 @@
           "大科技 capex 上修 + AI 变现证真间接利好 ASIC 需求；VMware 软件那条腿让它在纯芯片 de-rating 里比 pure-play 稍抗跌。"
         ],
         "concerns": [
-          "市场对指引苛刻，预期太满的名字最脆弱；加息交易升级（9 月加息 ~70%）+ 指数历史高下估值风险放大。",
-          "客户集中度让单一事件风险大：AMZN Trainium 破 $250 亿运行率 + GOOGL/Meta 自研（GOOGL 计划 2028 部署 1200-1500 万颗 TPU v9）+ AMD MI450（今晚财报读数）——custom AI 芯片竞争实打实加剧，超大客户自研是双刃。",
+          "市场对指引苛刻，预期太满的名字最脆弱；加息交易升级（9 月加息约 54%）+ 指数历史高下估值风险放大。",
+          "客户集中度让单一事件风险大：AMZN Trainium 破 $250 亿运行率 + GOOGL/Meta 自研（GOOGL 计划 2028 部署 1200-1500 万颗 TPU v9）+ AMD MI450（Q2 财报读数）——custom AI 芯片竞争实打实加剧，超大客户自研是双刃。",
           "估值和预期都很满，FY28 FCF ~$115B 被质疑过高；财报要等 9/4，中间缺硬催化撑情绪。"
         ],
         "actionContext": "Not attractive for now",
-        "todayNote": null,
+        "todayNote": "8/7 约 +0.55%；AMD Q2 DC +107% 继续印证 AI 需求，但也强化 GPU/custom silicon 竞争。9/4 财报前没有新的安全边际。",
         "etfQuestion": "定制芯片很强（Jalapeño 坐实龙头 + Apple 合作延至 2031），但不便宜、客户集中（AMZN/GOOGL/Meta/AMD 都在自研/竞争）、预期太满的名字最脆弱，不是当前最优入场位；想要半导体暴露 QQQ/VTI 已含。"
       }
     },
@@ -304,13 +304,13 @@
       "businessModel": "全球最大半导体代工厂，先进制程和封装能力是核心收入来源。",
       "moatEvidence": "技术 moat 极宽，先进制程领先对手很多代，供应链地位不可替代；Q2 确认 2nm 全年产能已订满、7nm 及以上先进制程占晶圆收入 77%、CoWoS 售罄到 2026 底且 lead time 延到 2027。",
       "keyRisks": "1) 估值不便宜（YTD +25%）；2) 台海地缘政治不可对冲；3) 对华先进芯片出口管制 + CXMT/华为国产替代抬头；客户自研芯片争价权；下半年 N2 爬坡 + 海外扩产压毛利（Q3 GM 指引 65-67% < Q2 67.7%）；关税加码宏观不确定性。",
-      "aiAngle": "AI 供应链最关键的瓶颈之一，属于上游中的上游；HPC/AI 是 FY26 增长 >40% 的核心驱动；NVDA Rubin/AMD MI450（TSM 2nm）/AMZN Trainium/GOOGL TPU（含 v9 2028 大规模部署）/OpenAI Jalapeño 全靠它代工——云三连变现证真 + 大科技 capex 全线上修等于给 TSM 2nm/先进制程订单持续加码，是 custom silicon 潮最大结构性赢家。CoWoS 售罄到 2026 底是 AI 供不应求最硬证据。AMD 今晚财报若 MI450 ramp 强劲，直接印证 TSM 2nm 订单。",
+      "aiAngle": "AI 供应链最关键的瓶颈之一，属于上游中的上游；HPC/AI 是 FY26 增长 >40% 的核心驱动；NVDA Rubin/AMD MI450（TSM 2nm）/AMZN Trainium/GOOGL TPU（含 v9 2028 大规模部署）/OpenAI Jalapeño 全靠它代工——云三连变现证真 + 大科技 capex 全线上修等于给 TSM 2nm/先进制程订单持续加码，是 custom silicon 潮最大结构性赢家。CoWoS 售罄到 2026 底是 AI 供不应求最硬证据。AMD Q2 财报若 MI450 ramp 强劲，直接印证 TSM 2nm 订单。",
       "growthCatalysts": "N2/N2P/A16 量产爬坡（AMD MI450/NVDA Rubin 全用 2nm）、CoWoS 扩产（售罄到年底）、2026 capex 上修到 $60-64B（Arizona 再加 $100B/总 $265B）、FY26 增长上修到 >40%。",
-      "growthSignals": "月度营收动能、产能利用率、2nm 良率与定价、CoWoS 供需、下半年毛利爬坡、地缘/出口政策、客户 ramp（AMD 今晚）；下一份月度营收。",
+      "growthSignals": "月度营收动能、产能利用率、2nm 良率与定价、CoWoS 供需、下半年毛利爬坡、地缘/出口政策、客户 ramp（AMD Q2）；下一份月度营收。",
       "judgment": {
         "positives": [
           "Q2 是超级 blowout 且是真金白银：营收 $40.2B（+36% YoY）、净利创纪录、GM 67.7%、FY26 增长上修到 >40%、capex $60-64B、CoWoS 售罄到年底、2nm 全订满——需求真实性无可辩驳；共识 Buy。",
-          "作为所有 AI 大芯片（NVDA/AMD/AMZN/GOOGL/OpenAI）的唯一先进代工，卡位无可替代——云三连变现证真 + 大科技 capex 全线上修 + GOOGL TPU v9 2028 大规模部署计划持续坐实 2nm/先进制程订单能见度；AMD MI450（今晚财报）用 2nm 是直接订单印证；定价权极强（3nm 下半年涨价 ~15%）。",
+          "作为所有 AI 大芯片（NVDA/AMD/AMZN/GOOGL/OpenAI）的唯一先进代工，卡位无可替代——云三连变现证真 + 大科技 capex 全线上修 + GOOGL TPU v9 2028 大规模部署计划持续坐实 2nm/先进制程订单能见度；AMD MI450（Q2 财报）用 2nm 是直接订单印证；定价权极强（3nm 下半年涨价 ~15%）。",
           "作为『卖铲人』它不押注 AI 变现在哪家兑现——只要 capex 在上修、芯片在流片，TSM 就是最确定的受益者。"
         ],
         "concerns": [
@@ -319,7 +319,7 @@
           "台海地缘 + 对华出口管制 + CXMT/华为国产替代抬头无法对冲；capex 上修到 $60-64B 高端，执行与折旧压力加大。"
         ],
         "actionContext": "Not attractive for now",
-        "todayNote": null,
+        "todayNote": "8/7 约 +1.01%；AMD Q2 DC +107% 是先进制程/封装需求的新增 read-through，但 YTD/1Y 大涨后仍不追，台海风险无法用估值模型消除。",
         "etfQuestion": "世界级生意，AI 链最硬卡位（custom silicon 潮的卖铲人），record 财报实锤 moat；capex 全线上修 + AMD MI450 用 2nm + GOOGL TPU v9 2028 强化订单能见度，但短期由情绪主导，想要半导体暴露 QQQ/VTI 已含、且帮你分散地缘风险。"
       }
     },
@@ -342,7 +342,7 @@
           "半导体是周期生意，当前处上行强区，任何 AI CapEx 放缓信号都会被放大；估值偏贵。"
         ],
         "actionContext": "Not attractive for now",
-        "todayNote": null,
+        "todayNote": "8/7 约 +1.56%；AMD Q2 与 hyperscaler capex 继续验证 EUV 长周期需求，基本面没坏，问题仍是价格与半导体周期位置。",
         "etfQuestion": "垄断很强（谁做芯片都要 EUV）且基本面强确认，capex 上修 + 变现证真强化需求来源；但 AI CapEx 可持续性仍是长期变量，想要暴露 QQQ 已含少量、半导体设备敞口有限。"
       }
     },
@@ -365,37 +365,37 @@
           "零售端利润率薄、监管 + 关税对广告/平台压力上升；追 $3T 的高位不舒服。"
         ],
         "actionContext": "Not attractive for now",
-        "todayNote": "Bezos 约 $4B 出售压住股价，但 Q2 AWS +37%、营收 $200.6B、capex 上修到 ~$220B，业务信号比 headline 强得多。",
+        "todayNote": "8/7 约 -0.14%；AWS +36.7% 与 $496B backlog 仍强，Bezos 预设计划出售约 $4B 股票只是噪音；$3T 附近追价不舒服。",
         "etfQuestion": "AWS 重新加速到 18 季最快 + 定价权确认 + Trainium 破 $250 亿运行率 + AI 变现证真，长期价值很强、多引擎相对均衡；但破 $3T 后估值优势用完、capex/FCF/AWS margin + 加息交易仍是盯点，回调再分批更舒服。"
       }
     },
     "ORCL": {
       "businessModel": "数据库 + OCI 云 + ERP / HCM SaaS，OCI 是增长引擎。",
       "moatEvidence": "数据库切换成本极高，OCI 也在利用 AI 需求建立长期合同（含 $300B OpenAI 大单）。",
-      "keyRisks": "1) 负 FCF 和巨额融资/租赁让市场不安（FY26 计划再融 $45-50B 债/股）；2) 波动极高（较 52 周高点深跌）；3) RPO/合同很大但转化和 ROI 有不确定性。云三连变现证真缓解了对『靠融资买产能』的整体担忧，但加息交易升级（9 月加息 ~70%）重新给杠杆 + 负 FCF 结构性风险压力——利率上行对它这种融资买产能的画像最不利。",
-      "aiAngle": "AI cloud infra 需求强，但公司在用巨额融资/租赁去承接这波需求，$300B OpenAI 单是双刃剑；是 AMD MI450 supercluster（首发 50k 颗）的落地方——AMD 今晚财报若 MI450 ramp 强劲，间接利好 ORCL 的算力供给叙事。云三连变现证真让『AI infra 能变现』被强化，但它靠融资买产能的画像仍最脆弱，加息交易升级放大融资成本担忧。",
+      "keyRisks": "1) 负 FCF 和巨额融资/租赁让市场不安（FY26 计划再融 $45-50B 债/股）；2) 波动极高（较 52 周高点深跌）；3) RPO/合同很大但转化和 ROI 有不确定性。云三连变现证真缓解了对『靠融资买产能』的整体担忧，但加息交易升级（9 月加息约 54%）重新给杠杆 + 负 FCF 结构性风险压力——利率上行对它这种融资买产能的画像最不利。",
+      "aiAngle": "AI cloud infra 需求强，但公司在用巨额融资/租赁去承接这波需求，$300B OpenAI 单是双刃剑；是 AMD MI450 supercluster（首发 50k 颗）的落地方——AMD Q2 财报若 MI450 ramp 强劲，间接利好 ORCL 的算力供给叙事。云三连变现证真让『AI infra 能变现』被强化，但它靠融资买产能的画像仍最脆弱，加息交易升级放大融资成本担忧。",
       "growthCatalysts": "FY2027 指引、RPO 转化、OCI 增长（FY26 Q2 云 +34%、IaaS +68%）、$300B OpenAI 合同兑现、Oracle 首发 MI450 supercluster（Q3 2026）；财报 9/10。",
-      "growthSignals": "OCI growth、RPO 转化率、融资/租赁用途、data center 供给成本、FY2027 guidance、MI450 supercluster 落地（AMD 今晚相关）；财报 9/10。",
+      "growthSignals": "OCI growth、RPO 转化率、融资/租赁用途、data center 供给成本、FY2027 guidance、MI450 supercluster 落地（AMD Q2相关）；财报 9/10。",
       "judgment": {
         "positives": [
           "AI 需求被财报强力证明，OCI/IaaS 增长炸裂（FY26 Q2 云 +34%、IaaS +68%）；Q1 EPS $2.11 超预期；云三连变现证真强化『AI infra 能变现』整体逻辑。",
           "卖方把连跌当机会：William Blair 加入 Conviction List、Mizuho 列 top pick，共识 Moderate Buy、均价 ~$268。",
-          "数据库切换成本 + 长期收入可见性（含 $300B OpenAI 多年大单）提供利润基本盘；是 AMD MI450 supercluster 落地方（今晚财报相关）。"
+          "数据库切换成本 + 长期收入可见性（含 $300B OpenAI 多年大单）提供利润基本盘；是 AMD MI450 supercluster 落地方（Q2 财报相关）。"
         ],
         "concerns": [
-          "最脆弱的画像之一：靠 FY26 再融 $45-50B 债/股 + 负 FCF 去『买产能』——加息交易升级（9 月加息 ~70%）让融资成本担忧明显上升，一旦情绪再转，负 FCF + 高杠杆最先被质疑。",
+          "最脆弱的画像之一：靠 FY26 再融 $45-50B 债/股 + 负 FCF 去『买产能』——加息交易升级（9 月加息约 54%）让融资成本担忧明显上升，一旦情绪再转，负 FCF + 高杠杆最先被质疑。",
           "较 52 周高深跌——watchlist 里跌得最惨的之一；2026 年报自曝风险（拿不到低价产能/AI 产品不及预期）。",
           "$300B 单一客户（OpenAI）依赖是集中风险；AI 链越热产能越贵，对要租产能的它反而抬成本。"
         ],
         "actionContext": "Not attractive for now",
-        "todayNote": null,
+        "todayNote": "8/7 约 -0.64%、1 年约 -42%；OCI 增长与巨额 RPO 没变，但 $45-50B 再融资、负 FCF 和 OpenAI 集中风险仍让它不适合学习池。",
         "etfQuestion": "看得懂它的 AI infra 价值（含 $300B OpenAI 单 + Oracle 首发 MI450 supercluster），变现证真是情绪顺风；但杠杆 + 再融 $45-50B + 负 FCF + 单一客户依赖 + 加息交易升级是结构性硬伤，不是舒服时点。"
       }
     },
     "PLTR": {
       "businessModel": "AI 软件平台，政府和企业两条线，把数据和模型嵌到决策流程里。",
       "moatEvidence": "政府端 moat 深（US Army NGC2 选 Foundry 作云数据层），企业端（US commercial 本季 +149%）正快速建立，但估值给得非常满——即便财报 blowout，trailing P/E 仍在极高区间。与 NVIDIA 合作部署主权 AI + 集成 Nemotron 模型强化生态背书。连续 EPS beat 记录延续。",
-      "keyRisks": "1) 估值极高，提前透支大量增长——8/3 财报强 beat 后盘前 +15-17%，估值只会更满，未来任何减速都会被放大『卖事实』；2) 政府合同依赖和执行不确定；3) 加息交易升级（9 月加息 ~70%）对估值最满的 AI 纯玩仍是逆风，只是被 blowout 暂时盖过。",
+      "keyRisks": "1) 估值极高，提前透支大量增长——8/3 财报强 beat 后盘前 +15-17%，估值只会更满，未来任何减速都会被放大『卖事实』；2) 政府合同依赖和执行不确定；3) 加息交易升级（9 月加息约 54%）对估值最满的 AI 纯玩仍是逆风，只是被 blowout 暂时盖过。",
       "aiAngle": "AI 应用层代表；AIP 把生成式 AI 连到数据和运营、管理 AI agent；与 NVIDIA 合作部署主权 AI + 集成 Nemotron；US Army NGC2 选 Foundry。8/3 盘后 Q2 财报是应用层变现的直接验证且大超预期——营收 +92.8% 至 $1.94B（vs 共识 $1.81B）、US commercial +149% 至 $764M、US gov +90%、EPS $0.41（vs $0.34）、调整后 FCF margin 63%、上调 FY 至 $8.15B（+~$500M）。坐实企业 AI 应用层需求真、变现也真。",
       "growthCatalysts": "US commercial 继续扩张（本季 +149%、全年目标上调至 >$3.42B）、RPO 增长、NVIDIA 主权 AI + Nemotron 集成、US Army NGC2、上调后的 FY 指引 $8.15B、后续新客户。",
       "growthSignals": "US commercial revenue（Q2 +149%）、RPO、net retention、FCF margin（本季 63%）、政府大单落地节奏、后续指引是否再上调；下一财报 Q3。",
@@ -407,11 +407,11 @@
         ],
         "concerns": [
           "估值是最大问题：blowout 后盘前 +15-17%，股价 ~$144 让 P/E 只会更满，安全边际为负——未来任何一季减速都会被放大『卖事实』，历史上高估值 AI 纯玩最脆弱。",
-          "加息交易升级（9 月加息 ~70%）+ 指数历史高对估值最满的名字仍是结构性逆风，只是被这次 blowout 暂时盖过；情绪股，回撤起来也快。",
+          "加息交易升级（9 月加息约 54%）+ 指数历史高对估值最满的名字仍是结构性逆风，只是被这次 blowout 暂时盖过；情绪股，回撤起来也快。",
           "不适合当前学习池的风格（安全边际为负）；追财报后 +15-17% 的高点风险收益比很差。"
         ],
         "actionContext": "Not attractive for now",
-        "todayNote": "Q2 revenue +93%、US commercial +150%、guidance 上修，股价暴涨；问题从 execution 转到 valuation。",
+        "todayNote": "8/7 约 -1.58%，财报后 5 日仍约 +27%；Q2 execution 顶级，但上涨把问题完全推向 valuation，追高没有安全边际。",
         "etfQuestion": "故事和执行现在都是顶级（营收 +92.8%、US commercial +149%、上调 FY），但『好公司 ≠ 好价格』：blowout 后 +15-17% 让估值更满、安全边际为负，QQQ/VTI 已有少量暴露，学习池不该追这种情绪高点。"
       }
     },
@@ -429,12 +429,12 @@
           "全年指引强：FY26 订阅收入上调到 $15.76-15.78B（cc +21%）、营业利润率 31.5%、FCF margin 35%；迁移成本高 + AI Control Tower 卡位企业 AI 治理层。"
         ],
         "concerns": [
-          "高估值 SaaS 对利率敏感；加息交易升级（9 月加息 ~70%）重新加压，若市场觉得增速预期已充分仍可能『卖事实』回撤。",
+          "高估值 SaaS 对利率敏感；加息交易升级（9 月加息约 54%）重新加压，若市场觉得增速预期已充分仍可能『卖事实』回撤。",
           "曾距 52 周高深跌、市场对减速极其敏感——Q3 指引订阅 cc +20% 略降，减速趋势要盯。",
           "安全事件会打 trust；估值端仍需与 VTI 比性价比。"
         ],
         "actionContext": "Not attractive for now",
-        "todayNote": null,
+        "todayNote": "8/7 约持平；Now Assist ACV >$1B 仍证明 AI upsell，但 Q3 subscription cc +20% 的减速与高估值并存，继续等价格。",
         "etfQuestion": "优质 SaaS，AI 变现（Now Assist/Control Tower）Q2 已强兑现（AI ACV 破 $1B、上调指引）、且不在芯片风暴中心，但高估值 + 波动大 + 对利率敏感（加息交易升级）；当前不比 VTI 更值得单独持有，等回调看性价比。"
       }
     },
@@ -457,7 +457,7 @@
           "下一财报要等 9/3、中间缺硬催化；AI 竞争格局（vs Copilot）未定。"
         ],
         "actionContext": "Not attractive for now",
-        "todayNote": null,
+        "todayNote": "8/7 约 -3.22%；Agentforce 有真实付费采用，但低双位数增长与 NOW/PLTR 的速度差仍明显，市场在等 bookings 证明而不是听 narrative。",
         "etfQuestion": "有价值且估值不贵（Agentforce 在起量、AI-capex + 加息交易情绪下低估值反而是优势），但增长减速（+9.8% 最慢，NOW +24.5%/PLTR +92.8% 反衬）+ Copilot 竞争 + SaaSpocalypse 未定；要先确认 AI 竞争格局再说，VTI 已含。"
       }
     }
