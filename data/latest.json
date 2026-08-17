@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T12:15:20.859183+00:00",
+  "generatedAt": "2026-08-17T12:15:03.174244+00:00",
   "source": {
     "prices": "Yahoo Finance unofficial public endpoints",
     "managerFootprints": "Curated reference notes; verify 13F before treating as current holdings"
@@ -23,33 +23,29 @@
       "quote": {
         "shortName": "State Street SPDR S&P 500 ETF T",
         "longName": "State Street SPDR S&P 500 ETF Trust",
-        "regularMarketPrice": 777.88,
-        "regularMarketChange": 5.3900146484375,
-        "regularMarketChangePercent": 0.6977455651952402,
-        "regularMarketPreviousClose": 772.489990234375,
+        "regularMarketPrice": 776.34,
+        "regularMarketChange": -1.53997802734375,
+        "regularMarketChangePercent": -0.19797115463531245,
+        "regularMarketPreviousClose": 777.8800048828125,
         "marketCap": null,
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
         "fiftyTwoWeekHigh": 779.37,
         "fiftyTwoWeekLow": 629.28,
-        "regularMarketVolume": 30258928,
+        "regularMarketVolume": 29940248,
         "priceToBook": null,
         "returnOnEquity": null,
         "dividendYield": null,
         "trailingAnnualDividendYield": null
       },
       "metrics": {
-        "return1mPct": 3.056399279134858,
-        "return3mPct": 3.971025656107341,
-        "return1yPct": 20.610898544042545,
-        "volatilityPct": 12.866935012870092,
+        "return1mPct": 3.4127313981467733,
+        "return3mPct": 5.028619235723264,
+        "return1yPct": 20.654610206048662,
+        "volatilityPct": 12.86609778043728,
         "maxDrawdownPct": -9.133132097249053,
         "history": [
-          {
-            "date": "2025-08-14",
-            "close": 644.9500122070312
-          },
           {
             "date": "2025-08-15",
             "close": 643.4400024414062
@@ -1049,6 +1045,10 @@
           {
             "date": "2026-08-13",
             "close": 777.8800048828125
+          },
+          {
+            "date": "2026-08-14",
+            "close": 776.3400268554688
           }
         ]
       },
@@ -1067,7 +1067,7 @@
           "quality": 78,
           "moat": 82,
           "risk": 81.5,
-          "momentum": 61.6,
+          "momentum": 62.8,
           "aiExposure": 45,
           "diversification": 90,
           "expense": 88,
@@ -1075,12 +1075,12 @@
           "managerReference": 58
         },
         "perspectives": {
-          "composite": 71.7,
+          "composite": 71.9,
           "buffett_munger": 79.4,
           "bogle": 87.7,
-          "peter_lynch": 68.9,
+          "peter_lynch": 69.2,
           "howard_marks": 83.2,
-          "tech_growth_risk": 66.0
+          "tech_growth_risk": 66.2
         },
         "action": {
           "label": "Continue observing",
@@ -1100,33 +1100,29 @@
       "quote": {
         "shortName": "Invesco QQQ Trust, Series 1",
         "longName": "Invesco QQQ Trust",
-        "regularMarketPrice": 732.07,
-        "regularMarketChange": 8.3699951171875,
-        "regularMarketChangePercent": 1.1565558900105577,
-        "regularMarketPreviousClose": 723.7000122070312,
+        "regularMarketPrice": 731.07,
+        "regularMarketChange": -1.0,
+        "regularMarketChangePercent": -0.13659895774928987,
+        "regularMarketPreviousClose": 732.0700073242188,
         "marketCap": null,
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
         "fiftyTwoWeekHigh": 748.65,
         "fiftyTwoWeekLow": 555.6,
-        "regularMarketVolume": 29782876,
+        "regularMarketVolume": 23790607,
         "priceToBook": null,
         "returnOnEquity": null,
         "dividendYield": null,
         "trailingAnnualDividendYield": null
       },
       "metrics": {
-        "return1mPct": 1.9965471180119598,
-        "return3mPct": 1.706057276669748,
-        "return1yPct": 26.242906211799742,
-        "volatilityPct": 19.60750929026818,
+        "return1mPct": 3.559793296300473,
+        "return3mPct": 3.1230184753324286,
+        "return1yPct": 26.627286056373634,
+        "volatilityPct": 19.60141189360112,
         "maxDrawdownPct": -12.1883680975564,
         "history": [
-          {
-            "date": "2025-08-14",
-            "close": 579.8900146484375
-          },
           {
             "date": "2025-08-15",
             "close": 577.3400268554688
@@ -2126,6 +2122,10 @@
           {
             "date": "2026-08-13",
             "close": 732.0700073242188
+          },
+          {
+            "date": "2026-08-14",
+            "close": 731.0700073242188
           }
         ]
       },
@@ -2137,7 +2137,7 @@
           "quality": 74,
           "moat": 72,
           "risk": 72.7,
-          "momentum": 60.2,
+          "momentum": 63.1,
           "aiExposure": 72,
           "diversification": 64,
           "expense": 74,
@@ -2145,12 +2145,12 @@
           "managerReference": 50
         },
         "perspectives": {
-          "composite": 69.6,
+          "composite": 70.0,
           "buffett_munger": 72.7,
           "bogle": 69.7,
-          "peter_lynch": 70.4,
+          "peter_lynch": 71.0,
           "howard_marks": 77.0,
-          "tech_growth_risk": 70.7
+          "tech_growth_risk": 71.1
         },
         "action": {
           "label": "Continue observing",
@@ -2170,33 +2170,29 @@
       "quote": {
         "shortName": "Vanguard S&P 500 ETF",
         "longName": "Vanguard S&P 500 ETF",
-        "regularMarketPrice": 714.95,
-        "regularMarketChange": 4.780029296875,
-        "regularMarketChangePercent": 0.6730824185622764,
-        "regularMarketPreviousClose": 710.1699829101562,
+        "regularMarketPrice": 713.61,
+        "regularMarketChange": -1.34002685546875,
+        "regularMarketChangePercent": -0.18742944717661247,
+        "regularMarketPreviousClose": 714.9500122070312,
         "marketCap": null,
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
         "fiftyTwoWeekHigh": 716.39,
         "fiftyTwoWeekLow": 578.46,
-        "regularMarketVolume": 4469514,
+        "regularMarketVolume": 4148693,
         "priceToBook": null,
         "returnOnEquity": null,
         "dividendYield": null,
         "trailingAnnualDividendYield": null
       },
       "metrics": {
-        "return1mPct": 3.048432514584265,
-        "return3mPct": 3.9579533408923506,
-        "return1yPct": 20.595435885852464,
-        "volatilityPct": 12.854831037315357,
+        "return1mPct": 3.400754948991147,
+        "return3mPct": 5.029139112706726,
+        "return1yPct": 20.629845414129978,
+        "volatilityPct": 12.854203560166717,
         "maxDrawdownPct": -9.187121839889823,
         "history": [
-          {
-            "date": "2025-08-14",
-            "close": 592.8499755859375
-          },
           {
             "date": "2025-08-15",
             "close": 591.5700073242188
@@ -3196,6 +3192,10 @@
           {
             "date": "2026-08-13",
             "close": 714.9500122070312
+          },
+          {
+            "date": "2026-08-14",
+            "close": 713.6099853515625
           }
         ]
       },
@@ -3206,8 +3206,8 @@
           "value": 70,
           "quality": 80,
           "moat": 84,
-          "risk": 81.4,
-          "momentum": 61.6,
+          "risk": 81.5,
+          "momentum": 62.8,
           "aiExposure": 45,
           "diversification": 90,
           "expense": 96,
@@ -3215,12 +3215,12 @@
           "managerReference": 50
         },
         "perspectives": {
-          "composite": 71.5,
+          "composite": 71.6,
           "buffett_munger": 80.6,
           "bogle": 90.0,
-          "peter_lynch": 69.3,
+          "peter_lynch": 69.6,
           "howard_marks": 83.2,
-          "tech_growth_risk": 66.4
+          "tech_growth_risk": 66.6
         },
         "action": {
           "label": "Continue observing",
@@ -3229,7 +3229,7 @@
         },
         "explanation": [
           "ETF lens: diversification 90/100, cost 96/100.",
-          "Risk score is 81.4/100 based on recent volatility and drawdown."
+          "Risk score is 81.5/100 based on recent volatility and drawdown."
         ]
       }
     },
@@ -3240,33 +3240,29 @@
       "quote": {
         "shortName": "Vanguard Morningstar Total Stoc",
         "longName": "Vanguard Morningstar Total Stock Market ETF",
-        "regularMarketPrice": 384.3,
-        "regularMarketChange": 2.470001220703125,
-        "regularMarketChangePercent": 0.6468850817288097,
-        "regularMarketPreviousClose": 381.8299865722656,
+        "regularMarketPrice": 383.85,
+        "regularMarketChange": -0.449981689453125,
+        "regularMarketChangePercent": -0.11709125780549057,
+        "regularMarketPreviousClose": 384.29998779296875,
         "marketCap": null,
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
         "fiftyTwoWeekHigh": 385.12,
         "fiftyTwoWeekLow": 310.4,
-        "regularMarketVolume": 2292821,
+        "regularMarketVolume": 2303520,
         "priceToBook": null,
         "returnOnEquity": null,
         "dividendYield": null,
         "trailingAnnualDividendYield": null
       },
       "metrics": {
-        "return1mPct": 3.189939835910449,
-        "return3mPct": 4.599889541981317,
-        "return1yPct": 21.15766097134779,
-        "volatilityPct": 13.133528378033532,
+        "return1mPct": 3.5808786259595493,
+        "return3mPct": 5.819599833892308,
+        "return1yPct": 21.291119102256495,
+        "volatilityPct": 13.131390052467932,
         "maxDrawdownPct": -9.20266768110406,
         "history": [
-          {
-            "date": "2025-08-14",
-            "close": 317.19000244140625
-          },
           {
             "date": "2025-08-15",
             "close": 316.4700012207031
@@ -4266,6 +4262,10 @@
           {
             "date": "2026-08-13",
             "close": 384.29998779296875
+          },
+          {
+            "date": "2026-08-14",
+            "close": 383.8500061035156
           }
         ]
       },
@@ -4276,8 +4276,8 @@
           "value": 70,
           "quality": 82,
           "moat": 88,
-          "risk": 81.1,
-          "momentum": 62.3,
+          "risk": 81.2,
+          "momentum": 63.7,
           "aiExposure": 42,
           "diversification": 96,
           "expense": 96,
@@ -4285,12 +4285,12 @@
           "managerReference": 50
         },
         "perspectives": {
-          "composite": 71.5,
+          "composite": 71.7,
           "buffett_munger": 82.2,
           "bogle": 92.4,
-          "peter_lynch": 69.3,
+          "peter_lynch": 69.5,
           "howard_marks": 83.1,
-          "tech_growth_risk": 66.0
+          "tech_growth_risk": 66.2
         },
         "action": {
           "label": "Continue observing",
@@ -4299,7 +4299,7 @@
         },
         "explanation": [
           "ETF lens: diversification 96/100, cost 96/100.",
-          "Risk score is 81.1/100 based on recent volatility and drawdown."
+          "Risk score is 81.2/100 based on recent volatility and drawdown."
         ]
       }
     },
@@ -4310,33 +4310,29 @@
       "quote": {
         "shortName": "iShares 0-3 Month Treasury Bond",
         "longName": "iShares 0-3 Month Treasury Bond ETF",
-        "regularMarketPrice": 100.53,
-        "regularMarketChange": 0.01000213623046875,
-        "regularMarketChangePercent": 0.009950394513036365,
-        "regularMarketPreviousClose": 100.5199966430664,
+        "regularMarketPrice": 100.56,
+        "regularMarketChange": 0.029998779296875,
+        "regularMarketChangePercent": 0.02984062435207324,
+        "regularMarketPreviousClose": 100.52999877929688,
         "marketCap": null,
         "trailingPE": null,
         "forwardPE": null,
         "epsTrailingTwelveMonths": null,
         "fiftyTwoWeekHigh": 100.74,
         "fiftyTwoWeekLow": 100.27,
-        "regularMarketVolume": 14717547,
+        "regularMarketVolume": 15433800,
         "priceToBook": null,
         "returnOnEquity": null,
         "dividendYield": null,
         "trailingAnnualDividendYield": null
       },
       "metrics": {
-        "return1mPct": -0.009948414700011732,
-        "return3mPct": 0.009950394513036365,
-        "return1yPct": 0.009950394513036365,
-        "volatilityPct": 1.0513962169267066,
+        "return1mPct": 0.009939837426742315,
+        "return3mPct": 0.009939837426742315,
+        "return1yPct": 0.009939837426742315,
+        "volatilityPct": 1.0513959141992177,
         "maxDrawdownPct": -0.4566201054468033,
         "history": [
-          {
-            "date": "2025-08-14",
-            "close": 100.5199966430664
-          },
           {
             "date": "2025-08-15",
             "close": 100.55000305175781
@@ -5336,6 +5332,10 @@
           {
             "date": "2026-08-13",
             "close": 100.52999877929688
+          },
+          {
+            "date": "2026-08-14",
+            "close": 100.55999755859375
           }
         ]
       },
@@ -5380,33 +5380,29 @@
       "quote": {
         "shortName": "PDD Holdings Inc.",
         "longName": "PDD Holdings Inc.",
-        "regularMarketPrice": 84.17,
-        "regularMarketChange": -4.870002746582031,
-        "regularMarketChangePercent": -5.469454960138897,
-        "regularMarketPreviousClose": 89.04000091552734,
+        "regularMarketPrice": 84.79,
+        "regularMarketChange": 0.6200027465820312,
+        "regularMarketChangePercent": 0.7366077700721396,
+        "regularMarketPreviousClose": 84.16999816894531,
         "marketCap": 136400000000.0,
         "trailingPE": 9.9,
         "forwardPE": 6.8,
         "epsTrailingTwelveMonths": null,
         "fiftyTwoWeekHigh": 139.41,
         "fiftyTwoWeekLow": 71.94,
-        "regularMarketVolume": 8630935,
+        "regularMarketVolume": 4733143,
         "priceToBook": null,
         "returnOnEquity": null,
         "dividendYield": null,
         "trailingAnnualDividendYield": null
       },
       "metrics": {
-        "return1mPct": -1.8311170211582684,
-        "return3mPct": -11.937647461314626,
-        "return1yPct": -26.6428449224131,
-        "volatilityPct": 34.08847852734161,
+        "return1mPct": -2.1804330675983863,
+        "return3mPct": -11.520401444831984,
+        "return1yPct": -28.717946119476256,
+        "volatilityPct": 33.886809347016374,
         "maxDrawdownPct": -46.934047302796756,
         "history": [
-          {
-            "date": "2025-08-14",
-            "close": 114.73999786376953
-          },
           {
             "date": "2025-08-15",
             "close": 118.94999694824219
@@ -6406,6 +6402,10 @@
           {
             "date": "2026-08-13",
             "close": 84.16999816894531
+          },
+          {
+            "date": "2026-08-14",
+            "close": 84.79000091552734
           }
         ]
       },
@@ -6423,8 +6423,8 @@
           "value": 45,
           "quality": 62,
           "moat": 55,
-          "risk": 38.4,
-          "momentum": 32.8,
+          "risk": 38.6,
+          "momentum": 32.1,
           "aiExposure": 20,
           "diversification": 15,
           "expense": 0,
@@ -6432,12 +6432,12 @@
           "managerReference": 58
         },
         "perspectives": {
-          "composite": 41.4,
+          "composite": 41.3,
           "buffett_munger": 50.2,
-          "bogle": 25.4,
-          "peter_lynch": 38.4,
-          "howard_marks": 48.7,
-          "tech_growth_risk": 37.0
+          "bogle": 25.5,
+          "peter_lynch": 38.2,
+          "howard_marks": 48.8,
+          "tech_growth_risk": 36.9
         },
         "action": {
           "label": "Continue observing",
@@ -6446,7 +6446,7 @@
         },
         "explanation": [
           "Stock lens: moat 55/100, quality 62/100, value 45/100.",
-          "Risk score is 38.4/100 based on recent volatility and drawdown.",
+          "Risk score is 38.6/100 based on recent volatility and drawdown.",
           "Existing learning position; new capital should usually compare against core ETFs first."
         ]
       }
@@ -6458,33 +6458,29 @@
       "quote": {
         "shortName": "Apple Inc.",
         "longName": "Apple Inc.",
-        "regularMarketPrice": 305.26,
-        "regularMarketChange": 3.010009765625,
-        "regularMarketChangePercent": 0.9958675816790663,
-        "regularMarketPreviousClose": 302.25,
+        "regularMarketPrice": 305.93,
+        "regularMarketChange": 0.66998291015625,
+        "regularMarketChangePercent": 0.2194794236790587,
+        "regularMarketPreviousClose": 305.260009765625,
         "marketCap": 4410000000000.0,
         "trailingPE": 36.3,
         "forwardPE": 31.3,
         "epsTrailingTwelveMonths": null,
         "fiftyTwoWeekHigh": 344.57,
         "fiftyTwoWeekLow": 223.78,
-        "regularMarketVolume": 38492546,
+        "regularMarketVolume": 28229375,
         "priceToBook": null,
         "returnOnEquity": null,
         "dividendYield": null,
         "trailingAnnualDividendYield": null
       },
       "metrics": {
-        "return1mPct": -6.790836712786263,
-        "return3mPct": 2.3641120393542714,
-        "return1yPct": 31.136700475304924,
-        "volatilityPct": 25.04691840040662,
+        "return1mPct": -8.200809064689274,
+        "return3mPct": 1.8985382809424411,
+        "return1yPct": 32.099830525247874,
+        "volatilityPct": 25.0389969907138,
         "maxDrawdownPct": -13.82298375943204,
         "history": [
-          {
-            "date": "2025-08-14",
-            "close": 232.77999877929688
-          },
           {
             "date": "2025-08-15",
             "close": 231.58999633789062
@@ -7484,6 +7480,10 @@
           {
             "date": "2026-08-13",
             "close": 305.260009765625
+          },
+          {
+            "date": "2026-08-14",
+            "close": 305.92999267578125
           }
         ]
       },
@@ -7502,7 +7502,7 @@
           "quality": 90,
           "moat": 92,
           "risk": 66.1,
-          "momentum": 51.3,
+          "momentum": 49.5,
           "aiExposure": 55,
           "diversification": 15,
           "expense": 0,
@@ -7510,12 +7510,12 @@
           "managerReference": 58
         },
         "perspectives": {
-          "composite": 61.7,
+          "composite": 61.4,
           "buffett_munger": 75.2,
           "bogle": 38.5,
-          "peter_lynch": 59.5,
+          "peter_lynch": 59.1,
           "howard_marks": 64.6,
-          "tech_growth_risk": 62.5
+          "tech_growth_risk": 62.2
         },
         "action": {
           "label": "Not attractive for now",
@@ -7535,33 +7535,29 @@
       "quote": {
         "shortName": "Microsoft Corporation",
         "longName": "Microsoft Corporation",
-        "regularMarketPrice": 496.88,
-        "regularMarketChange": 4.45001220703125,
-        "regularMarketChangePercent": 0.9036842339457563,
-        "regularMarketPreviousClose": 492.42999267578125,
+        "regularMarketPrice": 495.4,
+        "regularMarketChange": -1.480010986328125,
+        "regularMarketChangePercent": -0.297860846036091,
+        "regularMarketPreviousClose": 496.8800048828125,
         "marketCap": 3134000000000.0,
         "trailingPE": 25.1,
         "forwardPE": 21.8,
         "epsTrailingTwelveMonths": null,
         "fiftyTwoWeekHigh": 553.72,
         "fiftyTwoWeekLow": 349.2,
-        "regularMarketVolume": 22600346,
+        "regularMarketVolume": 16217647,
         "priceToBook": null,
         "returnOnEquity": null,
         "dividendYield": null,
         "trailingAnnualDividendYield": null
       },
       "metrics": {
-        "return1mPct": 25.59209330697523,
-        "return3mPct": 21.358965823561693,
-        "return1yPct": -4.899704590206522,
-        "volatilityPct": 32.21452205146472,
+        "return1mPct": 23.51034314585172,
+        "return3mPct": 17.415618631547925,
+        "return1yPct": -4.7619028062890205,
+        "volatilityPct": 32.21284345448999,
         "maxDrawdownPct": -34.910623756161144,
         "history": [
-          {
-            "date": "2025-08-14",
-            "close": 522.47998046875
-          },
           {
             "date": "2025-08-15",
             "close": 520.1699829101562
@@ -8561,6 +8557,10 @@
           {
             "date": "2026-08-13",
             "close": 496.8800048828125
+          },
+          {
+            "date": "2026-08-14",
+            "close": 495.3999938964844
           }
         ]
       },
@@ -8585,7 +8585,7 @@
           "quality": 92,
           "moat": 94,
           "risk": 47.0,
-          "momentum": 94.4,
+          "momentum": 89.2,
           "aiExposure": 88,
           "diversification": 15,
           "expense": 0,
@@ -8593,12 +8593,12 @@
           "managerReference": 66
         },
         "perspectives": {
-          "composite": 69.6,
+          "composite": 69.0,
           "buffett_munger": 74.1,
           "bogle": 34.4,
-          "peter_lynch": 76.7,
-          "howard_marks": 54.1,
-          "tech_growth_risk": 76.7
+          "peter_lynch": 75.6,
+          "howard_marks": 55.0,
+          "tech_growth_risk": 75.9
         },
         "action": {
           "label": "Continue observing",
@@ -8619,33 +8619,29 @@
       "quote": {
         "shortName": "NVIDIA Corporation",
         "longName": "NVIDIA Corporation",
-        "regularMarketPrice": 225.3,
-        "regularMarketChange": 1.2100067138671875,
-        "regularMarketChangePercent": 0.5399646274448999,
-        "regularMarketPreviousClose": 224.08999633789062,
+        "regularMarketPrice": 225.16,
+        "regularMarketChange": -0.1399993896484375,
+        "regularMarketChangePercent": -0.062139097981406266,
+        "regularMarketPreviousClose": 225.3000030517578,
         "marketCap": 5457000000000.0,
         "trailingPE": 46.1,
         "forwardPE": 19.7,
         "epsTrailingTwelveMonths": null,
         "fiftyTwoWeekHigh": 236.54,
         "fiftyTwoWeekLow": 164.07,
-        "regularMarketVolume": 93629467,
+        "regularMarketVolume": 75680870,
         "priceToBook": null,
         "returnOnEquity": null,
         "dividendYield": null,
         "trailingAnnualDividendYield": null
       },
       "metrics": {
-        "return1mPct": 6.023530847886027,
-        "return3mPct": -4.428608720681904,
-        "return1yPct": 23.777605627627718,
-        "volatilityPct": 36.88774970636447,
+        "return1mPct": 8.563167930703619,
+        "return3mPct": -0.07101174192629678,
+        "return1yPct": 24.776950662233155,
+        "volatilityPct": 36.87509502769243,
         "maxDrawdownPct": -20.223143583337766,
         "history": [
-          {
-            "date": "2025-08-14",
-            "close": 182.02000427246094
-          },
           {
             "date": "2025-08-15",
             "close": 180.4499969482422
@@ -9645,6 +9641,10 @@
           {
             "date": "2026-08-13",
             "close": 225.3000030517578
+          },
+          {
+            "date": "2026-08-14",
+            "close": 225.16000366210938
           }
         ]
       },
@@ -9674,8 +9674,8 @@
           "value": 45,
           "quality": 84,
           "moat": 82,
-          "risk": 50.1,
-          "momentum": 60.1,
+          "risk": 50.2,
+          "momentum": 66.4,
           "aiExposure": 98,
           "diversification": 15,
           "expense": 0,
@@ -9683,12 +9683,12 @@
           "managerReference": 74
         },
         "perspectives": {
-          "composite": 66.5,
+          "composite": 67.2,
           "buffett_munger": 69.0,
           "bogle": 35.3,
-          "peter_lynch": 70.2,
+          "peter_lynch": 71.5,
           "howard_marks": 59.4,
-          "tech_growth_risk": 73.2
+          "tech_growth_risk": 74.2
         },
         "action": {
           "label": "Continue observing",
@@ -9697,7 +9697,7 @@
         },
         "explanation": [
           "Stock lens: moat 82/100, quality 84/100, value 45/100.",
-          "Risk score is 50.1/100 based on recent volatility and drawdown.",
+          "Risk score is 50.2/100 based on recent volatility and drawdown.",
           "High AI/technology exposure; useful for learning but valuation discipline matters."
         ]
       }
@@ -9709,33 +9709,29 @@
       "quote": {
         "shortName": "Tesla, Inc.",
         "longName": "Tesla, Inc.",
-        "regularMarketPrice": 339.96,
-        "regularMarketChange": 12.449981689453125,
-        "regularMarketChangePercent": 3.80140493976433,
-        "regularMarketPreviousClose": 327.510009765625,
+        "regularMarketPrice": 342.27,
+        "regularMarketChange": 2.30999755859375,
+        "regularMarketChangePercent": 0.6794910038403712,
+        "regularMarketPreviousClose": 339.9599914550781,
         "marketCap": 1586000000000.0,
         "trailingPE": 383.9,
         "forwardPE": 168.0,
         "epsTrailingTwelveMonths": null,
         "fiftyTwoWeekHigh": 498.83,
         "fiftyTwoWeekLow": 297.38,
-        "regularMarketVolume": 33336616,
+        "regularMarketVolume": 45437144,
         "priceToBook": null,
         "returnOnEquity": null,
         "dividendYield": null,
         "trailingAnnualDividendYield": null
       },
       "metrics": {
-        "return1mPct": -13.816356837346477,
-        "return3mPct": -23.311526998316268,
-        "return1yPct": 1.30520443949933,
-        "volatilityPct": 46.49862981527036,
+        "return1mPct": -12.476348603672127,
+        "return3mPct": -18.93946643384341,
+        "return1yPct": 3.542470819689081,
+        "volatilityPct": 46.476805692077825,
         "maxDrawdownPct": -39.10345301895269,
         "history": [
-          {
-            "date": "2025-08-14",
-            "close": 335.5799865722656
-          },
           {
             "date": "2025-08-15",
             "close": 330.55999755859375
@@ -10735,6 +10731,10 @@
           {
             "date": "2026-08-13",
             "close": 339.9599914550781
+          },
+          {
+            "date": "2026-08-14",
+            "close": 342.2699890136719
           }
         ]
       },
@@ -10753,7 +10753,7 @@
           "quality": 60,
           "moat": 58,
           "risk": 29.7,
-          "momentum": 17.4,
+          "momentum": 22.7,
           "aiExposure": 65,
           "diversification": 15,
           "expense": 0,
@@ -10761,12 +10761,12 @@
           "managerReference": 58
         },
         "perspectives": {
-          "composite": 44.9,
+          "composite": 45.5,
           "buffett_munger": 50.3,
           "bogle": 25.2,
-          "peter_lynch": 46.3,
+          "peter_lynch": 47.3,
           "howard_marks": 47.2,
-          "tech_growth_risk": 46.8
+          "tech_growth_risk": 47.6
         },
         "action": {
           "label": "Not attractive for now",
@@ -10786,33 +10786,29 @@
       "quote": {
         "shortName": "Alphabet Inc.",
         "longName": "Alphabet Inc.",
-        "regularMarketPrice": 346.36,
-        "regularMarketChange": 2.819976806640625,
-        "regularMarketChangePercent": 0.8208583386210888,
-        "regularMarketPreviousClose": 343.5400085449219,
+        "regularMarketPrice": 345.9,
+        "regularMarketChange": -0.459991455078125,
+        "regularMarketChangePercent": -0.1328073318317191,
+        "regularMarketPreviousClose": 346.3599853515625,
         "marketCap": 4807000000000.0,
         "trailingPE": 30.3,
         "forwardPE": 27.5,
         "epsTrailingTwelveMonths": null,
         "fiftyTwoWeekHigh": 408.61,
         "fiftyTwoWeekLow": 196.6,
-        "regularMarketVolume": 17607761,
+        "regularMarketVolume": 17808598,
         "priceToBook": null,
         "returnOnEquity": null,
         "dividendYield": null,
         "trailingAnnualDividendYield": null
       },
       "metrics": {
-        "return1mPct": -6.621381210792188,
-        "return3mPct": -13.641015526855272,
-        "return1yPct": 70.67112505409825,
-        "volatilityPct": 32.82350801452207,
+        "return1mPct": -2.4149404065193614,
+        "return3mPct": -12.823228247226693,
+        "return1yPct": 69.64198344806735,
+        "volatilityPct": 32.824699118495346,
         "maxDrawdownPct": -21.09433056126816,
         "history": [
-          {
-            "date": "2025-08-14",
-            "close": 202.94000244140625
-          },
           {
             "date": "2025-08-15",
             "close": 203.89999389648438
@@ -11812,6 +11808,10 @@
           {
             "date": "2026-08-13",
             "close": 346.3599853515625
+          },
+          {
+            "date": "2026-08-14",
+            "close": 345.8999938964844
           }
         ]
       },
@@ -11842,7 +11842,7 @@
           "quality": 86,
           "moat": 88,
           "risk": 53.9,
-          "momentum": 50.2,
+          "momentum": 55.5,
           "aiExposure": 82,
           "diversification": 15,
           "expense": 0,
@@ -11850,12 +11850,12 @@
           "managerReference": 74
         },
         "perspectives": {
-          "composite": 64.4,
+          "composite": 65.1,
           "buffett_munger": 71.8,
           "bogle": 36.5,
-          "peter_lynch": 65.4,
+          "peter_lynch": 66.5,
           "howard_marks": 61.0,
-          "tech_growth_risk": 67.9
+          "tech_growth_risk": 68.7
         },
         "action": {
           "label": "Continue observing",
@@ -11876,33 +11876,29 @@
       "quote": {
         "shortName": "Advanced Micro Devices, Inc.",
         "longName": "Advanced Micro Devices, Inc.",
-        "regularMarketPrice": 483.01,
-        "regularMarketChange": 0.08001708984375,
-        "regularMarketChangePercent": 0.016569086836049074,
-        "regularMarketPreviousClose": 482.92999267578125,
+        "regularMarketPrice": 514.39,
+        "regularMarketChange": 31.3800048828125,
+        "regularMarketChangePercent": 6.496760781011401,
+        "regularMarketPreviousClose": 483.010009765625,
         "marketCap": 692000000000.0,
         "trailingPE": 140.9,
         "forwardPE": 32.7,
         "epsTrailingTwelveMonths": null,
         "fiftyTwoWeekHigh": 584.73,
         "fiftyTwoWeekLow": 149.22,
-        "regularMarketVolume": 18194677,
+        "regularMarketVolume": 25570295,
         "priceToBook": null,
         "returnOnEquity": null,
         "dividendYield": null,
         "trailingAnnualDividendYield": null
       },
       "metrics": {
-        "return1mPct": -8.717920324634953,
-        "return3mPct": 7.4071595851455285,
-        "return1yPct": 166.93010108410346,
-        "volatilityPct": 71.55163060430728,
+        "return1mPct": 2.6849547134348617,
+        "return3mPct": 21.289791852274487,
+        "return1yPct": 189.78087463611985,
+        "volatilityPct": 71.76377371634621,
         "maxDrawdownPct": -27.760751088284852,
         "history": [
-          {
-            "date": "2025-08-14",
-            "close": 180.9499969482422
-          },
           {
             "date": "2025-08-15",
             "close": 177.50999450683594
@@ -12902,6 +12898,10 @@
           {
             "date": "2026-08-13",
             "close": 483.010009765625
+          },
+          {
+            "date": "2026-08-14",
+            "close": 514.3900146484375
           }
         ]
       },
@@ -12919,8 +12919,8 @@
           "value": 45,
           "quality": 62,
           "moat": 58,
-          "risk": 9.6,
-          "momentum": 86.5,
+          "risk": 9.4,
+          "momentum": 100,
           "aiExposure": 88,
           "diversification": 15,
           "expense": 0,
@@ -12928,12 +12928,12 @@
           "managerReference": 58
         },
         "perspectives": {
-          "composite": 54.0,
+          "composite": 55.6,
           "buffett_munger": 48.4,
-          "bogle": 20.8,
-          "peter_lynch": 66.7,
-          "howard_marks": 37.6,
-          "tech_growth_risk": 62.0
+          "bogle": 20.7,
+          "peter_lynch": 69.4,
+          "howard_marks": 35.3,
+          "tech_growth_risk": 64.1
         },
         "action": {
           "label": "Not attractive for now",
@@ -12942,7 +12942,7 @@
         },
         "explanation": [
           "Stock lens: moat 58/100, quality 62/100, value 45/100.",
-          "Risk score is 9.6/100 based on recent volatility and drawdown.",
+          "Risk score is 9.4/100 based on recent volatility and drawdown.",
           "High AI/technology exposure; useful for learning but valuation discipline matters."
         ]
       }
@@ -12954,33 +12954,29 @@
       "quote": {
         "shortName": "Broadcom Inc.",
         "longName": "Broadcom Inc.",
-        "regularMarketPrice": 417.82,
-        "regularMarketChange": 1.77001953125,
-        "regularMarketChangePercent": 0.42543434279123105,
-        "regularMarketPreviousClose": 416.04998779296875,
+        "regularMarketPrice": 392.99,
+        "regularMarketChange": -24.83001708984375,
+        "regularMarketChangePercent": -5.942754452774734,
+        "regularMarketPreviousClose": 417.82000732421875,
         "marketCap": 2013000000000.0,
         "trailingPE": 82.7,
         "forwardPE": 23.2,
         "epsTrailingTwelveMonths": null,
         "fiftyTwoWeekHigh": 495.0,
         "fiftyTwoWeekLow": 281.87,
-        "regularMarketVolume": 13133946,
+        "regularMarketVolume": 29513597,
         "priceToBook": null,
         "returnOnEquity": null,
         "dividendYield": null,
         "trailingAnnualDividendYield": null
       },
       "metrics": {
-        "return1mPct": 5.970378567972623,
-        "return3mPct": -4.995566246125627,
-        "return1yPct": 34.24798142058767,
-        "volatilityPct": 47.734638611723504,
+        "return1mPct": 4.951255821322587,
+        "return3mPct": -7.573087801251532,
+        "return1yPct": 28.285563404169434,
+        "volatilityPct": 48.09577325467605,
         "maxDrawdownPct": -28.951254862383436,
         "history": [
-          {
-            "date": "2025-08-14",
-            "close": 311.2300109863281
-          },
           {
             "date": "2025-08-15",
             "close": 306.3399963378906
@@ -13980,6 +13976,10 @@
           {
             "date": "2026-08-13",
             "close": 417.82000732421875
+          },
+          {
+            "date": "2026-08-14",
+            "close": 392.989990234375
           }
         ]
       },
@@ -13997,8 +13997,8 @@
           "value": 45,
           "quality": 62,
           "moat": 58,
-          "risk": 34.0,
-          "momentum": 62.2,
+          "risk": 33.6,
+          "momentum": 57.7,
           "aiExposure": 86,
           "diversification": 15,
           "expense": 0,
@@ -14006,12 +14006,12 @@
           "managerReference": 58
         },
         "perspectives": {
-          "composite": 55.2,
+          "composite": 54.6,
           "buffett_munger": 52.3,
-          "bogle": 28.1,
-          "peter_lynch": 61.4,
-          "howard_marks": 50.4,
-          "tech_growth_risk": 61.9
+          "bogle": 28.0,
+          "peter_lynch": 60.5,
+          "howard_marks": 50.3,
+          "tech_growth_risk": 61.1
         },
         "action": {
           "label": "Not attractive for now",
@@ -14020,7 +14020,7 @@
         },
         "explanation": [
           "Stock lens: moat 58/100, quality 62/100, value 45/100.",
-          "Risk score is 34.0/100 based on recent volatility and drawdown.",
+          "Risk score is 33.6/100 based on recent volatility and drawdown.",
           "High AI/technology exposure; useful for learning but valuation discipline matters."
         ]
       }
@@ -14032,33 +14032,29 @@
       "quote": {
         "shortName": "Taiwan Semiconductor Manufactur",
         "longName": "Taiwan Semiconductor Manufacturing Company Limited",
-        "regularMarketPrice": 430.49,
-        "regularMarketChange": 1.339996337890625,
-        "regularMarketChangePercent": 0.3122442868340958,
-        "regularMarketPreviousClose": 429.1499938964844,
+        "regularMarketPrice": 426.35,
+        "regularMarketChange": -4.139984130859375,
+        "regularMarketChangePercent": -0.9616911484063517,
+        "regularMarketPreviousClose": 430.489990234375,
         "marketCap": 2097000000000.0,
         "trailingPE": 34.7,
         "forwardPE": 21.0,
         "epsTrailingTwelveMonths": null,
         "fiftyTwoWeekHigh": 479.0,
         "fiftyTwoWeekLow": 223.7,
-        "regularMarketVolume": 8152737,
+        "regularMarketVolume": 6289097,
         "priceToBook": null,
         "returnOnEquity": null,
         "dividendYield": null,
         "trailingAnnualDividendYield": null
       },
       "metrics": {
-        "return1mPct": 2.6246731571687887,
-        "return3mPct": 3.0570690836814407,
-        "return1yPct": 78.62655196447095,
-        "volatilityPct": 40.47338080269213,
+        "return1mPct": 4.053794178019965,
+        "return3mPct": 5.440830881147041,
+        "return1yPct": 78.47873299930248,
+        "volatilityPct": 40.475811468431495,
         "maxDrawdownPct": -21.54657795053414,
         "history": [
-          {
-            "date": "2025-08-14",
-            "close": 241.0
-          },
           {
             "date": "2025-08-15",
             "close": 238.8800048828125
@@ -15058,6 +15054,10 @@
           {
             "date": "2026-08-13",
             "close": 430.489990234375
+          },
+          {
+            "date": "2026-08-14",
+            "close": 426.3500061035156
           }
         ]
       },
@@ -15087,8 +15087,8 @@
           "value": 45,
           "quality": 62,
           "moat": 58,
-          "risk": 45.7,
-          "momentum": 74.9,
+          "risk": 45.6,
+          "momentum": 78.3,
           "aiExposure": 84,
           "diversification": 15,
           "expense": 0,
@@ -15096,21 +15096,21 @@
           "managerReference": 74
         },
         "perspectives": {
-          "composite": 61.8,
+          "composite": 62.2,
           "buffett_munger": 55.4,
           "bogle": 34.0,
-          "peter_lynch": 66.0,
-          "howard_marks": 56.7,
-          "tech_growth_risk": 66.1
+          "peter_lynch": 66.7,
+          "howard_marks": 56.2,
+          "tech_growth_risk": 66.7
         },
         "action": {
-          "label": "Not attractive for now",
-          "stance": "Avoid impulsive buying",
-          "positionNote": "Wait for better price or clearer evidence."
+          "label": "Continue observing",
+          "stance": "Watch",
+          "positionNote": "Not enough edge to act without a specific thesis."
         },
         "explanation": [
           "Stock lens: moat 58/100, quality 62/100, value 45/100.",
-          "Risk score is 45.7/100 based on recent volatility and drawdown.",
+          "Risk score is 45.6/100 based on recent volatility and drawdown.",
           "High AI/technology exposure; useful for learning but valuation discipline matters."
         ]
       }
@@ -15122,33 +15122,29 @@
       "quote": {
         "shortName": "ASML Holding N.V. - New York Re",
         "longName": "ASML Holding N.V.",
-        "regularMarketPrice": 1847.9,
-        "regularMarketChange": 37.830078125,
-        "regularMarketChangePercent": 2.089978799026948,
-        "regularMarketPreviousClose": 1810.0699462890625,
+        "regularMarketPrice": 1844.08,
+        "regularMarketChange": -3.820068359375,
+        "regularMarketChangePercent": -0.20672483948833698,
+        "regularMarketPreviousClose": 1847.9000244140625,
         "marketCap": 579000000000.0,
         "trailingPE": 49.5,
         "forwardPE": 31.5,
         "epsTrailingTwelveMonths": null,
         "fiftyTwoWeekHigh": 1999.96,
         "fiftyTwoWeekLow": 716.2,
-        "regularMarketVolume": 1234668,
+        "regularMarketVolume": 928987,
         "priceToBook": null,
         "returnOnEquity": null,
         "dividendYield": null,
         "trailingAnnualDividendYield": null
       },
       "metrics": {
-        "return1mPct": 1.7975289919258675,
-        "return3mPct": 16.62280534834848,
-        "return1yPct": 144.68690439081183,
-        "volatilityPct": 46.28958557111513,
+        "return1mPct": 3.317326253423425,
+        "return3mPct": 22.79049174710075,
+        "return1yPct": 148.47472550174354,
+        "volatilityPct": 46.24396008998911,
         "maxDrawdownPct": -22.05394547823677,
         "history": [
-          {
-            "date": "2025-08-14",
-            "close": 755.2100219726562
-          },
           {
             "date": "2025-08-15",
             "close": 742.1599731445312
@@ -16148,6 +16144,10 @@
           {
             "date": "2026-08-13",
             "close": 1847.9000244140625
+          },
+          {
+            "date": "2026-08-14",
+            "close": 1844.0799560546875
           }
         ]
       },
@@ -16159,7 +16159,7 @@
           "quality": 62,
           "moat": 58,
           "risk": 39.3,
-          "momentum": 100.0,
+          "momentum": 100,
           "aiExposure": 78,
           "diversification": 15,
           "expense": 0,
@@ -16193,33 +16193,29 @@
       "quote": {
         "shortName": "Amazon.com, Inc.",
         "longName": "Amazon.com, Inc.",
-        "regularMarketPrice": 265.13,
-        "regularMarketChange": -2.149993896484375,
-        "regularMarketChangePercent": -0.804397600383,
-        "regularMarketPreviousClose": 267.2799987792969,
+        "regularMarketPrice": 262.65,
+        "regularMarketChange": -2.480010986328125,
+        "regularMarketChangePercent": -0.9353943124710828,
+        "regularMarketPreviousClose": 265.1300048828125,
         "marketCap": 2841000000000.0,
         "trailingPE": 31.6,
         "forwardPE": 26.8,
         "epsTrailingTwelveMonths": null,
         "fiftyTwoWeekHigh": 287.2,
         "fiftyTwoWeekLow": 196.0,
-        "regularMarketVolume": 30364977,
+        "regularMarketVolume": 27251660,
         "priceToBook": null,
         "returnOnEquity": null,
         "dividendYield": null,
         "trailingAnnualDividendYield": null
       },
       "metrics": {
-        "return1mPct": 3.988860174591524,
-        "return3mPct": -0.7821257122757275,
-        "return1yPct": 14.784834092540343,
-        "volatilityPct": 34.45964250983302,
+        "return1mPct": 5.106244562808437,
+        "return3mPct": -0.5641026233515922,
+        "return1yPct": 13.686532175154497,
+        "volatilityPct": 34.47462335218556,
         "maxDrawdownPct": -21.73622311569574,
         "history": [
-          {
-            "date": "2025-08-14",
-            "close": 230.97999572753906
-          },
           {
             "date": "2025-08-15",
             "close": 231.02999877929688
@@ -17219,6 +17215,10 @@
           {
             "date": "2026-08-13",
             "close": 265.1300048828125
+          },
+          {
+            "date": "2026-08-14",
+            "close": 262.6499938964844
           }
         ]
       },
@@ -17260,8 +17260,8 @@
           "value": 45,
           "quality": 62,
           "moat": 58,
-          "risk": 51.9,
-          "momentum": 57.9,
+          "risk": 51.8,
+          "momentum": 59.2,
           "aiExposure": 75,
           "diversification": 15,
           "expense": 0,
@@ -17269,12 +17269,12 @@
           "managerReference": 74
         },
         "perspectives": {
-          "composite": 58.5,
+          "composite": 58.7,
           "buffett_munger": 55.6,
           "bogle": 34.3,
-          "peter_lynch": 59.2,
+          "peter_lynch": 59.4,
           "howard_marks": 58.7,
-          "tech_growth_risk": 61.4
+          "tech_growth_risk": 61.6
         },
         "action": {
           "label": "Not attractive for now",
@@ -17283,7 +17283,7 @@
         },
         "explanation": [
           "Stock lens: moat 58/100, quality 62/100, value 45/100.",
-          "Risk score is 51.9/100 based on recent volatility and drawdown.",
+          "Risk score is 51.8/100 based on recent volatility and drawdown.",
           "High AI/technology exposure; useful for learning but valuation discipline matters."
         ]
       }
@@ -17295,33 +17295,29 @@
       "quote": {
         "shortName": "Oracle Corporation",
         "longName": "Oracle Corporation",
-        "regularMarketPrice": 156.22,
-        "regularMarketChange": 2.94000244140625,
-        "regularMarketChangePercent": 1.9180600631654832,
-        "regularMarketPreviousClose": 153.27999877929688,
+        "regularMarketPrice": 150.52,
+        "regularMarketChange": -5.6999969482421875,
+        "regularMarketChangePercent": -3.6486985684946904,
+        "regularMarketPreviousClose": 156.22000122070312,
         "marketCap": 555000000000.0,
         "trailingPE": 34.6,
         "forwardPE": 24.0,
         "epsTrailingTwelveMonths": null,
         "fiftyTwoWeekHigh": 345.72,
         "fiftyTwoWeekLow": 114.5,
-        "regularMarketVolume": 25605588,
+        "regularMarketVolume": 21804981,
         "priceToBook": null,
         "returnOnEquity": null,
         "dividendYield": null,
         "trailingAnnualDividendYield": null
       },
       "metrics": {
-        "return1mPct": 17.91078175233636,
-        "return3mPct": -20.137006935607538,
-        "return1yPct": -36.22632391450718,
-        "volatilityPct": 67.44123285154521,
+        "return1mPct": 21.181873747616244,
+        "return3mPct": -21.990149441237293,
+        "return1yPct": -39.37489728833838,
+        "volatilityPct": 67.51941039986686,
         "maxDrawdownPct": -64.97730863261854,
         "history": [
-          {
-            "date": "2025-08-14",
-            "close": 244.9600067138672
-          },
           {
             "date": "2025-08-15",
             "close": 248.27999877929688
@@ -18321,6 +18317,10 @@
           {
             "date": "2026-08-13",
             "close": 156.22000122070312
+          },
+          {
+            "date": "2026-08-14",
+            "close": 150.52000427246094
           }
         ]
       },
@@ -18345,7 +18345,7 @@
           "quality": 62,
           "moat": 58,
           "risk": 0,
-          "momentum": 48.3,
+          "momentum": 50.2,
           "aiExposure": 64,
           "diversification": 15,
           "expense": 0,
@@ -18353,12 +18353,12 @@
           "managerReference": 66
         },
         "perspectives": {
-          "composite": 44.2,
+          "composite": 44.4,
           "buffett_munger": 46.1,
           "bogle": 16.3,
-          "peter_lynch": 52.7,
+          "peter_lynch": 53.0,
           "howard_marks": 34.7,
-          "tech_growth_risk": 46.5
+          "tech_growth_risk": 46.8
         },
         "action": {
           "label": "Not attractive for now",
@@ -18378,33 +18378,29 @@
       "quote": {
         "shortName": "Palantir Technologies Inc.",
         "longName": "Palantir Technologies Inc.",
-        "regularMarketPrice": 179.01,
-        "regularMarketChange": 7.970001220703125,
-        "regularMarketChangePercent": 4.659729615032271,
-        "regularMarketPreviousClose": 171.0399932861328,
+        "regularMarketPrice": 174.04,
+        "regularMarketChange": -4.970001220703125,
+        "regularMarketChangePercent": -2.776381974869746,
+        "regularMarketPreviousClose": 179.00999450683594,
         "marketCap": 321000000000.0,
         "trailingPE": 152.3,
         "forwardPE": 64.9,
         "epsTrailingTwelveMonths": null,
         "fiftyTwoWeekHigh": 207.52,
         "fiftyTwoWeekLow": 106.37,
-        "regularMarketVolume": 36295380,
+        "regularMarketVolume": 24065839,
         "priceToBook": null,
         "returnOnEquity": null,
         "dividendYield": null,
         "trailingAnnualDividendYield": null
       },
       "metrics": {
-        "return1mPct": 33.82924780075962,
-        "return3mPct": 33.85926884462791,
-        "return1yPct": -1.1103799128187264,
-        "volatilityPct": 60.58294136743883,
+        "return1mPct": 29.455511845877602,
+        "return3mPct": 29.890279984362,
+        "return1yPct": -1.7666675594971815,
+        "volatilityPct": 60.61023484223876,
         "maxDrawdownPct": -48.22376656276136,
         "history": [
-          {
-            "date": "2025-08-14",
-            "close": 181.02000427246094
-          },
           {
             "date": "2025-08-15",
             "close": 177.1699981689453
@@ -19404,6 +19400,10 @@
           {
             "date": "2026-08-13",
             "close": 179.00999450683594
+          },
+          {
+            "date": "2026-08-14",
+            "close": 174.0399932861328
           }
         ]
       },
@@ -19421,7 +19421,7 @@
           "value": 45,
           "quality": 62,
           "moat": 58,
-          "risk": 9.9,
+          "risk": 9.8,
           "momentum": 100,
           "aiExposure": 82,
           "diversification": 15,
@@ -19444,7 +19444,7 @@
         },
         "explanation": [
           "Stock lens: moat 58/100, quality 62/100, value 45/100.",
-          "Risk score is 9.9/100 based on recent volatility and drawdown.",
+          "Risk score is 9.8/100 based on recent volatility and drawdown.",
           "High AI/technology exposure; useful for learning but valuation discipline matters."
         ]
       }
@@ -19456,33 +19456,29 @@
       "quote": {
         "shortName": "ServiceNow, Inc.",
         "longName": "ServiceNow, Inc.",
-        "regularMarketPrice": 127.25,
-        "regularMarketChange": 2.30999755859375,
-        "regularMarketChangePercent": 1.848885475792339,
-        "regularMarketPreviousClose": 124.94000244140625,
+        "regularMarketPrice": 124.0,
+        "regularMarketChange": -3.25,
+        "regularMarketChangePercent": -2.5540275049115935,
+        "regularMarketPreviousClose": 127.25,
         "marketCap": 98000000000.0,
         "trailingPE": 56.6,
         "forwardPE": 18.9,
         "epsTrailingTwelveMonths": null,
         "fiftyTwoWeekHigh": 194.726,
         "fiftyTwoWeekLow": 81.24,
-        "regularMarketVolume": 22840029,
+        "regularMarketVolume": 14566156,
         "priceToBook": null,
         "returnOnEquity": null,
         "dividendYield": null,
         "trailingAnnualDividendYield": null
       },
       "metrics": {
-        "return1mPct": 21.502908355989735,
-        "return3mPct": 40.60773480662982,
-        "return1yPct": -25.222714553075253,
-        "volatilityPct": 54.70673870627382,
+        "return1mPct": 19.219303387367482,
+        "return3mPct": 30.430209738131285,
+        "return1yPct": -28.50883181338968,
+        "volatilityPct": 54.72737542234765,
         "maxDrawdownPct": -56.82255535309814,
         "history": [
-          {
-            "date": "2025-08-14",
-            "close": 170.1719970703125
-          },
           {
             "date": "2025-08-15",
             "close": 173.447998046875
@@ -20482,6 +20478,10 @@
           {
             "date": "2026-08-13",
             "close": 127.25
+          },
+          {
+            "date": "2026-08-14",
+            "close": 124.0
           }
         ]
       },
@@ -20493,7 +20493,7 @@
           "quality": 62,
           "moat": 58,
           "risk": 11.3,
-          "momentum": 97.9,
+          "momentum": 87.2,
           "aiExposure": 62,
           "diversification": 15,
           "expense": 0,
@@ -20501,12 +20501,12 @@
           "managerReference": 50
         },
         "perspectives": {
-          "composite": 50.6,
+          "composite": 49.3,
           "buffett_munger": 47.9,
           "bogle": 19.7,
-          "peter_lynch": 62.2,
-          "howard_marks": 35.0,
-          "tech_growth_risk": 55.8
+          "peter_lynch": 60.0,
+          "howard_marks": 36.7,
+          "tech_growth_risk": 54.1
         },
         "action": {
           "label": "Not attractive for now",
@@ -20526,33 +20526,29 @@
       "quote": {
         "shortName": "Salesforce, Inc.",
         "longName": "Salesforce, Inc.",
-        "regularMarketPrice": 201.37,
-        "regularMarketChange": 8.04998779296875,
-        "regularMarketChangePercent": 4.164073809219371,
-        "regularMarketPreviousClose": 193.32000732421875,
+        "regularMarketPrice": 196.21,
+        "regularMarketChange": -5.1599884033203125,
+        "regularMarketChangePercent": -2.5624415396729994,
+        "regularMarketPreviousClose": 201.3699951171875,
         "marketCap": 142000000000.0,
         "trailingPE": 22.2,
         "forwardPE": 11.6,
         "epsTrailingTwelveMonths": null,
         "fiftyTwoWeekHigh": 269.11,
         "fiftyTwoWeekLow": 146.32,
-        "regularMarketVolume": 14920647,
+        "regularMarketVolume": 8234819,
         "priceToBook": null,
         "returnOnEquity": null,
         "dividendYield": null,
         "trailingAnnualDividendYield": null
       },
       "metrics": {
-        "return1mPct": 20.580835399513475,
-        "return3mPct": 20.163499771409544,
-        "return1yPct": -13.712131237750203,
-        "volatilityPct": 41.45204467867597,
+        "return1mPct": 13.626369606272327,
+        "return3mPct": 13.082826883575805,
+        "return1yPct": -19.068633584390472,
+        "volatilityPct": 41.34169005588353,
         "maxDrawdownPct": -43.61266990110416,
         "history": [
-          {
-            "date": "2025-08-14",
-            "close": 233.3699951171875
-          },
           {
             "date": "2025-08-15",
             "close": 242.44000244140625
@@ -21552,6 +21548,10 @@
           {
             "date": "2026-08-13",
             "close": 201.3699951171875
+          },
+          {
+            "date": "2026-08-14",
+            "close": 196.2100067138672
           }
         ]
       },
@@ -21569,8 +21569,8 @@
           "value": 45,
           "quality": 62,
           "moat": 58,
-          "risk": 32.5,
-          "momentum": 85.4,
+          "risk": 32.6,
+          "momentum": 70.7,
           "aiExposure": 55,
           "diversification": 15,
           "expense": 0,
@@ -21578,12 +21578,12 @@
           "managerReference": 58
         },
         "perspectives": {
-          "composite": 52.7,
+          "composite": 51.0,
           "buffett_munger": 51.3,
-          "bogle": 26.0,
-          "peter_lynch": 58.3,
-          "howard_marks": 45.9,
-          "tech_growth_risk": 55.5
+          "bogle": 26.1,
+          "peter_lynch": 55.3,
+          "howard_marks": 48.3,
+          "tech_growth_risk": 53.2
         },
         "action": {
           "label": "Not attractive for now",
@@ -21592,7 +21592,7 @@
         },
         "explanation": [
           "Stock lens: moat 58/100, quality 62/100, value 45/100.",
-          "Risk score is 32.5/100 based on recent volatility and drawdown."
+          "Risk score is 32.6/100 based on recent volatility and drawdown."
         ]
       }
     }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T20:30:00+08:00",
+  "generatedAt": "2026-08-17T20:30:00+08:00",
   "items": {
     "SPY": {
       "businessModel": "SPY 跟踪 S&P 500，卖的是高流动性的美国大盘 beta；长期收益来自成分股 EPS 增长与分红。",
@@ -135,7 +135,7 @@
           "20% 已达 IPS 单股软上限，8/25 财报又会直接检验利润；即使估值便宜，事件前继续加仓也不符合风险预算。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "今日没有比昨日更强的公司级新证据；新增的是 Q2 共识锚约 EPS $2.74/revenue RMB114.2B。股价前一日 -5.47% 反映行业需求与监管折价，但 20% 仓位已满，8/25 前维持 Continue observing / 不加仓。",
+        "todayNote": "截至 20:30 未见比昨日更强的公司级新证据；市场仍围绕下一次财报的 revenue/EPS 与 Temu 合规成本定价。现价 $84.79、今日 +0.74%，但 20% 持仓已达 IPS 单股软上限，财报前 Continue observing / 不加仓。",
         "etfQuestion": "它没有比 VTI/VOO 更好的风险调整后确定性；约 9.6x PE 是政策、需求与 margin 折价，不是免费午餐，现有 20% 已足够学习。"
       }
     },
@@ -273,7 +273,7 @@
           "Gaming revenue Q2 -31%，且 CUDA、Trainium、TPU/custom ASIC 同时竞争；AMD 不是无风险的 NVDA 替代品。"
         ],
         "actionContext": "Not attractive for now",
-        "todayNote": "市场报道 AMD 筹备约 $4-5B 多期限债务融资以支持 AI/data-center 扩张；这增强资金弹性，也提高对 MI450/Helios ROIC 与 FCF 的要求。Q2 Data Center +107% 很强，但 $483 附近仍把成功计价过多，Not attractive for now。",
+        "todayNote": "AMD 已为 $4.75B senior notes 定价，用于 AI/data-center 扩张；资金弹性增强，但债务融资把 MI450/Helios 的 ROIC 与 FCF 门槛抬得更高。现价 $514.39、今日 +6.50%，成功预期更满，维持 Not attractive for now。",
         "etfQuestion": "Q2 已证明 AMD 是最强 challenger，但 $489 附近和 1 年 +184% 的涨幅要求 Helios/MI450 连续超预期；QQQ 能给 AI upside，同时分散 ROCm、margin 与单一产品 ramp 风险。"
       }
     },
@@ -296,7 +296,7 @@
           "估值和预期都很满，FY28 FCF ~$115B 被质疑过高；财报要等 9/4，中间缺硬催化撑情绪。"
         ],
         "actionContext": "Not attractive for now",
-        "todayNote": null,
+        "todayNote": "今日约 -5.94%，但未检索到足以改变长期 thesis 的公司级硬数据；更像高估值 custom-silicon 交易的预期回撤。下一硬 gate 仍是 9/4 财报里的 AI semiconductor revenue、客户集中度与 VMware FCF，维持 Not attractive for now。",
         "etfQuestion": "定制芯片很强（Jalapeño 坐实龙头 + Apple 合作延至 2031），但不便宜、客户集中（AMZN/GOOGL/Meta/AMD 都在自研/竞争）、预期太满的名字最脆弱，不是当前最优入场位；想要半导体暴露 QQQ/VTI 已含。"
       }
     },
@@ -388,7 +388,7 @@
           "$300B 单一客户（OpenAI）依赖是集中风险；AI 链越热产能越贵，对要租产能的它反而抬成本。"
         ],
         "actionContext": "Not attractive for now",
-        "todayNote": null,
+        "todayNote": "市场报道 Oracle 在 AI/data-center 支出上升背景下继续裁员；这能缓解部分 opex，却没有修复 FY26 FCF -$23.7B、RPO 久期错配和融资依赖。现价 $150.52、今日 -3.65%，跌价不等于出现 margin of safety，维持 Not attractive for now。",
         "etfQuestion": "看得懂它的 AI infra 价值（含 $300B OpenAI 单 + Oracle 首发 MI450 supercluster），变现证真是情绪顺风；但杠杆 + 再融 $45-50B + 负 FCF + 单一客户依赖 + 利率不确定性是结构性硬伤，不是舒服时点。"
       }
     },
@@ -457,7 +457,7 @@
           "下一财报在 8/26、中间缺硬催化；AI 竞争格局（vs Copilot）未定。"
         ],
         "actionContext": "Not attractive for now",
-        "todayNote": null,
+        "todayNote": "今日约 -2.56%；新增评论集中在以举债支持回购及 FCF growth 指引下调的资本配置争议，未见能证明 Agentforce ARR 加速的硬数据。若回购靠 leverage 而 organic growth 未改善，不能算股东回报，维持 Not attractive for now。",
         "etfQuestion": "有价值且估值不贵（Agentforce 在起量、AI-capex + 加息交易情绪下低估值反而是优势），但增长减速（+9.8% 最慢，NOW +24.5%/PLTR +92.8% 反衬）+ Copilot 竞争 + SaaSpocalypse 未定；要先确认 AI 竞争格局再说，VTI 已含。"
       }
     }

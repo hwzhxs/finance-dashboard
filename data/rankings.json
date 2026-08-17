@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-08-14T12:15:20.859183+00:00",
+  "generatedAt": "2026-08-17T12:15:03.174244+00:00",
   "rankings": {
     "composite": [
       {
         "symbol": "SPY",
+        "score": 71.9,
+        "action": "Continue observing"
+      },
+      {
+        "symbol": "VTI",
         "score": 71.7,
         "action": "Continue observing"
       },
       {
         "symbol": "VOO",
-        "score": 71.5,
-        "action": "Continue observing"
-      },
-      {
-        "symbol": "VTI",
-        "score": 71.5,
+        "score": 71.6,
         "action": "Continue observing"
       },
       {
         "symbol": "QQQ",
-        "score": 69.6,
+        "score": 70.0,
         "action": "Continue observing"
       },
       {
         "symbol": "MSFT",
-        "score": 69.6,
+        "score": 69.0,
         "action": "Continue observing"
       },
       {
@@ -34,27 +34,27 @@
       },
       {
         "symbol": "NVDA",
-        "score": 66.5,
+        "score": 67.2,
         "action": "Continue observing"
       },
       {
         "symbol": "GOOGL",
-        "score": 64.4,
+        "score": 65.1,
         "action": "Continue observing"
       },
       {
         "symbol": "TSM",
-        "score": 61.8,
-        "action": "Not attractive for now"
+        "score": 62.2,
+        "action": "Continue observing"
       },
       {
         "symbol": "AAPL",
-        "score": 61.7,
+        "score": 61.4,
         "action": "Not attractive for now"
       },
       {
         "symbol": "AMZN",
-        "score": 58.5,
+        "score": 58.7,
         "action": "Not attractive for now"
       },
       {
@@ -63,8 +63,8 @@
         "action": "Not attractive for now"
       },
       {
-        "symbol": "AVGO",
-        "score": 55.2,
+        "symbol": "AMD",
+        "score": 55.6,
         "action": "Not attractive for now"
       },
       {
@@ -73,33 +73,33 @@
         "action": "Not attractive for now"
       },
       {
-        "symbol": "AMD",
-        "score": 54.0,
+        "symbol": "AVGO",
+        "score": 54.6,
         "action": "Not attractive for now"
       },
       {
         "symbol": "CRM",
-        "score": 52.7,
+        "score": 51.0,
         "action": "Not attractive for now"
       },
       {
         "symbol": "NOW",
-        "score": 50.6,
+        "score": 49.3,
         "action": "Not attractive for now"
       },
       {
         "symbol": "TSLA",
-        "score": 44.9,
+        "score": 45.5,
         "action": "Not attractive for now"
       },
       {
         "symbol": "ORCL",
-        "score": 44.2,
+        "score": 44.4,
         "action": "Not attractive for now"
       },
       {
         "symbol": "PDD",
-        "score": 41.4,
+        "score": 41.3,
         "action": "Continue observing"
       }
     ],
@@ -157,7 +157,7 @@
       {
         "symbol": "TSM",
         "score": 55.4,
-        "action": "Not attractive for now"
+        "action": "Continue observing"
       },
       {
         "symbol": "ASML",
@@ -259,12 +259,7 @@
       {
         "symbol": "TSM",
         "score": 34.0,
-        "action": "Not attractive for now"
-      },
-      {
-        "symbol": "AVGO",
-        "score": 28.1,
-        "action": "Not attractive for now"
+        "action": "Continue observing"
       },
       {
         "symbol": "ASML",
@@ -272,13 +267,18 @@
         "action": "Not attractive for now"
       },
       {
+        "symbol": "AVGO",
+        "score": 28.0,
+        "action": "Not attractive for now"
+      },
+      {
         "symbol": "CRM",
-        "score": 26.0,
+        "score": 26.1,
         "action": "Not attractive for now"
       },
       {
         "symbol": "PDD",
-        "score": 25.4,
+        "score": 25.5,
         "action": "Continue observing"
       },
       {
@@ -293,7 +293,7 @@
       },
       {
         "symbol": "AMD",
-        "score": 20.8,
+        "score": 20.7,
         "action": "Not attractive for now"
       },
       {
@@ -310,32 +310,37 @@
     "peter_lynch": [
       {
         "symbol": "MSFT",
-        "score": 76.7,
-        "action": "Continue observing"
-      },
-      {
-        "symbol": "QQQ",
-        "score": 70.4,
+        "score": 75.6,
         "action": "Continue observing"
       },
       {
         "symbol": "NVDA",
-        "score": 70.2,
+        "score": 71.5,
+        "action": "Continue observing"
+      },
+      {
+        "symbol": "QQQ",
+        "score": 71.0,
         "action": "Continue observing"
       },
       {
         "symbol": "VOO",
-        "score": 69.3,
+        "score": 69.6,
         "action": "Continue observing"
       },
       {
         "symbol": "VTI",
-        "score": 69.3,
+        "score": 69.5,
         "action": "Continue observing"
       },
       {
+        "symbol": "AMD",
+        "score": 69.4,
+        "action": "Not attractive for now"
+      },
+      {
         "symbol": "SPY",
-        "score": 68.9,
+        "score": 69.2,
         "action": "Continue observing"
       },
       {
@@ -344,14 +349,14 @@
         "action": "Not attractive for now"
       },
       {
-        "symbol": "AMD",
+        "symbol": "TSM",
         "score": 66.7,
-        "action": "Not attractive for now"
+        "action": "Continue observing"
       },
       {
-        "symbol": "TSM",
-        "score": 66.0,
-        "action": "Not attractive for now"
+        "symbol": "GOOGL",
+        "score": 66.5,
+        "action": "Continue observing"
       },
       {
         "symbol": "ASML",
@@ -359,33 +364,23 @@
         "action": "Not attractive for now"
       },
       {
-        "symbol": "GOOGL",
-        "score": 65.4,
-        "action": "Continue observing"
+        "symbol": "AVGO",
+        "score": 60.5,
+        "action": "Not attractive for now"
       },
       {
         "symbol": "NOW",
-        "score": 62.2,
-        "action": "Not attractive for now"
-      },
-      {
-        "symbol": "AVGO",
-        "score": 61.4,
-        "action": "Not attractive for now"
-      },
-      {
-        "symbol": "AAPL",
-        "score": 59.5,
+        "score": 60.0,
         "action": "Not attractive for now"
       },
       {
         "symbol": "AMZN",
-        "score": 59.2,
+        "score": 59.4,
         "action": "Not attractive for now"
       },
       {
-        "symbol": "CRM",
-        "score": 58.3,
+        "symbol": "AAPL",
+        "score": 59.1,
         "action": "Not attractive for now"
       },
       {
@@ -394,18 +389,23 @@
         "action": "Cash management candidate"
       },
       {
+        "symbol": "CRM",
+        "score": 55.3,
+        "action": "Not attractive for now"
+      },
+      {
         "symbol": "ORCL",
-        "score": 52.7,
+        "score": 53.0,
         "action": "Not attractive for now"
       },
       {
         "symbol": "TSLA",
-        "score": 46.3,
+        "score": 47.3,
         "action": "Not attractive for now"
       },
       {
         "symbol": "PDD",
-        "score": 38.4,
+        "score": 38.2,
         "action": "Continue observing"
       }
     ],
@@ -457,23 +457,28 @@
       },
       {
         "symbol": "TSM",
-        "score": 56.7,
-        "action": "Not attractive for now"
+        "score": 56.2,
+        "action": "Continue observing"
       },
       {
         "symbol": "MSFT",
-        "score": 54.1,
+        "score": 55.0,
         "action": "Continue observing"
       },
       {
         "symbol": "AVGO",
-        "score": 50.4,
+        "score": 50.3,
         "action": "Not attractive for now"
       },
       {
         "symbol": "PDD",
-        "score": 48.7,
+        "score": 48.8,
         "action": "Continue observing"
+      },
+      {
+        "symbol": "CRM",
+        "score": 48.3,
+        "action": "Not attractive for now"
       },
       {
         "symbol": "TSLA",
@@ -486,13 +491,8 @@
         "action": "Not attractive for now"
       },
       {
-        "symbol": "CRM",
-        "score": 45.9,
-        "action": "Not attractive for now"
-      },
-      {
-        "symbol": "AMD",
-        "score": 37.6,
+        "symbol": "NOW",
+        "score": 36.7,
         "action": "Not attractive for now"
       },
       {
@@ -501,8 +501,8 @@
         "action": "Not attractive for now"
       },
       {
-        "symbol": "NOW",
-        "score": 35.0,
+        "symbol": "AMD",
+        "score": 35.3,
         "action": "Not attractive for now"
       },
       {
@@ -514,42 +514,42 @@
     "tech_growth_risk": [
       {
         "symbol": "MSFT",
-        "score": 76.7,
+        "score": 75.9,
         "action": "Continue observing"
       },
       {
         "symbol": "NVDA",
-        "score": 73.2,
+        "score": 74.2,
         "action": "Continue observing"
       },
       {
         "symbol": "QQQ",
-        "score": 70.7,
+        "score": 71.1,
         "action": "Continue observing"
       },
       {
         "symbol": "GOOGL",
-        "score": 67.9,
-        "action": "Continue observing"
-      },
-      {
-        "symbol": "VOO",
-        "score": 66.4,
+        "score": 68.7,
         "action": "Continue observing"
       },
       {
         "symbol": "TSM",
-        "score": 66.1,
-        "action": "Not attractive for now"
+        "score": 66.7,
+        "action": "Continue observing"
+      },
+      {
+        "symbol": "VOO",
+        "score": 66.6,
+        "action": "Continue observing"
       },
       {
         "symbol": "SPY",
-        "score": 66.0,
+        "score": 66.2,
         "action": "Continue observing"
       },
       {
         "symbol": "VTI",
-        "score": 66.0,
+        "score": 66.2,
         "action": "Continue observing"
       },
       {
@@ -558,8 +558,8 @@
         "action": "Not attractive for now"
       },
       {
-        "symbol": "AAPL",
-        "score": 62.5,
+        "symbol": "AMD",
+        "score": 64.1,
         "action": "Not attractive for now"
       },
       {
@@ -568,28 +568,23 @@
         "action": "Not attractive for now"
       },
       {
-        "symbol": "AMD",
-        "score": 62.0,
-        "action": "Not attractive for now"
-      },
-      {
-        "symbol": "AVGO",
-        "score": 61.9,
+        "symbol": "AAPL",
+        "score": 62.2,
         "action": "Not attractive for now"
       },
       {
         "symbol": "AMZN",
-        "score": 61.4,
+        "score": 61.6,
+        "action": "Not attractive for now"
+      },
+      {
+        "symbol": "AVGO",
+        "score": 61.1,
         "action": "Not attractive for now"
       },
       {
         "symbol": "NOW",
-        "score": 55.8,
-        "action": "Not attractive for now"
-      },
-      {
-        "symbol": "CRM",
-        "score": 55.5,
+        "score": 54.1,
         "action": "Not attractive for now"
       },
       {
@@ -598,18 +593,23 @@
         "action": "Cash management candidate"
       },
       {
+        "symbol": "CRM",
+        "score": 53.2,
+        "action": "Not attractive for now"
+      },
+      {
         "symbol": "TSLA",
-        "score": 46.8,
+        "score": 47.6,
         "action": "Not attractive for now"
       },
       {
         "symbol": "ORCL",
-        "score": 46.5,
+        "score": 46.8,
         "action": "Not attractive for now"
       },
       {
         "symbol": "PDD",
-        "score": 37.0,
+        "score": 36.9,
         "action": "Continue observing"
       }
     ]
