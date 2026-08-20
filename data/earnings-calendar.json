@@ -1,95 +1,80 @@
 {
-  "generatedAt": "2026-08-19T08:00:17.650159+08:00",
+  "generatedAt": "2026-08-20T08:00:42.507082+08:00",
   "earnings": [
     {
       "symbol": "PDD",
-      "earningsDate": null,
-      "confirmed": false,
-      "error": "Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-    },
-    {
-      "symbol": "AAPL",
-      "earningsDate": null,
-      "confirmed": false,
-      "error": "Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-    },
-    {
-      "symbol": "MSFT",
-      "earningsDate": null,
-      "confirmed": false,
-      "error": "Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+      "earningsDate": "2026-08-24",
+      "confirmed": true
     },
     {
       "symbol": "NVDA",
-      "earningsDate": null,
-      "confirmed": false,
-      "error": "Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-    },
-    {
-      "symbol": "TSLA",
-      "earningsDate": null,
-      "confirmed": false,
-      "error": "Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-    },
-    {
-      "symbol": "GOOGL",
-      "earningsDate": null,
-      "confirmed": false,
-      "error": "Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-    },
-    {
-      "symbol": "AMD",
-      "earningsDate": null,
-      "confirmed": false,
-      "error": "Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-    },
-    {
-      "symbol": "AVGO",
-      "earningsDate": null,
-      "confirmed": false,
-      "error": "Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-    },
-    {
-      "symbol": "TSM",
-      "earningsDate": null,
-      "confirmed": false,
-      "error": "Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-    },
-    {
-      "symbol": "ASML",
-      "earningsDate": null,
-      "confirmed": false,
-      "error": "Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-    },
-    {
-      "symbol": "AMZN",
-      "earningsDate": null,
-      "confirmed": false,
-      "error": "Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-    },
-    {
-      "symbol": "ORCL",
-      "earningsDate": null,
-      "confirmed": false,
-      "error": "Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-    },
-    {
-      "symbol": "PLTR",
-      "earningsDate": null,
-      "confirmed": false,
-      "error": "Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
-    },
-    {
-      "symbol": "NOW",
-      "earningsDate": null,
-      "confirmed": false,
-      "error": "Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+      "earningsDate": "2026-08-27",
+      "confirmed": true
     },
     {
       "symbol": "CRM",
-      "earningsDate": null,
-      "confirmed": false,
-      "error": "Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+      "earningsDate": "2026-08-27",
+      "confirmed": true
+    },
+    {
+      "symbol": "AVGO",
+      "earningsDate": "2026-09-03",
+      "confirmed": true
+    },
+    {
+      "symbol": "ORCL",
+      "earningsDate": "2026-09-11",
+      "confirmed": true
+    },
+    {
+      "symbol": "ASML",
+      "earningsDate": "2026-10-14",
+      "confirmed": true
+    },
+    {
+      "symbol": "TSM",
+      "earningsDate": "2026-10-15",
+      "confirmed": true
+    },
+    {
+      "symbol": "TSLA",
+      "earningsDate": "2026-10-22",
+      "confirmed": true
+    },
+    {
+      "symbol": "MSFT",
+      "earningsDate": "2026-10-29",
+      "confirmed": true
+    },
+    {
+      "symbol": "GOOGL",
+      "earningsDate": "2026-10-29",
+      "confirmed": true
+    },
+    {
+      "symbol": "NOW",
+      "earningsDate": "2026-10-29",
+      "confirmed": true
+    },
+    {
+      "symbol": "AAPL",
+      "earningsDate": "2026-10-30",
+      "confirmed": true
+    },
+    {
+      "symbol": "AMZN",
+      "earningsDate": "2026-10-30",
+      "confirmed": true
+    },
+    {
+      "symbol": "PLTR",
+      "earningsDate": "2026-11-03",
+      "confirmed": true
+    },
+    {
+      "symbol": "AMD",
+      "earningsDate": "2026-11-04",
+      "confirmed": true
     }
   ]
 }
