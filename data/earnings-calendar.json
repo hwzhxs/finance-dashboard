@@ -1,11 +1,6 @@
 {
-  "generatedAt": "2026-09-02T08:00:48.515820+08:00",
+  "generatedAt": "2026-09-03T08:00:42.699811+08:00",
   "earnings": [
-    {
-      "symbol": "CRM",
-      "earningsDate": "2026-08-27",
-      "confirmed": true
-    },
     {
       "symbol": "AVGO",
       "earningsDate": "2026-09-03",
@@ -74,6 +69,11 @@
     {
       "symbol": "NVDA",
       "earningsDate": "2026-11-18",
+      "confirmed": true
+    },
+    {
+      "symbol": "CRM",
+      "earningsDate": "2026-12-03",
       "confirmed": true
     }
   ]

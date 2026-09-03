@@ -1,12 +1,12 @@
-# Pre-market brief - 2026-09-02 20:15 CST
+# Pre-market brief - 2026-09-03 20:16 CST
 
 Conclusion: observe first; act only if a trade checklist is triggered.
 
 ## Top candidates
-- SPY: Continue observing | score 71.1 | $761.78, today -0.69%, 3m +1.0%
-- VTI: Continue observing | score 70.9 | $375.17, today -0.79%, 3m +0.2%
-- VOO: Continue observing | score 70.8 | $700.28, today -0.65%, 3m +1.0%
-- QQQ: Continue observing | score 68.9 | $707.64, today -1.27%, 3m -4.9%
+- SPY: Continue observing | score 70.9 | $765.16, today +0.44%, 3m +1.1%
+- VTI: Continue observing | score 70.8 | $376.88, today +0.46%, 3m +1.4%
+- VOO: Continue observing | score 70.6 | $703.41, today +0.45%, 3m +1.1%
+- QQQ: Continue observing | score 68.5 | $709.24, today +0.23%, 3m -4.2%
 
 ## Risk notes
 - PDD is the existing learning position at the soft single-stock limit; avoid adding by default.
