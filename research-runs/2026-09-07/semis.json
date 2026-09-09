@@ -1,0 +1,165 @@
+{
+  "items": {
+    "NVDA": {
+      "businessModel": "以无晶圆厂模式设计 GPU、CPU、互联与网络设备，并通过 CUDA、开发工具和机架级系统销售完整加速计算平台。客户买的不只是芯片性能，还包括开发迁移成本、集群效率与交付能力。FY2027 Q2 数据中心收入 890 亿美元、总收入 962.21 亿美元（2026-08-26 公布，季度截至 2026-07-26），说明公司已高度集中于 AI 基础设施，而不是分散的消费电子生意。",
+      "moatEvidence": "CUDA 软件积累、NVLink/网络协同和机架级交付构成相互强化的转换成本。FY2027 Q2 收入同比增长 106%、数据中心增长 117%，GAAP 与 non-GAAP 毛利率均为 75.0%；这是平台商业化能力的证据，不等于未来竞争免疫。8/26 官方披露 Vera Rubin 正向全面量产爬坡、合作伙伴已有机架运行，应区分量产准备与 FY2027 Q3 的收入兑现。9/3 宣布签约收购 Hugging Face，可进一步扩展开发者入口，但尚未交割，不能把协同当成已经实现。",
+      "keyRisks": "第一，增长与收现出现分化：FY2027 Q2 应收账款 631 亿美元、DSO 从上季 45 天升至 60 天，经营现金流从上季 503 亿降至 241 亿美元；CFO 将账期变化归因于部分投资级客户的大额跨季度协议，不能据此指控收入虚假，但必须跟踪回款。第二，基础设施信用支持增加了资本风险：8/26 CFO commentary 披露 SB Energy 项目担保上限 1,050 亿美元，分阶段满足条件后生效，首批预计 FY2029，不能当作当期债务或必然损失。第三，FY2027 Q3 指引未计中国数据中心计算收入，出口政策、客户自研 ASIC 与 AMD 都可能影响市场份额和毛利；Hugging Face 交易还新增审批、整合与平台中立性风险。",
+      "aiAngle": "AI 是主要利润来源，而非附加概念。通用 GPU、推理专用方案和客户自研芯片会共存；NVDA 的优势在于软件与整套系统的总拥有成本，而不是假设每个新增 token 都由其 GPU 执行。9/3 Hugging Face 收购协议表明公司进一步争取模型开发与分发入口；战略方向有价值，但应同时审视开源社区信任及资本回报，不能用生态规模替代现金流验证。",
+      "growthCatalysts": "未来验证点是 FY2027 Q3 收入指引 1,080 亿美元、上下浮动 2%，以及 GAAP/non-GAAP 毛利率 74.0%、上下浮动 0.5 个百分点（均为 2026-08-26 管理层预测）；Rubin 从伙伴部署转化为验收、收入和现金回款。Hugging Face 交易预计 2027 年上半年完成，仍需监管批准及其他交割条件；只作为待验证事件，不计入已实现业绩。8/26 财报已发布，不再列作未来催化剂。",
+      "growthSignals": "以 FY2027 Q2 为基准监测数据中心收入 890 亿美元、毛利率 75.0%、应收账款 631 亿美元、DSO 60 天及经营现金流 241 亿美元；重点看 FY2027 Q3 增长能否伴随回款改善，而非仅超收入指引。另查 Rubin 出货验收与产品组合、供应及信用承诺的生效条件、出口许可，以及 Hugging Face 审批和开发者留存；不将公告项目规模直接换算为订单收入。",
+      "judgment": {
+        "positives": [
+          "FY2027 Q2 收入 962.21 亿美元、同比增长 106%，数据中心 890 亿美元、同比增长 117%，增长已反映在实际业务，而非只有估值扩张。",
+          "FY2027 Q2 GAAP 与 non-GAAP 毛利率均为 75.0%，支持软件、互联和系统协同仍有定价能力；Rubin 的伙伴部署是下一代平台落地信号。",
+          "9/3 披露的 Hugging Face 收购协议增强了争取开发者入口的战略选项；若保留开放性并通过监管，可补强平台而非单纯扩大硬件规模。"
+        ],
+        "concerns": [
+          "FY2027 Q2 DSO 45→60 天且经营现金流环比下降，利润增长不能替代现金回收；投资级客户账期解释降低疑虑，但不消除集中暴露。",
+          "SB Energy 担保上限 1,050 亿美元是有条件、分阶段的长期信用支持，不是已经亏损，却会让客户项目融资风险回到 NVDA；不能仍按纯轻资产模式理解公司。",
+          "FY2027 Q3 指引排除中国数据中心计算收入，竞争与监管仍是约束；Hugging Face 交易的审批、开放生态信任和整合回报尚未证明。"
+        ],
+        "actionContext": "Continue observing",
+        "todayNote": "本次相对本地研究新增已核验事实：2026-09-03 NVIDIA 宣布签约收购 Hugging Face；SEC 披露协议于 9/2 签署，股东对价约 119 亿美元，另有最高约 10 亿美元员工股权留任安排，预计 2027 年上半年交割。它增强软件入口，也增加资本配置与监管风险；不是 9/7 当日公告，不据此追价。",
+        "etfQuestion": "相较 VTI/VOO/QQQ，单独持有 NVDA 是主动加码其平台份额、客户信用和产品换代，不是新增分散。如果不能持续跟踪 DSO、信用支持和 Rubin 收现，QQQ 的科技篮子或更分散的 VTI/VOO 更容易坚持；没有可解释的额外收益来源就不买，若将来通过交易清单也应从学习池小仓开始，单股通常不超过 20%。"
+      }
+    },
+    "AMD": {
+      "businessModel": "无晶圆厂计算芯片设计商，主要销售 EPYC 服务器 CPU、Instinct AI 加速器、Ryzen 客户端处理器、游戏芯片与嵌入式/自适应计算产品；ROCm、网络产品和 Helios 机架方案帮助客户把芯片部署成系统。2026 Q2 数据中心贡献约 58% 收入（8/4 财报），但该分部同时包含 CPU 与 GPU，不能把全部收入当成 AI GPU 销售。",
+      "moatEvidence": "2026 Q2 总收入 115 亿美元、同比增长 50%，数据中心 67 亿美元、同比增长 107%，说明 EPYC 与 Instinct 已有真实客户需求。8/4 官方材料披露 Helios 开始爬坡、微软扩大部署合作，以及 Anthropic 最高 2GW 的合作安排；这是客户验证，不是已确认收入或不可取消订单。CPU 的架构、能效和客户认证壁垒较扎实，AI GPU 的 ROCm 适配、集群稳定性与交付服务仍需连续季度证明，不能直接等同 CUDA 的成熟生态。",
+      "keyRisks": "第一，AI GPU 的软件迁移、规模化交付和客户总拥有成本才是竞争门槛，性能宣传及合作名单不足以证明持续份额。第二，2026 Q2 non-GAAP 毛利率为 56%，Q3 指引仍约 56%，说明收入放量不自动带来毛利扩张；HBM、先进封装和整机交付可能增加营运资金需求。第三，2026 Q2 游戏收入同比下降 31%，且 Q2 2025 含 8 亿美元 MI308 出口限制相关库存及其他费用，利润同比改善应考虑低基数；出口政策和高预期估值仍可能同时冲击盈利与股价。",
+      "aiAngle": "AMD 是具备客户部署证据的 AI 加速计算挑战者，不应只当作便宜版 NVDA。EPYC 可受益于通用计算及 AI 配套需求，Instinct/Helios 则提供不同供应源和推理成本选择。2026 Q2 数据中心增长确认方向，但未独立给出的 GPU 销售额、客户利润率和已收款订单不能凭分部增速推算；真正值得加分的是 ROCm 使用体验与交付后复购。",
+      "growthCatalysts": "未来重点是 2026 Q3 收入 130 亿美元、上下浮动 3 亿美元，non-GAAP 毛利率约 56% 的管理层指引（2026-08-04 发布）能否兑现；随后观察 Helios/MI450 系列部署转为收入、ROCm 采用和 EPYC 客户扩张。Anthropic 最高 2GW 的部署协议是分阶段机会，不是本季收入；7 月产品发布及 8/4 财报已过去，不再当作即将发生的催化剂。",
+      "growthSignals": "跟踪 2026 Q3 收入相对 130 亿美元±3 亿美元指引、non-GAAP 毛利率相对约 56% 指引；数据中心基准是 2026 Q2 的 67 亿美元、同比增长 107%。进一步区分 CPU/GPU 增长来源，核查客户实际交付与复购、ROCm 适配、HBM/封装供应、库存及现金转换，同时观察游戏业务下滑是否继续拖累；不把合作容量直接当 backlog。",
+      "judgment": {
+        "positives": [
+          "2026 Q2 总收入 115 亿美元、数据中心 67 亿美元，分别同比增长 50% 和 107%，说明竞争力已转化为财报收入。",
+          "8/4 官方披露 Helios 爬坡、微软部署合作及 Anthropic 最高 2GW 安排，证明客户愿意为替代计算平台投入工程资源；但仍要等规模化交付。",
+          "EPYC 与 Instinct 双产品线比押注单一 GPU 更有业务支撑，若 ROCm 与机架交付成熟，客户复购比首批采购更能强化护城河。"
+        ],
+        "concerns": [
+          "2026 Q3 non-GAAP 毛利率指引仍约 56%，与 Q2 相同；当前证据不足以证明 Helios 的增量收入会带来更高利润率。",
+          "数据中心分部并非纯 GPU 收入，不能把同比增长 107% 解读为 AI GPU 份额翻倍；合作协议上限也不是收入保证。",
+          "2026 Q2 游戏收入下降 31%，上年出口限制费用影响利润比较；若 GPU 软件或交付不顺，高增长预期会放大下行风险。"
+        ],
+        "actionContext": "Not attractive for now",
+        "todayNote": null,
+        "etfQuestion": "单买 AMD 相对 QQQ 是主动押注挑战者份额与执行成功，不是更低风险地获得同样 AI 暴露；VTI/VOO 还提供更广行业分散。尚不能证明 ROCm、交付和现金回报带来足够超额收益时，ETF 优先；学习池也不因股价回撤跳过交易清单或突破单股通常 20% 的软上限。"
+      }
+    },
+    "AVGO": {
+      "businessModel": "半导体与基础设施软件双业务：为大型客户协同设计定制 AI 加速器，销售高速交换、互联和其他芯片，同时通过 VMware 等企业软件获取订阅、维护与许可收入。定制芯片依赖长期设计导入和量产执行，软件依赖客户业务系统的迁移成本；两者可相互补充现金流，但不是互不相关的防御型组合。",
+      "moatEvidence": "FY2026 Q3 AI 半导体收入 167 亿美元、同比增长 221%、环比增长 54%（2026-09-02 公布，季度截至 2026-08-02），验证了定制加速器和网络业务的商业规模。设计协作、验证周期及网络生态形成转换成本；同期自由现金流 136.65 亿美元、约占收入 46%，说明增长目前有现金支撑。但客户拥有自研架构及多供应商选择权，不能把共同设计视为永久独家份额。",
+      "keyRisks": "第一，少数大客户的项目、流片和部署节奏会显著影响收入，客户扩大 ASIC 投资既是市场机会，也可能增强其议价能力。第二，AI 产品组合改变可压低毛利率，不能只看 AI 收入；FY2026 Q4 non-GAAP 营业利润率指引约 66%，需与现金流一起验证。第三，VMware 续约、客户迁移及收购相关摊销/股权薪酬会影响利润质量；本地预测 PE 口径未独立核验，股价回撤不能自动视为安全边际。",
+      "aiAngle": "AI 已是主要增长引擎：FY2026 Q3 AI 半导体收入占总收入约 56%（167/295.91 亿美元，自行计算）。它提供区别于通用 GPU 的定制计算与以太网敞口，但与 NVDA、AMD 共享大型云客户资本开支周期；同时持有这几家不是三份独立需求。投资判断应落在设计项目转量产、网络内容价值和现金回报，而不是把所有自研芯片投资都计为 AVGO 收入。",
+      "growthCatalysts": "FY2026 Q4 总收入约 348 亿美元、AI 半导体收入约 217 亿美元、non-GAAP 营业利润率约 66% 是下一组可验证指引（均为 2026-09-02 管理层预测，不是已实现收入）。继续看新客户设计导入变成量产、网络产品随集群扩张的出货，以及 VMware 续约与现金回收；9/2 财报已发布，移除等待 Q3 财报的旧催化剂。未把二手摘要中的 FY2027/FY2028 远期规模当成正式季度指引或确定收入。",
+      "growthSignals": "基准为 FY2026 Q3 总收入 295.91 亿美元、AI 半导体 167 亿美元、自由现金流 136.65 亿美元及约 46% 现金流率；下一步对照 FY2026 Q4 总收入约 348 亿美元、AI 约 217 亿美元及 non-GAAP 营业利润率约 66%。拆分半导体/软件表现，监测大客户集中、设计赢单转出货、存货和应收、现金流率及 VMware 续约；不以长期产能安排替代不可取消订单。",
+      "judgment": {
+        "positives": [
+          "9/2 已公布的 FY2026 Q3 总收入 295.91 亿美元、同比增长 86%，AI 半导体 167 亿美元、同比增长 221%，业绩兑现强于纯题材叙述。",
+          "FY2026 Q3 自由现金流 136.65 亿美元、约占收入 46%，是评估增长质量的硬证据，较只强调调整后 EPS 更有价值。",
+          "FY2026 Q4 AI 半导体收入指引约 217 亿美元，表明管理层仍预期定制计算与网络需求继续扩张；软件业务提供不同的收入与现金回收来源。"
+        ],
+        "concerns": [
+          "大客户自研 ASIC 既扩大需求也增强议价权，项目延迟或第二供应商导入会放大波动；本次不将未核验的 Google–Marvell 合同细节写成事实。",
+          "FY2026 Q4 non-GAAP 营业利润率指引约 66%，必须同时检验产品组合和现金流，AI 收入高速增长并不保证单位经济性持续改善。",
+          "本地估值数据缺少预测盈利的日期和 GAAP/non-GAAP 对照，且没有完成独立估值；不能因短期跌幅直接认定便宜，亦不采用未核验共识描述 beat/miss。"
+        ],
+        "actionContext": "Not attractive for now",
+        "todayNote": null,
+        "etfQuestion": "AVGO 的定制芯片与软件现金流有特色，但单独持有是增加客户集中、项目执行和并购整合风险。与 VTI/VOO/QQQ 相比，必须说明为何这些集中押注有望带来更好的长期风险回报；目前缺乏估值与客户份额验证，先观察，不因回撤自动开仓。若未来考虑小仓，先过交易清单并遵守学习池单股通常不超过 20% 的软上限。"
+      }
+    },
+    "TSM": {
+      "businessModel": "纯晶圆代工及相关先进封装平台，为不同芯片设计客户提供制程、制造良率、产能与封装服务，不靠自己设计终端 GPU 与客户争市场。商业优势来自先进工艺、规模和客户信任，代价是持续高资本投入、折旧和地域集中；它可以服务多个 AI 赢家，但并非所有芯片的唯一代工选择。",
+      "moatEvidence": "2026 Q2 先进制程（7nm 及更先进，即更小节点）占晶圆收入 77%，其中 2nm 为 3%、3nm 为 30%、5nm 为 33%、7nm 为 11%；毛利率 67.7%、营业利润率 60.3%（7/16 官方财报），说明领先制程有实际收入与盈利支撑。2nm 已贡献收入，比笼统声称领先很多代更有验证价值。未找到本次足够的原始证据支持全年 2nm 全订满、CoWoS 售罄或固定涨价幅度，故不沿用这些绝对表述。",
+      "keyRisks": "第一，台湾生产集中、台海局势和客户出口合规构成难以彻底对冲的尾部风险，海外建厂不能立即消除依赖。第二，2026 Q3 毛利率指引 65%–67% 低于 Q2 的 67.7%，在 2nm 爬坡、产能扩张和汇率变化下，收入上升不等于利润率继续提升。第三，制造和封装投资是现金支出，订单增长必须最终覆盖折旧和资金成本；客户 AI 资本开支放缓会传导到利用率，GPU 与 ASIC 客户并不提供完全独立的周期分散。",
+      "aiAngle": "GPU 与自研 ASIC 竞争可扩大先进制程和封装需求，因此 TSM 比押注单一芯片架构更中立；但仍押注 AI 总支出及自身制造份额。2026 Q2 美元收入同比增长 33.7%，不是 36.0%：后者是新台币口径。应直接依据 TSM 的制程组合、毛利与月度收入判断，不再用其他设备公司业绩替代本公司的订单证据。",
+      "growthCatalysts": "官方日历显示 2026 年 8 月营收预计于 9/10 台北时间 13:30 发布，截至 9/7 12:36 UTC 尚未到时点；它是下一项明确催化剂，不能把 7 月已公布收入写成未来事件。2026 Q3 收入指引 446亿–458 亿美元、毛利率 65%–67%、营业利润率 56%–58%（7/16 发布，汇率假设 1 美元兑 32 新台币），后续验证 2nm 爬坡和先进封装收入的现金回报。未核验的 A16 具体量产季度、产能售罄和涨价数字不作为确定催化剂。",
+      "growthSignals": "2026 Q2 收入 1.27038 万亿新台币、同比增长 36.0%；美元收入 402 亿、同比增长 33.7%，毛利率 67.7%。最新已核验月报为 2026 年 7 月营收 4,675.8 亿新台币、同比增长 44.7%、环比增长 5.6%（8/10 发布）。后续跟踪 8 月营收、Q3 指引兑现、2nm 收入占比相对 Q2 的 3%、先进节点组合、产能利用率、封装交付、资本支出与自由现金流，区分美元及新台币同比口径。",
+      "judgment": {
+        "positives": [
+          "2026 Q2 美元收入 402 亿、同比增长 33.7%，毛利率 67.7%，先进制程收入占比 77%；领先工艺与规模确实转化为盈利。",
+          "2026 年 7 月收入 4,675.8 亿新台币、同比增长 44.7%（8/10 公布），提供季度财报之后的实际经营验证，而非仅凭客户远期规划。",
+          "代工模式可同时服务通用 GPU 与客户自研芯片，不必预先选定某一种 AI 架构获胜；2nm 在 2026 Q2 已贡献 3% 晶圆收入。"
+        ],
+        "concerns": [
+          "2026 Q3 毛利率指引 65%–67% 低于 Q2 的 67.7%，先进节点爬坡与扩产期间不能线性外推当前高利润率。",
+          "台湾地域集中与地缘风险不能靠高毛利抵消，海外扩产也有成本和执行代价；组合里已有 AI 芯片股仍会共享这一供应链风险。",
+          "没有独立验证最新资本支出回报和内在价值，不能用先进产能紧张直接推出股价有安全边际；月度营收也不能单独证明现金流或 AI 终端回报。"
+        ],
+        "actionContext": "Not attractive for now",
+        "todayNote": null,
+        "etfQuestion": "TSM 的代工中立性有吸引力，但 VTI/VOO 是美国股票组合，不应声称直接持有台湾 ADR；QQQ 也不能被笼统描述为 TSM 的直接替代持仓。它们可通过不同科技客户提供间接半导体需求敞口并分散单股风险，但不是完全对冲台海冲击。只有愿意承担制造地域集中、能解释为何优于 ETF 的风险回报时才考虑学习池小仓；目前继续研究，不突破交易清单与通常 20% 的单股软上限。"
+      }
+    },
+    "ASML": {
+      "businessModel": "向晶圆制造商销售 EUV、DUV 光刻设备及量测检测方案，并对已安装设备提供维护、升级与现场选件。先进 EUV 的独特地位是核心优势，但公司并非只有 EUV 一条收入线；2026 Q2 已安装设备管理收入 27.62 亿欧元、总收入 93.26 亿欧元（7/15 公布），服务和升级能缓冲部分新机交付波动。",
+      "moatEvidence": "EUV 的系统集成、关键光学供应链和长期客户工艺协同形成极高进入壁垒，不能简化为所有芯片都必须用 EUV。2026 Q2 销售 93.26 亿欧元、毛利率 54.0%，官方称两项均高于此前指引，主要受已安装设备业务超预期推动；这是服务及升级变现能力的证据，不等于纯新机销量超预期。7/15 管理层计划 2027 年 low-NA EUV 与 DUV immersion 产能分别较 2026 年增加 30%，是需求信心及供给规划，不是确定订单收入。",
+      "keyRisks": "第一，客户扩厂到设备验收确认收入有时差，订单推迟或出口许可变化会影响收入；EUV 技术领先不能保护每一个季度的估值。第二，中国出口限制和国产 DUV 替代风险应与 EUV 竞争分开看：9/2 行业报道中的国产化时间表是第三方预测，不是已完成量产证明。第三，High-NA 的客户采用与经济性、关键零部件供应及扩产执行都需验证；2027 年产能增加 30% 的计划若遇需求降温，会提高经营杠杆风险。",
+      "aiAngle": "AI 推动先进逻辑与部分存储工艺升级，进而增加高端光刻及升级需求，ASML 不需押注某个 GPU 品牌获胜。但 AI 资本开支并不全部流向光刻：封装、电力、内存及网络各有预算，不能把 CoWoS 扩产一比一换算为 EUV 订单。公司的收益取决于光刻强度、客户扩厂、系统交付与验收，不是所有 AI 支出增速。",
+      "growthCatalysts": "2026 Q3 收入指引 110亿–120 亿欧元、毛利率 55%–57%，2026 全年收入指引 430亿–450 亿欧元、毛利率 54%–56%（7/15 发布），是下一阶段验证重点。2027 年 low-NA EUV 与浸没式 DUV 扩产各 30% 仍待供应链和客户验收兑现；High-NA 采用和存量设备升级是后续观察项。7/15 财报及 8 月派息已过去，不列作未来增长催化剂；未经官方日历核验的下一财报精确日期不写死。",
+      "growthSignals": "跟踪 2026 Q3 及全年收入/毛利率指引兑现；以 Q2 总收入 93.26 亿欧元、已安装设备管理收入 27.62 亿欧元、毛利率 54.0% 为基准区分新机、服务和升级。另监测 EUV/DUV 交付及验收、High-NA 客户采用、客户扩厂进度、产能计划兑现、对华许可、现金流与预收款。不能只用订单情绪或其他设备商营收替代 ASML 自身证据。",
+      "judgment": {
+        "positives": [
+          "EUV 的系统和关键供应链壁垒极高，先进工艺客户迁移成本大；这是公司质量最强的部分，但不代表所有半导体制造都无替代路线。",
+          "2026 Q2 收入 93.26 亿欧元、毛利率 54.0%，官方确认高于此前指引，已安装设备管理收入 27.62 亿欧元体现升级与服务变现能力。",
+          "7/15 上调后的 2026 全年收入目标 430亿–450 亿欧元，以及 2027 年 EUV/浸没式 DUV 扩产计划，支持客户先进制程需求仍强的判断。"
+        ],
+        "concerns": [
+          "技术壁垒与买入价格是两件事：尚未独立验证内在价值，不能因为 EUV 地位独特就接受任何估值。",
+          "2027 年各增加 30% 的产能计划并非已交付订单；客户资本开支一旦延后，收入确认和经营杠杆都可能放大周期波动。",
+          "出口管制会直接限制可服务市场；国产 DUV 替代、High-NA 客户经济性和关键零部件供应各需跟踪，不把媒体预测的多年领先期当成保证。"
+        ],
+        "actionContext": "Not attractive for now",
+        "todayNote": null,
+        "etfQuestion": "单独持有 ASML 是集中押注光刻技术、设备周期和出口规则。相较 QQQ 的科技篮子、VTI/VOO 的更广行业组合，必须证明这份集中风险带来的长期回报值得；ETF 可以降低公司特有风险，却不能消除全球半导体周期。未完成估值和交易清单前不因技术垄断追价；若未来考虑学习池小仓，单股通常不超过 20%。"
+      }
+    }
+  },
+  "sources": {
+    "NVDA": [
+      {"url":"https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027","title":"NVIDIA Announces Financial Results for Second Quarter Fiscal 2027 — Q2 actuals and Q3 guidance","asOf":"2026-08-26"},
+      {"url":"https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf","title":"CFO Commentary on Second Quarter Fiscal 2027 Results — receivables, DSO, operating cash flow and conditional guarantees","asOf":"2026-08-26"},
+      {"url":"https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face","title":"NVIDIA to Acquire Hugging Face — official announcement by Jensen Huang","asOf":"2026-09-03"},
+      {"url":"https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm","title":"NVIDIA Form 8-K, Item 8.01 — Hugging Face definitive agreement dated September 2, 2026; consideration and closing conditions","asOf":"2026-09-03"}
+    ],
+    "AMD": [
+      {"url":"https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results","title":"AMD Reports Second Quarter 2026 Financial Results — Q2 results, comparison charges and Q3 outlook","asOf":"2026-08-04"},
+      {"url":"https://newsroom.amd.com/news/amd-2q-2026-earnings","title":"AMD Reports Second Quarter 2026 Earnings — Helios, ROCm and customer deployment highlights","asOf":"2026-08-04"},
+      {"url":"https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000121/attachments/AMD%20Q2%202026%20Earnings%20Slides%20FINAL.pdf","title":"AMD Financial Results, Second Quarter 2026 — Data Center metrics and Anthropic/Microsoft agreements","asOf":"2026-08-04"}
+    ],
+    "AVGO": [
+      {"url":"https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial","title":"Broadcom Inc. Announces Third Quarter Fiscal Year 2026 Financial Results and Quarterly Dividend — actuals and Q4 outlook","asOf":"2026-09-02"},
+      {"url":"https://investors.broadcom.com/static-files/9d426ddc-fa55-4fa1-8685-fc64642cbdad","title":"Broadcom Form 8-K, September 2, 2026, Exhibit 99.1 — quarter ended August 2, 2026","asOf":"2026-09-02"}
+    ],
+    "TSM": [
+      {"url":"https://pr.tsmc.com/english/news/3326","title":"TSMC Reports Second Quarter EPS of NT$27.25 — 2026 Q2 results and Q3 outlook","asOf":"2026-07-16"},
+      {"url":"https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf","title":"TSMC 2Q26 Earnings Release — currency-specific growth, node mix and margins","asOf":"2026-07-16"},
+      {"url":"https://pr.tsmc.com/english/news/3329","title":"TSMC July 2026 Revenue Report — released August 10, 2026","asOf":"2026-08-10"},
+      {"url":"https://investor.tsmc.com/english/financial-calendar","title":"TSMC Financial Calendar — August revenue scheduled for September 10, 2026, 13:30 Asia/Taipei; calendar snapshot","asOf":"2026-09-07T12:36:00Z"}
+    ],
+    "ASML": [
+      {"url":"https://www.asml.com/en/investors/financial-results/q2-2026","title":"ASML Q2 2026 Financial Results — release dated July 15, 2026","asOf":"2026-07-15"},
+      {"url":"https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results","title":"ASML reports €9.3 billion total net sales and €2.9 billion net income in Q2 2026 — outlook and capacity plans","asOf":"2026-07-15"},
+      {"url":"https://ourbrand.asml.com/asset/c8dbf3fc-4c5e-4406-83f6-27694b138245/Press-Release-Financial-Results-Q2-2026.pdf","title":"ASML Q2 2026 Financial Results press release — Installed Base Management sales and guidance","asOf":"2026-07-15"},
+      {"url":"https://www.trendforce.com/news/2026/09/02/news-chinas-duv-could-reach-high-volume-production-in-2-5-years-euv-reportedly-unlikely-within-a-decade","title":"TrendForce News: China DUV/EUV development timeline — secondary reporting of forecasts, not confirmed production","asOf":"2026-09-02"}
+    ]
+  },
+  "notes": [
+    "研究信息截止：2026-09-07 12:36 UTC（北京时间 20:36）。本次检索在截止后执行，仅纳入截止前已发布、可核验日期的事实；动态日历的 asOf 是研究口径而非历史网页存档时间，日历可能调整。",
+    "已读取 finance/data/latest.json、scores.json、company_research.json、agent-insights.json 和 finance/IPS.md。仅输出本文件，不修改主数据、不部署、不执行交易、不发送外部通知。",
+    "报价不是 9/7 今日行情：美国股市 2026-09-07 因 Labor Day 休市。本地 latest.json 生成时间为 2026-09-07T12:15:21.039091+00:00，五股历史序列最后交易日均为 2026-09-04；本地报价 NVDA $230.36、AMD $477.57、AVGO $357.895、TSM $428.91、ASML $1,714.88。AVGO 9/4 history close 约 $357.90，与 quote 原始值存在舍入差异。未以这些报价编造 9/7 涨跌、盘前或成交表现，亦未独立在线核对行情。",
+    "本地 forward PE 分别为 NVDA 19.7、AMD 32.7、AVGO 23.2、TSM 21.0、ASML 31.5，但盈利预测的基准日期、提供方及 GAAP/non-GAAP 口径不完整，未用来宣称低估或目标价。scores.json 仅是既有模型输出，不作为财报事实证据；本文件未更新分数。",
+    "主数据质量风险：company_research.json 的 NVDA FY2027 Q2 标签搭配 2025 年起止日期，AMD/AVGO latest 字段混入 2018 财季且出现超过 100% 的毛利率，ASML 财年标签与 2023 年起止日期不匹配；这些数值不得直接进入投资判断。本次只在研究输出中纠正/弃用，未修复源文件。",
+    "证据获取限制：已按要求使用 web_search 对五股检索最新财报；后续该服务出现 429 配额错误，停止重试，改用 Tavily 搜索补充独立索引。web_fetch 对官方页面及搜索跳转均因私有/特殊 IP 解析安全检查被阻止，未绕过；正文事实依据带明确发布日期的官方页面/PDF/SEC 的搜索索引摘录交叉核验，不声称完成逐页全文审阅。",
+    "memory_search 超时且返回 unavailable，历史记忆召回不完整；本任务以直接读取的 IPS 和指定数据文件为准。若需要恢复记忆查询，应在短暂冷却后重试；本次未修改记忆或索引。",
+    "财报时效核验：NVDA 最新已核验为 2026-08-26 发布的 FY2027 Q2；AVGO 为 2026-09-02 发布的 FY2026 Q3；AMD 为 2026-08-04 发布的 2026 Q2；TSM 为 2026-07-16 发布的 2026 Q2；ASML 为 2026-07-15 发布的 2026 Q2。搜索中的 NVDA FY2026/2025 年报、AMD 2008 年结果均未当成最新。",
+    "NVDA：新增 9/3 Hugging Face 交易事实，区分 9/2 签约、公告、待交割三个时点。官方博客总称约 129.303 亿美元，SEC 拆为约 119 亿美元股东对价与最高约 10 亿美元股权留任安排，属于不同描述/取整口径，不将后者全算为即时现金支出。DSO、回款和担保是重点风险，但有条件的担保上限不是已发生债务、损失或当期全部支出。",
+    "AVGO：确认 9/2 财报已经落地。旧文中 Q4 略低共识、盘后反应、Google–Marvell second-source 已合同化及 FY2027/FY2028 AI 收入约 1,150亿/2,300 亿美元，未获得本次足够的一手/可比口径验证，已从主判断删除。远期规模可在二手财报摘要中找到，但不等于已确认订单、正式季度指引或确定收入；不以缺失共识的情况宣称 beat/miss。",
+    "TSM：纠正旧文将美元收入 $40.2B 与新台币同比 +36.0% 混用；美元同比应为 +33.7%。先进制程应写 7nm 及更先进，而非容易误解的 7nm 及以上。8 月月报在官方日历为 9/10，不是搜索生成摘要误称的 10/8；10/8 对应 9 月月报。未核验的涨价、全订满、CoWoS 售罄、A16 精确量产季度及资本支出数字不再沿用。",
+    "ASML：保留官方 7/15 指引和 2027 年扩产计划，删除其他设备商业绩替代 ASML 需求证据的写法。中国国产化报道仅作第三方风险情景，不视为设备已量产或 ASML 领先年数的确定保证；未核验的停止披露 net bookings 断言也未沿用。",
+    "截至本次检索，未为 AMD、TSM、ASML 找到足以证明相对本地研究发生重大经营变化的一手新公告，因此 todayNote 为 null；AVGO 9/2 财报已在旧研究内，核验不等于新增事件，todayNote 同样为 null。NVDA todayNote 明确注明新纳入的是 9/3 公告，而不是 9/7 当日变化。搜索未发现不等于公司绝无其他新闻。",
+    "严格截止处理：检索发现 2026-09-07 TrendForce 关于 TSM 3nm 的报道，但结果缺少具体发布时间，不能确认早于 12:36 UTC，故未将其纳入公司事实或 todayNote。网页侧栏出现的旧新闻/动态推荐不作为对应文章的发布日期证据。",
+    "IPS：无自动交易；态度仅为 Continue observing / Not attractive for now，后者表示缺少足够估值与风险回报证据，不是已完成 DCF 的高估结论。先比较 VTI、VOO 或 QQQ，交易前完成清单，新单股通常小仓开始，学习池单股通常不超过 20%，最终由 Xiaosong 决策。ETF 分散公司特有风险但不能消除共同 AI 资本开支、台海供应链或市场风险；不虚构 ETF 当前持仓和权重。"
+  ]
+}

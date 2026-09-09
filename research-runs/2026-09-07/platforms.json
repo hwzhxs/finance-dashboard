@@ -1,0 +1,164 @@
+{
+  "items": {
+    "AAPL": {
+      "businessModel": "Apple 的生意是用 iPhone、Mac 和配套设备建立用户关系，再通过 App Store、云存储、订阅与支付等服务持续收费；不是单纯卖手机，也不是已证明独立收费能力的 AI 软件公司。FY2026 Q3（截至 2026-06-27，7/30 发布）营收 1094.17 亿美元，其中 iPhone 542.52 亿、Services 307.39 亿；硬件决定入口和换机周期，服务决定复购与利润结构。",
+      "moatEvidence": "真正的护城河是软硬件一体化、跨设备使用习惯、开发者生态与迁移成本。FY2026 Q3 iPhone 收入由上年同期 445.82 亿升至 542.52 亿美元，Services 由 274.23 亿升至 307.39 亿美元，证明生态仍能把存量用户转成收入；但收入增长不能单独证明用户留存率改善。电话会披露该季服务毛利率 75.6%，是服务经济性的证据，不应把公司整体毛利率或硬件定价权混为一谈。",
+      "keyRisks": "最需要防的是把短期高毛利外推：FY2026 Q3 公司毛利率 50.1% 含约 2 个百分点关税退款贡献，EPS 2.02 美元也含约 0.11 美元退款收益；FY2026 Q4 管理层给出的毛利率区间为 47%—48%，仍含约 1 个百分点退款。电话会所述内存成本和 iPhone/Mac/iPad 供给限制，会让新品热度与实际可交付收入脱节。大中华区 FY2026 Q3 收入 188.16 亿美元、高于上年同期 153.69 亿，不能沿用旧稿的“中国收入走弱”结论；竞争、监管和地缘风险仍需跟踪。John Ternus 的 CEO 交接按 4/20 官方公告于 9/1 生效，不再是未来事件，执行连续性才是观察点。",
+      "aiAngle": "Apple 的 AI 机会在于提升设备使用价值、留存和升级意愿，而非争夺云算力出租份额。FY2026 Q3 电话会讨论了 Siri AI 与 Apple Intelligence，但功能发布和用户好评尚不等于独立 AI 收入，也不能据此认定换机超级周期成立。端侧计算和外部合作可减轻自建基础设施需求，却仍有模型服务成本、隐私、延迟和交付质量风险；不把未核实的合作费、模型后端或折叠机规格计入估值。",
+      "growthCatalysts": "未来看秋季产品实际发布后的供货、预订转交付、用户升级意愿，以及 Siri 功能进入日常场景后的留存与服务消费。9/4 MacRumors 的预告报道指向 9/9 活动，但截至研究截止时尚未发生；折叠型号、机型数量和上市节奏仍属预测，不写成确定收入。FY2026 Q4 营收增长 9%—11% 的管理层展望需要后续财报验证，已经结束的 WWDC、7/30 财报和 9/1 交接不再当作未来催化。",
+      "growthSignals": "下一季核对 iPhone 与 Services 收入增速、大中华区收入、供货周期及库存；毛利率必须同时看报告值和剔除关税退款后的变化。FY2026 Q4 的验证基准为管理层营收同比增长 9%—11%、毛利率 47%—48%，不是保证；再看经营现金流、资本开支与回购后每股收益是否同步改善。AI 侧优先找实际使用、付费与换机贡献，缺少披露时不以下载量或发布会声量替代。",
+      "judgment": {
+        "positives": [
+          "FY2026 Q3 收入 1094.17 亿美元、同比约增 16%，iPhone 和 Services 同时增长；设备入口加高毛利服务的长期生意仍有吸引力。",
+          "FY2026 Q3 Services 收入 307.39 亿美元、电话会披露毛利率 75.6%；这是可观察的利润来源，比把未来 AI 故事提前资本化更可靠。",
+          "FY2026 Q3 大中华区收入高于上年同期，旧稿的地区需求恶化判断证据不足；应区分绝对增长、市场预期和份额变化。"
+        ],
+        "concerns": [
+          "FY2026 Q3 EPS 与毛利受关税退款抬升；FY2026 Q4 指引回落且仍含退款，不能按当季表观盈利给永久溢价。",
+          "新品、AI 体验、供给和管理层交接同时进入执行检验期；在销量与正常化利润未验证前，品牌强不等于价格有安全边际。"
+        ],
+        "actionContext": "Continue observing — 本地最后交易日 2026-09-04 收盘 319.97 美元，不是 9/7 报价。认可生态质量，但等待退款正常化后的盈利与新品交付证据；没有可复核估值区间和胜过 VTI/VOO 的理由，不因发布会预期新开仓。若以后通过交易清单，才讨论小仓位，决策由 Xiaosong 作出。",
+        "todayNote": null,
+        "etfQuestion": "VOO/VTI 已提供 Apple 的间接敞口。单买必须额外证明服务复购和设备升级能带来高于宽基的风险调整后回报，而且买入价对正常化现金流有折扣；仅因喜欢产品或相信 Siri 不足以通过 IPS 的 ETF 比较。"
+      }
+    },
+    "MSFT": {
+      "businessModel": "Microsoft 用 Microsoft 365、Dynamics、安全与开发者工具收取企业订阅费，以 Azure 出售云计算、数据库和 AI 服务；Windows、游戏与搜索是其他收入来源。FY2026 Q4（截至 2026-06-30，7/29 发布）收入 900 亿美元、同比增 18%，经营利润 406 亿美元；生产力与业务流程、智能云收入分别为 378 亿和 393 亿美元，软件续订与云用量形成互补。",
+      "moatEvidence": "身份、权限、文件、协作和业务系统连接在同一企业工作流里，迁移牵涉培训、安全与合规，护城河来自转换成本和分销，而不只是拥有某个领先模型。FY2026 Q4 Azure 及其他云服务收入同比增 43%，FY2026 Azure 年收入超过 1000 亿美元；7/29 官方披露 Microsoft 365 Copilot 已超过 3000 万付费席位。商业剩余履约义务在 FY2026 Q4 末达 6780 亿美元、同比增 84%，支持需求可见度，但合同余额不是现金，也不能全部解释为即将确认的 AI 收入。",
+      "keyRisks": "扩建数据中心和 AI 推理会先占用现金、再形成折旧，Azure 增长必须与资本开支、云毛利及自由现金流联合判断。客户和模型合作伙伴集中、供电和芯片供应、企业数据安全及监管均可能影响回报。FY2026 Q4 GAAP EPS 4.81 美元，官方剔除 OpenAI 投资影响后的 non-GAAP EPS 为 4.74 美元，但这并未剔净全部特殊收益：官方另外披露 Anthropic 投资收益及退休、裁员、游戏减值等离散项目相对原指引净增厚 EPS 0.27 美元。不能把 non-GAAP 当成完全正常化盈利。",
+      "aiAngle": "五家公司中，Microsoft 的企业 AI 收费证据较扎实：FY2026 Q4 Azure 及其他云服务增长 43%，7/29 公布 Copilot 超过 3000 万付费席位；基础设施用量和软件席位是不同渠道，不应相加为同一种 AI 收入。9/2 官方 SharePoint 更新让可复用技能、评估和工作流更深嵌入内容系统，强化产品分销逻辑；但功能升级本身不是新增收入或续费改善的证明，下一步要看每席位收入、使用深度、留存和推理成本。",
+      "growthCatalysts": "未来增量来自已有企业客户扩展付费 Copilot、Azure 产能交付与实际消耗、AI 功能嵌入安全和业务流程，以及硬件与模型优化降低单位服务成本。FY2027 后续季度应检验订单转收入与现金回收；7/29 财报和 9/2 SharePoint 更新已经发生，只作基线，不再列为等待触发的事件。未核验的芯片发布日期、诉讼征集截止日和旧分析师目标价均不作为催化。",
+      "growthSignals": "逐季跟踪 Azure 增速及固定汇率口径、Microsoft 365 商业云增速、Copilot 付费席位与续费、商业 RPO 的期限和客户构成。FY2026 Q4 的比较基线为 Azure 及其他云服务同比增 43%、Microsoft Cloud 收入 593 亿美元、商业 RPO 6780 亿美元；另核对现金资本开支、融资租赁、折旧、经营现金流和 FCF，避免以订单额或会计投资收益替代资本回报。",
+      "judgment": {
+        "positives": [
+          "FY2026 Q4 总收入同比增 18%、Azure 及其他云服务增 43%，云与成熟订阅业务同时提供收入基础，不是只有试用热度。",
+          "7/29 官方披露 Copilot 超过 3000 万付费席位，旧稿笼统称付费采用仍无证据已经不合适；真正未知的是留存、增购与每席位利润。",
+          "9/2 SharePoint 官方功能更新支持工作流嵌入这一长期护城河判断，企业分销优势比单一模型排行榜更耐久。"
+        ],
+        "concerns": [
+          "收入兑现不等于投资回报已兑现；算力、租赁与折旧负担可能使利润增长快于可分配现金增长。",
+          "FY2026 Q4 EPS 存在多项投资和一次性因素；把 4.74 美元 non-GAAP EPS 直接视为纯经营能力会高估持续盈利。",
+          "RPO 需要按客户、期限和回款质量拆解；跨云和模型竞争也可能压低未来定价，不能因企业黏性高就忽略估值。"
+        ],
+        "actionContext": "Continue observing — 本地最后交易日 2026-09-04 收盘 499.70 美元。优先研究企业 AI 现金回报，但先统一正常化 EPS、资本开支和租赁口径，再谈安全边际；本地 PE 与已核验 FY2026 EPS 存在口径不一致，不据此宣称便宜。通过 ETF 对比和交易清单后，才可考虑小仓位，禁止自动交易。",
+        "todayNote": null,
+        "etfQuestion": "VTI/VOO/QQQ 已含 Microsoft。主动加权需要证明企业工作流和云分销优势能在巨额再投资后转成高于 ETF 的每股现金流增长；若只有“AI 需求很大”而没有资本回报判断，宽基更符合 IPS，QQQ 也并非低科技集中度替代品。"
+      }
+    },
+    "GOOGL": {
+      "businessModel": "Alphabet 以 Google 搜索和 YouTube 广告变现用户注意力与商业意图，通过订阅、平台服务及 Google Cloud 扩大收入来源；TPU 系统外销增加硬件收入，Waymo 等业务保留长期选择权。2026 Q2（截至 6/30，7/22 发布）总收入 1198 亿美元、同比增 24%，经营利润 408 亿美元；Google Cloud 收入 248 亿美元、同比增 82%，但不能把其中硬件交付都视作可持续云订阅。",
+      "moatEvidence": "搜索分发、广告主投放工具、YouTube 内容供给与自研计算技术共同支撑竞争优势。2026 Q2 Cloud 经营利润 88 亿美元、利润率 35.6%，比单看模型热度更能证明商业价值；官方电话会同时明确该季首次确认交付到客户数据中心的 TPU 系统收入，并表示剔除这部分后云增长仍明显加速。区别持续服务和硬件确认节奏，是判断护城河强度而非误读增速的关键。",
+      "keyRisks": "AI 既可能增加搜索使用，也可能改写广告展示和点击路径，必须观察商业化而不只看查询量。2026 Q2 资本开支 449 亿美元、FCF 为负 59 亿美元，7/22 管理层把 2026 年资本开支展望提高至 1950亿—2050 亿美元，并预计 2027 年继续显著增加；未来折旧和外租算力可能压利润。2026 Q2 其他收支净额约 980 亿美元、主要受股权投资未实现收益推动，不能靠表观 EPS 证明股票便宜。9/2 CNBC 报道美国广告技术案没有要求出售 AdX、改用行为救济，降低的是该案当时的拆分风险，不是所有反垄断与执行风险归零。",
+      "aiAngle": "差异化在于模型、TPU、云平台和搜索/YouTube 分发可共同优化单位服务成本；2026 Q2 的云收入和经营利润是已兑现证据。9/2 CNBC 报道 Gemini 3.8 Flash 发布，是产品迭代而非收入确认；应观察推理成本、付费用量及是否侵蚀搜索广告。TPU 外销与租赁云服务的毛利、回款和收入节奏不同；不沿用未核实的未来芯片出货量、AI 实验室收入集中度百分比或旧 Gemini 用户数。",
+      "growthCatalysts": "未来看云产能投入使用后的客户消耗、TPU 订单交付与复购、Gemini 在搜索和企业场景的净变现，以及 AdX 行为救济实施后的经营影响。7/22 电话会预计 Q3 使用更多第三方算力作为过渡，并提示短期利润率压力；这是增长与盈利之间的真实权衡。财报与 9/2 裁决已经发生，未来催化是后续执行和财务验证，而不是重复等待旧裁决或炒作远期芯片规划。",
+      "growthSignals": "以 2026 Q2 Cloud 收入 248 亿美元、利润率 35.6%、资本开支 449 亿美元、季度 FCF 负 59 亿美元为比较基线，逐季拆分云服务与 TPU 硬件的贡献。继续跟踪 Search/YouTube 广告收入、流量获取成本、模型使用转付费、单位推理成本、外租算力和折旧；现金流要同时看单季与 TTM，官方披露截至 2026-06-30 的 TTM FCF 仍为正 533 亿美元，不能误称全年现金流已为负。",
+      "judgment": {
+        "positives": [
+          "2026 Q2 Cloud 收入同比增 82%、经营利润 88 亿美元，且官方称剔除 TPU 系统外销后增长仍明显加速；AI 商业化并非只靠会计投资收益。",
+          "2026 Q2 总经营利润 408 亿美元、利润率 34%，说明广告现金引擎和云增长可以并存；技术投入有真实经营业务支撑。",
+          "9/2 CNBC 报道 AdX 无需出售、采用行为救济，改善了该案的近期拆分风险；这是真实的风险变化，不应继续机械堆砌旧监管坏消息。"
+        ],
+        "concerns": [
+          "2026 年资本开支展望 1950亿—2050 亿美元，2026 Q2 FCF 负 59 亿美元；云增长快不能自动证明新增资本回报覆盖成本。",
+          "2026 Q2 股权未实现收益抬高净利润，同时 TPU 外销影响收入结构，旧稿“低 PE 所以便宜”的说法失去可靠依据。",
+          "AI 搜索的广告净变现、第三方算力成本和行为救济执行仍未定；没有拆分不等于没有经营限制。"
+        ],
+        "actionContext": "Continue observing — 本地最后交易日 2026-09-04 收盘 338.46 美元。可以优先列入正常化现金流估值研究，但不把回撤或受投资收益污染的 PE 当成安全边际。先证明剔除股权重估后的盈利、资本回报和相对 VTI/VOO 的优势；新单股通常小仓位，单股一般不超过学习池 20%，由 Xiaosong 决策。",
+        "todayNote": null,
+        "etfQuestion": "单买的合理理由应是搜索现金流、TPU 技术与云商业化构成自己能解释的独特回报来源，而不是“AI 很强且跌过”。VTI/VOO/QQQ 已给敞口；若无法估计 AI 对搜索利润的净影响并给新增资本合理回报要求，就没有充分理由额外集中持有。"
+      }
+    },
+    "AMZN": {
+      "businessModel": "Amazon 通过自营零售、第三方卖家佣金与履约、Prime 订阅和广告变现交易网络，以 AWS 提供云与 AI 服务。2026 Q2（截至 6/30，7/30 发布）收入 2006 亿美元、同比增 20%，经营利润 275 亿美元；AWS 收入 422 亿美元、经营利润 166 亿美元，是经营利润的重要来源。零售规模、广告和云不能简单套同一个利润率或估值倍数。",
+      "moatEvidence": "Prime 会员、商品供给、配送密度与卖家服务形成互相强化的网络，广告贴近购买意图；AWS 的迁移成本、服务广度和基础设施规模是另一套护城河。2026 Q2 AWS 收入同比增约 37%、经营利润由上年同期约 102 亿增至 166 亿美元，利润率按官方数字计算约 39.4%。北美和国际分部该季经营利润分别约 91 亿与 17 亿美元，说明并非所有利润都来自云，但 AWS 仍占大头。",
+      "keyRisks": "最重要的反证是现金而非股价：截至 2026-06-30 的 TTM 经营现金流 1614.03 亿美元，扣除净购置物业设备 1690.07 亿后，官方 FCF 已为负 76.04 亿美元；不是只有未来可能转负。2026 Q2 净利润 626 亿美元中含税前非经营其他收益 534 亿美元、主要来自 Anthropic 投资，不能把税前收益直接从税后净利润扣除，也不能将表观 EPS 当可重复经营能力。云端 AI 用量、硬件折旧和投资相关客户回款会共同影响资本回报；零售还面临履约成本、关税、消费及平台监管压力。",
+      "aiAngle": "7/30 官方公告称 AWS 的 AI 业务和自研芯片业务各自超过 250 亿美元年化收入运行率，且均为同比三位数增长；这不是当季收入，也不能把两项相加为互不重叠的 500 亿美元 AI 增量。Trainium/Graviton、模型平台与现有 AWS 分发构成差异化，但芯片相关服务收入不等于独立芯片对外销售额。AI 投资已经带来收入，仍未证明资本密集度上升后的股东现金回报足够。",
+      "growthCatalysts": "未来看 AWS 新容量交付和实际消耗、自研芯片客户投产、广告变现及区域化履约对零售利润的持续改善。7/30 给出的 2026 Q3 指引为收入 1970亿—2020 亿美元、经营利润 225亿—265 亿美元，需后续验证；官方提示 Prime Day 跨期影响同比，不能把表面增速回落直接解释为需求崩塌。7/30 财报、过去市值突破和已结束的促销不是未来催化，卫星与机器人未经财务验证不作近期盈利支柱。",
+      "growthSignals": "以 2026 Q2 AWS 收入同比约增 37%、经营利润约 166 亿美元为基线，跟踪增长与利润率是否同时维持；分别观察 AI/芯片年化运行率口径，不重复计量。现金侧跟踪 TTM FCF 从截至 2026-06-30 的负 76.04 亿美元能否改善，以及现金资本开支、融资租赁、折旧和客户回款。零售看北美/国际经营利润、广告与卖家服务、单位履约成本，并调整 Prime Day 时点及汇率影响。",
+      "judgment": {
+        "positives": [
+          "2026 Q2 AWS 收入约 422 亿美元、同比增约 37%，经营利润约 166 亿美元；这是云需求兑现的实证，不需要靠市值里程碑来证明。",
+          "2026 Q2 集团经营利润同比增 43% 至约 275 亿美元，北美与国际分部均盈利，经营改善不只来自投资估值上升。",
+          "7/30 官方披露 AI 与芯片业务各自超过 250 亿美元年化运行率，表明自研算力和平台分销已有商业规模，但两种口径不应简单相加。"
+        ],
+        "concerns": [
+          "截至 2026-06-30 的 TTM FCF 已流出约 76 亿美元，经营现金流增长仍被基础设施投入吞噬；高 AWS 增长不能替代资本回报检验。",
+          "2026 Q2 的税前非经营其他收益 534 亿美元主要来自 Anthropic 投资，抬升表观净利润；低表观 PE 和 EPS 大增都不够支持估值结论。",
+          "AWS 高利润率面临折旧、供给和业务结构风险，零售经营杠杆也可能在消费转弱或成本上升时反向作用。"
+        ],
+        "actionContext": "Not attractive for now — 本地最后交易日 2026-09-04 收盘 258.51 美元。问题不是沿用旧稿“突破某市值后太贵”，而是当前尚无正常化 FCF 估值和足够安全边际证据；不因 AWS 增长强就追单股。先完成资本开支与税后正常化利润核对、ETF 比较和交易清单，任何未来仓位由 Xiaosong 决定。",
+        "todayNote": null,
+        "etfQuestion": "相比 VTI/VOO，单买 Amazon 要靠自己对 AWS 再投资回报和零售效率改善的判断获得超额收益；同时接受云与消费集中风险。若只能重复“AI 订单很大”，却解释不了 TTM FCF 为何为负、何时改善，宽基更合适；QQQ 同样保留科技周期相关性。"
+      }
+    },
+    "TSLA": {
+      "businessModel": "Tesla 当前收入主要来自汽车销售、能源发电与储能、服务及其他业务，FSD、Robotaxi 与 Optimus 是不同成熟度的增长选择权。2026 Q2（截至 6/30，7/22 发布）总收入 282.36 亿美元，其中汽车 205.16 亿、能源 31.39 亿、服务及其他 45.81 亿。汽车收入大不等于稳定高现金回报；已有软件收费与刚起步的无人出租车必须和尚未证明规模利润的机器人分开估值。",
+      "moatEvidence": "制造整合、充电网络、车队数据和软件迭代有价值，但电动车价格竞争使品牌并不自动转成持久高利润。2026 Q2 汽车毛利率剔除监管积分后为 16.3%，低于 Q1 的 19.2%，护城河应接受利润表现检验。NHTSA 的 AQ26002 文件确认 9/3 在 Austin 以少量 Cybercab 开始商业部署，说明项目不再只是演示；同时这只是早期运营，不能据此推导监管已放行、全国扩张或无人驾驶优势已经胜出。",
+      "keyRisks": "2026 Q2 收入同比增 26%，但经营费用同比增 47%，经营利润仅 3.98 亿美元、同比降 57%，经营利润率 1.4%；汽车业务的盈利缓冲偏薄。该季经营现金流 46.97 亿美元、资本开支 57.89 亿美元、FCF 负 10.92 亿美元。9/3 NHTSA 开启 AQ26002，审查无传统方向盘、踏板和后视镜的 Cybercab 自我认证流程与技术依据；这是合规调查，不是已判违规，也不是已下令停运。股价仍高度依赖无人驾驶、机器人和长期利润预期，若规模化推迟，估值与现金消耗会双向承压。",
+      "aiAngle": "FSD 和无人出租车是将感知、规划与现实执行转成收入的尝试，技术可行、安全合规和单位经济性缺一不可。9/3 的 Cybercab 商业部署改善了从原型到商业服务的证据，必须删掉“所有 Robotaxi 都是零收入”的绝对表述；但未取得可核验的独立收入、无补贴利润和规模运营披露，不能把少量付费试运营视为成熟平台。Optimus 仍按高不确定性选择权处理，不把车队里程、订阅人数或活动热度直接折成确定利润。",
+      "growthCatalysts": "未来可验证的正面催化是 NHTSA 审查后的明确合规路径、Cybercab 实际付费运量与成本改善、汽车正常化毛利修复、储能交付与利润兑现。9/3 部署已经发生，下一步是监管和运营数据，不再把发布会列成未来事件；也不预设调查结论日期。后续季度交付与财报可验证经营进展，但截至截止时不填未经官方确认的具体发布日期。",
+      "growthSignals": "优先跟踪 AQ26002 公开进展、许可地域与约束、安全事件和人工/远程介入、付费趟次、利用率、单英里收入与全成本，不用调查文件中的估计涉及车辆数冒充实际运营车队。财务上比较汽车剔积分毛利率（2026 Q2 为 16.3%）、经营利润率（1.4%）、FCF（负 10.92 亿美元）与费用增速。2026 Q2 实际交付 480126 辆、储能部署 13.5 GWh 是数量基线，不代表同等幅度利润增长。",
+      "judgment": {
+        "positives": [
+          "2026 Q2 收入 282.36 亿美元、同比增 26%，实际交付 480126 辆；需求与规模基础仍在，不能简单称主营业务消失。",
+          "2026 Q2 储能部署 13.5 GWh、能源收入 31.39 亿美元，提供汽车之外的业务来源，但仍需利润和现金流验证。",
+          "NHTSA 9/3 文件确认少量 Cybercab 已在 Austin 商业部署，产品从演示走向服务是真进展；这与监管批准和盈利成熟是不同命题。"
+        ],
+        "concerns": [
+          "2026 Q2 经营利润率仅 1.4%，汽车剔积分毛利从 Q1 的 19.2% 降至 16.3%，收入增长没有转化为稳健经营利润。",
+          "2026 Q2 FCF 负 10.92 亿美元；AI 与产能投入增加，不能让尚未量化的远期业务无限填补现实现金回报缺口。",
+          "9/3 开启的 AQ26002 让 Cybercab 合规路径成为近端硬约束；小规模上线不等于可无障碍扩城，且法律、保险和安全风险可能改变单位成本。"
+        ],
+        "actionContext": "Not attractive for now — 本地最后交易日 2026-09-04 收盘 354.08 美元，不是 9/7 的新交易。对现阶段学习池，薄经营利润、负 FCF 与新合规审查不足以支撑主动集中押注；不把价格回撤当安全边际，不用未经正常化的 PE 给出精确目标价。若不能说明为何优于 VTI/VOO/QQQ，则不新开仓。",
+        "todayNote": "真实变化，事件日为 2026-09-03、并非 9/7 新发生：NHTSA AQ26002 文件确认 Austin 已开始少量 Cybercab 商业部署，并同时启动 FMVSS 自我认证审查。相对旧稿只谈活动溢价，现应同时承认商业化起步和新增合规门槛；调查不等于停运或违规裁定。",
+        "etfQuestion": "要单买 Tesla，必须能独立评估汽车利润底线、无人出租车合规及单位经济性，并承受选择权失效风险；目前证据不足。VTI/VOO/QQQ 提供较分散的间接敞口，不要求把研究池押在一次自动驾驶时间表上，QQQ 仍有高成长集中风险。"
+      }
+    }
+  },
+  "sources": {
+    "AAPL": [
+      {"url":"https://www.apple.com/newsroom/pdfs/fy2026q3/FY26_Q3_Consolidated_Financial_Statements.pdf","title":"Apple FY2026 Q3 Consolidated Financial Statements（截至 2026-06-27；官方财务表搜索索引）","asOf":"2026-07-30"},
+      {"url":"https://www.fool.com/earnings/call-transcripts/2026/08/07/apple-aapl-q3-2026-earnings-call-transcript","title":"Apple FY2026 Q3 earnings call transcript（电话会 7/30，转载日期 8/7；退款、服务毛利及 Q4 指引）","asOf":"2026-08-07"},
+      {"url":"https://quartr.com/events/apple-inc-aapl-q3-2026_3s71r9kG","title":"Apple Q3 2026 Summary（7/31 摘要；辅助交叉核对，不将 AI 摘要独立视作原始财报）","asOf":"2026-07-31"},
+      {"url":"https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo","title":"Apple CEO succession announcement（4/20 公告，9/1 生效）","asOf":"2026-04-20"},
+      {"url":"https://www.youtube.com/watch?v=qZfcFqrPfhA","title":"MacRumors: Apple September 9th iPhone Event: EVERYTHING We're Expecting!（预告报道；产品规格仍为预期）","asOf":"2026-09-04"}
+    ],
+    "MSFT": [
+      {"url":"https://news.microsoft.com/source/2026/07/29/microsoft-cloud-and-ai-strength-fuels-fourth-quarter-results-4","title":"Microsoft Cloud and AI strength fuels fourth quarter results（FY2026 Q4 截至 6/30；含 GAAP/non-GAAP 与离散项目说明）","asOf":"2026-07-29"},
+      {"url":"https://news.microsoft.com/source/2026/07/29/microsoft-earnings-press-release-available-on-investor-relations-website-30","title":"Microsoft FY2026 Q4 earnings release availability（核对发布日期）","asOf":"2026-07-29"},
+      {"url":"https://techcommunity.microsoft.com/blog/spblog/whats-new-in-copilot-in-sharepoint-september-2026/4535422","title":"What's New in Copilot in SharePoint: September 2026（官方产品更新，非新增营收披露）","asOf":"2026-09-02"}
+    ],
+    "GOOGL": [
+      {"url":"https://abc.xyz/investor/events/event-details/2026/2026-Q2-Earnings-Call-2026-GgTAq7Is0z/default.aspx","title":"Alphabet 2026 Q2 Earnings Call（截至 6/30；云、TPU 外销、现金流、资本开支与非经营收益）","asOf":"2026-07-22"},
+      {"url":"https://abc.xyz/investor/news/news-details/2026/Alphabet-Announces-Second-Quarter-2026-Results-2026-Y3uQ6H4ZJa/default.aspx","title":"Alphabet Announces Second Quarter 2026 Results（官方发布索引；主要数值以同日电话会为证）","asOf":"2026-07-22"},
+      {"url":"https://www.cnbc.com/2026/09/02/google-starts-september-with-ai-momentum-after-long-losing-streak.html","title":"Google starts September with AI momentum after long losing streak（Gemini 3.8 Flash、AdX 行为救济报道，未直接读取法院判决）","asOf":"2026-09-02"},
+      {"url":"https://qz.com/google-gemini-38-flash-coding-model-adx-breakup-090326","title":"Google launches Gemini 3.8 Flash coding model, dodges AdX breakup（9/3 报道交叉核对 9/2 事件）","asOf":"2026-09-03"}
+    ],
+    "AMZN": [
+      {"url":"https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results","title":"Amazon.com Announces Second Quarter Results（截至 2026-06-30；经营数据、TTM FCF 和 Q3 指引）","asOf":"2026-07-30"},
+      {"url":"https://www.aboutamazon.com/news/company-news/amazon-earnings-q2-2026-report","title":"Amazon Q2 2026 official earnings report（AI/芯片运行率与 Anthropic 非经营收益）","asOf":"2026-07-30"}
+    ],
+    "TSLA": [
+      {"url":"https://ir.tesla.com/_flysystem/s3/sec/000162828026049213/tsla-20260722-gen.pdf","title":"Tesla 8-K and Q2 2026 Update（截至 6/30；经营利润、GAAP/non-GAAP、现金流和剔积分汽车毛利）","asOf":"2026-07-22"},
+      {"url":"https://ir.tesla.com/press-release/tesla-releases-second-quarter-2026-financial-results","title":"Tesla Releases Second Quarter 2026 Financial Results（确认是 7/22 发布，不沿用旧稿 7/23）","asOf":"2026-07-22"},
+      {"url":"https://ir.tesla.com/_flysystem/s3/sec/000162828026046717/tsla-20260702-gen.pdf","title":"Tesla Q2 2026 Production, Deliveries & Deployments（实际交付 480126 辆、储能 13.5 GWh）","asOf":"2026-07-02"},
+      {"url":"https://static.nhtsa.gov/odi/inv/2026/INOA-AQ26002-17078.pdf","title":"NHTSA Open Audit Query AQ26002: Tesla Cybercab FMVSS Certification（9/3 开案；确认小规模商业部署，估计调查涉及数不等于车队数）","asOf":"2026-09-03"},
+      {"url":"https://winbuzzer.com/2026/09/05/nhtsa-audits-tesla-cybercab-certification-austin-launch-xcxwbn","title":"NHTSA Audits Tesla's Cybercab Certification After Austin Launch（补充报道；不将审查视为召回或停运令）","asOf":"2026-09-05"}
+    ]
+  },
+  "notes": [
+    "信息截止为 2026-09-07T12:36:00Z（北京时间 20:36）。sources.asOf 为已核验的来源发布日期或文件日期，电话会日期与转载日期不同的已在 title 说明；日期不是此次抓取时间。未使用截止后报道，9/7 无精确时刻的新闻亦未纳入。",
+    "2026-09-07 为美国 Labor Day 休市。latest.json 生成于 2026-09-07T12:15:21.039091+00:00，五股 metrics.history 最后日期均为 2026-09-04，收盘与 quote.regularMarketPrice 四舍五入一致：AAPL 319.97、MSFT 499.70、GOOGL 338.46、AMZN 258.51、TSLA 354.08 美元。全部报价只来自本地最后交易日，不用搜索摘要的价格覆盖。",
+    "已读取 finance/data/latest.json、scores.json、company_research.json、agent-insights.json 与 finance/IPS.md。主研究 financials 存在跨期混算：例如 MSFT 标作最近财年的 period 实为 2007 年区间、毛利率超 100%；GOOGL/AMZN/TSLA 标作 2026 Q2 的 latest 区间却为 2025-01-01 至 2025-06-30。此次不引用这些自动生成财务数字，不修主数据。",
+    "本地 quote 的 PE、市值与本次核验的 EPS/股数未完成同口径勾稽。例如 MSFT 本地 trailingPE 为 25.1，但 9/4 价格与官方 FY2026 GAAP EPS 17.95 美元并不直接对应此倍数；故正文不引用 PE 数值，不提供虚假精确目标价。scores 仅作学习池原有观点，不将主观质量分当作事实或自动执行指令。",
+    "按要求逐股使用 web_search 检索财报与近期新闻。Gemini 不支持 country 参数，移除后成功取得五股 2026 年 7 月财报线索；后续部分新闻请求遇到 429 配额限制，停止继续请求该提供商，改用 Tavily 搜索索引核对。web_fetch 对官方站点返回私有/特殊 IP 安全拦截，未绕过；证据来自搜索服务返回的官方原文片段、官方 PDF 索引与署名媒体，不宣称已经直连通读全部网页/PDF。",
+    "搜索出现旧年结果、动态列表和错误聚合，均未当最新：Alphabet 的 2025 Q2 结果未替代 2026 Q2；Amazon 的 2026 Q1 结果未替代 Q2；Tesla 搜索摘要把 47.51 亿美元毛利误作负利润、给出不一致交付数，已以官方 Q2 表的经营利润 3.98 亿美元、归属普通股股东 GAAP 净利润 11.14 亿美元及交付 480126 辆纠正。未采用口径不一致的 EPS 一致预期，不作未经核验的 beat/miss 宣称。",
+    "共同证据：MSFT 有官方付费 Copilot 席位和 Azure 增长；GOOGL 有云收入/经营利润且需剥离 TPU 硬件确认；AMZN 有 AWS 经营利润及 AI/芯片运行率；AAPL 有设备入口和服务利润；TSLA 有实际汽车/储能交付及小规模 Cybercab 商业部署。共同风险：AI 收入不等于新增资本回报，股权投资估值收益不等于经营利润，订单/运行率/付费席位与季度收入不能相加或互换。",
+    "主要研究纠偏：AAPL 大中华区当季收入同比增长，不能把未核验的低于预期写成绝对衰退；MSFT non-GAAP 仍含部分离散收益；GOOGL 不沿用旧 PE 17.9 或未核验的远期芯片出货数；AMZN 截至 6/30 的 TTM FCF 已为负而非只是预测；TSLA 商业部署已经发生，但监管审查与规模经济尚未解决。",
+    "近期新闻处理：AAPL 9/9 活动以 9/4 媒体预告归因，产品细节仍属预期；MSFT 9/2 SharePoint 更新只作产品证据；GOOGL 9/2 AdX 裁决由 CNBC 与 Quartz 交叉核对，未获取判决全文，不推断所有监管风险结束；TSLA AQ26002 有政府文件索引。AMZN 新闻搜索主要返回产品/培训更新、回顾和聚合列表，未找到足以改变投资判断且日期明确的新重大公告，不制造 todayNote。",
+    "todayNote 除 TSLA 外均置 null；TSLA 只记录有政府文件支持的真实商业部署/审查变化，并明确事件日不是 9/7。其他此前发生的产品或司法事件已经纳入研究正文，不包装为今天新发生。旧稿中的 8 月宏观发布日期、诉讼征集截止日、已公布财报、旧股价与未验证行情归因已删除。",
+    "IPS：不自动交易、不作短线催单。AAPL/MSFT/GOOGL 为 Continue observing，AMZN/TSLA 为 Not attractive for now；这不是自动评分结果触发的交易。任何新单股先通过交易清单、通常小仓位、一般不超学习池 20%；例外需记录理由和退出规则。不能清楚解释相对 VTI/VOO/QQQ 的优势就不买，由 Xiaosong 作最终决定。latest.json 的 80% 现金、20% PDD 是本地配置，不冒充实时券商持仓，亦不据此擅自安排资金。",
+    "已实查 finance Git HEAD 的 data/scores.json：基线 generatedAt 为 2026-09-04T12:15:07.605933+00:00，本地为 2026-09-07T12:15:21.039091+00:00。五股 composite 变化为 TSLA 51.2→49.1（-2.1）、MSFT 66.8→66.1（-0.7）、AAPL 64.0→63.4（-0.6）、GOOGL 64.7→64.6（-0.1）、AMZN 57.6→57.6（0.0）。TSLA 为本组降幅最大；这是模型评分版本变化，不是 9/7 新发生的公司新闻，也不是交易信号，不以评分差额单独推断基本面恶化或修改 todayNote。",
+    "记忆检索 memory_search 超时不可用；本次直接读取用户指定的本地 IPS 与数据完成研究，不以未召回记忆补事实。仅写 finance/research-runs/2026-09-07/platforms.json；不改主数据、IPS、记忆或其他文件，不部署、不发送外部消息。"
+  ]
+}

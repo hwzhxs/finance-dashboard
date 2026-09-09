@@ -1,0 +1,206 @@
+{
+  "items": {
+    "ORCL": {
+      "businessModel": "Oracle 靠数据库许可与维护、Fusion/NetSuite 企业应用订阅，以及 OCI 算力、存储和网络服务赚钱。数据库与财务、人力资源系统是迁移代价高的利润基本盘；OCI 则把公司推向资本密集型基础设施生意。最新已发布财报是 2026-06-10 公布的 FY2026 Q4（截至 2026-05-31）：营收 $19.2B、同比 +21%，其中 IaaS $5.8B、+93%，SaaS $4.1B、+10%。不能再按纯轻资产软件公司的现金流画像评价它。",
+      "moatEvidence": "核心数据库背负客户多年积累的数据结构、业务逻辑、运维技能与合规要求，替换风险形成真实转换成本。FY2026 Q4 的 IaaS +93% 和期末 RPO $638B 证明 OCI 赢得了大额需求，但合同规模不是已实现利润，也不能单独证明定价权。财报披露大单中的客户预付及客户自供硬件部分合计 $75B，融资压力并非全部由 Oracle 承担；这比笼统说它只能借钱买 GPU 更准确。",
+      "keyRisks": "第一，FY2026 经营现金流 $31.977B、资本支出 $55.663B、自由现金流 -$23.686B，增长仍需庞大外部资本。第二，管理层在 FY2026 Q4 电话会上预计 $638B RPO 仅约 12% 在随后 12 个月确认、另约 34% 在第 13—36 个月确认，交付、回款和前期投入存在期限错配。第三，2026-06-10 公司预计 FY2027 再筹约 $40B 债务及股权资金，含已宣布的 $20B ATM 股权发行；这是计划而非已完成融资，存在稀释和融资成本风险。第四，大规模 AI 客户集中、供电和数据中心投产延误、硬件迭代及产能利用率都可能让订单兑现慢于折旧与利息支出。",
+      "aiAngle": "OCI 直接出售 AI 训练与推理基础设施，数据库和应用内 AI 则提供交叉销售机会。FY2026 Q4 IaaS 的高速增长是公司自身变现证据，不需要借其他云厂商财报背书。客户预付和自供 GPU 缓解资金需求，但 $75B 合同硬件部分不等于本季收到 $75B 现金；AI 需求强也不等于股东自由现金流强。研究重点应从签了多大的单，转向每单位交付产能能留下多少现金。",
+      "growthCatalysts": "已确认的下一事件是 FY2027 Q1 财报：Oracle 2026-09-02 官方公告定于 2026-09-10 美股盘后发布，电话会 16:00 美国中部夏令时，即 21:00 UTC / 北京时间 9 月 11 日 05:00；截至本研究截止时间尚未公布结果。对照 6 月公司指引：Q1 总收入同比 +27%—29%、美元口径云收入 +58%—64%、美元口径 non-GAAP EPS $1.72—1.76。更长期催化剂是新产能按期投产、RPO 转收入、数据库多云迁移和资本效率改善；不把已经发布的 Q4 财报或旧合作公告当成待发生事件。",
+      "growthSignals": "跟踪 FY2027 Q1 OCI/IaaS 收入相对 FY2026 Q4 $5.8B 的变化、云收入能否达到公司指引、RPO 未来 12 个月确认占比是否上升、交付产能与利用率、经营现金流减资本支出后的真实 FCF。将资本支出、客户预付、自供硬件与短期融资分开观察，不能用净现金支出补充口径替代总投入；同时核验 FY2027 约 $40B 融资计划的实际落地、股数变化和资金成本。",
+      "judgment": {
+        "positives": [
+          "FY2026 Q4 IaaS 收入 $5.8B、同比 +93%，数据库与应用基本盘仍在，AI 基础设施已经产生收入而非只有意向订单。",
+          "截至 2026-05-31 的 RPO $638B 提供多年交付机会；财报披露 $75B 客户预付及自供硬件合同部分，说明客户也参与承担投入，但不能将其全部视为到账现金。",
+          "9/10 官方财报窗口明确，可直接检验 FY2027 Q1 总收入 +27%—29% 的原指引及现金流变化，不必靠卖方目标价猜拐点。"
+        ],
+        "concerns": [
+          "FY2026 FCF -$23.686B 是资本开支模式的硬约束；数据库护城河无法自动抵消 OCI 的资金、建设和客户信用风险。",
+          "Q4 电话会预计仅 12% RPO 在随后一年确认，而 FY2027 仍计划约 $40B 债股融资；订单久期与股东资金占用并不匹配。",
+          "本地报价与估值字段缺少统一可核验的股数及盈利时点，不能从历史高点跌幅或缓存 forward PE 推导安全边际；财报前尤其不值得押方向。"
+        ],
+        "actionContext": "Not attractive for now（暂不具吸引力）。本地最后交易日 2026-09-04 收盘 $158.78，非 9/7 今日报价。先观察 9/10 财报的 RPO 兑现和 FCF/融资说明，再判断是否值得加入小仓位候选；不因反弹或 AI 大单跳过交易检查清单。",
+        "todayNote": null,
+        "etfQuestion": "相对 VTI/VOO，单持 ORCL 必须证明数据库加 OCI 的超额收益潜力足以补偿融资、稀释和大客户风险。当前只能证明需求强，尚不能证明每股自由现金流回报更好；无法给出这道比较题的明确答案，就不新增单股风险。"
+      }
+    },
+    "PLTR": {
+      "businessModel": "Palantir 向政府和企业出售数据集成、运营决策与 AI 执行平台：Gotham 服务政府任务，Foundry 把企业数据映射到业务对象和流程，AIP 将模型接入受控决策与行动，Apollo 支持部署运维。收入来自软件使用和相关服务，关键是把项目部署转成可续约、可扩张的平台关系。最新财报为 2026-08-03 发布的 2026 Q2（截至 6 月 30 日）：营收 $1.935464B、同比约 +93%。",
+      "moatEvidence": "真正壁垒是业务本体、数据权限、部署经验和进入关键决策链后的替换成本，不是独占某个大模型。2026 Q2 美国商业收入 $764M、同比 +149%，美国政府收入 $809M、+90%，说明商业拓展和政府基础均有实绩。2026-09-01 美国陆军确认 TITAN 进入生产阶段，其中 Palantir 获 $127M 订单，是原型转生产的外部客户验证；但军方项目成功不能自动证明每个企业场景都有相同复制效率。",
+      "keyRisks": "第一，经营增长很强仍可能不是好价格；若增速回落或估值倍数压缩，优秀利润无法保证持股回报。第二，政府预算、采购验收和便利终止条款使合同总额不等于无条件保底收入。第三，2026 Q2 GAAP 营业利润率约 47%，调整后约 62%，不能混用；股权激励等调整、股数稀释和低税率均需单独评估。第四，AIP 面临云平台、其他企业软件和客户自建方案竞争，渠道扩张可能增加实施复杂度，数据隐私与政府用途争议也会影响获客。",
+      "aiAngle": "AIP 的价值是让模型在企业权限、数据与业务流程内可靠执行，而非再卖一个聊天入口。2026 Q2 美国商业收入 +149%、GAAP 营业利润约 $912M 是应用层商业化证据，但公司没有提供可与总收入完全分离的纯 AIP 收入，不能把全公司增长都记成生成式 AI 收入。2026-09-03 PwC 扩大战略合作聚焦企业 AI、并购整合和 ERP 现代化，增加分销与实施触点；合作公告没有披露可直接纳入模型的新增收入承诺。",
+      "growthCatalysts": "下一阶段是兑现 2026-08-03 上调的全年营收指引 $8.150—8.158B、美国商业收入超过 $3.424B，以及 Q3 营收指引 $2.160—2.164B；本次未核实下一财报发布日期，不沿用猜测日期。9/1 已公布的 TITAN 项目对应八套初始生产系统、计划随后 18 个月交付，未来验收和后续订单才是催化剂。9/3 PwC 合作的下一验证点是付费部署与扩单，而不是再次把签约新闻当成新增业绩。",
+      "growthSignals": "以 2026 Q2 营收 $1.935B、美国商业 $764M、美国政府 $809M 为基准，跟踪增速与客户扩张、合同转收入和回款，而不只看签约总额。同步检查 GAAP 营业利润、股权激励与稀释后股数；Q2 调整后 FCF $1.220B、利润率约 63% 仅作明确标注的公司口径指标，全年调整后 FCF 指引 $4.5—4.7B 不是保证。TITAN 应按 Palantir 的 $127M 份额及交付节奏跟踪，不能把含 Anduril 在内的 $192M 全部计给 PLTR。",
+      "judgment": {
+        "positives": [
+          "2026 Q2 总营收同比约 +93%，美国商业 +149%、美国政府 +90%，政府与商业双引擎同时增长，投资逻辑不再只依赖单一政府项目。",
+          "2026 Q2 GAAP 营业利润约 $912M、营业利润率约 47%，即使不用调整后 62% 的漂亮口径，经营杠杆也已经兑现。",
+          "9/1 陆军确认 $127M TITAN 生产订单、9/3 PwC 扩大合作，分别提供实际采购验证与企业分销机会；两者证据强度不同，已分开处理。"
+        ],
+        "concerns": [
+          "没有经过统一股数、盈利与现金流口径核验的估值模型，就无法证明本地 9/4 收盘价存在安全边际；旧 73x P/S、137x P/E 和旧盘前涨幅不再引用。",
+          "2026 Q2 调整后营业利润率约 62% 高于 GAAP 约 47%，SBC、税率和稀释必须进入每股回报判断，调整后 FCF 也不是股东无成本获得的现金。",
+          "政府采购和大项目的收入确认不均匀，PwC 合作尚无明确增量收入披露；强合作故事不能替代后续付费客户、续约与交付证据。"
+        ],
+        "actionContext": "Not attractive for now（暂不具吸引力）。本地最后交易日 2026-09-04 收盘 $174.33，非 9/7 报价；企业质量值得研究，但本轮没有建立可验证的价格安全边际。继续观察收入兑现和每股现金流，不追已过去的财报跳涨，也不把单日回撤当成便宜。",
+        "todayNote": null,
+        "etfQuestion": "相对 VTI/VOO 或以 QQQ 为科技风险对照，PLTR 的差异化是深度嵌入政府与企业决策流程，而额外代价是单一公司的增长预期、治理和估值风险。只有在保守增长情景下仍能证明每股回报更有吸引力，才值得讨论小仓位；现在不能仅凭 AI 纯度高就胜过 ETF。"
+      }
+    },
+    "NOW": {
+      "businessModel": "ServiceNow 以订阅方式提供 IT 服务管理、IT 运营、员工和客户服务、安全及风险工作流，核心是把跨部门请求、权限、资产和处理流程放在同一平台。AI 带来自动处理、辅助决策与治理产品的增购机会，但基础收入仍是企业工作流订阅。2026-07-22 发布的最新 2026 Q2 财报（截至 6 月 30 日）营收 $3.987B、同比 +24%，订阅收入 $3.877B、+24.5%（固定汇率 +23%）。",
+      "moatEvidence": "客户沉淀的工作流配置、CMDB 资产与服务关系、跨系统集成和审计控制形成替换成本。2026 Q2 末 cRPO $13.20B、同比 +21%（固定汇率 +21.5%）；单季有 123 笔净新增 ACV 超过 $1M 的交易，期末 658 家客户 ACV 超过 $5M，说明平台能从单点工具扩张到大客户基础设施。这是合同与扩单证据，但 cRPO 不是新签订单总额，也不是已收现金。",
+      "keyRisks": "第一，2026 Q2 超指引并非全是需求加速：官方明确美国联邦客户的本地部署收入部分由 Q3 提前到 Q2，需看后续回吐。第二，Q2 GAAP 营业利润 $162M、利润率约 4%，non-GAAP 为 29.5%；股权激励、收购摊销和相关成本不可当作不存在。第三，Q2 总体 non-GAAP 毛利率 78%、上年同期 81%，公司也提示全年毛利率受公有云合作使用增加与 AI 采用加速影响，收入增长未必等额增厚利润。第四，AI 跨系统执行的权限、安全与可靠性风险，以及平台整合和竞争压力，都会影响客户续约和定价。",
+      "aiAngle": "Now Assist 和 AI Control Tower 的机会在于把 AI 放入已有权限、数据与流程控制，而不是靠模型本身形成壁垒。2026 Q2 电话会管理层称 ServiceNow AI ACV 已超过 $1B、净新增 AI ACV 环比增长超过 40%，并表示有望超过 2026 年底 $1.5B ACV 目标。注意这是更广的 ServiceNow AI 合同年化口径，不应全部写成 Now Assist 已确认收入，也没有证据在本季把目标从 $1B 新上调到 $1.5B。AI 的最终价值要看续约、增购与推理及托管成本后的利润。",
+      "growthCatalysts": "等待 2026 Q3 订阅和 cRPO 验证提前确认收入之后的真实需求，并跟踪 7 月上调的全年订阅收入指引 $15.760—15.780B（固定汇率同比 +21%）、non-GAAP 营业利润率 31.5% 和公司口径 FCF 利润率 35%。Tech Mahindra 8 月已宣布扩大合作，建立 AI 与创新中心并采用 Client Zero 内部验证；后续付费部署与规模化复制才是未兑现催化剂，不把合作标题直接折算成收入。本轮未核实下一财报日期，删除旧 10/29 日期。",
+      "growthSignals": "以 2026 Q2 订阅固定汇率 +23%、cRPO 固定汇率 +21.5% 为基准，重点观察 Q3 是否受收入提前确认影响，以及续约和大客户扩单能否补足。区分 ServiceNow AI ACV、净新增 ACV、生产部署客户和 GAAP 收入；检验 AI 增购是否足以覆盖推理、公有云托管与渠道交付成本。同步观察 GAAP/non-GAAP 利润差距、SBC 占收入、稀释后股数和全年现金流，而不是把同行财报后的软件板块上涨当作 NOW 自身增长信号。",
+      "judgment": {
+        "positives": [
+          "2026 Q2 订阅收入 $3.877B、固定汇率 +23%，cRPO $13.20B、固定汇率 +21.5%，关键工作流需求仍有韧性。",
+          "2026 Q2 有 123 笔净新增 ACV 超 $1M 交易、658 家 ACV 超 $5M 客户，平台扩张与转换成本有量化依据。",
+          "2026 Q2 电话会披露 ServiceNow AI ACV 超 $1B、净新增 AI ACV 环比超 +40%，AI 增购已进入合同层面，而不仅是演示。"
+        ],
+        "concerns": [
+          "Q2 部分美国联邦本地部署收入从 Q3 提前确认，不能将本季超指引幅度全部外推为持续加速。",
+          "2026 Q2 GAAP 营业利润率约 4%、non-GAAP 29.5%，且总体 non-GAAP 毛利率从上年同期 81% 降到 78%；AI 增长与股东盈利之间仍有成本桥梁要核验。",
+          "本地估值字段与股数口径尚未校验，旧材料又混有拆股前后及异常 SEC 数据；不能凭缓存 forward PE 或跌离高点幅度断言便宜。"
+        ],
+        "actionContext": "Continue observing（继续观察）。本地最后交易日 2026-09-04 收盘 $141.26，非 9/7 今日行情。四家公司中，其工作流合同与扩单路径值得优先跟踪，但需补齐正常化利润、股数和估值核验；Q3 需求去除提前确认影响后仍稳健，才讨论 Consider small position，而非仅因 AI ACV 好看行动。",
+        "todayNote": null,
+        "etfQuestion": "相对 VTI/VOO，NOW 的单股理由应是高转换成本工作流持续扩单，并把 AI 增购转为更高的每股现金流。当前合同证据不错，但 GAAP 利润、毛利率和收入时点使回报判断尚未闭环；在无法明确比较之前，ETF 仍是风险分散的基准，不默认优质 SaaS 值得单独持有。"
+      }
+    },
+    "CRM": {
+      "businessModel": "Salesforce 通过销售、客服、营销、商务及 Slack 等企业应用订阅，配合 Data 360、MuleSoft、Tableau 和 Informatica 数据管理能力变现客户关系与工作流。Agentforce 及消费型计费扩展 AI 收入来源，但不能把改名后的整个 Agentforce Apps 分部都当成纯 AI。最新财报是 2026-08-26 发布的 FY2027 Q2（截至 2026-07-31）：营收 $11.345B、同比约 +11%，订阅与支持收入 $10.820B、同比约 +12%。",
+      "moatEvidence": "客户数据、权限、销售与客服流程、应用生态和跨系统集成提高替换成本。FY2027 Q2 末 cRPO $33.5B、同比约 +14%（固定汇率同为约 +14%），显示未来一年合同收入基础改善，但不能直接称为全公司的 bookings 增速。Agentforce 和 Data 360 合计 ARR 近 $3.9B 提供付费采用线索；其中含并购和口径扩展，尚不足以单独证明核心 CRM 的有机护城河重新扩张。",
+      "keyRisks": "第一，FY2027 Q2 营收含 Informatica $456M；将其粗略剔除后，收入相对上年同期增长约 6.4%，这是简算而非公司报告的固定汇率有机增速。第二，Q2 non-GAAP EPS $5.90 中战略投资收益贡献 $2.53，不能按季度乘四或用未调整盈利得出低估结论。第三，Agentforce ARR 从本季纳入 Slackbot 与 Headless 360；Data 360 ARR 也含 Informatica Cloud，并非全部有机新增。第四，Q2 GAAP 营业利润率 20.5% 低于上年同期 22.8%，全年 FCF 增长指引仅约 4%—5%；收购整合、SBC、资金分配及 AI 消费替代传统席位的净效应仍需验证。",
+      "aiAngle": "FY2027 Q2 Agentforce ARR 超 $1.5B、同比超 +240%，与 Data 360 合计 ARR 近 $3.9B，说明 AI 和数据产品已有商业合同；ARR 既非季度收入，也不是新增现金。2026-08-26 官方宣布 Claudeforce，与 Anthropic 把 Claude 推理接入 Salesforce 的数据、权限与工作流。它可降低使用门槛，也带来界面被模型平台分走、第三方模型成本与议价能力的两面性。9 月的相关报道是在回顾 8/26 公告，不是 9/7 新合作。",
+      "growthCatalysts": "官方已确认 2026-09-16 Investor Day，13:00 美国太平洋夏令时，即 20:00 UTC / 北京时间 9 月 17 日 04:00。最有价值的更新应是有机收入加速如何从 cRPO、AI 消费和续约转成 FCF，而非再报一个扩大口径的 ARR。8/26 更新的 FY2027 营收指引 $46.1—46.4B 纳入预期中的 Contentful、Fin 交易，除 cRPO 外相关指引以交易完成为条件；后续需核验交割和整合。已过去的 8/26 财报、9/1 产品网络会不再列为 upcoming。",
+      "growthSignals": "分开跟踪 FY2027 Q2 cRPO $33.5B、约 +14% 的后续兑现，剔除并购及汇率影响的核心订阅增长，以及相同产品边界下的 Agentforce/Data 360 ARR。关注实际付费消费、客户续约、AI 替代席位后的净收入及毛利，而不是采用量或单一客户案例。盈利看剔除战略投资收益后的表现：Q2 $5.90 减 $2.53 为 $3.37，仅作当季口径桥接，不是新的官方 EPS；现金流看 FY2027 约 +4%—5% 的 FCF 增长指引是否改善。",
+      "judgment": {
+        "positives": [
+          "FY2027 Q2 营收 $11.345B、同比约 +11%，cRPO $33.5B、约 +14%，合同趋势比单看传统软件增长停滞的叙事更有支撑。",
+          "FY2027 Q2 Agentforce ARR 超 $1.5B，Agentforce 与 Data 360 合计近 $3.9B；尽管需校正并购和定义变化，付费 AI 采用并非凭空故事。",
+          "FY2027 Q2 经营现金流 $1.269B、资本支出 $171M，对应 FCF $1.098B；9/16 官方 Investor Day 是核验有机增长与现金流桥接的明确窗口。"
+        ],
+        "concerns": [
+          "Q2 的 $456M Informatica 收入贡献及 ARR 扩大定义，提高了 headline 增速；剔除并购的粗算增长仅约 6.4%，不能把 11% 全称有机再加速。",
+          "Q2 non-GAAP EPS $5.90 中 $2.53 来自战略投资收益，GAAP 营业利润率又从上年同期 22.8% 降到 20.5%；盈利质量没有 headline EPS 那么漂亮。",
+          "FY2027 FCF 增长指引约 4%—5%，尚不足以独立支撑高增长软件的乐观定价。缓存 forward PE 11.6x 未核验一致盈利时点，删除原先据此声称低估的判断。"
+        ],
+        "actionContext": "Continue observing（继续观察）。本地最后交易日 2026-09-04 收盘 $259.23，非 Labor Day 当日报价。优先等 9/16 对有机增长、ARR 定义和现金流的可核验说明；在剔除投资收益、并购贡献并校验股数后再谈估值，不追短期重估，也不以表面低 PE 跳过交易检查清单。",
+        "todayNote": null,
+        "etfQuestion": "相对 VTI/VOO，CRM 的单股机会不是缓存 PE 低，而是成熟客户基础能否借 AI 恢复有机增长并扩大每股 FCF。若改善主要来自并购、指标改口径和投资浮盈，就没有足够理由承担额外个股风险；目前比较结论仍是观察，不能把软件板块上涨当作胜过 ETF 的证据。"
+      }
+    }
+  },
+  "sources": {
+    "ORCL": [
+      {
+        "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Record-Q4-and-FY-2026-Results-Driven-by-Cloud-Infrastructure--Cloud-Applications/default.aspx",
+        "title": "Oracle 官方 IR：Record Q4 and FY 2026 Results；含 Q1/FY2027 指引、现金流、客户硬件和融资披露",
+        "asOf": "2026-06-10"
+      },
+      {
+        "url": "https://finance.yahoo.com/quote/ORCL/earnings/ORCL-Q4-2026-earnings_call-592465.html",
+        "title": "Oracle FY2026 Q4 电话会转录：CFO 披露 RPO 随后 12 个月约 12%、13—36 个月约 34% 的预计确认比例",
+        "asOf": "2026-06-10"
+      },
+      {
+        "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Sets-the-Date-for-its-First-Quarter-Fiscal-Year-2027-Earnings-Announcement/default.aspx",
+        "title": "Oracle 官方 IR：FY2027 Q1 定于 2026-09-10 盘后发布；不是聚合页所称的 9/8",
+        "asOf": "2026-09-02"
+      }
+    ],
+    "PLTR": [
+      {
+        "url": "https://finance.yahoo.com/markets/stocks/articles/palantir-reports-q2-2026-u-200500706.html",
+        "title": "Palantir 官方 Business Wire 财报稿的 Yahoo 转载：Q2 2026 US Commercial +149%、总收入 +93%、全年指引上调",
+        "asOf": "2026-08-03"
+      },
+      {
+        "url": "https://cpeisw.army.mil/2026/09/01/army-announces-move-to-production-for-titan",
+        "title": "美国陆军官方：TITAN 转生产；Palantir $127M、Anduril $65M，八套系统计划 18 个月交付",
+        "asOf": "2026-09-01"
+      },
+      {
+        "url": "https://finance.yahoo.com/technology/ai/articles/palantir-deliver-eight-titan-systems-210200015.html",
+        "title": "Palantir 官方 Business Wire 稿转载：向美国陆军交付八套 TITAN 系统",
+        "asOf": "2026-09-01"
+      },
+      {
+        "url": "https://www.stocktitan.net/news/PLTR/pw-c-and-palantir-expand-strategic-alliance-to-help-organizations-vkhypohylwyh.html",
+        "title": "PwC/Palantir 官方 PRNewswire 稿转载：扩大战略合作，聚焦企业 AI、并购和 ERP；无可直接建模的增量收入承诺",
+        "asOf": "2026-09-03"
+      }
+    ],
+    "NOW": [
+      {
+        "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx",
+        "title": "ServiceNow 官方 Q2 2026 财报：订阅、cRPO、GAAP/non-GAAP 调节、收入提前确认和全年指引",
+        "asOf": "2026-07-22"
+      },
+      {
+        "url": "https://finance.yahoo.com/quote/NOW/earnings/NOW-Q2-2026-earnings_call-653176.html",
+        "title": "ServiceNow Q2 2026 电话会转录：ServiceNow AI ACV 超 $1B、净新增 AI ACV 环比超 40%、年底 $1.5B 目标",
+        "asOf": "2026-07-22"
+      },
+      {
+        "url": "https://diginomica.com/servicenow-q2-2026-ai-acv-passes-1-billion-zavery-says-governance-opening-new-doors",
+        "title": "Diginomica 2026-07-22 财报报道与高管采访：交叉核验财报日期和 AI ACV 定义",
+        "asOf": "2026-07-22"
+      },
+      {
+        "url": "https://www.techmahindra.com/insights/press-releases/tech-mahindra-and-servicenow-expand-partnership",
+        "title": "Tech Mahindra 官方合作稿：Production-Ready Enterprise AI、Client Zero 与 AI 创新中心；日期由同期报道交叉确认",
+        "asOf": "2026-08-20"
+      },
+      {
+        "url": "https://finance.yahoo.com/technology/ai/articles/tech-mahindra-servicenow-expand-partnership-084323493.html",
+        "title": "2026-08-21 合作报道：交叉确认 Tech Mahindra 合作属于 8 月事件，而非 9/7 新闻",
+        "asOf": "2026-08-21"
+      }
+    ],
+    "CRM": [
+      {
+        "url": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-Second-Quarter-Fiscal-2027-Results/default.aspx",
+        "title": "Salesforce 官方 IR：FY2027 Q2 Results；EPS 战略投资收益调节、ARR 定义、指引与 9/16 Investor Day",
+        "asOf": "2026-08-26"
+      },
+      {
+        "url": "https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings",
+        "title": "Salesforce 官方新闻稿：确认 FY2027 Q2 截至 2026-07-31、于 2026-08-26 发布",
+        "asOf": "2026-08-26"
+      },
+      {
+        "url": "https://www.investing.com/news/company-news/salesforce-q2-fy27-slides-ai-drives-tripledigit-arr-growth-93CH-4878058",
+        "title": "FY2027 Q2 财报幻灯片报道：Informatica $456M 贡献、AI/Data ARR 和 cRPO 的交叉核验",
+        "asOf": "2026-08-26"
+      },
+      {
+        "url": "https://www.cnbc.com/2026/08/26/salesforce-crm-q2-earnings-report-2027.html",
+        "title": "CNBC FY2027 Q2 财报报道：收入 $11.35B、Agentforce ARR 超 $1.5B 与投资收益影响",
+        "asOf": "2026-08-26"
+      },
+      {
+        "url": "https://www.salesforce.com/news/press-releases/2026/08/26/salesforce-and-anthropic-announce-claudeforce",
+        "title": "Salesforce 官方：2026-08-26 与 Anthropic 宣布 Claudeforce；9 月媒体回顾不等于新公告",
+        "asOf": "2026-08-26"
+      }
+    ]
+  },
+  "notes": [
+    "研究信息截止时间为 2026-09-07T12:36:00Z；仅使用截止前已发布的材料，不纳入未来财报结果。sources.asOf 表示源文件发布或对应电话会日期，不是本次抓取日期；财报所属期间在正文另注。B/M 均指十亿/百万美元，除非明确说明其他单位；cc 为固定汇率。",
+    "已读取 finance/data/latest.json、scores.json、company_research.json、agent-insights.json 和 finance/IPS.md。本次只生成 finance/research-runs/2026-09-07/software.json，不修主数据、不部署、不发送渠道消息。",
+    "2026-09-07 是美国 Labor Day 休市。本地 latest.json 虽于 2026-09-07T12:15:21Z 生成，四股历史最后日期均为 2026-09-04；对应 ORCL $158.78、PLTR $174.33、NOW $141.26、CRM $259.23。它们是本地最后交易日收盘记录，非 9/7 成交价；本次未独立重抓行情。",
+    "本地 company_research.json 的 SEC 聚合存在严重财期和标签错配：ORCL latest 仍含 2017 期间，PLTR 将 2025 上半年数值挂在 2026 Q2，NOW/CRM 混入旧期间并出现大于 100% 的异常毛利率。本次不引用这些 financials，不用其计算估值或现金流收益率；主数据问题留待拥有者另行修复。",
+    "本地市值、trailing/forward PE 与股数、盈利时点缺少统一核验；NOW 还需注意 2025-12-17 生效的五拆一。已移除无依据旧 P/S、P/E、目标价和安全边际为负的定量式断言。scores 只作为本地模型背景，其四股相同的 quality/moat/value 组件分不是新的基本面证据；本文 IPS 观察措辞不是重算评分或交易指令。",
+    "已按要求尝试 web_search。当前 Gemini provider 不支持 country 过滤；去掉该过滤后返回 429 RESOURCE_EXHAUSTED。随后切换 Tavily 搜索。web_fetch 因域名解析安全校验未能取回正文，正文核验使用托管 Tavily extraction；未关闭安全校验或改配置。Palantir IR 搜索只返回页面壳，财报数字采用公司 Business Wire 原稿的转载并用美国陆军官方公告核验近期合同。",
+    "Oracle 日期冲突已解决：舍弃聚合页 9/8 预告，采用 9/2 官方公告的 9/10 盘后。FY2027 Q1 尚未出报；正文中的收入/EPS 区间是 6/10 公司指引而非已经实现业绩。FY2026 Q4 的 EPS $2.11 不再错写成 Q1。",
+    "CRM 最新季度已核实为 FY2027 Q2，而非 FY2026 Q2 或旧 Q1。Q2 non-GAAP EPS $5.90 包含 $2.53 战略投资收益；$3.37 为本研究简单剔除后的当季桥接值，不是公司新增披露指标。粗略剔除 Informatica 后增长 (11.345-0.456)/10.236-1 约 6.4%，不等同正式有机固定汇率增长。cRPO 是未来一年预计确认的合同收入，不直接等同 bookings。",
+    "NOW AI 数据按 ServiceNow AI ACV 而非单独 Now Assist 收入表述；$1.5B 为电话会重申的年底目标，未找到本季新上调目标的依据。补入官方披露的 Q3 收入提前到 Q2，以及 GAAP/non-GAAP 利润差异，删除未核实的 10/29 财报日期和笼统安全事件断言。",
+    "PLTR TITAN 两家承包商合计 $192M 中，Palantir 份额 $127M，Anduril $65M；军方计划八套系统随后 18 个月交付，不把合同额全计作本季度收入。PwC 和 Tech Mahindra 合作是渠道/交付线索，不直接纳入确定收入预测。",
+    "已删除过去财报的盘前涨幅、旧 CPI/非农/加息概率叙事、已过去的发布会催化剂、未核实 OpenAI $300B 归属数字、旧 MI450 首发数量及无可量化贡献的量子叙事。Claudeforce 官方公告日期是 8/26，9 月新报道不改写为新事件。本轮没有核实到 9/7 截止前足以称为当日基本面变化的消息，四股 todayNote 均为 null；这不等于保证全天无新闻。",
+    "IPS：不自动交易；先通过交易检查清单，再由 Xiaosong 决定。若后续考虑新个股仓位，通常从小仓开始，单股通常不超过学习池 20% 的软上限；超限须记录理由及退出规则。无法明确与 VTI、VOO 或 QQQ 比较，就不买。四股都在企业科技/AI 风险圈，持有多只不自动等于充分分散。",
+    "研究结论：ORCL 的关键矛盾是已确认需求与资本/现金回报错配；PLTR 是经营兑现强但价格安全边际尚未被证明；NOW 的扩单和 AI 合同有质量，但需要校正收入前置和成本；CRM 的 AI 与 cRPO 改善值得观察，但并购、ARR 定义和投资收益削弱 headline 的说服力。分析仅供学习与比较，不构成保证收益或直接交易建议。"
+  ]
+}
