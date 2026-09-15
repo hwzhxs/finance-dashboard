@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "researchDate": "2026-09-10",
+  "informationCutoff": "2026-09-10T12:30:00Z",
+  "researchStartedAt": "2026-09-10T12:31:26Z",
+  "evidenceCheckedThrough": "2026-09-10T12:35:35Z",
+  "mode": "research_only_no_main_file_changes_no_deployment",
+  "validation": {
+    "jsonParse": "passed",
+    "symbolsAndPatchFields": "passed",
+    "completeJudgments": "passed",
+    "sourceReferencesAndOriginalFinancialSources": "passed",
+    "publicationDatesNotAfterCutoff": "passed_for_all_explicit_publication_dates_and_times",
+    "todayNotes": "TSM=new_official_fact; ASML/AMD/ORCL=null",
+    "inputHashRecheck": "IPS/latest/scores unchanged; agent-insights changed externally during parallel research",
+    "concurrentMainFileChangeDetected": true,
+    "mergeWarning": "本子任务未写主稿；检测到主稿并行变更。必须按baseInsightsGeneratedAt及inputFingerprints做三方比较后选择性合并，不可盲目整体覆盖judgment。"
+  },
+  "baseInsightsGeneratedAt": "2026-09-09T12:45:07.083043+00:00",
+  "inputFingerprints": {
+    "IPS.md": "6560a37dd5d6be175af6c8bd6d2634c2293f5be47b1ef6f8967a1b7e59255581",
+    "data/agent-insights.json": "df5bd7c8eadc23a7212634ff3ac6909819f1882416574cdf95f37d27440aeb25",
+    "data/latest.json": "5616b5f751b1ee9b31a4a3ec16f48751516481d3d62f142c3b66d266e06ea0e7",
+    "data/scores.json": "9a8c4f01cc47dec677d90368df438fdcd80cb1d70b5cf8dc9c8e514ffedf46c3"
+  },
+  "integrationInstructions": [
+    "本文件只提供建议。items以symbol索引；各patch字段对应主稿items[symbol]下的顶层字段，judgment为完整对象，可整体替换；未列出的字段不改。",
+    "来源必须追加并按URL去重，不可用本轮新闻来源替换原财报来源。每项sources包含本轮证据及保留的原始财报来源；原researchMeta.sources[symbol]中的其余历史来源同样保留。",
+    "合并前比较主稿版本，避免并行研究时用旧版本完整judgment覆盖其他任务的新修订。所有修改仅由主任务决定，本子任务不写主文件。",
+    "todayNote仅用于截止点前已核实的当日新事实；未出现新的可确认经营事实时置null。旧新闻补核、未来日程和待核实二手报道放status/evidence，不包装为今日公告。",
+    "不调整评分、不生成目标价/内在价值、不采用未核验的forward PE；原财报数据及币种、报告期保持原来源口径。"
+  ],
+  "inputContext": {
+    "latestGeneratedAt": "2026-09-10T12:15:28.714419+00:00",
+    "scoresGeneratedAt": "2026-09-10T12:15:28.714419+00:00",
+    "priceHistoryAsOf": "2026-09-09",
+    "localCompositeScores": {"TSM": 62.0, "ASML": 55.3, "AMD": 55.5, "ORCL": 42.9},
+    "localModelActionLabels": {"TSM": "Continue observing", "ASML": "Not attractive for now", "AMD": "Not attractive for now", "ORCL": "Not attractive for now"},
+    "caveats": [
+      "行情来自Yahoo非官方公共端点，生成时刻不等于成交时间；最后一条日线为9/9，不标成9/10收盘。",
+      "四家公司本地value component均为45；该通用分数不是独立估值证据。latest中的PE没有本轮独立核验，不写进patch。",
+      "ASML主稿研究判断Continue observing与本地机械评分标签Not attractive for now不同；记录差异但不自动用模型标签覆盖研究判断。",
+      "ORCL旧todayNote中的9/9 Composite 43.1不是今天分数；清空todayNote而不把评分更新冒充公司新闻。"
+    ]
+  },
+  "limitations": [
+    "memory_search超时不可用；指定IPS、主稿、latest和scores已直接读取，结论不依赖记忆检索。",
+    "web_search使用Gemini；不支持country参数，移除该过滤后成功。实际发布日期/时刻通过源页核验，不把搜索摘要当原始财报。",
+    "web_fetch对部分公开域名解析触发安全拦截，未绕过本地网络限制；网页证据来自Tavily返回的公开索引/提取。",
+    "检索不证明绝对没有其他新闻；未核实来源时不填造。实际查阅晚于12:30数分钟，但只纳入可追溯至截止点之前的事实。",
+    "TSMC月营收汇总页提取仍停在7月，可能是缓存/更新延迟；采用日期明确的9/10官方新闻稿与其PDF。官方稿未给分钟级发布时间，06:44 UTC媒体报道及10:16 UTC Dow Jones报道证明营收消息在截止前已公开。"
+  ],
+  "items": {
+    "TSM": {
+      "status": "verified_new_official_fact_today：9/10官方8月营收公告及PDF已核验，替换旧稿中的8月营收未核实和9/8旧todayNote；不调整季度利润、估值或评级。",
+      "patch": {
+        "growthCatalysts": "2026-07-16官方指引：Q3营收446亿—458亿美元，2nm加速爬坡。2026-09-10官方公布8月合并营收约5,148.1亿新台币、同比+53.3%、环比+10.1%；1—8月累计约3.38687万亿新台币、同比+39.3%。月度收入为Q3需求兑现增加证据，但未披露AI收入拆分、利润或现金流。9/8与ASML公布12英寸光罩协作路线图，目标2031年试验线、2033年用于先进节点生产，仍属远期协同，不是当季新增订单。",
+        "growthSignals": "跟踪9月营收及Q3美元收入对446亿—458亿指引、毛利率对65%—67%指引、2nm收入占比与良率、先进封装交付、资本开支/折旧/自由现金流。8月营收已获9/10官方公告验证；月度数据为新台币，不在未核验季度汇率与9月收入时推定美元指引超额。光罩计划按2031—2033年技术里程碑跟踪，不计入近端收入。",
+        "judgment": {
+          "positives": [
+            "2026-07-16财报显示美元营收同比+33.7%至402亿美元，按TIFRS披露的毛利率67.7%、营业利润率60.3%，说明先进制造需求和盈利能力同步兑现。",
+            "7nm及更先进节点贡献77%晶圆收入，2nm已有3%收入占比；相较只宣布路线图，量产收入是更强的工艺商业化证据。",
+            "2026-09-10官方公告确认8月合并营收约5,148.1亿新台币、同比+53.3%、环比+10.1%，1—8月累计同比+39.3%；比此前仅有7月数据新增一个月的实际收入验证。"
+          ],
+          "concerns": [
+            "Q3毛利率预计65%—67%，低于Q2的67.7%；节点爬坡、产品组合与海外扩张可能使新增收入的现金回报低于表面增速。月营收不披露利润率或现金流，不能据此上调利润。",
+            "生产地域集中与客户资本开支周期构成难以通过公司自身完全消除的风险；多家AI客户不等于宏观需求真正独立，月营收也未独立拆出AI业务。",
+            "12英寸光罩目标横跨2031—2033年，需要全产业生态配合，不能用于上调2026收入；当前估值未独立核验，技术优势仍不足以证明价格有安全边际。"
+          ],
+          "actionContext": "Continue observing",
+          "todayNote": "2026-09-10官方8月营收公告：合并营收约5,148.1亿新台币，同比+53.3%、环比+10.1%；1—8月累计约3.38687万亿新台币，同比+39.3%。这是已实现月度收入，不是预测；未披露当月利润/AI收入拆分，不能自动换算成Q3美元指引超额或自由现金流增长。",
+          "etfQuestion": "VTI/VOO提供美国上市本土企业的广泛组合，不应误称直接持有台积电ADR；它们通过客户与供应链有间接半导体敞口。单持TSM获得更直接先进代工暴露，也增加台湾尾部风险。需证明相对VTI/VOO/QQQ的风险补偿和估值优势，才考虑小仓，而非仅因技术领先。"
+        }
+      },
+      "evidence": [
+        {
+          "factDate": "2026-09-10",
+          "reportingPeriod": "2026-08",
+          "kind": "realized_monthly_revenue",
+          "sourceIds": ["tsm_aug_release", "tsm_aug_pdf"],
+          "facts": {"currency": "TWD", "unit": "million", "augustRevenue": 514806, "julyRevenue": 467580, "augustPriorYearRevenue": 335772, "monthOnMonthPct": 10.1, "yearOnYearPct": 53.3, "januaryToAugustRevenue": 3386870, "januaryToAugustYearOnYearPct": 39.3},
+          "precisionNote": "数表单位为百万新台币；中文todayNote采用官方摘要约NT$514.81B的精度，非美元。官方PDF为财务数字依据，不用第三方汇率换算。",
+          "interpretation": "需求/收入兑现证据加强，但不推出新增估值、安全边际、AI收入占比或盈利预测。"
+        },
+        {
+          "factDate": "2026-09-08",
+          "eventDate": "2026-09-07",
+          "kind": "existing_technical_roadmap_not_today",
+          "sourceIds": ["tsm_asml_masks"],
+          "summary": "公告日为9/8，产业倡议建立于9/7；目标2031年12英寸光罩试验线、2033年先进节点生产。"
+        }
+      ],
+      "sources": [
+        {"id": "tsm_q2_preserved", "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf", "title": "TSMC官方2026 Q2业绩与Q3指引", "publishedDate": "2026-07-16", "role": "preserved_original_financial_source", "verification": "保留原主稿已核实来源，本轮未重新审计季度财务，不更改其口径"},
+        {"id": "tsm_july_preserved", "url": "https://pr.tsmc.com/english/news/3329", "title": "TSMC官方2026年7月营收报告", "publishedDate": "2026-08-10", "role": "preserved_original_monthly_source", "verification": "保留原来源"},
+        {"id": "tsm_aug_release", "url": "https://pr.tsmc.com/english/news/3340", "title": "TSMC August 2026 Revenue Report", "publishedDate": "2026-09-10", "publishedAt": null, "role": "official_primary", "verification": "Tavily源页正文已提取；官方未显示分钟级时刻"},
+        {"id": "tsm_aug_pdf", "url": "https://pr.tsmc.com/system/files/newspdf/attachment/0ec5f546c67a79960d6dd1f70bf6f47d714a3151/August%202026%20%28E%29_final_wmn.pdf", "title": "TSMC August 2026 Revenue Report PDF", "publishedDate": "2026-09-10", "role": "official_primary", "verification": "PDF全文数表已提取，营收514806百万新台币"},
+        {"id": "tsm_timing_sa", "url": "https://seekingalpha.com/news/4641441-tsmc-revenue-jumps-53-in-august-as-ai-demand-keeps-capacity-booked", "title": "TSMC revenue jumps 53% in August as AI demand keeps capacity booked", "publishedDate": "2026-09-10", "publishedAt": "2026-09-10T06:44:00Z", "role": "secondary_publication_time_crosscheck", "verification": "搜索返回源页时间Sep 10 2026 2:44 AM ET；夏令时换算06:44 UTC"},
+        {"id": "tsm_timing_dj", "url": "https://www.morningstar.com/news/dow-jones/202609102905/north-american-morning-briefing-bond-yields-and-oil-edge-higher", "title": "Dow Jones North American Morning Briefing", "publishedDate": "2026-09-10", "publishedAt": "2026-09-10T10:16:00Z", "role": "secondary_cutoff_crosscheck", "verification": "正文明确8月营收同比增53%，页尾明确06:16 ET / 10:16 GMT；证明截止前已公开"},
+        {"id": "tsm_asml_masks", "url": "https://www.globenewswire.com/news-release/2026/09/08/3357321/0/en/asml-and-tsmc-announce-initiative-to-pioneer-industry-transition-to-large-format-photomasks-for-high-na-euv.html", "title": "ASML and TSMC large-format photomask initiative", "publishedDate": "2026-09-08", "publishedAt": "2026-09-08T06:04:00Z", "role": "company_issued_primary", "verification": "ASML Netherlands BV发布；已核验，非9/10新公告"}
+      ]
+    },
+    "ASML": {
+      "status": "verified_existing_technical_collaboration_no_new_official_operating_fact_today：Intel/TSMC/Samsung为9/7—9/8消息，9/10转载不可算今日新公告。今日另有Mistral追加4亿欧元投资二手报道，参与融资获Mistral官网印证，但金额/持股比例未获本轮一手确认，保守不进入todayNote或财务patch。",
+      "patch": {
+        "moatEvidence": "2026-07-15 Q2官方财报：销售93.26亿欧元、毛利率54.0%，安装基础管理收入27.62亿欧元，显示存量服务的经济价值。Intel 9/7及ASML 9/8官方公告确认High-NA累计处理超过100万片晶圆，涵盖工具认证/测试、研发及部分Panther Lake产品选定层的量产；不能等同100万片合格商业成品。",
+        "judgment": {
+          "positives": [
+            "2026-07-15 Q2收入93.26亿欧元、毛利率54.0%，均高于此前指引；公司称主要由安装基础管理业务超预期驱动，服务/升级业务对结果有真实贡献。",
+            "全年销售指引430亿—450亿欧元、Q3销售110亿—120亿欧元，为需求兑现提供明确检验标准，而非只靠AI行业叙事。",
+            "Intel 9/7及ASML 9/8官方公告显示High-NA累计处理超过100万片晶圆，并用于部分Panther Lake产品选定层量产；三星9/8公布计划到2028年将High-NA导入未来DRAM量产，补充存储客户采用路径，但未来采用仍是计划。"
+          ],
+          "concerns": [
+            "High-NA百万片累计处理涵盖认证、测试、研发和部分产品选定层量产，不能等同百万片合格商业成品；客户仍需证明良率、可用率与总成本优势。",
+            "收入集中于晶圆厂资本开支周期，单季出货/验收易波动，出口限制会改变产品与地区组合；技术合作未披露新增设备数量或订单金额。",
+            "TSMC协作目标为2031年光罩试验线和2033年先进节点生产；三星2028年目标是High-NA DRAM采用，不是12英寸光罩2028年量产。当前估值与盈利预测未核验，不能用远期技术利好替代安全边际。"
+          ],
+          "actionContext": "Continue observing",
+          "todayNote": null,
+          "etfQuestion": "相较QQQ，单持ASML更集中于光刻设备、出口政策与少数晶圆厂资本开支；QQQ可分散单一设备公司的执行风险，但仍有科技集中风险。没有核实合理价格与周期下行现金流前，技术稀缺性不构成直接建仓理由。"
+        }
+      },
+      "evidence": [
+        {"factDate": "2026-09-07", "additionalPublicationDate": "2026-09-08", "kind": "existing_fact_date_disambiguation", "sourceIds": ["asml_intel_primary", "intel_primary"], "summary": "Intel版本落款9/7，ASML版本9/8；二者不是两次新技术突破。百万片口径由官方直接列明认证/测试、研发和部分产品选定层量产。"},
+        {"factDate": "2026-09-08", "kind": "existing_future_plan", "sourceIds": ["asml_samsung", "asml_tsmc_masks"], "summary": "三星High-NA DRAM目标2028年；12英寸光罩产业倡议的2031试验线/2033生产属于另一条长期路径。不得混成2028年大光罩量产。"},
+        {"factDate": "2026-09-10", "kind": "republication_not_new_fact", "sourceIds": ["asml_reprint"], "summary": "Design & Reuse标9/10的三星合作转载对应ASML官网9/8原稿；不重复写为今日公告。"}
+      ],
+      "researchOnlyFindings": [
+        {
+          "publishedDate": "2026-09-10",
+          "publishedAt": "2026-09-10T08:30:00Z",
+          "sourceIds": ["asml_mistral_secondary", "mistral_primary"],
+          "claim": "Techzine援引Eindhovens Dagblad称ASML追加4亿欧元参与Mistral新一轮融资并维持约11%持股。Mistral官网确认30亿欧元Series D且ASML为参与投资者，但所提取正文未显示ASML单独出资额、持股比例或原始发布日期。",
+          "status": "partial_primary_corroboration_amount_unverified",
+          "integrationDecision": "保留为待核实线索，不把4亿欧元/11%写成官方已确认数字，不写入todayNote，不视为新光刻订单或提高2026收入。",
+          "interpretation": "若后续证实，应分析投资支出、资本配置和技术协作回报，而不是直接算作AI主营收入增长。"
+        }
+      ],
+      "sources": [
+        {"id": "asml_q2_preserved", "url": "https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results", "title": "ASML official Q2 2026 financial results", "publishedDate": "2026-07-15", "role": "preserved_original_financial_source", "verification": "保留主稿来源与原季度数据，本轮未重估"},
+        {"id": "intel_primary", "url": "https://www.intel.com/content/www/us/en/newsroom/news/intel-foundry/intel-foundry-asml-accelerate-industry-readiness-for-high-na-euv.html", "title": "Intel Foundry and ASML High-NA EUV readiness", "publishedDate": "2026-09-07", "role": "official_primary", "verification": "Intel源页落款9/7已核验"},
+        {"id": "asml_intel_primary", "url": "https://www.asml.com/en/news/press-releases/2026/intel-foundry-and-asml-collaborate-to-accelerate-industry-readiness-for-high-na-euv", "title": "Intel Foundry and ASML Collaborate to Accelerate Industry Readiness for High-NA EUV", "publishedDate": "2026-09-08", "role": "official_primary", "verification": "ASML源页落款9/8；官方限定百万片用途范围"},
+        {"id": "asml_samsung", "url": "https://www.asml.com/en/news/press-releases/2026/samsung-electronics-and-asml-expand-collaboration-on-next-generation-semiconductor-manufacturing", "title": "Samsung Electronics and ASML expand strategic collaboration", "publishedDate": "2026-09-08", "role": "official_primary", "verification": "2028年DRAM High-NA计划及另行加入光罩倡议已核验"},
+        {"id": "asml_tsmc_masks", "url": "https://www.globenewswire.com/news-release/2026/09/08/3357321/0/en/asml-and-tsmc-announce-initiative-to-pioneer-industry-transition-to-large-format-photomasks-for-high-na-euv.html", "title": "ASML/TSMC large-format photomask initiative", "publishedDate": "2026-09-08", "publishedAt": "2026-09-08T06:04:00Z", "role": "company_issued_primary", "verification": "2031/2033时间表已核验"},
+        {"id": "asml_press_index", "url": "https://www.asml.com/en/news/press-releases", "title": "ASML press releases index", "publishedDate": null, "role": "official_dynamic_index", "verification": "提取到的最新新闻日期为9/8；只能表示本轮检索覆盖，不证明绝对没有其他新公告"},
+        {"id": "asml_reprint", "url": "https://www.design-reuse.com/news/202531104-samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing", "title": "Samsung/ASML collaboration syndicated article", "publishedDate": "2026-09-10", "role": "secondary_republication_date_check", "verification": "搜索摘要标9/10，但内容对应9/8原公告；不作新事实依据"},
+        {"id": "asml_mistral_secondary", "url": "https://www.techzine.eu/news/applications/144205/asml-maintains-stake-in-mistral-with-400-million", "title": "ASML maintains stake in Mistral with 400 million", "publishedDate": "2026-09-10", "publishedAt": "2026-09-10T08:30:00Z", "role": "secondary_report_unconfirmed_amount", "verification": "正文与时刻已提取；金额由Techzine转述ED，非ASML正式财务披露"},
+        {"id": "mistral_primary", "url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier", "title": "Mistral raises EUR3B to make sovereign open-weight AI the technology frontier", "publishedDate": null, "role": "counterparty_primary_partial_corroboration", "verification": "官网确认ASML参与Series D，但无ASML单独金额/持股比例；提取正文无发布日期，仅用于辅助核对，不作9/10新事实"}
+      ]
+    },
+    "AMD": {
+      "status": "no_new_verified_operating_fact_today_calendar_verified：Citi会议是9/8旧消息；下一场Goldman Sachs会议9/11 08:50 PDT尚未召开。Advancing AI主会为7/23且IR列为过去事件，不是9月待召开发布会。清空旧todayNote，会议观点仍属待验证展望。",
+      "patch": {
+        "growthCatalysts": "2026-08-04正式指引：Q3营收约130亿美元±3亿，约同比+41%、环比+13%，non-GAAP毛利率约56%；下半年EPYC、Instinct与Helios增长及客户部署兑现，指引并非保底订单。9/8 Citi会议的Investing.com二手报道转述管理层预计2027年数据中心销售约700亿美元/翻倍；未核验官方逐字稿，不替代8/4正式Q3指引。官方IR日程显示下一场Goldman Sachs Communacopia + Technology Conference为9/11 08:50 PDT（15:50 UTC/北京时间23:50），截止9/10 12:30 UTC尚未举行，不预写会后新指引。",
+        "growthSignals": "跟踪Q3营收对127亿—133亿美元指引区间、non-GAAP毛利率对56%目标、数据中心收入/分部利润、可披露的Instinct收入与付费部署。同时看ROCm实际采用、Helios交付、经营现金流及游戏/嵌入式周期；同比利润需调整上年出口限制费用影响。9/11会议重点等待管理层是否更新MI450/Helios交付、HBM/封装供给、采购承诺、客户付款及毛利额/FCF；这些是研究问题，不是已证实的会议结论。9/8二手报道中的2027年目标仍须后续财报验证。",
+        "judgment": {
+          "positives": [
+            "2026-08-04 Q2财报确认数据中心收入67.18亿美元，较上年32.40亿约翻倍，并占公司收入58%；客户需求已体现在收入而非仅合作公告中。",
+            "Q2 GAAP毛利率54%、non-GAAP 56%，non-GAAP EPS 1.66美元；Q3预计收入环比约+13%且维持约56%调整后毛利率，提供检验规模化盈利的明确标尺。",
+            "Q2客户端收入30.62亿美元、上年为24.99亿；嵌入式9.77亿、上年为8.24亿，增长并非完全依赖单一AI加速器产品。"
+          ],
+          "concerns": [
+            "Helios开始爬坡不等于规模交付已验证；CUDA迁移门槛与云厂商自研芯片会影响AMD的客户获取成本和长期利润率。",
+            "游戏收入同比约-31%，而上一年出口限制库存费用压低利润基数；不能将强利润同比直接外推，需看后续GAAP/non-GAAP差异与现金流。",
+            "尚未核实当前盈利预测及估值口径，无法证明相对QQQ的安全边际；本地模型的高动量与较低风险分也不是买入证据。9/8二手会议展望和未召开的9/11会议都不能替代正式指引与现金回报验证。"
+          ],
+          "actionContext": "Not attractive for now",
+          "todayNote": null,
+          "etfQuestion": "AMD提供服务器CPU和AI GPU份额提升的更高弹性，但比QQQ更依赖ROCm、Helios执行及竞争格局。没有能解释这些风险并优于ETF的估值与现金流情景前，继续研究而非追逐价格动量；若未来建仓，遵守3%—5%通常起始区间和单股20%软上限。"
+        }
+      },
+      "evidence": [
+        {"factDate": "2026-09-08", "kind": "past_conference_secondary_expectation", "sourceIds": ["amd_citi_calendar", "amd_citi_secondary"], "summary": "IR确认Citi会议存在；Investing.com报道数据中心2027年约700亿美元、同比翻倍以及MI450爬坡对毛利率压力。本轮未核实官方发言逐字稿，不能视为正式年度业绩指引。", "conflictNote": "其他搜索摘要出现2030年AI TAM 3万亿美元，Investing.com正文写2万亿美元；口径/原话未解决，二者均不新增到patch。"},
+        {"eventAt": "2026-09-11T15:50:00Z", "kind": "scheduled_future_event_not_result", "sourceIds": ["amd_news_calendar", "amd_gs_calendar", "amd_ir_calendar"], "summary": "AMD官方News & Events列Sep 11 2026 8:50 am PDT的高盛会议，IR Calendar将其列Upcoming；仅报告日程，不捏造发言。", "publicationDate": null},
+        {"factDate": "2026-04-28", "eventDate": "2026-07-23", "kind": "old_event_not_upcoming", "sourceIds": ["amd_advancing_ai_announcement", "amd_ir_calendar"], "summary": "官方4/28公告Advancing AI主会7/23举办，IR已经列Past Events；不将搜索中的大会预期误写为9月即将发生。"},
+        {"factDate": "2026-08-31", "kind": "old_press_release_not_today", "sourceIds": ["amd_humain"], "summary": "IR最新列出的AMD/Cisco/HUMAIN部署新闻原发布日期8/31；2027年开始部署、下半年开始上线的新增至多250MW仍是计划，不作9/10新订单。"}
+      ],
+      "sources": [
+        {"id": "amd_q2_preserved", "url": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results", "title": "AMD official Q2 2026 results", "publishedDate": "2026-08-04", "role": "preserved_original_financial_source", "verification": "保留主稿财务数据和来源，本轮未重估季度财务"},
+        {"id": "amd_citi_secondary", "url": "https://www.investing.com/news/transcripts/amd-at-citis-2026-global-tmt-conference-ai-push-lifts-outlook-93CH-4891921", "title": "AMD at Citi 2026 Global TMT Conference", "publishedDate": "2026-09-08", "role": "secondary_management_remarks_not_official_guidance", "verification": "正文已重新提取，保留二手转述标记；未核实官方逐字稿"},
+        {"id": "amd_citi_calendar", "url": "https://ir.amd.com/news-events/ir-calendar/detail/20260908-citis-2026-global-tmt-conference", "title": "AMD IR Citi 2026 Global TMT Conference", "publishedDate": null, "eventDate": "2026-09-08", "role": "official_event_calendar", "verification": "确认会议及官方音频入口，未据音频生成逐字稿"},
+        {"id": "amd_news_calendar", "url": "https://ir.amd.com/news-events", "title": "AMD official News & Events", "publishedDate": null, "role": "official_dynamic_calendar", "verification": "页面明示Goldman Sachs Sep 11 2026 8:50 am PDT"},
+        {"id": "amd_gs_calendar", "url": "https://ir.amd.com/news-events/ir-calendar/detail/20260911-goldman-sachs-communacopia-technology-conference", "title": "AMD IR Goldman Sachs Communacopia + Technology Conference", "publishedDate": null, "eventDate": "2026-09-11", "eventAt": "2026-09-11T15:50:00Z", "role": "official_scheduled_future_event", "verification": "仅日程，无本轮已发生发言证据；未来事件日期不是来源发表日期"},
+        {"id": "amd_ir_calendar", "url": "https://ir.amd.com/news-events/ir-calendar", "title": "AMD official IR Calendar", "publishedDate": null, "role": "official_dynamic_calendar", "verification": "高盛列Upcoming；Citi及Advancing AI列Past"},
+        {"id": "amd_advancing_ai_announcement", "url": "https://ir.amd.com/news-events/press-releases/detail/1283/amd-announces-advancing-ai-2026", "title": "AMD Announces Advancing AI 2026", "publishedDate": "2026-04-28", "eventDate": "2026-07-23", "role": "official_primary_historical_calendar", "verification": "正式主会日期7/23，非9月"},
+        {"id": "amd_humain", "url": "https://ir.amd.com/news-events/press-releases/detail/1298/amd-cisco-and-humain-expand-saudi-arabias-ai-infrastructure-as-amd-instinct-systems-go-live", "title": "AMD Cisco HUMAIN Saudi AI infrastructure", "publishedDate": "2026-08-31", "role": "official_primary_old_news", "verification": "页尾Released August 31 2026；不重复当今日"}
+      ]
+    },
+    "ORCL": {
+      "status": "pre_earnings_gate_closed：截至9/10 12:30 UTC，FY2027Q1结果尚未到官方盘后发布时点。仅复核旧财报和日程，todayNote=null，不编收入/EPS/OCI/RPO结果或盘后涨跌。",
+      "patch": {
+        "growthCatalysts": "官方9/2公告确认9/10美股收盘后发布FY2027Q1，电话会为9/10 16:00美国中部夏令时（21:00 UTC，北京时间9/11 05:00）；发布结果不等于电话会开始时点。截止9/10 12:30 UTC尚未发布结果。未来1—2年看已签算力合同投产、multicloud数据库渗透和云应用迁移，而非只看RPO总额变大。",
+        "judgment": {
+          "positives": [
+            "FY2026Q4收入$19.2B、+21%，云收入$9.9B、+47%；OCI +93%与应用+10%构成可核验的双层需求。",
+            "5/31 RPO $638B、环比增加$85B，提供潜在收入可见性；但兑现依赖交付和付款条款。",
+            "FY2026经营现金流$32.0B、+54%，传统业务和收款能力仍有实质贡献。"
+          ],
+          "concerns": [
+            "同一财年FCF -$23.7B：经营现金流强仍覆盖不了建设投入，不能仅用adjusted EPS给资本密集云业务估值。",
+            "RPO可横跨多年，客户预付款、供GPU与正式验收影响现金和收入时点；订单总量不等于可立即分配的股东现金。",
+            "截至9/10 12:30 UTC，FY2027Q1仍在官方发布前。市场预期、历史财报和股价动量都不是本季已实现结果；可靠当前估值未独立核验，财报前押注超预期不是IPS要求的安全边际。"
+          ],
+          "actionContext": "Not attractive for now",
+          "todayNote": null,
+          "etfQuestion": "比VTI/QQQ更集中暴露于云基础设施扩张，却同时承担融资和客户兑现风险。在净capex、稀释与RPO变现尚未厘清前，ETF是更容易守纪律的选择。"
+        }
+      },
+      "evidence": [
+        {"factDate": "2026-09-02", "kind": "existing_official_schedule_not_new_result", "sourceIds": ["orcl_schedule"], "scheduledRelease": "2026-09-10 after U.S. market close", "scheduledCallAt": "2026-09-10T21:00:00Z", "summary": "官方只说收盘后发结果、16:00 Central开电话会；没有承诺两者同一时刻。9月Central是CDT UTC-5，北京时间电话会为次日05:00。"},
+        {"factDate": "2026-06-10", "reportingPeriod": "FY2026 / Q4 ended 2026-05-31", "kind": "preserved_historical_financial_baseline", "sourceIds": ["orcl_q4"], "summary": "官方原财报已重新提取：FY2026 OCF $32.0B、FCF -$23.7B；期末RPO $638B。它们是历史基准，不是未发布的FY2027Q1数据。"},
+        {"factDate": "2026-09-10", "kind": "pre_market_crosscheck_not_results", "sourceIds": ["orcl_dj_morning"], "summary": "10:16 UTC Dow Jones晨报明确Oracle今天盘后报告，仍是预告；不存在可用于本轮的Q1已发布数字。"}
+      ],
+      "excludedClaims": [
+        "搜索摘要把58%—64%增长直接归为OCI，未在官方细分指引原表中核实，不采用该表述。",
+        "不采纳仅搜索摘要出现的FY2027 capex $70B—$95B、分析师目标价、期权隐含涨跌幅或单一客户占RPO比例。",
+        "不尝试提前填入FY2027Q1收入、EPS、RPO、capex、FCF或盘后股价；日程不是结果。"
+      ],
+      "sources": [
+        {"id": "orcl_q4", "url": "https://www.oracle.com/news/announcement/q4fy26-earnings-release-2026-06-10", "title": "Oracle official Q4 FY2026 earnings release", "publishedDate": "2026-06-10", "role": "preserved_original_financial_source_rechecked", "verification": "本轮重新提取官方正文，保留原报告期与现金流/云收入/RPO来源"},
+        {"id": "orcl_schedule", "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Sets-the-Date-for-its-First-Quarter-Fiscal-Year-2027-Earnings-Announcement/default.aspx", "title": "Oracle Sets the Date for First Quarter Fiscal Year 2027 Earnings Announcement", "publishedDate": "2026-09-02", "eventDate": "2026-09-10", "role": "official_primary_schedule", "verification": "源页明确9/10 after close，16:00 Central电话会，非已发布财报"},
+        {"id": "orcl_dj_morning", "url": "https://www.morningstar.com/news/dow-jones/202609102905/north-american-morning-briefing-bond-yields-and-oil-edge-higher", "title": "Dow Jones North American Morning Briefing", "publishedDate": "2026-09-10", "publishedAt": "2026-09-10T10:16:00Z", "role": "secondary_pre_release_cutoff_crosscheck", "verification": "明确Oracle set to report after markets close today"}
+      ]
+    }
+  }
+}

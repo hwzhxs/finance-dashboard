@@ -1,16 +1,6 @@
 {
-  "generatedAt": "2026-09-09T08:00:24.795876+08:00",
+  "generatedAt": "2026-09-15T08:00:44.695284+08:00",
   "earnings": [
-    {
-      "symbol": "AVGO",
-      "earningsDate": "2026-09-03",
-      "confirmed": true
-    },
-    {
-      "symbol": "ORCL",
-      "earningsDate": "2026-09-11",
-      "confirmed": true
-    },
     {
       "symbol": "ASML",
       "earningsDate": "2026-10-14",
@@ -74,6 +64,16 @@
     {
       "symbol": "CRM",
       "earningsDate": "2026-12-03",
+      "confirmed": true
+    },
+    {
+      "symbol": "AVGO",
+      "earningsDate": "2026-12-10",
+      "confirmed": true
+    },
+    {
+      "symbol": "ORCL",
+      "earningsDate": "2026-12-11",
       "confirmed": true
     }
   ]
