@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "auditDate": "2026-09-16",
+  "timezone": "Asia/Shanghai",
+  "scope": ["NVDA", "AMD", "AVGO", "TSM", "ASML", "ORCL"],
+  "mode": "Independent read-only audit; only this task report written; no merge, script/config edits, deployment or trading",
+  "inputsRead": ["finance/data/agent-insights.json", "finance/data/latest.json", "finance/data/scores.json", "finance/data/company_research.json", "finance/IPS.md"],
+  "verdict": "Quarantine automated financials and untraceable valuation inputs for all six companies. Retain dated narrative baselines only as reused research, not freshly verified earnings. Do not upgrade investment stance from price moves, composite scores or search summaries.",
+  "verification": {
+    "verifiedThisRun": [
+      "Parsed all five requested inputs and inspected six-company narrative, financials, scores, metadata and latest price-history endpoints.",
+      "latest.json and scores.json generatedAt are 2026-09-16T12:15:12.811506+00:00; latest history endpoint for each of the six is 2026-09-15. Quotes agree with those endpoints to rounding, but were not independently market-verified.",
+      "company_research.json generatedAt is 2026-09-16T12:16:34.927883+00:00 while agentInsightsDate is 2026-09-15T12:36:48.743269+00:00. Regeneration is not fresh research.",
+      "Directly observed mismatched fiscal labels versus period dates, multi-quarter periods labelled latest quarter, implausible margins, missing period metadata, missing EPS denominators, and narrative/model action disagreement.",
+      "ORCL broad live search completed; this verifies search coverage only, not the financial claims in its generated answer."
+    ],
+    "reusedNotReverified": [
+      "NVDA 2026-08-26 FY2027 Q2 baseline and Rubin statements.",
+      "AMD 2026-08-04 Q2 results and Q3 guidance.",
+      "AVGO 2026-09-02 Q3 results and Q4 guidance.",
+      "TSM 2026-07-16 Q2 results, 2026-09-10 August revenue, and September photomask roadmap.",
+      "ASML 2026-07-15 Q2 results and September Intel/Samsung/TSMC technology announcements.",
+      "ORCL 2026-06-10 FY2026 Q4/full-year baseline and previously recorded September earnings schedule."
+    ],
+    "newPrimaryFinancialFactsVerified": [],
+    "limitations": [
+      "Approximately three-minute bounded audit; not a fresh six-company earnings reconstruction or SEC-tag investigation.",
+      "ORCL official-domain follow-up and NVDA live search both timed out; no repeated retries.",
+      "No page fetch was attempted this run and no fetch safety restriction was bypassed. Prior ORCL blocked-fetch descriptions are reused history, not a fresh access test.",
+      "Tool schema required ancillary search arguments; country was passed as an empty string, not a country filter. This did not strictly satisfy the requested query/count-only argument shape.",
+      "No primary earnings pages or current analyst notes were retrieved. Search-generated EPS, consensus, targets, layoffs, debt and stock-move causality remain unverified.",
+      "Did not inspect old comps files or scripts; the existing claim that PE/market cap exactly match May 17 comps was not independently re-proved.",
+      "PDD, other software names, ETF analysis and final merge remain parent-owned."
+    ]
+  },
+  "searchEvidence": [
+    {
+      "symbol": "ORCL",
+      "query": "ORCL latest news earnings analyst September 16 2026",
+      "requestedCount": 3,
+      "status": "search_summary_only_not_primary_verified",
+      "reportedClaimsNotAccepted": ["September 10 FY2027 Q1 revenue $19.35B and EPS $1.92 versus $1.74 consensus", "Average analyst target $252.58 and Freedom Broker target cut", "FY2026 capex forecast $50B and RPO $638B presented beside September FY2027 Q1 commentary", "Layoffs, debt and AI customer commentary used to explain price declines"],
+      "auditFinding": "Summary mixes completed FY2026 forward-sounding capex language with FY2027 Q1 news and repeats the stored May 31 RPO figure without an updated measurement date. Reject the bundle as current financial evidence; do not assume every individual claim is false.",
+      "sourceUrls": [
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmE6MwcJMA4DCOeOh0vZHBYDu8GYkY8NqSCssR0d2-gqCm_gaCGo_vswe5dSsOlfI_JJPkZ99g4lmzDezYntO6oWmSRCZ6VFNLNXatE7PuYLS1OvCL4NoOUMluSRgoxSq6McVDNpAlJHama3C-oBs=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6ywwx7G7caMWqex3GVyn__Qtqijk947zB04lb25pD9q0jodGiLOa7vq8qe2RHdssR7qGJ5gxX3MS8vx85mKgLJzi_fqU4hyA0x3hzUmx-_QStS5orfszKw6luH0eZf7aF4aijQjw_aPCiLWP4bQ=="
+      ],
+      "sourceUrlNote": "Provider grounding redirects labelled MarketBeat and Public.com; unresolved, not article-level primary citations."
+    },
+    {"symbol": "ORCL", "query": "site.oracle.com \"2026-09-10\" \"earnings\" Q1 2027", "requestedCount": 2, "status": "timeout_no_usable_result"},
+    {"symbol": "NVDA", "query": "NVDA latest news earnings September 16 2026", "requestedCount": 2, "status": "timeout_no_usable_result"}
+  ],
+  "freshnessDefects": [
+    {
+      "severity": "critical",
+      "symbol": "NVDA",
+      "paths": ["items.NVDA.financials.period", "items.NVDA.financials.latest"],
+      "evidence": "Annual label FY2026 covers 2023-01-30 to 2024-01-28. Latest label FY2027 Q2 covers 2025-01-27 to 2025-07-27, roughly six months, while filed is 2026-08-26. Latest revenue $90.805B conflicts with narrative single-quarter $96.221B; latest margin 66.65% conflicts with narrative 75%.",
+      "recommendation": "Quarantine full financial block, growth rates and all derived valuation; do not relabel these numbers as the current quarter. Filing date and fiscal-year context do not establish the observation period."
+    },
+    {
+      "severity": "critical",
+      "symbol": "AMD",
+      "evidence": "Latest quarter label FY2018 Q3 actually spans 2017-01-01 to 2017-09-30. Gross margin 173.651929%; annual revenue and period absent while net income/FCF/ROE are populated.",
+      "recommendation": "Suppress annual/latest financial display and derivative ratios until every metric has aligned duration, unit, concept and filing provenance."
+    },
+    {
+      "severity": "critical",
+      "symbol": "AVGO",
+      "evidence": "Latest spans 2016-10-31 to 2017-07-30, labelled FY2018 Q3; annual spans 2015-11-02 to 2016-10-30, labelled FY2018. Gross margin annual/latest 186.48%/242.69%; operating margin 122.41%/140.53%. Latest FCF $19.448B cannot be compared with reused narrative Q3 FCF $13.665B as if same period.",
+      "recommendation": "Quarantine full financial block, including apparently plausible standalone values; mixed-period ratio denominators are unusable."
+    },
+    {
+      "severity": "critical",
+      "symbol": "TSM",
+      "evidence": "Annual and latest revenue absent, both period objects missing dates/forms/fiscal labels, yet net income $35.3011B/$9.9299B and debt/assets 36.05% appear. Source currency and FX basis are not exposed in the financial block.",
+      "recommendation": "Do not infer USD, TWD, quarter, FY or TTM from dollar formatting. Quarantine unproven numbers; preserve missing values as missing, not zero."
+    },
+    {
+      "severity": "high",
+      "symbol": "ASML",
+      "evidence": "Annual FY2025 label with 2026-02-25 filing contains 2023-01-01 to 2023-12-31 dates. Revenue displayed as $27.6B without source currency provenance; latest quarter is empty.",
+      "recommendation": "Quarantine stale annual values/ratios and USD-labelled values until EUR versus USD and any conversion are traced; display latest-quarter data unavailable, not current annual proxy."
+    },
+    {
+      "severity": "critical",
+      "symbol": "ORCL",
+      "evidence": "Annual FY2026 label actually covers 2023-06-01 to 2024-05-31. Latest FY2018 Q3 covers 2016-06-01 to 2017-02-28, nine months. Automated annual FCF +$11.807B conflicts in period and sign with narrative FY2026 -$23.7B; latest operating margin 46.84% exceeds gross margin 20.24%, a further reconciliation warning.",
+      "recommendation": "Quarantine entire automated block. Do not characterize positive historical FCF as evidence that current AI infrastructure expansion is self-funding."
+    },
+    {
+      "severity": "high",
+      "scope": "all_six",
+      "evidence": "Quotes contain trailing/forward PE and marketCap with no per-field source/as-of or forecast-period details; epsTrailingTwelveMonths is null for all six. company_research valuation fields are null, but latest quote multiples remain populated. Scores give all six value=45 and five names identical quality=62/moat=58.",
+      "recommendation": "Keep quote multiples/market cap out of valuation conclusions until provenance is restored. Identical scores suggest coarse/default-like inputs, not independently proved hard-coded defaults; mark scores heuristic and valuation-unvalidated. Do not claim the data pipeline has fully implemented quarantine just because narrative warns or one file has null ratios."
+    },
+    {
+      "severity": "medium",
+      "scope": "all_six",
+      "evidence": "Narrative priceAsOf values remain September 14; local prices/scores now reference September 15. AVGO/TSM/ASML narrative actionContext is Continue observing while model action is Not attractive for now.",
+      "recommendation": "Separate research judgment from model action with both timestamps. Replace stale todayNote with explicit September 15 market date; score differences are not analyst upgrades or investment-thesis revisions."
+    }
+  ],
+  "localMarketSnapshot": {
+    "asOf": "2026-09-15",
+    "verification": "Read from local latest.json and scores.json; not independently externally verified",
+    "items": {
+      "NVDA": {"priceUSD": 212.17, "changePct": 0.5736, "composite": 65.0},
+      "AMD": {"priceUSD": 504.20, "changePct": 2.1868, "composite": 55.5},
+      "AVGO": {"priceUSD": 339.27, "changePct": -1.5810, "composite": 50.9},
+      "TSM": {"priceUSD": 413.75, "changePct": -1.0191, "composite": 59.9},
+      "ASML": {"priceUSD": 1591.48, "changePct": 1.0367, "composite": 51.2},
+      "ORCL": {"priceUSD": 140.35, "changePct": -3.0665, "composite": 40.4}
+    }
+  },
+  "recommendedTextAdjustments": {
+    "globalFinancialBanner": "自动财务数据存在期间、币种及分子分母匹配缺陷，暂不用于估值、排序或建仓判断。页面生成时间不代表财务数据最新；历史研究与本轮重新核验信息分开标注。",
+    "NVDA": {
+      "target": "judgment.todayNote and financials warning",
+      "replacement": "本地9/15收盘$212.17（+0.57%），Composite65.0，非9/16盘中报价，未独立核验行情。沿用8/26财报研究，本轮NVDA新闻搜索超时，无新增经营事实。自动财务将六个月旧期间标成最新季度，已建议隔离；继续观察现金回收、应收、客户capex回报及新品交付，不用旧PE证明便宜。",
+      "preserve": "Keep management guidance distinct from realized revenue and avoid inferring bad debt solely from weaker quarterly operating cash flow."
+    },
+    "AMD": {
+      "target": "judgment.todayNote and judgment.concerns",
+      "replacement": "本地9/15收盘$504.20（+2.19%），Composite55.5；沿用8/4正式财报与指引，本轮未重新核验。数据中心收入包含CPU，不能等同AI GPU收入；ROCm/Helios采用需交付、利润与回款证据。自动最新季度实际是2017年九个月期间且毛利率173.65%，全部自动财务隔离待修，不据动量建仓。",
+      "preserve": "3%—5% comes from latest.profile softLimits, not an explicit numeric IPS rule; IPS says usually start small and normally stay within 20%."
+    },
+    "AVGO": {
+      "target": "judgment.concerns[2], judgment.todayNote and actionContext explanation",
+      "replacement": "本地9/15收盘$339.27（-1.58%），Composite50.9。沿用9/2研究：FCF/收入约46.2%是现金流利润率，不是FCF/净利润；AI收入占比约56.4%仅为存档数字计算，本轮未重新核验原文。自动财务严重混期；quote PE/市值仍有值但无可复核时点，不能称全链路已隔离。研究层继续观察与模型Not attractive for now分栏，不把差异写成评级上调。",
+      "preserve": "Customer/project concentration and Q4 targets remain risks/management expectations, not confirmed future cash flows."
+    },
+    "TSM": {
+      "target": "judgment.todayNote and financials warning",
+      "replacement": "本地9/15 ADR收盘$413.75（-1.02%），Composite59.9。8月营收NT$514.806B等数字沿用9/10存档，本轮未重新获取官方原文，不是9/16新增公告。月度收入不披露AI拆分、利润或FCF，不能直接推定Q3美元指引超额。自动财务缺期间及币种证据，建议隔离；研究继续观察与模型Not attractive for now分别展示。",
+      "preserve": "Maintain separation of TWD/USD growth rates and long-dated photomask milestones versus near-term earnings."
+    },
+    "ASML": {
+      "target": "judgment.todayNote and actionContext explanation",
+      "replacement": "本地9/15收盘$1,591.48（+1.04%），Composite51.2；不再用9/14跌幅描述今日。沿用Q2及9月技术公告，本轮未重新核验；累计百万片处理不等于百万片合格成品，三星2028年High-NA DRAM计划不等于12英寸光罩2028年量产。自动年度数实际覆盖2023年且币种未追溯，建议隔离。研究继续观察、模型Not attractive for now不混为一个评级。",
+      "preserve": "Do not invent order cancellations, analyst target changes or causal explanations for daily returns."
+    },
+    "ORCL": {
+      "target": "growthCatalysts and judgment.todayNote",
+      "replacement": "9/16检索继续指向9/10已公布FY2027Q1，但本轮未取得原始财报，定向复查超时；搜索EPS、营收、券商目标价及裁员/下跌归因均不纳入已核验基线。摘要将FY2026 capex及旧RPO与新季度混排，尤其不能直接合并。沿用有日期的6/10历史论据，当前Q1财务待核验。本地9/15收盘$140.35（-3.07%），Composite40.4；维持Not attractive for now，理由是项目资本回报、融资与证据缺口，不是单日跌幅。",
+      "additionalCashFlowText": "下一步需同一原始期间逐项核对经营现金流、客户预付款/递延收入、现金capex与公司净capex定义、融资租赁、客户提供设备、新增债务及稀释；预付款改善当期现金不等于提高合同全生命周期利润，RPO不等于现金。"
+    }
+  },
+  "reusedPrimarySourceUrls": {
+    "NVDA": ["https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027"],
+    "AMD": ["https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results"],
+    "AVGO": ["https://investors.broadcom.com/node/64671/pdf"],
+    "TSM": ["https://pr.tsmc.com/english/news/3340", "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf"],
+    "ASML": ["https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results", "https://www.asml.com/en/news/press-releases/2026/samsung-electronics-and-asml-expand-collaboration-on-next-generation-semiconductor-manufacturing"],
+    "ORCL": ["https://www.oracle.com/news/announcement/q4fy26-earnings-release-2026-06-10", "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Sets-the-Date-for-its-First-Quarter-Fiscal-Year-2027-Earnings-Announcement/default.aspx"]
+  },
+  "quarantineRecommendation": {
+    "implemented": false,
+    "owner": "Parent merge/review task; no pipeline or main-data changes authorized here",
+    "scope": ["company_research.items.{six symbols}.financials including latest and derived ratios", "latest.securities.{six symbols}.quote trailingPE/forwardPE/marketCap for valuation usage until independently dated", "Valuation conclusions and score-based investment actions relying on unvalidated inputs"],
+    "retainWithLabels": ["Dated local price observations", "Dated reused business narratives", "Raw defective records for diagnosis, outside decision-facing output", "Heuristic scores only if limitations and model/narrative disagreement are prominent"],
+    "releaseCriteria": [
+      "For every metric retain concept/tag, currency/unit, accession/source URL, observation start/end, filing date and retrieval date.",
+      "Align all ratio inputs to the same duration and accounting basis; distinguish annual, YTD, standalone quarter and TTM. Derive quarters from compatible YTD deltas only where necessary.",
+      "Select latest economic period rather than latest filing of an old comparative fact; reconcile fiscal labels to actual dates.",
+      "Reconcile revenue/profit/cash flow to primary statements; investigate margins outside plausible ranges rather than silently clipping them.",
+      "For foreign issuers trace currency/FX and share or ADR basis before USD presentation or valuation.",
+      "ORCL needs FY2027 Q1 original statement reconciliation; current narrative and model data cannot substitute for it.",
+      "Restore independently dated market capitalization and trailing/forward EPS definitions before publishing multiples or FCF yields."
+    ]
+  },
+  "ipsCheck": "No automatic trading; no new buy recommendation. Preserve stock-versus-benchmark comparison and small-position discipline; 20% is a normal soft cap, not a guaranteed risk limit. No independent ETF holdings verification performed."
+}

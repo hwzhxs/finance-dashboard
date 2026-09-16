@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T12:36:48.743269+00:00",
+  "generatedAt": "2026-09-16T12:36:48.959108+00:00",
   "items": {
     "SPY": {
       "businessModel": "跟踪 S&P 500，提供美国大盘权益和活跃交易工具；经济敞口与 VOO 接近。",
@@ -15,11 +15,22 @@
         ],
         "concerns": [
           "同一指数下，相比 VOO 配置费率 0.03%，长期额外成本没有天然超额收益补偿。",
-          "IPS 不追短线，SPY 的交易优势不是本组合必要功能；9/14 收盘 $760.88，绝对份额价格不能用于与 VOO 比较贵便宜。"
+          "IPS 不做短线；SPY 的交易深度不是本组合必要功能。9/15收盘$757.39，绝对份额价格不能用于与VOO比较贵便宜；长期持有需证明流动性收益超过费率差。"
         ],
-        "actionContext": "Not attractive for now",
+        "actionContext": "Not attractive",
         "todayNote": null,
         "etfQuestion": "不是反对 S&P 500，而是本组合没有用更高持有费用换交易功能的明确需求；长期新资金更偏 VOO 或 VTI。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-16T12:35:43.611236+00:00",
+        "fundamentalBasis": "组合角色复核；非指数估值低点判断。",
+        "newsStatus": "not_applicable",
+        "priceAsOf": "2026-09-15",
+        "closeUSD": 757.39,
+        "priceChangePct": -0.46,
+        "composite": 70.5,
+        "compositeChangeVsPrevious": 0.0,
+        "scoreCaveat": "评分衡量工具适配，不证明估值便宜。"
       }
     },
     "QQQ": {
@@ -41,6 +52,17 @@
         "actionContext": "Continue observing",
         "todayNote": null,
         "etfQuestion": "只有明确愿意多承担成长/利率敏感性，并有单独仓位预算时才优于 VTI/VOO 的中性配置；当前不以 AI 热度推动增配。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-16T12:35:43.611236+00:00",
+        "fundamentalBasis": "组合角色复核；非指数估值低点判断。",
+        "newsStatus": "not_applicable",
+        "priceAsOf": "2026-09-15",
+        "closeUSD": 704.54,
+        "priceChangePct": -0.65,
+        "composite": 68.2,
+        "compositeChangeVsPrevious": 0.1,
+        "scoreCaveat": "评分衡量工具适配，不证明估值便宜。"
       }
     },
     "VOO": {
@@ -57,11 +79,22 @@
         ],
         "concerns": [
           "大科技已占重要位置，再叠加 QQQ/NVDA/MSFT 不会线性增加分散。",
-          "9/14 收盘 $699.30、近一月价格回报 -2.19%；这不是含分红总回报，也不能保证估值便宜。只有期限足够长、备用金独立且能承受权益回撤的资金才适合分批配置。"
+          "9/15收盘$696.20、近一月价格回报-2.44%，不含分红也不证明低估；只有备用金独立、期限足够长且能承受权益回撤的资金才适合分批配置。VTI与VOO同持大多是重复暴露。"
         ],
-        "actionContext": "Consider small position",
+        "actionContext": "Consider adding",
         "todayNote": null,
-        "etfQuestion": "相对 VTI 是大盘纯度更高、覆盖更窄的取舍，不是确定跑赢。长期 core 在 VTI/VOO 中选择一个即可，不必重复配置。"
+        "etfQuestion": "相对 VTI 是大盘纯度更高、覆盖更窄的取舍，不是确定跑赢。长期 core 在 VTI/VOO 中选择一个即可，不必重复配置。 Consider adding 仅指满足长期资金与回撤预算后考虑分批配置，不是当前估值已便宜或自动下单。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-16T12:35:43.611236+00:00",
+        "fundamentalBasis": "组合角色复核；非指数估值低点判断。",
+        "newsStatus": "not_applicable",
+        "priceAsOf": "2026-09-15",
+        "closeUSD": 696.2,
+        "priceChangePct": -0.44,
+        "composite": 70.2,
+        "compositeChangeVsPrevious": -0.1,
+        "scoreCaveat": "评分衡量工具适配，不证明估值便宜。"
       }
     },
     "VTI": {
@@ -78,11 +111,22 @@
         ],
         "concerns": [
           "不等于全天候：美国股票和美元风险仍在，不能代替非美资产、债券与现金需求。",
-          "9/14 收盘 $374.68、近一月价格回报 -2.50%，不能证明低估；VTI 与 VOO 同时买大多是重复暴露。行情名称字段异常含 Morningstar，本研究按 ticker VTI 与既有基金定位分析，不据此声称基金改名或改基准。"
+          "9/15收盘$372.84、近一月价格回报-2.87%，不含分红也不证明低估；只有备用金独立、期限足够长且能承受权益回撤的资金才适合分批配置。VTI与VOO同持大多是重复暴露。本地名称字段异常不作为基金更名/改基准依据。"
         ],
-        "actionContext": "Consider small position",
+        "actionContext": "Consider adding",
         "todayNote": null,
-        "etfQuestion": "默认比较基准；要选 VOO 是主动省去中小盘，选 QQQ 是主动增加成长集中。先满足期限与回撤预算再分批配置，不需要先猜市场底。"
+        "etfQuestion": "默认比较基准；要选 VOO 是主动省去中小盘，选 QQQ 是主动增加成长集中。先满足期限与回撤预算再分批配置，不需要先猜市场底。 Consider adding 仅指满足长期资金与回撤预算后考虑分批配置，不是当前估值已便宜或自动下单。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-16T12:35:43.611236+00:00",
+        "fundamentalBasis": "组合角色复核；非指数估值低点判断。",
+        "newsStatus": "not_applicable",
+        "priceAsOf": "2026-09-15",
+        "closeUSD": 372.84,
+        "priceChangePct": -0.49,
+        "composite": 70.1,
+        "compositeChangeVsPrevious": 0.0,
+        "scoreCaveat": "评分衡量工具适配，不证明估值便宜。"
       }
     },
     "SGOV": {
@@ -98,12 +142,23 @@
           "本地配置费用 0.09%，约每 $10,000 每年 $9，便于与美元存款/T-bill 净收益比较；今日未核验实际 SEC yield。"
         ],
         "concerns": [
-          "本地近1/3/12个月价格回报均显示0%，不是可信的含分红总回报；未重新核验发行人 SEC yield，不用该字段判断利息收入或与股票比较总回报。",
+          "本地近1/3/12个月价格回报约-0.03%/-0.01%/-0.02%，不是含分红总回报，不能据此推断国债利息为零或跑输现金。今日未核验发行人30-day SEC yield，不编造净收益率。",
           "配置记录现金 80% 不是实际 SGOV 持仓，也未实时重估；若无资金期限和部署计划，长期保留高现金会付出机会成本。"
         ],
-        "actionContext": "Consider small position",
+        "actionContext": "Consider adding",
         "todayNote": null,
-        "etfQuestion": "不和 VTI/VOO 争长期复利，只服务短期美元现金需求。先区分生活备用金、近期用途与长期资金，再决定是否用它停车。"
+        "etfQuestion": "不和 VTI/VOO 争长期复利，只服务短期美元现金需求。先区分生活备用金、近期用途与长期资金，再决定是否用它停车。 Consider adding 仅适用于短期美元闲置资金，不把80%配置现金机械全换成SGOV。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-16T12:35:43.611236+00:00",
+        "fundamentalBasis": "组合角色复核；非指数估值低点判断。",
+        "newsStatus": "not_applicable",
+        "priceAsOf": "2026-09-15",
+        "closeUSD": 100.53,
+        "priceChangePct": 0.0,
+        "composite": 67.3,
+        "compositeChangeVsPrevious": 0.0,
+        "scoreCaveat": "评分衡量工具适配，不证明估值便宜。"
       }
     },
     "PDD": {
@@ -112,7 +167,7 @@
       "keyRisks": "国内广告变现降速，商家生态投入若不能换来留存会压长期 ROIC；跨境关税、产品安全和本地履约成本可能吞掉 Temu 单位利润；配置记录 PDD 20% 已到 IPS 单股软上限，但不是实时仓位。",
       "aiAngle": "AI 通过推荐、广告匹配、客服与供需预测改善效率，不是独立收费产品。验证标准是商家投放回报与每单贡献利润，而非给电商套 AI multiple。",
       "growthCatalysts": "未来 1–2 年看交易服务增长能否保持快于集团、国内商家减负带动复购，以及 Temu 本地商家/仓配改善交付和合规成本；不把未披露的 Temu 盈亏平衡当既成事实。",
-      "growthSignals": "季度营销与交易服务增速（Q2 约 +3.4%/+13%）；operating margin 基准约 24.7%（27.764/112.358，自算）；经营现金流相对净利润、其他损益和有效税率；若披露则跟踪 Temu 单均履约/合规成本、复购和贡献利润。连续两季交易服务减速且经营利润率下滑会削弱论点。",
+      "growthSignals": "季度营销与交易服务增速（Q2 约 +3.4%/+13%）；operating margin 基准约 24.7%（27.764/112.358，自算）；经营现金流相对净利润、其他损益和有效税率；若披露则跟踪 Temu 单均履约/合规成本、复购和贡献利润。连续两季交易服务减速且经营利润率下滑会削弱论点。若连续两季营销增速落后交易服务、交易服务也减速且经营利润率低于约24.7%基线，须重新评估低价生态投入是否产生足够回报；此为反证条件，不是预测。",
       "judgment": {
         "positives": [
           "2026Q2 收入 RMB112.4B、+8%，交易服务 RMB54.7B、+13%；不是收入萎缩的生意，交易端仍有变现增量。",
@@ -125,8 +180,19 @@
           "Temu 分部利润和单位经济披露不足，海外合规成本未必只是过渡性。若配置仍是 20%，再摊低成本会放大单一中国电商风险；旧版约 9.9x PE 未有新分母核验，不作低估依据。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "9/15 复核：最新本地价格是9/14收盘 $79.38（+2.02%），近月 -5.69%；Composite 41.1，较9/9存档 +0.8，非单日升分。搜索主要返回8/24财报及旧评级，未完成新增公告原文核验，不等于没有新闻。维持既有Q2经营利润+8%、归母净利-12%的分项判断；配置20%若仍有效已到IPS软上限，不默认补仓。",
+        "todayNote": "9/16复核：最新为9/15收盘$78.08（-1.64%），Composite40.8、较上一研究日-0.3，不是今日盘中行情。搜索出现评级、Temu欧洲监管及本地商家合作线索，但未取得可核验原文，不升级为新经营事实。旧9.9x PE被再次回填，本轮隔离；配置20%若仍有效已到IPS软上限，继续不默认加仓。",
         "etfQuestion": "只有国内稳定现金流与 Temu 可持续利润的保守估值明显高于市值，才有理由承担比 VTI/VOO 更高的监管、治理和集中风险。现有配置已充分表达观点，尚无证据支持继续加集中度。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-16T12:35:43.611236+00:00",
+        "fundamentalBasis": "沿用上一版带日期的财报与官方公告论据；今日未重新取得全部原文，不代表今日新增业绩。",
+        "newsStatus": "searched_unverified",
+        "priceAsOf": "2026-09-15",
+        "closeUSD": 78.08,
+        "priceChangePct": -1.64,
+        "composite": 40.8,
+        "compositeChangeVsPrevious": -0.3,
+        "scoreCaveat": "Composite为粗筛；value默认45、moat/quality静态或缺省，不代表新基本面证据。"
       }
     },
     "AAPL": {
@@ -140,7 +206,7 @@
         "positives": [
           "FY2026 Q3（2026-07-30 发布、CNBC 与 MacRumors 交叉核验）收入约 1,094.2 亿美元，同比约增 16%；iPhone 收入同比增 22%，说明硬件主业当季仍在增长。",
           "同季 Services 收入 307.4 亿美元，同比约增 12%；大体量服务复购为硬件之外的经常性变现提供支撑，而不是只依赖下一款新品。",
-          "9/9官方公告将折叠机从传闻变成可追踪产品：Duo美国起价$1,999，计划10/23上市；Pro系列计划9/18上市。产品与交付节点已确定，但预订、销量和盈利尚未实现。"
+          "沿用9/9官方发布记录：Duo美国起价$1,999、原定10/23发售，Pro系列原定9/18发售，为后续ASP与销量检验提供明确节点；本轮未重新核实实际预订与交付，也不预写利润。"
         ],
         "concerns": [
           "FY2026 Q3 GAAP EPS 2.02 美元中，关税退款贡献 0.11 美元；50.1% 毛利率也受到退款抬升。把该利润率当成持续性扩张，会高估经营改善。",
@@ -148,8 +214,19 @@
           "Services 虽增长但低于当时分析师预期；监管与平台收费模式变化可能削弱生态变现。当前未独立核验实时估值，不能由优质品牌推出存在安全边际。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "9/15 新闻检索超时，未验证新品预订实绩。旧公告中的9/12预订节点已过去，本轮已去掉“待发生”的说法；仍把9/18及10月节点标为原公布计划，不预写销量。9/14收盘$333.08（+0.24%）；沿用历史财报论点，不因价格上涨确认新品成功。",
+        "todayNote": "9/16搜索返回预订交期冷热相互矛盾的说法，并把9/15收盘$331.34错标9/16；不采纳其销量、评级目标价或AI推出规模。沿用9/9旧公告计划，9/18交付仍是待验证节点；等待时间同时受供需影响，不是净需求的单独证据。",
         "etfQuestion": "VTI/VOO 已有 Apple 暴露。单买必须证明正常化服务现金流加新品净增量被低估，而非重复买发布会热度；Duo的高ASP、良率和内部替代尚未兑现，暂不因新品增加集中度。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-16T12:35:43.611236+00:00",
+        "fundamentalBasis": "沿用上一版带日期的财报与官方公告论据；今日未重新取得全部原文，不代表今日新增业绩。",
+        "newsStatus": "searched_unverified",
+        "priceAsOf": "2026-09-15",
+        "closeUSD": 331.34,
+        "priceChangePct": -0.52,
+        "composite": 64.8,
+        "compositeChangeVsPrevious": -0.3,
+        "scoreCaveat": "Composite为粗筛；value默认45、moat/quality静态或缺省，不代表新基本面证据。"
       }
     },
     "MSFT": {
@@ -173,6 +250,17 @@
         "actionContext": "Continue observing",
         "todayNote": null,
         "etfQuestion": "VTI/VOO/QQQ 已提供微软暴露。单买必须证明 Azure 与 Copilot 的增量现金回报足以补偿集中度和资本投入，而不是仅凭高护城河评分；在最新正常化估值未核验前，不把旧 PE 或券商目标价当安全边际。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-16T12:35:43.611236+00:00",
+        "fundamentalBasis": "沿用上一版带日期的财报与官方公告论据；今日未重新取得全部原文，不代表今日新增业绩。",
+        "newsStatus": "not_individually_searched",
+        "priceAsOf": "2026-09-15",
+        "closeUSD": 497.12,
+        "priceChangePct": -1.64,
+        "composite": 66.4,
+        "compositeChangeVsPrevious": -0.2,
+        "scoreCaveat": "Composite为粗筛；value默认45、moat/quality静态或缺省，不代表新基本面证据。"
       }
     },
     "NVDA": {
@@ -194,8 +282,22 @@
           "云客户的 AI 投资回报与自研 ASIC 替代会共同影响长期订单；本次未核实可比估值与盈利预测口径，不能沿用旧 forward PE 推出低估结论。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "9/14收盘$210.96（-3.36%），Composite64.6，较9/9存档-2.2。今日搜索混入未来派息已支付、未经核实的合作及下跌归因，全部不作为新增经营事实；沿用8/26已核验FY2027Q2基线。下一关口仍是收入、现金回收、客户capex回报及新品交付，而非券商目标价。",
+        "todayNote": "9/15收盘$212.17（+0.57%），Composite65.0、较上一研究日+0.4，非9/16盘中报价。本轮新闻检索超时，沿用8/26财报论据；自动财务把六个月旧期间标为最新季度，发布前隔离。收入增长之外仍要证明现金回收与客户capex回报，不以旧PE或微小评分改善确认便宜。",
         "etfQuestion": "相较 QQQ，单持 NVDA 把回报更集中于加速计算平台与盈利兑现，也把回款、出口限制和产品切换风险集中化。若不能给出比 QQQ/VTI 更有把握的现金流与估值假设，就不具备增加单股仓位的充分理由；任何新仓仍需清单和小仓起步。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-16T12:35:43.611236+00:00",
+        "fundamentalBasis": "沿用上一版带日期的财报与官方公告论据；今日未重新取得全部原文，不代表今日新增业绩。",
+        "newsStatus": "search_failed",
+        "priceAsOf": "2026-09-15",
+        "closeUSD": 212.17,
+        "priceChangePct": 0.57,
+        "composite": 65.0,
+        "compositeChangeVsPrevious": 0.4,
+        "scoreCaveat": "Composite为粗筛；value默认45、moat/quality静态或缺省，不代表新基本面证据。",
+        "independentLocalAudit": true,
+        "modelAction": "Continue observing",
+        "actionCaveat": "定性判断与机械模型分开；差异不是今日评级调整。"
       }
     },
     "TSLA": {
@@ -216,9 +318,20 @@
           "Q2经营现金流约47亿美元但自由现金流负11亿美元，资本投入先于回报；不能用FSD订阅增长替代Cybercab/Optimus的现金收益证明。",
           "2026-09-08 Bloomberg转载报道指NHTSA审查约1,000辆Cybercab的联邦安全标准自我认证依据；这是审查而非最终违法裁定，但说明规模化面临独立于技术演示的合规门槛。"
         ],
-        "actionContext": "Not attractive for now",
+        "actionContext": "Not attractive",
         "todayNote": null,
         "etfQuestion": "VTI/VOO/QQQ可提供分散组合内的TSLA相关敞口；单独加仓意味着更集中承担汽车竞争、资本开支及自动驾驶监管风险。若不能用可验证现金流支持优于ETF的回报预期，就不以Robotaxi或机器人叙事作为建仓依据。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-16T12:35:43.611236+00:00",
+        "fundamentalBasis": "沿用上一版带日期的财报与官方公告论据；今日未重新取得全部原文，不代表今日新增业绩。",
+        "newsStatus": "not_individually_searched",
+        "priceAsOf": "2026-09-15",
+        "closeUSD": 356.58,
+        "priceChangePct": -0.67,
+        "composite": 48.0,
+        "compositeChangeVsPrevious": -0.2,
+        "scoreCaveat": "Composite为粗筛；value默认45、moat/quality静态或缺省，不代表新基本面证据。"
       }
     },
     "GOOGL": {
@@ -242,6 +355,17 @@
         "actionContext": "Continue observing",
         "todayNote": null,
         "etfQuestion": "相较 VTI/VOO，单买增加搜索监管、模型竞争和 capex 回报风险。只有正常化搜索/云现金流相对价格有明确优势时才有集中持有的理由；不能用投资收益拉低的 PE 或 backlog 总额替代估值。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-16T12:35:43.611236+00:00",
+        "fundamentalBasis": "沿用上一版带日期的财报与官方公告论据；今日未重新取得全部原文，不代表今日新增业绩。",
+        "newsStatus": "not_individually_searched",
+        "priceAsOf": "2026-09-15",
+        "closeUSD": 344.98,
+        "priceChangePct": -1.26,
+        "composite": 65.1,
+        "compositeChangeVsPrevious": -0.4,
+        "scoreCaveat": "Composite为粗筛；value默认45、moat/quality静态或缺省，不代表新基本面证据。"
       }
     },
     "AMD": {
@@ -262,9 +386,23 @@
           "游戏收入同比约 -31%，而上一年出口限制库存费用压低利润基数；不能将强利润同比直接外推，需看后续 GAAP/non-GAAP 差异与现金流。",
           "尚未核实当前盈利预测及估值口径，无法证明相对 QQQ 的安全边际；本地模型的高动量与较低风险分也不是买入证据，不采用搜索评论中的不同 forward PE。"
         ],
-        "actionContext": "Not attractive for now",
+        "actionContext": "Not attractive",
         "todayNote": null,
         "etfQuestion": "AMD提供服务器CPU和AI GPU份额提升的更高弹性，但比QQQ更依赖ROCm/Helios执行及竞争格局。没有解释风险且优于ETF的估值与现金流情景前，不追价格动量；若未来建仓，参考当前配置3%—5%通常起始区间，并遵守IPS小仓、交易清单与单股20%软上限。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-16T12:35:43.611236+00:00",
+        "fundamentalBasis": "沿用上一版带日期的财报与官方公告论据；今日未重新取得全部原文，不代表今日新增业绩。",
+        "newsStatus": "not_individually_searched",
+        "priceAsOf": "2026-09-15",
+        "closeUSD": 504.2,
+        "priceChangePct": 2.19,
+        "composite": 55.5,
+        "compositeChangeVsPrevious": 0.3,
+        "scoreCaveat": "Composite为粗筛；value默认45、moat/quality静态或缺省，不代表新基本面证据。",
+        "independentLocalAudit": true,
+        "modelAction": "Not attractive for now",
+        "actionCaveat": "定性判断与机械模型分开；差异不是今日评级调整。"
       }
     },
     "AVGO": {
@@ -283,11 +421,25 @@
         "concerns": [
           "Q4 non-GAAP operating margin 指引 66%，低于 Q3 67.9%；AI mix 扩张并不保证单位利润同步变好。",
           "定制芯片的客户比普通零售用户更有议价权，第二供应商和自研可以使行业 TAM 扩大而 Broadcom 份额下降。",
-          "9/14收盘$344.72、近月价格回报-17.50%不是便宜证明。PE/市值逐一匹配5/17旧comps，已隔离；未用失真的SEC财务重算FCF yield，也不把券商目标价当安全边际。"
+          "9/15收盘$339.27、近月价格回报-13.67%不是便宜证明。今日PE/forward PE/市值又被5/17旧comps回填，需隔离；不以混期SEC金额重算FCF yield，不用券商目标价替代安全边际。"
         ],
         "actionContext": "Continue observing",
         "todayNote": null,
-        "etfQuestion": "比QQQ更集中押注custom silicon与网络，也放大客户/项目风险。延续旧稿Continue observing，并非9/15评级上调或确认价格吸引；没有保守FCF估值就不优先于ETF。"
+        "etfQuestion": "比QQQ更集中押注custom silicon与网络，也放大客户与项目风险。Continue observing只是延续既有立场；没有保守FCF估值就不优先于ETF。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-16T12:35:43.611236+00:00",
+        "fundamentalBasis": "沿用上一版带日期的财报与官方公告论据；今日未重新取得全部原文，不代表今日新增业绩。",
+        "newsStatus": "searched_unverified",
+        "priceAsOf": "2026-09-15",
+        "closeUSD": 339.27,
+        "priceChangePct": -1.58,
+        "composite": 50.9,
+        "compositeChangeVsPrevious": 0.7,
+        "scoreCaveat": "Composite为粗筛；value默认45、moat/quality静态或缺省，不代表新基本面证据。",
+        "independentLocalAudit": true,
+        "modelAction": "Not attractive for now",
+        "actionCaveat": "定性判断与机械模型分开；差异不是今日评级调整。"
       }
     },
     "TSM": {
@@ -309,8 +461,22 @@
           "12英寸光罩目标横跨2031—2033年，需要全产业生态配合，不能用于上调2026收入；当前估值未独立核验，技术优势仍不足以证明价格有安全边际。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "补入尚未合并的9/10原研究：8月营收NT$514.806B，同比+53.3%、环比+10.1%，1–8月+39.3%；本次搜索与存档相符，但未重新获取官方原文。这是9/10公布的历史增量，不是9/15新公告。月度收入不含利润/现金流，也不能直接推算Q3美元指引超额；9/14 ADR收盘$418.01（-3.52%）。",
+        "todayNote": null,
         "etfQuestion": "VTI/VOO提供美国上市本土企业的广泛组合，不应误称直接持有台积电ADR；它们通过客户与供应链有间接半导体敞口。单持TSM获得更直接先进代工暴露，也增加台湾尾部风险。需证明相对VTI/VOO/QQQ的风险补偿和估值优势，才考虑小仓，而非仅因技术领先。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-16T12:35:43.611236+00:00",
+        "fundamentalBasis": "沿用上一版带日期的财报与官方公告论据；今日未重新取得全部原文，不代表今日新增业绩。",
+        "newsStatus": "not_individually_searched",
+        "priceAsOf": "2026-09-15",
+        "closeUSD": 413.75,
+        "priceChangePct": -1.02,
+        "composite": 59.9,
+        "compositeChangeVsPrevious": 0.1,
+        "scoreCaveat": "Composite为粗筛；value默认45、moat/quality静态或缺省，不代表新基本面证据。",
+        "independentLocalAudit": true,
+        "modelAction": "Not attractive for now",
+        "actionCaveat": "定性判断与机械模型分开；差异不是今日评级调整。"
       }
     },
     "ASML": {
@@ -332,8 +498,22 @@
           "TSMC协作目标为2031年光罩试验线和2033年先进节点生产；三星2028年目标是High-NA DRAM采用，不是12英寸光罩2028年量产。当前估值与盈利预测未核验，不能用远期技术利好替代安全边际。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "9/14收盘$1,575.15（-7.25%），Composite50.6，较9/9存档-4.9，是该比较窗口最大降分。9/15搜索给出的下跌归因与目标价未完成原文核验，不认定订单取消或AI需求断裂；保留Q2及已核验技术路线。技术moat不因一天跌价消失，也不因此证明便宜。",
+        "todayNote": null,
         "etfQuestion": "相较QQQ，单持ASML更集中于光刻设备、出口政策与少数晶圆厂资本开支；QQQ可分散单一设备公司的执行风险，但仍有科技集中风险。没有核实合理价格与周期下行现金流前，技术稀缺性不构成直接建仓理由。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-16T12:35:43.611236+00:00",
+        "fundamentalBasis": "沿用上一版带日期的财报与官方公告论据；今日未重新取得全部原文，不代表今日新增业绩。",
+        "newsStatus": "not_individually_searched",
+        "priceAsOf": "2026-09-15",
+        "closeUSD": 1591.48,
+        "priceChangePct": 1.04,
+        "composite": 51.2,
+        "compositeChangeVsPrevious": 0.6,
+        "scoreCaveat": "Composite为粗筛；value默认45、moat/quality静态或缺省，不代表新基本面证据。",
+        "independentLocalAudit": true,
+        "modelAction": "Not attractive for now",
+        "actionCaveat": "定性判断与机械模型分开；差异不是今日评级调整。"
       }
     },
     "AMZN": {
@@ -354,9 +534,20 @@
           "Q2 净利润包含 534 亿美元非经营税前其他收益，主要来自 Anthropic 投资；EPS 5.75 美元不可年化当成正常盈利，旧目标价与市值叙事不提供安全边际。",
           "AWS 高利润率能否在 AI 基础设施扩张、芯片更新和价格竞争下维持仍待验证；9/8 芯片合作没有披露本研究可核验的订单金额、现金回报或实现进度，不能直接上调盈利。"
         ],
-        "actionContext": "Not attractive for now",
+        "actionContext": "Not attractive",
         "todayNote": null,
         "etfQuestion": "宽基已持有 Amazon，同时分散零售、云及 AI 投资回报风险。若要单买，需用剔除投资收益的 AWS/零售分部估值和 capex 后现金流解释优于 VTI/VOO 的回报；本轮未完成该估值，不因合作新闻追买。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-16T12:35:43.611236+00:00",
+        "fundamentalBasis": "沿用上一版带日期的财报与官方公告论据；今日未重新取得全部原文，不代表今日新增业绩。",
+        "newsStatus": "not_individually_searched",
+        "priceAsOf": "2026-09-15",
+        "closeUSD": 248.42,
+        "priceChangePct": -2.02,
+        "composite": 57.1,
+        "compositeChangeVsPrevious": -0.4,
+        "scoreCaveat": "Composite为粗筛；value默认45、moat/quality静态或缺省，不代表新基本面证据。"
       }
     },
     "ORCL": {
@@ -364,7 +555,7 @@
       "moatEvidence": "数据库、财务和业务系统迁移成本高。6/10 官方 FY2026Q4 OCI 收入 $5.8B、+93%，云应用 $4.1B、+10%；需求有证据，但数据中心的资本回报尚不能照搬数据库的 moat。",
       "keyRisks": "建设和上电时间决定 RPO 何时变收入；FY2026 FCF 为 -$23.7B，新增融资与稀释成本不可忽视；少数大型 AI 客户合同与支付能力集中，backlog 不是银行存款。",
       "aiAngle": "OCI 受益 AI 算力需求，数据库和应用可增加 AI 功能收费；但机房、GPU 和电力要先付现金。评价应从收入增长转向资本成本之后的项目 ROIC。",
-      "growthCatalysts": "旧官方日程的9/10 FY2027Q1财报窗口已经过去，不能继续写“财报前”。9/15两次搜索均指向已发布Q1结果及云业务加速，但原始财报访问受限，尚未独立核验报表、期间和预付款口径。近期任务是核验Q1 OCI增长、RPO转收入、客户预付款、净capex和融资；未来1–2年看已签容量实际投产、multicloud数据库渗透及capex后每股现金收益。",
+      "growthCatalysts": "沿用历史日程，9/10 FY2027Q1财报窗口已过去；9/15与9/16搜索均指向结果已发布，但本轮定向检索超时、未取得原始报表，不继续写财报前。未来1–2年看已签容量实际投产、multicloud数据库渗透及净capex后每股现金收益；Q1原文现金流、预付款、RPO期限及融资条款仍是首要证据关口。",
       "growthSignals": "以FY2027Q1原始现金流表为下一证据关口：明确季度与TTM经营现金流、客户预付款/递延收入、净capex、融资租赁及新增债务；再检查RPO确认期限、OCI利用率、客户集中与收入毛利。若营收上升但现金主要来自预付款且持续需要融资，增长并未降低风险。搜索中约$23B经营现金流与负FCF的口径未逐表核验，不据此做估值。",
       "judgment": {
         "positives": [
@@ -377,9 +568,23 @@
           "RPO 可横跨多年，客户预付款、供 GPU 与正式验收影响现金和收入时点；订单总量不等于可立即分配的股东现金。",
           "9/10财报窗口已过，但本轮未取得可复核的Q1原始报表；不能把搜索摘要中的beat、上调指引或现金流数字当已审计研究输入。旧PE无独立分母时点，股价大跌也不能替代融资压力、客户集中与正常化FCF估值。"
         ],
-        "actionContext": "Not attractive for now",
-        "todayNote": "9/15 修正过时财报前叙事：检索指向9/10已公布FY2027Q1、收入/OCI加速，但官网原文访问被拦截，新增数字暂不纳入已核验财务基线。保留有日期的FY2026Q4/FY2026历史论据。9/14收盘$144.79（-3.65%），Composite40.5，较9/9存档-2.6；维持Not attractive for now，核心是资本回报和证据缺口，不是单凭跌幅。",
+        "actionContext": "Not attractive",
+        "todayNote": "9/16检索继续指向9/10已公布FY2027Q1，但定向核验超时、未取得原始财报；摘要将FY2026 capex及旧RPO与新季度混排，不纳入新增业绩或裁员/跌价归因。沿用6/10历史基线。9/15收盘$140.35（-3.07%）、Composite40.4，较上一研究日-0.1；Not attractive的理由是项目资本回报、融资及证据缺口，而非单日跌幅。",
         "etfQuestion": "比 VTI/QQQ 更集中暴露于云基础设施扩张，却同时承担融资和客户兑现风险。在净 capex、稀释与 RPO 变现尚未厘清前，ETF 是更容易守纪律的选择。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-16T12:35:43.611236+00:00",
+        "fundamentalBasis": "沿用上一版带日期的财报与官方公告论据；今日未重新取得全部原文，不代表今日新增业绩。",
+        "newsStatus": "searched_unverified",
+        "priceAsOf": "2026-09-15",
+        "closeUSD": 140.35,
+        "priceChangePct": -3.07,
+        "composite": 40.4,
+        "compositeChangeVsPrevious": -0.1,
+        "scoreCaveat": "Composite为粗筛；value默认45、moat/quality静态或缺省，不代表新基本面证据。",
+        "independentLocalAudit": true,
+        "modelAction": "Not attractive for now",
+        "actionCaveat": "定性判断与机械模型分开；差异不是今日评级调整。"
       }
     },
     "PLTR": {
@@ -403,6 +608,17 @@
         "actionContext": "Continue observing",
         "todayNote": null,
         "etfQuestion": "相较QQQ/VTI，单持PLTR更直接押注企业/政府AI软件采用与平台嵌入，也放大合同节奏、股权稀释和估值风险。即使经营数据优秀，仍需独立估值与每股现金流论证；无法清楚胜过ETF时，不因新合作自动加仓。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-16T12:35:43.611236+00:00",
+        "fundamentalBasis": "沿用上一版带日期的财报与官方公告论据；今日未重新取得全部原文，不代表今日新增业绩。",
+        "newsStatus": "not_individually_searched",
+        "priceAsOf": "2026-09-15",
+        "closeUSD": 172.56,
+        "priceChangePct": -0.43,
+        "composite": 51.3,
+        "compositeChangeVsPrevious": 0.5,
+        "scoreCaveat": "Composite为粗筛；value默认45、moat/quality静态或缺省，不代表新基本面证据。"
       }
     },
     "NOW": {
@@ -423,9 +639,20 @@
           "Q2 官方对照表：订阅毛利率 GAAP 73.5%，上年 80%；non-GAAP 80.5%，上年 83%。并购无形资产摊销由订阅收入的约 0.5%升至 4.5%，解释部分 GAAP 差距，但调整后毛利也下降，不能全归因会计摊销。AI 增量收入仍需覆盖推理与外部云成本。",
           "全年营业利润率指引 GAAP 10%、非 GAAP 31.5%，股权激励约占全年收入 15%，还有并购摊销等调整。高调整后利润率并不等于股东无需承担稀释或并购成本；软件 AI 替代风险仍需续费数据检验。"
         ],
-        "actionContext": "Not attractive for now",
-        "todayNote": "9/14收盘$142.35（+7.41%），Composite48.4，较9/9存档+1.6；不是9/15盘中上涨。今日检索返回Needham调整目标价及AI治理叙事，但原文/日期未逐一核验，不当作新增付费合同或经营指引。保留Q2订阅增长与调整后毛利下滑的双向论点，继续要求AI收入覆盖推理和云成本。",
+        "actionContext": "Not attractive",
+        "todayNote": "9/15收盘$141.90（-0.32%），Composite49.1、较上一研究日+0.7；价格下跌而评分上升也说明评分不是单一基本面信号。今日搜索仍主要是7月业绩与9月旧评级/会议转述，新增AI ACV数字未核实，不当成当期收入；继续以订阅毛利、续约和每股现金流检验AI回报。",
         "etfQuestion": "VTI/VOO 分散单一企业软件商业模式和估值风险。若单买 NOW，必须证明其流程与治理价值无法被廉价 AI 替代，且扣除股权激励、并购及推理成本后的回报优于宽基；反弹幅度或低于历史高点都不是安全边际。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-16T12:35:43.611236+00:00",
+        "fundamentalBasis": "沿用上一版带日期的财报与官方公告论据；今日未重新取得全部原文，不代表今日新增业绩。",
+        "newsStatus": "searched_unverified",
+        "priceAsOf": "2026-09-15",
+        "closeUSD": 141.9,
+        "priceChangePct": -0.32,
+        "composite": 49.1,
+        "compositeChangeVsPrevious": 0.7,
+        "scoreCaveat": "Composite为粗筛；value默认45、moat/quality静态或缺省，不代表新基本面证据。"
       }
     },
     "CRM": {
@@ -434,7 +661,7 @@
       "keyRisks": "AI 代理可能压缩人工席位，竞争对手或通用模型可能替代部分应用；并购和指标定义变化抬高表面增长；股权激励、收购摊销与投资收益导致 GAAP/非 GAAP 盈利差异；ARR 不等于当期收入、利润或现金。",
       "aiAngle": "官方 FY2027 Q2 公告中管理层称 AI 与数据产品 ARR 接近 40 亿美元，但 Agentforce ARR 自该季开始包含 Slackbot 与 Headless 360。只在固定产品边界下比较付费客户、续约、用量和增量收入，不能把组合 ARR 全算作 Agentforce 单产品，或把口径扩张视作自然增长。",
       "growthCatalysts": "AI 代理在既有客户中转为生产使用，数据治理与流程整合提升交叉销售。Q3 FY2027 收入指引 114.2亿—115 亿美元、增长 11%—12%，包含略高于 4 个百分点 Informatica 贡献；官方同时指出更新的指引纳入待完成 Contentful/Fin 收购（cRPO 除外），均需验证。",
-      "growthSignals": "跟踪同口径 Agentforce/数据 ARR、剔除收购的订阅收入及 cRPO、AI 消费收入对席位减少的净影响、GAAP/非 GAAP 利润桥接、全年 FCF 和摊薄股数。反证条件：增长主要靠并购及统计扩围，有机 cRPO 不改善，或 AI 使用增加但续约/现金回报走弱。",
+      "growthSignals": "跟踪同口径 Agentforce/数据 ARR、剔除收购的订阅收入及 cRPO、AI 消费收入对席位减少的净影响、GAAP/非 GAAP 利润桥接、全年 FCF 和摊薄股数。反证条件：增长主要靠并购及统计扩围，有机 cRPO 不改善，或 AI 使用增加但续约/现金回报走弱。检索提示9/16投资者活动，时间及材料待原文核验；若后续发布长期目标，逐项拆分organic/收购贡献、AI收入替代席位的净额与FCF，不将目标当兑现。",
       "judgment": {
         "positives": [
           "FY2027 Q2 官方报表：订阅与支持收入 108.20 亿美元，较上年 96.90 亿美元增长约 11.7%；主营订阅基础仍扩大，但该增幅不是纯有机增长。",
@@ -446,16 +673,27 @@
           "Agentforce ARR 自 FY2027 Q2 起纳入 Slackbot/Headless 360，跨季增长边界已变；AI 与数据组合 ARR 接近 40 亿美元也不是单独 Agentforce 收入。",
           "全年 FY2027 FCF 增速指引仅约 4%—5%；Q2 GAAP 营业利润率 20.5%，低于上年 22.8%，非 GAAP 34.1%也略低于上年 34.3%。高 ARR 增速并不自动意味着经营效率与股东现金回报同步改善。"
         ],
-        "actionContext": "Not attractive for now",
-        "todayNote": null,
+        "actionContext": "Not attractive",
+        "todayNote": "9/16检索指向Dreamforce及Investor & Analyst Session；二手日程为美西9/16 13:00（北京时间9/17 04:00），晚于本研究截止，且官网日历抓取受限。不能预写会议财务目标、AIforce收入、宕机影响或盘后反应。下一关口是同口径有机增长、Agentforce计费边界和FCF，而非新品名字；原有Not attractive立场不变。",
         "etfQuestion": "相对 VTI/VOO，CRM 的额外投资理由应是可持续有机增长与正常化现金流被低估，而不是旧 forward PE 11.6 倍或 AI ARR 大数。本轮缺少经过投资收益、并购和稀释校正的估值，宽基更易满足 IPS 的可解释性。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-16T12:35:43.611236+00:00",
+        "fundamentalBasis": "沿用上一版带日期的财报与官方公告论据；今日未重新取得全部原文，不代表今日新增业绩。",
+        "newsStatus": "searched_unverified",
+        "priceAsOf": "2026-09-15",
+        "closeUSD": 255.65,
+        "priceChangePct": -1.46,
+        "composite": 53.3,
+        "compositeChangeVsPrevious": 0.0,
+        "scoreCaveat": "Composite为粗筛；value默认45、moat/quality静态或缺省，不代表新基本面证据。"
       }
     }
   },
   "researchMeta": {
-    "newsCutoff": "2026-09-15T12:36:48.743269+00:00",
-    "previousInsightsAt": "2026-09-10T12:35:26.918675+00:00",
-    "reviewMode": "每日增量复核；日期明确的旧财报论据沿用，不代表本日重新审计。无新增已核验事实的todayNote为null；价格/质量提示明确区分于公司新闻。",
+    "newsCutoff": "2026-09-16T12:36:48.959108+00:00",
+    "previousInsightsAt": "2026-09-15T12:36:48.743269+00:00",
+    "reviewMode": "每日增量复核；20标的逐一检查。旧财报及公告保留日期；本日未确认新经营事实时todayNote为null，价格/数据风险提示不冒充公司公告。",
     "reviewedTickers": [
       "SPY",
       "QQQ",
@@ -480,73 +718,70 @@
     ],
     "newsSearchedThisRun": [
       "PDD",
-      "ORCL",
-      "ASML",
-      "TSM",
+      "CRM",
+      "AAPL",
       "NOW",
-      "NVDA"
-    ],
-    "newsSearchFailed": [
-      "AAPL"
+      "AVGO",
+      "ORCL"
     ],
     "notIndividuallySearchedThisRun": [
       "MSFT",
       "TSLA",
       "GOOGL",
       "AMD",
-      "AVGO",
+      "TSM",
+      "ASML",
       "AMZN",
-      "PLTR",
-      "CRM"
+      "PLTR"
     ],
     "directlyRecheckedThisRun": [],
     "priceAsOf": {
-      "SPY": "2026-09-14",
-      "QQQ": "2026-09-14",
-      "VOO": "2026-09-14",
-      "VTI": "2026-09-14",
-      "SGOV": "2026-09-14",
-      "PDD": "2026-09-14",
-      "AAPL": "2026-09-14",
-      "MSFT": "2026-09-14",
-      "NVDA": "2026-09-14",
-      "TSLA": "2026-09-14",
-      "GOOGL": "2026-09-14",
-      "AMD": "2026-09-14",
-      "AVGO": "2026-09-14",
-      "TSM": "2026-09-14",
-      "ASML": "2026-09-14",
-      "AMZN": "2026-09-14",
-      "ORCL": "2026-09-14",
-      "PLTR": "2026-09-14",
-      "NOW": "2026-09-14",
-      "CRM": "2026-09-14"
+      "SPY": "2026-09-15",
+      "QQQ": "2026-09-15",
+      "VOO": "2026-09-15",
+      "VTI": "2026-09-15",
+      "SGOV": "2026-09-15",
+      "PDD": "2026-09-15",
+      "AAPL": "2026-09-15",
+      "MSFT": "2026-09-15",
+      "NVDA": "2026-09-15",
+      "TSLA": "2026-09-15",
+      "GOOGL": "2026-09-15",
+      "AMD": "2026-09-15",
+      "AVGO": "2026-09-15",
+      "TSM": "2026-09-15",
+      "ASML": "2026-09-15",
+      "AMZN": "2026-09-15",
+      "ORCL": "2026-09-15",
+      "PLTR": "2026-09-15",
+      "NOW": "2026-09-15",
+      "CRM": "2026-09-15"
     },
-    "pricesGeneratedAt": "2026-09-15T12:15:09.378974+00:00",
-    "scoresAt": "2026-09-15T12:15:09.378974+00:00",
-    "scoreComparisonBaselineAt": "2026-09-09T12:15:20.245863+00:00",
-    "scoreComparisonBaselineRevision": "7399c5284c163e2c3d11954684639732ee65f2ee",
+    "pricesGeneratedAt": "2026-09-16T12:15:12.811506+00:00",
+    "scoresAt": "2026-09-16T12:15:12.811506+00:00",
+    "scoreComparisonBaselineAt": "2026-09-15T12:15:09.378974+00:00",
+    "scoreComparisonBaselineRevision": "7daefca740f68bd766b10048d2b5f6988d8fceb0",
     "compositeChangeVsBaseline": {
-      "SPY": -0.6,
-      "QQQ": -1.0,
-      "VOO": -0.5,
-      "VTI": -0.6,
+      "SPY": 0.0,
+      "QQQ": 0.1,
+      "VOO": -0.1,
+      "VTI": 0.0,
       "SGOV": 0.0,
-      "PDD": 0.8,
-      "AAPL": 1.7,
-      "MSFT": 0.7,
-      "NVDA": -2.2,
-      "TSLA": -1.7,
-      "GOOGL": 0.9,
-      "AMD": -0.3,
-      "AVGO": -1.4,
-      "TSM": -2.1,
-      "ASML": -4.9,
-      "AMZN": 0.2,
-      "ORCL": -2.6,
-      "PLTR": -0.5,
-      "NOW": 1.6,
-      "CRM": -0.1
+      "PDD": -0.3,
+      "AAPL": -0.3,
+      "MSFT": -0.2,
+      "NVDA": 0.4,
+      "TSLA": -0.2,
+      "GOOGL": -0.4,
+      "AMD": 0.3,
+      "AVGO": 0.7,
+      "TSM": 0.1,
+      "ASML": 0.6,
+      "AMZN": -0.4,
+      "ORCL": -0.1,
+      "PLTR": 0.5,
+      "NOW": 0.7,
+      "CRM": 0.0
     },
     "sources": {
       "PDD": [
@@ -554,26 +789,30 @@
           "url": "https://www.globenewswire.com/news-release/2026/08/24/3349572/0/en/pdd-holdings-announces-second-quarter-2026-unaudited-financial-results.html",
           "title": "PDD official Q2 2026 release via GlobeNewswire",
           "asOf": "2026-08-24",
-          "checkedAt": "2026-09-10T12:35:26.918675+00:00"
+          "checkedAt": "2026-09-10T12:35:26.918675+00:00",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         }
       ],
       "AVGO": [
         {
           "url": "https://investors.broadcom.com/node/64671/pdf",
           "title": "Broadcom official Q3 FY2026 earnings release",
-          "asOf": "2026-09-02"
+          "asOf": "2026-09-02",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         }
       ],
       "ORCL": [
         {
           "url": "https://www.oracle.com/news/announcement/q4fy26-earnings-release-2026-06-10",
           "title": "Oracle official Q4 FY2026 results",
-          "asOf": "2026-06-10"
+          "asOf": "2026-06-10",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Sets-the-Date-for-its-First-Quarter-Fiscal-Year-2027-Earnings-Announcement/default.aspx",
           "title": "Oracle official FY2027Q1 earnings date",
-          "asOf": "2026-09-02"
+          "asOf": "2026-09-02",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         }
       ],
       "AAPL": [
@@ -581,92 +820,108 @@
           "url": "https://www.apple.com/apple-events/",
           "title": "Apple Events — 9/9 10 a.m. PT 官方活动日程；WWDC 2026 回顾",
           "asOf": "2026-09-09",
-          "checkedAt": "2026-09-09T12:43:12.324917+00:00"
+          "checkedAt": "2026-09-09T12:43:12.324917+00:00",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://www.cnbc.com/2026/07/30/apple-earnings-live-updates.html",
           "title": "CNBC — Apple FY2026 Q3 earnings：分部收入、关税退款与供给约束",
-          "asOf": "2026-07-30"
+          "asOf": "2026-07-30",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://www.macrumors.com/2026/07/30/apple-3q-2026-earnings",
           "title": "MacRumors — Apple Reports 3Q 2026 Results（交叉核验营收/EPS）",
-          "asOf": "2026-07-30"
+          "asOf": "2026-07-30",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/",
           "title": "Apple官方9/9：iPhone Duo价格与10月上市日程",
           "checkedAt": "2026-09-10T12:35:26.918675+00:00",
-          "asOf": "2026-09-09"
+          "asOf": "2026-09-09",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max",
           "title": "Apple官方9/9：18 Pro系列及9月上市日程",
           "checkedAt": "2026-09-10T12:35:26.918675+00:00",
-          "asOf": "2026-09-09"
+          "asOf": "2026-09-09",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         }
       ],
       "MSFT": [
         {
           "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast",
           "title": "Microsoft official — Earnings Release FY26 Q4，期末 2026-06-30",
-          "asOf": "2026-07-29"
+          "asOf": "2026-07-29",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://www.cnbc.com/2026/07/29/microsoft-msft-q4-earnings-report-2026.html",
           "title": "CNBC — Microsoft Q4 2026：Azure、capex、FCF 与会计口径",
-          "asOf": "2026-07-29"
+          "asOf": "2026-07-29",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://finance.yahoo.com/quote/MSFT/earnings/MSFT-Q4-2026-earnings_call-647770.html",
           "title": "Yahoo Finance — MSFT Q4 FY2026 earnings call transcript（管理层付费席位/指引陈述）",
-          "asOf": "2026-07-29"
+          "asOf": "2026-07-29",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         }
       ],
       "GOOGL": [
         {
           "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm",
           "title": "Alphabet official earnings release filed as Exhibit 99.1 — Q2 2026（原始财报，非 companyfacts 混合抽取）",
-          "asOf": "2026-07-22"
+          "asOf": "2026-07-22",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://abc.xyz/investor/events/event-details/2026/2026-Q2-Earnings-Call-2026-GgTAq7Is0z/default.aspx",
           "title": "Alphabet official — 2026 Q2 Earnings Call transcript：Cloud backlog、TPU、capex 与 FCF",
-          "asOf": "2026-07-22"
+          "asOf": "2026-07-22",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://www.nytimes.com/2026/09/02/technology/google-ad-tech-remedies.html",
           "title": "The New York Times — Google avoids ad-tech breakup but must change practices（非 9/8 新裁决）",
-          "asOf": "2026-09-02"
+          "asOf": "2026-09-02",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         }
       ],
       "AMZN": [
         {
           "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results",
           "title": "Amazon official — Second Quarter 2026 Results，期末 2026-06-30",
-          "asOf": "2026-07-30"
+          "asOf": "2026-07-30",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://www.lightreading.com/ai-machine-learning/qualcomm-and-amazon-connect-on-ai-silicon",
           "title": "Light Reading — Qualcomm and Amazon connect on AI silicon（Qualcomm 公告转载）",
-          "asOf": "2026-09-08"
+          "asOf": "2026-09-08",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://virginiabusiness.com/sp-500-falls-ai-worries-software-makers-middle-east",
           "title": "Reuters via Virginia Business — 9/8 市场收盘报道，含 Amazon 芯片合作",
-          "asOf": "2026-09-08"
+          "asOf": "2026-09-08",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         }
       ],
       "CRM": [
         {
           "url": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-Second-Quarter-Fiscal-2027-Results/default.aspx",
           "title": "Salesforce official — FY2027 Q2 Results，期末 2026-07-31；含 ARR 定义、并购贡献与全年指引（9/9 核验）",
-          "asOf": "2026-09-09"
+          "asOf": "2026-09-09",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://virginiabusiness.com/sp-500-falls-ai-worries-software-makers-middle-east",
           "title": "Reuters via Virginia Business — 9/8 软件股回落与 AI 替代担忧",
-          "asOf": "2026-09-08"
+          "asOf": "2026-09-08",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         }
       ],
       "NOW": [
@@ -674,60 +929,70 @@
           "url": "https://investor.servicenow.com/news/news-details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx",
           "title": "ServiceNow official — Q2 2026 Results，期末 2026-06-30；含收入提前确认及 GAAP/非 GAAP 对照",
           "asOf": "2026-07-22",
-          "checkedAt": "2026-09-09T12:43:12.324917+00:00"
+          "checkedAt": "2026-09-09T12:43:12.324917+00:00",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://virginiabusiness.com/sp-500-falls-ai-worries-software-makers-middle-east",
           "title": "Reuters via Virginia Business — 9/8 ServiceNow 下跌约 5% 与 AI 替代担忧",
-          "asOf": "2026-09-08"
+          "asOf": "2026-09-08",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://www.investing.com/news/analyst-ratings/bernstein-reiterates-servicenow-stock-rating-on-ai-growth-outlook-93CH-4893732",
           "title": "Bernstein维持评级及目标价的二手报道；不是盈利兑现",
           "checkedAt": "2026-09-10T12:35:26.918675+00:00",
-          "asOf": "2026-09-10核验；提取正文未独立确认发布时间"
+          "asOf": "2026-09-10核验；提取正文未独立确认发布时间",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         }
       ],
       "NVDA": [
         {
           "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
           "title": "NVIDIA官方：FY2027 Q2业绩、Q3指引及现金流/资产负债表",
-          "asOf": "2026-08-26"
+          "asOf": "2026-08-26",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx",
           "title": "NVIDIA IR：截至2026-07-26的FY2027 Q2业绩",
-          "asOf": "2026-08-26"
+          "asOf": "2026-08-26",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         }
       ],
       "AMD": [
         {
           "url": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
           "title": "AMD官方：2026 Q2业绩、分部数据及Q3指引",
-          "asOf": "2026-08-04"
+          "asOf": "2026-08-04",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://www.investing.com/news/transcripts/amd-at-citis-2026-global-tmt-conference-ai-push-lifts-outlook-93CH-4891921",
           "title": "Investing.com：9/8 Citi会议展望（二手转述，未核验官方逐字稿）",
           "asOf": "2026-09-08",
-          "checkedAt": "2026-09-09T12:45:07.083043+00:00"
+          "checkedAt": "2026-09-09T12:45:07.083043+00:00",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         }
       ],
       "TSM": [
         {
           "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf",
           "title": "TSMC官方：2026 Q2业绩与Q3指引（TIFRS；新台币/美元分别列示）",
-          "asOf": "2026-07-16"
+          "asOf": "2026-07-16",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://pr.tsmc.com/english/news/3329",
           "title": "TSMC官方：2026年7月营收报告",
-          "asOf": "2026-08-10"
+          "asOf": "2026-08-10",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://www.globenewswire.com/news-release/2026/09/08/3357321/0/en/asml-and-tsmc-announce-initiative-to-pioneer-industry-transition-to-large-format-photomasks-for-high-na-euv.html",
           "title": "ASML公司发布：与TSMC推动High-NA EUV大尺寸光罩协作",
-          "asOf": "2026-09-08"
+          "asOf": "2026-09-08",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "id": "tsm_aug_release",
@@ -737,7 +1002,7 @@
           "publishedAt": null,
           "role": "official_primary",
           "verification": "Tavily源页正文已提取；官方未显示分钟级时刻",
-          "verificationThisRun": "沿用9/10源记录，本次未重新提取原文"
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "id": "tsm_aug_pdf",
@@ -746,7 +1011,7 @@
           "publishedDate": "2026-09-10",
           "role": "official_primary",
           "verification": "PDF全文数表已提取，营收514806百万新台币",
-          "verificationThisRun": "沿用9/10源记录，本次未重新提取原文"
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "id": "tsm_timing_sa",
@@ -756,7 +1021,7 @@
           "publishedAt": "2026-09-10T06:44:00Z",
           "role": "secondary_publication_time_crosscheck",
           "verification": "搜索返回源页时间Sep 10 2026 2:44 AM ET；夏令时换算06:44 UTC",
-          "verificationThisRun": "沿用9/10源记录，本次未重新提取原文"
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "id": "tsm_timing_dj",
@@ -766,35 +1031,40 @@
           "publishedAt": "2026-09-10T10:16:00Z",
           "role": "secondary_cutoff_crosscheck",
           "verification": "正文明确8月营收同比增53%，页尾明确06:16 ET / 10:16 GMT；证明截止前已公开",
-          "verificationThisRun": "沿用9/10源记录，本次未重新提取原文"
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         }
       ],
       "ASML": [
         {
           "url": "https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results",
           "title": "ASML官方：2026 Q2销售93亿欧元并提高全年指引",
-          "asOf": "2026-07-15"
+          "asOf": "2026-07-15",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://www.intel.com/content/www/us/en/newsroom/news/intel-foundry/intel-foundry-asml-accelerate-industry-readiness-for-high-na-euv.html",
           "title": "Intel官方：与ASML推进High-NA EUV，累计处理超过100万片晶圆",
-          "asOf": "2026-09-07"
+          "asOf": "2026-09-07",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://www.tomshardware.com/tech-industry/semiconductors/intel-surpasses-one-million-high-na-euv-wafers-processed-outpaces-the-rest-of-the-industry-combined-company-also-trailblazing-giant-6-12-photomasks-to-speed-production-and-lower-costs",
           "title": "Tom's Hardware：百万片累计数包括安装认证、研发和生产用途；非百万片合格商业产出",
-          "asOf": "2026-09-09（核验日，页面发布日期未独立确认）"
+          "asOf": "2026-09-09（核验日，页面发布日期未独立确认）",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://www.globenewswire.com/news-release/2026/09/08/3357321/0/en/asml-and-tsmc-announce-initiative-to-pioneer-industry-transition-to-large-format-photomasks-for-high-na-euv.html",
           "title": "ASML公司发布：与TSMC推动High-NA EUV大尺寸光罩协作",
-          "asOf": "2026-09-08"
+          "asOf": "2026-09-08",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://www.asml.com/en/news/press-releases/2026/samsung-electronics-and-asml-expand-collaboration-on-next-generation-semiconductor-manufacturing",
           "title": "ASML官方：三星计划2028年High-NA DRAM应用，另加入12英寸光罩倡议",
           "asOf": "2026-09-08",
-          "checkedAt": "2026-09-09T12:45:07.083043+00:00"
+          "checkedAt": "2026-09-09T12:45:07.083043+00:00",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "id": "asml_intel_primary",
@@ -803,7 +1073,7 @@
           "publishedDate": "2026-09-08",
           "role": "official_primary",
           "verification": "ASML源页落款9/8；官方限定百万片用途范围",
-          "verificationThisRun": "沿用9/10源记录，本次未重新提取原文"
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "id": "asml_press_index",
@@ -812,7 +1082,7 @@
           "publishedDate": null,
           "role": "official_dynamic_index",
           "verification": "提取到的最新新闻日期为9/8；只能表示本轮检索覆盖，不证明绝对没有其他新公告",
-          "verificationThisRun": "沿用9/10源记录，本次未重新提取原文"
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "id": "asml_reprint",
@@ -821,7 +1091,7 @@
           "publishedDate": "2026-09-10",
           "role": "secondary_republication_date_check",
           "verification": "搜索摘要标9/10，但内容对应9/8原公告；不作新事实依据",
-          "verificationThisRun": "沿用9/10源记录，本次未重新提取原文"
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "id": "asml_mistral_secondary",
@@ -831,7 +1101,7 @@
           "publishedAt": "2026-09-10T08:30:00Z",
           "role": "secondary_report_unconfirmed_amount",
           "verification": "正文与时刻已提取；金额由Techzine转述ED，非ASML正式财务披露",
-          "verificationThisRun": "沿用9/10源记录，本次未重新提取原文"
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "id": "mistral_primary",
@@ -840,42 +1110,48 @@
           "publishedDate": null,
           "role": "counterparty_primary_partial_corroboration",
           "verification": "官网确认ASML参与Series D，但无ASML单独金额/持股比例；提取正文无发布日期，仅用于辅助核对，不作9/10新事实",
-          "verificationThisRun": "沿用9/10源记录，本次未重新提取原文"
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         }
       ],
       "TSLA": [
         {
           "url": "https://ir.tesla.com/press-release/tesla-releases-second-quarter-2026-financial-results",
           "title": "Tesla官方：Q2业绩发布时间为2026-07-22",
-          "asOf": "2026-07-22"
+          "asOf": "2026-07-22",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://ir.tesla.com/_flysystem/s3/sec/000162828026049213/tsla-20260722-gen.pdf",
           "title": "Tesla官方8-K附Q2 2026 Update：经营数据、利润与现金流",
-          "asOf": "2026-07-22"
+          "asOf": "2026-07-22",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://ir.tesla.com/press-release/tesla-second-quarter-2026-production-deliveries-and-deployments",
           "title": "Tesla官方：Q2产量、交付和13.5GWh储能部署",
-          "asOf": "2026-07-02"
+          "asOf": "2026-07-02",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://www.claimsjournal.com/news/national/2026/09/08/339985.htm",
           "title": "Claims Journal转载Bloomberg：Cybercab推出伴随监管自我认证审查（非监管原文）",
-          "asOf": "2026-09-08"
+          "asOf": "2026-09-08",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         }
       ],
       "PLTR": [
         {
           "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000039/a2026q2ex991pressrelease.htm",
           "title": "Palantir官方Q2 2026业绩附件EX-99.1：分部增长、GAAP/调整后利润、薪酬及指引",
-          "asOf": "2026-08-03"
+          "asOf": "2026-08-03",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         },
         {
           "url": "https://nebius.com/newsroom/palantir-and-nebius-partner-to-deliver-a-complete-sovereign-ai-stack-to-palantir-customers",
           "title": "Nebius官方：与Palantir的主权AI基础设施合作",
           "asOf": "2026-09-08",
-          "checkedAt": "2026-09-09T12:43:12.324917+00:00"
+          "checkedAt": "2026-09-09T12:43:12.324917+00:00",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         }
       ],
       "QQQ": [
@@ -883,77 +1159,99 @@
           "url": "https://www.invesco.com/qqq-etf/en/about.html",
           "title": "Invesco官方QQQ基金资料：总费率0.18%、103证券持仓",
           "asOf": "2026-09-07",
-          "checkedAt": "2026-09-09T12:43:12.324917+00:00"
+          "checkedAt": "2026-09-09T12:43:12.324917+00:00",
+          "verificationThisRun": "历史来源沿用；2026-09-16未重新获取原文。"
         }
       ]
     },
     "dataQuality": [
-      "行情价格历史截至9/14；generatedAt是文件处理时刻，不是所有字段的市场时刻。",
-      "15只个股的PE/forward PE/市值逐一匹配2026-05-17 valuation-comps静态数据；已核实validate_data.py回填不查时效，本轮隔离为null。scores/rankings未重算，value全45及固定moat/quality不是基本面新证据。",
-      "SEC结构化财务抽取出现2007/2016旧期间、YTD标成季度、毛利率超过100%、金额统一标美元等缺陷；不得以文件新时间戳称其为最新有效财务。定性论据使用带日期的既有来源。",
-      "配置PDD20%/现金80%不是实时券商仓位；没有自动交易。",
-      "ETF费率沿用有明确来源的旧记录；QQQ旧配置0.20%与9/7发行人资料0.18%不一致，定性采用后者但本次未重验。SGOV价格回报不是总回报。",
-      "定性actionContext与机械评分可能不同；Continue observing代表不立即建仓，不等于低估。",
-      "发布前将15只个股未经同期间/同币种核验的结构化财务金额/比率设为空，并标注quarantined；原始输出保留未发布本地副本，不擅自修订采集脚本。"
+      "全部日线截至2026-09-15；当前文件生成时间不是9/16盘中或收盘报价。",
+      "15只个股PE/forwardPE/市值与2026-05-17静态comps逐项匹配，已隔离为null；无可信正常化估值时不作便宜结论。",
+      "SEC抽取把旧期间/YTD与不同年份混用，部分金额币种缺证；已保留原始本地备份，15只个股发布版金额/比率隔离为null，未修订采集脚本。",
+      "模型value默认45、moat/quality为静态或缺省；本日最大Composite变化0.7分，不是护城河或盈利变化的证明。",
+      "PDD20%/现金80%为配置不是实时账户；已有集中风险时不默认补仓，无自动交易。",
+      "QQQ本地配置0.20%与旧发行人资料0.18%不一致；沿用后者并注明未今日复核。SGOV价格回报不是含息总回报。"
     ],
     "runLimitations": [
-      "PDD及Oracle官方原文访问被安全检查拦截；未绕过。",
-      "Tavily备用搜索432达计划用量上限；AAPL web_search超时。",
-      "搜索摘要包含人民币EPS误写美元、9/14收盘误作9/15、未来派息写成已支付等冲突；不采纳该类新数字或归因。",
-      "未对全部15只个股逐一联网；无新增核验的公司沿用上一版有日期有来源的论点。"
+      "PDD历史财报原文与Salesforce官网日历web_fetch因安全检查拦截；未绕过。",
+      "PDD/AAPL/CRM/NOW/AVGO搜索成功，但含旧评级、未来事件或日期错误；未核实的数字及因果未用于上调判断。",
+      "未对全部15只个股逐一联网；未联网股票的历史论点明确沿用，不声称没有新闻。",
+      "投资者会议和产品发布不等于实际收费/每股现金回报；不以搜索目标价算安全边际。",
+      "独立复核报告已落盘，但运行超时；ORCL定向搜索和NVDA搜索均超时，无新增一手财务事实。"
     ],
     "pendingVerification": {
-      "ORCL": "检索到9/10 Q1 FY2027结果；收入约$19.3B、OCI约$7.4B与现金流口径仅作待核验线索，不计入已核验基线。",
-      "NOW": "Needham目标价变更与AI治理报道的原始发布日期及内容未复核。",
-      "AAPL": "原定9/12预订是否实际执行、预订量及交付计划变化未核实。",
-      "ASML": "9/14股价下跌原因、评级变化未独立验证。"
+      "PDD": "Temu欧洲监管具体法源及成本、9月评级和商家合作原文；不把小型合作等同利润拐点。",
+      "CRM": "二手日程指向9/16美西13:00活动（9/17北京04:00），截至本轮尚未到；官方日程与材料、ARR定义及organic/FCF桥接待验。",
+      "AAPL": "预订量、交期与净新增需求关系，以及9/18交付是否执行。",
+      "NOW": "AI ACV、会议展望与评级的来源/口径；不采用搜索新增数字。",
+      "AVGO": "远期收入目标与评级原文未核验；采用已有9/2财报基线而非2028年乐观预测。",
+      "ORCL": "FY2027Q1原始现金流表、净capex、预付款及融资口径。"
     },
-    "historicalResearchIntegrated": [
-      "research/2026-09-10-semiconductor-update.json: TSM August revenue and ASML photomask/High-NA milestones"
-    ],
     "searchEvidence": [
       {
         "symbol": "PDD",
-        "query": "PDD latest news earnings analyst September 15 2026",
-        "checkedDate": "2026-09-15",
-        "status": "搜索完成，摘要有币种/行情日期错误，未采用新增数字。"
+        "query": "PDD latest news earnings analyst September 16 2026 Temu",
+        "checkedAt": "2026-09-16T12:35:43.611236+00:00",
+        "status": "搜索摘要已读，新增业绩/评级/因果未独立核验；沿用历史财报基线。"
       },
       {
-        "symbol": "ORCL",
-        "query": "ORCL latest news earnings analyst September 2026 Q1 2027 September 10 results",
-        "checkedDate": "2026-09-15",
-        "status": "搜索指向9/10已发布Q1结果；定向复查与此一致，但未取得原始报表，数字列待验证。",
-        "citation": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGd0zCjXm0xPHMMILh9YBT_RLhBGqePjyAFPsDFreyP49pDwPmUi-QdydqQpUbIPuewyWDiGvpw5AiA1UBdkBX45Qvj4TeRJx1Kz7upMJBiY9JRvqViQk3t26FaM6tDEMFwRXlbrR94PbSFEjp8mLOhrpBMoL6aP7inz_wi8zHv4DFhhL-mxD9vuLgSfSwFghe-MWfzrtJC8R5na-hgrYNp8gb7V-vFxTK4y6fRpqhzH7IKWWQrgzGN0ZJE3W7nwxS52PcQgHGmdIm0zk5Xhcy4nY9VxjTNfY15COmE6QA="
+        "symbol": "CRM",
+        "query": "CRM Salesforce latest news earnings analyst September 16 2026 investor day",
+        "checkedAt": "2026-09-16T12:35:43.611236+00:00",
+        "status": "搜索摘要已读，新增业绩/评级/因果未独立核验；沿用历史财报基线。"
       },
       {
-        "symbol": "TSM",
-        "query": "TSM latest news earnings analyst August 2026 monthly revenue September 10 2026",
-        "checkedDate": "2026-09-15",
-        "status": "搜索数值与9/10已核验研究存档一致，本次未重新提取原始来源。"
-      },
-      {
-        "symbol": "ASML",
-        "query": "ASML latest news earnings analyst September 14 15 2026 shares fall September",
-        "checkedDate": "2026-09-15",
-        "status": "未采纳摘要中的股价因果与目标价。"
+        "symbol": "AAPL",
+        "query": "AAPL latest news earnings analyst September 16 2026 iPhone preorders",
+        "checkedAt": "2026-09-16T12:35:43.611236+00:00",
+        "status": "搜索摘要已读，新增业绩/评级/因果未独立核验；沿用历史财报基线。"
       },
       {
         "symbol": "NOW",
-        "query": "NOW ServiceNow latest news earnings analyst September 14 15 2026 AI",
-        "checkedDate": "2026-09-15",
-        "status": "评级/活动日程未独立核验，未纳入已验证事实。"
+        "query": "NOW ServiceNow latest news earnings analyst September 16 2026",
+        "checkedAt": "2026-09-16T12:35:43.611236+00:00",
+        "status": "搜索摘要已读，新增业绩/评级/因果未独立核验；沿用历史财报基线。"
+      },
+      {
+        "symbol": "AVGO",
+        "query": "AVGO latest news earnings analyst September 16 2026 Broadcom",
+        "checkedAt": "2026-09-16T12:35:43.611236+00:00",
+        "status": "搜索摘要已读，新增业绩/评级/因果未独立核验；沿用历史财报基线。"
+      },
+      {
+        "symbol": "ORCL",
+        "query": "ORCL latest news earnings analyst September 16 2026",
+        "requestedCount": 3,
+        "status": "search_summary_only_not_primary_verified",
+        "reportedClaimsNotAccepted": [
+          "September 10 FY2027 Q1 revenue $19.35B and EPS $1.92 versus $1.74 consensus",
+          "Average analyst target $252.58 and Freedom Broker target cut",
+          "FY2026 capex forecast $50B and RPO $638B presented beside September FY2027 Q1 commentary",
+          "Layoffs, debt and AI customer commentary used to explain price declines"
+        ],
+        "auditFinding": "Summary mixes completed FY2026 forward-sounding capex language with FY2027 Q1 news and repeats the stored May 31 RPO figure without an updated measurement date. Reject the bundle as current financial evidence; do not assume every individual claim is false.",
+        "sourceUrls": [
+          "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmE6MwcJMA4DCOeOh0vZHBYDu8GYkY8NqSCssR0d2-gqCm_gaCGo_vswe5dSsOlfI_JJPkZ99g4lmzDezYntO6oWmSRCZ6VFNLNXatE7PuYLS1OvCL4NoOUMluSRgoxSq6McVDNpAlJHama3C-oBs=",
+          "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6ywwx7G7caMWqex3GVyn__Qtqijk947zB04lb25pD9q0jodGiLOa7vq8qe2RHdssR7qGJ5gxX3MS8vx85mKgLJzi_fqU4hyA0x3hzUmx-_QStS5orfszKw6luH0eZf7aF4aijQjw_aPCiLWP4bQ=="
+        ],
+        "sourceUrlNote": "Provider grounding redirects labelled MarketBeat and Public.com; unresolved, not article-level primary citations."
+      },
+      {
+        "symbol": "ORCL",
+        "query": "site.oracle.com \"2026-09-10\" \"earnings\" Q1 2027",
+        "requestedCount": 2,
+        "status": "timeout_no_usable_result"
       },
       {
         "symbol": "NVDA",
-        "query": "NVDA latest news earnings analyst September 14 15 2026",
-        "checkedDate": "2026-09-15",
-        "status": "未来派息被写成已发生及下跌归因不明，不采用。"
+        "query": "NVDA latest news earnings September 16 2026",
+        "requestedCount": 2,
+        "status": "timeout_no_usable_result"
       }
     ],
-    "valuationSourceAt": "2026-05-17T09:35:00+08:00",
-    "qualityCheckedAt": "2026-09-15T12:38:24.154311+00:00",
+    "actionVocabulary": "依用户本次格式统一为Consider adding / Continue observing / Not attractive；前者仅条件式小额/分批考虑，IPS交易清单与20%软上限不变。",
     "independentReview": {
-      "artifact": "data/review-2026-09-15-chips.json",
+      "artifact": "research/2026-09-16-chips-review.json",
       "scope": [
         "NVDA",
         "AMD",
@@ -962,7 +1260,15 @@
         "ASML",
         "ORCL"
       ],
-      "mode": "本地独立复核，无新增联网核验；采纳时态、FCF margin定义及配置/IPS区分；TSM月报缺口由父任务沿用9/10存档补齐。"
-    }
+      "status": "report_saved_before_review_timeout",
+      "newPrimaryFactsVerified": false,
+      "note": "报告已读取并采纳混期隔离/时态修正；独立复核运行超时，ORCL定向与NVDA搜索未完成，不声称所有原文复核成功。"
+    },
+    "newsSearchFailed": [
+      "NVDA",
+      "ORCL official follow-up"
+    ],
+    "qualityCheckedAt": "2026-09-16T12:36:48.959108+00:00",
+    "marketSnapshotNote": "所有closeUSD来自本地Yahoo日线，未重新从第二行情源交叉核验；日线日期2026-09-15。"
   }
 }
