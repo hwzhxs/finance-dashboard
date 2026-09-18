@@ -1,0 +1,348 @@
+{
+  "validatedAt": "2026-09-18T12:35:21.541170+00:00",
+  "insightsGeneratedAt": "2026-09-18T12:34:40.344212+00:00",
+  "status": "passed_with_data_quality_warnings",
+  "tickerCoverage": 20,
+  "stockCount": 15,
+  "etfCount": 5,
+  "requiredFieldsAndMergeMatch": true,
+  "priceAndScoreDataPreserved": true,
+  "valuationFieldsQuarantined": 15,
+  "automaticFinancialsQuarantined": 15,
+  "newBusinessFactsVerified": 0,
+  "priceAsOf": "2026-09-17",
+  "newsCutoff": "2026-09-18T12:30:00+00:00",
+  "warning": "原始新闻核验受访问拦截/搜索超时影响；未联网标的沿用历史。隔离不是根因修复。",
+  "automaticFinancialPeriodEvidence": {
+    "PDD": {
+      "annual": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "20-F",
+        "fiscalYear": 2025,
+        "period": "FY",
+        "start": "2025-01-01",
+        "end": "2025-12-31",
+        "filed": "2026-04-29",
+        "source": "SEC companyfacts"
+      },
+      "latest": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "6-K",
+        "fiscalYear": 2020,
+        "period": "Q3",
+        "start": "2020-01-01",
+        "end": "2020-09-30",
+        "filed": "2020-11-16",
+        "source": "SEC companyfacts"
+      }
+    },
+    "AAPL": {
+      "annual": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "10-K",
+        "fiscalYear": 2018,
+        "period": "FY",
+        "start": "2015-09-27",
+        "end": "2016-09-24",
+        "filed": "2018-11-05",
+        "source": "SEC companyfacts"
+      },
+      "latest": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": null,
+        "fiscalYear": null,
+        "period": null,
+        "start": null,
+        "end": null,
+        "filed": null,
+        "source": "SEC companyfacts"
+      }
+    },
+    "MSFT": {
+      "annual": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "10-K",
+        "fiscalYear": 2010,
+        "period": "FY",
+        "start": "2007-07-01",
+        "end": "2007-09-30",
+        "filed": "2010-07-30",
+        "source": "SEC companyfacts"
+      },
+      "latest": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "10-Q",
+        "fiscalYear": 2011,
+        "period": "Q2",
+        "start": "2009-07-01",
+        "end": "2009-12-31",
+        "filed": "2011-01-27",
+        "source": "SEC companyfacts"
+      }
+    },
+    "NVDA": {
+      "annual": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "10-K",
+        "fiscalYear": 2026,
+        "period": "FY",
+        "start": "2023-01-30",
+        "end": "2024-01-28",
+        "filed": "2026-02-25",
+        "source": "SEC companyfacts"
+      },
+      "latest": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "10-Q",
+        "fiscalYear": 2027,
+        "period": "Q2",
+        "start": "2025-01-27",
+        "end": "2025-07-27",
+        "filed": "2026-08-26",
+        "source": "SEC companyfacts"
+      }
+    },
+    "TSLA": {
+      "annual": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "10-K",
+        "fiscalYear": 2025,
+        "period": "FY",
+        "start": "2023-01-01",
+        "end": "2023-12-31",
+        "filed": "2026-01-29",
+        "source": "SEC companyfacts"
+      },
+      "latest": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "10-Q",
+        "fiscalYear": 2026,
+        "period": "Q2",
+        "start": "2025-01-01",
+        "end": "2025-06-30",
+        "filed": "2026-07-23",
+        "source": "SEC companyfacts"
+      }
+    },
+    "GOOGL": {
+      "annual": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "10-K",
+        "fiscalYear": 2025,
+        "period": "FY",
+        "start": "2023-01-01",
+        "end": "2023-12-31",
+        "filed": "2026-02-05",
+        "source": "SEC companyfacts"
+      },
+      "latest": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "10-Q",
+        "fiscalYear": 2026,
+        "period": "Q2",
+        "start": "2025-01-01",
+        "end": "2025-06-30",
+        "filed": "2026-07-23",
+        "source": "SEC companyfacts"
+      }
+    },
+    "AMD": {
+      "annual": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": null,
+        "fiscalYear": null,
+        "period": null,
+        "start": null,
+        "end": null,
+        "filed": null,
+        "source": "SEC companyfacts"
+      },
+      "latest": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "10-Q",
+        "fiscalYear": 2018,
+        "period": "Q3",
+        "start": "2017-01-01",
+        "end": "2017-09-30",
+        "filed": "2018-10-31",
+        "source": "SEC companyfacts"
+      }
+    },
+    "AVGO": {
+      "annual": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "10-K",
+        "fiscalYear": 2018,
+        "period": "FY",
+        "start": "2015-11-02",
+        "end": "2016-10-30",
+        "filed": "2018-12-21",
+        "source": "SEC companyfacts"
+      },
+      "latest": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "10-Q",
+        "fiscalYear": 2018,
+        "period": "Q3",
+        "start": "2016-10-31",
+        "end": "2017-07-30",
+        "filed": "2018-09-13",
+        "source": "SEC companyfacts"
+      }
+    },
+    "TSM": {
+      "annual": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": null,
+        "fiscalYear": null,
+        "period": null,
+        "start": null,
+        "end": null,
+        "filed": null,
+        "source": "SEC companyfacts"
+      },
+      "latest": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": null,
+        "fiscalYear": null,
+        "period": null,
+        "start": null,
+        "end": null,
+        "filed": null,
+        "source": "SEC companyfacts"
+      }
+    },
+    "ASML": {
+      "annual": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "20-F",
+        "fiscalYear": 2025,
+        "period": "FY",
+        "start": "2023-01-01",
+        "end": "2023-12-31",
+        "filed": "2026-02-25",
+        "source": "SEC companyfacts"
+      },
+      "latest": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": null,
+        "fiscalYear": null,
+        "period": null,
+        "start": null,
+        "end": null,
+        "filed": null,
+        "source": "SEC companyfacts"
+      }
+    },
+    "AMZN": {
+      "annual": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "10-K",
+        "fiscalYear": 2025,
+        "period": "FY",
+        "start": "2023-01-01",
+        "end": "2023-12-31",
+        "filed": "2026-02-06",
+        "source": "SEC companyfacts"
+      },
+      "latest": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "10-Q",
+        "fiscalYear": 2026,
+        "period": "Q2",
+        "start": "2025-01-01",
+        "end": "2025-06-30",
+        "filed": "2026-07-31",
+        "source": "SEC companyfacts"
+      }
+    },
+    "ORCL": {
+      "annual": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "10-K",
+        "fiscalYear": 2026,
+        "period": "FY",
+        "start": "2023-06-01",
+        "end": "2024-05-31",
+        "filed": "2026-06-22",
+        "source": "SEC companyfacts"
+      },
+      "latest": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "10-Q",
+        "fiscalYear": 2018,
+        "period": "Q3",
+        "start": "2016-06-01",
+        "end": "2017-02-28",
+        "filed": "2018-03-21",
+        "source": "SEC companyfacts"
+      }
+    },
+    "PLTR": {
+      "annual": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "10-K",
+        "fiscalYear": 2025,
+        "period": "FY",
+        "start": "2023-01-01",
+        "end": "2023-12-31",
+        "filed": "2026-02-17",
+        "source": "SEC companyfacts"
+      },
+      "latest": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "10-Q",
+        "fiscalYear": 2026,
+        "period": "Q2",
+        "start": "2025-01-01",
+        "end": "2025-06-30",
+        "filed": "2026-08-04",
+        "source": "SEC companyfacts"
+      }
+    },
+    "NOW": {
+      "annual": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "10-K",
+        "fiscalYear": 2017,
+        "period": "FY",
+        "start": "2015-01-01",
+        "end": "2015-12-31",
+        "filed": "2018-02-28",
+        "source": "SEC companyfacts"
+      },
+      "latest": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "10-Q",
+        "fiscalYear": 2018,
+        "period": "Q2",
+        "start": "2017-01-01",
+        "end": "2017-06-30",
+        "filed": "2018-08-08",
+        "source": "SEC companyfacts"
+      }
+    },
+    "CRM": {
+      "annual": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "10-K",
+        "fiscalYear": 2017,
+        "period": "FY",
+        "start": "2015-02-01",
+        "end": "2015-04-30",
+        "filed": "2017-03-06",
+        "source": "SEC companyfacts"
+      },
+      "latest": {
+        "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+        "form": "10-Q",
+        "fiscalYear": 2015,
+        "period": "Q3",
+        "start": "2013-02-01",
+        "end": "2013-10-31",
+        "filed": "2014-11-26",
+        "source": "SEC companyfacts"
+      }
+    }
+  }
+}
