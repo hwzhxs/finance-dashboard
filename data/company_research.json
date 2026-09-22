@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-21T12:34:39.820462+00:00",
-  "generatedAtLocal": "2026-09-21 20:34:39 CST",
+  "generatedAt": "2026-09-22T12:39:22.164428+00:00",
+  "generatedAtLocal": "2026-09-22 20:39:22 CST",
   "sources": {
     "secCompanyFacts": "https://www.sec.gov/edgar/sec-api-documentation",
     "notes": "Financials from SEC EDGAR. Qualitative analysis in agent-insights.json."
@@ -16,10 +16,10 @@
           "source": "行情 chart 数据 + 本地配置"
         },
         "expenseRatioPct": 0.0945,
-        "return1mPct": -0.9583121135651074,
-        "return3mPct": 2.3240488792879876,
-        "return1yPct": 14.764198950143825,
-        "volatilityPct": 12.927958594551608,
+        "return1mPct": 1.429323992003484,
+        "return3mPct": 5.441803481578078,
+        "return1yPct": 15.994836669822288,
+        "volatilityPct": 13.007941299614659,
         "maxDrawdownPct": -9.133132097249053
       },
       "businessModel": "跟踪 S&P 500，提供美国大盘权益和活跃交易工具；经济敞口与 VOO 接近。",
@@ -40,6 +40,23 @@
         "actionContext": "Not attractive",
         "todayNote": null,
         "etfQuestion": "不是反对 S&P 500，而是本组合没有用更高持有费用换交易功能的明确需求；长期新资金更偏 VOO 或 VTI。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-22T12:39:21.808014+00:00",
+        "fundamentalBasis": "ETF功能沿用历史记录；发行人最新估值、费率/SEC yield未重新核验。",
+        "newsStatus": "not_applicable_etf",
+        "priceAsOf": "2026-09-21",
+        "closeUSD": 773.5,
+        "priceChangePct": 1.55,
+        "quotePriceUSD": 773.5,
+        "quoteTimestampAvailable": false,
+        "priceBasis": "采用最后完整日线及前一日线计算，非9/22实时价格；quote无单独时间戳。",
+        "composite": 71.5,
+        "compositeChangeVsPrevious": 0.7,
+        "modelAction": "Continue observing",
+        "scoreCaveat": "原模型评分未重算；股票value默认45且moat/quality含静态输入，分数变化不是基本面或安全边际证明。",
+        "valuationStatus": "not_independently_verified",
+        "researchNote": "未单独搜索，沿用历史论点；todayNote为null只表示未核验新增重大变化，不证明没有公告。"
       }
     },
     "QQQ": {
@@ -51,12 +68,17 @@
           "basis": "价格与表现为最近交易数据",
           "source": "行情 chart 数据 + 本地配置"
         },
-        "expenseRatioPct": 0.2,
-        "return1mPct": 0.7499155107010491,
-        "return3mPct": -2.2359238060925657,
-        "return1yPct": 20.37207668219658,
-        "volatilityPct": 19.753109004485793,
-        "maxDrawdownPct": -12.1883680975564
+        "expenseRatioPct": 0.18,
+        "return1mPct": 4.295778535436123,
+        "return3mPct": 3.8982618002295855,
+        "return1yPct": 23.12686078927111,
+        "volatilityPct": 19.93356518986905,
+        "maxDrawdownPct": -12.1883680975564,
+        "expenseRatioBasis": {
+          "source": "https://www.invesco.com/qqq-etf/en/about.html",
+          "asOf": "2026-09-07",
+          "verification": "历史已核验发行人记录沿用，非今日新核验；watchlist配置0.20%未改，评分未重算。"
+        }
       },
       "businessModel": "跟踪 Nasdaq-100，集中于大型非金融公司，偏成长和科技；是权益 satellite 而不是完整市场。",
       "moatEvidence": "聚合平台、软件和半导体优势，但指数本身没有独立企业 moat；上市地点和排除金融的规则也不是质量保证。",
@@ -74,8 +96,25 @@
           "本地缺少可靠指数估值，轻微回撤不是建仓折扣；若 core 已持 VTI/VOO，加 QQQ 就是在主动超配成长。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": null,
+        "todayNote": "本轮新增本地日线截至美东2026-09-21：收盘$741.47、+2.77%；非9/22实时行情，未作第二报价源核验。Composite 70.0，较昨日研究版+1.1。组合反弹是行情变化，不是指数已低估。VTI/VOO已有大型科技敞口，增配QQQ应当明确是成长超配而非新增跨资产分散。",
         "etfQuestion": "只有明确愿意多承担成长/利率敏感性，并有单独仓位预算时才优于 VTI/VOO 的中性配置；当前不以 AI 热度推动增配。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-22T12:39:21.808014+00:00",
+        "fundamentalBasis": "ETF功能沿用历史记录；发行人最新估值、费率/SEC yield未重新核验。",
+        "newsStatus": "not_applicable_etf",
+        "priceAsOf": "2026-09-21",
+        "closeUSD": 741.47,
+        "priceChangePct": 2.77,
+        "quotePriceUSD": 741.47,
+        "quoteTimestampAvailable": false,
+        "priceBasis": "采用最后完整日线及前一日线计算，非9/22实时价格；quote无单独时间戳。",
+        "composite": 70.0,
+        "compositeChangeVsPrevious": 1.1,
+        "modelAction": "Continue observing",
+        "scoreCaveat": "原模型评分未重算；股票value默认45且moat/quality含静态输入，分数变化不是基本面或安全边际证明。",
+        "valuationStatus": "not_independently_verified",
+        "researchNote": "未单独搜索，沿用历史论点；todayNote为null只表示未核验新增重大变化，不证明没有公告。"
       }
     },
     "VOO": {
@@ -88,10 +127,10 @@
           "source": "行情 chart 数据 + 本地配置"
         },
         "expenseRatioPct": 0.03,
-        "return1mPct": -0.725685595414205,
-        "return3mPct": 2.2853890495399876,
-        "return1yPct": 14.711169977783989,
-        "volatilityPct": 12.910790766918748,
+        "return1mPct": 1.6790087683890897,
+        "return3mPct": 5.3878228397671535,
+        "return1yPct": 15.94443652387536,
+        "volatilityPct": 12.99241540614742,
         "maxDrawdownPct": -9.187121839889823
       },
       "businessModel": "跟踪 S&P 500，分享美国大型上市公司盈利和分红，适合作低成本长期权益 core。",
@@ -107,11 +146,28 @@
         ],
         "concerns": [
           "大科技已占重要位置，再叠加 QQQ/NVDA/MSFT 不会线性增加分散。",
-          "本轮日线截至美东9/18，近月价格回报不含分红；回撤或反弹均不证明低估。只有备用金独立、资金期限足够长且能承受权益回撤时才适合分批配置。VTI与VOO重叠度高，不必为凑齐ETF而重复购买。"
+          "本轮日线截至美东9/21；近月价格回报不含分红，反弹不证明便宜。只有备用金独立、资金期限足够长且能承受权益回撤时才适合分批配置。VTI与VOO高度重叠，不必为凑齐ETF重复购买。"
         ],
         "actionContext": "Consider adding",
         "todayNote": null,
         "etfQuestion": "相对 VTI 是大盘纯度更高、覆盖更窄的取舍，不是确定跑赢。长期 core 在 VTI/VOO 中选择一个即可，不必重复配置。 Consider adding 仅指满足长期资金与回撤预算后考虑分批配置，不是当前估值已便宜或自动下单。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-22T12:39:21.808014+00:00",
+        "fundamentalBasis": "ETF功能沿用历史记录；发行人最新估值、费率/SEC yield未重新核验。",
+        "newsStatus": "not_applicable_etf",
+        "priceAsOf": "2026-09-21",
+        "closeUSD": 712.78,
+        "priceChangePct": 1.57,
+        "quotePriceUSD": 712.78,
+        "quoteTimestampAvailable": false,
+        "priceBasis": "采用最后完整日线及前一日线计算，非9/22实时价格；quote无单独时间戳。",
+        "composite": 71.2,
+        "compositeChangeVsPrevious": 0.6,
+        "modelAction": "Continue observing",
+        "scoreCaveat": "原模型评分未重算；股票value默认45且moat/quality含静态输入，分数变化不是基本面或安全边际证明。",
+        "valuationStatus": "not_independently_verified",
+        "researchNote": "未单独搜索，沿用历史论点；todayNote为null只表示未核验新增重大变化，不证明没有公告。"
       }
     },
     "VTI": {
@@ -124,10 +180,10 @@
           "source": "行情 chart 数据 + 本地配置"
         },
         "expenseRatioPct": 0.03,
-        "return1mPct": -1.2000309681265975,
-        "return3mPct": 1.7949608635909442,
-        "return1yPct": 14.307024079004504,
-        "volatilityPct": 13.177232119575418,
+        "return1mPct": 1.200281399017622,
+        "return3mPct": 4.784160932768855,
+        "return1yPct": 15.533869831874835,
+        "volatilityPct": 13.252537563517564,
         "maxDrawdownPct": -9.20266768110406
       },
       "businessModel": "持有美国全市场股票，收益来自企业盈利、分红与估值变化；适合作长期美元权益 core。",
@@ -143,11 +199,28 @@
         ],
         "concerns": [
           "不等于全天候：美国股票和美元风险仍在，不能代替非美资产、债券与现金需求。",
-          "本轮日线截至美东9/18，近月价格回报不含分红；回撤或反弹均不证明低估。只有备用金独立、资金期限足够长且能承受权益回撤时才适合分批配置。VTI与VOO重叠度高，不必为凑齐ETF而重复购买。"
+          "本轮日线截至美东9/21；近月价格回报不含分红，反弹不证明便宜。只有备用金独立、资金期限足够长且能承受权益回撤时才适合分批配置。VTI与VOO高度重叠，不必为凑齐ETF重复购买。"
         ],
         "actionContext": "Consider adding",
         "todayNote": null,
         "etfQuestion": "默认比较基准；要选 VOO 是主动省去中小盘，选 QQQ 是主动增加成长集中。先满足期限与回撤预算再分批配置，不需要先猜市场底。 Consider adding 仅指满足长期资金与回撤预算后考虑分批配置，不是当前估值已便宜或自动下单。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-22T12:39:21.808014+00:00",
+        "fundamentalBasis": "ETF功能沿用历史记录；发行人最新估值、费率/SEC yield未重新核验。",
+        "newsStatus": "not_applicable_etf",
+        "priceAsOf": "2026-09-21",
+        "closeUSD": 381.1,
+        "priceChangePct": 1.51,
+        "quotePriceUSD": 381.1,
+        "quoteTimestampAvailable": false,
+        "priceBasis": "采用最后完整日线及前一日线计算，非9/22实时价格；quote无单独时间戳。",
+        "composite": 71.0,
+        "compositeChangeVsPrevious": 0.6,
+        "modelAction": "Continue observing",
+        "scoreCaveat": "原模型评分未重算；股票value默认45且moat/quality含静态输入，分数变化不是基本面或安全边际证明。",
+        "valuationStatus": "not_independently_verified",
+        "researchNote": "未单独搜索，沿用历史论点；todayNote为null只表示未核验新增重大变化，不证明没有公告。"
       }
     },
     "SGOV": {
@@ -160,10 +233,10 @@
           "source": "行情 chart 数据 + 本地配置"
         },
         "expenseRatioPct": 0.09,
-        "return1mPct": 0.0,
-        "return3mPct": -0.00994248149321919,
-        "return1yPct": -0.029821514482542,
-        "volatilityPct": 1.0276355077198414,
+        "return1mPct": 0.00994347012088781,
+        "return3mPct": -0.009941493062115558,
+        "return1yPct": -0.0198810096550317,
+        "volatilityPct": 1.0276849618016655,
         "maxDrawdownPct": -0.4368570652040549
       },
       "businessModel": "持有 0–3 个月美国国债，靠短端利息提供美元现金管理；不是权益增长资产或保本银行存款。",
@@ -184,6 +257,23 @@
         "actionContext": "Consider adding",
         "todayNote": null,
         "etfQuestion": "不和 VTI/VOO 争长期复利，只服务短期美元现金需求。先区分生活备用金、近期用途与长期资金，再决定是否用它停车。 Consider adding 仅适用于短期美元闲置资金，不把80%配置现金机械全换成SGOV。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-22T12:39:21.808014+00:00",
+        "fundamentalBasis": "ETF功能沿用历史记录；发行人最新估值、费率/SEC yield未重新核验。",
+        "newsStatus": "not_applicable_etf",
+        "priceAsOf": "2026-09-21",
+        "closeUSD": 100.6,
+        "priceChangePct": 0.01,
+        "quotePriceUSD": 100.6,
+        "quoteTimestampAvailable": false,
+        "priceBasis": "采用最后完整日线及前一日线计算，非9/22实时价格；quote无单独时间戳。",
+        "composite": 67.3,
+        "compositeChangeVsPrevious": 0.0,
+        "modelAction": "Cash management candidate",
+        "scoreCaveat": "原模型评分未重算；股票value默认45且moat/quality含静态输入，分数变化不是基本面或安全边际证明。",
+        "valuationStatus": "not_independently_verified",
+        "researchNote": "未单独搜索，沿用历史论点；todayNote为null只表示未核验新增重大变化，不证明没有公告。"
       }
     },
     "PDD": {
@@ -224,7 +314,7 @@
           "freeCashFlow": null,
           "freeCashFlowText": "n/a",
           "period": {
-            "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+            "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
             "form": "6-K",
             "fiscalYear": 2020,
             "period": "Q3",
@@ -235,7 +325,7 @@
           }
         },
         "period": {
-          "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+          "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
           "form": "20-F",
           "fiscalYear": 2025,
           "period": "FY",
@@ -246,8 +336,8 @@
         },
         "dataQuality": {
           "status": "quarantined",
-          "checkedAt": "2026-09-21T12:35:51.504180+00:00",
-          "reason": "自动SEC抽取存在历史比较期/YTD、币种及跨期比率问题；金额/比率未有效核验，不作估值。定性研究沿用带日期历史来源，非本轮重验。"
+          "checkedAt": "2026-09-22T12:39:51.815780+00:00",
+          "reason": "旧比较期/YTD或币种混配，不能作当期财务或估值；带日期历史经营证据见定性分析。采集根因未修复。"
         }
       },
       "businessModel": "拼多多与 Temu 连接商家和消费者，靠在线营销与交易服务收费；集团不单列 Temu 利润，不能把集团盈利直接当成海外盈利。",
@@ -265,11 +355,28 @@
         "concerns": [
           "营销服务约 +3.4% 显示国内成熟平台增长降档；低价优势若靠持续补贴维持，不能享受软件式估值。",
           "归母净利 RMB27.2B、-12%，但不能全部归咎经营恶化：Q2 其他损失净额 RMB7.399B，上年为其他收入 RMB0.119B，另有税项等影响；非经营损益波动降低利润可预测性。",
-          "Temu分部利润和单位经济披露不足，合规成本未必只是过渡性；若配置仍是20%，补仓会放大单一中国电商风险。本轮输入PE/市值仍逐项匹配5/17旧comps，已隔离，不能用9.9x旧PE为当下价格寻找低估理由。"
+          "Temu分部利润和单位经济披露不足，合规成本未必只是过渡性；若配置仍是20%，补仓会放大单一中国电商风险。本轮PE/市值仍逐项匹配2026-05-17旧comps，已隔离，不能用9.9x旧PE为当下价格寻找低估理由。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "本轮新增本地行情为美东2026-09-18收盘$78.90、+1.51%，不是9/21实时行情。Composite 40.7（较9/18研究版+0.2）。近月价格回报-12.53%。配置20%若仍有效已达IPS软上限；这次反弹不证明Temu单位经济改善，不默认加仓。",
+        "todayNote": "本轮新增本地日线截至美东2026-09-21：收盘$79.30、+0.51%；非9/22实时行情，未作第二报价源核验。Composite 41.1，较昨日研究版+0.4。近月价格回报-11.42%。日线$79.30与无独立时戳quote $79.295略有差异，本判断采用完整日线；配置20%若仍有效已达软上限，不默认加仓。反弹不证明Temu单均利润改善。",
         "etfQuestion": "只有国内稳定现金流与 Temu 可持续利润的保守估值明显高于市值，才有理由承担比 VTI/VOO 更高的监管、治理和集中风险。现有配置已充分表达观点，尚无证据支持继续加集中度。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-22T12:39:21.808014+00:00",
+        "fundamentalBasis": "沿用2026-09-21版本中带日期、币种和来源的历史研究；本轮未重新取得财报原文，不将旧财报写成9/22新事实。",
+        "newsStatus": "searched_unverified",
+        "priceAsOf": "2026-09-21",
+        "closeUSD": 79.3,
+        "priceChangePct": 0.51,
+        "quotePriceUSD": 79.295,
+        "quoteTimestampAvailable": false,
+        "priceBasis": "采用最后完整日线及前一日线计算，非9/22实时价格；quote无单独时间戳。",
+        "composite": 41.1,
+        "compositeChangeVsPrevious": 0.4,
+        "modelAction": "Continue observing",
+        "scoreCaveat": "原模型评分未重算；股票value默认45且moat/quality含静态输入，分数变化不是基本面或安全边际证明。",
+        "valuationStatus": "stale_snapshot_quarantined",
+        "researchNote": "搜索重述8/24财报，出现Temu自有品牌与评级线索；原财报正文安全拦截。品牌投入金额/首次日期、下一财报日均未核验，不纳入新事实。搜索把$78.90归到9/21，与本地9/18日线对应，拒绝沿用该行情日期。"
       }
     },
     "AAPL": {
@@ -310,7 +417,7 @@
           "freeCashFlow": null,
           "freeCashFlowText": "n/a",
           "period": {
-            "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+            "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
             "form": null,
             "fiscalYear": null,
             "period": null,
@@ -321,7 +428,7 @@
           }
         },
         "period": {
-          "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+          "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
           "form": "10-K",
           "fiscalYear": 2018,
           "period": "FY",
@@ -332,8 +439,8 @@
         },
         "dataQuality": {
           "status": "quarantined",
-          "checkedAt": "2026-09-21T12:35:51.504180+00:00",
-          "reason": "自动SEC抽取存在历史比较期/YTD、币种及跨期比率问题；金额/比率未有效核验，不作估值。定性研究沿用带日期历史来源，非本轮重验。"
+          "checkedAt": "2026-09-22T12:39:51.815780+00:00",
+          "reason": "旧比较期/YTD或币种混配，不能作当期财务或估值；带日期历史经营证据见定性分析。采集根因未修复。"
         }
       },
       "businessModel": "以 iPhone、Mac、iPad 和可穿戴硬件获客，通过 App Store、云存储、支付及内容服务持续变现。核心是软硬件一体化与用户生态，而非单独出售大模型算力。",
@@ -356,6 +463,23 @@
         "actionContext": "Continue observing",
         "todayNote": null,
         "etfQuestion": "VTI/VOO 已有 Apple 暴露。单买必须证明正常化服务现金流加新品净增量被低估，而非重复买发布会热度；Duo的高ASP、良率和内部替代尚未兑现，暂不因新品增加集中度。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-22T12:39:21.808014+00:00",
+        "fundamentalBasis": "沿用2026-09-21版本中带日期、币种和来源的历史研究；本轮未重新取得财报原文，不将旧财报写成9/22新事实。",
+        "newsStatus": "search_failed",
+        "priceAsOf": "2026-09-21",
+        "closeUSD": 338.98,
+        "priceChangePct": 0.85,
+        "quotePriceUSD": 338.98,
+        "quoteTimestampAvailable": false,
+        "priceBasis": "采用最后完整日线及前一日线计算，非9/22实时价格；quote无单独时间戳。",
+        "composite": 65.1,
+        "compositeChangeVsPrevious": 0.5,
+        "modelAction": "Continue observing",
+        "scoreCaveat": "原模型评分未重算；股票value默认45且moat/quality含静态输入，分数变化不是基本面或安全边际证明。",
+        "valuationStatus": "stale_snapshot_quarantined",
+        "researchNote": "独立搜索返回503 UNAVAILABLE；Pro原定9/18上市后的真实销量/交付未核验，Duo日程仍是历史计划。"
       }
     },
     "MSFT": {
@@ -396,7 +520,7 @@
           "freeCashFlow": null,
           "freeCashFlowText": "n/a",
           "period": {
-            "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+            "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
             "form": "10-Q",
             "fiscalYear": 2011,
             "period": "Q2",
@@ -407,7 +531,7 @@
           }
         },
         "period": {
-          "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+          "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
           "form": "10-K",
           "fiscalYear": 2010,
           "period": "FY",
@@ -418,8 +542,8 @@
         },
         "dataQuality": {
           "status": "quarantined",
-          "checkedAt": "2026-09-21T12:35:51.504180+00:00",
-          "reason": "自动SEC抽取存在历史比较期/YTD、币种及跨期比率问题；金额/比率未有效核验，不作估值。定性研究沿用带日期历史来源，非本轮重验。"
+          "checkedAt": "2026-09-22T12:39:51.815780+00:00",
+          "reason": "旧比较期/YTD或币种混配，不能作当期财务或估值；带日期历史经营证据见定性分析。采集根因未修复。"
         }
       },
       "businessModel": "以 Microsoft 365、企业服务器与 Dynamics 的订阅/许可形成客户基础，再通过 Azure 云消费、安全产品及 Copilot 扩展单客收入；收入来源横跨基础设施与企业应用，不能把全部云增长都归为生成式 AI。",
@@ -442,6 +566,23 @@
         "actionContext": "Continue observing",
         "todayNote": null,
         "etfQuestion": "VTI/VOO/QQQ 已提供微软暴露。单买必须证明 Azure 与 Copilot 的增量现金回报足以补偿集中度和资本投入，而不是仅凭高护城河评分；在最新正常化估值未核验前，不把旧 PE 或券商目标价当安全边际。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-22T12:39:21.808014+00:00",
+        "fundamentalBasis": "沿用2026-09-21版本中带日期、币种和来源的历史研究；本轮未重新取得财报原文，不将旧财报写成9/22新事实。",
+        "newsStatus": "not_individually_searched",
+        "priceAsOf": "2026-09-21",
+        "closeUSD": 501.61,
+        "priceChangePct": 1.59,
+        "quotePriceUSD": 501.61,
+        "quoteTimestampAvailable": false,
+        "priceBasis": "采用最后完整日线及前一日线计算，非9/22实时价格；quote无单独时间戳。",
+        "composite": 67.6,
+        "compositeChangeVsPrevious": 0.3,
+        "modelAction": "Continue observing",
+        "scoreCaveat": "原模型评分未重算；股票value默认45且moat/quality含静态输入，分数变化不是基本面或安全边际证明。",
+        "valuationStatus": "stale_snapshot_quarantined",
+        "researchNote": "未单独搜索，沿用历史论点；todayNote为null只表示未核验新增重大变化，不证明没有公告。"
       }
     },
     "NVDA": {
@@ -482,7 +623,7 @@
           "freeCashFlow": null,
           "freeCashFlowText": "n/a",
           "period": {
-            "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+            "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
             "form": "10-Q",
             "fiscalYear": 2027,
             "period": "Q2",
@@ -493,7 +634,7 @@
           }
         },
         "period": {
-          "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+          "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
           "form": "10-K",
           "fiscalYear": 2026,
           "period": "FY",
@@ -504,8 +645,8 @@
         },
         "dataQuality": {
           "status": "quarantined",
-          "checkedAt": "2026-09-21T12:35:51.504180+00:00",
-          "reason": "自动SEC抽取存在历史比较期/YTD、币种及跨期比率问题；金额/比率未有效核验，不作估值。定性研究沿用带日期历史来源，非本轮重验。"
+          "checkedAt": "2026-09-22T12:39:51.815780+00:00",
+          "reason": "旧比较期/YTD或币种混配，不能作当期财务或估值；带日期历史经营证据见定性分析。采集根因未修复。"
         }
       },
       "businessModel": "以 GPU、CPU、高速网络、整机系统与 CUDA 软件提供加速计算平台，收入主要来自数据中心；游戏与边缘计算补充市场覆盖。核心经济性来自芯片、互联与软件协同，而非单卖 GPU。",
@@ -526,8 +667,25 @@
           "云客户的 AI 投资回报与自研 ASIC 替代会共同影响长期订单；本次未核实可比估值与盈利预测口径，不能沿用旧 forward PE 推出低估结论。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "本轮新增本地行情为美东2026-09-18收盘$222.27、+1.34%，不是9/21实时行情。Composite 66.7（较9/18研究版+0.6）。股价和分数回升不替代回款；继续对照历史Q3收入/毛利指引与应收、库存、经营现金流。",
+        "todayNote": null,
         "etfQuestion": "相较 QQQ，单持 NVDA 把回报更集中于加速计算平台与盈利兑现，也把回款、出口限制和产品切换风险集中化。若不能给出比 QQQ/VTI 更有把握的现金流与估值假设，就不具备增加单股仓位的充分理由；任何新仓仍需清单和小仓起步。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-22T12:39:21.808014+00:00",
+        "fundamentalBasis": "沿用2026-09-21版本中带日期、币种和来源的历史研究；本轮未重新取得财报原文，不将旧财报写成9/22新事实。",
+        "newsStatus": "not_individually_searched",
+        "priceAsOf": "2026-09-21",
+        "closeUSD": 227.38,
+        "priceChangePct": 2.3,
+        "quotePriceUSD": 227.38,
+        "quoteTimestampAvailable": false,
+        "priceBasis": "采用最后完整日线及前一日线计算，非9/22实时价格；quote无单独时间戳。",
+        "composite": 67.6,
+        "compositeChangeVsPrevious": 0.9,
+        "modelAction": "Continue observing",
+        "scoreCaveat": "原模型评分未重算；股票value默认45且moat/quality含静态输入，分数变化不是基本面或安全边际证明。",
+        "valuationStatus": "stale_snapshot_quarantined",
+        "researchNote": "未单独搜索，沿用历史论点；todayNote为null只表示未核验新增重大变化，不证明没有公告。"
       }
     },
     "TSLA": {
@@ -568,7 +726,7 @@
           "freeCashFlow": null,
           "freeCashFlowText": "n/a",
           "period": {
-            "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+            "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
             "form": "10-Q",
             "fiscalYear": 2026,
             "period": "Q2",
@@ -579,7 +737,7 @@
           }
         },
         "period": {
-          "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+          "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
           "form": "10-K",
           "fiscalYear": 2025,
           "period": "FY",
@@ -590,8 +748,8 @@
         },
         "dataQuality": {
           "status": "quarantined",
-          "checkedAt": "2026-09-21T12:35:51.504180+00:00",
-          "reason": "自动SEC抽取存在历史比较期/YTD、币种及跨期比率问题；金额/比率未有效核验，不作估值。定性研究沿用带日期历史来源，非本轮重验。"
+          "checkedAt": "2026-09-22T12:39:51.815780+00:00",
+          "reason": "旧比较期/YTD或币种混配，不能作当期财务或估值；带日期历史经营证据见定性分析。采集根因未修复。"
         }
       },
       "businessModel": "主营电动车、储能及服务，同时投入FSD、Robotaxi、Cybercab和Optimus。汽车与储能已有规模收入，自动驾驶/机器人业务应分别评估商业化阶段，不能把未来可选业务全部当成现有盈利。",
@@ -612,8 +770,25 @@
           "2026-09-08 Bloomberg转载报道指NHTSA审查约1,000辆Cybercab的联邦安全标准自我认证依据；这是审查而非最终违法裁定，但说明规模化面临独立于技术演示的合规门槛。"
         ],
         "actionContext": "Not attractive",
-        "todayNote": "本轮新增本地行情为美东2026-09-18收盘$364.27、-0.53%，不是9/21实时行情。Composite 48.1（较9/18研究版-0.9）。分数下降不证明监管风险新增。仍需汽车正常化利润、capex后FCF及无人运营单位经济支撑独立持股。",
+        "todayNote": "本轮新增本地日线截至美东2026-09-21：收盘$375.30、+3.03%；非9/22实时行情，未作第二报价源核验。Composite 49.5，较昨日研究版+1.4。与PLTR并列本轮最大评分增幅，但汽车正常化利润、capex后FCF与无人运营单位经济尚未出现本轮可验证的新证据，Not attractive不变。",
         "etfQuestion": "VTI/VOO/QQQ可提供分散组合内的TSLA相关敞口；单独加仓意味着更集中承担汽车竞争、资本开支及自动驾驶监管风险。若不能用可验证现金流支持优于ETF的回报预期，就不以Robotaxi或机器人叙事作为建仓依据。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-22T12:39:21.808014+00:00",
+        "fundamentalBasis": "沿用2026-09-21版本中带日期、币种和来源的历史研究；本轮未重新取得财报原文，不将旧财报写成9/22新事实。",
+        "newsStatus": "searched_unverified",
+        "priceAsOf": "2026-09-21",
+        "closeUSD": 375.3,
+        "priceChangePct": 3.03,
+        "quotePriceUSD": 375.3,
+        "quoteTimestampAvailable": false,
+        "priceBasis": "采用最后完整日线及前一日线计算，非9/22实时价格；quote无单独时间戳。",
+        "composite": 49.5,
+        "compositeChangeVsPrevious": 1.4,
+        "modelAction": "Not attractive for now",
+        "scoreCaveat": "原模型评分未重算；股票value默认45且moat/quality含静态输入，分数变化不是基本面或安全边际证明。",
+        "valuationStatus": "stale_snapshot_quarantined",
+        "researchNote": "搜索列出Fitch首次评级、FSD/监管期限与产品计划；Fitch引文抓取安全拦截，未核实首发日期、监管原文和授权范围；评级统计口径亦不一，不新增经营事实。"
       }
     },
     "GOOGL": {
@@ -654,7 +829,7 @@
           "freeCashFlow": null,
           "freeCashFlowText": "n/a",
           "period": {
-            "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+            "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
             "form": "10-Q",
             "fiscalYear": 2026,
             "period": "Q2",
@@ -665,7 +840,7 @@
           }
         },
         "period": {
-          "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+          "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
           "form": "10-K",
           "fiscalYear": 2025,
           "period": "FY",
@@ -676,8 +851,8 @@
         },
         "dataQuality": {
           "status": "quarantined",
-          "checkedAt": "2026-09-21T12:35:51.504180+00:00",
-          "reason": "自动SEC抽取存在历史比较期/YTD、币种及跨期比率问题；金额/比率未有效核验，不作估值。定性研究沿用带日期历史来源，非本轮重验。"
+          "checkedAt": "2026-09-22T12:39:51.815780+00:00",
+          "reason": "旧比较期/YTD或币种混配，不能作当期财务或估值；带日期历史经营证据见定性分析。采集根因未修复。"
         }
       },
       "businessModel": "Search 与 YouTube 广告提供核心收入，订阅及设备增加用户变现，Google Cloud 销售云服务、AI 基础设施与企业解决方案。官方电话会确认 Q2 2026 开始向客户数据中心交付并确认 TPU 系统销售收入；硬件系统销售应与经常性云消费区分。",
@@ -700,6 +875,23 @@
         "actionContext": "Continue observing",
         "todayNote": null,
         "etfQuestion": "相较 VTI/VOO，单买增加搜索监管、模型竞争和 capex 回报风险。只有正常化搜索/云现金流相对价格有明确优势时才有集中持有的理由；不能用投资收益拉低的 PE 或 backlog 总额替代估值。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-22T12:39:21.808014+00:00",
+        "fundamentalBasis": "沿用2026-09-21版本中带日期、币种和来源的历史研究；本轮未重新取得财报原文，不将旧财报写成9/22新事实。",
+        "newsStatus": "not_individually_searched",
+        "priceAsOf": "2026-09-21",
+        "closeUSD": 354.97,
+        "priceChangePct": 1.55,
+        "quotePriceUSD": 354.97,
+        "quoteTimestampAvailable": false,
+        "priceBasis": "采用最后完整日线及前一日线计算，非9/22实时价格；quote无单独时间戳。",
+        "composite": 66.7,
+        "compositeChangeVsPrevious": 0.8,
+        "modelAction": "Continue observing",
+        "scoreCaveat": "原模型评分未重算；股票value默认45且moat/quality含静态输入，分数变化不是基本面或安全边际证明。",
+        "valuationStatus": "stale_snapshot_quarantined",
+        "researchNote": "未单独搜索，沿用历史论点；todayNote为null只表示未核验新增重大变化，不证明没有公告。"
       }
     },
     "AMD": {
@@ -740,7 +932,7 @@
           "freeCashFlow": null,
           "freeCashFlowText": "n/a",
           "period": {
-            "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+            "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
             "form": "10-Q",
             "fiscalYear": 2018,
             "period": "Q3",
@@ -751,7 +943,7 @@
           }
         },
         "period": {
-          "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+          "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
           "form": null,
           "fiscalYear": null,
           "period": null,
@@ -762,8 +954,8 @@
         },
         "dataQuality": {
           "status": "quarantined",
-          "checkedAt": "2026-09-21T12:35:51.504180+00:00",
-          "reason": "自动SEC抽取存在历史比较期/YTD、币种及跨期比率问题；金额/比率未有效核验，不作估值。定性研究沿用带日期历史来源，非本轮重验。"
+          "checkedAt": "2026-09-22T12:39:51.815780+00:00",
+          "reason": "旧比较期/YTD或币种混配，不能作当期财务或估值；带日期历史经营证据见定性分析。采集根因未修复。"
         }
       },
       "businessModel": "无晶圆厂计算芯片供应商，销售 EPYC 服务器 CPU、Instinct AI 加速器、Ryzen 客户端芯片、游戏 GPU/半定制芯片及嵌入式产品；以 ROCm 软件和 Helios 机架平台扩展数据中心方案。",
@@ -784,8 +976,25 @@
           "尚未核实当前盈利预测及估值口径，无法证明相对 QQQ 的安全边际；本地模型的高动量与较低风险分也不是买入证据，不采用搜索评论中的不同 forward PE。"
         ],
         "actionContext": "Not attractive",
-        "todayNote": "本轮新增本地行情为美东2026-09-18收盘$559.82、+2.70%，不是9/21实时行情。Composite 55.5（较9/18研究版+0.0）。近月价格回报+20.02%，Composite未变。没有核验新的盈利指引，不把动量或涨价传闻当利润兑现。",
+        "todayNote": "本轮新增本地日线截至美东2026-09-21：收盘$615.52、+9.95%；非9/22实时行情，未作第二报价源核验。Composite 55.3，较昨日研究版-0.2。日线涨约9.95%，Composite却降0.2，说明分数不是价格涨幅排名。搜索503，未核验涨价/新订单/指引变化；不追涨，不将价格异常自动解释为moat增强。",
         "etfQuestion": "AMD提供服务器CPU和AI GPU份额提升的更高弹性，但比QQQ更依赖ROCm/Helios执行及竞争格局。没有解释风险且优于ETF的估值与现金流情景前，不追价格动量；若未来建仓，参考当前配置3%—5%通常起始区间，并遵守IPS小仓、交易清单与单股20%软上限。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-22T12:39:21.808014+00:00",
+        "fundamentalBasis": "沿用2026-09-21版本中带日期、币种和来源的历史研究；本轮未重新取得财报原文，不将旧财报写成9/22新事实。",
+        "newsStatus": "search_failed",
+        "priceAsOf": "2026-09-21",
+        "closeUSD": 615.52,
+        "priceChangePct": 9.95,
+        "quotePriceUSD": 615.52,
+        "quoteTimestampAvailable": false,
+        "priceBasis": "采用最后完整日线及前一日线计算，非9/22实时价格；quote无单独时间戳。",
+        "composite": 55.3,
+        "compositeChangeVsPrevious": -0.2,
+        "modelAction": "Not attractive for now",
+        "scoreCaveat": "原模型评分未重算；股票value默认45且moat/quality含静态输入，分数变化不是基本面或安全边际证明。",
+        "valuationStatus": "stale_snapshot_quarantined",
+        "researchNote": "独立搜索返回503 UNAVAILABLE；未重试，不能归因9/21约9.95%的价格上涨。"
       }
     },
     "AVGO": {
@@ -826,7 +1035,7 @@
           "freeCashFlow": null,
           "freeCashFlowText": "n/a",
           "period": {
-            "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+            "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
             "form": "10-Q",
             "fiscalYear": 2018,
             "period": "Q3",
@@ -837,7 +1046,7 @@
           }
         },
         "period": {
-          "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+          "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
           "form": "10-K",
           "fiscalYear": 2018,
           "period": "FY",
@@ -848,8 +1057,8 @@
         },
         "dataQuality": {
           "status": "quarantined",
-          "checkedAt": "2026-09-21T12:35:51.504180+00:00",
-          "reason": "自动SEC抽取存在历史比较期/YTD、币种及跨期比率问题；金额/比率未有效核验，不作估值。定性研究沿用带日期历史来源，非本轮重验。"
+          "checkedAt": "2026-09-22T12:39:51.815780+00:00",
+          "reason": "旧比较期/YTD或币种混配，不能作当期财务或估值；带日期历史经营证据见定性分析。采集根因未修复。"
         }
       },
       "businessModel": "Broadcom 向大客户出售定制 AI 芯片、网络及其他半导体，同时通过 VMware 等基础设施软件订阅/许可收取持续收入。",
@@ -870,8 +1079,25 @@
           "低于历史高点不是便宜证明；本轮PE/forward PE/市值逐项匹配5/17旧comps，已隔离。不以混期SEC金额重算FCF yield，也不用券商目标价代替保守每股现金流估值。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "本轮新增本地行情为美东2026-09-18收盘$357.61、+2.97%，不是9/21实时行情。Composite 53.1（较9/18研究版+1.7）。Composite变动为本轮最大上升，但来自模型输入而非已确认的新ASIC订单。继续用Q4收入、margin和每股FCF检验，立场不升级。",
+        "todayNote": null,
         "etfQuestion": "比QQQ更集中押注custom silicon与网络，也放大客户与项目风险。Continue observing只是延续既有立场；没有保守FCF估值就不优先于ETF。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-22T12:39:21.808014+00:00",
+        "fundamentalBasis": "沿用2026-09-21版本中带日期、币种和来源的历史研究；本轮未重新取得财报原文，不将旧财报写成9/22新事实。",
+        "newsStatus": "not_individually_searched",
+        "priceAsOf": "2026-09-21",
+        "closeUSD": 362.66,
+        "priceChangePct": 1.41,
+        "quotePriceUSD": 362.66,
+        "quoteTimestampAvailable": false,
+        "priceBasis": "采用最后完整日线及前一日线计算，非9/22实时价格；quote无单独时间戳。",
+        "composite": 53.7,
+        "compositeChangeVsPrevious": 0.6,
+        "modelAction": "Not attractive for now",
+        "scoreCaveat": "原模型评分未重算；股票value默认45且moat/quality含静态输入，分数变化不是基本面或安全边际证明。",
+        "valuationStatus": "stale_snapshot_quarantined",
+        "researchNote": "未单独搜索，沿用历史论点；todayNote为null只表示未核验新增重大变化，不证明没有公告。"
       }
     },
     "TSM": {
@@ -912,7 +1138,7 @@
           "freeCashFlow": null,
           "freeCashFlowText": "n/a",
           "period": {
-            "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+            "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
             "form": null,
             "fiscalYear": null,
             "period": null,
@@ -923,7 +1149,7 @@
           }
         },
         "period": {
-          "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+          "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
           "form": null,
           "fiscalYear": null,
           "period": null,
@@ -934,8 +1160,8 @@
         },
         "dataQuality": {
           "status": "quarantined",
-          "checkedAt": "2026-09-21T12:35:51.504180+00:00",
-          "reason": "自动SEC抽取存在历史比较期/YTD、币种及跨期比率问题；金额/比率未有效核验，不作估值。定性研究沿用带日期历史来源，非本轮重验。"
+          "checkedAt": "2026-09-22T12:39:51.815780+00:00",
+          "reason": "旧比较期/YTD或币种混配，不能作当期财务或估值；带日期历史经营证据见定性分析。采集根因未修复。"
         }
       },
       "businessModel": "专注客户芯片制造的纯晶圆代工厂，通过工艺开发、量产良率、产能管理、设计生态及先进封装服务收取制造收入；可同时服务 GPU 与自研 ASIC 客户，但不是所有芯片的唯一制造商。",
@@ -956,8 +1182,25 @@
           "12英寸光罩目标横跨2031—2033年，需要全产业生态配合，不能用于上调2026收入；当前估值未独立核验，技术优势仍不足以证明价格有安全边际。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": null,
+        "todayNote": "本轮新增本地日线截至美东2026-09-21：收盘$445.14、+2.41%；非9/22实时行情，未作第二报价源核验。Composite 61.9，较昨日研究版+1.0。分数回升不替代9月营收、Q3毛利和先进节点回报验证；多家AI客户仍共享capex周期，不把8月营收旧事实重复记作新公告。",
         "etfQuestion": "VTI/VOO提供美国上市本土企业的广泛组合，不应误称直接持有台积电ADR；它们通过客户与供应链有间接半导体敞口。单持TSM获得更直接先进代工暴露，也增加台湾尾部风险。需证明相对VTI/VOO/QQQ的风险补偿和估值优势，才考虑小仓，而非仅因技术领先。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-22T12:39:21.808014+00:00",
+        "fundamentalBasis": "沿用2026-09-21版本中带日期、币种和来源的历史研究；本轮未重新取得财报原文，不将旧财报写成9/22新事实。",
+        "newsStatus": "not_individually_searched",
+        "priceAsOf": "2026-09-21",
+        "closeUSD": 445.14,
+        "priceChangePct": 2.41,
+        "quotePriceUSD": 445.14,
+        "quoteTimestampAvailable": false,
+        "priceBasis": "采用最后完整日线及前一日线计算，非9/22实时价格；quote无单独时间戳。",
+        "composite": 61.9,
+        "compositeChangeVsPrevious": 1.0,
+        "modelAction": "Not attractive for now",
+        "scoreCaveat": "原模型评分未重算；股票value默认45且moat/quality含静态输入，分数变化不是基本面或安全边际证明。",
+        "valuationStatus": "stale_snapshot_quarantined",
+        "researchNote": "未单独搜索，沿用历史论点；todayNote为null只表示未核验新增重大变化，不证明没有公告。"
       }
     },
     "ASML": {
@@ -998,7 +1241,7 @@
           "freeCashFlow": null,
           "freeCashFlowText": "n/a",
           "period": {
-            "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+            "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
             "form": null,
             "fiscalYear": null,
             "period": null,
@@ -1009,7 +1252,7 @@
           }
         },
         "period": {
-          "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+          "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
           "form": "20-F",
           "fiscalYear": 2025,
           "period": "FY",
@@ -1020,8 +1263,8 @@
         },
         "dataQuality": {
           "status": "quarantined",
-          "checkedAt": "2026-09-21T12:35:51.504180+00:00",
-          "reason": "自动SEC抽取存在历史比较期/YTD、币种及跨期比率问题；金额/比率未有效核验，不作估值。定性研究沿用带日期历史来源，非本轮重验。"
+          "checkedAt": "2026-09-22T12:39:51.815780+00:00",
+          "reason": "旧比较期/YTD或币种混配，不能作当期财务或估值；带日期历史经营证据见定性分析。采集根因未修复。"
         }
       },
       "businessModel": "向芯片制造商销售光刻设备、计量检测、软件及安装后维护/升级服务，核心技术是EUV和High-NA EUV；客户支出来自晶圆厂扩产与工艺升级，收益同时含一次性设备销售和存量设备服务。",
@@ -1042,8 +1285,25 @@
           "TSMC协作目标为2031年光罩试验线和2033年先进节点生产；三星2028年目标是High-NA DRAM采用，不是12英寸光罩2028年量产。当前估值与盈利预测未核验，不能用远期技术利好替代安全边际。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "本轮新增本地行情为美东2026-09-18收盘$1679.92、+3.08%，不是9/21实时行情。Composite 52.5（较9/18研究版+1.1）。分数回升不等同新增EUV订单。继续检验客户验收、High-NA成本与现金回款，不把服务布局线索当设备收入。",
+        "todayNote": "本轮新增本地日线截至美东2026-09-21：收盘$1711.32、+1.87%；非9/22实时行情，未作第二报价源核验。Composite 53.5，较昨日研究版+1.0。分数回升不代表新EUV订单；仍以客户验收、High-NA成本/良率和每股现金回报检验，技术合作不等于收入。",
         "etfQuestion": "相较QQQ，单持ASML更集中于光刻设备、出口政策与少数晶圆厂资本开支；QQQ可分散单一设备公司的执行风险，但仍有科技集中风险。没有核实合理价格与周期下行现金流前，技术稀缺性不构成直接建仓理由。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-22T12:39:21.808014+00:00",
+        "fundamentalBasis": "沿用2026-09-21版本中带日期、币种和来源的历史研究；本轮未重新取得财报原文，不将旧财报写成9/22新事实。",
+        "newsStatus": "searched_unverified",
+        "priceAsOf": "2026-09-21",
+        "closeUSD": 1711.32,
+        "priceChangePct": 1.87,
+        "quotePriceUSD": 1711.32,
+        "quoteTimestampAvailable": false,
+        "priceBasis": "采用最后完整日线及前一日线计算，非9/22实时价格；quote无单独时间戳。",
+        "composite": 53.5,
+        "compositeChangeVsPrevious": 1.0,
+        "modelAction": "Not attractive for now",
+        "scoreCaveat": "原模型评分未重算；股票value默认45且moat/quality含静态输入，分数变化不是基本面或安全边际证明。",
+        "valuationStatus": "stale_snapshot_quarantined",
+        "researchNote": "搜索重复7/15Q2结果与印度布局、评级和财报日期线索；官方历史财报获取安全拦截。没有确认本轮新增EUV订单或设备验收，不升级立场。"
       }
     },
     "AMZN": {
@@ -1084,7 +1344,7 @@
           "freeCashFlow": null,
           "freeCashFlowText": "n/a",
           "period": {
-            "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+            "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
             "form": "10-Q",
             "fiscalYear": 2026,
             "period": "Q2",
@@ -1095,7 +1355,7 @@
           }
         },
         "period": {
-          "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+          "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
           "form": "10-K",
           "fiscalYear": 2025,
           "period": "FY",
@@ -1106,8 +1366,8 @@
         },
         "dataQuality": {
           "status": "quarantined",
-          "checkedAt": "2026-09-21T12:35:51.504180+00:00",
-          "reason": "自动SEC抽取存在历史比较期/YTD、币种及跨期比率问题；金额/比率未有效核验，不作估值。定性研究沿用带日期历史来源，非本轮重验。"
+          "checkedAt": "2026-09-22T12:39:51.815780+00:00",
+          "reason": "旧比较期/YTD或币种混配，不能作当期财务或估值；带日期历史经营证据见定性分析。采集根因未修复。"
         }
       },
       "businessModel": "电商自营、第三方商家服务、Prime、广告与 AWS 协同；物流提升消费者体验，商家和广告增加平台变现，AWS 是重要利润来源。基础设施建设需要真实现金投入，不宜简单归类为轻资产软件股。",
@@ -1130,6 +1390,23 @@
         "actionContext": "Not attractive",
         "todayNote": null,
         "etfQuestion": "宽基已持有 Amazon，同时分散零售、云及 AI 投资回报风险。若要单买，需用剔除投资收益的 AWS/零售分部估值和 capex 后现金流解释优于 VTI/VOO 的回报；本轮未完成该估值，不因合作新闻追买。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-22T12:39:21.808014+00:00",
+        "fundamentalBasis": "沿用2026-09-21版本中带日期、币种和来源的历史研究；本轮未重新取得财报原文，不将旧财报写成9/22新事实。",
+        "newsStatus": "not_individually_searched",
+        "priceAsOf": "2026-09-21",
+        "closeUSD": 258.45,
+        "priceChangePct": 1.87,
+        "quotePriceUSD": 258.45,
+        "quoteTimestampAvailable": false,
+        "priceBasis": "采用最后完整日线及前一日线计算，非9/22实时价格；quote无单独时间戳。",
+        "composite": 58.8,
+        "compositeChangeVsPrevious": 0.8,
+        "modelAction": "Not attractive for now",
+        "scoreCaveat": "原模型评分未重算；股票value默认45且moat/quality含静态输入，分数变化不是基本面或安全边际证明。",
+        "valuationStatus": "stale_snapshot_quarantined",
+        "researchNote": "未单独搜索，沿用历史论点；todayNote为null只表示未核验新增重大变化，不证明没有公告。"
       }
     },
     "ORCL": {
@@ -1170,7 +1447,7 @@
           "freeCashFlow": null,
           "freeCashFlowText": "n/a",
           "period": {
-            "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+            "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
             "form": "10-Q",
             "fiscalYear": 2018,
             "period": "Q3",
@@ -1181,7 +1458,7 @@
           }
         },
         "period": {
-          "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+          "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
           "form": "10-K",
           "fiscalYear": 2026,
           "period": "FY",
@@ -1192,16 +1469,16 @@
         },
         "dataQuality": {
           "status": "quarantined",
-          "checkedAt": "2026-09-21T12:35:51.504180+00:00",
-          "reason": "自动SEC抽取存在历史比较期/YTD、币种及跨期比率问题；金额/比率未有效核验，不作估值。定性研究沿用带日期历史来源，非本轮重验。"
+          "checkedAt": "2026-09-22T12:39:51.815780+00:00",
+          "reason": "旧比较期/YTD或币种混配，不能作当期财务或估值；带日期历史经营证据见定性分析。采集根因未修复。"
         }
       },
       "businessModel": "数据库许可/维护和 Fusion、NetSuite 应用订阅是现金流基本盘，OCI 出租算力、存储和网络推动增长；后者把软件公司变成更资本密集的生意。",
       "moatEvidence": "数据库、财务和业务系统迁移成本高。6/10 官方 FY2026Q4 OCI 收入 $5.8B、+93%，云应用 $4.1B、+10%；需求有证据，但数据中心的资本回报尚不能照搬数据库的 moat。",
       "keyRisks": "建设和上电时间决定 RPO 何时变收入；FY2026 FCF 为 -$23.7B，新增融资与稀释成本不可忽视；少数大型 AI 客户合同与支付能力集中，backlog 不是银行存款。",
       "aiAngle": "OCI 受益 AI 算力需求，数据库和应用可增加 AI 功能收费；但机房、GPU 和电力要先付现金。评价应从收入增长转向资本成本之后的项目 ROIC。",
-      "growthCatalysts": "9/10 FY2027Q1财报窗口已过去；本轮若未取得原始财报则只沿用6/10历史基线，不继续写财报前。未来1–2年看已签容量投产、multicloud数据库渗透及净capex后每股现金收益。Q1现金流表、客户预付款、RPO期限、融资租赁与新增债务是升级判断前必须补齐的证据。",
-      "growthSignals": "以FY2027Q1原始现金流表为下一证据关口：明确季度与TTM经营现金流、客户预付款/递延收入、净capex、融资租赁及新增债务；再检查RPO确认期限、OCI利用率、客户集中与收入毛利。若营收上升但现金主要来自预付款且持续需要融资，增长并未降低风险。搜索中约$23B经营现金流与负FCF的口径未逐表核验，不据此做估值。",
+      "growthCatalysts": "9/10 FY2027Q1财报窗口已过去；本轮未取得可复核原始财报，旧FY2026Q4数字只作为6/10历史基线，不代表最新季度。未来1–2年检验已签容量投产、multicloud数据库与净capex后每股收益。Q1现金流表、客户预付款、RPO期限、融资租赁和新增债务仍是升级判断前的证据缺口。",
+      "growthSignals": "先取得FY2027Q1原始现金流表，分别核实单季与TTM经营现金流、客户预付款/递延收入、现金capex、融资租赁及新增债务；然后比较OCI收入/利用率、毛利和RPO确认期限。若现金改善主要来自预收而持续需要融资，收入高增仍没有消除资本风险。本轮搜索摘要未逐表核验，不输入估值。",
       "judgment": {
         "positives": [
           "FY2026Q4 收入 $19.2B、+21%，云收入 $9.9B、+47%；OCI +93% 与应用 +10% 构成可核验的双层需求。",
@@ -1214,8 +1491,25 @@
           "9/10财报窗口已过，但本轮未取得可复核的Q1原始报表；不能把搜索摘要中的beat、上调指引或现金流数字当已审计研究输入。旧PE无独立分母时点，股价大跌也不能替代融资压力、客户集中与正常化FCF估值。"
         ],
         "actionContext": "Not attractive",
-        "todayNote": "本轮新增本地行情为美东2026-09-18收盘$147.61、-1.98%，不是9/21实时行情。Composite 42.6（较9/18研究版-0.3）。未补齐FY2027Q1原始现金流、预付款和融资资料；股价回落不产生自动安全边际。",
+        "todayNote": null,
         "etfQuestion": "相较VTI/QQQ，单买集中押注OCI容量扩张，却还承担客户付款、净capex和融资成本。股价反弹及评分提高不改变论点；要逆转当前不具吸引力的判断，需要Q1实际现金回款和项目资本回报改善，而非RPO总额继续变大。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-22T12:39:21.808014+00:00",
+        "fundamentalBasis": "沿用2026-09-21版本中带日期、币种和来源的历史研究；本轮未重新取得财报原文，不将旧财报写成9/22新事实。",
+        "newsStatus": "searched_unverified",
+        "priceAsOf": "2026-09-21",
+        "closeUSD": 148.56,
+        "priceChangePct": 0.64,
+        "quotePriceUSD": 148.56,
+        "quoteTimestampAvailable": false,
+        "priceBasis": "采用最后完整日线及前一日线计算，非9/22实时价格；quote无单独时间戳。",
+        "composite": 43.4,
+        "compositeChangeVsPrevious": 0.8,
+        "modelAction": "Not attractive for now",
+        "scoreCaveat": "原模型评分未重算；股票value默认45且moat/quality含静态输入，分数变化不是基本面或安全边际证明。",
+        "valuationStatus": "stale_snapshot_quarantined",
+        "researchNote": "搜索返回Q1收入、经营现金流、capex和客户预付款的二手摘要；官方IR目录获取被安全拦截。未逐表核实季度/TTM及预付款口径，不把摘要金额写入正式判断。"
       }
     },
     "PLTR": {
@@ -1256,7 +1550,7 @@
           "freeCashFlow": null,
           "freeCashFlowText": "n/a",
           "period": {
-            "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+            "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
             "form": "10-Q",
             "fiscalYear": 2026,
             "period": "Q2",
@@ -1267,7 +1561,7 @@
           }
         },
         "period": {
-          "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+          "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
           "form": "10-K",
           "fiscalYear": 2025,
           "period": "FY",
@@ -1278,8 +1572,8 @@
         },
         "dataQuality": {
           "status": "quarantined",
-          "checkedAt": "2026-09-21T12:35:51.504180+00:00",
-          "reason": "自动SEC抽取存在历史比较期/YTD、币种及跨期比率问题；金额/比率未有效核验，不作估值。定性研究沿用带日期历史来源，非本轮重验。"
+          "checkedAt": "2026-09-22T12:39:51.815780+00:00",
+          "reason": "旧比较期/YTD或币种混配，不能作当期财务或估值；带日期历史经营证据见定性分析。采集根因未修复。"
         }
       },
       "businessModel": "面向政府和企业销售Gotham、Foundry、Apollo及AIP等数据与AI软件平台，把组织数据、权限、模型和业务操作连接起来；收入来自合同订阅与部署服务，客户嵌入深度比模型本身更关键。",
@@ -1300,8 +1594,26 @@
           "Nebius合作需完成集成并获得客户使用，尚无本次核实的新增收入金额；高增速能否持续与当前价格是否合理是两道不同问题，旧PE及73倍P/S不沿用。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": null,
+        "todayNote": "本轮新增本地日线截至美东2026-09-21：收盘$183.09、+3.07%；非9/22实时行情，未作第二报价源核验。Composite 54.5，较昨日研究版+1.4。与TSLA并列本轮最大评分增幅。合同增长仍须转为扣除稀释影响的每股现金收益；反弹不能替代估值，立场不升级。",
         "etfQuestion": "相较QQQ/VTI，单持PLTR更直接押注企业/政府AI软件采用与平台嵌入，也放大合同节奏、股权稀释和估值风险。即使经营数据优秀，仍需独立估值与每股现金流论证；无法清楚胜过ETF时，不因新合作自动加仓。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-22T12:39:21.808014+00:00",
+        "fundamentalBasis": "沿用2026-09-21版本中带日期、币种和来源的历史研究；本轮未重新取得财报原文，不将旧财报写成9/22新事实。",
+        "newsStatus": "searched_unverified",
+        "priceAsOf": "2026-09-21",
+        "closeUSD": 183.09,
+        "priceChangePct": 3.07,
+        "quotePriceUSD": 183.09,
+        "quoteTimestampAvailable": false,
+        "priceBasis": "采用最后完整日线及前一日线计算，非9/22实时价格；quote无单独时间戳。",
+        "composite": 54.5,
+        "compositeChangeVsPrevious": 1.4,
+        "modelAction": "Not attractive for now",
+        "scoreCaveat": "原模型评分未重算；股票value默认45且moat/quality含静态输入，分数变化不是基本面或安全边际证明。",
+        "valuationStatus": "stale_snapshot_quarantined",
+        "researchNote": "补充检索重述Q2增长与9/8合作；评级覆盖数量及下次财报日期不一致，Nebius原文安全拦截。未经核实的forward PE、评级和新合作金额不纳入判断。",
+        "actionDivergenceReason": "研究Continue observing意为继续验证经营与估值，不代表建仓；模型Not attractive for now同样不触发买入。未将评分升幅视为安全边际。"
       }
     },
     "NOW": {
@@ -1342,7 +1654,7 @@
           "freeCashFlow": null,
           "freeCashFlowText": "n/a",
           "period": {
-            "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+            "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
             "form": "10-Q",
             "fiscalYear": 2018,
             "period": "Q2",
@@ -1353,7 +1665,7 @@
           }
         },
         "period": {
-          "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+          "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
           "form": "10-K",
           "fiscalYear": 2017,
           "period": "FY",
@@ -1364,8 +1676,8 @@
         },
         "dataQuality": {
           "status": "quarantined",
-          "checkedAt": "2026-09-21T12:35:51.504180+00:00",
-          "reason": "自动SEC抽取存在历史比较期/YTD、币种及跨期比率问题；金额/比率未有效核验，不作估值。定性研究沿用带日期历史来源，非本轮重验。"
+          "checkedAt": "2026-09-22T12:39:51.815780+00:00",
+          "reason": "旧比较期/YTD或币种混配，不能作当期财务或估值；带日期历史经营证据见定性分析。采集根因未修复。"
         }
       },
       "businessModel": "面向企业 IT 服务、运维、员工和客户流程的订阅平台，通过跨部门工作流、配置数据库及集成扩大合同。Now Assist 与 AI Control Tower 用于流程自动化和 AI 治理，商业价值取决于实际部署与续费。",
@@ -1386,8 +1698,25 @@
           "全年营业利润率指引 GAAP 10%、非 GAAP 31.5%，股权激励约占全年收入 15%，还有并购摊销等调整。高调整后利润率并不等于股东无需承担稀释或并购成本；软件 AI 替代风险仍需续费数据检验。"
         ],
         "actionContext": "Not attractive",
-        "todayNote": "本轮新增本地行情为美东2026-09-18收盘$135.47、-2.17%，不是9/21实时行情。Composite 48.2（较9/18研究版-1.5）。Composite为本轮最大下降；跌价和分数变化不等同AI替代已发生。订阅毛利、cRPO及每股现金收益才是反证指标。",
+        "todayNote": null,
         "etfQuestion": "VTI/VOO 分散单一企业软件商业模式和估值风险。若单买 NOW，必须证明其流程与治理价值无法被廉价 AI 替代，且扣除股权激励、并购及推理成本后的回报优于宽基；反弹幅度或低于历史高点都不是安全边际。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-22T12:39:21.808014+00:00",
+        "fundamentalBasis": "沿用2026-09-21版本中带日期、币种和来源的历史研究；本轮未重新取得财报原文，不将旧财报写成9/22新事实。",
+        "newsStatus": "not_individually_searched",
+        "priceAsOf": "2026-09-21",
+        "closeUSD": 137.68,
+        "priceChangePct": 1.63,
+        "quotePriceUSD": 137.68,
+        "quoteTimestampAvailable": false,
+        "priceBasis": "采用最后完整日线及前一日线计算，非9/22实时价格；quote无单独时间戳。",
+        "composite": 48.1,
+        "compositeChangeVsPrevious": -0.1,
+        "modelAction": "Not attractive for now",
+        "scoreCaveat": "原模型评分未重算；股票value默认45且moat/quality含静态输入，分数变化不是基本面或安全边际证明。",
+        "valuationStatus": "stale_snapshot_quarantined",
+        "researchNote": "未单独搜索，沿用历史论点；todayNote为null只表示未核验新增重大变化，不证明没有公告。"
       }
     },
     "CRM": {
@@ -1428,7 +1757,7 @@
           "freeCashFlow": null,
           "freeCashFlowText": "n/a",
           "period": {
-            "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+            "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
             "form": "10-Q",
             "fiscalYear": 2015,
             "period": "Q3",
@@ -1439,7 +1768,7 @@
           }
         },
         "period": {
-          "basis": "历史抽取期间（待核验，不代表最新有效财报）",
+          "basis": "历史自动抽取期间（未核验，不代表最新有效财报）",
           "form": "10-K",
           "fiscalYear": 2017,
           "period": "FY",
@@ -1450,8 +1779,8 @@
         },
         "dataQuality": {
           "status": "quarantined",
-          "checkedAt": "2026-09-21T12:35:51.504180+00:00",
-          "reason": "自动SEC抽取存在历史比较期/YTD、币种及跨期比率问题；金额/比率未有效核验，不作估值。定性研究沿用带日期历史来源，非本轮重验。"
+          "checkedAt": "2026-09-22T12:39:51.815780+00:00",
+          "reason": "旧比较期/YTD或币种混配，不能作当期财务或估值；带日期历史经营证据见定性分析。采集根因未修复。"
         }
       },
       "businessModel": "客户关系、销售/客服/营销应用与数据平台的订阅及支持业务；企业数据、流程和集成带来续约与交叉销售。Agentforce 把 AI 自动执行嵌入业务流程，计费从传统席位逐步扩展到使用/价值，但不等于原有席位收入没有替代风险。",
@@ -1474,15 +1803,32 @@
         "actionContext": "Not attractive",
         "todayNote": null,
         "etfQuestion": "相对 VTI/VOO，CRM 的额外投资理由应是可持续有机增长与正常化现金流被低估，而不是旧 forward PE 11.6 倍或 AI ARR 大数。本轮缺少经过投资收益、并购和稀释校正的估值，宽基更易满足 IPS 的可解释性。"
+      },
+      "reviewStatus": {
+        "reviewedAt": "2026-09-22T12:39:21.808014+00:00",
+        "fundamentalBasis": "沿用2026-09-21版本中带日期、币种和来源的历史研究；本轮未重新取得财报原文，不将旧财报写成9/22新事实。",
+        "newsStatus": "not_individually_searched",
+        "priceAsOf": "2026-09-21",
+        "closeUSD": 236.42,
+        "priceChangePct": -0.63,
+        "quotePriceUSD": 236.42,
+        "quoteTimestampAvailable": false,
+        "priceBasis": "采用最后完整日线及前一日线计算，非9/22实时价格；quote无单独时间戳。",
+        "composite": 53.3,
+        "compositeChangeVsPrevious": 0.0,
+        "modelAction": "Not attractive for now",
+        "scoreCaveat": "原模型评分未重算；股票value默认45且moat/quality含静态输入，分数变化不是基本面或安全边际证明。",
+        "valuationStatus": "stale_snapshot_quarantined",
+        "researchNote": "未单独搜索，沿用历史论点；todayNote为null只表示未核验新增重大变化，不证明没有公告。"
       }
     }
   },
-  "agentInsightsDate": "2026-09-21T12:34:39.389440+00:00",
+  "agentInsightsDate": "2026-09-22T12:39:21.808014+00:00",
   "dataQuality": {
-    "checkedAt": "2026-09-21T12:35:51.504180+00:00",
     "status": "partial_quarantined",
+    "checkedAt": "2026-09-22T12:39:51.815780+00:00",
     "stockFinancialsQuarantined": 15,
     "qualitativeCoverage": 20,
-    "note": "完整覆盖20标的；本轮无新增已核验经营事实，自动财务和旧估值隔离，采集根因未修复。"
+    "note": "完整定性覆盖不等于最新新闻全部核验；自动混期财务与旧估值已隔离，根因未修复。"
   }
 }
