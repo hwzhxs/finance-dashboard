@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-13T13:26:28.427981+00:00",
-  "generatedAtLocal": "2026-10-13 21:26:28 CST",
+  "generatedAt": "2026-10-14T12:35:57.385453+00:00",
+  "generatedAtLocal": "2026-10-14 20:35:57 CST",
   "sources": {
     "secCompanyFacts": "https://www.sec.gov/edgar/sec-api-documentation",
-    "notes": "Financials from SEC EDGAR. Qualitative analysis in agent-insights.json."
+    "notes": "Qualitative analysis from agent-insights.json. Stock SEC numeric extraction quarantined due to mixed periods/currencies; original period labels retained for audit only. Verified primary figures are in dated qualitative text."
   },
   "items": {
     "SPY": {
@@ -16,10 +16,10 @@
           "source": "行情 chart 数据 + 本地配置"
         },
         "expenseRatioPct": 0.0945,
-        "return1mPct": 1.806905488181032,
-        "return3mPct": 3.085541805576808,
-        "return1yPct": 17.35340271651744,
-        "volatilityPct": 12.676440131332283,
+        "return1mPct": 2.2513411803285255,
+        "return3mPct": 3.6351822420469304,
+        "return1yPct": 17.483356645212854,
+        "volatilityPct": 12.6752543029614,
         "maxDrawdownPct": -9.133132097249053
       },
       "businessModel": "跟踪 S&P 500，提供美国大盘权益和活跃交易工具；经济敞口与 VOO 接近。",
@@ -40,26 +40,6 @@
         "actionContext": "Not attractive",
         "todayNote": null,
         "etfQuestion": "不是反对 S&P 500，而是本组合没有用更高持有费用换交易功能的明确需求；长期新资金更偏 VOO 或 VTI。"
-      },
-      "reviewStatus": {
-        "reviewedAt": "2026-10-13T13:26:27.850468+00:00",
-        "fundamentalBasis": "沿用2026-09-23研究中带期间、币种和历史来源的经营数据；本轮新增/复核来源见researchMeta.sourcesThisRun。未重验的旧数据不冒充最新财报。",
-        "newsStatus": "not_applicable_etf",
-        "priceAsOf": "2026-10-12",
-        "closeUSD": 778.1,
-        "priceChangePct": -0.06,
-        "quotePriceUSD": 778.1,
-        "quoteTimestampAvailable": false,
-        "quoteArithmeticResidualUSD": 2.4e-05,
-        "priceBasis": "美东2026-10-12完整日线，非10/13实时或盘前报价。quote无独立时戳，仅作为与日线一致性核验。",
-        "composite": 71.4,
-        "compositeChangeVsPrevious": -0.1,
-        "scoreComparisonBaselineAt": "2026-09-23T12:35:32.845387+00:00",
-        "modelAction": "Continue observing",
-        "scoreCaveat": "比较基准为9/23研究，不是昨日；个股value默认45且moat/quality含静态输入，分数不是基本面变化或估值证明，未重算。",
-        "valuationStatus": "index_valuation_not_verified",
-        "researchNote": "逐项复核历史论点、反证指标及最新完整日线；本轮未单独重搜，无已核实新动态不等于确认没有新闻。",
-        "quoteStatus": "matches_10_12_daily_close_without_independent_quote_timestamp"
       }
     },
     "QQQ": {
@@ -71,17 +51,12 @@
           "basis": "价格与表现为最近交易数据",
           "source": "行情 chart 数据 + 本地配置"
         },
-        "expenseRatioPct": 0.18,
-        "return1mPct": 4.358769714036015,
-        "return3mPct": 3.942930333828487,
-        "return1yPct": 23.9248460864949,
-        "volatilityPct": 19.598070531321373,
-        "maxDrawdownPct": -12.1883680975564,
-        "expenseRatioBasis": {
-          "source": "https://www.invesco.com/qqq-etf/en/about.html",
-          "asOf": "2026-09-07",
-          "verification": "沿用历史发行人资料，本輪未重验；配置0.20%未改，未重算评分。"
-        }
+        "expenseRatioPct": 0.2,
+        "return1mPct": 4.849264644181761,
+        "return3mPct": 5.330482017264049,
+        "return1yPct": 24.342810589334228,
+        "volatilityPct": 19.58781386611314,
+        "maxDrawdownPct": -12.1883680975564
       },
       "businessModel": "跟踪 Nasdaq-100，集中于大型非金融公司，偏成长和科技；是权益 satellite 而不是完整市场。",
       "moatEvidence": "聚合平台、软件和半导体优势，但指数本身没有独立企业 moat；上市地点和排除金融的规则也不是质量保证。",
@@ -101,26 +76,6 @@
         "actionContext": "Continue observing",
         "todayNote": null,
         "etfQuestion": "只有明确愿意多承担成长/利率敏感性，并有单独仓位预算时才优于 VTI/VOO 的中性配置；当前不以 AI 热度推动增配。"
-      },
-      "reviewStatus": {
-        "reviewedAt": "2026-10-13T13:26:27.850468+00:00",
-        "fundamentalBasis": "沿用2026-09-23研究中带期间、币种和历史来源的经营数据；本轮新增/复核来源见researchMeta.sourcesThisRun。未重验的旧数据不冒充最新财报。",
-        "newsStatus": "not_applicable_etf",
-        "priceAsOf": "2026-10-12",
-        "closeUSD": 746.04,
-        "priceChangePct": -0.7,
-        "quotePriceUSD": 746.04,
-        "quoteTimestampAvailable": false,
-        "quoteArithmeticResidualUSD": 2.2e-05,
-        "priceBasis": "美东2026-10-12完整日线，非10/13实时或盘前报价。quote无独立时戳，仅作为与日线一致性核验。",
-        "composite": 70.1,
-        "compositeChangeVsPrevious": 0.1,
-        "scoreComparisonBaselineAt": "2026-09-23T12:35:32.845387+00:00",
-        "modelAction": "Continue observing",
-        "scoreCaveat": "比较基准为9/23研究，不是昨日；个股value默认45且moat/quality含静态输入，分数不是基本面变化或估值证明，未重算。",
-        "valuationStatus": "index_valuation_not_verified",
-        "researchNote": "逐项复核历史论点、反证指标及最新完整日线；本轮未单独重搜，无已核实新动态不等于确认没有新闻。",
-        "quoteStatus": "matches_10_12_daily_close_without_independent_quote_timestamp"
       }
     },
     "VOO": {
@@ -133,10 +88,10 @@
           "source": "行情 chart 数据 + 本地配置"
         },
         "expenseRatioPct": 0.03,
-        "return1mPct": 1.7891720803774325,
-        "return3mPct": 3.0743755354761815,
-        "return1yPct": 17.309430958614726,
-        "volatilityPct": 12.690187009989321,
+        "return1mPct": 2.273705804606685,
+        "return3mPct": 3.6311468726182294,
+        "return1yPct": 17.486654982674544,
+        "volatilityPct": 12.688586724228132,
         "maxDrawdownPct": -9.187121839889823
       },
       "businessModel": "跟踪 S&P 500，分享美国大型上市公司盈利和分红，适合作低成本长期权益 core。",
@@ -152,31 +107,11 @@
         ],
         "concerns": [
           "大科技已占重要位置，再叠加 QQQ/NVDA/MSFT 不会线性增加分散。",
-          "10/12日线不提供可靠指数PE；接近高位不是便宜，也不是必须等暴跌的理由。备用金独立、资金期限至少覆盖完整周期且能承受权益回撤，才按计划分批配置；VTI与VOO高度重叠，不为凑齐ETF重复购买。"
+          "10/13日线不提供可靠指数PE；接近高位不是便宜，也不是必须等暴跌的理由。备用金独立、资金期限至少覆盖完整周期且能承受权益回撤，才按计划分批配置；VTI与VOO高度重叠，不为凑齐ETF重复购买。"
         ],
         "actionContext": "Consider adding",
         "todayNote": null,
         "etfQuestion": "相对 VTI 是大盘纯度更高、覆盖更窄的取舍，不是确定跑赢。长期 core 在 VTI/VOO 中选择一个即可，不必重复配置。 Consider adding仅指满足长期资金与回撤预算后考虑分批配置，不是已证明当前低估；没有触发自动交易。"
-      },
-      "reviewStatus": {
-        "reviewedAt": "2026-10-13T13:26:27.850468+00:00",
-        "fundamentalBasis": "沿用2026-09-23研究中带期间、币种和历史来源的经营数据；本轮新增/复核来源见researchMeta.sourcesThisRun。未重验的旧数据不冒充最新财报。",
-        "newsStatus": "not_applicable_etf",
-        "priceAsOf": "2026-10-12",
-        "closeUSD": 715.13,
-        "priceChangePct": -0.06,
-        "quotePriceUSD": 715.13,
-        "quoteTimestampAvailable": false,
-        "quoteArithmeticResidualUSD": -5e-06,
-        "priceBasis": "美东2026-10-12完整日线，非10/13实时或盘前报价。quote无独立时戳，仅作为与日线一致性核验。",
-        "composite": 71.1,
-        "compositeChangeVsPrevious": -0.1,
-        "scoreComparisonBaselineAt": "2026-09-23T12:35:32.845387+00:00",
-        "modelAction": "Continue observing",
-        "scoreCaveat": "比较基准为9/23研究，不是昨日；个股value默认45且moat/quality含静态输入，分数不是基本面变化或估值证明，未重算。",
-        "valuationStatus": "index_valuation_not_verified",
-        "researchNote": "逐项复核历史论点、反证指标及最新完整日线；本轮未单独重搜，无已核实新动态不等于确认没有新闻。",
-        "quoteStatus": "matches_10_12_daily_close_without_independent_quote_timestamp"
       }
     },
     "VTI": {
@@ -189,10 +124,10 @@
           "source": "行情 chart 数据 + 本地配置"
         },
         "expenseRatioPct": 0.03,
-        "return1mPct": 1.397786346297103,
-        "return3mPct": 2.456901768588726,
-        "return1yPct": 16.713062696154758,
-        "volatilityPct": 12.941262400996905,
+        "return1mPct": 1.7721828702455644,
+        "return3mPct": 2.898165346513859,
+        "return1yPct": 16.672283141285394,
+        "volatilityPct": 12.941571425837461,
         "maxDrawdownPct": -9.20266768110406
       },
       "businessModel": "持有美国全市场股票，收益来自企业盈利、分红与估值变化；适合作长期美元权益 core。",
@@ -208,31 +143,11 @@
         ],
         "concerns": [
           "不等于全天候：美国股票和美元风险仍在，不能代替非美资产、债券与现金需求。",
-          "10/12日线不提供可靠指数PE；接近高位不是便宜，也不是必须等暴跌的理由。备用金独立、资金期限至少覆盖完整周期且能承受权益回撤，才按计划分批配置；VTI与VOO高度重叠，不为凑齐ETF重复购买。"
+          "10/13日线不提供可靠指数PE；接近高位不是便宜，也不是必须等暴跌的理由。备用金独立、资金期限至少覆盖完整周期且能承受权益回撤，才按计划分批配置；VTI与VOO高度重叠，不为凑齐ETF重复购买。"
         ],
         "actionContext": "Consider adding",
         "todayNote": null,
         "etfQuestion": "默认比较基准；要选 VOO 是主动省去中小盘，选 QQQ 是主动增加成长集中。先满足期限与回撤预算再分批配置，不需要先猜市场底。 Consider adding仅指满足长期资金与回撤预算后考虑分批配置，不是已证明当前低估；没有触发自动交易。"
-      },
-      "reviewStatus": {
-        "reviewedAt": "2026-10-13T13:26:27.850468+00:00",
-        "fundamentalBasis": "沿用2026-09-23研究中带期间、币种和历史来源的经营数据；本轮新增/复核来源见researchMeta.sourcesThisRun。未重验的旧数据不冒充最新财报。",
-        "newsStatus": "not_applicable_etf",
-        "priceAsOf": "2026-10-12",
-        "closeUSD": 381.57,
-        "priceChangePct": -0.1,
-        "quotePriceUSD": 381.57,
-        "quoteTimestampAvailable": false,
-        "quoteArithmeticResidualUSD": -7e-06,
-        "priceBasis": "美东2026-10-12完整日线，非10/13实时或盘前报价。quote无独立时戳，仅作为与日线一致性核验。",
-        "composite": 71.0,
-        "compositeChangeVsPrevious": 0.0,
-        "scoreComparisonBaselineAt": "2026-09-23T12:35:32.845387+00:00",
-        "modelAction": "Continue observing",
-        "scoreCaveat": "比较基准为9/23研究，不是昨日；个股value默认45且moat/quality含静态输入，分数不是基本面变化或估值证明，未重算。",
-        "valuationStatus": "index_valuation_not_verified",
-        "researchNote": "逐项复核历史论点、反证指标及最新完整日线；本轮未单独重搜，无已核实新动态不等于确认没有新闻。",
-        "quoteStatus": "matches_10_12_daily_close_without_independent_quote_timestamp"
       }
     },
     "SGOV": {
@@ -245,10 +160,10 @@
           "source": "行情 chart 数据 + 本地配置"
         },
         "expenseRatioPct": 0.09,
-        "return1mPct": 0.0,
-        "return3mPct": -0.01989682940001236,
-        "return1yPct": 0.01989715728001329,
-        "volatilityPct": 1.0092715425463823,
+        "return1mPct": -0.009949404508025061,
+        "return3mPct": -0.029842275266722673,
+        "return1yPct": 0.009943793277789048,
+        "volatilityPct": 1.0092226770260142,
         "maxDrawdownPct": -0.4368570652040549
       },
       "businessModel": "持有 0–3 个月美国国债，靠短端利息提供美元现金管理；不是权益增长资产或保本银行存款。",
@@ -263,32 +178,12 @@
           "本地配置费用 0.09%，约每 $10,000 每年 $9，便于与美元存款/T-bill 净收益比较；今日未核验实际 SEC yield。"
         ],
         "concerns": [
-          "本地一年价格回报约+0.02%不含分配，不能据此断言没有利息。本轮未核验30-day SEC yield，不编造当前净收益率；降息会很快降低再投资收入。人民币用途的资金还承担美元汇率波动。",
+          "本地一年价格回报约+0.01%不含分配，不能据此断言没有利息。本轮未核验30-day SEC yield，不编造净收益率；降息会很快降低再投资收入，人民币用途资金还承担美元汇率波动。",
           "配置记录现金 80% 不是实际 SGOV 持仓，也未实时重估；若无资金期限和部署计划，长期保留高现金会付出机会成本。"
         ],
         "actionContext": "Consider adding",
         "todayNote": null,
         "etfQuestion": "不和 VTI/VOO 争长期复利，只服务短期美元现金需求。先区分生活备用金、近期用途与长期资金，再决定是否用它停车。 Consider adding 仅适用于短期美元闲置资金，不把80%配置现金机械全换成SGOV。"
-      },
-      "reviewStatus": {
-        "reviewedAt": "2026-10-13T13:26:27.850468+00:00",
-        "fundamentalBasis": "沿用2026-09-23研究中带期间、币种和历史来源的经营数据；本轮新增/复核来源见researchMeta.sourcesThisRun。未重验的旧数据不冒充最新财报。",
-        "newsStatus": "not_applicable_etf",
-        "priceAsOf": "2026-10-12",
-        "closeUSD": 100.52,
-        "priceChangePct": 0.01,
-        "quotePriceUSD": 100.52,
-        "quoteTimestampAvailable": false,
-        "quoteArithmeticResidualUSD": 3e-06,
-        "priceBasis": "美东2026-10-12完整日线，非10/13实时或盘前报价。quote无独立时戳，仅作为与日线一致性核验。",
-        "composite": 67.3,
-        "compositeChangeVsPrevious": 0.0,
-        "scoreComparisonBaselineAt": "2026-09-23T12:35:32.845387+00:00",
-        "modelAction": "Cash management candidate",
-        "scoreCaveat": "比较基准为9/23研究，不是昨日；个股value默认45且moat/quality含静态输入，分数不是基本面变化或估值证明，未重算。",
-        "valuationStatus": "index_valuation_not_verified",
-        "researchNote": "逐项复核历史论点、反证指标及最新完整日线；本轮未单独重搜，无已核实新动态不等于确认没有新闻。",
-        "quoteStatus": "matches_10_12_daily_close_without_independent_quote_timestamp"
       }
     },
     "PDD": {
@@ -303,15 +198,15 @@
       },
       "financials": {
         "revenue": null,
-        "revenueText": "n/a",
+        "revenueText": "n/a（期间/币种待核验）",
         "revenueGrowthPct": null,
         "netIncome": null,
-        "netIncomeText": "n/a",
+        "netIncomeText": "n/a（期间/币种待核验）",
         "netIncomeGrowthPct": null,
         "grossMarginPct": null,
         "operatingMarginPct": null,
         "freeCashFlow": null,
-        "freeCashFlowText": "n/a",
+        "freeCashFlowText": "n/a（期间/币种待核验）",
         "debtToAssetsPct": null,
         "roePct": null,
         "priceToSales": null,
@@ -320,16 +215,16 @@
         "forwardPE": null,
         "latest": {
           "revenue": null,
-          "revenueText": "n/a",
+          "revenueText": "n/a（期间/币种待核验）",
           "revenueGrowthPct": null,
           "netIncome": null,
-          "netIncomeText": "n/a",
+          "netIncomeText": "n/a（期间/币种待核验）",
           "grossMarginPct": null,
           "operatingMarginPct": null,
           "freeCashFlow": null,
-          "freeCashFlowText": "n/a",
+          "freeCashFlowText": "n/a（期间/币种待核验）",
           "period": {
-            "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+            "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
             "form": "6-K",
             "fiscalYear": 2020,
             "period": "Q3",
@@ -340,7 +235,7 @@
           }
         },
         "period": {
-          "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+          "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
           "form": "20-F",
           "fiscalYear": 2025,
           "period": "FY",
@@ -348,11 +243,6 @@
           "end": "2025-12-31",
           "filed": "2026-04-29",
           "source": "SEC companyfacts"
-        },
-        "dataQuality": {
-          "status": "quarantined",
-          "checkedAt": "2026-10-13T13:27:44.344755+00:00",
-          "reason": "抽取未保证各财务指标同期间、同币种；存在陈旧概念、比较期/YTD误标季度及异常比率。金额/比率暂停展示，参见定性分析中带期间的历史基线或本轮原文数据。根因未修复。"
         }
       },
       "businessModel": "拼多多与 Temu 连接商家和消费者，靠在线营销与交易服务收费；集团不单列 Temu 利润，不能把集团盈利直接当成海外盈利。",
@@ -370,31 +260,18 @@
         "concerns": [
           "营销服务约 +3.4% 显示国内成熟平台增长降档；低价优势若靠持续补贴维持，不能享受软件式估值。",
           "归母净利 RMB27.2B、-12%，但不能全部归咎经营恶化：Q2 其他损失净额 RMB7.399B，上年为其他收入 RMB0.119B，另有税项等影响；非经营损益波动降低利润可预测性。",
-          "Temu分部利润及单位经济披露不足，合规成本未必只是过渡性。10/7 Business Post公开摘要称爱尔兰实体计提€100M法律准备金，但未取得完整账目、集团归属及结算证据，不能认作集团已支付等额罚款。配置20%已达单股软上限；旧估值隔离，不能用7x或9.9x标题证明便宜。"
+          "Temu分部利润与单位经济披露不足，合规成本未必只是过渡性。沿用10/13核验的10/7 Business Post公开摘要：爱尔兰实体€100M法律准备金，不是集团已支付罚款；本轮未重验该账目。配置20%若仍有效已达软上限；10/13收盘$81.96不能与5月陈旧9.9x PE拼接证明便宜。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "本轮补录10/7法律风险报道并重验8/24财报：公开摘要涉及Temu爱尔兰实体准备金，不是今日新罚款；没有核实10/13重大经营公告。维持Continue observing，配置20%若仍有效默认不加仓。",
+        "todayNote": null,
         "etfQuestion": "只有国内稳定现金流与 Temu 可持续利润的保守估值明显高于市值，才有理由承担比 VTI/VOO 更高的监管、治理和集中风险。现有配置已充分表达观点，尚无证据支持继续加集中度。"
       },
-      "reviewStatus": {
-        "reviewedAt": "2026-10-13T13:26:27.850468+00:00",
-        "fundamentalBasis": "沿用2026-09-23研究中带期间、币种和历史来源的经营数据；本轮新增/复核来源见researchMeta.sourcesThisRun。未重验的旧数据不冒充最新财报。",
-        "newsStatus": "historical_primary_rechecked_secondary_risk_added",
-        "priceAsOf": "2026-10-12",
-        "closeUSD": 80.92,
-        "priceChangePct": -0.53,
-        "quotePriceUSD": 80.92,
-        "quoteTimestampAvailable": false,
-        "quoteArithmeticResidualUSD": 2e-06,
-        "priceBasis": "美东2026-10-12完整日线，非10/13实时或盘前报价。quote无独立时戳，仅作为与日线一致性核验。",
-        "composite": 42.6,
-        "compositeChangeVsPrevious": 1.5,
-        "scoreComparisonBaselineAt": "2026-09-23T12:35:32.845387+00:00",
-        "modelAction": "Continue observing",
-        "scoreCaveat": "比较基准为9/23研究，不是昨日；个股value默认45且moat/quality含静态输入，分数不是基本面变化或估值证明，未重算。",
-        "valuationStatus": "stale_snapshot_quarantined",
-        "researchNote": "重新提取8/24官方Q2原文，确认经营现金流与其他损益。10/7 Business Post公开摘要提及Temu爱尔兰实体法律准备金；仅核实报道存在，不等同集团已支付罚款。10/13 JPMorgan目标价重述未取得研报，不采用。",
-        "quoteStatus": "matches_10_12_daily_close_without_independent_quote_timestamp"
+      "financialDataQuality": {
+        "status": "quarantined",
+        "checkedAt": "2026-10-14T12:37:40.300575+00:00",
+        "reason": "latest标为季度但start/end为2020年YTD；年度抽取的利润率分子分母口径未匹配。",
+        "rawBackupSHA256": "2be32bef42022aab08179aa303838cece2eb203834c5b89fac30db32501a3181",
+        "note": "官方已核实金额见定性分析并注明期间币种；自动采集根因仍未修复。"
       }
     },
     "AAPL": {
@@ -409,15 +286,15 @@
       },
       "financials": {
         "revenue": null,
-        "revenueText": "n/a",
+        "revenueText": "n/a（期间/币种待核验）",
         "revenueGrowthPct": null,
         "netIncome": null,
-        "netIncomeText": "n/a",
+        "netIncomeText": "n/a（期间/币种待核验）",
         "netIncomeGrowthPct": null,
         "grossMarginPct": null,
         "operatingMarginPct": null,
         "freeCashFlow": null,
-        "freeCashFlowText": "n/a",
+        "freeCashFlowText": "n/a（期间/币种待核验）",
         "debtToAssetsPct": null,
         "roePct": null,
         "priceToSales": null,
@@ -426,16 +303,16 @@
         "forwardPE": null,
         "latest": {
           "revenue": null,
-          "revenueText": "n/a",
+          "revenueText": "n/a（期间/币种待核验）",
           "revenueGrowthPct": null,
           "netIncome": null,
-          "netIncomeText": "n/a",
+          "netIncomeText": "n/a（期间/币种待核验）",
           "grossMarginPct": null,
           "operatingMarginPct": null,
           "freeCashFlow": null,
-          "freeCashFlowText": "n/a",
+          "freeCashFlowText": "n/a（期间/币种待核验）",
           "period": {
-            "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+            "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
             "form": null,
             "fiscalYear": null,
             "period": null,
@@ -446,7 +323,7 @@
           }
         },
         "period": {
-          "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+          "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
           "form": "10-K",
           "fiscalYear": 2018,
           "period": "FY",
@@ -454,11 +331,6 @@
           "end": "2016-09-24",
           "filed": "2018-11-05",
           "source": "SEC companyfacts"
-        },
-        "dataQuality": {
-          "status": "quarantined",
-          "checkedAt": "2026-10-13T13:27:44.344755+00:00",
-          "reason": "抽取未保证各财务指标同期间、同币种；存在陈旧概念、比较期/YTD误标季度及异常比率。金额/比率暂停展示，参见定性分析中带期间的历史基线或本轮原文数据。根因未修复。"
         }
       },
       "businessModel": "以 iPhone、Mac、iPad 和可穿戴硬件获客，通过 App Store、云存储、支付及内容服务持续变现。核心是软硬件一体化与用户生态，而非单独出售大模型算力。",
@@ -479,27 +351,14 @@
         ],
         "actionContext": "Continue observing",
         "todayNote": null,
-        "etfQuestion": "VTI/VOO 已有 Apple 暴露。单买必须证明正常化服务现金流加新品净增量被低估，而非重复买发布会热度；Duo的高ASP、良率和内部替代尚未兑现，暂不因新品增加集中度。"
+        "etfQuestion": "VTI/VOO已有Apple暴露。单买必须证明正常化服务现金流与新品净增量被低估；高ASP、良率、保修和机型内部替代尚需终端数据，不因未经本轮核验的新品叙事增加集中度。"
       },
-      "reviewStatus": {
-        "reviewedAt": "2026-10-13T13:26:27.850468+00:00",
-        "fundamentalBasis": "沿用2026-09-23研究中带期间、币种和历史来源的经营数据；本轮新增/复核来源见researchMeta.sourcesThisRun。未重验的旧数据不冒充最新财报。",
-        "newsStatus": "searched_no_verified_new_business_fact",
-        "priceAsOf": "2026-10-12",
-        "closeUSD": 340.97,
-        "priceChangePct": 1.29,
-        "quotePriceUSD": 340.97,
-        "quoteTimestampAvailable": false,
-        "quoteArithmeticResidualUSD": -1e-06,
-        "priceBasis": "美东2026-10-12完整日线，非10/13实时或盘前报价。quote无独立时戳，仅作为与日线一致性核验。",
-        "composite": 63.5,
-        "compositeChangeVsPrevious": -1.6,
-        "scoreComparisonBaselineAt": "2026-09-23T12:35:32.845387+00:00",
-        "modelAction": "Continue observing",
-        "scoreCaveat": "比较基准为9/23研究，不是昨日；个股value默认45且moat/quality含静态输入，分数不是基本面变化或估值证明，未重算。",
-        "valuationStatus": "stale_snapshot_quarantined",
-        "researchNote": "搜索返回组件削单/新品日程与财报日期线索，但缺少官方原文且日期不一致；不作为已核实新闻，历史7/30财报仅作经营基线。",
-        "quoteStatus": "matches_10_12_daily_close_without_independent_quote_timestamp"
+      "financialDataQuality": {
+        "status": "quarantined",
+        "checkedAt": "2026-10-14T12:37:40.300575+00:00",
+        "reason": "年度revenue期间为2016年、filed2018年，利润等来自其他期间。",
+        "rawBackupSHA256": "2be32bef42022aab08179aa303838cece2eb203834c5b89fac30db32501a3181",
+        "note": "官方已核实金额见定性分析并注明期间币种；自动采集根因仍未修复。"
       }
     },
     "MSFT": {
@@ -514,15 +373,15 @@
       },
       "financials": {
         "revenue": null,
-        "revenueText": "n/a",
+        "revenueText": "n/a（期间/币种待核验）",
         "revenueGrowthPct": null,
         "netIncome": null,
-        "netIncomeText": "n/a",
+        "netIncomeText": "n/a（期间/币种待核验）",
         "netIncomeGrowthPct": null,
         "grossMarginPct": null,
         "operatingMarginPct": null,
         "freeCashFlow": null,
-        "freeCashFlowText": "n/a",
+        "freeCashFlowText": "n/a（期间/币种待核验）",
         "debtToAssetsPct": null,
         "roePct": null,
         "priceToSales": null,
@@ -531,16 +390,16 @@
         "forwardPE": null,
         "latest": {
           "revenue": null,
-          "revenueText": "n/a",
+          "revenueText": "n/a（期间/币种待核验）",
           "revenueGrowthPct": null,
           "netIncome": null,
-          "netIncomeText": "n/a",
+          "netIncomeText": "n/a（期间/币种待核验）",
           "grossMarginPct": null,
           "operatingMarginPct": null,
           "freeCashFlow": null,
-          "freeCashFlowText": "n/a",
+          "freeCashFlowText": "n/a（期间/币种待核验）",
           "period": {
-            "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+            "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
             "form": "10-Q",
             "fiscalYear": 2011,
             "period": "Q2",
@@ -551,7 +410,7 @@
           }
         },
         "period": {
-          "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+          "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
           "form": "10-K",
           "fiscalYear": 2010,
           "period": "FY",
@@ -559,11 +418,6 @@
           "end": "2007-09-30",
           "filed": "2010-07-30",
           "source": "SEC companyfacts"
-        },
-        "dataQuality": {
-          "status": "quarantined",
-          "checkedAt": "2026-10-13T13:27:44.344755+00:00",
-          "reason": "抽取未保证各财务指标同期间、同币种；存在陈旧概念、比较期/YTD误标季度及异常比率。金额/比率暂停展示，参见定性分析中带期间的历史基线或本轮原文数据。根因未修复。"
         }
       },
       "businessModel": "以 Microsoft 365、企业服务器与 Dynamics 的订阅/许可形成客户基础，再通过 Azure 云消费、安全产品及 Copilot 扩展单客收入；收入来源横跨基础设施与企业应用，不能把全部云增长都归为生成式 AI。",
@@ -587,25 +441,12 @@
         "todayNote": null,
         "etfQuestion": "VTI/VOO/QQQ 已提供微软暴露。单买必须证明 Azure 与 Copilot 的增量现金回报足以补偿集中度和资本投入，而不是仅凭高护城河评分；在最新正常化估值未核验前，不把旧 PE 或券商目标价当安全边际。"
       },
-      "reviewStatus": {
-        "reviewedAt": "2026-10-13T13:26:27.850468+00:00",
-        "fundamentalBasis": "沿用2026-09-23研究中带期间、币种和历史来源的经营数据；本轮新增/复核来源见researchMeta.sourcesThisRun。未重验的旧数据不冒充最新财报。",
-        "newsStatus": "searched_no_verified_new_business_fact",
-        "priceAsOf": "2026-10-12",
-        "closeUSD": 541.15,
-        "priceChangePct": 1.14,
-        "quotePriceUSD": 541.15,
-        "quoteTimestampAvailable": false,
-        "quoteArithmeticResidualUSD": -2.4e-05,
-        "priceBasis": "美东2026-10-12完整日线，非10/13实时或盘前报价。quote无独立时戳，仅作为与日线一致性核验。",
-        "composite": 68.7,
-        "compositeChangeVsPrevious": 1.1,
-        "scoreComparisonBaselineAt": "2026-09-23T12:35:32.845387+00:00",
-        "modelAction": "Continue observing",
-        "scoreCaveat": "比较基准为9/23研究，不是昨日；个股value默认45且moat/quality含静态输入，分数不是基本面变化或估值证明，未重算。",
-        "valuationStatus": "stale_snapshot_quarantined",
-        "researchNote": "搜索重述7/29财报，下一财报日有10/27与10/28冲突，未取得官方日历，不采用精确日期。",
-        "quoteStatus": "matches_10_12_daily_close_without_independent_quote_timestamp"
+      "financialDataQuality": {
+        "status": "quarantined",
+        "checkedAt": "2026-10-14T12:37:40.300575+00:00",
+        "reason": "年度revenue为2007年单季，grossMargin超过1000%，与利润混期。",
+        "rawBackupSHA256": "2be32bef42022aab08179aa303838cece2eb203834c5b89fac30db32501a3181",
+        "note": "官方已核实金额见定性分析并注明期间币种；自动采集根因仍未修复。"
       }
     },
     "NVDA": {
@@ -620,15 +461,15 @@
       },
       "financials": {
         "revenue": null,
-        "revenueText": "n/a",
+        "revenueText": "n/a（期间/币种待核验）",
         "revenueGrowthPct": null,
         "netIncome": null,
-        "netIncomeText": "n/a",
+        "netIncomeText": "n/a（期间/币种待核验）",
         "netIncomeGrowthPct": null,
         "grossMarginPct": null,
         "operatingMarginPct": null,
         "freeCashFlow": null,
-        "freeCashFlowText": "n/a",
+        "freeCashFlowText": "n/a（期间/币种待核验）",
         "debtToAssetsPct": null,
         "roePct": null,
         "priceToSales": null,
@@ -637,16 +478,16 @@
         "forwardPE": null,
         "latest": {
           "revenue": null,
-          "revenueText": "n/a",
+          "revenueText": "n/a（期间/币种待核验）",
           "revenueGrowthPct": null,
           "netIncome": null,
-          "netIncomeText": "n/a",
+          "netIncomeText": "n/a（期间/币种待核验）",
           "grossMarginPct": null,
           "operatingMarginPct": null,
           "freeCashFlow": null,
-          "freeCashFlowText": "n/a",
+          "freeCashFlowText": "n/a（期间/币种待核验）",
           "period": {
-            "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+            "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
             "form": "10-Q",
             "fiscalYear": 2027,
             "period": "Q2",
@@ -657,7 +498,7 @@
           }
         },
         "period": {
-          "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+          "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
           "form": "10-K",
           "fiscalYear": 2026,
           "period": "FY",
@@ -665,19 +506,14 @@
           "end": "2024-01-28",
           "filed": "2026-02-25",
           "source": "SEC companyfacts"
-        },
-        "dataQuality": {
-          "status": "quarantined",
-          "checkedAt": "2026-10-13T13:27:44.344755+00:00",
-          "reason": "抽取未保证各财务指标同期间、同币种；存在陈旧概念、比较期/YTD误标季度及异常比率。金额/比率暂停展示，参见定性分析中带期间的历史基线或本轮原文数据。根因未修复。"
         }
       },
       "businessModel": "以 GPU、CPU、高速网络、整机系统与 CUDA 软件提供加速计算平台，收入主要来自数据中心；游戏与边缘计算补充市场覆盖。核心经济性来自芯片、互联与软件协同，而非单卖 GPU。",
       "moatEvidence": "历史经营基线（本轮未重验该财报正文）：2026-08-26 官方 FY2027 Q2 财报：截至 2026-07-26 单季营收 962.21 亿美元、同比 +106%，数据中心 890 亿美元、+117%，GAAP/non-GAAP 毛利率均为 75.0%。Vera Rubin 已进入全面生产，官方列明 CoreWeave、Google Cloud、Azure、OCI、Nebius 的机架运行进展，支持系统级生态与迁移成本；不代表竞争无法进入。",
       "keyRisks": "回款与营运资本占用：Q2 经营现金流 240.77 亿美元，低于 Q1 的 503.44 亿美元，期末应收 630.59 亿美元；需区分正常扩张与客户付款压力。Q3 指引不含中国数据中心计算收入，出口政策仍限制市场。云厂商自研芯片与其他加速器竞争、产品切换和客户资本开支回报，可能压低未来毛利率。",
       "aiAngle": "直接出售 AI 训练、推理和互联基础设施，财报已证明需求变现；但客户能否把算力支出转成持续现金流，决定供应商增长的耐久度。Rubin 量产是公司已公布进展，不能把客户宣传的需求全部当作不可取消订单。",
-      "growthCatalysts": "2026-08-26 指引：FY2027 Q3 营收 1,080 亿美元±2%，GAAP/non-GAAP 毛利率 74.0%±0.5 个百分点；Rubin 机架与网络部署扩张。中国恢复销售仅是未计入指引的政策情景，不作为基准预测。",
-      "growthSignals": "比较 Q3 收入与 1,080 亿美元指引、毛利率与 74.0%目标；追踪数据中心增长、Rubin 出货及客户上线，而非只看公布合作。核对经营现金流、应收账款与收入增长、库存、客户集中度、融资承诺及担保的原始披露；未核实的 DSO 和担保金额不沿用。 对新客户活动公告，分开核对正式签约、设备交付、验收和收款；公告日的需求叙事不代替现金回收。",
+      "growthCatalysts": "2026-08-26 指引：FY2027 Q3 营收 1,080 亿美元±2%，GAAP/non-GAAP 毛利率 74.0%±0.5 个百分点；Rubin 机架与网络部署扩张。中国恢复销售仅是未计入指引的政策情景，不作为基准预测。 本轮核实10/12与Cisco公布USFP光模块计划，目标400Gb/s per lane并推动开放规范；采样、商用量产与客户采用需后续核验，不计入已确认订单。",
+      "growthSignals": "比较 Q3 收入与 1,080 亿美元指引、毛利率与 74.0%目标；追踪数据中心增长、Rubin 出货及客户上线，而非只看公布合作。核对经营现金流、应收账款与收入增长、库存、客户集中度、融资承诺及担保的原始披露；未核实的 DSO 和担保金额不沿用。 对新客户活动公告，分开核对正式签约、设备交付、验收和收款；公告日的需求叙事不代替现金回收。 USFP另看开放规范进度、兼容验证、量产日期与客户每瓦成本，规格提升不自动等于NVIDIA新增收入。",
       "judgment": {
         "positives": [
           "历史基线：2026-08-26 财报显示 Q2 营收同比 +106%、数据中心 +117%，同时维持 75.0% 毛利率，说明增长暂未以明显牺牲产品经济性为代价。",
@@ -690,28 +526,15 @@
           "云客户的 AI 投资回报与自研 ASIC 替代会共同影响长期订单；本次未核实可比估值与盈利预测口径，不能沿用旧 forward PE 推出低估结论。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": null,
+        "todayNote": "补录10/12 NVIDIA/Cisco USFP官方计划：强化AI网络生态，但不是已量产收入。Composite较昨日+1.3至68.1不等于moat一天变宽；继续检验回款与客户资本回报。",
         "etfQuestion": "相较 QQQ，单持 NVDA 把回报更集中于加速计算平台与盈利兑现，也把回款、出口限制和产品切换风险集中化。若不能给出比 QQQ/VTI 更有把握的现金流与估值假设，就不具备增加单股仓位的充分理由；任何新仓仍需清单和小仓起步。"
       },
-      "reviewStatus": {
-        "reviewedAt": "2026-10-13T13:26:27.850468+00:00",
-        "fundamentalBasis": "沿用2026-09-23研究中带期间、币种和历史来源的经营数据；本轮新增/复核来源见researchMeta.sourcesThisRun。未重验的旧数据不冒充最新财报。",
-        "newsStatus": "searched_no_verified_new_business_fact",
-        "priceAsOf": "2026-10-12",
-        "closeUSD": 226.32,
-        "priceChangePct": -1.29,
-        "quotePriceUSD": 226.32,
-        "quoteTimestampAvailable": false,
-        "quoteArithmeticResidualUSD": -7e-06,
-        "priceBasis": "美东2026-10-12完整日线，非10/13实时或盘前报价。quote无独立时戳，仅作为与日线一致性核验。",
-        "composite": 66.8,
-        "compositeChangeVsPrevious": -0.9,
-        "scoreComparisonBaselineAt": "2026-09-23T12:35:32.845387+00:00",
-        "modelAction": "Continue observing",
-        "scoreCaveat": "比较基准为9/23研究，不是昨日；个股value默认45且moat/quality含静态输入，分数不是基本面变化或估值证明，未重算。",
-        "valuationStatus": "stale_snapshot_quarantined",
-        "researchNote": "检索主要为评级重述、视频观点及Yahoo行情；未发现可核实的本轮新增经营公告，不用目标价替代现金流估值。",
-        "quoteStatus": "matches_10_12_daily_close_without_independent_quote_timestamp"
+      "financialDataQuality": {
+        "status": "quarantined",
+        "checkedAt": "2026-10-14T12:37:40.300575+00:00",
+        "reason": "FY2026年度revenue实际end2024；latest为2025年半年比较期，不是2026Q2单季。",
+        "rawBackupSHA256": "2be32bef42022aab08179aa303838cece2eb203834c5b89fac30db32501a3181",
+        "note": "官方已核实金额见定性分析并注明期间币种；自动采集根因仍未修复。"
       }
     },
     "TSLA": {
@@ -726,15 +549,15 @@
       },
       "financials": {
         "revenue": null,
-        "revenueText": "n/a",
+        "revenueText": "n/a（期间/币种待核验）",
         "revenueGrowthPct": null,
         "netIncome": null,
-        "netIncomeText": "n/a",
+        "netIncomeText": "n/a（期间/币种待核验）",
         "netIncomeGrowthPct": null,
         "grossMarginPct": null,
         "operatingMarginPct": null,
         "freeCashFlow": null,
-        "freeCashFlowText": "n/a",
+        "freeCashFlowText": "n/a（期间/币种待核验）",
         "debtToAssetsPct": null,
         "roePct": null,
         "priceToSales": null,
@@ -743,16 +566,16 @@
         "forwardPE": null,
         "latest": {
           "revenue": null,
-          "revenueText": "n/a",
+          "revenueText": "n/a（期间/币种待核验）",
           "revenueGrowthPct": null,
           "netIncome": null,
-          "netIncomeText": "n/a",
+          "netIncomeText": "n/a（期间/币种待核验）",
           "grossMarginPct": null,
           "operatingMarginPct": null,
           "freeCashFlow": null,
-          "freeCashFlowText": "n/a",
+          "freeCashFlowText": "n/a（期间/币种待核验）",
           "period": {
-            "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+            "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
             "form": "10-Q",
             "fiscalYear": 2026,
             "period": "Q2",
@@ -763,7 +586,7 @@
           }
         },
         "period": {
-          "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+          "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
           "form": "10-K",
           "fiscalYear": 2025,
           "period": "FY",
@@ -771,11 +594,6 @@
           "end": "2023-12-31",
           "filed": "2026-01-29",
           "source": "SEC companyfacts"
-        },
-        "dataQuality": {
-          "status": "quarantined",
-          "checkedAt": "2026-10-13T13:27:44.344755+00:00",
-          "reason": "抽取未保证各财务指标同期间、同币种；存在陈旧概念、比较期/YTD误标季度及异常比率。金额/比率暂停展示，参见定性分析中带期间的历史基线或本轮原文数据。根因未修复。"
         }
       },
       "businessModel": "主营电动车、储能及服务，同时投入FSD、Robotaxi、Cybercab和Optimus。汽车与储能已有规模收入，自动驾驶/机器人业务应分别评估商业化阶段，不能把未来可选业务全部当成现有盈利。",
@@ -796,28 +614,15 @@
           "2026-09-08 Bloomberg转载报道指NHTSA审查约1,000辆Cybercab的联邦安全标准自我认证依据；这是审查而非最终违法裁定，但说明规模化面临独立于技术演示的合规门槛。"
         ],
         "actionContext": "Not attractive",
-        "todayNote": "本轮补录10/2官方Q3交付486,532辆及储能13.7GWh；10/21盘后才披露利润/现金流。不是今日新财报，也不能从交付量推出利润恢复。",
+        "todayNote": null,
         "etfQuestion": "VTI/VOO/QQQ可提供分散组合内的TSLA相关敞口；单独加仓意味着更集中承担汽车竞争、资本开支及自动驾驶监管风险。若不能用可验证现金流支持优于ETF的回报预期，就不以Robotaxi或机器人叙事作为建仓依据。"
       },
-      "reviewStatus": {
-        "reviewedAt": "2026-10-13T13:26:27.850468+00:00",
-        "fundamentalBasis": "沿用2026-09-23研究中带期间、币种和历史来源的经营数据；本轮新增/复核来源见researchMeta.sourcesThisRun。未重验的旧数据不冒充最新财报。",
-        "newsStatus": "verified_primary_historical_update",
-        "priceAsOf": "2026-10-12",
-        "closeUSD": 378.03,
-        "priceChangePct": -1.22,
-        "quotePriceUSD": 378.03,
-        "quoteTimestampAvailable": false,
-        "quoteArithmeticResidualUSD": 1e-06,
-        "priceBasis": "美东2026-10-12完整日线，非10/13实时或盘前报价。quote无独立时戳，仅作为与日线一致性核验。",
-        "composite": 48.9,
-        "compositeChangeVsPrevious": -0.7,
-        "scoreComparisonBaselineAt": "2026-09-23T12:35:32.845387+00:00",
-        "modelAction": "Not attractive for now",
-        "scoreCaveat": "比较基准为9/23研究，不是昨日；个股value默认45且moat/quality含静态输入，分数不是基本面变化或估值证明，未重算。",
-        "valuationStatus": "stale_snapshot_quarantined",
-        "researchNote": "核实10/2官方Q3产销及储能公告与10/21盘后财报计划；利润/FCF尚未发布。",
-        "quoteStatus": "matches_10_12_daily_close_without_independent_quote_timestamp"
+      "financialDataQuality": {
+        "status": "quarantined",
+        "checkedAt": "2026-10-14T12:37:40.300575+00:00",
+        "reason": "年度end2023，latest为2025年半年比较期，不是2026Q2单季。",
+        "rawBackupSHA256": "2be32bef42022aab08179aa303838cece2eb203834c5b89fac30db32501a3181",
+        "note": "官方已核实金额见定性分析并注明期间币种；自动采集根因仍未修复。"
       }
     },
     "GOOGL": {
@@ -832,15 +637,15 @@
       },
       "financials": {
         "revenue": null,
-        "revenueText": "n/a",
+        "revenueText": "n/a（期间/币种待核验）",
         "revenueGrowthPct": null,
         "netIncome": null,
-        "netIncomeText": "n/a",
+        "netIncomeText": "n/a（期间/币种待核验）",
         "netIncomeGrowthPct": null,
         "grossMarginPct": null,
         "operatingMarginPct": null,
         "freeCashFlow": null,
-        "freeCashFlowText": "n/a",
+        "freeCashFlowText": "n/a（期间/币种待核验）",
         "debtToAssetsPct": null,
         "roePct": null,
         "priceToSales": null,
@@ -849,16 +654,16 @@
         "forwardPE": null,
         "latest": {
           "revenue": null,
-          "revenueText": "n/a",
+          "revenueText": "n/a（期间/币种待核验）",
           "revenueGrowthPct": null,
           "netIncome": null,
-          "netIncomeText": "n/a",
+          "netIncomeText": "n/a（期间/币种待核验）",
           "grossMarginPct": null,
           "operatingMarginPct": null,
           "freeCashFlow": null,
-          "freeCashFlowText": "n/a",
+          "freeCashFlowText": "n/a（期间/币种待核验）",
           "period": {
-            "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+            "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
             "form": "10-Q",
             "fiscalYear": 2026,
             "period": "Q2",
@@ -869,7 +674,7 @@
           }
         },
         "period": {
-          "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+          "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
           "form": "10-K",
           "fiscalYear": 2025,
           "period": "FY",
@@ -877,11 +682,6 @@
           "end": "2023-12-31",
           "filed": "2026-02-05",
           "source": "SEC companyfacts"
-        },
-        "dataQuality": {
-          "status": "quarantined",
-          "checkedAt": "2026-10-13T13:27:44.344755+00:00",
-          "reason": "抽取未保证各财务指标同期间、同币种；存在陈旧概念、比较期/YTD误标季度及异常比率。金额/比率暂停展示，参见定性分析中带期间的历史基线或本轮原文数据。根因未修复。"
         }
       },
       "businessModel": "Search 与 YouTube 广告提供核心收入，订阅及设备增加用户变现，Google Cloud 销售云服务、AI 基础设施与企业解决方案。官方电话会确认 Q2 2026 开始向客户数据中心交付并确认 TPU 系统销售收入；硬件系统销售应与经常性云消费区分。",
@@ -905,25 +705,12 @@
         "todayNote": null,
         "etfQuestion": "相较 VTI/VOO，单买增加搜索监管、模型竞争和 capex 回报风险。只有正常化搜索/云现金流相对价格有明确优势时才有集中持有的理由；不能用投资收益拉低的 PE 或 backlog 总额替代估值。"
       },
-      "reviewStatus": {
-        "reviewedAt": "2026-10-13T13:26:27.850468+00:00",
-        "fundamentalBasis": "沿用2026-09-23研究中带期间、币种和历史来源的经营数据；本轮新增/复核来源见researchMeta.sourcesThisRun。未重验的旧数据不冒充最新财报。",
-        "newsStatus": "not_individually_searched",
-        "priceAsOf": "2026-10-12",
-        "closeUSD": 352.72,
-        "priceChangePct": 0.3,
-        "quotePriceUSD": 352.72,
-        "quoteTimestampAvailable": false,
-        "quoteArithmeticResidualUSD": -1e-06,
-        "priceBasis": "美东2026-10-12完整日线，非10/13实时或盘前报价。quote无独立时戳，仅作为与日线一致性核验。",
-        "composite": 66.2,
-        "compositeChangeVsPrevious": -0.5,
-        "scoreComparisonBaselineAt": "2026-09-23T12:35:32.845387+00:00",
-        "modelAction": "Continue observing",
-        "scoreCaveat": "比较基准为9/23研究，不是昨日；个股value默认45且moat/quality含静态输入，分数不是基本面变化或估值证明，未重算。",
-        "valuationStatus": "stale_snapshot_quarantined",
-        "researchNote": "逐项复核历史论点、反证指标及最新完整日线；本轮未单独重搜，无已核实新动态不等于确认没有新闻。",
-        "quoteStatus": "matches_10_12_daily_close_without_independent_quote_timestamp"
+      "financialDataQuality": {
+        "status": "quarantined",
+        "checkedAt": "2026-10-14T12:37:40.300575+00:00",
+        "reason": "年度end2023，latest为2025年半年比较期，不是2026Q2单季。",
+        "rawBackupSHA256": "2be32bef42022aab08179aa303838cece2eb203834c5b89fac30db32501a3181",
+        "note": "官方已核实金额见定性分析并注明期间币种；自动采集根因仍未修复。"
       }
     },
     "AMD": {
@@ -938,15 +725,15 @@
       },
       "financials": {
         "revenue": null,
-        "revenueText": "n/a",
+        "revenueText": "n/a（期间/币种待核验）",
         "revenueGrowthPct": null,
         "netIncome": null,
-        "netIncomeText": "n/a",
+        "netIncomeText": "n/a（期间/币种待核验）",
         "netIncomeGrowthPct": null,
         "grossMarginPct": null,
         "operatingMarginPct": null,
         "freeCashFlow": null,
-        "freeCashFlowText": "n/a",
+        "freeCashFlowText": "n/a（期间/币种待核验）",
         "debtToAssetsPct": null,
         "roePct": null,
         "priceToSales": null,
@@ -955,16 +742,16 @@
         "forwardPE": null,
         "latest": {
           "revenue": null,
-          "revenueText": "n/a",
+          "revenueText": "n/a（期间/币种待核验）",
           "revenueGrowthPct": null,
           "netIncome": null,
-          "netIncomeText": "n/a",
+          "netIncomeText": "n/a（期间/币种待核验）",
           "grossMarginPct": null,
           "operatingMarginPct": null,
           "freeCashFlow": null,
-          "freeCashFlowText": "n/a",
+          "freeCashFlowText": "n/a（期间/币种待核验）",
           "period": {
-            "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+            "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
             "form": "10-Q",
             "fiscalYear": 2018,
             "period": "Q3",
@@ -975,7 +762,7 @@
           }
         },
         "period": {
-          "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+          "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
           "form": null,
           "fiscalYear": null,
           "period": null,
@@ -983,19 +770,14 @@
           "end": null,
           "filed": null,
           "source": "SEC companyfacts"
-        },
-        "dataQuality": {
-          "status": "quarantined",
-          "checkedAt": "2026-10-13T13:27:44.344755+00:00",
-          "reason": "抽取未保证各财务指标同期间、同币种；存在陈旧概念、比较期/YTD误标季度及异常比率。金额/比率暂停展示，参见定性分析中带期间的历史基线或本轮原文数据。根因未修复。"
         }
       },
       "businessModel": "无晶圆厂计算芯片供应商，销售 EPYC 服务器 CPU、Instinct AI 加速器、Ryzen 客户端芯片、游戏 GPU/半定制芯片及嵌入式产品；以 ROCm 软件和 Helios 机架平台扩展数据中心方案。",
       "moatEvidence": "历史经营基线（本轮未重验该财报正文）：2026-08-04 官方 Q2 财报：营收 115.36 亿美元、同比 +50%，数据中心 67.18 亿美元、约 +107%，占总收入约 58%；证明 EPYC/Instinct 已有实际规模。官方称 Helios 开始爬坡，但 CPU 产品竞争力与 GPU 软件生态成熟度应分开评估，不能把第二供应源地位等同 CUDA 级别壁垒。",
       "keyRisks": "GPU 软件兼容性、客户迁移成本及机架交付能否达到规模要求仍需证明；对先进代工、封装与存储供应存在依赖。Q2 游戏收入 7.79 亿美元，相比上年 11.22 亿约下降 31%。上年 MI308 出口限制导致 8 亿美元库存及相关费用，利润同比改善有低基数效应；毛利率提升不能全归因于永久定价权。 10/13信用支持还增加项目融资、客户付款与或有责任核验要求，规模和触发条件未核实前不估算敞口。",
-      "aiAngle": "数据中心已超过一半收入，AI 不再只是产品路线图；但该分部同时包含服务器 CPU 等业务，不能把全部 67.18 亿美元认作 AI GPU 收入。关键是 Instinct 的可持续部署、ROCm 使用与 Helios 爬坡后的现金收益，而不是仅靠超大市场规模叙事。",
-      "growthCatalysts": "沿用8/4正式Q3指引：营收$13.0B±$0.3B、non-GAAP毛利率约56%，季度已结束但本轮未核验实绩。10/13 Fermi公告与AMD签署首期222MW租赁信用支持，另有最多650MW扩张框架；未来1–2年需转成上电、设备交付、客户验收与收款。MW不是芯片销售额，框架不是不可取消订单。",
-      "growthSignals": "核对Q3营收对$12.7B–$13.3B及调整后毛利率56%历史指引；分别看EPYC和Instinct、ROCm采用、Helios量产毛利与FCF。Fermi项目单列AMD责任金额/触发条件、融资关闭、上电、客户付款与信用支持敞口；不能用潜在设备销售额抵消尚不清楚的担保风险。",
+      "aiAngle": "数据中心已超过一半收入，AI 不再只是产品路线图；但该分部同时包含服务器 CPU 等业务，不能把全部 67.18 亿美元认作 AI GPU 收入。关键是 Instinct 的可持续部署、ROCm 使用与 Helios 爬坡后的现金收益，而不是仅靠超大市场规模叙事。 9/28官方宣布拟以约$8.2B全股票收购World Labs，补足空间智能模型研究；截至本轮只确认协议、预计年底前交割，不能误写已完成或已取得收入。",
+      "growthCatalysts": "沿用8/4正式Q3指引：营收$13.0B±$0.3B、non-GAAP毛利率约56%，季度已结束但本轮未核验实绩。10/13 Fermi公告与AMD签署首期222MW租赁信用支持，另有最多650MW扩张框架；未来1–2年需转成上电、设备交付、客户验收与收款。MW不是芯片销售额，框架不是不可取消订单。 本轮补录9/28 World Labs协议：预计2026年底前完成且须监管批准；10/6公司通稿安排11/3盘后发布Q3结果。收购研究能力需在未来产品采用中验证，而非当季收入催化。",
+      "growthSignals": "核对Q3营收对$12.7B–$13.3B及调整后毛利率56%历史指引；分别看EPYC和Instinct、ROCm采用、Helios量产毛利与FCF。Fermi项目单列AMD责任金额/触发条件、融资关闭、上电、客户付款与信用支持敞口；不能用潜在设备销售额抵消尚不清楚的担保风险。 World Labs核对批准/交割、实际发行股数、人才留存与研发支出、模型对硬件需求的净贡献；不把全股票支付当免费收购。",
       "judgment": {
         "positives": [
           "历史基线：2026-08-04 Q2 财报确认数据中心收入 67.18 亿美元，较上年 32.40 亿约翻倍，并占公司收入 58%；客户需求已体现在收入而非仅合作公告中。",
@@ -1005,31 +787,18 @@
         "concerns": [
           "Helios 开始爬坡不等于规模交付已验证；CUDA 迁移门槛与云厂商自研芯片会影响 AMD 的客户获取成本和长期利润率。",
           "游戏收入同比约 -31%，而上一年出口限制库存费用压低利润基数；不能将强利润同比直接外推，需看后续 GAAP/non-GAAP 差异与现金流。",
-          "10/13信用支持把机会与客户融资执行绑定；公告未提供本研究可核实的AMD最大责任额或已确认芯片订单。10/12收盘$594.24，一年价格回报约+174.6%，但旧PE/市值无效；无法证明安全边际时，这个价格我不会因222MW标题追买。"
+          "World Labs约$8.2B全股票对价带来稀释与整合风险，尚未核实交割；Fermi信用支持责任金额/触发条件仍不清楚。10/13收盘$605.53，旧PE无法证明安全边际；我不会因模型人才或222MW标题追买。"
         ],
         "actionContext": "Not attractive",
-        "todayNote": "10/13 08:00 ET Fermi公告：AMD为222MW首期租赁提供信用支持，并签最多650MW扩张框架。属于融资进度，不是融资完成或已确认收入；维持Not attractive。",
+        "todayNote": "本轮补齐9/28官方World Labs收购协议（约$8.2B全股票、预计年底前交割），并核实10/6通稿安排11/3盘后财报。不是10/14新收购或已完成交易；Fermi风险沿用，Not attractive。",
         "etfQuestion": "AMD提供服务器CPU和AI GPU份额提升的更高弹性，但比QQQ更依赖ROCm/Helios执行及竞争格局。没有解释风险且优于ETF的估值与现金流情景前，不追价格动量；若未来建仓，参考当前配置3%—5%通常起始区间，并遵守IPS小仓、交易清单与单股20%软上限。"
       },
-      "reviewStatus": {
-        "reviewedAt": "2026-10-13T13:26:27.850468+00:00",
-        "fundamentalBasis": "沿用2026-09-23研究中带期间、币种和历史来源的经营数据；本轮新增/复核来源见researchMeta.sourcesThisRun。未重验的旧数据不冒充最新财报。",
-        "newsStatus": "verified_same_day_primary_release",
-        "priceAsOf": "2026-10-12",
-        "closeUSD": 594.24,
-        "priceChangePct": -2.28,
-        "quotePriceUSD": 594.24,
-        "quoteTimestampAvailable": false,
-        "quoteArithmeticResidualUSD": 1e-05,
-        "priceBasis": "美东2026-10-12完整日线，非10/13实时或盘前报价。quote无独立时戳，仅作为与日线一致性核验。",
-        "composite": 56.3,
-        "compositeChangeVsPrevious": 1.0,
-        "scoreComparisonBaselineAt": "2026-09-23T12:35:32.845387+00:00",
-        "modelAction": "Not attractive for now",
-        "scoreCaveat": "比较基准为9/23研究，不是昨日；个股value默认45且moat/quality含静态输入，分数不是基本面变化或估值证明，未重算。",
-        "valuationStatus": "stale_snapshot_quarantined",
-        "researchNote": "核实Fermi 10/13 08:00 ET公告：222MW首期租赁信用支持及最多650MW扩张框架；不是融资已完成或AMD芯片订单已确认。",
-        "quoteStatus": "matches_10_12_daily_close_without_independent_quote_timestamp"
+      "financialDataQuality": {
+        "status": "quarantined",
+        "checkedAt": "2026-10-14T12:37:40.300575+00:00",
+        "reason": "年度revenue缺失，latest旧标签start2017年且为YTD，利润率超过100%。",
+        "rawBackupSHA256": "2be32bef42022aab08179aa303838cece2eb203834c5b89fac30db32501a3181",
+        "note": "官方已核实金额见定性分析并注明期间币种；自动采集根因仍未修复。"
       }
     },
     "AVGO": {
@@ -1044,15 +813,15 @@
       },
       "financials": {
         "revenue": null,
-        "revenueText": "n/a",
+        "revenueText": "n/a（期间/币种待核验）",
         "revenueGrowthPct": null,
         "netIncome": null,
-        "netIncomeText": "n/a",
+        "netIncomeText": "n/a（期间/币种待核验）",
         "netIncomeGrowthPct": null,
         "grossMarginPct": null,
         "operatingMarginPct": null,
         "freeCashFlow": null,
-        "freeCashFlowText": "n/a",
+        "freeCashFlowText": "n/a（期间/币种待核验）",
         "debtToAssetsPct": null,
         "roePct": null,
         "priceToSales": null,
@@ -1061,16 +830,16 @@
         "forwardPE": null,
         "latest": {
           "revenue": null,
-          "revenueText": "n/a",
+          "revenueText": "n/a（期间/币种待核验）",
           "revenueGrowthPct": null,
           "netIncome": null,
-          "netIncomeText": "n/a",
+          "netIncomeText": "n/a（期间/币种待核验）",
           "grossMarginPct": null,
           "operatingMarginPct": null,
           "freeCashFlow": null,
-          "freeCashFlowText": "n/a",
+          "freeCashFlowText": "n/a（期间/币种待核验）",
           "period": {
-            "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+            "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
             "form": "10-Q",
             "fiscalYear": 2018,
             "period": "Q3",
@@ -1081,7 +850,7 @@
           }
         },
         "period": {
-          "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+          "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
           "form": "10-K",
           "fiscalYear": 2018,
           "period": "FY",
@@ -1089,19 +858,14 @@
           "end": "2016-10-30",
           "filed": "2018-12-21",
           "source": "SEC companyfacts"
-        },
-        "dataQuality": {
-          "status": "quarantined",
-          "checkedAt": "2026-10-13T13:27:44.344755+00:00",
-          "reason": "抽取未保证各财务指标同期间、同币种；存在陈旧概念、比较期/YTD误标季度及异常比率。金额/比率暂停展示，参见定性分析中带期间的历史基线或本轮原文数据。根因未修复。"
         }
       },
       "businessModel": "Broadcom 向大客户出售定制 AI 芯片、网络及其他半导体，同时通过 VMware 等基础设施软件订阅/许可收取持续收入。",
       "moatEvidence": "历史经营基线（本轮未重验该财报正文）：custom ASIC 的共同设计、先进互联与客户认证周期带来转换成本，VMware 嵌入企业 IT 架构。9/2 官方 FY2026Q3 披露 AI 半导体收入 $16.7B、+221%，说明供货竞争力很强；大客户能够引入替代供应商，不能把设计胜利等同永久独占。",
       "keyRisks": "AI 客户和项目集中使单个出货延迟影响巨大；客户自研/第二供应商压单客份额与议价权；AI 芯片占比提高可能稀释软件带来的高 margin，强收入增长不保证同速 FCF 增长。",
-      "aiAngle": "AI 已是主业务而非概念：FY2026Q3 AI 半导体约占总收入 56.4%（16.7/29.591，自算）。定制加速器与网络同时受益，但也更直接暴露于 hyperscaler capex 周期。",
-      "growthCatalysts": "沿用9/2公布的FY2026Q4管理层指引：AI收入$21.7B、集团收入约$34.8B，均为待兑现目标，本次未重新核验。未来1–2年看新ASIC项目和网络含量、VMware续约与交叉销售，不把远期收入路线图当已确认订单或现金。",
-      "growthSignals": "FY2026Q4 AI收入对$21.7B、集团收入对$34.8B及non-GAAP operating margin对66%的9/2历史指引；Q3 FCF margin为约46%（FCF/收入），不是FCF/净利润。跟踪大客户项目、软件续约、回款和每股FCF；连续收入增长而现金收益/单客份额走弱会削弱论点。 若客户分散改善且现金回收随收入增长、每股FCF持续提高，应提高经营确信度；前提仍是独立估值而非股价突破。",
+      "aiAngle": "AI 已是主业务而非概念：FY2026Q3 AI 半导体约占总收入 56.4%（16.7/29.591，自算）。定制加速器与网络同时受益，但也更直接暴露于 hyperscaler capex 周期。 AI也提升攻击速度与复杂度，HyperArmor对应基础设施防护需求；技术主张是厂商陈述，不能当独立安全认证或已实现收入。",
+      "growthCatalysts": "沿用9/2公布的FY2026Q4管理层指引：AI收入$21.7B、集团收入约$34.8B，均为待兑现目标，本次未重新核验。未来1–2年看新ASIC项目和网络含量、VMware续约与交叉销售，不把远期收入路线图当已确认订单或现金。 10/13正式发布VMware HyperArmor，围绕ESX安全提供虚拟补丁、执行保护与MFA；未来看付费采用、VCF续约和增量ARR，公告没有披露新增订单或收费金额。",
+      "growthSignals": "FY2026Q4 AI收入对$21.7B、集团收入对$34.8B及non-GAAP operating margin对66%的9/2历史指引；Q3 FCF margin为约46%（FCF/收入），不是FCF/净利润。跟踪大客户项目、软件续约、回款和每股FCF；连续收入增长而现金收益/单客份额走弱会削弱论点。 若客户分散改善且现金回收随收入增长、每股FCF持续提高，应提高经营确信度；前提仍是独立估值而非股价突破。 HyperArmor单列可用性、付费客户、VCF附加销售和客户流失；防护打包若只抵消流失，不是净增量。",
       "judgment": {
         "positives": [
           "历史基线：9/2 官方 FY2026Q3 收入 $29.591B、+86%，AI 半导体 $16.7B、+221%，增长已在报表兑现。",
@@ -1111,31 +875,18 @@
         "concerns": [
           "Q4 non-GAAP operating margin 指引 66%，低于 Q3 67.9%；AI mix 扩张并不保证单位利润同步变好。",
           "定制芯片的客户比普通零售用户更有议价权，第二供应商和自研可以使行业 TAM 扩大而 Broadcom 份额下降。",
-          "10/13本地PE、forward PE、市值仍与5/17旧comps逐项相同，已隔离。10/12价格较三个月前约-10.0%不证明便宜；需以同期间、同币种且扣除稀释后的每股FCF估值，不能采用混期SEC抽取。"
+          "本轮PE/forward PE/市值仍来自5/17旧comps，已隔离。HyperArmor强化产品能力不等于净定价权，需核对采用、续约、bundling与客户迁移；AI大客户融资责任亦须原始披露确认，未核实的$50B融资标题不作为既定债务。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": null,
+        "todayNote": "本轮核实10/13 HyperArmor官方新品：增强ESX/VCF安全，而非新财报或确定营收。Composite较昨日+1.5至54.4仅为模型变化，Continue observing不变。",
         "etfQuestion": "比QQQ更集中押注custom silicon与网络，也放大客户与项目风险。Continue observing只是延续既有立场；没有保守FCF估值就不优先于ETF。"
       },
-      "reviewStatus": {
-        "reviewedAt": "2026-10-13T13:26:27.850468+00:00",
-        "fundamentalBasis": "沿用2026-09-23研究中带期间、币种和历史来源的经营数据；本轮新增/复核来源见researchMeta.sourcesThisRun。未重验的旧数据不冒充最新财报。",
-        "newsStatus": "not_individually_searched",
-        "priceAsOf": "2026-10-12",
-        "closeUSD": 354.73,
-        "priceChangePct": -1.88,
-        "quotePriceUSD": 354.73,
-        "quoteTimestampAvailable": false,
-        "quoteArithmeticResidualUSD": -1.1e-05,
-        "priceBasis": "美东2026-10-12完整日线，非10/13实时或盘前报价。quote无独立时戳，仅作为与日线一致性核验。",
-        "composite": 52.9,
-        "compositeChangeVsPrevious": -0.8,
-        "scoreComparisonBaselineAt": "2026-09-23T12:35:32.845387+00:00",
-        "modelAction": "Not attractive for now",
-        "scoreCaveat": "比较基准为9/23研究，不是昨日；个股value默认45且moat/quality含静态输入，分数不是基本面变化或估值证明，未重算。",
-        "valuationStatus": "stale_snapshot_quarantined",
-        "researchNote": "逐项复核历史论点、反证指标及最新完整日线；本轮未单独重搜，无已核实新动态不等于确认没有新闻。",
-        "quoteStatus": "matches_10_12_daily_close_without_independent_quote_timestamp"
+      "financialDataQuality": {
+        "status": "quarantined",
+        "checkedAt": "2026-10-14T12:37:40.300575+00:00",
+        "reason": "年度revenue实际2016年，latest2017年YTD，与新利润混期，毛利超过100%。",
+        "rawBackupSHA256": "2be32bef42022aab08179aa303838cece2eb203834c5b89fac30db32501a3181",
+        "note": "官方已核实金额见定性分析并注明期间币种；自动采集根因仍未修复。"
       }
     },
     "TSM": {
@@ -1150,15 +901,15 @@
       },
       "financials": {
         "revenue": null,
-        "revenueText": "n/a",
+        "revenueText": "n/a（期间/币种待核验）",
         "revenueGrowthPct": null,
         "netIncome": null,
-        "netIncomeText": "n/a",
+        "netIncomeText": "n/a（期间/币种待核验）",
         "netIncomeGrowthPct": null,
         "grossMarginPct": null,
         "operatingMarginPct": null,
         "freeCashFlow": null,
-        "freeCashFlowText": "n/a",
+        "freeCashFlowText": "n/a（期间/币种待核验）",
         "debtToAssetsPct": null,
         "roePct": null,
         "priceToSales": null,
@@ -1167,16 +918,16 @@
         "forwardPE": null,
         "latest": {
           "revenue": null,
-          "revenueText": "n/a",
+          "revenueText": "n/a（期间/币种待核验）",
           "revenueGrowthPct": null,
           "netIncome": null,
-          "netIncomeText": "n/a",
+          "netIncomeText": "n/a（期间/币种待核验）",
           "grossMarginPct": null,
           "operatingMarginPct": null,
           "freeCashFlow": null,
-          "freeCashFlowText": "n/a",
+          "freeCashFlowText": "n/a（期间/币种待核验）",
           "period": {
-            "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+            "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
             "form": null,
             "fiscalYear": null,
             "period": null,
@@ -1187,7 +938,7 @@
           }
         },
         "period": {
-          "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+          "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
           "form": null,
           "fiscalYear": null,
           "period": null,
@@ -1195,18 +946,13 @@
           "end": null,
           "filed": null,
           "source": "SEC companyfacts"
-        },
-        "dataQuality": {
-          "status": "quarantined",
-          "checkedAt": "2026-10-13T13:27:44.344755+00:00",
-          "reason": "抽取未保证各财务指标同期间、同币种；存在陈旧概念、比较期/YTD误标季度及异常比率。金额/比率暂停展示，参见定性分析中带期间的历史基线或本轮原文数据。根因未修复。"
         }
       },
       "businessModel": "专注客户芯片制造的纯晶圆代工厂，通过工艺开发、量产良率、产能管理、设计生态及先进封装服务收取制造收入；可同时服务 GPU 与自研 ASIC 客户，但不是所有芯片的唯一制造商。",
       "moatEvidence": "历史经营基线（本轮未重验该财报正文）：2026-07-16 官方 Q2 财报：营收 1.27038 万亿新台币、同比 +36.0%；美元营收 402.0 亿、同比 +33.7%，两种货币增速不同。毛利率 67.7%、营业利润率 60.3%；7nm及更先进制程占晶圆收入 77%，其中 2nm 3%、3nm 30%、5nm 33%，显示先进节点已转成商业收入。",
       "keyRisks": "台湾生产集中带来地缘、地震及供电等尾部风险。先进节点与海外扩产需要大量资本开支，良率和利用率若不达标，折旧会侵蚀现金回报。Q3 毛利率指引 65%—67%低于 Q2 的 67.7%，收入上升不意味着利润率单向扩张；客户资本开支与出口政策仍影响需求。",
       "aiAngle": "处于 AI 芯片先进制程与封装制造环节，可参与多种架构的需求增长，不必预先选定一家 GPU/ASIC 的赢家；但行业资本开支周期、客户集中及产能回报风险并未消失。",
-      "growthCatalysts": "10/8官方6-K确认9月合并营收NT$511.857B、同比+54.6%、环比-0.6%；1–9月NT$3,898.727B、同比+41.1%。需求兑现证据比8月基线前进一月。未来1–2年看2nm良率和先进封装释放；新台币月营收不是美元季度收入，更不是净利润。2031–2033光罩协作仍属远期，不计入当年盈利。",
+      "growthCatalysts": "10/8官方6-K确认9月合并营收NT$511.857B、同比+54.6%、环比-0.6%；1–9月NT$3,898.727B、同比+41.1%。需求兑现证据比8月基线前进一月。未来1–2年看2nm良率和先进封装释放；新台币月营收不是美元季度收入，更不是净利润。2031–2033光罩协作仍属远期，不计入当年盈利。 官方Q3页面已确认10/15 14:00台湾/北京时间举行法说会，仍未公布本轮可核实的Q3实绩。",
       "growthSignals": "9月营收已发布，不再写等待9月收入。下一份Q3财报将美元收入与7/16历史$44.6B–$45.8B指引对照，核对65%–67%毛利率目标、2nm份额、封装交付、capex/折旧/FCF及海外工厂稀释。月度新台币高增不能直接证明美元指引超额或利润率提升。",
       "judgment": {
         "positives": [
@@ -1220,28 +966,15 @@
           "12英寸光罩目标横跨2031—2033年，需要全产业生态配合，不能用于上调2026收入；当前估值未独立核验，技术优势仍不足以证明价格有安全边际。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "本轮补录10/8已公布的9月营收（不是10/13新公告）：同比+54.6%、环比-0.6%；需求论点增强，但毛利率与FCF仍待季度财报。Continue observing。",
+        "todayNote": "本轮官方核验：10/15 14:00（UTC+8）Q3法说；收入$44.6B–$45.8B、毛利65%–67%仍为指引，非实绩。ASML强财报是行业旁证，不能代替TSM毛利和FCF。",
         "etfQuestion": "VTI/VOO提供美国上市本土企业的广泛组合，不应误称直接持有台积电ADR；它们通过客户与供应链有间接半导体敞口。单持TSM获得更直接先进代工暴露，也增加台湾尾部风险。需证明相对VTI/VOO/QQQ的风险补偿和估值优势，才考虑小仓，而非仅因技术领先。"
       },
-      "reviewStatus": {
-        "reviewedAt": "2026-10-13T13:26:27.850468+00:00",
-        "fundamentalBasis": "沿用2026-09-23研究中带期间、币种和历史来源的经营数据；本轮新增/复核来源见researchMeta.sourcesThisRun。未重验的旧数据不冒充最新财报。",
-        "newsStatus": "verified_primary_historical_update",
-        "priceAsOf": "2026-10-12",
-        "closeUSD": 444.35,
-        "priceChangePct": -1.98,
-        "quotePriceUSD": 444.35,
-        "quoteTimestampAvailable": false,
-        "quoteArithmeticResidualUSD": -6e-06,
-        "priceBasis": "美东2026-10-12完整日线，非10/13实时或盘前报价。quote无独立时戳，仅作为与日线一致性核验。",
-        "composite": 61.4,
-        "compositeChangeVsPrevious": -0.3,
-        "scoreComparisonBaselineAt": "2026-09-23T12:35:32.845387+00:00",
-        "modelAction": "Not attractive for now",
-        "scoreCaveat": "比较基准为9/23研究，不是昨日；个股value默认45且moat/quality含静态输入，分数不是基本面变化或估值证明，未重算。",
-        "valuationStatus": "stale_snapshot_quarantined",
-        "researchNote": "核实SEC 10/8 6-K：9月营收NT$511.857B、同比+54.6%；没有季度利润率数据。",
-        "quoteStatus": "matches_10_12_daily_close_without_independent_quote_timestamp"
+      "financialDataQuality": {
+        "status": "quarantined",
+        "checkedAt": "2026-10-14T12:37:40.300575+00:00",
+        "reason": "营收/FCF和期间信息缺失，其他金额的期间/币种未验证。",
+        "rawBackupSHA256": "2be32bef42022aab08179aa303838cece2eb203834c5b89fac30db32501a3181",
+        "note": "官方已核实金额见定性分析并注明期间币种；自动采集根因仍未修复。"
       }
     },
     "ASML": {
@@ -1256,15 +989,15 @@
       },
       "financials": {
         "revenue": null,
-        "revenueText": "n/a",
+        "revenueText": "n/a（期间/币种待核验）",
         "revenueGrowthPct": null,
         "netIncome": null,
-        "netIncomeText": "n/a",
+        "netIncomeText": "n/a（期间/币种待核验）",
         "netIncomeGrowthPct": null,
         "grossMarginPct": null,
         "operatingMarginPct": null,
         "freeCashFlow": null,
-        "freeCashFlowText": "n/a",
+        "freeCashFlowText": "n/a（期间/币种待核验）",
         "debtToAssetsPct": null,
         "roePct": null,
         "priceToSales": null,
@@ -1273,16 +1006,16 @@
         "forwardPE": null,
         "latest": {
           "revenue": null,
-          "revenueText": "n/a",
+          "revenueText": "n/a（期间/币种待核验）",
           "revenueGrowthPct": null,
           "netIncome": null,
-          "netIncomeText": "n/a",
+          "netIncomeText": "n/a（期间/币种待核验）",
           "grossMarginPct": null,
           "operatingMarginPct": null,
           "freeCashFlow": null,
-          "freeCashFlowText": "n/a",
+          "freeCashFlowText": "n/a（期间/币种待核验）",
           "period": {
-            "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+            "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
             "form": null,
             "fiscalYear": null,
             "period": null,
@@ -1293,7 +1026,7 @@
           }
         },
         "period": {
-          "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+          "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
           "form": "20-F",
           "fiscalYear": 2025,
           "period": "FY",
@@ -1301,53 +1034,35 @@
           "end": "2023-12-31",
           "filed": "2026-02-25",
           "source": "SEC companyfacts"
-        },
-        "dataQuality": {
-          "status": "quarantined",
-          "checkedAt": "2026-10-13T13:27:44.344755+00:00",
-          "reason": "抽取未保证各财务指标同期间、同币种；存在陈旧概念、比较期/YTD误标季度及异常比率。金额/比率暂停展示，参见定性分析中带期间的历史基线或本轮原文数据。根因未修复。"
         }
       },
       "businessModel": "向芯片制造商销售光刻设备、计量检测、软件及安装后维护/升级服务，核心技术是EUV和High-NA EUV；客户支出来自晶圆厂扩产与工艺升级，收益同时含一次性设备销售和存量设备服务。",
-      "moatEvidence": "历史经营基线（本轮未重验该财报正文）：2026-07-15 Q2官方财报：销售93.26亿欧元、毛利率54.0%，安装基础管理收入27.62亿欧元，显示存量服务的经济价值。Intel 9/7及ASML 9/8官方公告确认High-NA累计处理超过100万片晶圆，涵盖工具认证/测试、研发及部分Panther Lake产品选定层的量产；不能等同100万片合格商业成品。",
-      "keyRisks": "设备收入受少数大型客户的资本开支、验收和出货时点影响，技术领先不能消除周期。出口许可限制可缩小可服务市场；供应链及High-NA导入成本影响生产率和毛利。12英寸光罩协作尚是远期目标，新工艺必须证明客户每片晶圆成本改善。",
+      "moatEvidence": "EUV生态、精密光学与供应链集成形成稀缺moat，存量设备带来服务收入。10/14官方Q3报表：收入€11.662B，毛利率57.5%、营业利润率44.4%，服务/升级约€3.3B；当季销售121台光刻系统，不含计量检测。经营证据增强，但不能从一个高利润季度推断周期风险消失。",
+      "keyRisks": "少数晶圆厂的资本开支与设备验收节奏决定收入波动；出口许可限制可服务市场；High-NA导入必须证明客户良率和每片成本。Q3巨额FCF可能含收付款时点效应，净利润也不能未经税项/非经营桥接就年化。",
       "aiAngle": "通过AI逻辑芯片及存储器工艺升级间接受益，处于算力供应链上游；不是每颗AI相关芯片都需要EUV，也不意味着AI投资一定流向当期ASML设备收入。",
-      "growthCatalysts": "本轮官方日历确认10/14发布Q3结果；对照7/15历史销售€11B–€12B、毛利率55%–57%目标，以及全年€43B–€45B指引。未来1–2年看EUV验收、High-NA导入及服务收入；三星2028年High-NA DRAM计划与2031–2033年大尺寸光罩目标不是本季订单。",
-      "growthSignals": "追踪Q3销售/毛利率及全年指引、EUV和High-NA交付与验收、安装基础服务收入、客户工艺采用、设备可用率/产能和每片晶圆成本。监测出口许可、客户资本开支调整与现金回款；将百万片累计处理和2031—2033光罩目标与商业订单明确分开。 三星项目单独核对2028年采用里程碑、客户成本/良率和实际设备验收，公告没有给出新增订单金额。",
+      "growthCatalysts": "Q3已发布，不再等待10/14财报。官方Q4指引收入€14.2B–€15.2B、毛利率约57%、服务/升级约€3.7B；全年收入区间由7月€43B–€45B收窄至€44B–€45B、毛利率约56%。未来1–2年看EUV验收、High-NA客户导入和服务增长；2027/6/10 Capital Markets Day为长期展望更新节点。",
+      "growthSignals": "Q4收入对€14.2B–€15.2B、毛利率对约57%、服务收入对约€3.7B；逐季跟踪系统验收、预收/合同负债和应收账款、经营现金流及FCF。Q3 CFO €11.798B减设备/无形资产购置€0.447B得FCF €11.351B；应收及融资应收由Q2 €7.813B升至€9.928B。需原始附注拆解收现来源，不能把强FCF全算作经常性利润。当前提取材料未给可核实新订单数，不编造bookings。",
       "judgment": {
         "positives": [
-          "历史基线：2026-07-15 Q2收入93.26亿欧元、毛利率54.0%，均高于此前指引；公司称主要由安装基础管理业务超预期驱动，服务/升级业务对结果有真实贡献。",
-          "历史基线：全年销售指引430亿—450亿欧元、Q3销售110亿—120亿欧元，为需求兑现提供明确检验标准，而非只靠AI行业叙事。",
-          "历史基线：Intel 9/7及ASML 9/8官方公告显示High-NA累计处理超过100万片晶圆，并用于部分Panther Lake产品选定层量产；三星9/8公布计划到2028年将High-NA导入未来DRAM量产，补充存储客户采用路径，但未来采用仍是计划。"
+          "10/14官方Q3收入€11.662B，较上年€7.516B增长约55.2%（自算），落在原€11B–€12B指引内；毛利率57.5%超过原上限57%达0.5个百分点，兑现优于只讲AI需求。",
+          "Q3服务/升级约€3.3B、设备销售约€8.4B，营业利润€5.173B、利润率44.4%；存量服务与新设备共同变现，平台优势不仅是专利叙事。",
+          "Q3 FCF €11.351B，前三季合计约€10.060B（-2.608+1.317+11.351，自算），收现较上半年改善；全年收入下限提高€1B是经营信心增强的证据，但指引仍是预测。"
         ],
         "concerns": [
-          "High-NA百万片累计处理涵盖认证、测试、研发和部分产品选定层量产，不能等同百万片合格商业成品；客户仍需证明良率、可用率与总成本优势。",
-          "收入集中于晶圆厂资本开支周期，单季出货/验收易波动，出口限制会改变产品与地区组合；技术合作未披露新增设备数量或订单金额。",
-          "TSMC协作目标为2031年光罩试验线和2033年先进节点生产；三星2028年目标是High-NA DRAM采用，不是12英寸光罩2028年量产。当前估值与盈利预测未核验，不能用远期技术利好替代安全边际。"
+          "Q4收入指引较Q3环比要求约+21.8%至+30.3%（自算），年底交付/验收压力高。若延迟、客户capex收缩或出口许可受限，技术独占也保不住季度收入。",
+          "Q3 FCF €11.351B高于净利润€4.960B，而应收及融资应收环比增加€2.115B。现金流很强，但需核对预付款、合同负债及支付时点，不能简单年化；净利润税项/非经营贡献也未完成附注桥接。",
+          "High-NA处理量不等于合格商业产量，大尺寸光罩仍是远期项目。10/13收盘与5月旧PE不能拼接估值；经营论点增强，但当前价格的安全边际未证明，不在强财报后追买。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "官方日历已核实：10/14发布Q3财报。先看销售/毛利与历史指引、订单转交付及现金回收，不在财报前凭技术垄断下低估结论；当前未发布Q3实绩。",
+        "todayNote": "10/14 Q3官方业绩已发布：收入€11.662B、毛利57.5%、净利€4.960B、FCF €11.351B；全年销售下限€43B→€44B。经营确信度提高，仍Continue observing；10/13日线不反映今日财报反应。",
         "etfQuestion": "相较QQQ，单持ASML更集中于光刻设备、出口政策与少数晶圆厂资本开支；QQQ可分散单一设备公司的执行风险，但仍有科技集中风险。没有核实合理价格与周期下行现金流前，技术稀缺性不构成直接建仓理由。"
       },
-      "reviewStatus": {
-        "reviewedAt": "2026-10-13T13:26:27.850468+00:00",
-        "fundamentalBasis": "沿用2026-09-23研究中带期间、币种和历史来源的经营数据；本轮新增/复核来源见researchMeta.sourcesThisRun。未重验的旧数据不冒充最新财报。",
-        "newsStatus": "verified_primary_event_calendar",
-        "priceAsOf": "2026-10-12",
-        "closeUSD": 1750.24,
-        "priceChangePct": -1.69,
-        "quotePriceUSD": 1750.24,
-        "quoteTimestampAvailable": false,
-        "quoteArithmeticResidualUSD": 1e-05,
-        "priceBasis": "美东2026-10-12完整日线，非10/13实时或盘前报价。quote无独立时戳，仅作为与日线一致性核验。",
-        "composite": 54.4,
-        "compositeChangeVsPrevious": 0.9,
-        "scoreComparisonBaselineAt": "2026-09-23T12:35:32.845387+00:00",
-        "modelAction": "Not attractive for now",
-        "scoreCaveat": "比较基准为9/23研究，不是昨日；个股value默认45且moat/quality含静态输入，分数不是基本面变化或估值证明，未重算。",
-        "valuationStatus": "stale_snapshot_quarantined",
-        "researchNote": "核实官方活动页：Q3财报10/14；今天预览报道不是实际Q3结果。",
-        "quoteStatus": "matches_10_12_daily_close_without_independent_quote_timestamp"
+      "financialDataQuality": {
+        "status": "quarantined",
+        "checkedAt": "2026-10-14T12:37:40.300575+00:00",
+        "reason": "年度end2023但标签FY2025，欧元金额被格式化成美元；latest缺失。",
+        "rawBackupSHA256": "2be32bef42022aab08179aa303838cece2eb203834c5b89fac30db32501a3181",
+        "note": "官方已核实金额见定性分析并注明期间币种；自动采集根因仍未修复。"
       }
     },
     "AMZN": {
@@ -1362,15 +1077,15 @@
       },
       "financials": {
         "revenue": null,
-        "revenueText": "n/a",
+        "revenueText": "n/a（期间/币种待核验）",
         "revenueGrowthPct": null,
         "netIncome": null,
-        "netIncomeText": "n/a",
+        "netIncomeText": "n/a（期间/币种待核验）",
         "netIncomeGrowthPct": null,
         "grossMarginPct": null,
         "operatingMarginPct": null,
         "freeCashFlow": null,
-        "freeCashFlowText": "n/a",
+        "freeCashFlowText": "n/a（期间/币种待核验）",
         "debtToAssetsPct": null,
         "roePct": null,
         "priceToSales": null,
@@ -1379,16 +1094,16 @@
         "forwardPE": null,
         "latest": {
           "revenue": null,
-          "revenueText": "n/a",
+          "revenueText": "n/a（期间/币种待核验）",
           "revenueGrowthPct": null,
           "netIncome": null,
-          "netIncomeText": "n/a",
+          "netIncomeText": "n/a（期间/币种待核验）",
           "grossMarginPct": null,
           "operatingMarginPct": null,
           "freeCashFlow": null,
-          "freeCashFlowText": "n/a",
+          "freeCashFlowText": "n/a（期间/币种待核验）",
           "period": {
-            "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+            "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
             "form": "10-Q",
             "fiscalYear": 2026,
             "period": "Q2",
@@ -1399,7 +1114,7 @@
           }
         },
         "period": {
-          "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+          "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
           "form": "10-K",
           "fiscalYear": 2025,
           "period": "FY",
@@ -1407,11 +1122,6 @@
           "end": "2023-12-31",
           "filed": "2026-02-06",
           "source": "SEC companyfacts"
-        },
-        "dataQuality": {
-          "status": "quarantined",
-          "checkedAt": "2026-10-13T13:27:44.344755+00:00",
-          "reason": "抽取未保证各财务指标同期间、同币种；存在陈旧概念、比较期/YTD误标季度及异常比率。金额/比率暂停展示，参见定性分析中带期间的历史基线或本轮原文数据。根因未修复。"
         }
       },
       "businessModel": "电商自营、第三方商家服务、Prime、广告与 AWS 协同；物流提升消费者体验，商家和广告增加平台变现，AWS 是重要利润来源。基础设施建设需要真实现金投入，不宜简单归类为轻资产软件股。",
@@ -1435,25 +1145,12 @@
         "todayNote": null,
         "etfQuestion": "宽基已持有 Amazon，同时分散零售、云及 AI 投资回报风险。若要单买，需用剔除投资收益的 AWS/零售分部估值和 capex 后现金流解释优于 VTI/VOO 的回报；本轮未完成该估值，不因合作新闻追买。"
       },
-      "reviewStatus": {
-        "reviewedAt": "2026-10-13T13:26:27.850468+00:00",
-        "fundamentalBasis": "沿用2026-09-23研究中带期间、币种和历史来源的经营数据；本轮新增/复核来源见researchMeta.sourcesThisRun。未重验的旧数据不冒充最新财报。",
-        "newsStatus": "not_individually_searched",
-        "priceAsOf": "2026-10-12",
-        "closeUSD": 259.53,
-        "priceChangePct": -1.11,
-        "quotePriceUSD": 259.53,
-        "quoteTimestampAvailable": false,
-        "quoteArithmeticResidualUSD": 1e-06,
-        "priceBasis": "美东2026-10-12完整日线，非10/13实时或盘前报价。quote无独立时戳，仅作为与日线一致性核验。",
-        "composite": 58.4,
-        "compositeChangeVsPrevious": -0.5,
-        "scoreComparisonBaselineAt": "2026-09-23T12:35:32.845387+00:00",
-        "modelAction": "Not attractive for now",
-        "scoreCaveat": "比较基准为9/23研究，不是昨日；个股value默认45且moat/quality含静态输入，分数不是基本面变化或估值证明，未重算。",
-        "valuationStatus": "stale_snapshot_quarantined",
-        "researchNote": "逐项复核历史论点、反证指标及最新完整日线；本轮未单独重搜，无已核实新动态不等于确认没有新闻。",
-        "quoteStatus": "matches_10_12_daily_close_without_independent_quote_timestamp"
+      "financialDataQuality": {
+        "status": "quarantined",
+        "checkedAt": "2026-10-14T12:37:40.300575+00:00",
+        "reason": "年度end2023，latest为2025年半年，毛利分子不匹配；FCF与已核验官方披露冲突。",
+        "rawBackupSHA256": "2be32bef42022aab08179aa303838cece2eb203834c5b89fac30db32501a3181",
+        "note": "官方已核实金额见定性分析并注明期间币种；自动采集根因仍未修复。"
       }
     },
     "ORCL": {
@@ -1468,15 +1165,15 @@
       },
       "financials": {
         "revenue": null,
-        "revenueText": "n/a",
+        "revenueText": "n/a（期间/币种待核验）",
         "revenueGrowthPct": null,
         "netIncome": null,
-        "netIncomeText": "n/a",
+        "netIncomeText": "n/a（期间/币种待核验）",
         "netIncomeGrowthPct": null,
         "grossMarginPct": null,
         "operatingMarginPct": null,
         "freeCashFlow": null,
-        "freeCashFlowText": "n/a",
+        "freeCashFlowText": "n/a（期间/币种待核验）",
         "debtToAssetsPct": null,
         "roePct": null,
         "priceToSales": null,
@@ -1485,16 +1182,16 @@
         "forwardPE": null,
         "latest": {
           "revenue": null,
-          "revenueText": "n/a",
+          "revenueText": "n/a（期间/币种待核验）",
           "revenueGrowthPct": null,
           "netIncome": null,
-          "netIncomeText": "n/a",
+          "netIncomeText": "n/a（期间/币种待核验）",
           "grossMarginPct": null,
           "operatingMarginPct": null,
           "freeCashFlow": null,
-          "freeCashFlowText": "n/a",
+          "freeCashFlowText": "n/a（期间/币种待核验）",
           "period": {
-            "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+            "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
             "form": "10-Q",
             "fiscalYear": 2018,
             "period": "Q3",
@@ -1505,7 +1202,7 @@
           }
         },
         "period": {
-          "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+          "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
           "form": "10-K",
           "fiscalYear": 2026,
           "period": "FY",
@@ -1513,19 +1210,14 @@
           "end": "2024-05-31",
           "filed": "2026-06-22",
           "source": "SEC companyfacts"
-        },
-        "dataQuality": {
-          "status": "quarantined",
-          "checkedAt": "2026-10-13T13:27:44.344755+00:00",
-          "reason": "抽取未保证各财务指标同期间、同币种；存在陈旧概念、比较期/YTD误标季度及异常比率。金额/比率暂停展示，参见定性分析中带期间的历史基线或本轮原文数据。根因未修复。"
         }
       },
       "businessModel": "数据库许可/维护和 Fusion、NetSuite 应用订阅是现金流基本盘，OCI 出租算力、存储和网络推动增长；后者把软件公司变成更资本密集的生意。",
       "moatEvidence": "数据库和应用迁移成本仍是基本盘；9/10官方FY2027Q1（截至8/31）营收$19.3B、+30%，云收入$11.6B、+62%，其中OCI增121%、SaaS增10%。新增850MW数据中心容量显示交付兑现，但机房的moat必须经资本成本后回报验证，不能照搬数据库经济性。",
       "keyRisks": "FY2027Q1经营现金流$23.103B仍不足覆盖$28.499B capex，FCF为-$5.396B；$20B ATM发行已使稀释不再只是远期风险。RPO $664B跨多年且客户集中；融资性预付款及建设时点会影响现金口径，不把合同总量当可分配现金。",
       "aiAngle": "OCI 受益 AI 算力需求，数据库和应用可增加 AI 功能收费；但机房、GPU 和电力要先付现金。评价应从收入增长转向资本成本之后的项目 ROIC。",
-      "growthCatalysts": "9/10官方已公布FY2027Q1，不再等待这份财报。未来1–2年看已交付容量转成付費利用率、OCI多云数据库及应用增长、预收与客户自带硬件对净资本投入的真实缓解；公司称本季新增AI合同超$30B、RPO达$664B，这些不是当期营收。",
-      "growthSignals": "追踪OCI收入与利用率、GAAP毛利、现金capex及租赁、FCF、摊薄股数。以Q1 CFO $23.103B、capex $28.499B、FCF -$5.396B为新基线；将有重大融资成分的客户预付款（官方capex现金支出桥接表列$11.363B）与标准CFO-minus-capex口径分开，不能重复扣减。若每股FCF持续改善且不再依赖大规模股权融资，才推翻谨慎论点。",
+      "growthCatalysts": "9/10官方已公布FY2027Q1，不再等待这份财报。未来1–2年看已交付容量转成付費利用率、OCI多云数据库及应用增长、预收与客户自带硬件对净资本投入的真实缓解；公司称本季新增AI合同超$30B、RPO达$664B，这些不是当期营收。 10/13 Benzinga报道Project Jupiter向El Paso Electric提出建设末期/调试及备用供电协议，Bloom燃料电池仍为主要电源；待批准、供能和客户付费利用率验证，不是全面投产。",
+      "growthSignals": "追踪OCI收入与利用率、GAAP毛利、现金capex及租赁、FCF、摊薄股数。以Q1 CFO $23.103B、capex $28.499B、FCF -$5.396B为新基线；将有重大融资成分的客户预付款（官方capex现金支出桥接表列$11.363B）与标准CFO-minus-capex口径分开，不能重复扣减。若每股FCF持续改善且不再依赖大规模股权融资，才推翻谨慎论点。 对Jupiter分开记录电力提案批准、主电源就绪、机架验收、付费利用率及固定付款承诺，不能把接电当ROIC达标。",
       "judgment": {
         "positives": [
           "9/10官方FY2027Q1营收$19.3B、同比+30%，云收入$11.6B、+62%，OCI +121%与SaaS +10%证明增长不是只有backlog。",
@@ -1538,28 +1230,15 @@
           "RPO $664B并非现金；客户预付款带有未来履约义务，融资性预付款与现金capex的桥接口径不等于标准FCF。若后续容量利用、付款或建设延期，仍会放大融资风险。"
         ],
         "actionContext": "Not attractive",
-        "todayNote": "本轮补齐9/10 FY2027Q1官方财报及FCF表：OCI +121%，但FCF -$5.396B且ATM发行$20B。纠正旧稿“未取得Q1原文”；仍Not attractive，不因股价较高位回落就认定便宜。",
+        "todayNote": "补录10/13电力提案报道：EPE拟提供施工末期/调试与应急备用供电，报道述每年$10M、十年付款提议，不是最终批准或全站投产。仍Not attractive，FCF与稀释判断不变。",
         "etfQuestion": "比VTI/QQQ更集中押注OCI建设，却额外承担客户、融资和稀释风险。Q1高速收入与更强CFO是正证据，但尚未给出优于ETF的每股现金回报及安全边际；先验证资本支出后回报，不为RPO大数买单。"
       },
-      "reviewStatus": {
-        "reviewedAt": "2026-10-13T13:26:27.850468+00:00",
-        "fundamentalBasis": "沿用2026-09-23研究中带期间、币种和历史来源的经营数据；本轮新增/复核来源见researchMeta.sourcesThisRun。未重验的旧数据不冒充最新财报。",
-        "newsStatus": "verified_primary_historical_update",
-        "priceAsOf": "2026-10-12",
-        "closeUSD": 137.39,
-        "priceChangePct": -2.84,
-        "quotePriceUSD": 137.39,
-        "quoteTimestampAvailable": false,
-        "quoteArithmeticResidualUSD": 1e-06,
-        "priceBasis": "美东2026-10-12完整日线，非10/13实时或盘前报价。quote无独立时戳，仅作为与日线一致性核验。",
-        "composite": 42.8,
-        "compositeChangeVsPrevious": -0.8,
-        "scoreComparisonBaselineAt": "2026-09-23T12:35:32.845387+00:00",
-        "modelAction": "Not attractive for now",
-        "scoreCaveat": "比较基准为9/23研究，不是昨日；个股value默认45且moat/quality含静态输入，分数不是基本面变化或估值证明，未重算。",
-        "valuationStatus": "stale_snapshot_quarantined",
-        "researchNote": "核实9/10官方FY2027Q1发布及FCF表，补齐旧研究缺口；新核实不等于今天发布。",
-        "quoteStatus": "matches_10_12_daily_close_without_independent_quote_timestamp"
+      "financialDataQuality": {
+        "status": "quarantined",
+        "checkedAt": "2026-10-14T12:37:40.300575+00:00",
+        "reason": "年度为截至2024年期间，latest为2017年YTD，与FY2027Q1官方FCF不符。",
+        "rawBackupSHA256": "2be32bef42022aab08179aa303838cece2eb203834c5b89fac30db32501a3181",
+        "note": "官方已核实金额见定性分析并注明期间币种；自动采集根因仍未修复。"
       }
     },
     "PLTR": {
@@ -1574,15 +1253,15 @@
       },
       "financials": {
         "revenue": null,
-        "revenueText": "n/a",
+        "revenueText": "n/a（期间/币种待核验）",
         "revenueGrowthPct": null,
         "netIncome": null,
-        "netIncomeText": "n/a",
+        "netIncomeText": "n/a（期间/币种待核验）",
         "netIncomeGrowthPct": null,
         "grossMarginPct": null,
         "operatingMarginPct": null,
         "freeCashFlow": null,
-        "freeCashFlowText": "n/a",
+        "freeCashFlowText": "n/a（期间/币种待核验）",
         "debtToAssetsPct": null,
         "roePct": null,
         "priceToSales": null,
@@ -1591,16 +1270,16 @@
         "forwardPE": null,
         "latest": {
           "revenue": null,
-          "revenueText": "n/a",
+          "revenueText": "n/a（期间/币种待核验）",
           "revenueGrowthPct": null,
           "netIncome": null,
-          "netIncomeText": "n/a",
+          "netIncomeText": "n/a（期间/币种待核验）",
           "grossMarginPct": null,
           "operatingMarginPct": null,
           "freeCashFlow": null,
-          "freeCashFlowText": "n/a",
+          "freeCashFlowText": "n/a（期间/币种待核验）",
           "period": {
-            "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+            "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
             "form": "10-Q",
             "fiscalYear": 2026,
             "period": "Q2",
@@ -1611,7 +1290,7 @@
           }
         },
         "period": {
-          "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+          "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
           "form": "10-K",
           "fiscalYear": 2025,
           "period": "FY",
@@ -1619,11 +1298,6 @@
           "end": "2023-12-31",
           "filed": "2026-02-17",
           "source": "SEC companyfacts"
-        },
-        "dataQuality": {
-          "status": "quarantined",
-          "checkedAt": "2026-10-13T13:27:44.344755+00:00",
-          "reason": "抽取未保证各财务指标同期间、同币种；存在陈旧概念、比较期/YTD误标季度及异常比率。金额/比率暂停展示，参见定性分析中带期间的历史基线或本轮原文数据。根因未修复。"
         }
       },
       "businessModel": "面向政府和企业销售Gotham、Foundry、Apollo及AIP等数据与AI软件平台，把组织数据、权限、模型和业务操作连接起来；收入来自合同订阅与部署服务，客户嵌入深度比模型本身更关键。",
@@ -1647,25 +1321,12 @@
         "todayNote": null,
         "etfQuestion": "相较QQQ/VTI，单持PLTR更直接押注企业/政府AI软件采用与平台嵌入，也放大合同节奏、股权稀释和估值风险。即使经营数据优秀，仍需独立估值与每股现金流论证；无法清楚胜过ETF时，不因新合作自动加仓。"
       },
-      "reviewStatus": {
-        "reviewedAt": "2026-10-13T13:26:27.850468+00:00",
-        "fundamentalBasis": "沿用2026-09-23研究中带期间、币种和历史来源的经营数据；本轮新增/复核来源见researchMeta.sourcesThisRun。未重验的旧数据不冒充最新财报。",
-        "newsStatus": "not_individually_searched",
-        "priceAsOf": "2026-10-12",
-        "closeUSD": 209.0,
-        "priceChangePct": -0.02,
-        "quotePriceUSD": 209.0,
-        "quoteTimestampAvailable": false,
-        "quoteArithmeticResidualUSD": 0.0,
-        "priceBasis": "美东2026-10-12完整日线，非10/13实时或盘前报价。quote无独立时戳，仅作为与日线一致性核验。",
-        "composite": 55.0,
-        "compositeChangeVsPrevious": 0.6,
-        "scoreComparisonBaselineAt": "2026-09-23T12:35:32.845387+00:00",
-        "modelAction": "Not attractive for now",
-        "scoreCaveat": "比较基准为9/23研究，不是昨日；个股value默认45且moat/quality含静态输入，分数不是基本面变化或估值证明，未重算。",
-        "valuationStatus": "stale_snapshot_quarantined",
-        "researchNote": "逐项复核历史论点、反证指标及最新完整日线；本轮未单独重搜，无已核实新动态不等于确认没有新闻。",
-        "quoteStatus": "matches_10_12_daily_close_without_independent_quote_timestamp"
+      "financialDataQuality": {
+        "status": "quarantined",
+        "checkedAt": "2026-10-14T12:37:40.300575+00:00",
+        "reason": "年度end2023，latest为2025年半年比较期，非2026Q2单季。",
+        "rawBackupSHA256": "2be32bef42022aab08179aa303838cece2eb203834c5b89fac30db32501a3181",
+        "note": "官方已核实金额见定性分析并注明期间币种；自动采集根因仍未修复。"
       }
     },
     "NOW": {
@@ -1680,15 +1341,15 @@
       },
       "financials": {
         "revenue": null,
-        "revenueText": "n/a",
+        "revenueText": "n/a（期间/币种待核验）",
         "revenueGrowthPct": null,
         "netIncome": null,
-        "netIncomeText": "n/a",
+        "netIncomeText": "n/a（期间/币种待核验）",
         "netIncomeGrowthPct": null,
         "grossMarginPct": null,
         "operatingMarginPct": null,
         "freeCashFlow": null,
-        "freeCashFlowText": "n/a",
+        "freeCashFlowText": "n/a（期间/币种待核验）",
         "debtToAssetsPct": null,
         "roePct": null,
         "priceToSales": null,
@@ -1697,16 +1358,16 @@
         "forwardPE": null,
         "latest": {
           "revenue": null,
-          "revenueText": "n/a",
+          "revenueText": "n/a（期间/币种待核验）",
           "revenueGrowthPct": null,
           "netIncome": null,
-          "netIncomeText": "n/a",
+          "netIncomeText": "n/a（期间/币种待核验）",
           "grossMarginPct": null,
           "operatingMarginPct": null,
           "freeCashFlow": null,
-          "freeCashFlowText": "n/a",
+          "freeCashFlowText": "n/a（期间/币种待核验）",
           "period": {
-            "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+            "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
             "form": "10-Q",
             "fiscalYear": 2018,
             "period": "Q2",
@@ -1717,7 +1378,7 @@
           }
         },
         "period": {
-          "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+          "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
           "form": "10-K",
           "fiscalYear": 2017,
           "period": "FY",
@@ -1725,18 +1386,13 @@
           "end": "2015-12-31",
           "filed": "2018-02-28",
           "source": "SEC companyfacts"
-        },
-        "dataQuality": {
-          "status": "quarantined",
-          "checkedAt": "2026-10-13T13:27:44.344755+00:00",
-          "reason": "抽取未保证各财务指标同期间、同币种；存在陈旧概念、比较期/YTD误标季度及异常比率。金额/比率暂停展示，参见定性分析中带期间的历史基线或本轮原文数据。根因未修复。"
         }
       },
       "businessModel": "面向企业 IT 服务、运维、员工和客户流程的订阅平台，通过跨部门工作流、配置数据库及集成扩大合同。Now Assist 与 AI Control Tower 用于流程自动化和 AI 治理，商业价值取决于实际部署与续费。",
       "moatEvidence": "历史经营基线（本轮未重验该财报正文）：关键流程、CMDB 配置记录、权限及第三方集成产生迁移成本。2026 Q2 官方披露 658 个客户 ACV 超过 500 万美元、同比约增 23%；当季新增 ACV 超过 100 万美元的交易 123 笔、同比近增 40%，支持大客户深化采用。",
       "keyRisks": "大型客户 IT 预算、长销售周期与收入确认节奏影响增长；AI 原生工具及微软/Salesforce 等平台竞争；AI 推理、第三方云成本及并购摊销压缩利润；股权激励造成现金流与股东经济收益差异，不能将调整后利润率当 GAAP。",
       "aiAngle": "Now Assist 可在既有工作流中追加收费，AI Control Tower 提供治理入口。管理层在 Q2 公告称 AI 净新增 ACV 超预期，但也明确 AI 采用和 hyperscaler 使用增加会影响毛利；用新增合同转生产、续约和单位推理毛利验证，避免把同行 AI 业绩当 NOW 的收入。",
-      "growthCatalysts": "大客户扩展流程、AI治理和安全产品交叉销售。历史Q2部分联邦本地部署收入由Q3提前至Q2；Q3已于9/30结束，本轮未检索其新财报或正式日期，下一次核验必须看前置效应后的合同增长和毛利，不能无条件外推Q2超额。",
+      "growthCatalysts": "大客户扩展流程、AI治理和安全产品交叉销售。历史Q2部分联邦本地部署收入由Q3提前至Q2；本轮检索未核实新的Q3财报，聚合日历称10/28但尚未官方重验。下一季必须检查前置效应后的合同增长和毛利，不能无条件外推Q2超额。",
       "growthSignals": "跟踪固定汇率订阅增长、cRPO、净新增 ACV、大客户数、同口径 AI 追加收入、GAAP/非 GAAP 毛利和股权激励。反证条件：剔除提前确认/并购后增长持续转弱，cRPO 不能支撑收入，或 AI 用量增加但毛利和每股现金收益恶化。 若剔除提前确认/并购后cRPO转强、调整后订阅毛利恢复且稀释后每股现金收益改善，应撤回当前偏谨慎立场。",
       "judgment": {
         "positives": [
@@ -1753,25 +1409,12 @@
         "todayNote": null,
         "etfQuestion": "VTI/VOO 分散单一企业软件商业模式和估值风险。若单买 NOW，必须证明其流程与治理价值无法被廉价 AI 替代，且扣除股权激励、并购及推理成本后的回报优于宽基；反弹幅度或低于历史高点都不是安全边际。"
       },
-      "reviewStatus": {
-        "reviewedAt": "2026-10-13T13:26:27.850468+00:00",
-        "fundamentalBasis": "沿用2026-09-23研究中带期间、币种和历史来源的经营数据；本轮新增/复核来源见researchMeta.sourcesThisRun。未重验的旧数据不冒充最新财报。",
-        "newsStatus": "not_individually_searched",
-        "priceAsOf": "2026-10-12",
-        "closeUSD": 140.32,
-        "priceChangePct": -0.38,
-        "quotePriceUSD": 140.32,
-        "quoteTimestampAvailable": false,
-        "quoteArithmeticResidualUSD": -7e-06,
-        "priceBasis": "美东2026-10-12完整日线，非10/13实时或盘前报价。quote无独立时戳，仅作为与日线一致性核验。",
-        "composite": 47.4,
-        "compositeChangeVsPrevious": -0.8,
-        "scoreComparisonBaselineAt": "2026-09-23T12:35:32.845387+00:00",
-        "modelAction": "Not attractive for now",
-        "scoreCaveat": "比较基准为9/23研究，不是昨日；个股value默认45且moat/quality含静态输入，分数不是基本面变化或估值证明，未重算。",
-        "valuationStatus": "stale_snapshot_quarantined",
-        "researchNote": "逐项复核历史论点、反证指标及最新完整日线；本轮未单独重搜，无已核实新动态不等于确认没有新闻。",
-        "quoteStatus": "matches_10_12_daily_close_without_independent_quote_timestamp"
+      "financialDataQuality": {
+        "status": "quarantined",
+        "checkedAt": "2026-10-14T12:37:40.300575+00:00",
+        "reason": "年度2015年旧标签、latest2017年YTD，毛利超过100%。",
+        "rawBackupSHA256": "2be32bef42022aab08179aa303838cece2eb203834c5b89fac30db32501a3181",
+        "note": "官方已核实金额见定性分析并注明期间币种；自动采集根因仍未修复。"
       }
     },
     "CRM": {
@@ -1786,15 +1429,15 @@
       },
       "financials": {
         "revenue": null,
-        "revenueText": "n/a",
+        "revenueText": "n/a（期间/币种待核验）",
         "revenueGrowthPct": null,
         "netIncome": null,
-        "netIncomeText": "n/a",
+        "netIncomeText": "n/a（期间/币种待核验）",
         "netIncomeGrowthPct": null,
         "grossMarginPct": null,
         "operatingMarginPct": null,
         "freeCashFlow": null,
-        "freeCashFlowText": "n/a",
+        "freeCashFlowText": "n/a（期间/币种待核验）",
         "debtToAssetsPct": null,
         "roePct": null,
         "priceToSales": null,
@@ -1803,16 +1446,16 @@
         "forwardPE": null,
         "latest": {
           "revenue": null,
-          "revenueText": "n/a",
+          "revenueText": "n/a（期间/币种待核验）",
           "revenueGrowthPct": null,
           "netIncome": null,
-          "netIncomeText": "n/a",
+          "netIncomeText": "n/a（期间/币种待核验）",
           "grossMarginPct": null,
           "operatingMarginPct": null,
           "freeCashFlow": null,
-          "freeCashFlowText": "n/a",
+          "freeCashFlowText": "n/a（期间/币种待核验）",
           "period": {
-            "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+            "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
             "form": "10-Q",
             "fiscalYear": 2015,
             "period": "Q3",
@@ -1823,7 +1466,7 @@
           }
         },
         "period": {
-          "basis": "历史自动抽取期间（待核验，不代表最新有效财报）",
+          "basis": "不可靠的SEC自动抽取期间，仅供审计；不是可使用的最新财报",
           "form": "10-K",
           "fiscalYear": 2017,
           "period": "FY",
@@ -1831,11 +1474,6 @@
           "end": "2015-04-30",
           "filed": "2017-03-06",
           "source": "SEC companyfacts"
-        },
-        "dataQuality": {
-          "status": "quarantined",
-          "checkedAt": "2026-10-13T13:27:44.344755+00:00",
-          "reason": "抽取未保证各财务指标同期间、同币种；存在陈旧概念、比较期/YTD误标季度及异常比率。金额/比率暂停展示，参见定性分析中带期间的历史基线或本轮原文数据。根因未修复。"
         }
       },
       "businessModel": "客户关系、销售/客服/营销应用与数据平台的订阅及支持业务；企业数据、流程和集成带来续约与交叉销售。Agentforce 把 AI 自动执行嵌入业务流程，计费从传统席位逐步扩展到使用/价值，但不等于原有席位收入没有替代风险。",
@@ -1856,37 +1494,22 @@
           "全年 FY2027 FCF 增速指引仅约 4%—5%；Q2 GAAP 营业利润率 20.5%，低于上年 22.8%，非 GAAP 34.1%也略低于上年 34.3%。高 ARR 增速并不自动意味着经营效率与股东现金回报同步改善。"
         ],
         "actionContext": "Continue observing",
-        "todayNote": "今日核实10/12 BofA双重上调（Underperform→Buy，目标价$160→$285；TIKR/IBD报道）。将旧Not attractive调整为Continue observing：AI可能强化流程moat的反方论点值得检验，但没有升级为建仓候选，模型自身标签未改变。",
+        "todayNote": null,
         "etfQuestion": "单持CRM只有在AI净消费收入抵消席位减少、organic增长和稀释后每股FCF改善且价格留足余地时，才可能优于VTI/VOO。评级翻多促使重审，不足以增加集中度；先做正常化现金流估值，而非采用旧11.6x forward PE。"
       },
-      "reviewStatus": {
-        "reviewedAt": "2026-10-13T13:26:27.850468+00:00",
-        "fundamentalBasis": "沿用2026-09-23研究中带期间、币种和历史来源的经营数据；本轮新增/复核来源见researchMeta.sourcesThisRun。未重验的旧数据不冒充最新财报。",
-        "newsStatus": "verified_secondary_analyst_change",
-        "priceAsOf": "2026-10-12",
-        "closeUSD": 233.92,
-        "priceChangePct": 2.09,
-        "quotePriceUSD": 233.92,
-        "quoteTimestampAvailable": false,
-        "quoteArithmeticResidualUSD": 2e-06,
-        "priceBasis": "美东2026-10-12完整日线，非10/13实时或盘前报价。quote无独立时戳，仅作为与日线一致性核验。",
-        "composite": 49.7,
-        "compositeChangeVsPrevious": -3.6,
-        "scoreComparisonBaselineAt": "2026-09-23T12:35:32.845387+00:00",
-        "modelAction": "Not attractive for now",
-        "scoreCaveat": "比较基准为9/23研究，不是昨日；个股value默认45且moat/quality含静态输入，分数不是基本面变化或估值证明，未重算。",
-        "valuationStatus": "stale_snapshot_quarantined",
-        "researchNote": "核实TIKR正文与IBD搜索结果：BofA于10/12从Underperform升至Buy，目标价160→285；估值倍数重估是主要驱动，不是盈利同步大幅上调。Loops收购只取得二手摘要，未采纳金额或交割状态。",
-        "quoteStatus": "matches_10_12_daily_close_without_independent_quote_timestamp"
+      "financialDataQuality": {
+        "status": "quarantined",
+        "checkedAt": "2026-10-14T12:37:40.300575+00:00",
+        "reason": "年度2015年单季、latest2013年YTD，毛利超过1000%。",
+        "rawBackupSHA256": "2be32bef42022aab08179aa303838cece2eb203834c5b89fac30db32501a3181",
+        "note": "官方已核实金额见定性分析并注明期间币种；自动采集根因仍未修复。"
       }
     }
   },
-  "agentInsightsDate": "2026-10-13T13:26:27.850468+00:00",
+  "agentInsightsDate": "2026-10-14T12:37:40.300575+00:00",
   "dataQuality": {
-    "checkedAt": "2026-10-13T13:27:44.344755+00:00",
-    "status": "partial_quarantined",
-    "stockFinancialsQuarantined": 15,
-    "qualitativeCoverage": 20,
-    "note": "20标的定性研究完整；自动SEC财务不可靠字段隔离为null，采集根因未修复；原始备份在本地审计目录，不公开。"
+    "checkedAt": "2026-10-14T12:37:40.300575+00:00",
+    "quarantinedStockCount": 15,
+    "reason": "Mixed SEC periods, stale tags, currency formatting and unmatched ratios; root collector unchanged."
   }
 }
