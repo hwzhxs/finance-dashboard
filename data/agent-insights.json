@@ -1666,7 +1666,8 @@
       "15股PE/forwardPE/市值与5/17旧comps一致；已备份后隔离。",
       "输入company_research的15股SEC companyfacts均连接重置、financials为空；定性历史财报不是本日成功SEC拉取。",
       "value45为缺失默认值，部分moat/quality静态；价格分数非基本面论点。",
-      "PDD20%/现金80%只是配置未券商核验；QQQ历史官方费率0.18%与旧配置0.20%有差异；SGOV价格回报不含分配。"
+      "PDD20%/现金80%只是配置未券商核验；QQQ历史官方费率0.18%与旧配置0.20%有差异；SGOV价格回报不含分配。",
+      "本轮SEC抓取已恢复15/15，但实际审计发现MSFT毛利1242.6%、CRM1741.4%，PDD季度为2020年前三季、NVDA最新季度为2025半年比较期；15股结构化数值继续隔离，不是SEC源文件本身错误。"
     ],
     "runLimitations": [
       "web_search首个PDD查询HTTP429；停止重试该渠道，Tavily替代完成6股搜索及3股源页核验。",
@@ -1707,6 +1708,11 @@
         "NOW",
         "CRM"
       ]
+    },
+    "supplementarySearch": {
+      "query": "Oracle Google nuclear upgrades October 16 2026 power data centers",
+      "status": "secondary_leads_not_adopted",
+      "finding": "返回Google/Constellation 10/6旧协议转载及社交帖，未核实新增事件，不改经营判断；不计为GOOGL完整个股检索。"
     }
   }
 }
